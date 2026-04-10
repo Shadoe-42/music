@@ -75,6 +75,13 @@ Source → Process → Destination
 
 ## **Module Image Integration**
 
+**Note on image caption formatting:** Always add two trailing spaces after the image link to force the caption onto a new line below the image rather than rendering inline beside it.
+
+```markdown
+![Module Name](url)  
+*Caption text here*
+```
+
 ### **Image Sourcing Standards**
 - **Primary source:** ModularGrid community images
 - **Format requirement:** JPEG for universal compatibility
