@@ -3,7 +3,7 @@
 
 ---
 
-![Make Noise Maths](https://github.com/DGretta/Music/raw/main/modular/images/make_noise/maths/front_panel.jpg)
+![Make Noise Maths](https://github.com/Shadoe-42/music/raw/main/modular/images/make_noise/maths/front_panel.jpg)
 *Make Noise Maths - Four-channel analog computer showing Rise/Fall controls, attenuverters, and comprehensive CV/trigger inputs for mathematical processing*
 
 ---

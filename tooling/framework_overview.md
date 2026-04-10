@@ -340,7 +340,7 @@ Framework Overview (THIS DOCUMENT)
 
 **GitHub Image Integration:**
 ```markdown
-![Module Name](https://github.com/DGretta/Music/raw/main/modular/images/[manufacturer]/[module_name]/front_panel.jpg)
+![Module Name](https://github.com/Shadoe-42/music/raw/main/modular/images/[manufacturer]/[module_name]/front_panel.jpg)
 *Module description and key interface elements*
 ```
 

@@ -1,6 +1,6 @@
 # Mutable Instruments Plaits - Beginner's Guide
 
-![Mutable Instruments Plaits](https://github.com/DGretta/Music/raw/main/modular/images/mutable_instruments/plaits/front_panel.jpg)
+![Mutable Instruments Plaits](https://github.com/Shadoe-42/music/raw/main/modular/images/mutable_instruments/plaits/front_panel.jpg)
 *16-synthesis-model macro-oscillator with built-in low-pass gate: complete synthesizer voice with every major synthesis method from analog through granular*
 
 *The Sonic Swiss Army Knife*

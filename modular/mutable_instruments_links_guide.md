@@ -1,6 +1,6 @@
 # Mutable Instruments Links - Guide
 
-![Mutable Instruments Links](https://github.com/DGretta/Music/raw/main/modular/images/mutable_instruments/links/front_panel.jpg)
+![Mutable Instruments Links](https://github.com/Shadoe-42/music/raw/main/modular/images/mutable_instruments/links/front_panel.jpg)
 *Essential three-section utility module: 1:3 buffered multiple, 2:2 precision adder/mixer, and 3:1 mixer/averager for professional signal routing and CV mathematics*
 
 **The Essential Signal Routing and Mixing Utility**

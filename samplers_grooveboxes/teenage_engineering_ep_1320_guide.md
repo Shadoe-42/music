@@ -1,7 +1,7 @@
 # Teenage Engineering EP-1320 Guide
 *Medieval sampler and composer with built-in instruments and performance effects*
 
-![Teenage Engineering EP-1320](https://github.com/DGretta/Music/raw/main/samplers_grooveboxes/images/teenage_engineering/ep_1320/front_panel.jpg)  
+![Teenage Engineering EP-1320](https://github.com/Shadoe-42/music/raw/main/samplers_grooveboxes/images/teenage_engineering/ep_1320/front_panel.jpg)  
 *The EP-1320's medieval-themed interface features Latin labeling, earth-tone design, and comprehensive sampling controls with built-in microphone, line input, stereo output, and MIDI sync capabilities.*
 
 ## Quick Start

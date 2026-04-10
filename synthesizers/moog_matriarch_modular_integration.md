@@ -2,7 +2,7 @@
 
 *Transforming your Matriarch into a modular system hub with 90+ patch points, CV/Gate routing, and Eurorack expansion*
 
-![Moog Matriarch](https://github.com/DGretta/Music/raw/main/synthesizers/images/moog/matriarch/front_panel.jpg)
+![Moog Matriarch](https://github.com/Shadoe-42/music/raw/main/synthesizers/images/moog/matriarch/front_panel.jpg)
 *The Moog Matriarch's 90+ patch points and comprehensive CV/Gate implementation create a bridge between accessible semi-modular synthesis and full modular system complexity*
 
 ---

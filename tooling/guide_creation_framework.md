@@ -254,7 +254,7 @@ If applicable, add module-specific technical specs:
 **Based on systematic testing findings (2025-09-22) - these gaps appeared in 100% of tested guides**
 
 1. **GitHub Image Integration (MANDATORY):**
-   - **Format:** `![Module Name](https://github.com/DGretta/Music/raw/main/modular/images/[module_name]/front_panel.jpg)`
+   - **Format:** `![Module Name](https://github.com/Shadoe-42/music/raw/main/modular/images/[module_name]/front_panel.jpg)`
    - **Caption:** Descriptive text about module interface and key elements
    - **Placement:** Immediately after title + tagline, before all content sections (provides immediate visual context)
    - **Non-negotiable:** Every guide must include proper GitHub image integration
@@ -308,7 +308,7 @@ If applicable, add module-specific technical specs:
 - **Signal coding:** 🔴 Audio │ 🔵 CV │ 🟡 Gate
 - **ASCII symbols:** ○ = output, ◀ = input, ── = audio, ║ = CV
 - **Module boxes:** Standard format (see `visual_communication_standards.md` for details)
-- **GitHub images:** `![Module](https://github.com/DGretta/Music/raw/main/modular/images/[module]/front_panel.jpg)`
+- **GitHub images:** `![Module](https://github.com/Shadoe-42/music/raw/main/modular/images/[module]/front_panel.jpg)`
 
 ---
 

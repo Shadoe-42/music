@@ -2,7 +2,7 @@
 
 *Mastering dual Moog Ladder filters with series, parallel, and stereo routing for advanced spectral shaping*
 
-![Moog Matriarch](https://github.com/DGretta/Music/raw/main/synthesizers/images/moog/matriarch/front_panel.jpg)
+![Moog Matriarch](https://github.com/Shadoe-42/music/raw/main/synthesizers/images/moog/matriarch/front_panel.jpg)
 *The Moog Matriarch's dual Ladder filter system offers three distinct routing modes: Series (band pass), Stereo (independent processing), and Parallel (notch filtering) with dynamic SPACING control*
 
 ---

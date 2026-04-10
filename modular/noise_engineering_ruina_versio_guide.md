@@ -1,6 +1,6 @@
 # Noise Engineering Ruina Versio - Beginner's Guide
 
-![Noise Engineering Ruina Versio](https://github.com/DGretta/Music/raw/main/modular/images/noise_engineering/ruina_versio/front_panel.jpg)
+![Noise Engineering Ruina Versio](https://github.com/Shadoe-42/music/raw/main/modular/images/noise_engineering/ruina_versio/front_panel.jpg)
 *Stereo destruction engine with wavefolding, multiband saturation, phase shifting, rectification, sub-octave generation, and the legendary SMOOSH button in 10HP*
 
 **The Stereo Destruction Engine**

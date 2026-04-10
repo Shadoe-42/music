@@ -113,6 +113,120 @@ Column structure:
 
 ---
 
+## Phase 4.5: Active Guide Development
+
+**Started:** 24 Dec 2025
+**Mission:** Fill teaching gaps identified through inventory-to-guides analysis. Foundational concepts first, then module-specific guides in priority order.
+
+### Foundational Guides (Priority: HIGH)
+- [ ] **Signal Types & Mult Selection Guide**
+  - Teaching objective: Decision matrix for choosing mult type (passive vs. buffered) based on signal type, cable distance, and destination count
+  - Scope: Establish interconnection thinking about infrastructure choices
+  - Status: Planned
+  - Why: Beginners conflate all mults as generic splitters; this teaches the decision tree that makes infrastructure choices coherent
+  - Difficulty: Easy to moderate (no complex synthesis theory, high conceptual clarity)
+
+### Module Guides (Priority Ranked)
+
+**Tier 1: Core Drum Voice Teaching (HIGH IMPACT)**
+- [ ] **Endorphin.es Queen of Pentacles** (909-inspired analog drum)
+  - Why: Ground Control guide exists but teaching lacks the drum voice itself. Core analog drum philosophy.
+  - Difficulty: Moderate (comprehensive but self-contained)
+  
+- [ ] **Endorphin.es BLCK_Noir** (CR-78 inspired digital drum)
+  - Why: Teaches analog vs. digital drum philosophy as direct comparison with Queen of Pentacles
+  - Difficulty: Moderate (digital concepts add complexity but teaching value high)
+
+**Tier 2: Sequencing Evolution (MODERATE IMPACT, HIGH EASE)**
+- [ ] **AtoVproject lx-euclid** (Euclidian sequencer)
+  - Why: Euclidian Circles guide exists; lx-euclid teaches dedicated drum sequencing progression
+  - Difficulty: Easy to moderate (builds on existing Euclidian teaching)
+  - Teaching pair: Euclidian Circles v2 + lx-euclid show sequencing specialization
+
+**Tier 3: Filter Design Comparison (MODERATE IMPACT)**
+- [ ] **Xaoc Belgrad** (state variable multimode filter)
+  - Why: System has Wasp, Forbidden Planet, Moon Phase; Belgrad completes filter design comparison teaching
+  - Difficulty: Moderate (builds on filter theory but introduces state variable architecture)
+  
+- [ ] **Patching Panda Etna** (morphing filter)
+  - Why: Flagged for system expansion; morphing design is unique teaching moment
+  - Difficulty: Moderate to challenging (morphing mechanics need clear explanation)
+
+**Tier 4: Foundational Concepts (LOWER IMPACT BUT CLEAN)**
+- [ ] **Erica Synths Pico Quant** (microtonal quantizer)
+  - Why: Beginners need scale/tuning concept; natural teaching moment after pitch sequencing
+  - Difficulty: Easy to moderate (self-contained, clear application)
+
+---
+
+## Batch 1: Infrastructure & Self-Contained Modules
+
+**Priority:** HIGH | **Scope Definition:** VCAs/Mixers + Clock/Timing modules
+**Rationale:** Self-contained teaching scope, infrastructure roles clear, easier to explain than complex synthesis modules
+**Started:** 24 Dec 2025
+
+### VCAs & Mixers (5 modules - alphabetical order)
+
+- [ ] **After Later Audio - Cloaks** ← STARTING POINT
+  - Classification: VCA
+  - Type: Mutable Instruments Veils 2020 replica
+  - Teaching scope: Linear VCA with routing
+  - Why: Commonly found, clear VCA teaching moment
+  
+- [ ] **After Later Audio - Mingles**
+  - Classification: VCA
+  - Type: Dual 3 Channel Mixer/VC Autopanner
+  - Teaching scope: Mixer + panning combo
+  - Why: Introduces autopanning as CV modulation concept
+  
+- [ ] **Doepfer - A-130-2**
+  - Classification: VCA
+  - Type: Dual linear/exponential VCA (Slim Line Series)
+  - Teaching scope: Linear vs. exponential VCA behavior
+  - Why: Slim format infrastructure; dual function comparison
+  
+- [ ] **Frap Tools - 411**
+  - Classification: VCA
+  - Type: Quadruple Linear VCA for Audio and CV
+  - Teaching scope: Quad linear amplification; infrastructure role
+  - Why: Contrasts with Black Quad VCA2; different design philosophy
+  
+- [ ] **Vostok Instruments - Ceres**
+  - Classification: VCA
+  - Type: Linear VCA and Mixer
+  - Teaching scope: Simple linear VCA foundation + mixing
+  - Why: Minimal VCA clarity; infrastructure teaching
+
+### Clock/Timing (4 modules - alphabetical order)
+
+- [ ] **4ms Company - RCD Breakout**
+  - Classification: Clock
+  - Type: Breakout module for Rotating Clock Divider
+  - Teaching scope: RCD functionality expansion
+  - Why: Ecosystem teaching; expands division possibilities
+  
+- [ ] **4ms Company - Rotating Clock Divider V2**
+  - Classification: Clock
+  - Type: Divides clock input with rotation concept
+  - Teaching scope: Clock division + creative rotation
+  - Why: Clock manipulation fundamental; rotation adds creative dimension beyond division
+  
+- [ ] **4ms Company - Shuffling Clock Multiplier Plus**
+  - Classification: Clock
+  - Type: Clock Multiplication & Breakout
+  - Teaching scope: Clock multiplication + rhythm shuffling
+  - Why: Rhythm variation teaching through clock manipulation
+  
+- [ ] **ALM Busy Circuits - Pamela's Pro Workout**
+  - Classification: Clock
+  - Type: Clock Modulator
+  - Teaching scope: Advanced clock control with modulation
+  - Why: Extended clock possibilities; different approach from simple dividers
+
+**Note:** Turing Machine ecosystem (Pulses, Volts, Turing Machine LPG Expander) covered in existing `turing_machine_ecosystem_guide.md`
+
+---
+
 ## Known Constraints & Context
 
 **Module Guide Inventory:**

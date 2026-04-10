@@ -1,6 +1,6 @@
 # Noise Engineering Numeric Repetitor - Beginner's Guide
 
-![Noise Engineering Numeric Repetitor](https://github.com/DGretta/Music/raw/main/modular/images/noise_engineering/numeric_repetitor/front_panel.jpg)
+![Noise Engineering Numeric Repetitor](https://github.com/Shadoe-42/music/raw/main/modular/images/noise_engineering/numeric_repetitor/front_panel.jpg)
 *Mathematical rhythm generator using prime number theory and binary arithmetic to create complex polyrhythmic patterns from 32 curated rhythms*
 
 **The Mathematical Rhythm Generator**

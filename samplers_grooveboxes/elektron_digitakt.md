@@ -1,7 +1,7 @@
 # Elektron Digitakt
 **8-voice digital drum computer and sampler with legendary Elektron sequencer**
 
-![Elektron Digitakt](https://github.com/DGretta/Music/raw/main/samplers_grooveboxes/images/elektron/digitakt/front_panel.jpg)  
+![Elektron Digitakt](https://github.com/Shadoe-42/music/raw/main/samplers_grooveboxes/images/elektron/digitakt/front_panel.jpg)  
 *Compact powerhouse combining sampling, sequencing, and MIDI control with parameter locks and conditional trigs for endless creative variation*
 
 ## Quick Start

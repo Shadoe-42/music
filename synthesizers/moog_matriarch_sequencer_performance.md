@@ -2,7 +2,7 @@
 
 *Mastering the 256-step sequencer, advanced arpeggiator, and live performance techniques for complete musical expression*
 
-![Moog Matriarch](https://github.com/DGretta/Music/raw/main/synthesizers/images/moog/matriarch/front_panel.jpg)
+![Moog Matriarch](https://github.com/Shadoe-42/music/raw/main/synthesizers/images/moog/matriarch/front_panel.jpg)
 *The Moog Matriarch's advanced sequencer and arpeggiator system with 256-step capacity, 12 sequence storage banks, and comprehensive performance integration for live electronic music*
 
 ---

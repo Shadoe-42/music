@@ -1,6 +1,6 @@
 # Erica Synths Black Envelope Generator 2 - Guide
 
-![Erica Synths Black Envelope Generator 2](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths/black_eg2/front_panel.jpg)  
+![Erica Synths Black Envelope Generator 2](https://github.com/Shadoe-42/music/raw/main/modular/images/erica_synths/black_eg2/front_panel.jpg)  
 *Erica Synths Black Envelope Generator 2 - Front panel showing controls and jacks*
 
 ## Classification

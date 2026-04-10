@@ -2,7 +2,7 @@
 
 **The Chainable Stereo Audio Utility Mixer**
  
-![Intellijel Mixup](https://github.com/DGretta/Music/raw/main/modular/images/intellijel/mixup/front_panel.jpg)  
+![Intellijel Mixup](https://github.com/Shadoe-42/music/raw/main/modular/images/intellijel/mixup/front_panel.jpg)  
 *6HP stereo audio mixer with expandable inputs, mute controls, and chainable back panel connectors for larger mixing systems*
 
 ---

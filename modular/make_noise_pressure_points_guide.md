@@ -1,6 +1,6 @@
 # Make Noise Pressure Points - Guide
 
-![Make Noise Pressure Points](https://github.com/DGretta/Music/raw/main/modular/images/make_noise/pressure_points/front_panel.jpg)
+![Make Noise Pressure Points](https://github.com/Shadoe-42/music/raw/main/modular/images/make_noise/pressure_points/front_panel.jpg)
 *Touch-sensitive analog performance controller with 4 copper touch plates, 3 tuned voltage rows (X, Y, Z), and individual gate/pressure outputs for direct human-to-synthesis interface control*
 
 **The Touch-Sensitive Analog Performance Controller**

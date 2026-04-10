@@ -22,13 +22,13 @@ These standards serve `project_philosophy.md`'s generational teaching obligation
 
 ### **1. GitHub Image Integration (Most Common)**
 ```markdown
-![Device Name](https://github.com/DGretta/Music/raw/main/[category]/images/[manufacturer]/[device_name]/front_panel.jpg)
+![Device Name](https://github.com/Shadoe-42/music/raw/main/[category]/images/[manufacturer]/[device_name]/front_panel.jpg)
 *Device description and key interface elements*
 
 # Examples by category:
-![Module Name](https://github.com/DGretta/Music/raw/main/modular/images/[manufacturer]/[module_name]/front_panel.jpg)
-![Synthesizer Name](https://github.com/DGretta/Music/raw/main/synthesizers/images/[manufacturer]/[synth_name]/front_panel.jpg)
-![Studio Device](https://github.com/DGretta/Music/raw/main/studio/images/[manufacturer]/[device_name]/front_panel.jpg)
+![Module Name](https://github.com/Shadoe-42/music/raw/main/modular/images/[manufacturer]/[module_name]/front_panel.jpg)
+![Synthesizer Name](https://github.com/Shadoe-42/music/raw/main/synthesizers/images/[manufacturer]/[synth_name]/front_panel.jpg)
+![Studio Device](https://github.com/Shadoe-42/music/raw/main/studio/images/[manufacturer]/[device_name]/front_panel.jpg)
 ```
 
 ### **2. Signal Type Color Coding (Every Guide)**
@@ -196,7 +196,7 @@ Source → Process → Destination
 
 **For GitHub repositories, use GitHub raw URL format:**
 ```markdown
-![Module Name](https://github.com/DGretta/Music/raw/main/modular/images/[module_name]/front_panel.jpg)
+![Module Name](https://github.com/Shadoe-42/music/raw/main/modular/images/[module_name]/front_panel.jpg)
 *Module description and key interface elements*
 ```
 
@@ -207,35 +207,35 @@ Source → Process → Destination
   - **Synthesizers:** `synthesizers/images/[manufacturer]/[instrument_name]/front_panel.jpg` 
   - **Studio gear:** `studio/images/[manufacturer]/[device_name]/front_panel.jpg`
 - **Complete examples:**
-  - `https://github.com/DGretta/Music/raw/main/modular/images/erica_synths/black_polyvoks_vcf/front_panel.jpg`
-  - `https://github.com/DGretta/Music/raw/main/synthesizers/images/sequential/take_5/front_panel.jpg`
+  - `https://github.com/Shadoe-42/music/raw/main/modular/images/erica_synths/black_polyvoks_vcf/front_panel.jpg`
+  - `https://github.com/Shadoe-42/music/raw/main/synthesizers/images/sequential/take_5/front_panel.jpg`
 
 **Implementation Examples:**
 
 **Modular Gear:**
 ```markdown
-![Erica Synths Black Polyvoks VCF](https://github.com/DGretta/Music/raw/main/modular/images/erica_synths/black_polyvoks_vcf/front_panel.jpg)
+![Erica Synths Black Polyvoks VCF](https://github.com/Shadoe-42/music/raw/main/modular/images/erica_synths/black_polyvoks_vcf/front_panel.jpg)
 *Erica Synths Black Polyvoks VCF - Front panel showing CV1, CV2, Audio In, and Filter Out*
 
-![4ms MetaModule](https://github.com/DGretta/Music/raw/main/modular/images/4ms/metamodule/front_panel.jpg)
+![4ms MetaModule](https://github.com/Shadoe-42/music/raw/main/modular/images/4ms/metamodule/front_panel.jpg)
 *4ms MetaModule - Main unit with core functionality*
 
-![Expert Sleepers Disting mk4](https://github.com/DGretta/Music/raw/main/modular/images/expert_sleepers/disting_mk4/front_panel.jpg)
+![Expert Sleepers Disting mk4](https://github.com/Shadoe-42/music/raw/main/modular/images/expert_sleepers/disting_mk4/front_panel.jpg)
 *Expert Sleepers Disting mk4 - Multi-algorithm digital processor*
 ```
 
 **Complete Synthesizers:**
 ```markdown
-![Sequential Take 5](https://github.com/DGretta/Music/raw/main/synthesizers/images/sequential/take_5/front_panel.jpg)
+![Sequential Take 5](https://github.com/Shadoe-42/music/raw/main/synthesizers/images/sequential/take_5/front_panel.jpg)
 *Sequential Take 5 - 5-voice analog polysynth with Prophet-5 heritage*
 
-![Moog Subsequent 37](https://github.com/DGretta/Music/raw/main/synthesizers/images/moog/subsequent_37/front_panel.jpg)
+![Moog Subsequent 37](https://github.com/Shadoe-42/music/raw/main/synthesizers/images/moog/subsequent_37/front_panel.jpg)
 *Moog Subsequent 37 - Paraphonic analog synthesizer with classic Moog filter*
 ```
 
 **Studio Equipment:**
 ```markdown
-![Focusrite Scarlett 2i2](https://github.com/DGretta/Music/raw/main/studio/images/focusrite/scarlett_2i2/front_panel.jpg)
+![Focusrite Scarlett 2i2](https://github.com/Shadoe-42/music/raw/main/studio/images/focusrite/scarlett_2i2/front_panel.jpg)
 *Focusrite Scarlett 2i2 - USB audio interface with two inputs*
 ```
 

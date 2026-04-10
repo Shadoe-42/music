@@ -1,6 +1,6 @@
 # Noise Engineering Loquelic Iteritas - Beginner's Guide
 
-![Noise Engineering Loquelic Iteritas](https://github.com/DGretta/Music/raw/main/modular/images/noise_engineering/loquelic_iteritas/front_panel.jpg)
+![Noise Engineering Loquelic Iteritas](https://github.com/Shadoe-42/music/raw/main/modular/images/noise_engineering/loquelic_iteritas/front_panel.jpg)
 *Three-algorithm digital complex oscillator featuring VOSIM vocal simulation, Summation Synthesis, and Phase Modulation in 10HP*
 
 **The Three-Algorithm Digital Beast**

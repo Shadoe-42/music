@@ -1,6 +1,6 @@
 # Make Noise Wogglebug - Beginner's Guide
 
-![Make Noise Wogglebug](https://github.com/DGretta/Music/raw/main/modular/images/make_noise/wogglebug/front_panel.jpg)
+![Make Noise Wogglebug](https://github.com/Shadoe-42/music/raw/main/modular/images/make_noise/wogglebug/front_panel.jpg)
 *Source of musical uncertainty with Speed/Chaos control, Ego/Id balance, Woggle control, and Disturb button - generates stepped/smooth random CVs plus three chaos audio oscillators*
 
 *Controlled Chaos Generator - Source of Musical Uncertainty*

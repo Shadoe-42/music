@@ -6,7 +6,7 @@
 
 ## Quick Start: Get Your First Sound in 5 Minutes
 
-![4ms Rotating Clock Divider V2](https://github.com/DGretta/Music/raw/main/modular/images/4ms/rcd_v2/front_panel.jpg)  
+![4ms Rotating Clock Divider V2](https://github.com/Shadoe-42/music/raw/main/modular/images/4ms/rcd_v2/front_panel.jpg)  
 *4ms Rotating Clock Divider V2 - Polyrhythm generator with Clock In, Rotate CV, Reset, and eight division outputs*
 
 ---
