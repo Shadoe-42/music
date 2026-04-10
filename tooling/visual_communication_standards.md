@@ -31,10 +31,12 @@ These standards serve `project_philosophy.md`'s generational teaching obligation
 ![Studio Device](https://github.com/Shadoe-42/music/raw/main/studio/images/[manufacturer]/[device_name]/front_panel.jpg)
 ```
 
-### **2. Signal Type Color Coding (Every Guide)**
+### **2. Signal Type Labels (Every Guide)**
 ```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 ```
+
+**Note:** Emoji color coding (🔴🔵🟡) was the prior standard but was retired April 2026 due to portability concerns. Emoji rendering depends on unicode support and cannot be guaranteed across all environments and future systems. Plain text labels carry the same meaning without any rendering dependency. All new guides use the plain text standard. Existing guides will be updated in a future audit phase.
 
 ### **3. Basic ASCII Module Box (Standard Format)**
 ```
@@ -52,7 +54,7 @@ These standards serve `project_philosophy.md`'s generational teaching obligation
 
 ### **4. Simple Signal Flow (Left-to-Right)**
 ```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 Source → Process → Destination
   │        │        │
@@ -62,9 +64,9 @@ Source → Process → Destination
 ### **5. Core ASCII Symbols**
 - **○** = Output jack
 - **◀** = Input jack
-- **──** = Audio cable (🔴)
-- **║** = CV cable (🔵)
-- **┈┈** = Gate cable (🟡)
+- **──** = Audio cable [A]
+- **║** = CV cable [C]
+- **┈┈** = Gate cable [G]
 - **┼** = Connection point
 
 ---
@@ -105,12 +107,12 @@ Source → Process → Destination
 ![Full Module Panel](images/module_name/full_panel.jpg)
 *Click image for detailed view*
 
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 **Interface Layout:**
-🔴 Audio In (bottom left) → Signal processing
-🔵 CV1 (top) → Primary control modulation  
-🔵 CV2 (middle) → Secondary control modulation
+Audio In (bottom left) → Signal processing [A]
+CV1 (top) → Primary control modulation [C]
+CV2 (middle) → Secondary control modulation [C]
 ```
 
 **Option C: Combined Approach**
@@ -118,12 +120,12 @@ Source → Process → Destination
 ![Module Panel](images/module_name/panel.jpg)
 *Module front panel reference*
 
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 ┌─VCO─────┐    ┌─Filter──┐
-│ Out ○───┼────┼─▶Audio  │ 🔴
+│ Out ○───┼────┼─▶Audio  │ [A]
 │     ║   │    │   ║     │
-│ CV  ◀───┼────┼── CV1   │ 🔵
+│ CV  ◀───┼────┼── CV1   │ [C]
 │     ║   │    │   ║     │
 └─────║───┘    └───║─────┘
 ```
@@ -240,7 +242,7 @@ Source → Process → Destination
 ```
 
 ### **Integration with Existing Standards**
-- **Emoji color coding:** Images work alongside 🔴🔵🟡 signal identification
+- **Signal type labels:** Images work alongside [A][C][G] signal identification
 - **ASCII diagrams:** Photos verify diagram accuracy and provide visual context
 - **Enhanced format:** Images support budget/premium alternative visualization
 - **Learning progression:** Visual complexity can match skill development levels
@@ -270,33 +272,36 @@ Source → Process → Destination
 
 ## **Signal Type Hierarchy**
 
-### **Visual Priority System with Color Coding**
-🔴 **Audio signals (Red):** Primary signal path - thickest representation
-🔵 **CV signals (Blue):** Control voltage - medium representation  
-🟡 **Gate/Trigger (Yellow):** Timing/Logic - lightest representation
+### **Signal Type Labeling Standard**
 
-### **Signal Labels with Color**
-Always label signal types with colored indicators:
+**Label format:** `[A]` = Audio, `[C]` = CV, `[G]` = Gate
+
+Plain text labels carry the signal type meaning without any unicode or rendering dependency. This ensures diagrams remain readable in any environment — terminal, text editor, plain text viewer, or future systems.
+
+**Audio signals [A]:** Primary signal path
+**CV signals [C]:** Control voltage
+**Gate/Trigger signals [G]:** Timing and logic
+
+### **Signal Labels Inline**
+Always label signal types on connections:
 ```
-🔴 Audio (Red) ║
-              ║
-🔵 CV (Blue)  ║
-              ║
-🟡 Gate (Yellow) ┈┈
+Input ---[A]---> Output     (audio signal)
+Input ---[C]---> Output     (CV signal)
+Input ---[G]---> Output     (gate/trigger)
 ```
 
 ### **Recommended Signal Flow Format**
 ```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 ┌─VCO─────┐    ┌─Filter──┐
-│ Out ○───┼────┼─▶Audio  │ 🔴
+│ Out ○───┼────┼─▶Audio  │ [A]
 │     ║   │    │   ║     │
-│ CV  ◀───┼────┼── CV1   │ 🔵
+│ CV  ◀───┼────┼── CV1   │ [C]
 │     ║   │    │   ║     │
 └─────║───┘    └───║─────┘
       ║            ║
-   🔵 CV        🔵 CV
+   [C] CV       [C] CV
 ```
 
 ---
@@ -356,7 +361,7 @@ Always label signal types with colored indicators:
 ### **Left-to-Right Progression**
 Always show signal flow from left (source) to right (destination):
 ```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 Source → Process → Destination
   │        │        │
@@ -364,31 +369,31 @@ Source → Process → Destination
 ```
 
 ### **Multi-Stage Processing**
-For complex patches, use clear horizontal progression with color coding:
+For complex patches, use clear horizontal progression:
 ```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 ┌─VCO─┐    ┌─Filter─┐    ┌─VCA─┐    ┌─Output─┐
-│     ○────┼─ Audio ◀────┼─ Out ○───┼─ Mix   │ 🔴
+│     ○────┼─ Audio ◀────┼─ Out ○───┼─ Mix   │ [A]
 │     ║    │        ║    │     ║    │        │
 └─────║────┘        ║    └─────║────┘        │
       ║             ║          ║             │
-  🔵 1V/Oct    🔵 CV Input  🔵 Env Input  🔴 Audio Out
+  [C] 1V/Oct   [C] CV Input  [C] Env Input  [A] Audio Out
 ```
 
 ### **Feedback Loops**
-Show feedback clearly with return paths and color coding:
+Show feedback clearly with return paths:
 ```
-🔴 Audio │ 🔵 CV
+Signal types: [A]=Audio  [C]=CV
 
 ┌─VCO─┐    ┌─Filter─┐
-│ Out ○────┼─ Audio ◀─┐ 🔴
+│ Out ○────┼─ Audio ◀─┐ [A]
 │     ║    │        ║ │
-│ FM  ◀────┼─ CV Out ○─┘ 🔵
+│ FM  ◀────┼─ CV Out ○─┘ [C]
 │     ║    │        ║
 └─────║────┘        ║
-      ║        🔵 Feedback
-   🔵 1V/Oct
+      ║        [C] Feedback
+   [C] 1V/Oct
 ```
 
 ---
@@ -447,26 +452,26 @@ Tone  Mod      Sync   Complex   Multi-
 
 ### **Enhanced Format Integration**
 ```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 Main Example: Maths Ch1 → Filter CV1
      │
      ├─Budget: ┌─2HP LFO─┐ 
      │         │ LFO1 ○──┼─→ Filter CV1
-     │         └─────────┘   🔵 CV
+     │         └─────────┘   [C] CV
      │
      ├─Different: ┌─Batumi──┐ 
      │            │ Phase ○─┼─→ Filter CV1
-     │            └─────────┘   🔵 CV
+     │            └─────────┘   [C] CV
      │
      └─Premium: ┌─Quadrax─┐ 
                 │ Ch1 ○───┼─→ Filter CV1
-                └─────────┘   🔵 CV
+                └─────────┘   [C] CV
 ```
 
 ### **Alternative Ecosystem View**
 ```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 ┌─────────────────────────────────────────────────┐
 │              Alternative Ecosystem               │
@@ -525,31 +530,31 @@ Main Example: Maths Ch1 → Filter CV1
 
 ### **Live Control Indicators**
 ```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 ┌─Controller─┐    ┌─Module─┐
-│ Knob   ∼───┼────┼─▶CV In │  ∼ = Real-time control 🔵
+│ Knob   ∼───┼────┼─▶CV In │  ∼ = Real-time control [C]
 │        ║   │    │   ║   │
-│ Slider ∼───┼────┼─▶Mod  │  Manual performance control 🔵
+│ Slider ∼───┼────┼─▶Mod  │  Manual performance control [C]
 │        ║   │    │   ║   │
 └────────║───┘    └───║───┘
          ║            ║
-    🔵 Performance   🔵 Module Response
+    [C] Performance   [C] Module Response
 ```
 
 ### **Touch/Manual Control**
 ```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 ┌─Module─────┐
-│ Touch   👆 │  👆 = Touch/tactile control
+│ Touch   [T]│  [T] = Touch/tactile control
 │ Pad     ║  │
 │         ▼  │  Direct physical interaction
-│ CV Out  ○──┼─→ Performance CV 🔵
+│ CV Out  ○──┼─→ Performance CV [C]
 │         ║  │
 └─────────║──┘
           ║
-   🔵 Performance CV
+   [C] Performance CV
 ```
 
 ---

@@ -91,7 +91,7 @@ The DC-coupling is significant. Cloaks processes CV signals just as cleanly as a
 The most direct use of the cascade normalization. Nothing patched into outputs 1, 2, or 3 — everything sums to output 4.
 
 ```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 ┌─ Voice 1 ──────┐    ┌─ Cloaks ─────────────────────────┐
 │ Plaits OUT ○───┼────┼─▶ CH1 IN     CH1 OUT (unpatched)  │
@@ -106,11 +106,11 @@ The most direct use of the cascade normalization. Nothing patched into outputs 1
 └────────────────┘    │                                   │
                       │ CH3 slider: 1/2 up                │
 ┌─ Voice 4 ──────┐    │                                   │
-│ Drum OUT ○─────┼────┼─▶ CH4 IN     CH4 OUT ○────────────┼──▶ Output
+│ Drum OUT ○─────┼────┼─▶ CH4 IN     CH4 OUT ○────────────┼──▶ Output [A]
 └────────────────┘    │                                   │
                       │ CH4 slider: full up               │
 ┌─ Envelopes ────┐    │                                   │
-│ ENV 1 ○────────┼────┼─▶ CH1 CV                          │
+│ ENV 1 ○────────┼────┼─▶ CH1 CV  (all envelopes [C])     │
 │ ENV 2 ○────────┼────┼─▶ CH2 CV                          │
 │ ENV 3 ○────────┼────┼─▶ CH3 CV                          │
 │ ENV 4 ○────────┼────┼─▶ CH4 CV                          │
@@ -132,12 +132,12 @@ Each voice has its own envelope shaping its amplitude. The sum appears at CH4 OU
 DC-coupling makes Cloaks useful as a CV processor. Run a modulation source through a channel to scale it with voltage control.
 
 ```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 ┌─ Marbles ──────┐    ┌─ Cloaks ─────────────┐    ┌─ Destination ──┐
 │ t1 GATE ○──────┼────┼─▶ CH1 CV              │    │ Filter CUTOFF  │
 │                │    │                       │    │                │
-│ X1 CV ○────────┼────┼─▶ CH1 IN  CH1 OUT ○───┼────┼─▶ CV Input 🔵  │
+│ X1 CV ○────────┼────┼─▶ CH1 IN  CH1 OUT ○───┼────┼─▶ CV Input [C] │
 └────────────────┘    │                       │    └────────────────┘
                       │ CH1 slider: variable  │
                       │ CH1 curve: linear     │
@@ -160,10 +160,10 @@ Marbles X output (random CV) goes into signal input. Marbles gate goes into CV i
 The offset control solves a specific problem — a bipolar LFO swings below zero and closes the VCA on its negative half. Offset shifts the operating point so the whole swing produces useful modulation.
 
 ```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 ┌─ Oscillator ───┐    ┌─ Cloaks ─────────────────────────┐
-│ OSC OUT ○──────┼────┼─▶ CH1 IN     CH1 OUT ○────────────┼──▶ Output
+│ OSC OUT ○──────┼────┼─▶ CH1 IN [A] CH1 OUT ○────────────┼──▶ Output [A]
 └────────────────┘    │                                   │
                       │ CH1 slider: 2/3 up                │
 ┌─ Bipolar LFO ──┐    │ CH1 curve: exponential            │

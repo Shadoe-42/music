@@ -227,6 +227,35 @@ Column structure:
 
 ---
 
+## Framework Issues — Active
+
+### Signal Type Emoji — Portability Conflict
+
+**Identified:** April 2026
+**Priority:** HIGH — affects every guide in the project
+
+The visual_communication_standards.md uses emoji color coding (🔴 Audio, 🔵 CV, 🟡 Gate) as the core signal differentiation system. This directly conflicts with the project's stated portability and durability principle. Emoji rendering depends on unicode support in the viewing environment. A file opened in a terminal, plain text editor, or future system without proper unicode rendering will display question marks or boxes instead of colored circles. The framework's own opening states diagrams must work in 2075 — emoji-dependent diagrams do not meet that standard.
+
+**Resolution:** Replace emoji legend and inline emoji with plain text signal type labels.
+
+**New standard:**
+```
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
+```
+
+Inline on diagram connections:
+```
+OSC OUT ---[A]---> Filter IN
+ENV OUT ---[C]---> Filter CV
+Seq OUT ---[G]---> VCA Gate
+```
+
+**Scope:** visual_communication_standards.md requires update. All existing guides require systematic audit and correction. New guides (starting with Cloaks) use the new standard.
+
+**Status:** visual_communication_standards.md updated April 2026. Cloaks guide written to new standard. Existing guide audit is a future phase.
+
+---
+
 ## Known Constraints & Context
 
 **Module Guide Inventory:**
