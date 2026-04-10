@@ -2,7 +2,7 @@
 
 **The Quad VCA and Voltage-Controlled Mixer**
 
-![After Later Audio Cloaks](https://github.com/Shadoe-42/music/raw/main/modular/images/after_later_audio/cloaks/front_panel.jpeg)
+![After Later Audio Cloaks](https://github.com/Shadoe-42/music/raw/main/modular/images/after_later_audio/cloaks/front_panel.jpeg)  
 *10HP quad VCA and cascaded mixer with variable response curve, offset control, and DC-coupled inputs for audio and CV*
 
 ---
