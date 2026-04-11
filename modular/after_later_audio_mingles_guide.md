@@ -38,7 +38,7 @@ Each channel has three input level knobs, each controlling one source in that ch
 
 ### CH1 PAN / CH2 PAN
 
-The large center knobs set each channel's pan position. With no CV active (CV AMT at zero, or CH PAN jack unpatched and CV AMT at minimum), the knob directly positions the sound in the stereo field. With the LFO normalled and CV AMT turned up, the knob sets the center point around which the LFO sweeps. With external CV patched into CH PAN, the CV drives position and the knob's role as an offset is ⚠️ unverified — treat it as the center/offset point.
+The large center knobs set a loudness bias for each channel's position in the stereo field. Turned toward the left, the signal is louder on the left side; turned toward the right, louder on the right. With the LFO normalled and CV AMT turned up, the LFO sweeps around this biased position — the knob determines where the panning is weighted and the LFO creates movement relative to that bias. With external CV patched into CH PAN, the CV drives pan movement and the knob sets the bias point the CV modulates around.
 
 ### CV AMT (CH1 and CH2)
 
@@ -91,15 +91,15 @@ The foundation patch. Three sources blend in CH1, the LFO drives continuous ster
 Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 ┌─ Source 1 ─────┐    ┌─ Mingles ──────────────────────────┐
-│ Voice 1 OUT ○──┼────┼─▶ IN ▷ [A]                          │
+│ Voice 1 OUT ○──┼─[A]─┼─▶ IN ▷                             │
 └────────────────┘    │   level: 3/4 up                     │
                       │                                     │
 ┌─ Source 2 ─────┐    │                                     │
-│ Voice 2 OUT ○──┼────┼─▶ IN × [A]                          │
+│ Voice 2 OUT ○──┼─[A]─┼─▶ IN ×                             │
 └────────────────┘    │   level: 1/2 up                     │
                       │                                     │
 ┌─ Source 3 ─────┐    │                                     │
-│ Voice 3 OUT ○──┼────┼─▶ IN Y [A]   L CH1 OUT R ○──────────┼──▶ Stereo In [A]
+│ Voice 3 OUT ○──┼─[A]─┼─▶ IN Y   L CH1 OUT R ○──[A]────────┼──▶ Stereo In
 └────────────────┘    │   level: 1/2 up                     │
                       │                                     │
                       │   CH1 PAN: center                   │
@@ -127,22 +127,22 @@ Both channels run simultaneously with their opposing LFO phases. Sources on CH1 
 Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 ┌─ CH1 Sources ──┐    ┌─ Mingles ──────────────────────────────────────────┐
-│ Lead OUT ○─────┼────┼─▶ IN ▷ [A]                                          │
-│ Pad OUT ○──────┼────┼─▶ IN × [A]   L CH1 OUT R ○ (optional: separate FX) │
+│ Lead OUT ○─────┼─[A]─┼─▶ IN ▷                                            │
+│ Pad OUT ○──────┼─[A]─┼─▶ IN ×   L CH1 OUT R ○ (optional: separate FX)   │
 └────────────────┘    │                                                     │
                       │   CH1 PAN: center                                   │
                       │   CV AMT (CH1): 12 o'clock                          │
                       │   CH1 PAN jack: unpatched                           │
 ┌─ CH2 Sources ──┐    │                                                     │
-│ Bass OUT ○─────┼────┼─▶ IN □ [A]                                          │
-│ Drum OUT ○─────┼────┼─▶ IN ○ [A]   L CH2 OUT R ○ (optional: separate FX) │
+│ Bass OUT ○─────┼─[A]─┼─▶ IN □                                            │
+│ Drum OUT ○─────┼─[A]─┼─▶ IN ○   L CH2 OUT R ○ (optional: separate FX)   │
 └────────────────┘    │                                                     │
                       │   CH2 PAN: center                                   │
                       │   CV AMT (CH2): 12 o'clock                          │
                       │   CH2 PAN jack: unpatched                           │
                       │                                                     │
                       │   LFO RATE: moderate                                │
-                      │               L MIX OUT R ○────────────────────────┼──▶ Stereo In [A]
+                      │               L MIX OUT R ○──[A]────────────────────┼──▶ Stereo In
                       └─────────────────────────────────────────────────────┘
 ```
 
@@ -164,18 +164,18 @@ Patching a CV source into CH1 PAN overrides the LFO normalling for that channel.
 Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 ┌─ Sequencer ────┐    ┌─ Mingles ──────────────────────────────────────────┐
-│ CV OUT ○───────┼────┼─▶ CH1 PAN [C] (LFO normalling broken)              │
+│ CV OUT ○───────┼─[C]─┼─▶ CH1 PAN (LFO normalling broken)                 │
 └────────────────┘    │                                                     │
                       │   CV AMT (CH1): 3/4 up                              │
 ┌─ CH1 Sources ──┐    │                                                     │
-│ Lead OUT ○─────┼────┼─▶ IN ▷ [A]   L CH1 OUT R ○────────────────────────┼──▶ Stereo In [A]
-│ Pad OUT ○──────┼────┼─▶ IN × [A]                                          │
+│ Lead OUT ○─────┼─[A]─┼─▶ IN ▷   L CH1 OUT R ○──[A]──────────────────────┼──▶ Stereo In
+│ Pad OUT ○──────┼─[A]─┼─▶ IN ×                                             │
 └────────────────┘    │   CH1 PAN knob: center                              │
                       │                                                     │
                       │   CH2 PAN jack: unpatched (inverted LFO active)     │
                       │   LFO RATE: moderate                                │
                       │                                                     │
-                      │   LFO OUT ○────────────────────────────────────────┼──▶ Filter CV [C]
+                      │   LFO OUT ○──[C]───────────────────────────────────┼──▶ Filter CV
                       └─────────────────────────────────────────────────────┘
 ```
 
