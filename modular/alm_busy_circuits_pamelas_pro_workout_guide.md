@@ -7,6 +7,9 @@
 **Power:** +12V 60mA / -12V 10mA  
 **Firmware:** 130 (March 2026)
 
+![ALM Busy Circuits Pamela's PRO Workout](https://github.com/Shadoe-42/music/raw/main/modular/images/alm_busy_circuits/pamelas_pro_workout/front_panel.jpg)  
+*8HP clock and modulation hub — 8 independently configurable outputs, Euclidean patterns, FLEX micro-timing, 4 CV inputs. Firmware 130.*
+
 ---
 
 ## Quick Reference
