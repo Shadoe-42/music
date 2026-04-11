@@ -228,7 +228,7 @@ NIN is a 3HP expander that mounts directly adjacent to Zadar and connects to the
 
 **What NIN adds:**
 
-**Manual trigger buttons (A, B, C, D):** Four tactile buttons that send a gate signal to their respective Zadar channel while held. Useful for auditioning envelope shapes during programming without needing a patched trigger source, and for live performance where manual gating is preferable to patched CV.
+**Manual trigger buttons (A, B, C, D):** Four tactile buttons that send a gate signal to their respective Zadar channel while held. Tap for a trigger; press and hold for a sustained gate. During patch building, these buttons remove the need for a patched trigger source entirely — you can audition shapes, dial in TIME and WARP, and hear how an envelope opens a filter or drives a VCA without committing to a clock or sequencer connection first. This also means REPEAT ∞ is not necessary just to hear a shape continuously — holding a NIN button achieves the same sustained result while keeping the channel in single-cycle mode.
 
 **ASGN2 inputs (A, B, C, D):** A second set of assignable CV inputs, one per channel, accepting -10V to +10V. With NIN installed, Zadar gains a fourth menu page for ASGN2 assignment — using the same 10-target system as the primary ASGN inputs. The result is up to two simultaneously CV-controlled parameters per channel, enabling modulation of both shape and duration, or warp and level, at the same time from independent sources.
 
