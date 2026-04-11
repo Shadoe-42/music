@@ -290,25 +290,41 @@ Plain text labels carry the signal type meaning without any unicode or rendering
 **Gate/Trigger signals [G]:** Timing and logic
 
 ### **Signal Labels Inline**
-Always label signal types on connections:
+Always label signal types on connections. Two formats depending on diagram style:
+
+**Linear flow format:**
 ```
-Input ---[A]---> Output     (audio signal)
-Input ---[C]---> Output     (CV signal)
-Input ---[G]---> Output     (gate/trigger)
+Source ---[A]---> Destination     (audio signal)
+Source ---[C]---> Destination     (CV signal)
+Source ---[G]---> Destination     (gate/trigger)
 ```
+
+**Box diagram format (confirmed standard for multi-module patch diagrams):**
+```
+│ Source OUT ○──┼─[A]─┼─▶ Destination IN                │
+│ Source OUT ○──┼─[C]─┼─▶ Destination CV                │
+│ Source OUT ○──┼─[G]─┼─▶ Destination Gate              │
+```
+
+For cross-box connections (output leaving a module box to an external destination):
+```
+│            Destination IN ○──[A]──▶ External In
+│            Destination CV ○──[C]──▶ External CV
+```
+
+The label sits on the connection line itself — not at the endpoint — so the signal type is readable while tracing the connection, before arriving at the destination.
 
 ### **Recommended Signal Flow Format**
 ```
 Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
-┌─VCO─────┐    ┌─Filter──┐
-│ Out ○───┼────┼─▶Audio  │ [A]
-│     ║   │    │   ║     │
-│ CV  ◀───┼────┼── CV1   │ [C]
-│     ║   │    │   ║     │
-└─────║───┘    └───║─────┘
-      ║            ║
-   [C] CV       [C] CV
+┌─ VCO ──────────┐    ┌─ Filter ────────┐
+│ Out ○──┼─[A]─┼─▶ Audio In            │
+│                │                     │
+│ CV  ◀──┼─[C]─┼── CV1                 │
+└────────────────┘                     │
+                    Audio Out ○──[A]──▶ Output
+                    └────────────────────┘
 ```
 
 ---
