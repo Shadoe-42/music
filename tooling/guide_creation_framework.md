@@ -96,28 +96,28 @@ This framework implements the interconnectedness principle from `project_philoso
 
 **Internal Signal Flow Diagrams:**
 ```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 ┌─OSCILLATORS─┐    ┌─FILTER──┐    ┌─AMPLIFIER─┐    ┌─EFFECTS─┐
 │ OSC 1    ○──┼────┼─▶Cutoff │    │          │    │         │
-│ OSC 2    ○──┼────┼─ Reso   ├────┼─▶VCA ○───┼────┼─▶Out ○──┼──🔴
+│ OSC 2    ○──┼────┼─ Reso   ├────┼─▶VCA ○───┼────┼─▶Out ○──┼──[A]
 │ Sub/Noise○──┼────┼─ Drive  │    │     ↑    │    │  ↑  ↑   │
 └─────────────┘    └─────────┘    └─────┼────┘    └──┼──┼───┘
                                         │            │  │
                    ┌─MODULATION─────────┼────────────┘  │
                    │ LFO/ENV ○──────────┘               │
-                   │ Mod Matrix ○───────────────────────┘ 🔵
+                   │ Mod Matrix ○───────────────────────┘ [C]
                    └─────────────────────────────────────────┘
 ```
 
 **Performance Control Integration:**
 ```
-🔴 Audio │ 🔵 CV │ 🟡 Gate
+Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 ┌─PERFORMANCE CONTROLS─┐    ┌─SYNTHESIZER─┐
-│ Mod Wheel     ∼──────┼────┼─▶LFO Amount │  ∼ = Real-time control 🔵
+│ Mod Wheel     ∼──────┼────┼─▶LFO Amount │  ∼ = Real-time control [C]
 │ Aftertouch    ∼──────┼────┼─▶Filter Cut │  
-│ Expression    ∼──────┼────┼─▶Reverb Mix │  Performance expression 🔵
+│ Expression    ∼──────┼────┼─▶Reverb Mix │  Performance expression [C]
 │ Sustain Pedal ∼──────┼────┼─▶Arp Hold   │
 └──────────────────────┘    └─────────────┘
 ```
@@ -305,7 +305,7 @@ If applicable, add module-specific technical specs:
 ```
 
 ### **Visual Standards:**
-- **Signal coding:** 🔴 Audio │ 🔵 CV │ 🟡 Gate
+- **Signal coding:** [A]=Audio  [C]=CV  [G]=Gate
 - **ASCII symbols:** ○ = output, ◀ = input, ── = audio, ║ = CV
 - **Module boxes:** Standard format (see `visual_communication_standards.md` for details)
 - **GitHub images:** `![Module](https://github.com/Shadoe-42/music/raw/main/modular/images/[module]/front_panel.jpg)`
