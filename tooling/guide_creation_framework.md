@@ -361,7 +361,6 @@ If applicable, add module-specific technical specs:
 1. **Complete workflow checklist** from `workflow_checklist.md` before ANY guide work
 2. **Show checklist to user** and get explicit approval
 3. **Follow efficiency standards:** 1-2 function calls maximum for most operations
-4. **Record performance** in `accountability_tracking.md`
 
 ### **Never:**
 - Bypass workflow checklist
@@ -452,7 +451,6 @@ If applicable, add module-specific technical specs:
 These refinements affect:
 - `guide_creation_workflow.md` - Update section ordering references
 - `guide_enhancement_pattern.md` - Update mistake count expectations
-- `accountability_tracking.md` - New pattern baseline for framework compliance
 - All future guide enhancements - Follow 4-5 mistake standard and prescribed section ordering
 
 ---
@@ -461,4 +459,4 @@ These refinements affect:
 
 ---
 
-*Integrates with: `workflow_checklist.md`, `accountability_tracking.md`, `quality_system.md`, `visual_communication_standards.md`, `comprehensive_interface_database.md`*
+*Integrates with: `workflow_checklist.md`, `quality_system.md`, `visual_communication_standards.md`, `comprehensive_interface_database.md`*
