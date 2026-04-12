@@ -6,7 +6,7 @@
 **Power:** +12V: 120mA / -12V: 7mA / +5V: not used  
 **CV Input Range:** -5V to +5V | **Gate Output:** 0-10V
 
-![AtoVproject lx-euclid](https://github.com/Shadoe-42/music/raw/main/modular/images/atovproject/lx-euclid/front_panel.jpg)  
+![AtoVproject lx-euclid](https://github.com/Shadoe-42/music/raw/main/modular/images/atovproject/lx_euclid/front_panel.jpg)  
 *4-channel Euclidean trigger sequencer with touch ring interface, circular display, four distribution algorithms, per-channel clock dividers, CV-assignable parameters, burst mode, and macro-mapped performance controls.*
 
 ---
