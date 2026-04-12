@@ -1,0 +1,371 @@
+# Endorphin.es Queen of Pentacles Guide
+
+**7-Voice Hybrid Drum Kit**  
+**Manufacturer:** Endorphin.es  
+**Format:** Eurorack  
+**Power:** +12V 350mA / -12V 90mA  
+**Depth:** 26.5mm (with ribbon cable)
+
+![Endorphin.es Queen of Pentacles](https://github.com/Shadoe-42/music/raw/main/modular/images/endorphines/queen_of_pentacles/front_panel.jpg)  
+*7-voice hybrid drum kit — 3 analog voices (bass drum, snare, clap) and 4 user-replaceable sample voices, with on-board 16-effect processor, master filter, individual outputs, and full CV integration.*
+
+---
+
+## Quick Reference
+
+| Spec | Value |
+|------|-------|
+| Voices | 7 total: BD, SD, CP (analog) + s1, s2, s3, s4 (sample) |
+| Power | +12V 350mA / -12V 90mA |
+| Depth | 26.5mm |
+| Trigger threshold | 0.65V |
+| Trigger input range | 0V to +5V or +10V pulses |
+| CV input range | 0–5V (accent, filter, voice CVs) |
+| Effect banks | 2 × 8 effects (Airways + Darkwaves) |
+| Sample banks | 8 (user-replaceable via micro SD card) |
+| Output level | Modular level |
+
+---
+
+## What Is a Drum Machine in Modular?
+
+A drum machine generates percussive sounds — kicks, snares, hi-hats, claps — on demand when it receives a trigger signal. In a standalone drum machine (Roland TR-808, TR-909 and their descendants), the rhythmic programming is built in and all voices mix together into a single stereo output. You set the pattern, press play, and the machine handles everything.
+
+In modular, a drum machine like the Queen of Pentacles separates those functions. The module generates the sounds, but the triggering, routing, and mixing are yours to control. Each voice has its own trigger input, so a clock module, sequencer, or any gate source can fire individual voices at whatever rhythm and density you choose. Each voice has its own output, so you can route different drums to different effects, mixers, or recording channels independently.
+
+This separation is what makes modular drum machines powerful and flexible. The sounds are generated internally, but when and how they reach your ears is entirely defined by how you patch the system around them.
+
+---
+
+## Architecture Overview
+
+Queen of Pentacles combines two fundamentally different approaches to drum sound generation in a single module.
+
+**The three analog voices** — bass drum (BD), snare drum (SD), and hand clap (CP) — are generated entirely from analog circuitry. The bass drum uses an internal triangle oscillator that can be pushed through sine and into square wave territory. The snare uses tunable noise circuits with a snappy transient character. These voices have a physical, voltage-driven quality that responds naturally to CV modulation of their parameters.
+
+**The four sample voices** — s1, s2, s3, s4 — play back audio files stored on the micro SD card. Rather than fixed factory samples, these voices load from a bank system with 8 switchable banks of 4 samples each, and the card itself is user-replaceable. The factory content was recorded by Nicolas Bougaieff (Mute, Novamute) and includes Paiste 602 cymbals processed to Eurorack level. User samples can replace the factory content entirely.
+
+The combination is intentional: the analog voices handle the core punch and body of a drum kit (kick, snare, clap) with the organic quality that analog synthesis produces naturally, while the sample voices handle tonal and textural content (hi-hats, cymbals, percussion, anything else) with the flexibility of digital playback.
+
+---
+
+## The Analog Voices
+
+### Bass Drum (BD)
+
+The bass drum is built around an internal triangle oscillator. Several parameters shape its character:
+
+- **Tune:** Sets the root pitch of the kick. The module ships calibrated to approximately 45 Hz (F note) by default.
+- **Decay:** Controls the length of the pitch envelope and the overall tail. Short decay produces a tight punch; long decay produces a booming low-end sweep.
+- **Pitch Envelope (BD Pitch):** The triangle at the top of the BD section controls the intensity of the initial pitch drop — the characteristic downward sweep at the start of an analog kick. Higher settings produce a more pronounced pitch plunge.
+- **Saturation:** Pushes the oscillator waveform from sine through to square wave, adding harmonic content and grit. This is the character control — clean sine at minimum, aggressive square at maximum.
+- **BD Tail:** Adjusts the VCA envelope decay for the tail of the kick, independently of the pitch envelope. Use this to separate the transient character from the body length.
+- **BD CV Input (0–5V):** Acts as a limiter and attenuator on the bass drum when CV is applied. At 0V, the drum is silent; at 5V, full level. Use for accent velocity or dynamic variation.
+
+### Snare Drum (SD)
+
+- **Tune:** Sets the tuning of the main body of the snare.
+- **Tail Decay (SD/CP Tail):** This control is shared between the snare and clap. It sets the decay length for the snappy transient portion of the snare and the tail of the hand clap simultaneously.
+- **Spoiler:** Adjusts the crunchiness of the noise component across the kick, snare, and clap. At low values, the noise is smooth; at high values, it becomes rougher and more textured. This is a global character control affecting all three analog voices.
+
+### Hand Clap (CP)
+
+- **Tone:** Sets the tonal character and perceived pitch of the clap — moving from a duller, lower-frequency snap toward a brighter, higher attack.
+- **Tune:** Adjusts the pitch envelope of the clap body.
+
+### Shared: SD/CP Tail
+
+The SD/CP Tail knob controls the decay length for both the snare's snappy transient and the clap's tail simultaneously. There is no independent tail control for each — adjusting this knob affects both voices at once.
+
+---
+
+## The Sample Voices (s1–s4)
+
+### Mode: Decay vs Pitch
+
+Each sample voice has two operating modes, toggled by the mode button:
+- **Blue LED — Decay mode:** The s1–s4 knobs control the playback envelope decay for each sample. Shorter decay truncates the sample; longer decay lets it ring out fully or beyond.
+- **Red LED — Pitch mode:** The s1–s4 knobs control the playback pitch for each sample. Center position plays the sample at its original pitch; turning adjusts speed and pitch up or down.
+
+### Bank Switching
+
+The sample voices load from 8 switchable banks, each containing 4 samples (one per s1–s4 voice). To switch banks, press and hold the mode button for 2 seconds. The LED color indicates the current bank. Banks cycle from 1 to 8 and back to 1.
+
+### Factory SD Content
+
+The factory micro SD card ships with 8 banks by Nicolas Bougaieff:
+
+| Bank | Name | Contents |
+|------|------|----------|
+| 1 | Golden Oldies | Closed HH, Open HH, Ride, Crash Cymbal |
+| 2 | Spiral New World | New World 1–4 |
+| 3 | Blue Neon | Blue Neon 1–4 |
+| 4 | Spirals | Spirals 1–4 |
+| 5 | Megalith | Megalith 1–4 |
+| 6 | Das Licht | Das Licht 1–4 |
+| 7 | Act of God | Act of God 1–4 |
+| 8 | Tikkun Olam | Tikkun Olam 1–4 |
+
+Bank 1 (Golden Oldies) provides the practical cymbal set most patches will use first. The remaining banks offer increasingly textural and designed content suited to electronic and experimental styles.
+
+### Voice Behavior: s1/s2 vs s3/s4
+
+- **s1 and s2** each have their own dedicated sample per bank. s1 additionally supports hi-hat pedal behavior — when a cable is inserted into the s1 trigger input while s2 is actively playing, it will choke s2 as a closed hi-hat pedal would cut off an open hi-hat.
+- **s3 and s4** share dual outputs and play back at 12-bit resolution at the original sample rate.
+
+### Replacing Samples
+
+User samples must be WAV files placed on the SD card in the correct directory structure. The micro SD card is accessible from the slot on the front panel. Firmware updates are also distributed via SD card and downloaded from airways.endorphin.es.
+
+---
+
+## Output Routing
+
+### Individual Outputs
+
+Queen of Pentacles has a dedicated output jack for every voice: BD, SD, CP, s1, s2, s3, s4. **Patching a cable into any individual output jack removes that voice from the final mixed output.** This is the primary routing mechanism — voices are either in the mix or independently routed, never both simultaneously.
+
+This behavior allows selective extraction: patch only the kick and snare to external processing while leaving hi-hats and clap in the main mix, for example. Or route every voice independently to a mixer for full per-channel control.
+
+### Final Mix Outputs
+
+When voices are not individually patched, they sum to the final mix, which is available at the left and right balanced output jacks. This is a true stereo output — certain effect types (stereo room reverb, ping-pong delay) widen the image audibly when monitoring in stereo.
+
+### AUX Input
+
+The AUX IN jack accepts an external audio signal and adds it to the final mix. This can be set to modular level or microphone level using the trim control. The AUX signal is affected by the effect processor when the effect is enabled globally.
+
+### Enable/Mute Switches
+
+Each voice has a three-position toggle switch:
+- **Left position:** The voice is active and its signal passes through the effect processor
+- **Middle position:** The voice is muted — no signal passes to the mix or individual output
+- **Right position:** The voice is active but bypassed from the effect processor — dry signal only
+
+These switches apply to the final mix outputs. They do not affect individual output jacks.
+
+---
+
+## The Effect Processor
+
+Queen of Pentacles includes an onboard effect processor with 16 effects organized into two banks of 8. Only one effect can be active at a time across the entire module.
+
+### The Three Controls
+
+**CABIN PRESSURE knob:** Sets the dry/wet balance for the effect. Fully counterclockwise is completely dry (no effect). Fully clockwise is completely wet (fully processed). The corresponding CV input accepts bipolar -5V to +5V; when a cable is inserted, the knob becomes an attenuator for the incoming CV.
+
+**CABIN FEVER knob:** Controls the primary secondary parameter for the current effect — typically reverb decay, delay feedback, or similar. A long press on the TAP button (more than 1 second) enters secondary mode, where CABIN FEVER adjusts a second parameter. The corresponding CV input accepts 0–5V.
+
+**TAP button:** Short press acts as a tap tempo clock for delay effects and a manual trigger for spring excitation. Long press (more than 1 second) enters secondary CABIN FEVER mode.
+
+### Selecting Effects
+
+Short press the **TYPE** button to cycle through effects 1–8 within the current bank. The HAL 9000 LED blinks to indicate the current effect number — green blinks for effects 1–4, red blinks for effects 5–8. One blink = effect 1 or 5; two blinks = effect 2 or 6; three = 3 or 7; four = 4 or 8.
+
+To switch between Airways and Darkwaves banks, press TYPE and TAP simultaneously. Blue LED blink indicates Airways bank; red LED blink indicates Darkwaves bank.
+
+### Per-Voice Effect Enable
+
+By default, effects apply to all voices whose toggle switch is in the left (enabled) position. A long hold of the TYPE button (1 second) enables the effect on all drum voices regardless of switch position. A second long hold returns control to the individual switches.
+
+Holding the TAP button for more than 5 seconds enters an alternative effects routing mode where specific voice groups can be selectively included or excluded from the effect processor.
+
+### Airways Bank — Ambient Effects
+
+Arranged approximately from largest spaces to smaller ones.
+
+| # | Effect | Cabin Pressure | Cabin Fever | TAP |
+|---|--------|---------------|-------------|-----|
+| 1 | Hall Reverb | Dry/wet | Reverb decay / hall size | Long hold: secondary (hi-pass filter amount) |
+| 2 | Shimmer Reverb | Dry/wet | Reverb decay | Long hold: secondary (pitch-shifter vs. reverb mix) |
+| 3 | Stereo Room Reverb | Dry/wet | Reverb decay / room size | Long hold: secondary (stereo spread) |
+| 4 | Plate Reverb | Dry/wet | Reverb decay / plate distance | Long hold: secondary (pre-delay amount) |
+| 5 | Spring Reverb | Dry/wet | Reverb decay | Short press: pluck spring. Long hold: secondary (spring excitement decay) |
+| 6 | Ping-Pong Delay | Dry/wet | Delay feedback amount | Short press: tap tempo. Long hold: secondary (clock division) |
+| 7 | Tape Echo | Dry/wet | Delay repeat rate / tape speed | Short press: tap tempo. Long hold: secondary (clock division) |
+| 8 | Chorus | Dry/wet | Feedback amount | Long hold: secondary (modulation depth) |
+
+### Darkwaves Bank — Drum Effects
+
+Arranged for percussive and rhythmic content.
+
+| # | Effect | Cabin Pressure | Cabin Fever | TAP |
+|---|--------|---------------|-------------|-----|
+| 1 | Gated Reverb | Dry/wet | Reverb decay / tail size | Long hold: secondary (noise gate threshold) |
+| 2 | Spring Reverb | Dry/wet | Reverb decay | Short press: pluck spring. Long hold: secondary (spring excitement decay) |
+| 3 | Reversed Reverb | Pre-delay / dry-wet | Reverb decay / feedback | Long hold: secondary (tail damping volume) |
+| 4 | Flanger | Delay amount | LFO rate | Long hold: secondary (feedback amount) |
+| 5 | Ring Modulator | Modulation amount | Modulator frequency / LFO rate | Long hold: secondary (feedback amount) |
+| 6 | Overdrive | Drive amount | Tone control (LF/HF) | Short press: bypass on/off |
+| 7 | Peak Compressor | Threshold (-90dB to 0dB) | Ratio (1:1 to 25:1) | Long hold: secondary (attack time, 1–100ms) |
+| 8 | Freezer/Looper | Playback speed | Granule size | Short/long press: freezing on/off |
+
+**On Gated Reverb:** A gated reverb cuts the reverb tail using a noise gate at a defined threshold, leaving the drum hit clean while still adding space. This was a defining sound of 1980s drum production — Phil Collins, Peter Gabriel, countless snare sounds. At the default 20% threshold it suits most drums without overwhelming them.
+
+**On the Compressor:** The CABIN PRESSURE knob sets the threshold from -90dB (fully counterclockwise) to 0dB (fully clockwise). CABIN FEVER sets the ratio. The compressor includes automatic makeup gain to compensate for volume reduction. The CABIN FEVER CV input is an unattenuated sidechain input.
+
+---
+
+## Master Filter and Volume
+
+### Throttle and Flaps
+
+The master filter processes the final mix before the output jacks.
+
+- **THROTTLE:** Controls the low-pass filter cutoff frequency. CV input range 0–5V. Reducing the throttle rolls off high frequencies from the entire mix — useful for automated filter sweeps over the drum bus.
+- **FLAPS:** Controls the filter resonance. CV input range 0–5V. At high resonance values, the filter begins to emphasize its cutoff frequency, adding a tonal peak to the drum mix.
+- **VCF CV IN:** Accepts 0–5V CV for direct filter cutoff control.
+- **VCA CV IN:** Accepts 0–5V CV for master amplitude control of the final mix.
+
+### Master Volume
+
+The VOLUME knob controls the final output level. The knob is unattenuated — it feeds the output directly. **Above approximately 2 o'clock, the output begins to saturate.** This saturation is intentional — it adds density and harmonic content to the drum bus. Use it as a character control, not just a level control.
+
+---
+
+## CV Integration
+
+Queen of Pentacles has extensive CV connectivity. Each voice accepts both a trigger and an accent/velocity input.
+
+### Trigger Inputs
+
+Each voice has a dedicated TRIG input jack — BD, SD, CP, s1, s2, s3, s4. The threshold is 0.65V; inputs accept 0–5V or 0–10V pulses. Any gate or trigger source can fire individual voices independently, allowing complete rhythmic independence between drum sounds.
+
+### Accent / Velocity Inputs
+
+Each voice has a dedicated velocity/accent CV input (0–5V). The accent CV functions as a VCA for that voice's level — at 0V the drum is silent, at 5V it plays at full level. In addition to amplitude, the accent CV affects other parts of the analog voices, adding organic character variation at different accent levels. This makes the accent inputs useful for more than simple on/off control — gradual CV ramps into the accent input create natural dynamic variation between hits.
+
+### Individual Voice CVs
+
+- **BD CV (0–5V):** Acts as a limiter/attenuator on the bass drum. When CV is applied, it controls the output level of the bass drum independently of the accent input.
+- **Cabin Pressure CV (-5V to +5V bipolar):** Controls effect dry/wet. Knob becomes attenuator when cable is inserted.
+- **Cabin Fever CV (0–5V):** Controls secondary effect parameter. In secondary mode, continues CV modulation from primary mode.
+
+### Clock Input
+
+When a clock signal is patched into the CLOCK IN jack, the manual trigger buttons become roll generators — pressing a button fires a continuous roll synchronized to the incoming clock tempo. Without a clock signal, the buttons function as standard manual triggers.
+
+---
+
+## Patch Examples
+
+### Patch 1: Basic Triggered Drum Kit
+
+Seven trigger sources firing the full kit into a stereo mixer. All voices remain in the final mix.
+
+```
+┌──────────────────────────────────────────────┐
+│       Queen of Pentacles                     │
+│                                              │
+│  TRIG BD ◁──[G]──────────── Clock /4 out     │
+│  TRIG SD ◁──[G]──────────── Sequencer gate   │
+│  TRIG CP ◁──[G]──────────── Sequencer gate   │
+│  TRIG s1 ◁──[G]──────────── Clock x2 out     │
+│  TRIG s2 ◁──[G]──────────── Euclidean gate   │
+│                                              │
+│   OUT L  ○──[A]──────────────▶ Mixer L in    │
+│   OUT R  ○──[A]──────────────▶ Mixer R in    │
+└──────────────────────────────────────────────┘
+```
+
+All individual output jacks left unpatched — all voices sum to L/R mix. Start here to understand the module's sound before exploring individual routing.
+
+---
+
+### Patch 2: Individual Voice Routing for Per-Channel Processing
+
+Four voices extracted individually for separate treatment; remaining voices stay in the main mix.
+
+```
+┌──────────────────────────────────────────────┐
+│       Queen of Pentacles                     │
+│                                              │
+│  TRIG BD ◁──[G]──────────── Clock /4 out     │
+│  TRIG SD ◁──[G]──────────── Sequencer gate   │
+│  TRIG s1 ◁──[G]──────────── Clock x2 out     │
+│  TRIG s2 ◁──[G]──────────── Euclidean gate   │
+│                                              │
+│   OUT BD ○──[A]──────────────▶ Compressor in │
+│   OUT SD ○──[A]──────────────▶ Reverb in     │
+│   OUT s1 ○──[A]──────────────▶ Mixer ch 3    │
+│   OUT s2 ○──[A]──────────────▶ Mixer ch 4    │
+│   OUT L  ○──[A]──────────────▶ Mixer L in    │
+│   OUT R  ○──[A]──────────────▶ Mixer R in    │
+└──────────────────────────────────────────────┘
+```
+
+BD and SD are extracted for external processing. s1 and s2 are routed to separate mixer channels. CP, s3, s4 remain in the internal mix and appear at L/R. Patching the individual outputs removes those voices from L/R automatically.
+
+---
+
+### Patch 3: Velocity Accents from Sequencer
+
+Using accent CV inputs to drive dynamic variation — softer hits on off-beats, accented hits on the downbeat.
+
+```
+┌──────────────────────────────────────────────┐
+│       Queen of Pentacles                     │
+│                                              │
+│  TRIG BD   ◁──[G]────────── Clock /4 out     │
+│  VELO BD   ◁──[C]────────── Seq accent out   │
+│  TRIG SD   ◁──[G]────────── Sequencer gate   │
+│  VELO SD   ◁──[C]────────── Seq accent out   │
+│                                              │
+│   OUT L    ○──[A]────────────▶ Mixer L in    │
+│   OUT R    ○──[A]────────────▶ Mixer R in    │
+└──────────────────────────────────────────────┘
+```
+
+The sequencer fires triggers on the TRIG inputs and simultaneously sends accent CV (0–5V) to the velocity inputs. At 5V, the drum hits full level. At lower voltages, hits are proportionally quieter. The result is a drum pattern with natural dynamic variation rather than uniform velocity on every hit.
+
+---
+
+## Common Mistakes
+
+**Patching an individual output and expecting the voice to also appear in the mix.** Inserting a cable into any individual output jack removes that voice from the final mix. This is intentional behavior — the voice is either routed individually or mixed internally, never both. If you are debugging a missing drum voice, check whether its individual output jack has a cable plugged in.
+
+**Leaving toggle switches in the middle position.** The middle position of the enable/mute switch mutes the voice entirely — it will not appear in the mix or at the individual output. If a voice seems to have disappeared, check its switch position before troubleshooting elsewhere.
+
+**Confusing Decay mode and Pitch mode for sample voices.** The s1–s4 knobs do completely different things depending on which mode is active. In blue (Decay) mode, turning a knob shortens or lengthens the sample playback envelope. In red (Pitch) mode, it shifts the playback speed and pitch. If a sample sounds wrong, check the mode LED color first.
+
+**Cycling effects without checking the bank.** TYPE cycles effects 1–8 within the current bank. If the effect sounds completely different from what was expected, verify which bank is active — Airways and Darkwaves sound nothing alike on the same effect number.
+
+**Volume saturation above 2 o'clock.** The master volume knob drives into saturation above approximately 2 o'clock. This is a feature when used deliberately as a character control, but it can be surprising if the knob is simply cranked for level. Keep it below 2 o'clock for clean output; push it past for harmonic density.
+
+**Not saving after adjusting secondary effect parameters.** Secondary CABIN FEVER parameters (hi-pass filter amount for Hall Reverb, pitch-shifter mix for Shimmer, etc.) are stored in memory after adjustment — but verify this by switching effects and returning. If parameters reset after power-off, they were not saved.
+
+---
+
+## Pairs Well With
+
+**Clock and gate sequencers** — Pamela's PRO Workout, 4ms RCD, or any module with multiple independent gate outputs is a natural companion. Each output drives a different voice trigger, with different divisions and Euclidean patterns creating rhythmic complexity without additional patching.
+
+**Envelope generators** — Zadar or any multi-channel envelope generator can be patched into the accent/velocity inputs to shape dynamic variation across the kit over time.
+
+**External mixers** — With individual outputs, Queen of Pentacles rewards connection to a mixer with per-channel EQ and send/return routing. Each voice can receive its own processing chain rather than sharing the internal effect bus.
+
+**External effects** — Routing individual outputs into dedicated reverb, delay, or saturation modules gives each voice a distinct spatial character. The kick through a different reverb than the snare is a mix staple.
+
+**VCFs and dynamics modules** — The THROTTLE and FLAPS CV inputs make the master filter a performance tool when driven from a sequencer or LFO. A slow filter sweep over the drum bus is one of the most effective arrangements in electronic music.
+
+**Ground Control (Endorphin.es)** — The Ground Control sequencer integrates directly with Queen of Pentacles, providing per-step accent values, pattern programming, and clock sync in a workflow designed around this module family.
+
+---
+
+## Advanced Learning Path
+
+**Per-voice EQ and dynamics** — Once individual outputs are in use, explore what dedicated compression on the kick and dedicated reverb on the snare does to the overall mix character. These are standard studio techniques applied in modular context.
+
+**Gated reverb on snare** — The Darkwaves Gated Reverb was designed specifically for this application. Patch the snare individually, return it to the mix through the internal effect, and adjust the noise gate threshold. This is one of the defining sounds of recorded drum production.
+
+**Accent CV as expression** — Use a slow random or stepped CV source patched into accent inputs to give the drum kit natural dynamic variation that evolves over time. The result sounds like a drummer who breathes rather than a machine that doesn't.
+
+**Sample replacement** — Record custom samples at 44.1kHz or 48kHz in WAV format and load them onto the SD card. The sample voice architecture becomes a completely different instrument when the factory content is replaced with field recordings, processed hardware samples, or purpose-designed percussion.
+
+**Effect automation via CV** — Patch a sequenced CV into the Cabin Pressure input to automate dry/wet over the course of a pattern. A gated reverb that only opens on certain steps creates rhythmic space that functions as an arrangement element rather than a static effect.
+
+**Bank performance switching** — Build 8 complete rhythmic configurations using different sample banks and practice switching between them while the clock runs. Banks 1 through 8 have distinct sonic identities — moving between them mid-performance is a structural tool.
+
+---
+
+*Guide reflects Queen of Pentacles manual © 2010–2021 Endorphin.es. Factory soundbank by Nicolas Bougaieff. Paiste 602 cymbals recorded by Endorphin.es and processed by Nicolas Bougaieff.*
