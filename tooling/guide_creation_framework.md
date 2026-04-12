@@ -188,6 +188,29 @@ Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 **Pattern Discovery Note:** This ordering emerged from Erica Synths Pico DRUM2 enhancement (November 2025), where placing Common Mistakes before Patch Examples created tonal dissonance (excitement → caution), while moving it after patches created natural flow (vision → practice → learning from experience → growth). This sequence now applies to all guides.
 
+### **Non-Negotiable Anchor Sections**
+
+The following sections must appear in every guide regardless of module complexity. Technical depth increases the content between anchors; it never removes the anchors themselves.
+
+A guide that documents every jack and parameter on a complex module but omits these sections is a reference manual, not a teaching guide. The pedagogical obligation requires all six anchors.
+
+**Required anchors, in sequence:**
+
+1. **Key Specifications** -- near the top, within Quick Start or Quick Reference
+2. **Why This Instrument Excels** -- immediately before Patch Examples
+3. **Patch Examples**
+4. **Common Mistakes** (4-5 core mistakes) -- immediately after Patch Examples
+5. **Pairs Well With**
+6. **Advanced Learning Path**
+
+**"Why This Excels" must precede patches.** Placing it after patches (as seen in some older guides) inverts the pedagogical sequence. The correct order is: orient the user toward the instrument's design intent, then have them practice. Not the other way around.
+
+**On "Quick Start" vs. "Quick Reference":** A 5-minute first-sound Quick Start works well for simple and single-voice modules. Complex multi-voice instruments (multi-voice drum synthesizers, multi-output clocks) may substitute a "Quick Reference" table instead. Both serve the same orienting function. Key Specifications must appear in whichever format is used.
+
+**Architectural complexity adds sections between anchors. It does not remove anchors.** Clock modules need a Navigation Model section. Multi-voice drums need Architecture Overview and per-voice parameters. Euclidean sequencers need algorithm tables and interface documentation. All of this interior content belongs between Key Specifications and "Why This Excels." The anchors before and after that interior are fixed.
+
+---
+
 ### **Key Specifications Placement (Critical for Evaluation)**
 
 **Location:** Within Quick Start section, immediately after "What is [Module]?" description, before "Your First [Experience]"

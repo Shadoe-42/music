@@ -183,7 +183,7 @@ Safe to include without verification:
 - [ ] **Required sections** - Complete per module classification
 - [ ] **Interface accuracy** - Jack names verified against official manuals
 - [ ] **Language standards** - Circuit-based descriptions, exact manufacturer terminology
-- [ ] **Visual standards** - Signal coding (🔴 Audio │ 🔵 CV │ 🟡 Gate), ASCII symbols
+- [ ] **Visual standards** - Signal coding ([A]=Audio [C]=CV [G]=Gate), ASCII symbols
 - [ ] **Educational progression** - Clear learning objectives and milestones
 - [ ] **Cross-references** - Links to other guides functional
 - [ ] **Historical context** - Included when educationally valuable, properly integrated
@@ -288,7 +288,7 @@ Record in `accountability_tracking.md`:
 
 **Presentation:**
 - [ ] GitHub images integrated properly
-- [ ] Signal coding used (🔴 Audio │ 🔵 CV │ 🟡 Gate)
+- [ ] Signal coding used ([A]=Audio [C]=CV [G]=Gate)
 - [ ] ASCII symbols consistent
 - [ ] Terminology "Advanced" not "Phase 2"
 - [ ] Cross-references functional

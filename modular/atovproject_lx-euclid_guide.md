@@ -3,7 +3,7 @@
 **4-Channel Euclidean Trigger Sequencer**  
 **Manufacturer:** AtoVproject  
 **Format:** Eurorack  
-**Power:** +12V: 120mA / -12V: 7mA / +5V: not used  
+**Width:** 16HP | **Power:** +12V: 120mA / -12V: 7mA / +5V: not used  
 **CV Input Range:** -5V to +5V | **Gate Output:** 0-10V
 
 ![AtoVproject lx-euclid](https://github.com/Shadoe-42/music/raw/main/modular/images/atovproject/lx_euclid/front_panel.jpg)  
@@ -189,6 +189,22 @@ The lx-euclid stores 8 preset slots. Each preset captures the following per-chan
 
 ---
 
+## Why the lx-euclid Excels
+
+The lx-euclid does something unusual: it takes a mathematically rigorous concept (Euclidean rhythm distribution) and makes it tactile and immediate through an interface that most modules do not attempt.
+
+**The touch ring interface changes what rhythm editing feels like.** Step sequencers require iterating through buttons. The lx-euclid lets you set a length by running a finger around the outer ring once, set beats by running a finger around the inner ring once, and land on a working pattern immediately. For musicians who think in terms of groove and density rather than numbered steps, this is not a cosmetic difference; it is a fundamentally different relationship with the sequencer. Editing happens in seconds by feel rather than in seconds by counting.
+
+**Four algorithms, not one.** Most Euclidean sequencers offer one distribution: the Linear algorithm, which spreads beats as evenly as mathematics allows. The lx-euclid offers three additional algorithms that alter where beats cluster while keeping the total beat count identical. Exponential accumulates beats at the beginning of the pattern. Inverse Exponential accumulates them at the end. Symmetric alternates between the two halves. The same "three beats in eight steps" produces four rhythmically distinct patterns across the four algorithms. This turns the algorithm parameter into a groove character control, not just a mathematical property.
+
+**Burst mode as phase-locked clock multiplication.** Standard burst modes in other modules fire a set number of triggers and stop. The lx-euclid's Burst mode runs the affected channel at a multiplied clock rate -- 2x, 3x, 4x, 6x, or 8x -- until the accelerated rhythm and the original rhythm complete a full cycle and align on the same step simultaneously. The burst ends at a musically coherent point, not at an arbitrary trigger count. This phase-locking behavior means that Burst adds energy and acceleration to a rhythm without ever introducing timing chaos.
+
+**The Macro system scales live performance.** Touch gestures on the outer ring during performance map to per-channel Fill, Mute, Reset, and Burst simultaneously based on which compass position you touch. Four channels can be controlled with a single ring gesture. Combined with preset recall tied to internal or external reset, the lx-euclid supports live set structures where full rhythm changes happen at phrase boundaries without requiring manual parameter editing during performance.
+
+**Probability as an organic variation tool.** Setting a channel to less than 100% probability does not randomly drop beats in an unpatterned way. Because the beat positions are Euclidean, the remaining beats when some drop out still tend to fall in musically coherent positions. The randomness adds variation without completely destroying the rhythmic feel. Combined with touch sensitivity (which introduces micro-variations), the lx-euclid can generate patterns that resist the machine-rigid quality of strictly deterministic sequencers.
+
+---
+
 ## Patch Examples
 
 ### Patch 1: Four-Channel Drum Pattern with Independent Subdivisions
@@ -255,6 +271,25 @@ During performance: build tension by muting CH1 (kick) with a ring touch, fill C
 
 ---
 
+## Common Mistakes
+
+**1. Not connecting an external clock and expecting the module to sequence.**
+The lx-euclid requires a clock signal to advance its channels. In external clock mode, nothing moves until a signal is patched into the Clock jack. In internal mode, the module generates its own clock, but this mode must be selected in Config. Many users patch outputs but forget the clock input entirely. If no pattern is advancing, check clock mode and clock presence before anything else.
+
+**2. Confusing inner and outer ring functions on the two edit pages.**
+Edit page 1 and edit page 2 assign the rings differently, and new users frequently work on the wrong page. On page 1: the outer ring sets the pattern length (number of steps) and the inner ring sets the number of beats. On page 2: the outer ring sets probability and the inner ring sets rotation (phase offset). Getting rotation when you want beats -- or length when you want probability -- means you are on the wrong page. Long-press the channel button to switch pages; the display shows which page is active.
+
+**3. Missing the two-page edit system entirely and editing only page 1.**
+Some users discover that the outer ring changes length and the inner ring changes beats, and stop there. The probability and rotation controls on page 2 are not prominently labeled on the panel and the manual buries them in the interface description. Page 2 is where much of the lx-euclid's variation capability lives: rotation shifts the phase of the pattern without changing its density, and probability introduces the organic variation that distinguishes lx-euclid patterns from strictly deterministic output. A guide that only uses page 1 is using half the module.
+
+**4. Treating all four algorithms as minor variations of the same sound.**
+Linear Euclidean is the algorithm most people discover first, and it sounds good immediately. The other three (Exponential, Inverse Exponential, Symmetric) sound clearly different and alter the groove character of the same beat and length values in ways that feel like different rhythmic traditions. If you have been running Linear exclusively, spend a session setting identical Beat and Length values across all four channels with one algorithm per channel. The contrast is substantial and immediately musical.
+
+**5. Setting Burst without understanding when it ends.**
+Burst mode does not end after a fixed number of triggers. It ends when the accelerated version of the pattern and the original pattern complete a full cycle and realign on the same beat. For some Burst division and pattern length combinations, this means Burst runs for several bars before ending. If your Burst seems to go on far longer than expected, this is the phase-locking logic working as designed. To keep Bursts short, choose Burst divisions that divide cleanly into your pattern length.
+
+---
+
 ## Pairs Well With
 
 **Clock sources with PPQN output:** The Pamela's PRO Workout (explicitly referenced in the lx-euclid manual) outputs 24 PPQN, which pairs directly with the per-channel clock dividers. Set the lx-euclid's channel dividers to /6 for 16th notes, /3 for 32nd notes, or /12 for 8th notes from the same master clock.
@@ -264,3 +299,19 @@ During performance: build tension by muting CH1 (kick) with a ring touch, fill C
 **Drum voices with individual trigger inputs:** The lx-euclid outputs 10V gates, which are compatible with virtually all Eurorack drum modules. The BLCK_NOIR and Queen of Pentacles both accept the lx-euclid's outputs directly. With four channels covering kick, snare, hi-hat, and metallic voices, the lx-euclid covers the complete rhythmic structure of either drum module.
 
 **Matrix mixers and attenuverters:** When using CV to modulate multiple channels simultaneously, a matrix mixer (the AtoVproject MMx2, also in the manual's patch ideas) lets you route one CV source to multiple destinations at different amounts. An attenuverter before any CV input lets you scale -5V to +5V sources into the positive-only ranges that parameters like Length and Beats respond to most musically.
+
+---
+
+## Advanced Learning Path
+
+**Master one channel before expanding to four.** Set up a single Euclidean pattern on CH1 with an external clock, a drum module, and nothing else. Work through: length variations from 8 to 32 steps, beat density from 1 to length-1, all four algorithms at the same beat/length settings, rotation offsets on page 2, and probability below 100%. Understand each parameter's effect in isolation before combining them across channels. This single-channel study will be the most educational session you spend with the module.
+
+**Build a four-algorithm comparison patch.** Set all four channels to identical beat and length values (try 3 beats in 8 steps), then assign one algorithm per channel. Route all four to different drum voices. Listen to how the same mathematical distribution produces four rhythmically distinct grooves. This comparison makes the algorithm parameter's musical function viscerally clear in a way that no description can match.
+
+**Study Euclidean rhythm theory alongside the module.** Godfried Toussaint's 2004 paper "The Euclidean Algorithm Generates Traditional Musical Rhythms" is freely available and readable without a mathematics background. Understanding why the algorithm produces the patterns it does -- and why those patterns correspond to musical traditions around the world -- deepens the intentionality of every patch decision. The lx-euclid is not just a sequencer; it is an implementation of a specific theory of what makes rhythm feel natural.
+
+**Build the Macro system before a live performance.** Map compass positions to the actions you need: typically North for fill on all channels, South for mute on all channels, East/West for channel-specific burst or reset. Rehearse the gestures until they are reflexive. The Macro system has the most performance value when it is muscle memory, not a feature you are consciously recalling during a set.
+
+**Combine with preset recall for live set structure.** Store eight distinct groove variations (different algorithms, densities, or lengths per channel) in the eight preset slots. Configure preset recall to trigger on phrase boundaries using an external reset signal. This creates a live sequencing architecture where groove changes happen at musically coherent points -- the end of a 32-step phrase, the beginning of a new section -- driven by the music itself rather than manual preset recall.
+
+**Cross-reference with the Pamela's PRO Workout guide.** The manual explicitly uses Pamela's as the reference clock source. Reading the PRO Workout guide alongside this one explains the 24 PPQN clock division relationship in depth and gives additional context for how clock multiplication and division interact across both modules simultaneously. The two together form a strong rhythmic foundation for systems of any complexity.

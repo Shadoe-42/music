@@ -192,6 +192,22 @@ The processor hosts 16 effects in two banks of 8. The default bank is DARKWAVES,
 
 ---
 
+## Why the BLCK_NOIR Excels
+
+The BLCK_NOIR occupies a specific position in the eurorack drum landscape: fully analog voice generation, 7 voices in 30HP, with deliberate frequency spectrum engineering and a global noise architecture that most drum modules do not attempt.
+
+**Inductor-coil circuit design.** Standard analog drum circuits use op-amps throughout. The BLCK_NOIR uses inductor coils in the signal paths for the noise-based voices. Inductors store energy and release it differently than resistor-capacitor circuits, producing a denser transient character associated with vintage drum machines (specifically the CR-78 era of Roland hardware). This is not a sample of that sound; it is the same electrical behavior reproduced in circuit form. There is no software approximation involved.
+
+**Frequency spectrum design across voices.** The five channels are tuned to complement each other: bass drum in the 40-100 Hz range, snare in the 100-380 Hz range plus harmonics, tambourine at approximately 5 kHz, hi-hats at approximately 8 kHz, metallic beat and cymbal at approximately 9 kHz. A kit running all voices together does not require additional EQ to avoid masking because the designers built spectral separation into the voice architecture itself. That separation is why even minimal BLCK_NOIR patches sound clear and usable immediately.
+
+**THRUST and SPOILER as global noise color control.** Most drum synthesizers treat noise as a fixed ingredient. The BLCK_NOIR exposes the noise character architecture directly: THRUST shapes the white noise component across all six noise-based voices simultaneously, and SPOILER shapes the metallic noise component. Moving both knobs changes the tonal character of the entire kit in a single gesture. This is particularly useful with CV modulation: a single envelope routed to THRUST will animate the attack character of every noise-based voice together, creating a cohesive kit response to musical dynamics.
+
+**Shared Cabin Pressure with the Queen of Pentacles.** The effect processor is identical to the one in the Endorphin.es Queen of Pentacles. Users who add a Queen of Pentacles to their system inherit the same effect knowledge immediately. The effect applies to the entire kit from a single set of controls, which encourages thinking about the kit as a sound rather than a collection of individual sounds.
+
+**CLOCK IN ** dual function.** The CLOCK IN input does two different jobs depending on whether a sequencer clock is patched into it. With clock: manual launch buttons become fill/roll triggers that fire at clock divisions, and the output becomes a sample-and-hold CV source. Without clock: the buttons become preview and mute controls. A single jack delivers two entirely different performance tools depending on patch configuration. This is the kind of context-sensitive design that characterizes the module's overall approach.
+
+---
+
 ## Patch Examples
 
 ### Patch 1: Basic Beat with Velocity Dynamics
@@ -260,6 +276,25 @@ With a clock in CLOCK IN **, hold the SD drum launch button during a fill sectio
 
 ---
 
+## Common Mistakes
+
+**1. Patching triggers without a clock and expecting velocity dynamics.**
+The VELOCITY inputs are sample-and-hold: they capture whatever CV is present at the moment a trigger arrives. With no clock in CLOCK IN **, the S&H output is static. With no external CV at the VELOCITY inputs, each voice fires at maximum volume. If all your drums hit at the same level, check that velocity sources are actually changing value and that the hold circuit is seeing those changes before the trigger arrives.
+
+**2. Turning FLAPS past noon without watching the output level.**
+FLAPS is resonance on the THROTTLE filter. Above about 2-3 o'clock, the filter approaches self-oscillation and can produce a loud high-frequency tone that exceeds eurorack levels. This is not a gentle rolloff situation; it crosses into damaging territory for monitors quickly. Set FLAPS slowly and watch your output metering. The manual explicitly warns about this.
+
+**3. Patching an individual output and expecting to still hear that voice in the main mix.**
+Plugging anything into an individual voice output (BD OUT, SD OUT, etc.) disconnects that voice from the main L/R and individual channel mix outputs. The behavior is intentional, identical to the Queen of Pentacles architecture, and completely silent until you understand it. If a voice disappears from your mix after patching its individual output, nothing is broken: route the individual output to your mixer or effect and bring it back that way.
+
+**4. Leaving THRUST and SPOILER at noon and never exploring the noise architecture.**
+Noon on both knobs is the balanced default, not the musically optimal position. The BLCK_NOIR's character lives in THRUST and SPOILER interaction. CCW on THRUST produces whiter, brighter noise; CW on SPOILER adds metallic edge. A full session exploring both knobs across the full range while listening to how the kit changes will reveal the actual design space of the module. Most users who describe the BLCK_NOIR as "not quite what they expected" have never moved these knobs significantly.
+
+**5. Using CLOCK IN ** as a reset input.**
+The CLOCK IN ** jack does not reset the sequencer or the module's internal state. It is a clock reference used for two things: setting the speed at which fill/roll buttons fire their triggers, and clocking the sample-and-hold output. Sending a reset pulse into it will be interpreted as a clock pulse, which may fire fills unexpectedly. Keep clock and reset functions on separate jacks; route your actual master clock here and your reset signals elsewhere.
+
+---
+
 ## Pairs Well With
 
 **Sequencers and pattern generators:** The BLCK_NOIR needs an external trigger source. Anything that outputs gates on multiple channels works: Winter Modular Eloquencer (the manual uses it in examples), Endorphin.es Shuttle Control (MIDI-to-CV/gate), or simpler options like the ALM Busy Circuits Pamela's PRO Workout for clock-derived rhythmic gates.
@@ -269,3 +304,19 @@ With a clock in CLOCK IN **, hold the SD drum launch button during a fill sectio
 **Attenuverters and offset modules:** THRUST and SPOILER CV inputs accept 0...+5V. If your modulation sources output bipolar signals (+/-5V), an attenuverter lets you shift and scale the range before it reaches THRUST or SPOILER. This expands what you can use as a modulation source without accidentally sweeping the parameter into extremes.
 
 **External effects and mixers:** The individual outputs are post-fader and ready for external processing. A dedicated reverb on the snare, a compressor on the kick, or a separate delay on the hi-hats all become straightforward routing decisions once the individual outputs are understood.
+
+---
+
+## Advanced Learning Path
+
+**Understand the noise architecture first.** Before pursuing complex patches, spend time with THRUST and SPOILER in isolation. Run only the hi-hats (CH/OH), remove all other triggers, and sweep both knobs across their full range while listening. Then do the same with just the snare. You are learning what "white noise dominant" and "metallic noise dominant" actually sound like on each voice. That understanding makes every subsequent patch decision more intentional.
+
+**Learn the frequency spectrum by tuning each voice independently.** The TUNE controls on bass drum and snare affect pitch in ways that interact with the spectral design of the full kit. Finding the tuning range where each voice sits clearly in its intended band -- without bleeding into adjacent voices -- develops an ear for the module's design logic. This is also where the "physicality responds to tuning" character of inductor circuits becomes apparent versus sample playback.
+
+**Build the Cabin Pressure vocabulary systematically.** The eight DARKWAVES effects and eight AIRWAYS effects each have distinct musical contexts. Rather than discovering them at random, work through them one session at a time: one effect at minimum, maximum, and medium CABIN PRESSURE on your working kit patch. Take notes on what CABIN FEVER adds to each one. By the end of sixteen sessions you will know which effects suit which musical situations rather than reaching for whatever sounds interesting.
+
+**Introduce CLOCK IN ** as a performance tool.** Once the basic kit is stable, patch your sequencer clock into CLOCK IN **. Learn the exact behavior of each launch button with clock present: short press (fill at clock division), sustained hold (roll until released). Combine this with the S&H CV output: patch it to THRUST CV and watch how the THRUST parameter captures a new CV value with each fill trigger, then holds it until the next trigger arrives. This creates animated noise character during fills that returns to steady state between them.
+
+**Route individual outputs through different effects chains.** Patch the BD OUT into a dedicated compressor. Patch the SD OUT into a separate reverb than the Cabin Pressure is providing. Listen to the difference between per-voice processing and the shared Cabin Pressure processor. The creative tension between individual control and global cohesion is where the BLCK_NOIR's system design becomes visible.
+
+**Study alongside the Endorphin.es Queen of Pentacles documentation.** The two modules share architecture deliberately. Reading the Queen of Pentacles guide reveals additional perspective on why the Cabin Pressure processor is designed as it is, and gives context for the shared individual-output behavior. The vocabulary transfers directly.
