@@ -283,7 +283,7 @@ Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 **Label format:** `[A]` = Audio, `[C]` = CV, `[G]` = Gate
 
-Plain text labels carry the signal type meaning without any unicode or rendering dependency. This ensures diagrams remain readable in any environment — terminal, text editor, plain text viewer, or future systems.
+Plain text labels carry the signal type meaning without any unicode or rendering dependency. This ensures diagrams remain readable in any environment; terminal, text editor, plain text viewer, or future systems.
 
 **Audio signals [A]:** Primary signal path
 **CV signals [C]:** Control voltage
@@ -312,7 +312,7 @@ For cross-box connections (output leaving a module box to an external destinatio
 │            Destination CV ○──[C]──▶ External CV
 ```
 
-The label sits on the connection line itself — not at the endpoint — so the signal type is readable while tracing the connection, before arriving at the destination.
+The label sits on the connection line itself; not at the endpoint; so the signal type is readable while tracing the connection, before arriving at the destination.
 
 ### **Recommended Signal Flow Format**
 ```

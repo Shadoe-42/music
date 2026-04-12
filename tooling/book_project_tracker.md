@@ -269,7 +269,7 @@ This dual approach teaches:
 - Editing/revision: Unknown hours
 - **Total: 170+ hours minimum**
 
-**Philosophy:** This is continuation of work already committed to, just in different form. The teaching happens regardless—book is another transmission vector.
+**Philosophy:** This is continuation of work already committed to, just in different form. The teaching happens regardless; book is another transmission vector.
 
 ---
 
@@ -331,7 +331,7 @@ This dual approach teaches:
 "The work we are doing may never end, why not add one more thing to the list? Having the ability to teach across more formats... seems valuable and a worthwhile effort."
 
 **Motivation:**
-Not recognition or profit—ensuring knowledge compounds correctly across generations. Book is just another transmission vector for reaching learners where they are.
+Not recognition or profit; ensuring knowledge compounds correctly across generations. Book is just another transmission vector for reaching learners where they are.
 
 ---
 

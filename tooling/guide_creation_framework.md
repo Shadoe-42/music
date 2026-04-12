@@ -229,7 +229,7 @@ If applicable, add module-specific technical specs:
 - **Power:** 28 mA @ +12V / 5 mA @ -12V / 0 mA @ +5V
 ```
 
-**Compliance Requirement:** Every guide must include Key Specifications in Quick Start. This is non-negotiable—users cannot evaluate module fit without this information.
+**Compliance Requirement:** Every guide must include Key Specifications in Quick Start. This is non-negotiable; users cannot evaluate module fit without this information.
 
 ### **"Existing Gear Integration" Section Guidelines:
 **Include this section when:**

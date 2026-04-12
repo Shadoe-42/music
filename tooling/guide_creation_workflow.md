@@ -27,7 +27,7 @@
 
 ### What Guides Must Accomplish
 
-Guides teach **understanding and interconnection**, not procedures. This is not manufacturer documentation—it's knowledge transmission designed for generational learning.
+Guides teach **understanding and interconnection**, not procedures. This is not manufacturer documentation; it's knowledge transmission designed for generational learning.
 
 **The core distinction:**
 - **NOT:** "How to press buttons" (procedural)
@@ -50,7 +50,7 @@ Guides teach **understanding and interconnection**, not procedures. This is not 
 | **Mise en Place** | Professional discipline: prep before service gets chaotic. Applied to knowledge work: complete steps before execution. | System integrity depends on process adherence. |
 | **Interconnection** | Everything relates to everything. Guides show HOW. | Teaching understanding (not procedures) reveals connections that persist across tech changes. |
 | **Enhanced Format** | Guides go beyond "how to use" to "why it works and what connections exist." | Transforms procedural documentation into deep understanding. |
-| **Verification/Flagging** | Technical claims are verified against official docs or marked with ⚠️ if uncertain. | Wrong specs multiply across generations—accuracy is non-negotiable. |
+| **Verification/Flagging** | Technical claims are verified against official docs or marked with ⚠️ if uncertain. | Wrong specs multiply across generations; accuracy is non-negotiable. |
 | **Holistic vs. Tactical** | Holistic: maintain system integrity for ALL future work. Tactical: complete this task efficiently. | Choose holistic thinking. Shortcuts degrade the entire system. |
 
 ### Module Classifications (Choose One)
@@ -463,7 +463,7 @@ Are there modules with fundamentally different approaches?
 5. Commit and record (document what changed and why)
 
 **Key Principle:**
-Never skip the workflow checklist. It's your mise en place—it maintains system integrity across all work. Process adherence teaches correct patterns to Future Claude.
+Never skip the workflow checklist. It's your mise en place; it maintains system integrity across all work. Process adherence teaches correct patterns to Future Claude.
 
 ---
 

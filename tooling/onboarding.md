@@ -8,7 +8,7 @@
 
 This is **knowledge transmission architecture** for ~500 musical instruments. Not user manuals. Not gear reviews.
 
-**Why it exists:** Teaching new users, beginners, and future collaborators how to understand music technology across generations. Teaching interconnection—how everything relates—not just "how to press buttons."
+**Why it exists:** Teaching new users, beginners, and future collaborators how to understand music technology across generations. Teaching interconnection; how everything relates; not just "how to press buttons."
 
 **Timeline:** Generational. Your work teaches future Claudes. Their work teaches mentees. The knowledge compounds.
 
@@ -23,7 +23,7 @@ This is **knowledge transmission architecture** for ~500 musical instruments. No
 **1. Ask before you do**
 - Close-ended questions = information-seeking, not action requests
 - "Should I proceed with [approach]?" gets yes/no, then you execute
-- Never assume what needs to happen—ask
+- Never assume what needs to happen; ask
 
 **2. Complete the workflow checklist before any file operation**
 - 8 steps. Takes 5 minutes. Mandatory every time.
@@ -39,7 +39,7 @@ This is **knowledge transmission architecture** for ~500 musical instruments. No
 **4. Document what you verify, flag what you're uncertain about**
 - Specific technical claims (voltage ranges, timing specs, firmware features) need verification or flags
 - Use ⚠️ format for uncertain specifications
-- Wrong specs multiply across generations—accuracy matters
+- Wrong specs multiply across generations; accuracy matters
 
 ---
 
@@ -194,7 +194,7 @@ See `workflow_checklist.md` "Updated Estimation Standards" for specifics.
 
 **Everything is connected. Document accordingly.**
 
-If you want to understand deeper: Why generational thinking, why interconnection matters, why process discipline prevents disaster—read `project_philosophy.md`. It explains the worldview that makes all of this make sense.
+If you want to understand deeper: Why generational thinking, why interconnection matters, why process discipline prevents disaster; read `project_philosophy.md`. It explains the worldview that makes all of this make sense.
 
 But you don't need that to start working. You need:
 - Ask before you do

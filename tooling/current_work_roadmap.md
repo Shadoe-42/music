@@ -109,7 +109,7 @@ Column structure:
 ### Theory & Problem-Solving Directories
 - [ ] Keep in planning stage (not core to mission, but valuable context)
 - [ ] These are "work in progress" by design
-- [ ] Don't force completion—let them evolve with user need
+- [ ] Don't force completion; let them evolve with user need
 
 ---
 
@@ -227,14 +227,14 @@ Column structure:
 
 ---
 
-## Framework Issues — Active
+## Framework Issues: Active
 
-### Signal Type Emoji — Portability Conflict
+### Signal Type Emoji: Portability Conflict
 
 **Identified:** April 2026
-**Priority:** HIGH — affects every guide in the project
+**Priority:** HIGH; affects every guide in the project
 
-The visual_communication_standards.md uses emoji color coding (🔴 Audio, 🔵 CV, 🟡 Gate) as the core signal differentiation system. This directly conflicts with the project's stated portability and durability principle. Emoji rendering depends on unicode support in the viewing environment. A file opened in a terminal, plain text editor, or future system without proper unicode rendering will display question marks or boxes instead of colored circles. The framework's own opening states diagrams must work in 2075 — emoji-dependent diagrams do not meet that standard.
+The visual_communication_standards.md uses emoji color coding (🔴 Audio, 🔵 CV, 🟡 Gate) as the core signal differentiation system. This directly conflicts with the project's stated portability and durability principle. Emoji rendering depends on unicode support in the viewing environment. A file opened in a terminal, plain text editor, or future system without proper unicode rendering will display question marks or boxes instead of colored circles. The framework's own opening states diagrams must work in 2075; emoji-dependent diagrams do not meet that standard.
 
 **Resolution:** Replace emoji legend and inline emoji with plain text signal type labels.
 
@@ -298,7 +298,7 @@ Seq OUT ---[G]---> VCA Gate
 
 **Process Discipline:**
 - Granular commits are strategic (token management, preventing session overwrites)
-- Not excessive—this is smart operational practice
+- Not excessive; this is smart operational practice
 - Continue as-is
 
 ---
@@ -313,7 +313,7 @@ Seq OUT ---[G]---> VCA Gate
 
 ---
 
-## Teaching Rack — Separate System
+## Teaching Rack: Separate System
 
 **Updated:** April 2026
 
@@ -329,7 +329,7 @@ The following modules have guides but do NOT appear in the main rack CSV (mg_dat
 
 ---
 
-## Module Gap Analysis — Main Rack
+## Module Gap Analysis: Main Rack
 
 **Updated:** April 2026
 **Source:** Modular Grid export mg_data_sheet_rack3069924.csv (February 2026, ~95% accurate)
@@ -337,20 +337,20 @@ The following modules have guides but do NOT appear in the main rack CSV (mg_dat
 **Guides existing:** ~58 (including teaching rack guides above)
 **Guides needed:** ~60+ modules
 
-### Expanders — Covered by Parent Guides (No Separate Guide Needed)
-- Instruō arbhar USB Expander — covered by arbhar guide
-- Instruō arbhar expander — covered by arbhar guide
-- Winterbloom Castor & Pollux II expander — covered by C&P II guide
-- Xaoc Devices Nin — covered by Zadar guide (when created)
-- Xaoc Devices Poti II — covered by Batumi II guide (when created)
-- 4ms RCD Breakout v1.1 — covered by RCD V2 guide
-- 4ms MetaModule Wi-Fi Expander — covered by MetaModule guide
-- 4ms MetaAIO — covered by MetaModule guide
-- 4ms MetaButtons — covered by MetaModule guide
-- Music Thing Modular Volts — covered by Turing Machine ecosystem guide
-- Music Thing Modular Pulses Mk II — covered by Turing Machine ecosystem guide
-- WORNG Electronics Turing Machine LPG Expander — covered by Turing Machine ecosystem guide
-- Xaoc Devices Zadar Nin expander — covered by Zadar guide (when created)
+### Expanders: Covered by Parent Guides (No Separate Guide Needed)
+- Instruō arbhar USB Expander; covered by arbhar guide
+- Instruō arbhar expander; covered by arbhar guide
+- Winterbloom Castor & Pollux II expander; covered by C&P II guide
+- Xaoc Devices Nin; covered by Zadar guide (when created)
+- Xaoc Devices Poti II; covered by Batumi II guide (when created)
+- 4ms RCD Breakout v1.1; covered by RCD V2 guide
+- 4ms MetaModule Wi-Fi Expander; covered by MetaModule guide
+- 4ms MetaAIO; covered by MetaModule guide
+- 4ms MetaButtons; covered by MetaModule guide
+- Music Thing Modular Volts; covered by Turing Machine ecosystem guide
+- Music Thing Modular Pulses Mk II; covered by Turing Machine ecosystem guide
+- WORNG Electronics Turing Machine LPG Expander; covered by Turing Machine ecosystem guide
+- Xaoc Devices Zadar Nin expander; covered by Zadar guide (when created)
 
 ### Blank Panels & Passive Utilities (No Guide Needed)
 - Other/unknown Attenuate! Blank Panel 6HP
@@ -359,63 +359,63 @@ The following modules have guides but do NOT appear in the main rack CSV (mg_dat
 - Intellijel Buff Mult
 - Intellijel Mult
 
-### Guides Needed — Prioritized
+### Guides Needed: Prioritized
 
 **Tier 1: High Impact / Complex Modules**
-- Endorphin.es Queen of Pentacles — 909-inspired analog drum voice
-- Endorphin.es Blck_Noir — CR-78 inspired digital drum voice
-- Endorphin.es Furthrrrr Generator — dual oscillator, complex voice
-- Endorphin.es Grand Terminal — complex filter/effects
-- Endorphin.es NEW GODSPEED — (assess scope)
-- Endorphin.es Cockpit 2 — performance mixer/controller
-- Xaoc Devices Belgrad — state variable multimode filter
-- Xaoc Devices Batumi II — quad LFO (include Poti II expander)
-- Xaoc Devices Zadar — complex envelope generator (include Nin expander)
-- Noise Engineering Basimilus Iteritas Alter — percussion oscillator
-- Noise Engineering Manis Iteritas Alia — distorted voice
-- Noise Engineering Pons Asinorum — (assess scope)
-- Befaco Oneiroi — complex oscillator/effects
-- Gamechanger Audio PLASMA Voice — ionized gas oscillator
-- Qu-Bit Aurora — reverb/spectral processor
-- Qu-Bit Prism — multiband processor
-- Qu-Bit Mojave — granular oscillator
-- Qu-Bit Stardust — sample player
-- Qu-Bit Nautilus — delay/looper
-- Qu-Bit Chord v2 — polyphonic oscillator
-- Instruō Selam — complex oscillator (Tesseract Modular)
-- dsp.coffee YYS — (assess scope)
-- dsp.coffee 22 Deaf Chinchillas — (assess scope)
-- Schlappi Engineering 100 Grit — distortion/waveshaper
-- Steady State Fate SSG Stereo Field — stereo processor
-- Patching Panda ETNA — morphing filter
+- Endorphin.es Queen of Pentacles: 909-inspired analog drum voice
+- Endorphin.es Blck_Noir: CR-78 inspired digital drum voice
+- Endorphin.es Furthrrrr Generator; dual oscillator, complex voice
+- Endorphin.es Grand Terminal; complex filter/effects
+- Endorphin.es NEW GODSPEED: (assess scope)
+- Endorphin.es Cockpit 2; performance mixer/controller
+- Xaoc Devices Belgrad; state variable multimode filter
+- Xaoc Devices Batumi II; quad LFO (include Poti II expander)
+- Xaoc Devices Zadar; complex envelope generator (include Nin expander)
+- Noise Engineering Basimilus Iteritas Alter; percussion oscillator
+- Noise Engineering Manis Iteritas Alia; distorted voice
+- Noise Engineering Pons Asinorum: (assess scope)
+- Befaco Oneiroi; complex oscillator/effects
+- Gamechanger Audio PLASMA Voice; ionized gas oscillator
+- Qu-Bit Aurora; reverb/spectral processor
+- Qu-Bit Prism; multiband processor
+- Qu-Bit Mojave; granular oscillator
+- Qu-Bit Stardust; sample player
+- Qu-Bit Nautilus; delay/looper
+- Qu-Bit Chord v2; polyphonic oscillator
+- Instruō Selam; complex oscillator (Tesseract Modular)
+- dsp.coffee YYS: (assess scope)
+- dsp.coffee 22 Deaf Chinchillas: (assess scope)
+- Schlappi Engineering 100 Grit; distortion/waveshaper
+- Steady State Fate SSG Stereo Field; stereo processor
+- Patching Panda ETNA; morphing filter
 
 **Tier 2: Moderate Impact**
-- After Later Audio Cloaks — Veils clone, VCA
-- After Later Audio Mingles — dual mixer/autopanner
-- After Later Audio Scenes — (assess scope)
-- After Later Audio Bartender V2 — (assess scope)
-- After Later Audio Light Rail — (assess scope)
-- Frap Tools 411 — quad linear VCA
-- Frap Tools 333 — mixer/utility
-- Vostok Instruments Ceres — linear VCA/mixer
-- AtoVproject lx-euclid — Euclidean sequencer
-- ALM Busy Circuits Pamela's PRO Workout — clock modulator
-- Erica Synths Black Joystick2 — performance controller
-- Erica Synths Pico Quant — quantizer
-- Bela Gliss — (assess scope)
-- Tesseract Modular Radioactive — (assess scope)
-- Altered State Machines Eris — (assess scope)
-- CalSynth uO_C — utility/multi-function
-- Blue Lantern Subharmonic Generator — (assess scope)
+- After Later Audio Cloaks: Veils clone, VCA
+- After Later Audio Mingles; dual mixer/autopanner
+- After Later Audio Scenes: (assess scope)
+- After Later Audio Bartender V2: (assess scope)
+- After Later Audio Light Rail: (assess scope)
+- Frap Tools 411; quad linear VCA
+- Frap Tools 333; mixer/utility
+- Vostok Instruments Ceres; linear VCA/mixer
+- AtoVproject lx-euclid: Euclidean sequencer
+- ALM Busy Circuits Pamela's PRO Workout; clock modulator
+- Erica Synths Black Joystick2; performance controller
+- Erica Synths Pico Quant; quantizer
+- Bela Gliss: (assess scope)
+- Tesseract Modular Radioactive: (assess scope)
+- Altered State Machines Eris: (assess scope)
+- CalSynth uO_C; utility/multi-function
+- Blue Lantern Subharmonic Generator: (assess scope)
 
 **Tier 3: Smaller Scope**
 - 4ms Percussion Interface + Expander
-- Pittsburgh Modular The Toad — filter
+- Pittsburgh Modular The Toad; filter
 - 2hp LFO v2
 - 2hp Verb
 - 2hp Swarm
-- Qu-Bit Lunar Orbiter — (assess scope)
-- Error Instruments Eraserhead Theremin — (assess scope)
+- Qu-Bit Lunar Orbiter: (assess scope)
+- Error Instruments Eraserhead Theremin: (assess scope)
 
 ---
 
