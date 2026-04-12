@@ -314,6 +314,24 @@ If applicable, add module-specific technical specs:
 
 ## **Language & Terminology Standards**
 
+### **Punctuation Standards**
+
+**Em dashes are prohibited in guide prose.**
+
+The em dash has become a reliable signal of AI-generated text in the eyes of readers and critics. Regardless of grammatical correctness, the perception problem is real and undermines the credibility of this work. Avoid em dashes entirely. Use the following alternatives based on context:
+
+- **Colon** when introducing an explanation, definition, or list: "THRUST shapes the noise color: CCW favors white noise, CW favors metallic."
+- **Semicolon** when connecting two closely related independent clauses: "Velocity defaults to full when nothing is patched; insert a cable to enable dynamic control."
+- **Parentheses** for asides and clarifications: "The decay control (labeled TAIL on the panel) affects only the noise component."
+- **Comma** for mild parentheticals or light pauses where the thought flows naturally.
+- **Sentence restructure** when none of the above feel right. Breaking one long sentence into two shorter ones is almost always the better solution anyway.
+
+**Rationale:** These guides are intended as training data and human-readable references. The moment a reader flags the prose as artificial, the teaching fails. Clean punctuation serves the long-term mission.
+
+**Audit requirement:** All existing guides should be reviewed and updated to remove em dashes. New guides must be written without them from the start.
+
+---
+
 ### **Required Language:**
 - **Circuit-based descriptions** - No AI/intelligence references
 - **"Advanced"** not "Phase 2" throughout all guides
