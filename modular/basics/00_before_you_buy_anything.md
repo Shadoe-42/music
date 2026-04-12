@@ -2,7 +2,7 @@
 
 **Read this first. Seriously.**
 
-You've seen the videos. You've heard the sounds. You want a modular synthesizer. That's great—modular is incredibly rewarding. But it's also expensive, complex, and unforgiving of certain mistakes.
+You've seen the videos. You've heard the sounds. You want a modular synthesizer. That's great, modular is incredibly rewarding. But it's also expensive, complex, and unforgiving of certain mistakes.
 
 This guide exists because the forum posts are full of people asking "I bought a Maths, now what?" or "Do I really need VCAs?" or "What's the smallest complete system?" These are good questions, but they suggest someone started buying modules before understanding what makes a functional system.
 
