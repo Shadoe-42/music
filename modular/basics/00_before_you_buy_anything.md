@@ -99,9 +99,9 @@ Modules operate on DC voltage provided by the case's power supply. Standard rail
 
 **Patch cables:** You need 3.5mm (TS) mono cables, often called "eurorack patch cables." Start with 20-30 cables in varying lengths (6", 12", 24"). Budget $20-50 for a starter pack. You'll accumulate hundreds eventually.
 
-**Power cables (ribbon cables):** Come with modules. These are flat ribbon cables that connect from the module's power header to the case's bus board (power distribution). Sometimes called "eurorack power cables" or just "power ribbons." Keep spares—they fail occasionally. Different modules use different ribbon cable styles (16-pin, 10-pin, etc.), so you may need adapters or different cables as your system grows.
+**Power cables (ribbon cables):** Come with modules. These are flat ribbon cables that connect from the module's power header to the case's bus board (power distribution). Sometimes called "eurorack power cables" or just "power ribbons." Keep spares as will they fail occasionally. Different modules use different ribbon cable styles (16-pin, 10-pin, etc.), so you may need adapters or different cables as your system grows.
 
-**Avoid:** Using audio cables (TRS—the ones with three rings) for CV/gate won't damage anything, but can create ground loops. Stick with TS mono cables (two rings) for patch cables.
+**Avoid:** Using audio cables (TRS, the ones with three rings) for CV/gate won't damage anything, but can create ground loops. Stick with TS mono cables (two rings) for patch cables.
 
 ### Audio Output
 
