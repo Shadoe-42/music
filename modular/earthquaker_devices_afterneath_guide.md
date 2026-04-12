@@ -33,7 +33,7 @@
 ## Why This Instrument Excels
 
 ### **The Philosophy:**
-**Texture over functionality.** The Afterneath doesn't try to be a "clean" reverb or a "natural" spatial effect—it's designed to transform audio into otherworldly, warped, and ambient textures. The signature Drag parameter makes the internal reverb architecture visible and manipulable in real-time, turning reverb processing into a performance instrument.
+**Texture over functionality.** The Afterneath doesn't try to be a "clean" reverb or a "natural" spatial effect; it's designed to transform audio into otherworldly, warped, and ambient textures. The signature Drag parameter makes the internal reverb architecture visible and manipulable in real-time, turning reverb processing into a performance instrument.
 
 ### **The Innovation:**
 - **Drag parameter:** Separates delay lines for stuttering, pitch-shifting, and warped textures impossible with conventional reverbs
@@ -45,22 +45,22 @@
 ### **The Practical Benefits:**
 - **Instant texture generation:** Even subtle Drag modulation transforms ordinary audio into extraordinary soundscapes
 - **Performance instrument:** Real-time CV control allows Afterneath to evolve and respond rather than sit static
-- **Educational transparency:** The Drag parameter teaches how reverb algorithms actually work—you can hear the mechanics
+- **Educational transparency:** The Drag parameter teaches how reverb algorithms actually work; you can hear the mechanics
 - **Dual functionality:** Works as both traditional reverb processor AND sound design generator
 - **Integration flexibility:** External loop allows Afterneath to become part of larger processing chains
 
 ### **Perfect For:**
-- **Ambient musicians:** The core use case—generating evolving, spacious textures
+- **Ambient musicians:** The core use case; generating evolving, spacious textures
 - **Experimental musicians:** Drag modulation and self-oscillation create sounds outside conventional music
 - **Effects processors:** Essential for transforming raw audio into characterized sound
 - **Texture designers:** CV modulation creates evolution impossible with static settings
 - **Performance artists:** Real-time CV control enables expressive effect processing
 
 ### **The Magic:**
-Afterneath proves that **effects can be instruments.** The Drag parameter isn't just a tone control—it's a window into reverb design itself. When you turn Drag while audio plays, you're experiencing how delay separation creates texture. The 9 modes teach you that structure can emerge from mathematical relationships. The self-oscillation shows that boundaries between "effect" and "oscillator" are arbitrary.
+Afterneath proves that **effects can be instruments.** The Drag parameter isn't just a tone control; it's a window into reverb design itself. When you turn Drag while audio plays, you're experiencing how delay separation creates texture. The 9 modes teach you that structure can emerge from mathematical relationships. The self-oscillation shows that boundaries between "effect" and "oscillator" are arbitrary.
 
 ### **Historical Significance:**
-The Afterneath module represents a successful pedal-to-Eurorack translation that doesn't just reproduce the original—it expands the concept. It demonstrated that guitar effects companies understood modular synthesis deeply enough to create tools that teach synthesis principles, not just copy pedal functions.
+The Afterneath module represents a successful pedal-to-Eurorack translation that doesn't just reproduce the original; it expands the concept. It demonstrated that guitar effects companies understood modular synthesis deeply enough to create tools that teach synthesis principles, not just copy pedal functions.
 
 ---
 
@@ -450,73 +450,73 @@ Drag warping is more obvious in sharp settings (Diffuse CCW). Smooth settings hi
 
 **"All I hear is 'washy' reverb, not the Drag effect everyone talks about!"**
 - **Why:** The Drag effect is subtle when Drag is in the 7-11 o'clock range. Many users expect dramatic transformation but Drag works gradually. Additionally, if you're using bright/treble-heavy audio, Drag effects can be masked. Low resonance on Dampen also reduces Drag prominence.
-- **Solution:** (1) Start with Drag manually at 12 o'clock and sweep slowly through its full range while audio plays—you'll hear the progression, (2) reduce Dampen to brighter settings to make Drag more obvious, (3) use rich harmonic audio (sawtooth or square waves) where Drag character is most audible, (4) try Modes 4-9 (quantized) where Drag snaps between tones more obviously.
+- **Solution:** (1) Start with Drag manually at 12 o'clock and sweep slowly through its full range while audio plays; you'll hear the progression, (2) reduce Dampen to brighter settings to make Drag more obvious, (3) use rich harmonic audio (sawtooth or square waves) where Drag character is most audible, (4) try Modes 4-9 (quantized) where Drag snaps between tones more obviously.
 - **Teaching:** Drag is a texture control that works best in context. The architecture is only obvious when you actively explore its range and listen carefully.
 
 **"I'm trying to use Afterneath as a reverb, but everything sounds weird and unmusical!"**
 - **Why:** Afterneath is designed for texture generation, not transparent reverb. Default settings emphasize Drag's otherworldly character over naturalistic ambience. Users expecting a clean reverb processor get startled by its intentional weirdness instead.
 - **Solution:** (1) Lower Reflect to 9-11 o'clock to reduce self-oscillation risk, (2) use Mode 1 (Unquantized) for smoothest response, (3) keep Drag at 12 o'clock for neutral starting point, (4) increase Diffuse to CW to smooth delay taps into ambience, (5) keep Mix at 1-2 o'clock for reverb-heavy but not extreme processing.
-- **Teaching:** Afterneath philosophy is "texture over naturalism." If you want clean reverb, this isn't the right module—but if you want character and weirdness, that's the point.
+- **Teaching:** Afterneath philosophy is "texture over naturalism." If you want clean reverb, this isn't the right module; but if you want character and weirdness, that's the point.
 
 **"Self-oscillation doesn't work even though I followed all the steps!"**
-- **Why:** Self-oscillation requires NO audio input to the module. If even a weak signal is present, the audio input cancels oscillation. Most users patch an audio source, then try to add Reflect and Length—the audio input prevents oscillation.
+- **Why:** Self-oscillation requires NO audio input to the module. If even a weak signal is present, the audio input cancels oscillation. Most users patch an audio source, then try to add Reflect and Length; the audio input prevents oscillation.
 - **Solution:** Completely disconnect all audio from the Afterneath Audio In jack. Set Reflect to 2+ o'clock, Length to 2+ o'clock, then slowly turn Drag manually to find the sweet spot. Once you hear pure sine oscillation, you can add CV modulation.
 - **Teaching:** Self-oscillation and audio input are competing phenomena. Understanding this teaches you how reverb algorithms handle simultaneous input and feedback.
 
 **"My Reflect loop sounds like nothing changed even though I patched an external filter into it!"**
 - **Why:** The Reflect loop affects only the feedback path, not the direct output. If your filter isn't warm/dark enough to noticeably color feedback at Reflect settings of 1 o'clock or less, the effect is subtle. Additionally, if Reflect is low, there's minimal feedback to process, so the loop effect disappears.
 - **Solution:** (1) Increase Reflect to 2+ o'clock to ensure significant feedback path, (2) use a dramatic filter (strong resonance or extreme cutoff) to make the loop effect obvious, (3) test with a high-pass filter first to hear sharp feedback, then compare with low-pass for warmth, (4) use envelope or LFO in the filter to make loop effects evolve over time.
-- **Teaching:** Send/return loops teach signal flow architecture. The feedback path is separate from direct path—understanding this distinction is crucial for modular thinking.
+- **Teaching:** Send/return loops teach signal flow architecture. The feedback path is separate from direct path; understanding this distinction is crucial for modular thinking.
 
 **"Drag modulation with my LFO is creating rhythmic stuttering, but I want smooth evolution!"**
 - **Why:** If your LFO rate is too fast (above 1 Hz), Drag changes become audible as rhythmic effects rather than smooth texture evolution. Additionally, if LFO amplitude is too high, Drag swings too far between extremes, creating choppy transitions.
-- **Solution:** (1) Slow your LFO rate to 0.2-0.5 Hz for smooth texture evolution, (2) reduce LFO attenuator to 50% CW to limit Drag modulation range, (3) experiment with LFO waveshape—triangle is smoother than square, (4) if you want rhythmic effects, deliberately use fast (1-4 Hz) LFO rates but sync to tempo.
-- **Teaching:** Modulation speed determines perception—slow modulation feels like evolution, fast modulation feels like rhythm. This teaches how timing changes musical meaning.
+- **Solution:** (1) Slow your LFO rate to 0.2-0.5 Hz for smooth texture evolution, (2) reduce LFO attenuator to 50% CW to limit Drag modulation range, (3) experiment with LFO waveshape; triangle is smoother than square, (4) if you want rhythmic effects, deliberately use fast (1-4 Hz) LFO rates but sync to tempo.
+- **Teaching:** Modulation speed determines perception; slow modulation feels like evolution, fast modulation feels like rhythm. This teaches how timing changes musical meaning.
 
-**"Different modes sound exactly the same to me—what's the difference?"**
+**"Different modes sound exactly the same to me; what's the difference?"**
 - **Why:** Mode differences are most obvious when using CV modulation (Drag CV, Length CV, etc.). In manual control with static settings, modes sound similar because they primarily affect how CV scaling responds. Additionally, if you're using the Reflect Send output (feedback path), mode differences are subtler.
-- **Solution:** (1) Use Drag CV with an LFO or sequencer and toggle between modes—you'll hear Drag behavior change drastically, (2) use Modes 4-9 (quantized) with a melodic CV sequence to hear scale quantization clearly, (3) stay in Mode 1 (Unquantized) for smooth manual control, (4) experiment with Mode 3 specifically for 1V/octave tracking.
+- **Solution:** (1) Use Drag CV with an LFO or sequencer and toggle between modes; you'll hear Drag behavior change drastically, (2) use Modes 4-9 (quantized) with a melodic CV sequence to hear scale quantization clearly, (3) stay in Mode 1 (Unquantized) for smooth manual control, (4) experiment with Mode 3 specifically for 1V/octave tracking.
 - **Teaching:** Effects module behavior often depends on how you modulate them. CV interaction teaches interconnection between parameters.
 
 **"Everything I patch through Afterneath comes out quieter than the input!"**
-- **Why:** Mix knob at 12 o'clock (default) is about 50% wet, not unity gain. Using Dry Kill disables dry signal, so the output is only wet reverb. If your Mix is low (below 12 o'clock), the output is primarily dry signal with weak reverb mixed in—it sounds quieter.
+- **Why:** Mix knob at 12 o'clock (default) is about 50% wet, not unity gain. Using Dry Kill disables dry signal, so the output is only wet reverb. If your Mix is low (below 12 o'clock), the output is primarily dry signal with weak reverb mixed in; it sounds quieter.
 - **Solution:** (1) Turn Mix to 2+ o'clock for reverb-heavy balance (but less quiet), (2) if you need full wet output, enable Dry Kill (switch on) and set Mix fully CW, (3) use an external VCA or mixer to control overall output level, (4) verify input level is adequate with Input knob at reasonable setting (usually 12 o'clock for line-level audio).
 - **Teaching:** Wet/dry mixing is an architectural consideration in effect design. Understanding Mix control teaches you how effects interact with mixing concepts.
 
-**"My quantized modes (4-9) sound out of tune—the notes don't match the key I'm playing!"**
+**"My quantized modes (4-9) sound out of tune; the notes don't match the key I'm playing!"**
 - **Why:** Quantized modes (Chromatic, Major, Minor, Pentatonic, Fifths, Octaves) quantize CV input to scale tones, but they don't know what key you're in. If your CV is 1V/octave but the scale mode doesn't contain your root note, the quantized output sounds "wrong."
-- **Solution:** (1) Understand that Chromatic mode (Mode 4) contains all 12 notes, so it never sounds out of tune, (2) use Major/Minor modes (5-6) with matching CV sequences in that key, (3) for experimental effects, accept the "wrong" tuning—it's often beautiful, (4) use Pentatonic (Mode 7) for always-musical results regardless of input sequence.
+- **Solution:** (1) Understand that Chromatic mode (Mode 4) contains all 12 notes, so it never sounds out of tune, (2) use Major/Minor modes (5-6) with matching CV sequences in that key, (3) for experimental effects, accept the "wrong" tuning; it's often beautiful, (4) use Pentatonic (Mode 7) for always-musical results regardless of input sequence.
 - **Teaching:** Quantization teaches that structure (musical scales) constrains CV interpretation. This shows how modules can impose musical decision-making.
 
 **"I enabled Dry Kill but I still hear dry signal mixed in!"**
 - **Why:** Dry Kill affects only the main audio output. The Reflect Send output is a separate path that includes both dry and wet components (it's taken from inside the reverb algorithm). If you're monitoring Reflect Send instead of main output, you'll hear dry signal even with Dry Kill enabled.
-- **Solution:** (1) Use main output (not Reflect Send) for monitoring if you want Dry Kill to affect the signal, (2) understand that Reflect Send is a feedback tap, not an auxiliary output—it's meant for external processing in the feedback loop, not general monitoring, (3) if you need send/return operation, patch main output to mixer's send input instead of using Reflect Send.
+- **Solution:** (1) Use main output (not Reflect Send) for monitoring if you want Dry Kill to affect the signal, (2) understand that Reflect Send is a feedback tap, not an auxiliary output; it's meant for external processing in the feedback loop, not general monitoring, (3) if you need send/return operation, patch main output to mixer's send input instead of using Reflect Send.
 - **Teaching:** Effects architecture includes multiple signal paths. Understanding which path you're using teaches signal flow thinking.
 
-**"My Length CV from an envelope isn't doing anything obvious—the reverb tail length stays the same!"**
-- **Why:** Length CV modulation is most obvious when the envelope is fast-moving and significant. If your envelope is slow or moves only slightly, or if Reflect (feedback) is low, Length changes won't produce audible effect. Additionally, Length changes only become obvious when reverb tails decay—if you're playing continuous audio, you won't hear the difference.
-- **Solution:** (1) Use a fast envelope (fast attack, medium decay) for obvious Length changes, (2) increase Reflect to 2+ o'clock so feedback sustains long enough for Length changes to matter, (3) patch a sequencer CV to Length instead of envelope—steppy changes are more obvious, (4) pause audio input periodically and listen to reverb decay to hear Length modulation effect, (5) watch physical reverb tail behavior with envelope analysis tools to confirm CV is responding.
+**"My Length CV from an envelope isn't doing anything obvious; the reverb tail length stays the same!"**
+- **Why:** Length CV modulation is most obvious when the envelope is fast-moving and significant. If your envelope is slow or moves only slightly, or if Reflect (feedback) is low, Length changes won't produce audible effect. Additionally, Length changes only become obvious when reverb tails decay; if you're playing continuous audio, you won't hear the difference.
+- **Solution:** (1) Use a fast envelope (fast attack, medium decay) for obvious Length changes, (2) increase Reflect to 2+ o'clock so feedback sustains long enough for Length changes to matter, (3) patch a sequencer CV to Length instead of envelope; steppy changes are more obvious, (4) pause audio input periodically and listen to reverb decay to hear Length modulation effect, (5) watch physical reverb tail behavior with envelope analysis tools to confirm CV is responding.
 - **Teaching:** Modulation effects depend on both the modulation signal AND the module's context (other parameter settings). This teaches holistic thinking about modulation.
 
-**"Diffuse doesn't seem to do anything—sounds the same at CCW and CW!"**
-- **Why:** Diffuse effects are subtle in short reverb decays. If Length is low (short tails), Diffuse changes are nearly invisible. Additionally, if you're using very bright Dampen settings, diffusion quality doesn't matter much—everything sounds metallic regardless. Finally, Diffuse works on the _perception_ of reverb smoothness, which is hard to hear in complex reverb tails.
-- **Solution:** (1) Increase Length to 3+ o'clock so reverb tails are long enough to hear diffusion effects, (2) use a moderate Dampen setting (12 o'clock) for balanced tone so Diffuse effects are obvious, (3) start with Diffuse fully CCW (sharp taps), then sweep to CW (smooth) while audio plays—you'll hear gradual smoothing, (4) use ambient pads or long sustained tones rather than rhythmic audio to hear diffusion.
+**"Diffuse doesn't seem to do anything; sounds the same at CCW and CW!"**
+- **Why:** Diffuse effects are subtle in short reverb decays. If Length is low (short tails), Diffuse changes are nearly invisible. Additionally, if you're using very bright Dampen settings, diffusion quality doesn't matter much; everything sounds metallic regardless. Finally, Diffuse works on the _perception_ of reverb smoothness, which is hard to hear in complex reverb tails.
+- **Solution:** (1) Increase Length to 3+ o'clock so reverb tails are long enough to hear diffusion effects, (2) use a moderate Dampen setting (12 o'clock) for balanced tone so Diffuse effects are obvious, (3) start with Diffuse fully CCW (sharp taps), then sweep to CW (smooth) while audio plays; you'll hear gradual smoothing, (4) use ambient pads or long sustained tones rather than rhythmic audio to hear diffusion.
 - **Teaching:** Some parameters affect perception subtly. Learning to hear subtle differences teaches critical listening skills.
 
-**"My setup sounds great on my monitors but thin/weird on headphones—why?"**
+**"My setup sounds great on my monitors but thin/weird on headphones; why?"**
 - **Why:** Afterneath's reverb algorithms contain substantial low-frequency content in feedback paths. On small monitor speakers, lows are reduced; on headphones, the low-end buildup is obvious and can sound boomy or uncontrolled. Additionally, headphone proximity makes reverb tails sound unnatural compared to room-based monitoring.
 - **Solution:** (1) Use Dampen to remove low frequencies if necessary (turn CW more to eliminate bass bloat), (2) use headphone-monitoring-appropriate mix level (often higher headphone volume needed), (3) trust monitor speakers for initial setup, then verify on headphones, (4) use a high-pass filter in Reflect loop to control low-end buildup if needed.
-- **Teaching:** Monitoring context matters. The same reverb sounds different on different systems—this teaches that "truth" in audio is context-dependent.
+- **Teaching:** Monitoring context matters. The same reverb sounds different on different systems; this teaches that "truth" in audio is context-dependent.
 
-**"I've got all 4 CV inputs patched but the texture isn't as evolving as I expected—it's kind of static."**
+**"I've got all 4 CV inputs patched but the texture isn't as evolving as I expected; it's kind of static."**
 - **Why:** Four CV inputs affect four different parameters, but if they're all modulating slowly and subtly, their combined effect is imperceptible. Additionally, if modulation rates are similar (all in 0.2-0.5 Hz range), they evolve together rather than creating variation, resulting in coherent but unchanging texture.
-- **Solution:** (1) Use different LFO rates for each CV input—fast on one (2 Hz), slow on another (0.3 Hz), medium on a third (0.8 Hz) to create polyrhythmic evolution, (2) use higher modulation amplitudes on at least one parameter to create obvious change points, (3) use different modulation waveforms (triangle, saw, square) for different CV inputs, (4) combine LFOs with envelope followers to mix periodic and content-responsive modulation, (5) record audio and listen back—short-term listening often misses long-period variations.
+- **Solution:** (1) Use different LFO rates for each CV input; fast on one (2 Hz), slow on another (0.3 Hz), medium on a third (0.8 Hz) to create polyrhythmic evolution, (2) use higher modulation amplitudes on at least one parameter to create obvious change points, (3) use different modulation waveforms (triangle, saw, square) for different CV inputs, (4) combine LFOs with envelope followers to mix periodic and content-responsive modulation, (5) record audio and listen back; short-term listening often misses long-period variations.
 - **Teaching:** Texture evolution requires multiple timescales working together. This teaches complex system thinking where individual components create emergent behavior.
 
 ### **🎵 Pro Tips:**
 
 **Drag Exploration Strategy:**
-Don't jump to modulation—first spend 10 minutes manually sweeping Drag knob through its entire range at different positions of other parameters. This teaches you where the "magic" happens (usually 1-2 o'clock).
+Don't jump to modulation; first spend 10 minutes manually sweeping Drag knob through its entire range at different positions of other parameters. This teaches you where the "magic" happens (usually 1-2 o'clock).
 
 **Mode Selection Simplification:**
 For 80% of use cases: (1) Mode 1 (Unquantized) for anything manual or ambient, (2) Mode 3 (Volt/Octave) when you want self-oscillation tracking, (3) Modes 5-9 (Scales) when you want Drag to snap to musical intervals. Don't worry about the others until you're comfortable with these three.
@@ -525,7 +525,7 @@ For 80% of use cases: (1) Mode 1 (Unquantized) for anything manual or ambient, (
 Start with a simple filter in the loop before attempting complex processing. High-pass filter makes feedback bright and obvious; low-pass makes it warm. This teaches loop behavior before adding complexity.
 
 **Self-Oscillation as Modulation Source:**
-Once self-oscillation is working, try patching it to other modules' CV inputs. It's a sine wave oscillator—use it like one.
+Once self-oscillation is working, try patching it to other modules' CV inputs. It's a sine wave oscillator; use it like one.
 
 **Performance Control Priority:**
 If you can only modulate one parameter in live performance, choose Drag. It's the most obvious and musically interactive control.
@@ -534,7 +534,7 @@ If you can only modulate one parameter in live performance, choose Drag. It's th
 Sync one LFO to tempo (via clock divider) and apply it to Drag, then use a free-running LFO on Length. This creates structured but unpredictable texture evolution.
 
 **Ambient Sweet Spot Settings:**
-Reflect: 12-1 o'clock, Length: 2-3 o'clock, Mix: 1-2 o'clock, Mode: 1 (Unquantized), Drag: 12 o'clock (manual). This is a good starting point for ambient textures—adjust from here rather than starting from zero.
+Reflect: 12-1 o'clock, Length: 2-3 o'clock, Mix: 1-2 o'clock, Mode: 1 (Unquantized), Drag: 12 o'clock (manual). This is a good starting point for ambient textures; adjust from here rather than starting from zero.
 
 **Reflection Feedback Monitoring:**
 Patch Reflect Send to a separate output jack to see what the feedback path contains. This teaches you what external processing will affect.

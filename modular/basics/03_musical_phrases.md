@@ -2,11 +2,11 @@
 
 **Adding pattern and composition to your voice.**
 
-In Guides 01 and 02, you built a complete synthesizer voice: oscillator → filter → VCA, with two envelopes shaping amplitude and timbre. You can manually trigger notes one at a time. Now you're ready to add **sequencers or live controllers**—modules that generate patterns of pitch and timing information automatically, or let you perform live.
+In Guides 01 and 02, you built a complete synthesizer voice: oscillator → filter → VCA, with two envelopes shaping amplitude and timbre. You can manually trigger notes one at a time. Now you're ready to add **sequencers or live controllers**: modules that generate patterns of pitch and timing information automatically, or let you perform live.
 
 **This guide teaches how sequencers and live controllers create musical phrases by generating two simultaneous control voltages: pitch CV (what note) and gate signals (when to play it).**
 
-You can either pre-program repeating patterns, or perform live pitch and timing—both approaches are valid musical choices that build on the same principles.
+You can either pre-program repeating patterns, or perform live pitch and timing; both approaches are valid musical choices that build on the same principles.
 
 ---
 
@@ -16,7 +16,7 @@ This is the conceptual foundation.
 
 **A sequencer doesn't "play notes" or "make music." It generates a series of voltages in a repeating pattern.**
 
-**A live controller (Keystep, MIDI keyboard) doesn't "perform music" separately—it's also generating voltages that your modular responds to in real-time.**
+**A live controller (Keystep, MIDI keyboard) doesn't "perform music" separately; it's also generating voltages that your modular responds to in real-time.**
 
 Specifically, both output:
 - **Pitch CV:** 1V/octave voltage values (0V, 1V, 2V, etc.)
@@ -26,7 +26,7 @@ Specifically, both output:
 
 **A live controller outputs voltages based on your hands.** What pitch you're playing becomes CV. When you press/release a key becomes a gate.
 
-**Both are sources—like an oscillator, but generating control voltage instead of audio voltage.**
+**Both are sources; like an oscillator, but generating control voltage instead of audio voltage.**
 
 Each step in a sequencer (or each note you play on a live controller) can have:
 - A pitch value (CV output)
@@ -35,7 +35,7 @@ Each step in a sequencer (or each note you play on a live controller) can have:
 
 **The sequencer or controller outputs voltage.** That voltage goes somewhere (oscillator pitch input, envelope gate, anywhere). Different destinations, different musical results.
 
-**This is still voltage routing.** The sequencer or controller is just a source—the principles are identical.
+**This is still voltage routing.** The sequencer or controller is just a source; the principles are identical.
 
 ---
 
@@ -53,7 +53,7 @@ You're replacing manual gate triggering with either sequencer-driven patterns or
 - **Step sequencer:** Pre-program a repeating 8-step, 16-step, or longer pattern. The sequence loops automatically. You're free to modulate filter, effects, or other parameters while the pattern plays.
 - **Live controller (Keystep, MIDI keyboard):** Play pitches in real-time. The modular responds to each note as you play it. You perform pitch while also performing filter/effect modulation simultaneously.
 
-**Result:** Either way, you move from single manual triggers to musical phrases—either pre-programmed and looping, or performed live.
+**Result:** Either way, you move from single manual triggers to musical phrases; either pre-programmed and looping, or performed live.
 
 ---
 
@@ -77,7 +77,7 @@ When the sequencer runs, it advances through steps and outputs the stored voltag
 
 **MIDI sequencers with CV/gate outputs:** External hardware (like Arturia Keystep Pro, Elektron Digitakt) that sequences MIDI but also outputs CV/gate. Bridges DAW and modular.
 
-**Live controllers:** Keyboards, Keysteps, or other MIDI controllers that output CV/gate directly. No pre-programming—you perform pitch and timing in real-time.
+**Live controllers:** Keyboards, Keysteps, or other MIDI controllers that output CV/gate directly. No pre-programming; you perform pitch and timing in real-time.
 
 **For beginners, step sequencers and live controllers both offer clear learning paths.** Step sequencers teach composition. Live controllers teach performance.
 
@@ -86,7 +86,7 @@ When the sequencer runs, it advances through steps and outputs the stored voltag
 **Clock (or clock signal):** A repeating trigger pulse that advances the sequencer one step at a time.
 
 - **Clock source:** Where the clock comes from (internal sequencer tempo, external sequencer, DAW sync, another module)
-- **Clock speed:** How fast the clock pulses, measured in **PPQ (pulses per quarter note)** or **BPM (beats per minute)**. A typical clock might send 24 PPQ—24 pulses per quarter note—which divides the beat into finer increments. Different clock speeds control both the rate of step advancement and overall tempo
+- **Clock speed:** How fast the clock pulses, measured in **PPQ (pulses per quarter note)** or **BPM (beats per minute)**. A typical clock might send 24 PPQ: 24 pulses per quarter note; which divides the beat into finer increments. Different clock speeds control both the rate of step advancement and overall tempo
 - **Clock divisions:** One clock pulse might advance one sequencer step, or might skip steps (clock dividers slow down the sequence)
 
 **Typical workflow:**
@@ -101,7 +101,7 @@ When the sequencer runs, it advances through steps and outputs the stored voltag
 
 **Quantization snaps incoming voltage to the nearest musical note within a chosen scale.**
 
-**Without quantization:** You dial in a sequencer pitch knob to 1.234V—some voltage between notes (microtonal).
+**Without quantization:** You dial in a sequencer pitch knob to 1.234V; some voltage between notes (microtonal).
 
 **With quantization:** That 1.234V gets snapped to the nearest semitone within your chosen scale (maybe 1.25V, which is C#, within a major scale).
 
@@ -135,7 +135,7 @@ When the sequencer runs, it advances through steps and outputs the stored voltag
 
 **What it does:** A sequencer stores a series of pitch CV and gate values, outputting them in sequence when clocked. A live controller outputs pitch and gate based on your real-time input.
 
-**Why you need it:** Without a step sequencer, you're performing in real-time—which many musicians prefer. A Keystep, MIDI keyboard, or other controller lets you perform live while the modular responds. A step sequencer trades real-time performance control for repeating automation. Different approaches for different musical intentions.
+**Why you need it:** Without a step sequencer, you're performing in real-time; which many musicians prefer. A Keystep, MIDI keyboard, or other controller lets you perform live while the modular responds. A step sequencer trades real-time performance control for repeating automation. Different approaches for different musical intentions.
 
 **Voltage story (sequencer):** You program eight pitches into the sequencer (0.5V, 1V, 1.5V, 1V, etc.). You set which steps have gates (trigger on steps 1, 3, 5, 7, skip 2, 4, 6, 8). When you start the sequencer, it outputs 0.5V and a gate. Oscillator plays that pitch. Envelopes fire. After that step's duration, the sequencer advances, outputs 1V and nothing (no gate), oscillator glides to 1V but envelopes don't fire (a rest). Continues through the pattern, then loops.
 
@@ -145,7 +145,7 @@ When the sequencer runs, it advances through steps and outputs the stored voltag
 
 **What it does (unchanged):** Generates audio-rate voltage at a frequency determined by incoming 1V/Oct pitch CV.
 
-**What's different:** Instead of that CV coming from a manual knob or MIDI keyboard, it comes from a sequencer or live controller. The oscillator doesn't know the difference—voltage is voltage. It tracks the sequencer's or controller's pitch CV just as readily as any other source.
+**What's different:** Instead of that CV coming from a manual knob or MIDI keyboard, it comes from a sequencer or live controller. The oscillator doesn't know the difference; voltage is voltage. It tracks the sequencer's or controller's pitch CV just as readily as any other source.
 
 **Voltage story:** Sequencer (or you on a live controller) outputs 1V. Oscillator frequency doubles (one octave higher). Sequencer outputs 0.5V. Oscillator frequency drops to halfway the original. You play the same key three times. Oscillator stays at that pitch for three step durations (or for as long as you hold the key).
 
@@ -153,9 +153,9 @@ When the sequencer runs, it advances through steps and outputs the stored voltag
 
 **What they do (unchanged):** Envelope 1 shapes amplitude, Envelope 2 shapes timbre.
 
-**What's different:** Instead of manual gate triggers, the envelopes are triggered by the sequencer's or controller's gate output. Envelopes don't care where the gate comes from—0V to +5V is 0V to +5V.
+**What's different:** Instead of manual gate triggers, the envelopes are triggered by the sequencer's or controller's gate output. Envelopes don't care where the gate comes from: 0V to +5V is 0V to +5V.
 
-**Voltage story:** Sequencer (or you on a live controller) sends gate on step 1. Both envelopes fire simultaneously. Amplitude envelope opens the VCA, filter envelope opens the cutoff. Step 2 has no gate (rest)—envelopes release, amplitude and brightness fade. Step 3 has gate—envelopes fire again.
+**Voltage story:** Sequencer (or you on a live controller) sends gate on step 1. Both envelopes fire simultaneously. Amplitude envelope opens the VCA, filter envelope opens the cutoff. Step 2 has no gate (rest); envelopes release, amplitude and brightness fade. Step 3 has gate; envelopes fire again.
 
 ---
 
@@ -213,7 +213,7 @@ When you run a sequencer or live controller through your voice:
 **What you're doing:** Entering pitch and gate values for each step.
 
 1. Select **step 1**
-2. Turn the **pitch knob** to a starting pitch (try 1V—one octave up from a reference)
+2. Turn the **pitch knob** to a starting pitch (try 1V, one octave up from a reference)
 3. Enable **gate** for step 1 (press button or switch to on)
 4. Move to **step 2**
 5. Set a different pitch (try 0.5V)
@@ -228,7 +228,7 @@ When you run a sequencer or live controller through your voice:
 **What you're doing:** Preparing your live controller for CV/gate output.
 
 1. Connect your controller to power (if needed)
-2. Verify CV and gate outputs are active (check manual—some controllers need modes switched)
+2. Verify CV and gate outputs are active (check manual, some controllers need modes switched)
 3. Set the controller to output 1V/octave (most do by default, but verify)
 
 **Voltage perspective:** Your controller is now ready to generate voltage based on your key presses.
@@ -253,7 +253,7 @@ When you run a sequencer or live controller through your voice:
 
 **Voltage perspective:** Gate output (0V or +5V) now controls when envelopes fire, whether from sequencer patterns or live playing.
 
-### Step 5: Test—Watch the Pattern or Performance Play
+### Step 5: Test: Watch the Pattern or Performance Play
 
 1. Sequencer is running (or you're playing the live controller), outputting pitch CV and gates
 2. Listen and observe:
@@ -297,7 +297,7 @@ When you run a sequencer or live controller through your voice:
 
 **Higher-end: Make Noise Rene 2** (around $600)
 - Cartesian (X/Y grid) sequencer, not step-based
-- Non-linear sequencing—different workflow
+- Non-linear sequencing; different workflow
 - Exploratory, artistic approach
 - Unique but not traditional learning path
 
@@ -348,14 +348,14 @@ When you run a sequencer or live controller through your voice:
 **Pitch CV isn't patched correctly.** Check:
 
 1. **Is pitch CV output patched to oscillator V/Oct input?** Verify the cable connection
-2. **Is it the right input?** Some oscillators have multiple CV inputs (V/Oct, FM, pitch modulation)—make sure you're using the 1V/Oct input
+2. **Is it the right input?** Some oscillators have multiple CV inputs (V/Oct, FM, pitch modulation); make sure you're using the 1V/Oct input
 3. **Is the oscillator responding to CV at all?** Try a different CV source (keyboard, Keystep, manual CV) to verify the oscillator tracks pitch
 
 ### "The sequencer is running but I don't hear pitch changes"
 
 Check:
 1. **Are the pitch values actually different step-to-step?** If all steps are set to 1V, the pitch won't change
-2. **Is the sequencer actually advancing?** Check for clock source—no clock = no step advancement
+2. **Is the sequencer actually advancing?** Check for clock source; no clock = no step advancement
 3. **Is the volume turned up?** Check mixer/output gain
 
 ### "Notes don't trigger, or gates seem to fire at wrong times"
@@ -376,7 +376,7 @@ Check:
 ### "Pitch seems out of tune or microtonal"
 
 **Oscillator tracking is off, or no quantization.** Try:
-1. Check oscillator 1V/Oct calibration (may need manual tuning—check module manual)
+1. Check oscillator 1V/Oct calibration (may need manual tuning, check module manual)
 2. Add a quantizer module if sequencer lacks one (Intellijel Scales, Erica Synths Pico Quant)
 3. (Sequencer only) Verify sequencer pitch values are set to exact semitone values (1V, 1.0833V, etc., not random knob positions)
 
@@ -421,9 +421,9 @@ An oscillator generates audio voltage continuously. An envelope generates contro
 
 **Composition or performance emerges from routing and intention.** You're programming voltage patterns (sequencer) or performing voltage in real-time (controller), and routing them to different destinations. Different destinations, different musical results.
 
-**Clock and sync teach the meta-principle:** Everything modular runs on voltage, including timing. A clock is just a repeating trigger voltage. When multiple sequencers, drum machines, or effect modules use the same clock, they stay synchronized—voltage coordinates everything.
+**Clock and sync teach the meta-principle:** Everything modular runs on voltage, including timing. A clock is just a repeating trigger voltage. When multiple sequencers, drum machines, or effect modules use the same clock, they stay synchronized; voltage coordinates everything.
 
-**This is the power of modular:** Once you understand voltage as information (pitch is voltage, timing is voltage, brightness is voltage), you recognize that any sequencer or controller can influence any parameter. A drum machine's clock can sync your modular. Your modular's CV can modulate external gear. Everything interconnects through voltage. Compose pre-programmed patterns, or perform live expressions—both are valid paths through the same system.
+**This is the power of modular:** Once you understand voltage as information (pitch is voltage, timing is voltage, brightness is voltage), you recognize that any sequencer or controller can influence any parameter. A drum machine's clock can sync your modular. Your modular's CV can modulate external gear. Everything interconnects through voltage. Compose pre-programmed patterns, or perform live expressions; both are valid paths through the same system.
 
 ---
 
@@ -454,7 +454,7 @@ An oscillator generates audio voltage continuously. An envelope generates contro
 
 You've added melody and rhythm through either sequencing or live performance. You understand how to generate pitch and timing information, how clock synchronization works, and how to either compose repeating patterns or perform live expressions.
 
-**Guide 04: Rhythm and Percussion** explores different voice architectures specifically for drums and percussion. You'll learn that percussion doesn't need pitch sequencing—it needs trigger patterns and different envelope/sound source approaches. Whether you've been programming sequences or performing live, the same principles apply to percussion: triggers matter more than pitch tracking, and different envelope architectures create different drum characters.
+**Guide 04: Rhythm and Percussion** explores different voice architectures specifically for drums and percussion. You'll learn that percussion doesn't need pitch sequencing; it needs trigger patterns and different envelope/sound source approaches. Whether you've been programming sequences or performing live, the same principles apply to percussion: triggers matter more than pitch tracking, and different envelope architectures create different drum characters.
 
 But first, explore with what you have. If you're sequencing, program patterns and adjust envelopes while they loop. If you're performing live, play melodic phrases and modulate the filter in real-time. Both paths deepen your understanding of the same underlying principles.
 

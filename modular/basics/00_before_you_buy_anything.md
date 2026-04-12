@@ -2,7 +2,7 @@
 
 **Read this first. Seriously.**
 
-You've seen the videos. You've heard the sounds. You want a modular synthesizer. That's great—modular is incredibly rewarding. But it's also expensive, complex, and unforgiving of certain mistakes.
+You've seen the videos. You've heard the sounds. You want a modular synthesizer. That's great; modular is incredibly rewarding. But it's also expensive, complex, and unforgiving of certain mistakes.
 
 This guide exists because the forum posts are full of people asking "I bought a Maths, now what?" or "Do I really need VCAs?" or "What's the smallest complete system?" These are good questions, but they suggest someone started buying modules before understanding what makes a functional system.
 
@@ -18,13 +18,13 @@ This guide exists because the forum posts are full of people asking "I bought a 
 
 **Expansion is endless:** You will buy more modules. Everyone does. The system grows as your understanding grows. A $5k system can easily absorb another $10k in modules as you refine your direction. Budget an additional 50% beyond your initial build as a realistic planning number.
 
-**Learning curve:** Modular synthesis is an instrument, not a tool. You don't "learn it in a weekend." Expect months of exploration before you're comfortable, and years before you master it. That's not discouraging—it's realistic. The depth is what makes it rewarding.
+**Learning curve:** Modular synthesis is an instrument, not a tool. You don't "learn it in a weekend." Expect months of exploration before you're comfortable, and years before you master it. That's not discouraging; it's realistic. The depth is what makes it rewarding.
 
 **Space and portability:** Even a small system occupies significant desk space. A 104HP row (about 21 inches wide) is considered "small." Cases are heavy. Travel requires careful planning. This isn't a laptop you toss in a bag.
 
-**No presets:** Every sound requires patching from scratch. There's no "save" button in hardware modular. Some modules offer preset recall, but the vast majority don't. You document patches with photos, videos, or drawings. This is feature, not bug—it forces understanding.
+**No presets:** Every sound requires patching from scratch. There's no "save" button in hardware modular. Some modules offer preset recall, but the vast majority don't. You document patches with photos, videos, or drawings. This is feature, not bug; it forces understanding.
 
-**Ongoing expansion:** You will want more. Modular doesn't have a "done"—there's always another filter sound to explore, another oscillator approach to try, another effect to layer in. Budget accordingly, and embrace the expansion as part of the journey.
+**Ongoing expansion:** You will want more. Modular doesn't have a "done"; there's always another filter sound to explore, another oscillator approach to try, another effect to layer in. Budget accordingly, and embrace the expansion as part of the journey.
 
 ### Why Do This Anyway?
 
@@ -40,7 +40,7 @@ If you're drawn to it, there's probably a good reason. Just go in with open eyes
 
 **Everything in your system is voltage.** Not metaphorically. Literally. 
 
-- **Sound** is voltage oscillating at audio rate (very fast—20 to 20,000 times per second)
+- **Sound** is voltage oscillating at audio rate (very fast, 20 to 20,000 times per second)
 - **Pitch information** is voltage (1V = one octave higher)
 - **Timing information** is voltage (5V = "gate is on," 0V = "gate is off")
 - **Brightness/darkness of tone** is voltage (applied to filter cutoff)
@@ -58,7 +58,7 @@ Every jack you see is a point where voltage flows. Modules **generate** voltage 
 - Go to another oscillator's FM input (modulates pitch)
 - Go anywhere, depending on where you patch it
 
-**This is modular's core insight:** Voltage is portable, patchable, and modifiable. You're not rearranging hardware connections—you're rerouting voltage flow. That's why the system is infinitely flexible and why it matters to understand voltage as the fundamental concept.
+**This is modular's core insight:** Voltage is portable, patchable, and modifiable. You're not rearranging hardware connections; you're rerouting voltage flow. That's why the system is infinitely flexible and why it matters to understand voltage as the fundamental concept.
 
 This might sound abstract now. It will become concrete in the guides. For now, hold this: everything you're about to buy is part of a voltage-moving system. The case houses it. The power supply generates the voltages. The patch cables carry them. The modules shape them. You're building an instrument for moving voltage, not pressing buttons.
 
@@ -99,9 +99,9 @@ Modules operate on DC voltage provided by the case's power supply. Standard rail
 
 **Patch cables:** You need 3.5mm (TS) mono cables, often called "eurorack patch cables." Start with 20-30 cables in varying lengths (6", 12", 24"). Budget $20-50 for a starter pack. You'll accumulate hundreds eventually.
 
-**Power cables (ribbon cables):** Come with modules. These are flat ribbon cables that connect from the module's power header to the case's bus board (power distribution). Sometimes called "eurorack power cables" or just "power ribbons." Keep spares—they fail occasionally. Different modules use different ribbon cable styles (16-pin, 10-pin, etc.), so you may need adapters or different cables as your system grows.
+**Power cables (ribbon cables):** Come with modules. These are flat ribbon cables that connect from the module's power header to the case's bus board (power distribution). Sometimes called "eurorack power cables" or just "power ribbons." Keep spares; they fail occasionally. Different modules use different ribbon cable styles (16-pin, 10-pin, etc.), so you may need adapters or different cables as your system grows.
 
-**Avoid:** Using audio cables (TRS—the ones with three rings) for CV/gate won't damage anything, but can create ground loops. Stick with TS mono cables (two rings) for patch cables.
+**Avoid:** Using audio cables (TRS, the ones with three rings) for CV/gate won't damage anything, but can create ground loops. Stick with TS mono cables (two rings) for patch cables.
 
 ### Audio Output
 
@@ -114,7 +114,7 @@ Modules operate on DC voltage provided by the case's power supply. Standard rail
 - These bring modular signal voltage down to line level safely
 
 **Dedicated modular output module:**
-- Many modern audio interfaces handle modular levels fine—check specs
+- Many modern audio interfaces handle modular levels fine; check specs
 - Expert Sleepers ES-8/ES-9 provide computer I/O plus DC-coupled outputs for CV
 - Some mixers (like Bastl Instruments Ciao! or WMD Performance Mixer) include proper output sections
 
@@ -126,7 +126,7 @@ Modules operate on DC voltage provided by the case's power supply. Standard rail
 
 **Multimeter:** A basic digital multimeter ($20-40) helps troubleshoot power issues, check cable continuity, and verify voltage levels at jacks. Not mandatory day one, but you'll want one eventually.
 
-**CV/Signal visualization:** Modules like **Mordax Data** (around $300) or **Joranalogue Select 2** (around $300) let you see waveforms and voltage behavior. This accelerates learning dramatically—seeing what voltage is doing helps understanding happen much faster. Not essential for beginners, but transformative if budget allows.
+**CV/Signal visualization:** Modules like **Mordax Data** (around $300) or **Joranalogue Select 2** (around $300) let you see waveforms and voltage behavior. This accelerates learning dramatically; seeing what voltage is doing helps understanding happen much faster. Not essential for beginners, but transformative if budget allows.
 
 **Notebook and camera:** Document patches. Take photos of interesting patches before tearing them down. Keep a notebook of ideas, problems solved, things to try. Low-tech but invaluable.
 
@@ -142,11 +142,11 @@ Eurorack is a **modular synthesizer format standard** developed by Doepfer in th
 
 **HP width:** Modules are measured in "horizontal pitch" units. 1HP = 0.2 inches / 5.08mm. An 8HP module is about 1.6 inches wide. Cases are commonly 84HP, 104HP, 140HP, and 168HP for single rows, or 208HP and 280HP configured as dual rows.
 
-**Depth:** No standard—check your case depth against module depth specs. Some modules are shallow (25mm), others deep (65mm+). Ribbon cables on the back add depth. Doepfer cases are typically 150mm internal depth, which fits almost everything.
+**Depth:** No standard; check your case depth against module depth specs. Some modules are shallow (25mm), others deep (65mm+). Ribbon cables on the back add depth. Doepfer cases are typically 150mm internal depth, which fits almost everything.
 
 ### Electrical Standards
 
-**CV (Control Voltage):** The standard voltage language for modular pitch control is 1 volt per octave. 0V = C0, 1V = C1, 2V = C2, etc. Most modules follow this standard, but verify—especially with vintage or DIY gear. This voltage type is unipolar (positive-going) and carries pitch information.
+**CV (Control Voltage):** The standard voltage language for modular pitch control is 1 volt per octave. 0V = C0, 1V = C1, 2V = C2, etc. Most modules follow this standard, but verify; especially with vintage or DIY gear. This voltage type is unipolar (positive-going) and carries pitch information.
 
 **Gate signals:** Usually 0V (off) to +5V or +10V (on). Triggers are brief pulses; gates are sustained. These tell envelopes when to fire, VCAs when to open, sequencers when to advance. This voltage type is unipolar and carries timing information.
 
@@ -170,7 +170,7 @@ All oscillators respond to the same 1V/octave pitch voltage standard. But you'll
 - **V/Oct** (Mutable, some Erica modules)
 - **1V/Oct** (other modules)
 - **Pitch** (some simpler modules)
-- **Hz/V** (older analog modules—this one is actually different, so check!)
+- **Hz/V** (older analog modules, this one is actually different, so check!)
 
 **They all accept the same voltage information.** 1V = one octave higher. But the manufacturer chose different names. This is frustrating but standard in the industry.
 
@@ -188,13 +188,13 @@ All oscillators respond to the same 1V/octave pitch voltage standard. But you'll
 
 ## Understanding Signal Flow Categories
 
-Before buying specific modules, understand what **functions** a musical system requires. Every synthesizer—hardware, software, modular, or otherwise—needs these categories working together.
+Before buying specific modules, understand what **functions** a musical system requires. Every synthesizer; hardware, software, modular, or otherwise; needs these categories working together.
 
-**In voltage terms:** Everything in your system is a processor of voltage. Sound sources generate voltage. Modifiers process it. Controllers apply it to control other modules. The magic is routing—deciding where voltage comes from and where it goes.
+**In voltage terms:** Everything in your system is a processor of voltage. Sound sources generate voltage. Modifiers process it. Controllers apply it to control other modules. The magic is routing; deciding where voltage comes from and where it goes.
 
 ### Sound Sources (Oscillators, Noise, Samples)
 
-**What they do:** Generate voltage (especially audio-rate voltage that becomes sound). Voltage-controlled oscillators (VCOs) produce waveforms—sine, triangle, sawtooth, square, etc. Noise generators create white/pink noise. Sample players trigger audio files.
+**What they do:** Generate voltage (especially audio-rate voltage that becomes sound). Voltage-controlled oscillators (VCOs) produce waveforms; sine, triangle, sawtooth, square, etc. Noise generators create white/pink noise. Sample players trigger audio files.
 
 **Examples:**
 - Budget: **Doepfer A-110-1 Basic VCO** (around $120)
@@ -223,7 +223,7 @@ Before buying specific modules, understand what **functions** a musical system r
 - Mid: **Erica Synths Black Quad VCA2** (around $280) - four VCAs with mixing
 - Fancy: **Mutable Instruments Veils** (around $200) - quad VCA with multiple topologies
 
-**Absolutely essential.** Without VCAs, everything is at full volume all the time. VCAs let you apply control voltage to gate audio voltage—that's how you create rhythmic articulation and dynamic expression.
+**Absolutely essential.** Without VCAs, everything is at full volume all the time. VCAs let you apply control voltage to gate audio voltage; that's how you create rhythmic articulation and dynamic expression.
 
 ### Modulators (Envelopes, LFOs, Random Sources)
 
@@ -282,7 +282,7 @@ People make predictable mistakes when starting modular. Here's what to avoid.
 
 ### Buying the Sexy Module First
 
-**The trap:** You see a beautiful complex module in a video—some programmable effects processor or intricate sequencer—and buy it first because it's impressive.
+**The trap:** You see a beautiful complex module in a video; some programmable effects processor or intricate sequencer; and buy it first because it's impressive.
 
 **The problem:** Complex modules assume you have a functional system already. That gorgeous reverb needs audio voltage to process. That intricate sequencer needs oscillators to control.
 
@@ -292,7 +292,7 @@ People make predictable mistakes when starting modular. Here's what to avoid.
 
 **The trap:** "Do I really need VCAs? The oscillator makes sound without them."
 
-**The problem:** Yes, it does—at full blast, constantly. Without VCAs controlled by envelopes, you can't create rhythmic note articulation or dynamic expression. Everything is a drone. The control voltage from your envelope has nowhere to apply itself.
+**The problem:** Yes, it does; at full blast, constantly. Without VCAs controlled by envelopes, you can't create rhythmic note articulation or dynamic expression. Everything is a drone. The control voltage from your envelope has nowhere to apply itself.
 
 **The fix:** Budget for at least 2-4 VCA channels in your initial system. You need one VCA per voice minimum, and more for modulation routing.
 
@@ -300,7 +300,7 @@ People make predictable mistakes when starting modular. Here's what to avoid.
 
 **The trap:** Buying one envelope generator thinking "that's enough."
 
-**The problem:** You need at least two envelopes per voice—one for amplitude (applied via VCA), another for filter or oscillator modulation. Add LFOs for ongoing movement. One control voltage source is rarely sufficient.
+**The problem:** You need at least two envelopes per voice; one for amplitude (applied via VCA), another for filter or oscillator modulation. Add LFOs for ongoing movement. One control voltage source is rarely sufficient.
 
 **The fix:** Plan for 2-3 envelopes minimum. Modules like Maths provide two function generators. Budget accordingly.
 
@@ -310,7 +310,7 @@ People make predictable mistakes when starting modular. Here's what to avoid.
 
 **The problem:** You run out of space, or worse, you exceed your power supply's current capacity and voltage droops (which creates tuning instability, clicks, crashes, or damage).
 
-**The fix:** Track HP carefully. Use ModularGrid.com to plan your case virtually—it calculates HP and current draw automatically. Know your case's limits before buying.
+**The fix:** Track HP carefully. Use ModularGrid.com to plan your case virtually; it calculates HP and current draw automatically. Know your case's limits before buying.
 
 ### No Plan for Utilities
 
@@ -326,7 +326,7 @@ People make predictable mistakes when starting modular. Here's what to avoid.
 
 **The problem:** You end up with a dysfunctional system that looks good on paper but doesn't inspire you musically. Resale value means nothing if you never use it.
 
-**The fix:** Buy for your workflow and sound. Modular is expensive—make every HP count toward what you actually want to create.
+**The fix:** Buy for your workflow and sound. Modular is expensive; make every HP count toward what you actually want to create.
 
 ### Analysis Paralysis
 
@@ -340,7 +340,7 @@ People make predictable mistakes when starting modular. Here's what to avoid.
 
 ## Buying Used: What to Look For
 
-The used market offers significant savings—30-50% off retail is common. But buying secondhand requires care.
+The used market offers significant savings: 30-50% off retail is common. But buying secondhand requires care.
 
 ### Where to Buy Used
 
@@ -357,7 +357,7 @@ The used market offers significant savings—30-50% off retail is common. But bu
 
 ### What to Check
 
-**Complete module:** Verify it includes power cable, mounting screws, and any essential accessories (faceplates, expanders). Some modules need specific power cables—missing them is expensive.
+**Complete module:** Verify it includes power cable, mounting screws, and any essential accessories (faceplates, expanders). Some modules need specific power cables; missing them is expensive.
 
 **Physical condition:** Scratches on faceplates are cosmetic. Bent jacks, loose potentiometers, or cracked panels indicate rough handling. Avoid modules with obvious signs of liquid damage or corrosion.
 

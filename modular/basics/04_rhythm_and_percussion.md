@@ -2,7 +2,7 @@
 
 **Building drum voices with different architectures.**
 
-In Guides 01-03, you built a complete melodic voice: oscillator → filter → VCA with envelopes and sequencing. That architecture works beautifully for pitched sounds—bass lines, leads, pads. But **percussion requires different thinking.**
+In Guides 01-03, you built a complete melodic voice: oscillator → filter → VCA with envelopes and sequencing. That architecture works beautifully for pitched sounds; bass lines, leads, pads. But **percussion requires different thinking.**
 
 **This guide teaches percussion voice design:** different sound sources, different envelope approaches, different filter uses. You'll understand why drum sounds need their own architecture.
 
@@ -44,7 +44,7 @@ In Guides 01-03, you built a complete melodic voice: oscillator → filter → V
 - Sound source: Noise (white or metallic noise generators work well)
 - Very short envelope (closed hat) or medium-short envelope (open hat)
 - Highpass filter (removes lows, keeps crisp highs)
-- No pitch modulation needed—purely rhythmic texture
+- No pitch modulation needed; purely rhythmic texture
 
 **Tom:**
 - Sound source: Sine/triangle oscillator, pitched (different pitch per tom)
@@ -305,7 +305,7 @@ Add a second envelope for pitch:
 
 ### "Hi-hat sounds muffled, not crisp"
 
-**Highpass filter cutoff is too low.** Raise cutoff frequency to 8kHz+ range. Also check resonance—a bit of resonance adds crispness.
+**Highpass filter cutoff is too low.** Raise cutoff frequency to 8kHz+ range. Also check resonance; a bit of resonance adds crispness.
 
 ### "Snare has no snap, sounds dull"
 
@@ -364,7 +364,7 @@ Slow attacks create "soft" percussion, which works for some sounds but not punch
 
 **The modules don't change. The routing and parameter settings create different results.**
 
-**This is fundamental to modular:** A VCA doesn't "know" if it's shaping a bass line or a kick drum. An envelope doesn't "know" if it's creating sustained pads or percussive hits. **Context—routing and settings—determines function.**
+**This is fundamental to modular:** A VCA doesn't "know" if it's shaping a bass line or a kick drum. An envelope doesn't "know" if it's creating sustained pads or percussive hits. **Context; routing and settings; determines function.**
 
 **Percussion also reinforces trigger vs. gate thinking:**
 - Melodic voices need **gates** (envelopes sustain while gate is high)

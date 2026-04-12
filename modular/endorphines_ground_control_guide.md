@@ -11,7 +11,7 @@
 
 **Your goal:** Create and perform a polymetric drum pattern in 5 minutes.
 
-**What is Ground Control?** A performance-focused sequencer that breaks free from locked rhythmic grids. Unlike traditional step sequencers where all tracks must resolve at the same time, Ground Control lets each track run at its own speed, creating complex polymetric relationships while staying musically synchronized. It's built to think in real time—recording grooves on the fly, generating random variations instantly, and controlling external gear via CV, gate, MIDI, and USB.
+**What is Ground Control?** A performance-focused sequencer that breaks free from locked rhythmic grids. Unlike traditional step sequencers where all tracks must resolve at the same time, Ground Control lets each track run at its own speed, creating complex polymetric relationships while staying musically synchronized. It's built to think in real time; recording grooves on the fly, generating random variations instantly, and controlling external gear via CV, gate, MIDI, and USB.
 
 **Key Specifications:**
 - **Width:** 42 HP
@@ -152,7 +152,7 @@ These terms define how tracks relate:
 - **Polymetry:** Each track has a different pattern *length* (e.g., Track 1 = 16 steps, Track 2 = 7 steps). They stay synchronized to the master clock but resolve at different times, creating evolving patterns.
 - **Polyrhythm:** Each track has a different *time signature* (e.g., 5:4 ratio). The sequencer stretches/compresses step timing to fit non-standard beat divisions. Set via **TEMPO → A** (polyrhythmic time-base menu).
 
-Ground Control excels at *both*—you can run Track 1 at 16 steps with 4:4 time signature while Track 2 runs 7 steps with a 5:4 time signature, creating deeply complex rhythmic textures.
+Ground Control excels at *both*; you can run Track 1 at 16 steps with 4:4 time signature while Track 2 runs 7 steps with a 5:4 time signature, creating deeply complex rhythmic textures.
 
 **Pattern Lock:**
 
@@ -162,7 +162,7 @@ Press **⯇PATTERN + PATTERN⯈** simultaneously to lock all 4 tracks to the sam
 
 ## Foundation: Basic Groove Patterns
 
-Before exploring polymetric sophistication, it's worth understanding Ground Control as a *straightforward drum sequencer*. Most electronic music (house, techno, industrial) builds from locked 4/4 grids—all tracks same length, all tracks same time division. Ground Control handles this elegantly, adding intuitive shuffle and performance controls that make it viable for traditional groove creation.
+Before exploring polymetric sophistication, it's worth understanding Ground Control as a *straightforward drum sequencer*. Most electronic music (house, techno, industrial) builds from locked 4/4 grids; all tracks same length, all tracks same time division. Ground Control handles this elegantly, adding intuitive shuffle and performance controls that make it viable for traditional groove creation.
 
 **Locked-Grid Architecture:**
 
@@ -179,13 +179,13 @@ This is your starting point. No polymetry. No complex time signatures. Just kick
 2. **Record kick pattern:** Press RECORD (short), then press P/1 (kick trigger) on steps 1, 5, 9, 13 (every four sixteenth notes = on the beat). Fill remaining steps with REST (TEMPO button). This creates a kick on every quarter note.
 3. **Record snare:** Switch to drum trigger S/4. Press RECORD, then press S/4 on steps 4, 12 (classic 2/4 snare placement). Rest elsewhere.
 4. **Record hi-hat:** Switch to drum trigger Q/2. Press RECORD, then press Q/2 on *every step* (all 16 positions). This creates a closed hi-hat on every sixteenth note.
-5. **Add shuffle:** Press TEMPO → G (SHUFFLE). Use VALUE -/+ to set to 54% (the classic "loose but tight" electronic music shuffle). Listen as the hi-hat becomes less metronomic—more human.
+5. **Add shuffle:** Press TEMPO → G (SHUFFLE). Use VALUE -/+ to set to 54% (the classic "loose but tight" electronic music shuffle). Listen as the hi-hat becomes less metronomic; more human.
 6. **Save:** Press 🞸 → RECORD → RECORD. Pattern saved.
 7. **Listen:** Press PLAY. You've created a foundational house/techno groove with minimal setup.
 
 **Why locked grids matter:**
 
-Locked grids are constraints that enable focus. You're not managing independent track timing—you're composing within a shared rhythmic framework. This is where 99% of house and techno tracks live. Ground Control doesn't force complexity; it supports it when needed.
+Locked grids are constraints that enable focus. You're not managing independent track timing; you're composing within a shared rhythmic framework. This is where 99% of house and techno tracks live. Ground Control doesn't force complexity; it supports it when needed.
 
 **Key Parameters for Basic Grooves:**
 
@@ -220,7 +220,7 @@ But first, lock the grid. Master that simplicity. *Then* introduce variation.
 
 **Polymetric thinking as a performance tool**
 
-Most sequencers force you into grids. All tracks must resolve. All patterns must align. Ground Control inverts this: it *asks* each track to exist at its own pace. This isn't academic polyrhythm theory—it's practical performance architecture.
+Most sequencers force you into grids. All tracks must resolve. All patterns must align. Ground Control inverts this: it *asks* each track to exist at its own pace. This isn't academic polyrhythm theory; it's practical performance architecture.
 
 When you set drum kick to 16 steps and hi-hat to 7 steps, you're not fighting a constraint. You're leveraging a design that says: "These rhythms will never lock, so they'll create textural evolution without you touching anything." The patterns shift imperceptibly, creating the sensation that the sequencer is *responding* to musical intention rather than executing rigid instructions. This is synthesis thinking applied to sequencing: good design creates sophisticated behavior through elegance, not complexity.
 
@@ -228,7 +228,7 @@ When you set drum kick to 16 steps and hi-hat to 7 steps, you're not fighting a 
 
 Firmware V.3 introduced three distinct random pattern generators: euclidean (notes distributed evenly across steps, creating layered polyrhythmic density), wide random (maximum freedom), and narrow random (conservative, bassline-focused). Crucially, these aren't gimmicks. They're *sophisticated generation*.
 
-Record a 16-step melodic pattern. Press **TEMPO + 1/16** (wide random) and the sequencer generates entirely new melodies in your selected scale, maintaining key and playability. Press **TEMPO + 1/4** (random variation) and the sequencer takes your existing pattern and adds ratchets, slides, probability, octave shifts—subtle variations that preserve identity while creating fresh character. This is the opposite of chaos randomness. It's generative variation that respects musical constraints.
+Record a 16-step melodic pattern. Press **TEMPO + 1/16** (wide random) and the sequencer generates entirely new melodies in your selected scale, maintaining key and playability. Press **TEMPO + 1/4** (random variation) and the sequencer takes your existing pattern and adds ratchets, slides, probability, octave shifts; subtle variations that preserve identity while creating fresh character. This is the opposite of chaos randomness. It's generative variation that respects musical constraints.
 
 Performance use: Generate three variations of a bassline live. Keep the audience guessing. Maintain coherence through algorithmic design rather than human limitation.
 
@@ -238,7 +238,7 @@ The external CV input matrix (TEMPO → E) is where Ground Control becomes a *sy
 
 Four CV inputs. Unlimited assignment possibilities. One CV input controls pattern shift (nudge timing forward/backward), another controls shuffle amount, another controls probability (note skip chance), another controls ratchet density. Run all four inputs from a Maths or similar modulator, and Ground Control becomes responsive architecture: the entire rhythmic character shifts in real time as CV modulates parameters.
 
-This is synthesis thinking. A single modulator (Maths envelope, LFO, or external CV) can reshape the entire groove—timing, swing, density, articulation—creating the sensation that the sequencer is *performing with* you rather than playing *for* you.
+This is synthesis thinking. A single modulator (Maths envelope, LFO, or external CV) can reshape the entire groove; timing, swing, density, articulation; creating the sensation that the sequencer is *performing with* you rather than playing *for* you.
 
 **MIDI/CV/USB integration**
 
@@ -253,7 +253,7 @@ This isn't feature bloat. It's architecture that says: "Your modular system does
 
 **Performance-first philosophy**
 
-Design reveals intention. Ground Control's control surface is built around *real-time manipulation*. Pattern lock lets you switch entire arrangements with one keypress. Mute/solo buttons blink with track activity, giving visual feedback. Arpeggiator modes switch on the fly. Probability and ratchet density can be CV-modulated *while playing*. The small 4-character display never becomes a menu trap—menu access is instant (TEMPO + button).
+Design reveals intention. Ground Control's control surface is built around *real-time manipulation*. Pattern lock lets you switch entire arrangements with one keypress. Mute/solo buttons blink with track activity, giving visual feedback. Arpeggiator modes switch on the fly. Probability and ratchet density can be CV-modulated *while playing*. The small 4-character display never becomes a menu trap; menu access is instant (TEMPO + button).
 
 This is a sequencer that trusts you'll want to perform with it, not just program it.
 
@@ -276,11 +276,11 @@ This is a sequencer that trusts you'll want to perform with it, not just program
 5. **Record kick variation:** Save same kick to pattern B but LAST STEP + MUTE BUS 1 + VALUE-/+ to **13 steps**
 6. **Perform:** Hit PLAY. Listen to the two drums for ~30 seconds. The kick (16 steps) and hi-hat (11 steps) resolve every 176 steps (16 × 11), creating a constantly-shifting polymetric relationship. Press ⯇PATTERN⯈ to switch kick to pattern B (13 steps). Now hi-hat (11) and kick (13) create a different polymetric ratio.
 
-**Why this works:** Polymetric sequencing doesn't require external gear—it reveals itself through pure rhythm. The sequencer becomes a standalone compositional tool.
+**Why this works:** Polymetric sequencing doesn't require external gear; it reveals itself through pure rhythm. The sequencer becomes a standalone compositional tool.
 
 **Similar Standalone Sequencers:**
-- **Budget:** Erica Synths Pico Sequencer (limited to 8 steps, monophonic—simpler concept, fewer polymetric possibilities)
-- **Different character:** Elektron Analog Rytm (grid-locked, all tracks quantized to same resolution—forces you to think synchronously rather than polyrythmically)
+- **Budget:** Erica Synths Pico Sequencer (limited to 8 steps, monophonic, simpler concept, fewer polymetric possibilities)
+- **Different character:** Elektron Analog Rytm (grid-locked, all tracks quantized to same resolution, forces you to think synchronously rather than polyrythmically)
 - **Premium:** Elektron Octatrack (8-track sequencer, polymetric capable, but hardware-sampler focused vs. CV sequencer focused)
 
 ---
@@ -296,7 +296,7 @@ This is a sequencer that trusts you'll want to perform with it, not just program
 1. **Set melody:** TRACK 1, set pattern length to 16 steps, time division 1/16 (default)
 2. **Record a simple melody:** RECORD → A (note), B (note), C (note), rest, D (note), rest, rest, rest, then repeat pattern B. Create a 16-step melodic phrase.
 3. **Enable arpeggiator:** Press **1/16** button to enable arpeggiator, watch for the button to blink. Mode = UP (default).
-4. **Play the keyboard live:** While sequencer is running, hold down 3 keys on the piano keys (e.g., C, E, G = C major triad). The arpeggiator plays notes in ascending order. Release and hold different keys—the arpeggio follows your input.
+4. **Play the keyboard live:** While sequencer is running, hold down 3 keys on the piano keys (e.g., C, E, G = C major triad). The arpeggiator plays notes in ascending order. Release and hold different keys; the arpeggio follows your input.
 5. **Latch the arpeggiator:** Press **LAST STEP** (holding longer than 1 sec for super-latch). Now you can play keys and they're added/removed from the arpeggio live without the arpeggio stopping between note releases.
 6. **Generate variation:** PLAY is running, pattern is playing, arpeggiator is running. Press **TEMPO + 1/4** (random variation). The existing melodic pattern is rewritten: ratchets added, octaves shifted, probability variations introduced. The melody remains *recognizable* but *evolved*.
 7. **Switch arpeggiator modes live:** Press **1/16** (UP mode), then **1/8** (RANDOM mode), then **1/4** (ORDER mode). Each mode changes how the arpeggio unfolds.
@@ -336,7 +336,7 @@ This is a sequencer that trusts you'll want to perform with it, not just program
 **Why this works:** Ground Control becomes the *nervous system* of your modular system. Multiple types of signals (pitch, modulation, gates, clock) flow from a single sequencer with unified timing and parameter editing. If you want to shift the entire patch's tonality, press TRACK 1/2/3 + TRANSPOSE +/- to shift octaves. If you want to randomize the bass, press TEMPO + 1/16 (wide random).
 
 **Similar Integration Tools:**
-- **Budget:** Pamela's NEW Workout (clock divider + modulation source, not a sequencer—can't record melodic patterns)
+- **Budget:** Pamela's NEW Workout (clock divider + modulation source, not a sequencer, can't record melodic patterns)
 - **Different character:** Intellijel Metropolix (dedicated hardware sequencer, no CV output for modulation, not clock-output optimized)
 - **Premium:** Elektron Analog Rytm (all-in-one rhythmic sequencer, but lacks 1V/octave CV outputs for external pitch control)
 
@@ -372,7 +372,7 @@ This is a sequencer that trusts you'll want to perform with it, not just program
 
 6. **Add pattern switching:** While modulation is happening, press TRACK 1 + ⯇PATTERN⯈ to switch to pattern B (different bassline). The new melody arrives quantized to pattern end, but the modulation continues affecting the new pattern's shuffle/probability/ratchets.
 
-**Why this works:** CV modulation is how synthesis achieves responsiveness. Ground Control's CV input matrix isn't an afterthought—it's core architecture. A simple 3-envelope system (Maths) transforms the entire sequencer into a generative instrument. Parameters that would normally be menu-diving static values become real-time performance control.
+**Why this works:** CV modulation is how synthesis achieves responsiveness. Ground Control's CV input matrix isn't an afterthought; it's core architecture. A simple 3-envelope system (Maths) transforms the entire sequencer into a generative instrument. Parameters that would normally be menu-diving static values become real-time performance control.
 
 **Similar Integration Tools:**
 - **Budget:** Teenage Engineering OP-1 Field (sequencer + modulation, but limited CV control and lower resolution than Ground Control)
@@ -387,19 +387,19 @@ This is a sequencer that trusts you'll want to perform with it, not just program
 
 **The misunderstanding:** You set different pattern lengths (16 and 7 steps) but the polymetric relationship feels chaotic rather than musical.
 
-**Why it happens:** Polymetry only reveals itself over time. Two patterns with lengths of 16 and 7 steps resolve every 112 steps (LCM of 16 and 7). If you only listen for 20 steps, you're hearing the beginning of the cycle, where the polymetric relationship hasn't yet evolved. Alternatively, you're not quantizing your pattern *ends* to musical value—the patterns might be starting at different points in the measure, creating misalignment rather than polymetry.
+**Why it happens:** Polymetry only reveals itself over time. Two patterns with lengths of 16 and 7 steps resolve every 112 steps (LCM of 16 and 7). If you only listen for 20 steps, you're hearing the beginning of the cycle, where the polymetric relationship hasn't yet evolved. Alternatively, you're not quantizing your pattern *ends* to musical value; the patterns might be starting at different points in the measure, creating misalignment rather than polymetry.
 
 **The fix:** Record longer patterns (24-32 steps per pattern) and listen for at least 3-4 cycles before judging. Use the same time division (e.g., 1/16) for all tracks initially, then vary only *length*, not time division. Confirm both patterns start from the downbeat (step 1). The polymetric magic builds over 20-30 seconds, not immediately.
 
-**The principle:** Polymetric design rewards patience. The sophistication emerges from sustained listening, not instant gratification. This teaches you to think in longer compositional arcs—phrases that develop and evolve rather than loops that reset.
+**The principle:** Polymetric design rewards patience. The sophistication emerges from sustained listening, not instant gratification. This teaches you to think in longer compositional arcs; phrases that develop and evolve rather than loops that reset.
 
 ### Mistake 2: "Randomization just destroyed my pattern"
 
 **The misunderstanding:** You press TEMPO + 1/16 (random pattern generator) and the sequencer replaces your carefully-crafted pattern with something unrecognizable.
 
-**Why it happens:** Random pattern generation *clears* the current pattern and generates a new one. The algorithm respects your selected scale and key (set via TEMPO → N), but it doesn't preserve your original melody—it creates a new one. Many users expect randomization to be a variation tool (modify existing content) when it's actually a generation tool (replace with new content).
+**Why it happens:** Random pattern generation *clears* the current pattern and generates a new one. The algorithm respects your selected scale and key (set via TEMPO → N), but it doesn't preserve your original melody; it creates a new one. Many users expect randomization to be a variation tool (modify existing content) when it's actually a generation tool (replace with new content).
 
-**The fix:** Before using random generation, save your current pattern to a different slot. Press 🞸 → RECORD → A...Z to save pattern A to pattern B. Now if random generation creates something you don't want, press ⯇PATTERN⯈ to switch back to the saved version. Use **TEMPO + 1/4 (random variation)** instead if you want to *modify* rather than *replace*—this adds ratchets, probability, octave shifts to your existing pattern while preserving its core melodic shape.
+**The fix:** Before using random generation, save your current pattern to a different slot. Press 🞸 → RECORD → A...Z to save pattern A to pattern B. Now if random generation creates something you don't want, press ⯇PATTERN⯈ to switch back to the saved version. Use **TEMPO + 1/4 (random variation)** instead if you want to *modify* rather than *replace*; this adds ratchets, probability, octave shifts to your existing pattern while preserving its core melodic shape.
 
 **The principle:** Randomization is creative fuel, not safety-net accident. Respect the destructive potential. Plan redundancy (save before randomizing). Understand the distinction between generation (creates new content) and variation (modifies existing content).
 
@@ -407,7 +407,7 @@ This is a sequencer that trusts you'll want to perform with it, not just program
 
 **The misunderstanding:** You assign a CV input to control shuffle (TEMPO → E → SHFL) but you don't see the effect on the pattern.
 
-**Why it happens:** CV modulation only affects *ongoing playback*. If you assign CV 1 to shuffle, then turn on the module, the CV value is static (whatever voltage is on the input). Changes to shuffle manifest as the pattern plays. Also, shuffle is measured in percentages (-50 to +50), which corresponds to -5V to +5V input range. If you're sending, say, +2V, you're in the middle of the range (0% shuffle)—the effect is subtle.
+**Why it happens:** CV modulation only affects *ongoing playback*. If you assign CV 1 to shuffle, then turn on the module, the CV value is static (whatever voltage is on the input). Changes to shuffle manifest as the pattern plays. Also, shuffle is measured in percentages (-50 to +50), which corresponds to -5V to +5V input range. If you're sending, say, +2V, you're in the middle of the range (0% shuffle); the effect is subtle.
 
 **The fix:** 
 1. Confirm the CV source is changing. Use a known modulator (Maths LFO, Batumi triangle wave, even a manual voltage from your patch cable).
@@ -415,13 +415,13 @@ This is a sequencer that trusts you'll want to perform with it, not just program
 3. Listen over a full pattern cycle. Shuffle changes how step timing is distributed, which is subtle until you hear it over 16 steps.
 4. Start with obvious parameters: RATCHETS (0 to 4 in 1V increments) creates dense builds. PROBABILITY (0-100%) creates note-skipping waves. These are more immediately perceptible than shuffle.
 
-**The principle:** CV modulation is subtle control architecture, not knob-turning. It reveals itself through careful listening and systematic parameter exploration. This teaches you to think in modulation design—how does one parameter changing reshape the musical character?
+**The principle:** CV modulation is subtle control architecture, not knob-turning. It reveals itself through careful listening and systematic parameter exploration. This teaches you to think in modulation design; how does one parameter changing reshape the musical character?
 
 ### Mistake 4: "I can't keep up with the sequencer live"
 
 **The misunderstanding:** You're trying to play the keyboard, manage pattern changes, and modulate CV inputs simultaneously, and it feels overwhelming.
 
-**Why it happens:** Ground Control is designed for performance, but performance requires *preparation*. If you're discovering the sequencer during playback, you'll feel scattered. The interface isn't the constraint—your mental model is.
+**Why it happens:** Ground Control is designed for performance, but performance requires *preparation*. If you're discovering the sequencer during playback, you'll feel scattered. The interface isn't the constraint; your mental model is.
 
 **The fix:** 
 1. Pre-record patterns in advance (patterns A-E ready before you press PLAY).
@@ -430,7 +430,7 @@ This is a sequencer that trusts you'll want to perform with it, not just program
 4. Use MUTE/SOLO to shape arrangement (turn tracks on/off) rather than constantly switching patterns.
 5. Practice the transition sequence (which patterns follow which) before performing.
 
-**The principle:** Performance isn't spontaneous chaos—it's choreography. Ground Control's real-time control surfaces (arpeggiator modes, mute buttons, pattern switching) are powerful *when you've prepared the content* they'll control. This teaches the synthesis principle that sophistication emerges from constraint and preparation, not from complexity.
+**The principle:** Performance isn't spontaneous chaos; it's choreography. Ground Control's real-time control surfaces (arpeggiator modes, mute buttons, pattern switching) are powerful *when you've prepared the content* they'll control. This teaches the synthesis principle that sophistication emerges from constraint and preparation, not from complexity.
 
 ### Mistake 5: "My MIDI controller isn't talking to Ground Control"
 
@@ -444,7 +444,7 @@ This is a sequencer that trusts you'll want to perform with it, not just program
 3. Use GLOBAL MIDI CHANNEL: TEMPO → M → B (CH.GL) to set a global receive channel that all tracks listen to simultaneously. This is the safest option for live keyboard control.
 4. Test with the sequencer stopped, then running. Live recording works in both modes.
 
-**The principle:** MIDI is a protocol, not magic. Connectivity requires explicit configuration. This teaches architectural thinking: signals only flow when source and destination are aligned. Ground Control's MIDI implementation is clean and logical—problems always trace to channel assignment or physical connection status.
+**The principle:** MIDI is a protocol, not magic. Connectivity requires explicit configuration. This teaches architectural thinking: signals only flow when source and destination are aligned. Ground Control's MIDI implementation is clean and logical; problems always trace to channel assignment or physical connection status.
 
 ---
 
@@ -478,7 +478,7 @@ This is a sequencer that trusts you'll want to perform with it, not just program
 - External MIDI keyboard (expand 24-key Ground Control keyboard to 88-key controller)
 
 **Integration Philosophy**
-Ground Control is architecturally agnostic. It works equally well as the master clock anchoring a large modular system, as a slave synced to a DAW or hardware drum machine, or as a standalone polymetric groove box. The key is *intentional connection*—every patch cable serves a purpose (timing, pitch data, modulation, or control).
+Ground Control is architecturally agnostic. It works equally well as the master clock anchoring a large modular system, as a slave synced to a DAW or hardware drum machine, or as a standalone polymetric groove box. The key is *intentional connection*; every patch cable serves a purpose (timing, pitch data, modulation, or control).
 
 ---
 
@@ -488,7 +488,7 @@ Ground Control is architecturally agnostic. It works equally well as the master 
 
 Polymetry (different pattern *lengths*) is foundational. Polyrhythm (different time *signatures* per track) is the next layer.
 
-**What it means:** Set TRACK 1 to a 4:4 time signature (4 beats in 4 beats—normal). Set TRACK 2 to a 5:4 time signature (5 beats in 4 beats—stretched). Now TRACK 2 plays 5 notes in the same time TRACK 1 plays 4 notes. They won't realign for many measures.
+**What it means:** Set TRACK 1 to a 4:4 time signature (4 beats in 4 beats, normal). Set TRACK 2 to a 5:4 time signature (5 beats in 4 beats, stretched). Now TRACK 2 plays 5 notes in the same time TRACK 1 plays 4 notes. They won't realign for many measures.
 
 Access via **TEMPO → A** (polyrhythmic time-base). The display shows two numbers: first number = how many steps fit into the second number = how many steps you've allocated. Default 4:4 (normal). Try 5:4, 7:8, 17:16.
 
@@ -542,7 +542,7 @@ The arpeggiator is the bridge between step sequencing and keyboard performance.
 
 **Super-Latch mode:** Press LAST STEP (long hold, 1.5+ seconds). Now pressing keys *adds* them to the arpeggio. Pressing the same key again *removes* it. You're dynamically building the arpeggio while it plays. Maximum 24 notes in the arpeggio.
 
-**Performance technique:** Super-latch turns the sequencer into a live instrument. You're not "playing" in the traditional sense—you're composing the arpeggio in real time while it's playing. Notes layer up. Notes drop out. The arpeggio evolves with your input.
+**Performance technique:** Super-latch turns the sequencer into a live instrument. You're not "playing" in the traditional sense; you're composing the arpeggio in real time while it's playing. Notes layer up. Notes drop out. The arpeggio evolves with your input.
 
 ### Random Variation vs. Random Generation
 
@@ -584,13 +584,13 @@ Ground Control's clock system is generalist: it can sync to eurorack clock, MIDI
 ## Troubleshooting
 
 **Q: I recorded a melodic pattern but I can't hear it when I press PLAY.**
-A: Check that (1) TRACK 1/2/3 is selected (not TRACK D), (2) the melodic track's MUTE button is not engaged (MUTE BUS), (3) the patch cable is connected from the pitch CV jack to your oscillator's 1V/octave input, and (4) the oscillator is receiving the signal (check oscillator's CV input and fine-tune). Ground Control outputs correct 1V/octave CV—the issue is usually downstream oscillator configuration.
+A: Check that (1) TRACK 1/2/3 is selected (not TRACK D), (2) the melodic track's MUTE button is not engaged (MUTE BUS), (3) the patch cable is connected from the pitch CV jack to your oscillator's 1V/octave input, and (4) the oscillator is receiving the signal (check oscillator's CV input and fine-tune). Ground Control outputs correct 1V/octave CV; the issue is usually downstream oscillator configuration.
 
 **Q: My pattern switched when I didn't want it to.**
-A: Pattern switching is *quantized* by default. When you press ⯇PATTERN⯈, the sequencer doesn't switch immediately—it switches after the current pattern finishes. If you want to switch mid-pattern, hold TEMPO + PLAY to reset the track and immediately load the new pattern. Or disable pattern lock and switch individual tracks separately.
+A: Pattern switching is *quantized* by default. When you press ⯇PATTERN⯈, the sequencer doesn't switch immediately; it switches after the current pattern finishes. If you want to switch mid-pattern, hold TEMPO + PLAY to reset the track and immediately load the new pattern. Or disable pattern lock and switch individual tracks separately.
 
 **Q: I assigned a CV input to shuffle but nothing changed.**
-A: Shuffle range is -50 to +50, corresponding to -5V to +5V. If you're sending +2V (middle of range), you're at 0% shuffle—the effect is invisible. Send the full range (-5V to +5V) and listen over a full pattern cycle. Shuffle is subtle; try other parameters (RATCHETS, PROBABILITY) which are more immediately obvious.
+A: Shuffle range is -50 to +50, corresponding to -5V to +5V. If you're sending +2V (middle of range), you're at 0% shuffle; the effect is invisible. Send the full range (-5V to +5V) and listen over a full pattern cycle. Shuffle is subtle; try other parameters (RATCHETS, PROBABILITY) which are more immediately obvious.
 
 **Q: The sequencer stopped responding to my MIDI keyboard.**
 A: Check MIDI channel assignment (TEMPO → M → A CH.RX). Confirm your keyboard is transmitting on the same channel Ground Control is listening on. Check the MIDI cable connection (3.5mm TRS Type B). Try the panic function: hold STOP for 2+ seconds. This sends ALL NOTES OFF to reset MIDI state.

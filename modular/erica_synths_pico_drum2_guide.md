@@ -118,16 +118,16 @@ The Pico series, including DRUM2, introduced the concept of "algorithm-based syn
 ## Why This Instrument Excels
 
 ### **The Philosophy: Algorithm-Based Drum Synthesis**
-Pico DRUM2 represents a fundamental shift in modular drum design. Rather than creating drums through fixed signal paths (oscillator → filter → VCA → output), Pico DRUM2 gives you **8 completely different synthesis approaches in a single 3HP module**. Each algorithm solves the same problem—"make a percussion sound"—through a different technical method. This teaches you that percussion synthesis isn't about one "correct" approach, but about understanding which synthesis method serves the musical moment.
+Pico DRUM2 represents a fundamental shift in modular drum design. Rather than creating drums through fixed signal paths (oscillator → filter → VCA → output), Pico DRUM2 gives you **8 completely different synthesis approaches in a single 3HP module**. Each algorithm solves the same problem: "make a percussion sound"; through a different technical method. This teaches you that percussion synthesis isn't about one "correct" approach, but about understanding which synthesis method serves the musical moment.
 
 ### **The Magic: Sonic Density Without Compromise**
-What makes Pico DRUM2 special isn't just algorithmic variety—it's that **each algorithm remains musically useful and playable**. The algorithms aren't novelties; they're complete drum synthesis designs that would have required entire rows of vintage modular equipment to replicate. FM-modulated drums (Pulse Drum), wavefolded percussion (Fold Drums), algorithmic snares (Space Snare), resonant metallic sounds (Slap)—these aren't theoretical concepts, they're immediately musical options.
+What makes Pico DRUM2 special isn't just algorithmic variety; it's that **each algorithm remains musically useful and playable**. The algorithms aren't novelties; they're complete drum synthesis designs that would have required entire rows of vintage modular equipment to replicate. FM-modulated drums (Pulse Drum), wavefolded percussion (Fold Drums), algorithmic snares (Space Snare), resonant metallic sounds (Slap); these aren't theoretical concepts, they're immediately musical options.
 
 ### **The Architecture Insight: Why Each Parameter Matters**
-Every algorithm in Pico DRUM2 uses PARAM1 and PARAM2, but **the meaning of each parameter changes with the algorithm**. For Pulse Drum, PARAM1 controls oscillator tuning and PARAM2 controls FM decay. For Noise Crush, PARAM1 controls filter frequency and PARAM2 controls bitcrushing amount. This teaches a critical drum synthesis principle: **different synthesis methods have different control requirements**. There is no universal "pitch," "character," or "brightness"—there are only algorithm-specific parameters that mean something different depending on the synthesis approach you're using.
+Every algorithm in Pico DRUM2 uses PARAM1 and PARAM2, but **the meaning of each parameter changes with the algorithm**. For Pulse Drum, PARAM1 controls oscillator tuning and PARAM2 controls FM decay. For Noise Crush, PARAM1 controls filter frequency and PARAM2 controls bitcrushing amount. This teaches a critical drum synthesis principle: **different synthesis methods have different control requirements**. There is no universal "pitch," "character," or "brightness"; there are only algorithm-specific parameters that mean something different depending on the synthesis approach you're using.
 
 ### **The Interconnection: Signal Path Flexibility Through Algorithm Switching**
-Combine Pico DRUM2's 8 algorithms with CV-controlled algorithm switching (via CV1 configuration), and you've created a **dynamic drum voice that changes synthesis method mid-performance**. This teaches why drum synths are rhythm brains in complex modular systems—they're not fixed voices, they're adaptable sonic tools that respond to your patch's logic. Understanding this principle reveals why drum modules are so powerful: they take your modulation sources (chaos, learning patterns, automation) and transform them into percussion that evolves.
+Combine Pico DRUM2's 8 algorithms with CV-controlled algorithm switching (via CV1 configuration), and you've created a **dynamic drum voice that changes synthesis method mid-performance**. This teaches why drum synths are rhythm brains in complex modular systems; they're not fixed voices, they're adaptable sonic tools that respond to your patch's logic. Understanding this principle reveals why drum modules are so powerful: they take your modulation sources (chaos, learning patterns, automation) and transform them into percussion that evolves.
 
 ### **Perfect For:**
 - **Compact systems** - Complete drum synthesis without dedicating rows to oscillators, filters, VCAs
@@ -442,12 +442,12 @@ Algorithm Exploration Guide:
 - When you switch algorithms, intentionally listen for what changed - "Oh, PARAM2 now controls [this] instead of [that]"
 - Use extreme positions on the controls (fully clockwise, fully counterclockwise) to hear the maximum effect before finding musical sweet spots
 
-**What You're Learning:** Drum synthesis isn't monolithic. Different approaches (FM, wavefolding, noise filtering) have different control parameters. Understanding this teaches you why complete drum synths have more controls than simple ones—different synthesis methods need different manipulation points.
+**What You're Learning:** Drum synthesis isn't monolithic. Different approaches (FM, wavefolding, noise filtering) have different control parameters. Understanding this teaches you why complete drum synths have more controls than simple ones; different synthesis methods need different manipulation points.
 
 ### **"The decay knob turned all the way up sounds weird/broken"**
-**Problem:** When you turn the DECAY knob fully clockwise, the drum sound doesn't get "longer"—it becomes a sustained tone. It sounds unrelated to percussion.
+**Problem:** When you turn the DECAY knob fully clockwise, the drum sound doesn't get "longer"; it becomes a sustained tone. It sounds unrelated to percussion.
 
-**Why It Happens:** DECAY controls a **VCA envelope**, not a time parameter. CCW = fast envelope decay (percussive hit). CW = envelope fully open (no decay). Fully clockwise isn't "maximum decay time," it's **drone mode—the VCA stays open continuously**, so you hear the raw oscillator/noise without amplitude shaping. This is a feature, not a bug.
+**Why It Happens:** DECAY controls a **VCA envelope**, not a time parameter. CCW = fast envelope decay (percussive hit). CW = envelope fully open (no decay). Fully clockwise isn't "maximum decay time," it's **drone mode; the VCA stays open continuously**, so you hear the raw oscillator/noise without amplitude shaping. This is a feature, not a bug.
 
 **Solution:**
 - Keep decay in the 7-10 o'clock range for normal percussive behavior
@@ -455,7 +455,7 @@ Algorithm Exploration Guide:
 - Understand the relationship: shorter decay = punchier percussion, longer decay = sustained tails
 - For kicks and snares, stay in the 8-10 o'clock range and adjust PARAM1/PARAM2 for character
 
-**What You're Learning:** Envelope generators are amplitude controllers, not just timing devices. The DECAY knob isn't "how long the sound lasts"—it's "how the amplitude envelope shapes the sound." Short envelopes create percussive character. Long envelopes create sustained character. No envelope (drone mode) reveals the raw oscillator/noise. This principle appears everywhere in synthesis.
+**What You're Learning:** Envelope generators are amplitude controllers, not just timing devices. The DECAY knob isn't "how long the sound lasts"; it's "how the amplitude envelope shapes the sound." Short envelopes create percussive character. Long envelopes create sustained character. No envelope (drone mode) reveals the raw oscillator/noise. This principle appears everywhere in synthesis.
 
 ### **"CV1 doesn't work" or "CV1 is controlling the wrong thing"**
 **Problem:** Patching a CV source to CV1 either does nothing or controls something unexpected (like decay instead of PARAM2)
@@ -469,10 +469,10 @@ Algorithm Exploration Guide:
 - Test your assignment with a known CV source (oscillator, envelope generator) before complex patching
 - Return to normal mode by waiting 3 seconds without pressing the button
 
-**What You're Learning:** CV flexibility is a design choice. Erica Synths made CV1 configurable because different patches need different control targets. Understanding configuration mode teaches you that **modules can offer flexible routing, not just fixed connections**. This principle extends across modular synthesis—when a module offers configuration options, explore them.
+**What You're Learning:** CV flexibility is a design choice. Erica Synths made CV1 configurable because different patches need different control targets. Understanding configuration mode teaches you that **modules can offer flexible routing, not just fixed connections**. This principle extends across modular synthesis; when a module offers configuration options, explore them.
 
 ### **"My drum sounds disappear too fast"**
-**Problem:** Drums sound too "clicky" and percussive—the tail doesn't develop enough character, or sounds feel too truncated for the musical context
+**Problem:** Drums sound too "clicky" and percussive; the tail doesn't develop enough character, or sounds feel too truncated for the musical context
 
 **Why It Happens:** DECAY is set too short for your musical application. Kick drums in different genres have different envelope characteristics. A deep bass kick needs 100-300ms of decay to establish the low frequency. A tight snare needs 50-100ms. A tom needs 100-200ms. If your DECAY knob is too CCW (under 8 o'clock), everything sounds clicky regardless of algorithm choice.
 
@@ -480,7 +480,7 @@ Algorithm Exploration Guide:
 - For kicks: DECAY at 9-10 o'clock, PARAM1 low (deep pitch), PARAM2 varies by algorithm
 - For snares: DECAY at 8-9 o'clock, use Space Snare or Noise Crush algorithms
 - For toms: DECAY at 8-9 o'clock, adjust PARAM1 for pitch relationships
-- Experiment with decay times—the difference between 7 and 8 o'clock is enormous
+- Experiment with decay times; the difference between 7 and 8 o'clock is enormous
 - Listen to reference drum sounds in your genre and match the envelope character
 
 **What You're Learning:** **Envelope duration defines percussion character**. Short = clicky/percussive. Medium = normal percussion. Long = sustained/pad-like. The same algorithm produces completely different sounds at different decay settings. This teaches why drum programming requires attention to envelope timing, not just oscillator tuning.
@@ -495,7 +495,7 @@ Most Pico DRUM2 beginner frustrations come from misunderstanding **three core co
 
 **3. Configuration Options:** CV1 is configurable via MODE button, but most users never discover this. The moment you realize modules can offer flexible routing, your patches become dramatically more sophisticated. This teaches that good design means exploring every button, not just the obvious ones.
 
-**Understanding these patterns solves 90% of Pico DRUM2 issues** because they're not bugs—they're design features you didn't know existed. The module works exactly as intended; you just needed to understand its philosophy.
+**Understanding these patterns solves 90% of Pico DRUM2 issues** because they're not bugs; they're design features you didn't know existed. The module works exactly as intended; you just needed to understand its philosophy.
 
 ---
 

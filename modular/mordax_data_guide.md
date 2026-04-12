@@ -18,7 +18,7 @@
 | **Current Draw (5V)** | 0 mA |
 
 **A Quick Note on Navigation:**
-Data uses a screen-based digital interface (rotary encoder + softkeys), which is different from analog modules with dedicated knobs. Everything routes through the encoder and screen. You'll navigate intuitively once you understand what each program does—the manual covers specific button sequences.
+Data uses a screen-based digital interface (rotary encoder + softkeys), which is different from analog modules with dedicated knobs. Everything routes through the encoder and screen. You'll navigate intuitively once you understand what each program does; the manual covers specific button sequences.
 
 ---
 
@@ -186,7 +186,7 @@ Data uses a screen-based digital interface (rotary encoder + softkeys), which is
 **Alternative Approaches (You Probably Have):**
 - **Budget Approach:** Use individual utility modules (Doepfer A-160-2 clock divider, Fronious Mult for distribution) + software oscilloscope for analysis. Costs less but requires multiple modules and computer connectivity.
 - **Different Character:** Disting mk4 includes oscilloscope, spectrum, and tuner algorithms. Provides similar analysis functions in a smaller package (4 HP), though without dedicated waveform generation or integrated clock division.
-- **Premium Integration:** Multiple Mordax Data modules in same system for distributed analysis—monitoring different subsystems simultaneously with dedicated analysis at each stage.
+- **Premium Integration:** Multiple Mordax Data modules in same system for distributed analysis; monitoring different subsystems simultaneously with dedicated analysis at each stage.
 
 **Purpose:** Advanced Integration - Data as the analysis engine for sophisticated systems
 
@@ -206,7 +206,7 @@ Data uses a screen-based digital interface (rotary encoder + softkeys), which is
 - **Troubleshooting mastery:** Spot problems and optimize system performance through analysis
 
 **Why Advanced integration matters:**
-Alone, Ochd breathes, Wogglebug chaoses, Marbles patterns. But *together* they create sophisticated musical systems. Data reveals what's actually happening—how the breathing affects the chaos, how the patterns guide the uncertainty, how it all combines into audio. This is interconnection made visible.
+Alone, Ochd breathes, Wogglebug chaoses, Marbles patterns. But *together* they create sophisticated musical systems. Data reveals what's actually happening; how the breathing affects the chaos, how the patterns guide the uncertainty, how it all combines into audio. This is interconnection made visible.
 
 
 
@@ -231,7 +231,7 @@ Data's value comes from **revealing your system to you** - measurement and analy
 - **🧪 Experimentation & Discovery:** Test ideas immediately and observe results visually. The instant feedback loop between idea and observation is how deep understanding develops.
 - **🔧 System Optimization:** Use measurement data to improve performance, debug problems, and discover new possibilities. Professional systems rely on measurement for consistency.
 
-**The Pattern:** Data's real power isn't generating sound—it's **revealing what's actually happening**. That understanding becomes the foundation for everything you create.
+**The Pattern:** Data's real power isn't generating sound; it's **revealing what's actually happening**. That understanding becomes the foundation for everything you create.
 
 ---
 
@@ -240,11 +240,11 @@ Data's value comes from **revealing your system to you** - measurement and analy
 ### **"Data shows me something, but I don't know what to do about it"**
 - **The misunderstanding:** Data *reveals* problems, it doesn't fix them. Users expect analysis to automatically solve issues.
 - **Why this happens:** Data is so clear about showing problems that it feels like it should also tell you how to fix them. But that's not its role.
-- **What actually happens:** Data shows you a wobbly envelope, a frequency peak you didn't expect, a timing relationship that's off. Now you *know*. Fixing it is patch architecture or module choice—separate from analysis.
+- **What actually happens:** Data shows you a wobbly envelope, a frequency peak you didn't expect, a timing relationship that's off. Now you *know*. Fixing it is patch architecture or module choice; separate from analysis.
 - **Learning moment:** Understanding the difference between seeing a problem and solving it teaches you systems thinking. Data teaches you to diagnose. Your patch design teaches you to prescribe.
 
 ### **"All six programs seem to work the same way"**
-- **The misunderstanding:** Each program is structurally different. SCOPE watches signals, TUNE measures frequencies, CLOCK divides/multiplies time—they don't all work the same.
+- **The misunderstanding:** Each program is structurally different. SCOPE watches signals, TUNE measures frequencies, CLOCK divides/multiplies time; they don't all work the same.
 - **Why this happens:** The interface feels consistent (encoder, softkeys, screen), so users expect the logic to be identical. It's not.
 - **What actually happens:** Learning each program reveals different relationships in your system. SCOPE teaches waveform behavior. TUNE teaches pitch relationships. CLOCK teaches timing structure. Each is a different lens.
 - **Learning moment:** Understanding that utility modules have *multiple tools* instead of *one function* teaches you to think about analysis modes, not just module types.
@@ -257,7 +257,7 @@ Data's value comes from **revealing your system to you** - measurement and analy
 
 ### **"This screen/encoder/menu system is too complicated"**
 - **The misunderstanding:** Data is a micro-computer running six applications. It's complex because it does six different things, not because it's poorly designed.
-- **Why this happens:** Analog modules have knobs you turn. Digital modules have screens. Users expect learning the screen to be fast. It's not—because there are six programs to learn.
+- **Why this happens:** Analog modules have knobs you turn. Digital modules have screens. Users expect learning the screen to be fast. It's not; because there are six programs to learn.
 - **What actually happens:** Spend 2-3 sessions with each program individually. Don't try to master all six at once. Each has its own workflow, and that's intentional.
 - **Learning moment:** Understanding that complexity comes from functionality (not poor design) teaches you to respect tools that do many things. Master one thing at a time.
 
@@ -266,18 +266,18 @@ Data's value comes from **revealing your system to you** - measurement and analy
 **Four core misunderstandings account for 90% of beginner frustration:**
 
 **1. Confusing Analysis with Problem-Solving**
-Data reveals problems visually, but fixing them requires patch design knowledge. Beginners expect the visualization itself to suggest solutions. Understanding the difference between diagnosis (Data's role) and prescription (your patch design) teaches you systems thinking and teaches you to separate concerns—a principle that applies across all complex synthesis.
+Data reveals problems visually, but fixing them requires patch design knowledge. Beginners expect the visualization itself to suggest solutions. Understanding the difference between diagnosis (Data's role) and prescription (your patch design) teaches you systems thinking and teaches you to separate concerns; a principle that applies across all complex synthesis.
 
 **2. Expecting Unified Interface Logic Across Six Different Functions**
-The encoder/screen interface is consistent, but each of the six programs operates differently because they solve different problems. SCOPE watches signals, TUNE measures frequencies, CLOCK manages timing. Understanding that utility modules contain multiple tools (not one function) teaches you modular thinking—modules are problem-solvers, not just features. This principle applies everywhere: a good utility module specializes in solving a specific category of problems through multiple approaches.
+The encoder/screen interface is consistent, but each of the six programs operates differently because they solve different problems. SCOPE watches signals, TUNE measures frequencies, CLOCK manages timing. Understanding that utility modules contain multiple tools (not one function) teaches you modular thinking; modules are problem-solvers, not just features. This principle applies everywhere: a good utility module specializes in solving a specific category of problems through multiple approaches.
 
 **3. Treating WAVE Output as a Creative Voice**
-Data's WAVE program generates signals, which feels creative. But it's a test/reference tool. This confusion reveals a fundamental misunderstanding: utility modules serve your understanding and measurement, not your patches directly. Creative modules generate sound you perform with; utility modules give you information you perform with. Learning this distinction teaches you the structure of modular design—creative layers need analysis layers for mastery.
+Data's WAVE program generates signals, which feels creative. But it's a test/reference tool. This confusion reveals a fundamental misunderstanding: utility modules serve your understanding and measurement, not your patches directly. Creative modules generate sound you perform with; utility modules give you information you perform with. Learning this distinction teaches you the structure of modular design; creative layers need analysis layers for mastery.
 
 **4. Underestimating the Learning Curve**
-Data is complex because it does six complete things, not because it's poorly designed. Trying to master all six at once creates overwhelm. Understanding that professional tools require sequential, focused learning teaches you patience with complex synthesis—a principle that transfers to mastering any advanced module or system.
+Data is complex because it does six complete things, not because it's poorly designed. Trying to master all six at once creates overwhelm. Understanding that professional tools require sequential, focused learning teaches you patience with complex synthesis; a principle that transfers to mastering any advanced module or system.
 
-**The Interconnection:** Data teaches you that understanding requires multiple perspectives. SCOPE reveals waveform behavior, TUNE reveals pitch relationships, CLOCK reveals timing structure. No single view tells the whole story. This principle applies everywhere in synthesis—complex systems require multiple analytical approaches. Master one lens at a time, then combine them.
+**The Interconnection:** Data teaches you that understanding requires multiple perspectives. SCOPE reveals waveform behavior, TUNE reveals pitch relationships, CLOCK reveals timing structure. No single view tells the whole story. This principle applies everywhere in synthesis; complex systems require multiple analytical approaches. Master one lens at a time, then combine them.
 
 ---
 
@@ -308,7 +308,7 @@ When you combine Data with Advanced modules, it reveals the actual behavior of s
 - **4ms RCD v2:** Data CLOCK analyzes polyrhythmic precision and phase relationships. Visualize timing relationships that would be invisible through audio alone.
 - **Cre8audio Function Junction:** Data monitors processed modulation and envelope characteristics across multiple signal types.
 
-**The Result:** You don't just use these modules together—Data reveals exactly HOW they work together. This is interconnection made visible.
+**The Result:** You don't just use these modules together: Data reveals exactly HOW they work together. This is interconnection made visible.
 
 ### **Revealing Fundamental Synthesis Relationships**
 
@@ -334,7 +334,7 @@ Data shows how foundational modules create synthesis principles:
 - **Studio-Grade Verification:** Use Data for professional calibration, system optimization, and consistent results
 - **Live Performance:** Real-time visual feedback for performance optimization and troubleshooting under pressure
 
-**The Principle:** Data isn't just another module—it's the analysis layer that transforms a collection of individual modules into a unified, understandable system.
+**The Principle:** Data isn't just another module; it's the analysis layer that transforms a collection of individual modules into a unified, understandable system.
 
 ---
 
@@ -347,8 +347,8 @@ Mordax Data represents **visual understanding of electronic music** - transformi
 Data's design philosophy is radical: **analysis and measurement as creative tools**. Unlike creative modules that generate sound, Data generates *understanding*. This distinction is crucial. Most synthesizers teach you to manipulate sound; Data teaches you to *see* sound - to understand the invisible relationships that make synthesis work. Mastery comes from understanding, not just technique. Data accelerates this mastery by removing the guesswork from electronics.
 
 **This means:**
-- Data isn't a voice or effect processor—it's your X-ray machine for modular synthesis
-- Its value multiplies as your system grows complex—more modules need more understanding, not more modules
+- Data isn't a voice or effect processor; it's your X-ray machine for modular synthesis
+- Its value multiplies as your system grows complex; more modules need more understanding, not more modules
 - Using Data transforms experimentation from "did that sound different?" to "here's exactly what changed and why"
 - It teaches principles (filter behavior, harmonic relationships, timing precision) that transfer across all synthesis, not just this module
 

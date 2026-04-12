@@ -87,7 +87,7 @@ These three controls shape 80% of GHOST's character:
 - 12 o'clock = 50/50 blend of clean and processed
 - CW = mostly processed (you hear all the effects)
 - **Why it matters:** If everything sounds too extreme, lower this. If GHOST sounds "invisible," raise it.
-- **Beginner approach:** Keep this at 12 o'clock (50%) while learning. This gives you a reference point—you can hear both the original and what GHOST is doing.
+- **Beginner approach:** Keep this at 12 o'clock (50%) while learning. This gives you a reference point; you can hear both the original and what GHOST is doing.
 
 ### **The Input/Output Levels: Preventing Clipping**
 
@@ -127,7 +127,7 @@ When the filter comes first, it removes or shapes frequencies before anything el
 
 **GHOST makes this explicit by giving you three button presses to explore all three major routing orders.** You don't repatch. You don't reprogram. You press a button and experience how the same controls, same module, same patch produce fundamentally different results.
 
-This is how you learn signal flow thinking—not from theory, but from hearing the difference immediately.
+This is how you learn signal flow thinking; not from theory, but from hearing the difference immediately.
 
 ### The Three Routing Orders
 
@@ -137,7 +137,7 @@ This is how you learn signal flow thinking—not from theory, but from hearing t
 
 **VCF → FX → DIST** (button fully lit) - Filter shapes the clean signal first, then reverb/delay, then distortion colors everything. Heavy tones but with more filtered character driving the distortion.
 
-All three share the same controls. But the order changes what those controls accomplish. This is interconnection in action—nothing exists in isolation. Everything relates to what comes before and after.
+All three share the same controls. But the order changes what those controls accomplish. This is interconnection in action; nothing exists in isolation. Everything relates to what comes before and after.
 
 ---
 
@@ -145,11 +145,11 @@ All three share the same controls. But the order changes what those controls acc
 
 ### Design Philosophy: Routing Freedom as Creative Method
 
-Most effects processors follow a fixed signal path. You know what comes next. The audio flows through distortion, then filter, then delay—or some other predetermined order. This predictability is comfortable. It's also limiting.
+Most effects processors follow a fixed signal path. You know what comes next. The audio flows through distortion, then filter, then delay; or some other predetermined order. This predictability is comfortable. It's also limiting.
 
 **The GHOST exists because Endorphin.es and Andrew Huang asked a different question: What if the order itself became an instrument?**
 
-The fundamental insight is that **routing order isn't just technical—it's creative.** When distortion comes before filtering, you get one set of tonal possibilities. When the filter comes before distortion, everything changes. When reverb processes the distorted signal versus the clean signal, you get fundamentally different character. Not variations on a theme—different *themes entirely.*
+The fundamental insight is that **routing order isn't just technical; it's creative.** When distortion comes before filtering, you get one set of tonal possibilities. When the filter comes before distortion, everything changes. When reverb processes the distorted signal versus the clean signal, you get fundamentally different character. Not variations on a theme; different *themes entirely.*
 
 This isn't new thinking in modular synthesis. But GHOST makes it intuitive and explorable. Three button presses. Three different signal processing philosophies available instantly, without repatching. That simplicity enables experimentation that would otherwise require hardware rewiring or complex software menu diving.
 
@@ -161,9 +161,9 @@ That philosophy runs through GHOST's design:
 
 **1. Limited but powerful signal flow:** Instead of infinite routing complexity, you get three carefully chosen routing orders. Fewer options means each option is more explorable. You learn the character of each routing deeply rather than overwhelmed by infinite possibilities.
 
-**2. Micro-modulations creating emergent behavior:** The control matrix doesn't just let you adjust parameters independently. The way controls affect each other—the internal modulation interactions—creates "infinite, alive and unexpected interactions" (per the manual). **You can't predict exactly what will happen.** That unpredictability is the point. It forces creative listening and experimentation.
+**2. Micro-modulations creating emergent behavior:** The control matrix doesn't just let you adjust parameters independently. The way controls affect each other (the internal modulation interactions) creates "infinite, alive and unexpected interactions" (per the manual). **You can't predict exactly what will happen.** That unpredictability is the point. It forces creative listening and experimentation.
 
-**3. Creative effect processing becomes synthesis:** The manual notes GHOST can function as a complete Karplus-Strong synthesizer voice using the delay at audio rates. An effects processor that can *generate* sound is no longer just an effects processor. It's a sound design instrument. Constraints (no oscillators, no envelopes—just effects) force you to think differently about sound generation.
+**3. Creative effect processing becomes synthesis:** The manual notes GHOST can function as a complete Karplus-Strong synthesizer voice using the delay at audio rates. An effects processor that can *generate* sound is no longer just an effects processor. It's a sound design instrument. Constraints (no oscillators, no envelopes, just effects) force you to think differently about sound generation.
 
 **This is the Andrew Huang principle applied to hardware:** Give people powerful tools with intelligent limitations, and they create things they wouldn't have attempted with infinite options.
 
@@ -177,11 +177,11 @@ When you patch something into GHOST, it doesn't become fixed. The routing flexib
 
 **This teaches a fundamental principle about modular systems: nothing is inherently an "effects processor" or "modulation source" or "sound generator."** Everything is relational. The same module serves different purposes depending on context. GHOST makes this explicit by making routing choices immediate and obvious.
 
-But here's what makes this philosophically powerful: Most people think of modules as having fixed roles. Distortion distorts. Reverb reverbs. Sequencers sequence. In reality, that role only exists in *context*—how things connect. GHOST reveals that truth. By showing three different routing orders for the same controls, it demonstrates that the character of any module depends entirely on what comes before and after it. This isn't a GHOST quirk. It's a principle of *all* modular synthesis. GHOST just makes it visible.
+But here's what makes this philosophically powerful: Most people think of modules as having fixed roles. Distortion distorts. Reverb reverbs. Sequencers sequence. In reality, that role only exists in *context*; how things connect. GHOST reveals that truth. By showing three different routing orders for the same controls, it demonstrates that the character of any module depends entirely on what comes before and after it. This isn't a GHOST quirk. It's a principle of *all* modular synthesis. GHOST just makes it visible.
 
-The micro-modulation matrix compounds this insight. Controls don't exist in isolation. Changing RESONANCE also affects SAMPLE RATE (through the hidden lo-fi controls). Changing REVERB DRY/WET adds shimmer. The system *interconnects.* You can't think of any parameter as independent. This is synthesis, not just effects processing—complex systems generating emergent behavior from interconnected parts.
+The micro-modulation matrix compounds this insight. Controls don't exist in isolation. Changing RESONANCE also affects SAMPLE RATE (through the hidden lo-fi controls). Changing REVERB DRY/WET adds shimmer. The system *interconnects.* You can't think of any parameter as independent. This is synthesis, not just effects processing; complex systems generating emergent behavior from interconnected parts.
 
-That's why GHOST sounds different from every other effects processor. Not because it uses better algorithms (though it does). But because **the architecture teaches interconnection thinking directly through use.** When you hear how routing order changes everything, when you experience parameters affecting each other, when you patch external modulation and watch the character shift—you're learning a principle that applies everywhere. The module becomes a lesson in how everything connects, and that lesson fundamentally changes how you think about synthesis.
+That's why GHOST sounds different from every other effects processor. Not because it uses better algorithms (though it does). But because **the architecture teaches interconnection thinking directly through use.** When you hear how routing order changes everything, when you experience parameters affecting each other, when you patch external modulation and watch the character shift; you're learning a principle that applies everywhere. The module becomes a lesson in how everything connects, and that lesson fundamentally changes how you think about synthesis.
 
 ### How It Fits: The Modular Ecosystem Role
 
@@ -189,11 +189,11 @@ GHOST doesn't fit the traditional "effects processor" slot in a modular system. 
 
 Instead, think of it as a **sound-design playground at the end of your signal chain.**
 
-You patch in audio from anywhere—a drum machine, a synthesizer, a voice, a field recording. GHOST processes it through your chosen routing chain. But it also becomes a texture generator, a rhythmic processor (when synced to clock), a spatial processor (through the mid/side widener), a voice processor (as shown in the Half-Life patch example).
+You patch in audio from anywhere; a drum machine, a synthesizer, a voice, a field recording. GHOST processes it through your chosen routing chain. But it also becomes a texture generator, a rhythmic processor (when synced to clock), a spatial processor (through the mid/side widener), a voice processor (as shown in the Half-Life patch example).
 
 The key insight: **GHOST works because it's not trying to be one thing.** It's a framework for creative sound processing. The framework is flexible enough that you define what it is through how you use it. Your patches define its role. The routing flexibility enables that redefinition to happen instantly.
 
-In a modular system already full of specialized modules, GHOST's strength is that it *adapts.* It becomes what your patch asks it to become. That's why it justifies 16hp—not because it does one thing exceptionally, but because it does *many* things exceptionally, and the same physical module becomes different based on context.
+In a modular system already full of specialized modules, GHOST's strength is that it *adapts.* It becomes what your patch asks it to become. That's why it justifies 16hp; not because it does one thing exceptionally, but because it does *many* things exceptionally, and the same physical module becomes different based on context.
 
 ---
 
@@ -333,7 +333,7 @@ This is where external modulation teaches interconnection:
 - Patch Ochd CV OUT A to GHOST PRE-VCA CV
 - Ochd is a complex sequencer: it generates polyrhythmic CV, random walks, algorithmic sequences
 - What you hear: Your audio input's level into GHOST breathes and evolves, creating dynamic intensity changes
-- Why it matters: PRE-VCA modulation affects how much signal enters the entire chain. Low PRE-VCA = subtle processing; high PRE-VCA = intense processing. By tying this to Ochd's algorithmic output, your processing intensity becomes *musical*—it evolves on a longer timescale than you'd manually turn the knob
+- Why it matters: PRE-VCA modulation affects how much signal enters the entire chain. Low PRE-VCA = subtle processing; high PRE-VCA = intense processing. By tying this to Ochd's algorithmic output, your processing intensity becomes *musical*; it evolves on a longer timescale than you'd manually turn the knob
 - Listen for: Moments when processing intensity swells (more signal entering distortion) vs. moments when it recedes (signal becomes subtle)
 
 **Joystick2 → CUTOFF CV (Performance Control):**
@@ -346,7 +346,7 @@ This is where external modulation teaches interconnection:
 **Joystick2 Y-axis (Optional Secondary Control):**
 - Y OUT can modulate something else: PRE-VCA CV, DISTORTION via external VCA, or Reverb DRY/WET if you have CV control
 - Move joystick up/down (Y axis) to modulate whichever parameter you chose
-- What you hear: Two-dimensional control—X axis changes tone, Y axis changes processing intensity (or whatever you patched)
+- What you hear: Two-dimensional control: X axis changes tone, Y axis changes processing intensity (or whatever you patched)
 - Why it matters: XY controllers teach you to think of parameters as independent. You can modulate two aspects of the processing simultaneously, creating more complex, expressive character
 - Listen for: How moving the joystick creates 2D timbral space, not just 1D line
 
@@ -383,7 +383,7 @@ Unlike Patch 0 (static exploration) and Patch 1 (hands-off evolution), this patc
 - Let Ochd run, shaping processing intensity
 - Use Joystick2 X to sweep tones during musically interesting moments
 - Use Joystick2 Y for additional expression
-- Record what happens—you're performing with GHOST
+- Record what happens; you're performing with GHOST
 
 The difference between passive and active modulation becomes obvious. Patch 1 is meditative (watch the system evolve). This patch is expressive (you shape it as it evolves).
 
@@ -549,10 +549,10 @@ What makes this chain powerful:
 
 ### **Stage 1: Spatial Effects (Delay + Reverb)**
 
-Your signal enters here—the delay and reverb are the *first* processors. This means they establish the spatial character of your sound before anything else touches it.
+Your signal enters here; the delay and reverb are the *first* processors. This means they establish the spatial character of your sound before anything else touches it.
 
 **DELAY SECTION:**
-- **TIME/DIV knob:** Sets delay time from short audio-rate repeats (CCW) to longer echoes (CW). In this routing, delay becomes part of what gets distorted—short delays create rhythmic texture that distortion will color heavily.
+- **TIME/DIV knob:** Sets delay time from short audio-rate repeats (CCW) to longer echoes (CW). In this routing, delay becomes part of what gets distorted; short delays create rhythmic texture that distortion will color heavily.
 - **REPEATS/Feedback:** Controls how many times the signal repeats. More feedback = thicker texture entering distortion = heavier final character.
 - **DRY/WET:** How much delayed signal vs. clean signal. Full CW (all wet) means distortion processes only the repeated signal, creating distinctly different character than mixing clean and delayed.
 - **TONE (ROUTING + REPEATS):** Adjusts brightness of the delayed repeats before they enter distortion. Dull delays create heavy distortion; bright delays create sharper distortion.
@@ -564,7 +564,7 @@ Your signal enters here—the delay and reverb are the *first* processors. This 
 - **PRE-DELAY (ROUTING + TAIL):** Adds delay before reverb tank. Separates the initial sound from the reverb buildup. Useful for maintaining definition when reverb will become part of distortion character.
 - **WHY here:** Reverb establishes spatial width and diffusion. When distortion processes this diffuse signal, it creates ephemeral, evolving textures.
 
-**The interconnection insight:** By placing spatial effects first, you're choosing to have distortion process already-spaced, already-evolved material. Your distortion isn't stark or aggressive—it's saturating something that's already complex. This creates the "ghost sounds" the manual describes.
+**The interconnection insight:** By placing spatial effects first, you're choosing to have distortion process already-spaced, already-evolved material. Your distortion isn't stark or aggressive; it's saturating something that's already complex. This creates the "ghost sounds" the manual describes.
 
 ### **Stage 2: Distortion (The Character Shaper)**
 
@@ -635,7 +635,7 @@ After all processing, dynamics tools shape the final output.
 - **HOW IT WORKS:** When trigger fires, signal volume ducks (reduces) momentarily, then returns to normal over the release time
 - **WHY powerful here:** You can have heavily-processed reverb/distortion/filtered texture, then trigger ducking from a kick drum. The effect sits back dynamically when the kick hits. Perfect for layering effects under drums.
 
-**The interconnection insight:** Sidechain ducking shows how external signals (kick drums, sequences, gates) can directly affect the character of your processing. This is modular thinking—audio processing reacts to external sources.
+**The interconnection insight:** Sidechain ducking shows how external signals (kick drums, sequences, gates) can directly affect the character of your processing. This is modular thinking; audio processing reacts to external sources.
 
 ### **Output Stage (Pre/Post VCA)**
 
@@ -647,7 +647,7 @@ After all processing, dynamics tools shape the final output.
 
 **POST-VCA CV (controls final output level):**
 - **Default:** Normalled to +5V (full open)
-- **VOLUME/drive knob:** Manual control (listen carefully after 1 o'clock—drive saturation begins)
+- **VOLUME/drive knob:** Manual control (listen carefully after 1 o'clock, drive saturation begins)
 - **POST-VCA CV jack:** External modulation of final output
 - **WHY:** Independent control over output level separate from internal processing level. You can keep internal character stable while modulating what comes out.
 
@@ -696,7 +696,7 @@ Each stage affects how the next stage sounds. You can't really predict exactly w
 
 ### **Common Mistakes and How to Avoid Them**
 
-When working with FX → DIST → VCF routing, specific patterns emerge. Not bugs—just how the signal flow works. Understanding why they happen transforms them from frustrations into teachable moments.
+When working with FX → DIST → VCF routing, specific patterns emerge. Not bugs; just how the signal flow works. Understanding why they happen transforms them from frustrations into teachable moments.
 
 #### **Mistake 1: "Everything becomes reverb mud, I can't hear my input anymore"**
 
@@ -797,7 +797,7 @@ When working with FX → DIST → VCF routing, specific patterns emerge. Not bug
 
 **How to fix it:**
 - Set Global DRY/WET to 12 o'clock (50/50), so you hear both equally
-- This is your reference—understand how much character you're adding
+- This is your reference; understand how much character you're adding
 - Then adjust toward full wet/dry depending on desired effect intensity
 
 **The principle:** Always keep dry reference available. Wet-only processing is flying blind.
@@ -867,8 +867,8 @@ These ten mistakes cluster around three root issues:
 
 **3. Extreme settings thinking** (Mistakes 7, 9, 10)
 - "More is better" leads to full CW on everything
-- Processing stacks—each stage compounds the previous one, creating unexpected effects at extremes
-- Solution: Develop reference points—know how 50% sounds, then understand how full wet/dry differs; recognize that moderation on some parameters enables others to work effectively
+- Processing stacks; each stage compounds the previous one, creating unexpected effects at extremes
+- Solution: Develop reference points; know how 50% sounds, then understand how full wet/dry differs; recognize that moderation on some parameters enables others to work effectively
 
 ---
 
@@ -887,7 +887,7 @@ What makes this chain powerful:
 
 ### **Stage 1: Distortion (The Initial Colorer)**
 
-Your signal enters here—distortion processes the clean, original material. No spatial effects to muddy or diffuse it first.
+Your signal enters here; distortion processes the clean, original material. No spatial effects to muddy or diffuse it first.
 
 **DISTORTION knob:**
 - **Full CCW:** No distortion, clean signal passes through
@@ -957,7 +957,7 @@ After distortion and filter establish character, spatial effects add dimension.
 - **PRE-DELAY (ROUTING + TAIL):** Separation before reverb buildup
 - **WHY here:** Coming last in the chain, reverb is the final spatial wrapper. It doesn't muddy because the signal entering it is already filtered and defined
 
-**The interconnection insight:** Because spatial effects come last, they soften and space out an already-defined character rather than establish character. This is why this routing excels for "defined effects"—distortion+filter define, then spatial effects add dimension.
+**The interconnection insight:** Because spatial effects come last, they soften and space out an already-defined character rather than establish character. This is why this routing excels for "defined effects"; distortion+filter define, then spatial effects add dimension.
 
 ### **Stage 4: Dynamics Control (Compressor + Sidechain)**
 
@@ -1440,15 +1440,15 @@ These ten mistakes cluster around two key issues:
 
 **Why this routing creates the "heaviest" sound:**
 
-This is counterintuitive at first. You'd think distortion first would create the heaviest tones. But filter-first creates heaviness *at scale*—the filter shapes your source into a specific character, then everything downstream processes that shaped material, then distortion colors the complete result. Unlike Routing 1 where distortion colors complexity, or Routing 2 where distortion comes early and clean, Routing 3 applies distortion to a signal that's already been extensively processed. The combination of filtered character + spatial processing + final distortion creates density and weight that the other routings don't achieve.
+This is counterintuitive at first. You'd think distortion first would create the heaviest tones. But filter-first creates heaviness *at scale*; the filter shapes your source into a specific character, then everything downstream processes that shaped material, then distortion colors the complete result. Unlike Routing 1 where distortion colors complexity, or Routing 2 where distortion comes early and clean, Routing 3 applies distortion to a signal that's already been extensively processed. The combination of filtered character + spatial processing + final distortion creates density and weight that the other routings don't achieve.
 
-The manual notes Routing 3 "will generally have the heaviest distorted tones." This isn't about the distortion amount—it's about what the distortion is processing. By the time your signal reaches the distortion stage in this routing, it's already shaped by filter, already modulated by delay/reverb. The distortion doesn't start fresh. It works on material that's already dense. That's what creates heaviness.
+The manual notes Routing 3 "will generally have the heaviest distorted tones." This isn't about the distortion amount; it's about what the distortion is processing. By the time your signal reaches the distortion stage in this routing, it's already shaped by filter, already modulated by delay/reverb. The distortion doesn't start fresh. It works on material that's already dense. That's what creates heaviness.
 
 What makes this chain powerful:
 
 ### **Stage 1: Filtering (The Frequency Foundation)**
 
-Your signal enters here—the filter processes the clean, original material *first*. This means the filter establishes the fundamental frequency character before anything else touches the sound.
+Your signal enters here; the filter processes the clean, original material *first*. This means the filter establishes the fundamental frequency character before anything else touches the sound.
 
 **FREQUENCY knob:**
 - **Full CCW:** Silence (low-pass filter fully closed)
@@ -1456,7 +1456,7 @@ Your signal enters here—the filter processes the clean, original material *fir
 - **Full CW:** Silence (high-pass filter fully closed)
 - **This control is bipolar:** Counterclockwise removes highs (warm, dark), clockwise removes lows (thin, bright), center is flat
 - **Unique to this routing:** The filter operates on pristine, unprocessed audio. Your filter choice fundamentally shapes what everything downstream processes. There's no prior stage softening or diffusing your signal.
-- **Result:** The filter's character is absolute—it defines the ground truth of what you're working with
+- **Result:** The filter's character is absolute; it defines the ground truth of what you're working with
 
 **RESONANCE knob:**
 - **12 o'clock (OFF):** Normal filtering
@@ -1477,7 +1477,7 @@ Your signal enters here—the filter processes the clean, original material *fir
 - **Full CW:** CV inverts (adds in opposite direction)
 - **WHY:** Lets external modulation reshape the filtered foundation in real time. LFO modulation of filter frequency on clean audio creates moving, evolving baseline that everything else processes
 
-**The interconnection insight:** The filter here is the architect of the entire signal character. Unlike Routing 1 & 2 where the filter is a later-stage sculptor, here the filter is the foundation. Everything that happens afterward—delay, reverb, distortion—is processing something the filter has already defined. This teaches a fundamental principle: the earlier a processor sits in the chain, the more foundational its role.
+**The interconnection insight:** The filter here is the architect of the entire signal character. Unlike Routing 1 & 2 where the filter is a later-stage sculptor, here the filter is the foundation. Everything that happens afterward (delay, reverb, distortion) is processing something the filter has already defined. This teaches a fundamental principle: the earlier a processor sits in the chain, the more foundational its role.
 
 ### **Stage 2: Spatial Effects (FX - Processing Filtered Signal)**
 
@@ -1488,7 +1488,7 @@ After the filter establishes the frequency foundation, spatial effects process w
 - **REPEATS/Feedback:** Controls how many times the signal repeats. More feedback = thicker delay texture built on filtered foundation
 - **DRY/WET:** How much delayed signal vs. clean signal. High values mean the filtered character gets extensively repeated
 - **TONE (ROUTING + REPEATS):** Adjusts brightness of the delayed repeats (working on filtered material)
-- **WHY here:** The filter has already defined frequency character. Delay now takes that filtered foundation and multiplies it, creating rhythmic density. The delay isn't establishing anything—it's elaborating on what the filter created
+- **WHY here:** The filter has already defined frequency character. Delay now takes that filtered foundation and multiplies it, creating rhythmic density. The delay isn't establishing anything; it's elaborating on what the filter created
 - **Result:** Rhythmic texture built on a solid filtered foundation
 
 **REVERB SECTION:**
@@ -1498,7 +1498,7 @@ After the filter establishes the frequency foundation, spatial effects process w
 - **WHY here:** Reverb takes the delay-processed, filtered foundation and adds spatial dimension. The reverb is working on something already complex (filtered + delayed)
 - **Result:** Spatial layering built on filtered + delayed material
 
-**The interconnection insight:** By placing spatial effects in the middle of the chain (after filter, before distortion), they process the filtered foundation but that processing itself becomes the input to the final stage. This teaches how middle-stage processors compound: they take what came before and transform it for what comes after. They're not isolated—they're links in a chain where each output becomes the next input.
+**The interconnection insight:** By placing spatial effects in the middle of the chain (after filter, before distortion), they process the filtered foundation but that processing itself becomes the input to the final stage. This teaches how middle-stage processors compound: they take what came before and transform it for what comes after. They're not isolated; they're links in a chain where each output becomes the next input.
 
 ### **Stage 3: Distortion (The Final Colorer)**
 
@@ -1521,11 +1521,11 @@ After filter and spatial effects have established and elaborated the character, 
 - **CW:** Reduces bit depth, creating lo-fi character applied to the filtered/delayed/reverbed signal
 - **WHY this routing:** Lo-fi effects on extensively processed material create interesting degradation that feels integrated rather than raw
 
-**The interconnection insight:** Distortion in this position is the final integration stage. Everything that came before—filter, delay, reverb—is now colored by saturation. This teaches that *the last processor has the final word on character*. In Routing 1, distortion is mid-chain and colors spatial processing. In Routing 2, distortion is early and gets shaped downstream. Here, distortion is final and its saturation is the ultimate layer, creating maximum integration.
+**The interconnection insight:** Distortion in this position is the final integration stage. Everything that came before (filter, delay, reverb) is now colored by saturation. This teaches that *the last processor has the final word on character*. In Routing 1, distortion is mid-chain and colors spatial processing. In Routing 2, distortion is early and gets shaped downstream. Here, distortion is final and its saturation is the ultimate layer, creating maximum integration.
 
 ### **Stage 4: Dynamics Control (Compressor + Sidechain)**
 
-After all processing—filtering, spatial effects, distortion—dynamics tools manage the final output.
+After all processing; filtering, spatial effects, distortion; dynamics tools manage the final output.
 
 **COMPRESSOR knob:**
 - **Full CCW:** No compression, signal passes through
@@ -1550,7 +1550,7 @@ The beauty of VCF → FX → DIST routing:
 3. **Distortion layer** applies final character (saturation to complete result)
 4. **Dynamics layer** manages the output (compression, sidechain ducking)
 
-Each stage receives what the previous stage creates and transforms it. By the time you reach distortion, the signal has been through three processing stages. The distortion isn't stark—it's the final layer on an already-rich signal.
+Each stage receives what the previous stage creates and transforms it. By the time you reach distortion, the signal has been through three processing stages. The distortion isn't stark; it's the final layer on an already-rich signal.
 
 ### **Common Patch Approaches with This Routing**
 
@@ -1589,17 +1589,17 @@ When working with filter-first routing, specific patterns emerge. Filter-first c
 
 **How to fix it:**
 - Move FREQUENCY toward center (12 o'clock) or CW (high-pass mode) to preserve/brighten highs before everything else processes the signal
-- Use RESONANCE sparingly—resonance on a warm foundation creates even more darkness before elaboration happens
+- Use RESONANCE sparingly; resonance on a warm foundation creates even more darkness before elaboration happens
 - Or: Accept the warm character and design the patch around it (use it intentionally as a foundation choice, not accidentally)
-- Try delay/reverb with brighter TONE (ROUTING + REPEATS CW) to add some shimmer—but remember, the filter's darkness is still the base
+- Try delay/reverb with brighter TONE (ROUTING + REPEATS CW) to add some shimmer; but remember, the filter's darkness is still the base
 
-**The principle:** Filter-first routing teaches that *early choices compound*. Your filter doesn't just shape tone—it defines the foundation that every downstream processor elaborates on. Change it early, or accept it throughout. There's no recovering from a foundational choice with later processing.
+**The principle:** Filter-first routing teaches that *early choices compound*. Your filter doesn't just shape tone; it defines the foundation that every downstream processor elaborates on. Change it early, or accept it throughout. There's no recovering from a foundational choice with later processing.
 
 ---
 
 #### **Mistake 2: "The reverb/delay doesn't seem to do much"**
 
-**What's happening:** Delay DRY/WET and Reverb DRY/WET are too low (mostly dry). But because the filter has already defined a specific character, adding subtle spatial effects doesn't feel significant—you're elaborating on a strong foundation, not adding to empty space.
+**What's happening:** Delay DRY/WET and Reverb DRY/WET are too low (mostly dry). But because the filter has already defined a specific character, adding subtle spatial effects doesn't feel significant; you're elaborating on a strong foundation, not adding to empty space.
 
 **Why this happens:** In Routing 1, spatial effects are the first thing, so their presence is obvious. In this routing, they come after the filter has established character. Subtle spatial effects feel invisible because they're working on something already defined. You need more wet signal to notice the elaboration.
 
@@ -1609,13 +1609,13 @@ When working with filter-first routing, specific patterns emerge. Filter-first c
 - Or: Make dramatic changes to delay TIME or reverb TAIL to feel the difference
 - Test: Set one to full dry (0%) and one to full wet (100%), listen to the difference. Then dial back from wet to find the sweet spot
 
-**The principle:** Spatial effects in filter-first routing are *elaboration on foundation*, not generation of space. They need higher wet values to feel present because they're working on material already shaped by the filter. This teaches that *processor position determines how much presence you need*—the same effect amount feels different depending on what it's processing.
+**The principle:** Spatial effects in filter-first routing are *elaboration on foundation*, not generation of space. They need higher wet values to feel present because they're working on material already shaped by the filter. This teaches that *processor position determines how much presence you need*; the same effect amount feels different depending on what it's processing.
 
 ---
 
 #### **Mistake 3: "Adding distortion just makes everything muddy"**
 
-**What's happening:** DISTORTION is set to full CW (heavy saturation), but the signal entering distortion has already been filtered, delayed, and reverbed. That's complex, diffuse material. Heavy distortion on complex material doesn't create aggression—it muddies and thickens.
+**What's happening:** DISTORTION is set to full CW (heavy saturation), but the signal entering distortion has already been filtered, delayed, and reverbed. That's complex, diffuse material. Heavy distortion on complex material doesn't create aggression; it muddies and thickens.
 
 **Why this happens:** In Routing 2, distortion comes early and is stark/clear. Here, distortion is the *final layer* on material that's already been heavily processed. A lot of saturation on already-soft material just makes mud. You need restraint.
 
@@ -1623,7 +1623,7 @@ When working with filter-first routing, specific patterns emerge. Filter-first c
 - Use *moderate* distortion (12-1 o'clock), not heavy (full CW)
 - Think of distortion here as integration, not aggression. Light saturation glues the filter+FX character together
 - Or: Reduce spatial effects wet values so distortion has cleaner material to work on
-- Or: Use light distortion with high GAIN (ROUTING + TONE/GAIN CW) instead of heavy distortion with low gain—you get character without muddiness
+- Or: Use light distortion with high GAIN (ROUTING + TONE/GAIN CW) instead of heavy distortion with low gain; you get character without muddiness
 
 **The principle:** Late-chain distortion on complex material requires finesse. Distortion-first feels aggressive. Distortion-last must integrate. This teaches that *the same processor behaves completely differently depending on what it's processing*. Distortion on clean material is stark. Distortion on filtered+spatial material must be gentle.
 
@@ -1633,7 +1633,7 @@ When working with filter-first routing, specific patterns emerge. Filter-first c
 
 **What's happening:** RESONANCE is at full CW, creating a strong resonant peak in the filter. But because this resonance is *at the start of the chain*, it gets elaborated by delay, reverb, and distortion. The peak compounds through three stages of processing. What feels like a 50% resonance boost becomes extreme after delay repeats it, reverb spaces it, and distortion colors it.
 
-**Why this happens:** Resonance at the start of the chain isn't just a tonal choice—it's a foundational emphasis. Every downstream processor elaborates that emphasized frequency. Three stages of elaboration = resonance that feels piercing instead of present.
+**Why this happens:** Resonance at the start of the chain isn't just a tonal choice; it's a foundational emphasis. Every downstream processor elaborates that emphasized frequency. Three stages of elaboration = resonance that feels piercing instead of present.
 
 **How to fix it:**
 - Use *moderate* resonance (12-1 o'clock), not extreme
@@ -1641,7 +1641,7 @@ When working with filter-first routing, specific patterns emerge. Filter-first c
 - Test: Set resonance to extreme, then reduce it by 50% (to about 12 o'clock). Listen how much presence remains even at lower resonance
 - Or: Keep high resonance but reduce spatial effect wet values (less elaboration = less exaggerated resonance)
 
-**The principle:** Filter-first routing teaches that *early processing compounds through the chain*. A moderate choice upstream becomes extreme downstream. This is why the manual describes filter-first as creating the "heaviest tones"—not because of heavy processing, but because every moderate choice elaborates into something dense through three downstream stages.
+**The principle:** Filter-first routing teaches that *early processing compounds through the chain*. A moderate choice upstream becomes extreme downstream. This is why the manual describes filter-first as creating the "heaviest tones"; not because of heavy processing, but because every moderate choice elaborates into something dense through three downstream stages.
 
 ---
 
@@ -1653,7 +1653,7 @@ When working with filter-first routing, specific patterns emerge. Filter-first c
 
 **How to fix it:**
 - Reduce spatial effect wet values (especially delay/reverb DRY/WET) to 20-40% so transients pass through relatively clean to distortion
-- Increase DISTORTION to compensate for softer spatial effects—use distortion to create punch where spatial effects removed it
+- Increase DISTORTION to compensate for softer spatial effects; use distortion to create punch where spatial effects removed it
 - Or: Use shorter delay TIME and shorter reverb TAIL (less spatial diffusion, more transient preservation)
 - Or: Accept diffuse character and design patches around it (ambient/textural, not punchy/rhythmic)
 
@@ -1683,7 +1683,7 @@ These five mistakes cluster around three fundamental issues in filter-first rout
 - Heavy distortion on complexity creates mud, not aggression (Mistake 3)
 - Solution: Use distortion for integration and glue, not aggression. Light saturation works better
 
-**The interconnection teaching:** Filter-first routing reveals that *processor position determines not just what gets processed, but how much processing is possible*. Early processors establish foundations that later processors elaborate. Late processors must work gracefully on material that's already transformed. Understanding this teaches you to think of your entire signal chain as interconnected, where each stage's job depends on what came before and affects what comes after. It's not five independent processors—it's five stages of a single transformation system.
+**The interconnection teaching:** Filter-first routing reveals that *processor position determines not just what gets processed, but how much processing is possible*. Early processors establish foundations that later processors elaborate. Late processors must work gracefully on material that's already transformed. Understanding this teaches you to think of your entire signal chain as interconnected, where each stage's job depends on what came before and affects what comes after. It's not five independent processors; it's five stages of a single transformation system.
 
 ---
 
@@ -1691,7 +1691,7 @@ These five mistakes cluster around three fundamental issues in filter-first rout
 
 **What's happening:** COMPRESSOR is set heavy (full CW) and SIDECHAIN is active with high DEPTH. The signal entering the compressor has already been filtered, delayed, reverbed, and distorted. That material is already dynamically reduced. Heavy compression then reduces it further. When the sidechain triggers, the entire heavily-processed chain ducks, creating near-silence or extreme collapse.
 
-**Why this happens:** In earlier routings, compressor works on fresher material with more dynamic range to work with. In Routing 3, the signal entering compression is already dense and processed. Heavy compression on already-dense material removes any sense of dynamics or movement. Sidechain ducking on top of that creates extreme effect—the chain completely disappears when triggered.
+**Why this happens:** In earlier routings, compressor works on fresher material with more dynamic range to work with. In Routing 3, the signal entering compression is already dense and processed. Heavy compression on already-dense material removes any sense of dynamics or movement. Sidechain ducking on top of that creates extreme effect; the chain completely disappears when triggered.
 
 **How to fix it:**
 - Use *light* compression (12 o'clock area), not heavy
@@ -1700,7 +1700,7 @@ These five mistakes cluster around three fundamental issues in filter-first rout
 - Or: Adjust sidechain RELEASE time (SIDECHAIN knob alone) so the dip recovers faster, creating groove instead of silence
 - Or: Disable sidechain entirely if you just want light glue compression
 
-**The principle:** Compressor and sidechain on heavily-processed material need restraint. You're not controlling dynamics anymore—you're managing the already-tamed result. This teaches that *compression doesn't add energy; it removes peaks*. On already-peaked-controlled material (filter + effects), it just removes what little dynamic life remains. Use it as glue, not as control.
+**The principle:** Compressor and sidechain on heavily-processed material need restraint. You're not controlling dynamics anymore; you're managing the already-tamed result. This teaches that *compression doesn't add energy; it removes peaks*. On already-peaked-controlled material (filter + effects), it just removes what little dynamic life remains. Use it as glue, not as control.
 
 ---
 
@@ -1708,7 +1708,7 @@ These five mistakes cluster around three fundamental issues in filter-first rout
 
 **What's happening:** You switched to BPF (Band-Pass Filter) mode by pressing the BPF/COMB button. BPF lets through *only* frequencies around your FREQUENCY knob setting, removing everything else. But in a filter-first routing on already-complex material, applying a narrow band-pass at the front of the chain isolates frequencies so aggressively that delay/reverb/distortion have almost nothing to work with.
 
-**Why this happens:** Band-Pass filter is extreme—it's not subtractive like LP/HP. It's isolating. When you apply BPF early in the chain, you're saying "keep only this narrow band, remove everything else." On a harmonically-rich source, that means you've removed 80-90% of the spectrum before it even reaches spatial processing. The result feels hollow or absent.
+**Why this happens:** Band-Pass filter is extreme; it's not subtractive like LP/HP. It's isolating. When you apply BPF early in the chain, you're saying "keep only this narrow band, remove everything else." On a harmonically-rich source, that means you've removed 80-90% of the spectrum before it even reaches spatial processing. The result feels hollow or absent.
 
 **How to fix it:**
 - Use the default LP/HP isolator mode (not BPF) unless you specifically want extreme isolation
@@ -1716,7 +1716,7 @@ These five mistakes cluster around three fundamental issues in filter-first rout
 - Or: Use BPF intentionally, but understand you're creating a tunnel-like tone. Set FREQUENCY to where you want emphasis, not where you want isolation
 - Or: If BPF is what you want, compensate by increasing spatial wet values (delay/reverb) to elaborate on the isolated band, creating fullness from limitation
 
-**The principle:** Filter TYPE determines not just character but *philosophy*. LP/HP is subtractive; BPF is isolating; Comb is resonant. In filter-first routing, your TYPE choice affects everything downstream. Choose intentionally. Band-Pass isn't wrong—it just requires you to design the patch around isolation rather than elaboration.
+**The principle:** Filter TYPE determines not just character but *philosophy*. LP/HP is subtractive; BPF is isolating; Comb is resonant. In filter-first routing, your TYPE choice affects everything downstream. Choose intentionally. Band-Pass isn't wrong; it just requires you to design the patch around isolation rather than elaboration.
 
 ---
 
@@ -1750,24 +1750,24 @@ These five mistakes cluster around three fundamental issues in filter-first rout
 - Or: Work with one control at a time. Set everything else neutral, then adjust one parameter and listen. This reveals what each control actually does
 - Test: Reduce COMPRESSION, sidechain DEPTH, and Distortion to moderate. Suddenly notes become audible again
 
-**The principle:** Extreme settings don't stack well. They compound into undifferentiated mush because each extreme is fighting for dominance. Professional mixing uses *restraint*—maybe one control extreme, everything else moderate. This teaches that *more isn't louder or better; it's just more*. Three moderate settings create definition. Three extreme settings create collapse.
+**The principle:** Extreme settings don't stack well. They compound into undifferentiated mush because each extreme is fighting for dominance. Professional mixing uses *restraint*; maybe one control extreme, everything else moderate. This teaches that *more isn't louder or better; it's just more*. Three moderate settings create definition. Three extreme settings create collapse.
 
 ---
 
 #### **Mistake 10: "My osc went from cool to noise, or mud, or indistinct"**
 
-**What's happening:** You patched a harmonically-rich oscillator (sawtooth, complex waveform) into GHOST's filter-first routing. The filter removes frequencies, the delay repeats what remains, reverb diffuses it, distortion colors it. Each stage removes or transforms harmonic content. By the time the signal reaches the output, the original oscillator character is unrecognizable—it's become noise (if highs were removed and lows pushed hard), mud (if all processing is wet and diffuse), or indistinct (if everything was compressed and distorted together).
+**What's happening:** You patched a harmonically-rich oscillator (sawtooth, complex waveform) into GHOST's filter-first routing. The filter removes frequencies, the delay repeats what remains, reverb diffuses it, distortion colors it. Each stage removes or transforms harmonic content. By the time the signal reaches the output, the original oscillator character is unrecognizable; it's become noise (if highs were removed and lows pushed hard), mud (if all processing is wet and diffuse), or indistinct (if everything was compressed and distorted together).
 
-**Why this happens:** Complex waveforms contain many harmonics. A sawtooth is harmonically rich. When you apply aggressive filtering at the start of a filter-first chain, you remove specific harmonics. Delay elaborates what remains (but doesn't add back what was removed). Reverb diffuses it. Distortion adds new harmonics but doesn't recover the original architecture. The result is a different instrument entirely—not "a processed sawtooth," but "something new that came from a sawtooth."
+**Why this happens:** Complex waveforms contain many harmonics. A sawtooth is harmonically rich. When you apply aggressive filtering at the start of a filter-first chain, you remove specific harmonics. Delay elaborates what remains (but doesn't add back what was removed). Reverb diffuses it. Distortion adds new harmonics but doesn't recover the original architecture. The result is a different instrument entirely; not "a processed sawtooth," but "something new that came from a sawtooth."
 
 **How to fix it:**
 - Use the filter more *carefully*. Moderate FREQUENCY (not extreme CCW/CW). The goal is shaping, not removal
 - Use spatial effects more *judiciously*. Lower wet values so the original character survives elaboration
 - Or: Reduce spatial processing and increase distortion. Let the original harmonics survive to distortion, where new harmonics are *added* rather than removed
-- Or: Accept the transformation. Maybe the "indistinct" result is the sound you actually want—just be intentional about it
+- Or: Accept the transformation. Maybe the "indistinct" result is the sound you actually want; just be intentional about it
 - Test: Start with everything at 12 o'clock (neutral). Increase parameters one at a time. Notice when the oscillator stops sounding like an oscillator
 
-**The principle:** Filter-first routing transforms waveforms more aggressively than other routings because the filter operates on pristine, harmonically-rich material. Early frequency removal affects everything downstream—you can't add back harmonics that the filter removed. This teaches that *harmonic content is precious in a signal chain*. If you want to preserve your oscillator character, be gentle with early-stage filtering. If you want total transformation, go extreme—just understand the cost.
+**The principle:** Filter-first routing transforms waveforms more aggressively than other routings because the filter operates on pristine, harmonically-rich material. Early frequency removal affects everything downstream; you can't add back harmonics that the filter removed. This teaches that *harmonic content is precious in a signal chain*. If you want to preserve your oscillator character, be gentle with early-stage filtering. If you want total transformation, go extreme; just understand the cost.
 
 ---
 
@@ -1855,7 +1855,7 @@ What you learn: The filter at the START of the chain defines everything else. Wh
 - Listen for reverb space around your audio
 - Return both to 12 o'clock
 
-What you learn: Delay and reverb take what the filter created and elaborate on it. They don't replace it—they build on it. The effect sits between the filter foundation and everything downstream.
+What you learn: Delay and reverb take what the filter created and elaborate on it. They don't replace it; they build on it. The effect sits between the filter foundation and everything downstream.
 
 **Step 3: Explore DISTORTION (The Final Layer)**
 - With FREQUENCY and spatial effects at 12 o'clock, turn Distortion slowly CW to 1-2 o'clock
@@ -1864,14 +1864,14 @@ What you learn: Delay and reverb take what the filter created and elaborate on i
 - Even moderate distortion feels integrated, not harsh
 - Return to 12 o'clock
 
-What you learn: Distortion here is the final layer. It's not stark because it's working on material that's already been shaped by filter and spatial processing. This is why filter-first routing creates "heavy" tones—everything compounds.
+What you learn: Distortion here is the final layer. It's not stark because it's working on material that's already been shaped by filter and spatial processing. This is why filter-first routing creates "heavy" tones; everything compounds.
 
 **Result:**
 You've heard the core principle of Routing 3: Filter defines foundation → Spatial effects elaborate on it → Distortion integrates the complete result.
 
 **What You're Learning:**
 - **Filter as foundation, not decoration:** Early filter choices compound through everything downstream. You can't recover brightness you filtered out
-- **Spatial effects as elaboration:** Delay and reverb aren't generating new character—they're multiplying what the filter established
+- **Spatial effects as elaboration:** Delay and reverb aren't generating new character; they're multiplying what the filter established
 - **Distortion as integration:** Late-chain distortion on already-processed material feels heavy and integrated, not aggressive and stark
 
 **Alternative Options:**
@@ -1936,7 +1936,7 @@ Build on Patch 3's foundational understanding. Add rhythmic control through side
 **Sidechain Setup:**
 - **SIDECHAIN TRIG IN:** Patch external clock or gate output (kick drum, sequencer clock, etc.)
 - **SIDECHAIN knob (release time):** 12 o'clock (moderate recovery)
-- **SIDECHAIN DEPTH (ROUTING + SIDECHAIN knob):** 1-2 o'clock (30-50% depth—effect ducks noticeably but doesn't collapse)
+- **SIDECHAIN DEPTH (ROUTING + SIDECHAIN knob):** 1-2 o'clock (30-50% depth, effect ducks noticeably but doesn't collapse)
 
 When the gate fires, the heavily-processed signal ducks, creating rhythmic space. The recovery time controls whether it feels tight or loose.
 
@@ -1954,7 +1954,7 @@ Audio that transforms rhythmically: The sidechain ducks to the gate timing while
 **What You're Learning:**
 - **Sidechain on complex material:** Late-chain sidechain ducking affects the entire processed signal as a unit. The effect feels rhythmic, not just level-reducing
 - **Filter modulation on foundation:** Changing the foundation in real time creates unpredictable character. Each modulation source (algorithmic, random, tempo-synced) teaches different creative approaches
-- **Modulation + sidechain interaction:** Combining them creates multi-dimensional rhythmic evolution—the sidechain provides timing structure, the filter modulation provides timbral change
+- **Modulation + sidechain interaction:** Combining them creates multi-dimensional rhythmic evolution; the sidechain provides timing structure, the filter modulation provides timbral change
 
 **Alternative Options:**
 - **Budget Approach:** Single LFO + external gate (loses modulation source variety but teaches core principles)
@@ -1965,7 +1965,7 @@ Audio that transforms rhythmically: The sidechain ducks to the gate timing while
 This patch requires active listening and real-time decision-making:
 - Let the gate trigger run; adjust SIDECHAIN DEPTH to find the right dip intensity
 - Adjust SIDECHAIN knob (release time) to control whether the recovery feels snappy or smooth
-- Watch how the filter modulation changes character—slow modulation for evolving tones, faster modulation for rhythmic texture
+- Watch how the filter modulation changes character; slow modulation for evolving tones, faster modulation for rhythmic texture
 - Manually sweep FREQUENCY while modulation and sidechain are running to add performance control
 - Adjust Distortion in real time to add/remove aggression as the sidechain ducks
 
@@ -1973,7 +1973,7 @@ Key insight: Rhythmic processing in filter-first routing means modulating the fo
 
 ---
 
-GHOST doesn't exist in isolation. It connects to everything already in your setup. The routing flexibility and modulation control don't just transform GHOST—they reveal possibilities in gear you already own.
+GHOST doesn't exist in isolation. It connects to everything already in your setup. The routing flexibility and modulation control don't just transform GHOST; they reveal possibilities in gear you already own.
 
 ### **Principle 1: External Sequencers → Modulation Sources**
 
@@ -1981,11 +1981,11 @@ Your external sequencer (Elektron device, Torso Studio, Arturia, etc.) isn't jus
 
 **Workflow:**
 - Patch sequencer CV OUT → GHOST PRE-VCA CV or CUTOFF CV
-- Now your sequencer doesn't just trigger rhythm—it shapes GHOST's character in sync
+- Now your sequencer doesn't just trigger rhythm; it shapes GHOST's character in sync
 - Set sequencer to random or algorithmic CV, and GHOST responds with evolving processing
 - Result: Audio processing that *grooves* because it's synced to your musical timing, not arbitrary LFO rates
 
-**Why this matters:** Most people think sequencers are for note generation. Modular thinking says sequencers are *timing sources*. Their CV outputs can modulate anything. GHOST's three CV inputs make this obvious—you're not limited to one modulation type.
+**Why this matters:** Most people think sequencers are for note generation. Modular thinking says sequencers are *timing sources*. Their CV outputs can modulate anything. GHOST's three CV inputs make this obvious; you're not limited to one modulation type.
 
 ### **Principle 2: Stomp Box Interface → GHOST Input Control**
 
@@ -2026,7 +2026,7 @@ When you patch multiple CV sources to GHOST simultaneously:
 - Use sidechain for reactive ducking (trigger)
 - Same audio input now becomes completely different depending on CV state combinations
 
-**Why this matters:** This teaches interconnection at scale. GHOST isn't just an effects processor anymore—it becomes a modulation-responsive system where audio + control signals create emergent textures. That principle applies to all modular synthesis.
+**Why this matters:** This teaches interconnection at scale. GHOST isn't just an effects processor anymore; it becomes a modulation-responsive system where audio + control signals create emergent textures. That principle applies to all modular synthesis.
 
 ### **Real Workflow Example: Stomp + Sequencer Integration**
 
@@ -2046,9 +2046,9 @@ What happens:
 3. **Sequencer modulates PRE-VCA:** Bass processing intensity evolves musically, synced to your tempo
 4. **LFO modulates CUTOFF:** Independent tonal evolution, changing character constantly
 5. **Drum gate triggers sidechain:** When drums hit, GHOST ducks, sitting back in the mix
-6. **Result:** Bass that transforms throughout the song—heavy and atmospheric during intro, reactive and groovy during beats, spacious on breaks
+6. **Result:** Bass that transforms throughout the song; heavy and atmospheric during intro, reactive and groovy during beats, spacious on breaks
 
-Without GHOST's routing flexibility and CV inputs, this workflow requires multiple modules and complex patching. GHOST provides it integrated—teaching you the principle while staying practical.
+Without GHOST's routing flexibility and CV inputs, this workflow requires multiple modules and complex patching. GHOST provides it integrated; teaching you the principle while staying practical.
 
 ---
 

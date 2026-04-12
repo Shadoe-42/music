@@ -2,7 +2,7 @@
 
 **Adding timbral shape to your patch.**
 
-In Guide 01, you built the minimal functional patch: oscillator → envelope → VCA. You can trigger notes that start and stop. The oscillator's audio-rate voltage was gated by the envelope's control-rate voltage. That works. But raw oscillator voltage is static—it doesn't change character over time. 
+In Guide 01, you built the minimal functional patch: oscillator → envelope → VCA. You can trigger notes that start and stop. The oscillator's audio-rate voltage was gated by the envelope's control-rate voltage. That works. But raw oscillator voltage is static; it doesn't change character over time. 
 
 **This guide adds a filter to shape that voltage and a second envelope to modulate the filter over time.**
 
@@ -21,7 +21,7 @@ When you apply control voltage to a filter's cutoff input:
 - **+5V on cutoff CV** = filter is open (allows most frequencies, output is bright)
 - **Anything in between** = filter is partially open (output brightness scales with voltage)
 
-The manual cutoff knob also controls this—it sets the baseline cutoff frequency. The CV input modulates *around* that baseline. Both the knob and the incoming CV voltage work together to determine the final filter cutoff.
+The manual cutoff knob also controls this; it sets the baseline cutoff frequency. The CV input modulates *around* that baseline. Both the knob and the incoming CV voltage work together to determine the final filter cutoff.
 
 **This is the same gating principle from the VCA.** The VCA gates audio voltage based on control voltage. The filter gates frequencies of audio voltage based on control voltage. Same underlying concept, different audio result.
 
@@ -40,15 +40,15 @@ You're expanding to:
 3. **Envelope 1 gates the filter's output via VCA** (amplitude shaping)
 4. **Envelope 2 modulates the filter's cutoff** (timbral shaping)
 
-**Result:** When you trigger both envelopes, they run simultaneously but control different parameters. Envelope 1 shapes how loud the sound is. Envelope 2 shapes how bright or dark the sound is. They move independently, creating complex timbral evolution—brightness changes at different rates than amplitude.
+**Result:** When you trigger both envelopes, they run simultaneously but control different parameters. Envelope 1 shapes how loud the sound is. Envelope 2 shapes how bright or dark the sound is. They move independently, creating complex timbral evolution; brightness changes at different rates than amplitude.
 
 **Why two envelopes matter:**
 
-Without a second envelope, filter cutoff would be static. Brightness wouldn't evolve. The sound would be one-dimensional—amplitude changing while timbre stays constant.
+Without a second envelope, filter cutoff would be static. Brightness wouldn't evolve. The sound would be one-dimensional; amplitude changing while timbre stays constant.
 
 With a second envelope, both amplitude and timbre can evolve over time, at different rates, creating far more expressive and musical results.
 
-**This teaches the core modular principle:** One module applied to different destinations creates different effects. An envelope controlling amplitude is volume shaping. The same envelope controlling filter cutoff is timbral shaping. Neither is more "correct"—both are valid applications of the same control voltage source.
+**This teaches the core modular principle:** One module applied to different destinations creates different effects. An envelope controlling amplitude is volume shaping. The same envelope controlling filter cutoff is timbral shaping. Neither is more "correct"; both are valid applications of the same control voltage source.
 
 ---
 
@@ -101,7 +101,7 @@ With a second envelope, both amplitude and timbre can evolve over time, at diffe
 - Negative voltage = closes filter (darkens)
 - The same modulation source can move in both directions
 
-**Important variation:** Some manufacturers (like Endorphin.es) implement bipolar CV differently. The knob position or a switch determines the filter mode, and bipolar CV then modulates around that mode—for example, a knob center position might set the filter to neutral, with clockwise turning lowpass and counterclockwise turning highpass. Bipolar CV then modulates in both directions from that center point. Check your specific filter's manual to understand how it handles bipolar modulation.
+**Important variation:** Some manufacturers (like Endorphin.es) implement bipolar CV differently. The knob position or a switch determines the filter mode, and bipolar CV then modulates around that mode; for example, a knob center position might set the filter to neutral, with clockwise turning lowpass and counterclockwise turning highpass. Bipolar CV then modulates in both directions from that center point. Check your specific filter's manual to understand how it handles bipolar modulation.
 
 **For beginners using unipolar envelopes:** Expect the filter to open and close in one direction (darken to bright, or vice versa depending on initial cutoff setting).
 
@@ -133,7 +133,7 @@ With a second envelope, both amplitude and timbre can evolve over time, at diffe
 
 **What it does (unchanged from Guide 01):** Takes filtered audio voltage and gates it based on control voltage from Envelope 1.
 
-**Why it's still essential:** Even though we're adding a filter, the VCA's job remains the same—controlling amplitude. The filter shapes timbre, the VCA gates amplitude. Different jobs, both necessary.
+**Why it's still essential:** Even though we're adding a filter, the VCA's job remains the same; controlling amplitude. The filter shapes timbre, the VCA gates amplitude. Different jobs, both necessary.
 
 **Voltage story:** Filter's output (audio voltage, now with shaped frequency content) enters the VCA. Envelope 1's rising voltage opens the VCA proportionally, letting filtered audio through. As Envelope 1 falls, VCA closes, amplitude drops.
 
@@ -192,7 +192,7 @@ When you trigger both envelopes:
 **What you're doing:** Setting initial filter parameters so you can hear the effect clearly.
 
 1. Set filter type to **lowpass** (if your filter offers multiple types)
-2. Set manual **cutoff** to around middle position (12 o'clock)—this baseline cutoff position will be modulated by the envelope
+2. Set manual **cutoff** to around middle position (12 o'clock); this baseline cutoff position will be modulated by the envelope
 3. Set **resonance** fairly low (around 20-30%)
 4. Leave filter CV inputs unpatched for now
 5. **Listen:** The filtered oscillator should sound darker than the unfiltered oscillator (because cutoff is set low-ish)
@@ -216,14 +216,14 @@ When you trigger both envelopes:
 **What you're doing:** Patching Envelope 2's output voltage to the filter's cutoff input so the filter brightness evolves.
 
 1. Patch Envelope 2 **output** → filter **cutoff CV input** (may be labeled "CV In," "Cutoff CV," "Mod In," "Frequency CV," etc.)
-2. Many filters have a **CV amount/attenuator** control — set this to around 50% initially to moderate the effect
+2. Many filters have a **CV amount/attenuator** control; set this to around 50% initially to moderate the effect
 3. **Listen:** The filter should now track the second envelope. As you trigger, you should hear brightness change along with the rising/falling envelope voltage.
 
 **Voltage perspective:** Filter's cutoff is now being modulated by two sources simultaneously:
 - Manual cutoff knob sets the base level
 - Envelope 2 adds/subtracts from that level as it rises/falls
 
-### Step 5: Test—Watch Both Envelopes Work
+### Step 5: Test: Watch Both Envelopes Work
 
 1. Trigger both envelopes (gate goes high, both envelopes fire)
 2. Listen and observe:
@@ -291,11 +291,11 @@ If you already have Doepfer A-140 ADSR from Guide 01, buy another one (around $9
 **Option 2: Use a multi-envelope module (more efficient)**
 If you have **Maths** from Guide 01: It already provides **two** function generators, so you have both envelopes covered.
 
-If you have **Intellijel Quadrax:** It provides **four** envelope channels—use channel 1 for amplitude, channel 2 for filter.
+If you have **Intellijel Quadrax:** It provides **four** envelope channels; use channel 1 for amplitude, channel 2 for filter.
 
 **Option 3: Single second envelope**
-- **Erica Synths Black EG2** (around $160, 8HP) — Single ADSR with extra features
-- **Doepfer A-140 ADSR** (around $90) — Simple, reliable second envelope
+- **Erica Synths Black EG2** (around $160, 8HP): Single ADSR with extra features
+- **Doepfer A-140 ADSR** (around $90): Simple, reliable second envelope
 
 ---
 
@@ -325,7 +325,7 @@ If you have **Intellijel Quadrax:** It provides **four** envelope channels—use
 
 **Filter envelope attack is too fast, or filter self-resonating.** Try:
 1. Slower attack on Envelope 2 (10-20ms minimum)
-2. Reduce resonance if it's very high—high resonance + fast modulation can pop
+2. Reduce resonance if it's very high; high resonance + fast modulation can pop
 
 ### "The filter sounds thin/weak"
 
@@ -336,14 +336,14 @@ Try:
 
 ### "Amplitude and filter brightness always move together, I want them independent"
 
-**This is correct behavior—you're just hearing them move in sync because Envelope 1 and Envelope 2 have similar timings.**
+**This is correct behavior; you're just hearing them move in sync because Envelope 1 and Envelope 2 have similar timings.**
 
 To separate them:
 1. Make Envelope 2 much longer decay than Envelope 1 (filter evolves slowly while amplitude drops fast)
 2. Or make Envelope 2 much shorter (filter jumps bright then settles while amplitude sustains)
 3. Or give them completely different attack times
 
-The independence is there—adjust envelope parameters to hear it.
+The independence is there; adjust envelope parameters to hear it.
 
 ---
 
@@ -392,7 +392,7 @@ Audio voltage in → shaped by control voltage → processed voltage out
 
 **When you later add effects (reverb, delay, distortion), LFOs, random sources, or complex sequences, you'll recognize this pattern everywhere.** Control voltage shapes audio voltage. Different sources, different processors, same underlying architecture.
 
-**Advanced note: Signal flow order matters.** This guide uses Filter → VCA because it creates clean separation—filter shapes timbre, VCA shapes amplitude independently. Some musicians patch VCA → Filter instead, which creates complex interactions: the VCA's gating affects the filter's resonance behavior, producing more unpredictable but sometimes expressive results. Try both once you're comfortable with the foundation, and listen for how the interaction changes the sound. This is interconnection in action—the same modules produce different results based on patch order.
+**Advanced note: Signal flow order matters.** This guide uses Filter → VCA because it creates clean separation; filter shapes timbre, VCA shapes amplitude independently. Some musicians patch VCA → Filter instead, which creates complex interactions: the VCA's gating affects the filter's resonance behavior, producing more unpredictable but sometimes expressive results. Try both once you're comfortable with the foundation, and listen for how the interaction changes the sound. This is interconnection in action; the same modules produce different results based on patch order.
 
 **Interconnection emerges.** Everything is voltage. Everything can control everything else. Your job is routing.
 
@@ -414,7 +414,7 @@ Audio voltage in → shaped by control voltage → processed voltage out
 - Approximate HP: 35-50HP
 - Approximate cost: $600-1200 (modules only, not including case/power/cables)
 
-**Reality check:** You're building a complete voice. This is the foundation of subtractive synthesis. Every future voice adds oscillators, filters, and envelopes—but follows the same principle.
+**Reality check:** You're building a complete voice. This is the foundation of subtractive synthesis. Every future voice adds oscillators, filters, and envelopes; but follows the same principle.
 
 ---
 

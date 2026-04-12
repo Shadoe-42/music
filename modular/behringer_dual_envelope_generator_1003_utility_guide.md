@@ -93,7 +93,7 @@
 ### **"Both envelopes are retriggering when I don't want them to"**
 **Problem:** Every time a new trigger arrives, both envelopes restart from their attack phase instead of allowing the current cycle to complete.
 
-**Why It Happens:** Most users don't realize the 1003 has a trigger mode selection—usually defaulting to Multiple (retriggering) mode. Additionally, using the Trig input continuously (from a clock divider or fast sequencer) will retrigger both envelopes on every trigger. Many users expect the gate input alone to control timing, not realizing that Trig input creates additional retriggering.
+**Why It Happens:** Most users don't realize the 1003 has a trigger mode selection; usually defaulting to Multiple (retriggering) mode. Additionally, using the Trig input continuously (from a clock divider or fast sequencer) will retrigger both envelopes on every trigger. Many users expect the gate input alone to control timing, not realizing that Trig input creates additional retriggering.
 
 **Solution:**
 - **Check trigger mode:** Use Single mode if you want standard ADSR behavior (no retriggering while gate is held)
@@ -101,10 +101,10 @@
 - **Understand timing:** Gate input holds both envelopes active; Trig input causes retriggering within that gate period
 - **Sequencer gates:** Use long gate times from your sequencer (held until next note) rather than short triggers
 
-**The Interconnection:** Understanding retriggering teaches you fundamental envelope behavior that appears everywhere. All envelopes need trigger points. Understanding when to retrigger (rhythmic effects, performance control) vs. when to hold (sustained voices) is fundamental synthesis thinking that transfers to all modulation sources—LFOs can restart on triggers, filter tracking can reset on gates, any time-based modulation can retrigger. The 1003 forces you to think explicitly about these choices.
+**The Interconnection:** Understanding retriggering teaches you fundamental envelope behavior that appears everywhere. All envelopes need trigger points. Understanding when to retrigger (rhythmic effects, performance control) vs. when to hold (sustained voices) is fundamental synthesis thinking that transfers to all modulation sources: LFOs can restart on triggers, filter tracking can reset on gates, any time-based modulation can retrigger. The 1003 forces you to think explicitly about these choices.
 
 ### **"One envelope is at full volume but the other envelope barely does anything"**
-**Problem:** Left envelope modulates VCA successfully, but right envelope connected to filter has minimal effect—the filter cutoff barely moves.
+**Problem:** Left envelope modulates VCA successfully, but right envelope connected to filter has minimal effect; the filter cutoff barely moves.
 
 **Why It Happens:** Different destinations expect different CV ranges. VCAs typically work well with 0-10V envelope signals, but many filters expect 0-5V for full sweep, or they have input attenuators that reduce the signal. If you're using a positive output (0-10V from the 1003) patched to a destination expecting 0-5V, the signal may clip or overdrive the input, sometimes producing nonlinear behavior that looks like "no effect."
 
@@ -115,12 +115,12 @@
 - **Gain stage properly:** The 1003 outputs at ±10V max, but not all destinations need full range
 - **Consider output impedance:** 1kΩ output impedance can interact with high-impedance inputs; use buffered outputs if problems persist
 
-**The Learning:** This teaches you about signal level standardization and system design. Understanding that different modules expect different CV ranges is fundamental to building coherent modular systems. Learning to verify specs and use attenuators becomes a core skill that applies everywhere—every CV connection requires thinking about level matching.
+**The Learning:** This teaches you about signal level standardization and system design. Understanding that different modules expect different CV ranges is fundamental to building coherent modular systems. Learning to verify specs and use attenuators becomes a core skill that applies everywhere; every CV connection requires thinking about level matching.
 
 ### **"Envelopes feel sluggish or timing doesn't match my expectations"**
 **Problem:** You set Attack to 50ms and Initial Decay to 100ms, but the envelope takes noticeably longer than expected, or timing feels inconsistent.
 
-**Why It Happens:** ADSR envelope timing on analog circuits has exponential curves, not linear ones. An exponential envelope that takes 50ms to reach peak feels different than a linear 50ms rise. Additionally, gate threshold detection, processing delays in the module, and slight variations in component tolerances all add small amounts of latency. Most importantly, users often confuse the timing knob position with actual timing values—the 1003's Attack knob range is 1ms to 2 seconds, but that's not linear. At 12 o'clock you might be at 100ms, not 1 second.
+**Why It Happens:** ADSR envelope timing on analog circuits has exponential curves, not linear ones. An exponential envelope that takes 50ms to reach peak feels different than a linear 50ms rise. Additionally, gate threshold detection, processing delays in the module, and slight variations in component tolerances all add small amounts of latency. Most importantly, users often confuse the timing knob position with actual timing values; the 1003's Attack knob range is 1ms to 2 seconds, but that's not linear. At 12 o'clock you might be at 100ms, not 1 second.
 
 **Solution:**
 - **Measure actual timing:** Use an audio interface or scope to measure actual envelope timing rather than trusting your ear
@@ -131,10 +131,10 @@
 
 **The Interconnection:** Understanding envelope timing teaches you about time constants in analog circuits. RC (resistor-capacitor) networks control timing everywhere in synthesis: filters have time constants, oscillators have pitch stability related to component values, any time-based analog behavior involves these principles. Learning to think about time constants through envelopes teaches principles that apply to all analog timing.
 
-### **"I can't get the two envelopes to coordinate properly—they're interfering with each other"**
+### **"I can't get the two envelopes to coordinate properly; they're interfering with each other"**
 **Problem:** When both envelopes are modulating different parameters simultaneously, they seem to conflict or create unexpected interactions.
 
-**Why It Happens:** Most commonly, users don't realize that the 1003 shares internal circuit elements between the two envelopes. If both are set to very fast attack times simultaneously, there can be internal voltage supply interactions. More commonly, the issue is actually in the patching: if both envelope outputs are going to the same destination (accidentally patching both to the same filter cutoff input), they'll sum, creating unexpected modulation. Additionally, many users don't consider that the two envelopes are *always* synchronized to the same gate trigger—they can't run independently of each other.
+**Why It Happens:** Most commonly, users don't realize that the 1003 shares internal circuit elements between the two envelopes. If both are set to very fast attack times simultaneously, there can be internal voltage supply interactions. More commonly, the issue is actually in the patching: if both envelope outputs are going to the same destination (accidentally patching both to the same filter cutoff input), they'll sum, creating unexpected modulation. Additionally, many users don't consider that the two envelopes are *always* synchronized to the same gate trigger; they can't run independently of each other.
 
 **Solution:**
 - **Verify patching:** Double-check that left and right outputs go to different destinations
@@ -143,26 +143,26 @@
 - **Check CV summing:** If you intentionally want to combine both envelope outputs, use an explicit mixer rather than multiple connections
 - **Avoid simultaneous extremes:** Don't set both to maximum speed simultaneously; stagger timing between them
 
-**The Learning:** This teaches you about system integration and signal combining. Understanding that multiple modulation sources can interact—and how to manage that interaction—is fundamental to sophisticated modular synthesis. The 1003 forces you to think explicitly about how multiple modulation sources coordinate.
+**The Learning:** This teaches you about system integration and signal combining. Understanding that multiple modulation sources can interact; and how to manage that interaction; is fundamental to sophisticated modular synthesis. The 1003 forces you to think explicitly about how multiple modulation sources coordinate.
 
 ### **"My sequencer gates don't trigger the envelope consistently"**
 **Problem:** Sometimes the envelope triggers, sometimes it doesn't. Or it triggers inconsistently, at different times than expected.
 
-**Why It Happens:** The 1003's gate input has a +4V threshold—meaning the incoming signal must exceed +4V to be recognized. Many sequencers output lower gate voltages (0-5V, with 5V peak but not always clean rise times), which may not reliably exceed the threshold. Additionally, slow rise times on gates can look like noise to the trigger detector, causing unreliable triggering. Gate cables with high capacitance can also cause signal degradation.
+**Why It Happens:** The 1003's gate input has a +4V threshold; meaning the incoming signal must exceed +4V to be recognized. Many sequencers output lower gate voltages (0-5V, with 5V peak but not always clean rise times), which may not reliably exceed the threshold. Additionally, slow rise times on gates can look like noise to the trigger detector, causing unreliable triggering. Gate cables with high capacitance can also cause signal degradation.
 
 **Solution:**
 - **Verify output voltage:** Check that your sequencer's gate output is actually reaching +4V minimum
 - **Use clean triggers:** Trigger signals (sharp rising edges) work better than gates (which have gentle rise times)
 - **Check cable quality:** Use high-quality, short gate cables without excessive capacitance
-- **Test with manual gate:** Press the manual gate button to verify the envelope responds—if manual gate works but sequencer gates don't, the issue is your gate source
+- **Test with manual gate:** Press the manual gate button to verify the envelope responds; if manual gate works but sequencer gates don't, the issue is your gate source
 - **Consider a buffer:** If your sequencer outputs are weak, a unity-gain buffer can strengthen the signal
 
-**The Learning:** Understanding gate threshold and signal integrity teaches you about the electrical requirements of modular synthesis. Gates aren't just logical on/off signals—they're analog signals that need to exceed thresholds and have proper rise characteristics. Learning to think about gate quality transfers to understanding trigger requirements everywhere.
+**The Learning:** Understanding gate threshold and signal integrity teaches you about the electrical requirements of modular synthesis. Gates aren't just logical on/off signals; they're analog signals that need to exceed thresholds and have proper rise characteristics. Learning to think about gate quality transfers to understanding trigger requirements everywhere.
 
-### **"The sustain level doesn't stay where I set it—it drifts or doesn't match other modules"**
+### **"The sustain level doesn't stay where I set it; it drifts or doesn't match other modules"**
 **Problem:** The sustain level seems to change when nothing is touched, or the sustain voltage doesn't match what you set it to (e.g., you set it to "halfway" but the output doesn't match halfway voltage from other modules).
 
-**Why It Happens:** Sustain voltage is analog and susceptible to temperature drift (all analog circuits drift slightly as components warm or cool). Additionally, the sustain control is a potentiometer—mechanical devices that can have slightly nonlinear response. If the sustain knob position doesn't match the actual output voltage exactly, this is normal analog behavior (not all potentiometers are perfectly linear). Finally, if you're comparing sustain voltage across different modules, different output impedances and buffering can cause apparent differences.
+**Why It Happens:** Sustain voltage is analog and susceptible to temperature drift (all analog circuits drift slightly as components warm or cool). Additionally, the sustain control is a potentiometer; mechanical devices that can have slightly nonlinear response. If the sustain knob position doesn't match the actual output voltage exactly, this is normal analog behavior (not all potentiometers are perfectly linear). Finally, if you're comparing sustain voltage across different modules, different output impedances and buffering can cause apparent differences.
 
 **Solution:**
 - **Accept analog drift:** Sustain voltage will drift 1-2% over time and temperature. This is normal analog behavior, not a defect.
@@ -173,10 +173,10 @@
 
 **The Learning:** This teaches you about the difference between digital precision and analog character. Analog circuits naturally drift; this isn't a failure, it's the nature of analog electronics. Understanding and working with analog drift teaches you to design systems that are robust to component tolerance and temperature variations.
 
-### **"Bipolar outputs are confusing—I don't know when to use OUT+ vs OUT-"**
+### **"Bipolar outputs are confusing: I don't know when to use OUT+ vs OUT-"**
 **Problem:** You have positive and negative outputs but don't understand the difference or when to use each.
 
-**Why It Happens:** Many users are unfamiliar with bipolar modulation. Most beginner patches only use positive CV (0-10V), treating envelopes as unidirectional signals. Negative outputs aren't "more negative" in a mathematical sense—they're the *inverted* version of the positive output. When positive output is at +5V, negative output is at -5V (180° out of phase). This allows inverted modulation effects.
+**Why It Happens:** Many users are unfamiliar with bipolar modulation. Most beginner patches only use positive CV (0-10V), treating envelopes as unidirectional signals. Negative outputs aren't "more negative" in a mathematical sense; they're the *inverted* version of the positive output. When positive output is at +5V, negative output is at -5V (180° out of phase). This allows inverted modulation effects.
 
 **Solution:**
 - **Positive outputs (OUT L+/R+):** Standard modulation. Use for VCA amplitude control, filter cutoff modulation, standard effects
@@ -217,7 +217,7 @@
 **Result:** Classic analog synthesis voice with coordinated but independent amplitude and filter envelopes from single gate trigger. Amplitude envelope provides punchy attack while filter envelope creates evolving timbral character.
 
 **What You're Learning:**
-- **Dual envelope coordination:** Understanding how a single gate trigger can control two independent envelopes for different musical purposes (amplitude shape vs. timbral evolution). This teaches fundamental voice architecture thinking: different parameters need different envelope shapes. This principle transfers everywhere—oscillator pitch can have different envelope timing than amplitude, effects depth can have different timing than filter cutoff.
+- **Dual envelope coordination:** Understanding how a single gate trigger can control two independent envelopes for different musical purposes (amplitude shape vs. timbral evolution). This teaches fundamental voice architecture thinking: different parameters need different envelope shapes. This principle transfers everywhere; oscillator pitch can have different envelope timing than amplitude, effects depth can have different timing than filter cutoff.
 - **ADSR design thinking:** Learning to set attack/decay/sustain/release times independently for two modulation destinations teaches you about envelope purpose: fast attack for punchy sounds, long sustain for held notes, medium release for smooth transitions. These principles apply to every envelope and time-based modulation in synthesis.
 - **Gate coordination principles:** Understanding that both envelopes start simultaneously but evolve independently teaches you how coordinated systems work. This principle appears in clock division (multiple clocks derived from one source), pattern sequencing (synchronized but different sequences), and all hierarchical timing in synthesis.
 
@@ -236,8 +236,8 @@
 
 **What You're Learning:**
 - **Retriggering as compositional tool:** Understanding that triggers within a sustained gate can create rhythmic patterns teaches you how modulation can be rhythmic. The distinction between gate (holds envelope active) and trigger (restarts envelope) is fundamental to all time-based synthesis. This principle appears everywhere: sequencers can trigger envelopes at different rates than the main clock, LFOs can reset on triggers, any time-based behavior can be synchronized to multiple timing sources.
-- **Dual function coordination:** Using the same trigger source to retrigger two independent envelopes for different rhythmic effects teaches you about hierarchical timing. One source can control multiple layers of rhythmic behavior simultaneously—percussion layer and bass layer using the same trigger clock. This thinking transfers to all complex timing systems.
-- **Rhythm synthesis fundamentals:** Understanding that envelope retriggering creates rhythmic effects teaches you that rhythm isn't just about note sequencing—it's about timing control at all levels. The 1003 reveals that envelope timing is rhythm, clock timing is rhythm, trigger timing is rhythm. All time-based synthesis is fundamentally rhythmic.
+- **Dual function coordination:** Using the same trigger source to retrigger two independent envelopes for different rhythmic effects teaches you about hierarchical timing. One source can control multiple layers of rhythmic behavior simultaneously; percussion layer and bass layer using the same trigger clock. This thinking transfers to all complex timing systems.
+- **Rhythm synthesis fundamentals:** Understanding that envelope retriggering creates rhythmic effects teaches you that rhythm isn't just about note sequencing; it's about timing control at all levels. The 1003 reveals that envelope timing is rhythm, clock timing is rhythm, trigger timing is rhythm. All time-based synthesis is fundamentally rhythmic.
 
 ---
 
@@ -288,7 +288,7 @@
 ## Why This Module Excels
 
 ### **The Philosophy:**
-Most envelope generators treat envelopes as isolated tools. The 1003 treats envelopes as coordination infrastructure—the fundamental timing backbone of voice architecture.
+Most envelope generators treat envelopes as isolated tools. The 1003 treats envelopes as coordination infrastructure; the fundamental timing backbone of voice architecture.
 
 ### **The Core Innovation:**
 
@@ -308,13 +308,13 @@ When you understand dual synchronized envelopes, you understand voice architectu
 
 Understanding ADSR teaches you that all time-based behavior in synthesis is fundamentally envelope-shaped. Filters have attack/decay behavior (resonance settling). Oscillators have startup behavior (sync transients). LFOs have ramping behavior. Every time-based process in synthesis is essentially ADSR thinking.
 
-**Coordinated Modulation as System Philosophy:** The 1003's dual outputs reveal that synthesis is about coordinating multiple modulation sources. You don't just generate envelope shapes—you route them to different destinations (VCA, filter, effects) where they create coordinated musical behavior. Understanding this routing teaches you that modular synthesis is fundamentally about signal architecture: every modulation source needs a destination, and complex synthesis comes from careful routing of multiple modulation sources.
+**Coordinated Modulation as System Philosophy:** The 1003's dual outputs reveal that synthesis is about coordinating multiple modulation sources. You don't just generate envelope shapes; you route them to different destinations (VCA, filter, effects) where they create coordinated musical behavior. Understanding this routing teaches you that modular synthesis is fundamentally about signal architecture: every modulation source needs a destination, and complex synthesis comes from careful routing of multiple modulation sources.
 
 **Bipolar Architecture as Complete Signal Toolset:** The 1003 provides positive and negative outputs, teaching that modulation isn't unidirectional. Inverted envelopes create inverted effects. Understanding bipolar modulation teaches phase relationships, which are fundamental to all synthesis. Phase determines whether signals reinforce or cancel, add or subtract, harmonize or clash.
 
 ### **The Practical Benefits:**
 - **Professional voice architecture:** Single gate for coordinated dual modulation is the standard for professional synthesizer design
-- **Timing coordination:** Both envelopes locked together but independent—exactly what professional voice design requires
+- **Timing coordination:** Both envelopes locked together but independent; exactly what professional voice design requires
 - **System efficiency:** Two complete envelope generators in 16HP is compact for professional voice control
 - **Flexible architecture:** Positive/negative outputs, retriggering options, independent timing for each envelope
 - **Teaching instrument:** Every feature reveals fundamental synthesis principles
@@ -330,9 +330,9 @@ Understanding ADSR teaches you that all time-based behavior in synthesis is fund
 
 The 1003 teaches that synthesis is fundamentally about timing coordination. Every synthesizer needs envelope generators because every sound needs amplitude shaping. The 1003 reveals this by requiring explicit coordination of multiple time-based behaviors.
 
-Moreover, the 1003 teaches ADSR timing as a universal principle. Every time-based process in synthesis—from filter settling to oscillator transients to effect modulation—can be understood as envelope-shaped behavior. Learning ADSR thinking through the 1003 teaches concepts that apply everywhere.
+Moreover, the 1003 teaches ADSR timing as a universal principle. Every time-based process in synthesis; from filter settling to oscillator transients to effect modulation; can be understood as envelope-shaped behavior. Learning ADSR thinking through the 1003 teaches concepts that apply everywhere.
 
-Finally, understanding dual synchronized envelopes teaches you about coordinated systems. Complex synthesis isn't about individual modules working in isolation—it's about multiple systems coordinated together. The 1003 makes this explicit: your oscillator, filter, VCA, and effects all need coordinated timing. Learning to think about coordination is learning to think like a professional synthesizer designer.
+Finally, understanding dual synchronized envelopes teaches you about coordinated systems. Complex synthesis isn't about individual modules working in isolation; it's about multiple systems coordinated together. The 1003 makes this explicit: your oscillator, filter, VCA, and effects all need coordinated timing. Learning to think about coordination is learning to think like a professional synthesizer designer.
 
 ---
 

@@ -54,15 +54,15 @@
 
 Maths arrived at a crucial moment in modular synthesis: when DIY culture and Eurorack were expanding beyond specialists and into the hands of musicians who needed to *understand* what was happening, not just use it.
 
-Before Maths, you needed separate modules for envelopes, LFOs, mixers, and slew limiters. Maths unified them into one design that revealed *how they were all the same thing*—different applications of the same analog mathematical principle: voltage integration. This wasn't just space-efficient; it was philosophically revolutionary. It taught that synthesis is fundamentally about voltage relationships, not isolated features.
+Before Maths, you needed separate modules for envelopes, LFOs, mixers, and slew limiters. Maths unified them into one design that revealed *how they were all the same thing*; different applications of the same analog mathematical principle: voltage integration. This wasn't just space-efficient; it was philosophically revolutionary. It taught that synthesis is fundamentally about voltage relationships, not isolated features.
 
-The module became a standard—arguably *the* standard teaching tool for analog synthesis. If you wanted to learn modular, you learned Maths. If you built a small system, Maths was non-negotiable. Within the Eurorack community, owning Maths became as foundational as owning a VCA or a filter. It's difficult to find an intermediate or advanced modular synthesizer that doesn't include one.
+The module became a standard; arguably *the* standard teaching tool for analog synthesis. If you wanted to learn modular, you learned Maths. If you built a small system, Maths was non-negotiable. Within the Eurorack community, owning Maths became as foundational as owning a VCA or a filter. It's difficult to find an intermediate or advanced modular synthesizer that doesn't include one.
 
-Why? Because Maths does something almost no other module does: **it teaches you that everything in modular synthesis is fundamentally the same thing**—voltage, time, and mathematical relationships. Once you understand Maths, you understand the entire language of modular synthesis. Every other module becomes a different application of the same principles.
+Why? Because Maths does something almost no other module does: **it teaches you that everything in modular synthesis is fundamentally the same thing**: voltage, time, and mathematical relationships. Once you understand Maths, you understand the entire language of modular synthesis. Every other module becomes a different application of the same principles.
 
 This design philosophy connects directly to the interconnection principle: Maths doesn't exist in isolation. It's the hub through which all other modules speak to each other in the universal language of voltage mathematics. You can't build a sophisticated modular system without understanding how to think like Maths does.
 
-Twenty years of consistency, countless documentation efforts, and the fact that it *still* doesn't have a serious competitor speaks to something rare: a design so fundamentally correct that it becomes transparent. Musicians don't think about whether to use Maths—they think about how. It's the language through which synthesis literacy is transmitted across generations.
+Twenty years of consistency, countless documentation efforts, and the fact that it *still* doesn't have a serious competitor speaks to something rare: a design so fundamentally correct that it becomes transparent. Musicians don't think about whether to use Maths; they think about how. It's the language through which synthesis literacy is transmitted across generations.
 
 ---
 
@@ -70,13 +70,13 @@ Twenty years of consistency, countless documentation efforts, and the fact that 
 
 ### **The Analog Computation Philosophy**
 
-**Maths is not a digital envelope generator.** It's an analog computer—a circuit that performs mathematical operations on electrical voltage in real-time, with zero latency and infinite resolution.
+**Maths is not a digital envelope generator.** It's an analog computer; a circuit that performs mathematical operations on electrical voltage in real-time, with zero latency and infinite resolution.
 
-This distinction matters. Digital envelopes calculate envelope shapes and output them as a stream of numbers. Analog envelopes *are electrical processes*—voltage building and falling according to physical laws.
+This distinction matters. Digital envelopes calculate envelope shapes and output them as a stream of numbers. Analog envelopes *are electrical processes*; voltage building and falling according to physical laws.
 
 #### **The Mathematical Heart: Integration**
 
-Rise and Fall controls don't just "shape" envelopes. They control **integration**—a core mathematical operation where voltage *accumulates over time*.
+Rise and Fall controls don't just "shape" envelopes. They control **integration**: a core mathematical operation where voltage *accumulates over time*.
 
 When you turn a Rise knob:
 1. You apply a constant current to a capacitor
@@ -84,9 +84,9 @@ When you turn a Rise knob:
 3. The voltage rises *smoothly and continuously*
 4. The output at any moment depends on how long the charging has been happening
 
-This is why Rise and Fall can range from microseconds to 25 minutes—you're literally controlling how fast electricity fills a capacitor. There's no quantization, no sample rate, no digital rounding. Just physics.
+This is why Rise and Fall can range from microseconds to 25 minutes; you're literally controlling how fast electricity fills a capacitor. There's no quantization, no sample rate, no digital rounding. Just physics.
 
-**Musical consequence:** Maths envelopes *feel* different because they're not approximations of mathematical curves—they *are* mathematical curves, generated by analog physics.
+**Musical consequence:** Maths envelopes *feel* different because they're not approximations of mathematical curves; they *are* mathematical curves, generated by analog physics.
 
 #### **Thinking in Voltage: The Core Language**
 
@@ -97,11 +97,11 @@ Maths operates in the universal language of modular synthesis: voltage as inform
 - **-5V = negative control** (filter closes, amp decreases, pitch falls)
 - **All voltages between = proportional effects**
 
-When you patch a signal into Maths Signal Input, you're not uploading data—you're connecting a continuously varying electrical signal that Maths *reads and transforms in real-time*.
+When you patch a signal into Maths Signal Input, you're not uploading data; you're connecting a continuously varying electrical signal that Maths *reads and transforms in real-time*.
 
-The attenuverter at 12 o'clock = zero voltage passing through (no effect). Turn it clockwise and you're *amplifying* that signal. Turn it counter-clockwise and you're *inverting* it—flipping the polarity so that what goes up comes down.
+The attenuverter at 12 o'clock = zero voltage passing through (no effect). Turn it clockwise and you're *amplifying* that signal. Turn it counter-clockwise and you're *inverting* it; flipping the polarity so that what goes up comes down.
 
-This is why the attenuverter is not a "volume knob"—it's a **multiplier** that scales voltage relationships.
+This is why the attenuverter is not a "volume knob"; it's a **multiplier** that scales voltage relationships.
 
 #### **The Hidden Utility: Voltage Addition (SUM)**
 
@@ -114,7 +114,7 @@ If you patch four different sources into Maths channels and turn on all four att
 - Ch4 Variable = +4V
 - **SUM Output = +4V** (2+1-3+4 = 4)
 
-This isn't a "mixing feature" bolted on—it's the fundamental nature of analog circuits. Voltages naturally add together when they meet at a summing point. Maths exposes this as a feature.
+This isn't a "mixing feature" bolted on; it's the fundamental nature of analog circuits. Voltages naturally add together when they meet at a summing point. Maths exposes this as a feature.
 
 **Musical consequence:** You can design patches where the mathematical relationship of four independent modulation sources creates entirely new control voltages that none of the sources produced alone.
 
@@ -122,11 +122,11 @@ This isn't a "mixing feature" bolted on—it's the fundamental nature of analog 
 
 Channels 2 and 3 have a subtle superpower: when nothing is patched to the Signal input, they *generate* +10V internally.
 
-Why +10V? Because in Eurorack, 1V per octave is the pitch standard. +10V = 10 octaves above reference. With the attenuverter at 12 o'clock, this internal voltage does nothing. But turn the attenuverter to +50% and you've created a fixed +5V offset—a constant voltage that can transpose any sequence without external patching.
+Why +10V? Because in Eurorack, 1V per octave is the pitch standard. +10V = 10 octaves above reference. With the attenuverter at 12 o'clock, this internal voltage does nothing. But turn the attenuverter to +50% and you've created a fixed +5V offset; a constant voltage that can transpose any sequence without external patching.
 
-Make Noise didn't add a "reference voltage generator"—they designed channels 2 and 3 so that the absence of a patch becomes *a feature*, not a missing cable.
+Make Noise didn't add a "reference voltage generator"; they designed channels 2 and 3 so that the absence of a patch becomes *a feature*, not a missing cable.
 
-**Musical consequence:** You can perform complex voltage mathematics entirely within Maths, using no external CV sources—just the module's own internal circuitry and your knowledge of how to combine things.
+**Musical consequence:** You can perform complex voltage mathematics entirely within Maths, using no external CV sources; just the module's own internal circuitry and your knowledge of how to combine things.
 
 ### **Design Reasoning: Why Each Feature Exists**
 
@@ -140,9 +140,9 @@ Most modules have one envelope input. Maths has two different ones:
 
 Make Noise included both because they teach different things.
 
-**Trigger Input teaches:** Envelopes have their own timing independent of the gate. You *trigger* a process that unfolds according to its own Rise/Fall settings. This reveals that an envelope is fundamentally a **time-based computation**—it needs a start point and then does its own thing.
+**Trigger Input teaches:** Envelopes have their own timing independent of the gate. You *trigger* a process that unfolds according to its own Rise/Fall settings. This reveals that an envelope is fundamentally a **time-based computation**: it needs a start point and then does its own thing.
 
-**Signal Input teaches:** Envelopes can also follow external control. The gate becomes the modulation source itself—the envelope *tracks* the input. This reveals that Maths channels are flexible: they can be driven by timing or by direct control.
+**Signal Input teaches:** Envelopes can also follow external control. The gate becomes the modulation source itself; the envelope *tracks* the input. This reveals that Maths channels are flexible: they can be driven by timing or by direct control.
 
 Most musicians will use Trigger Input for drums and percussion (fixed timing) and Signal Input for modulation processing (responsive to external control). This single design choice teaches the entire concept of gate-driven vs. signal-driven modulation.
 
@@ -173,7 +173,7 @@ This is unconventional. Why?
 
 Because it teaches **inversion as a core synthesis concept.** By making "off" the center point, Make Noise forces you to think about direction. When you turn an attenuverter clockwise, you're explicitly choosing to amplify positively. When you turn it counter-clockwise, you're explicitly choosing to invert.
 
-This is not just a UI preference. It teaches that modular synthesis is fundamentally about **polarity and direction of control**, not just quantity. A negative scaling of your LFO creates entirely different musical behavior than positive scaling—not just different amounts, but different *directions*.
+This is not just a UI preference. It teaches that modular synthesis is fundamentally about **polarity and direction of control**, not just quantity. A negative scaling of your LFO creates entirely different musical behavior than positive scaling; not just different amounts, but different *directions*.
 
 Every patch where you've used an attenuverter teaches you to think about the mathematical sign of your modulation, not just its magnitude.
 
@@ -191,9 +191,9 @@ The Cycle button does something simple: makes the envelope repeat automatically.
 
 Because it teaches that **envelopes and LFOs are the same thing**, just running at different speeds and with different repeat behavior.
 
-Most musicians learn this eventually through reading and theory. With Maths, you learn it by pressing a button and hearing your envelope become a wobble. Rise and Fall suddenly change meaning—they become speed controls instead of timing controls. The same knobs do completely different things depending on whether you press Cycle.
+Most musicians learn this eventually through reading and theory. With Maths, you learn it by pressing a button and hearing your envelope become a wobble. Rise and Fall suddenly change meaning; they become speed controls instead of timing controls. The same knobs do completely different things depending on whether you press Cycle.
 
-**Teaching moment:** This single button reveals that in synthesis, categories like "envelope" and "LFO" are not fixed types—they're just different applications of the same voltage generation principle.
+**Teaching moment:** This single button reveals that in synthesis, categories like "envelope" and "LFO" are not fixed types; they're just different applications of the same voltage generation principle.
 
 #### **Four Channels (Optimal Complexity)**
 
@@ -205,7 +205,7 @@ Four is the sweet spot where:
 - The SUM output becomes genuinely useful (combining 4 independent things creates meaningful new possibilities)
 - You can still understand the whole circuit architecture
 
-Make Noise could have made Maths bigger. Instead, they designed it to be **completely understandable**. When you grasp all four channels, you're not just using a tool—you've learned the foundational principles of analog computation as applied to music.
+Make Noise could have made Maths bigger. Instead, they designed it to be **completely understandable**. When you grasp all four channels, you're not just using a tool; you've learned the foundational principles of analog computation as applied to music.
 
 #### **20HP Size (Exactly Right)**
 
@@ -392,7 +392,7 @@ graph TB
       Mathematical Outputs
 ```
 
-**Key Teaching:** Inverse relationships. When one macro control moves, different parameters respond differently—some amplify, some invert.
+**Key Teaching:** Inverse relationships. When one macro control moves, different parameters respond differently; some amplify, some invert.
 
 | Parameter | Attenuverter | Effect | Why It Matters |
 |-----------|-------------|--------|----------------|
@@ -555,7 +555,7 @@ graph TB
 
 ## Common Mistakes & Pattern Recognition
 
-**Understanding Maths means understanding synthesis itself.** Every misconception here reveals something fundamental about how voltage, time, and modulation work. These aren't bugs—they're teaching moments.
+**Understanding Maths means understanding synthesis itself.** Every misconception here reveals something fundamental about how voltage, time, and modulation work. These aren't bugs; they're teaching moments.
 
 ---
 
@@ -567,7 +567,7 @@ graph TB
 Maths Trigger Input completes its full Rise/Fall cycle regardless of gate length because it solves a specific synthesis problem: envelopes need their own timing, independent of the triggering event. A drum hit might send a 10ms gate, but you want a 500ms envelope decay. The Trigger input says "start my timing now" and then does the complete mathematical operation. This reveals a fundamental truth about synthesis: **envelopes are time-based computations that live independent from the signals that trigger them.** Your gate is just the start button; the envelope's internal timing takes over. This distinction teaches that synthesis operates on two different temporal concepts: events (the gate arriving) and processes (the envelope unfolding).
 
 **Connection to Maths:**
-Make Noise deliberately included two different inputs—Trigger and Signal—to force you to understand this distinction. Most envelope generators hide this choice. Maths exposes it because it's fundamental.
+Make Noise deliberately included two different inputs: Trigger and Signal; to force you to understand this distinction. Most envelope generators hide this choice. Maths exposes it because it's fundamental.
 
 **Recognition:**
 You hear: "My envelope is cutting off when the gate ends" or "I have to hold the gate long enough for my envelope to complete."
@@ -577,12 +577,12 @@ Trigger Input = envelope has its own timing. Signal Input = envelope follows gat
 
 ---
 
-### **Issue 2: "Signal Input vs Trigger Input—I still don't know which one to use"**
+### **Issue 2: "Signal Input vs Trigger Input: I still don't know which one to use"**
 
 **Root Cause:** Understanding the difference intellectually but not understanding the musical consequence.
 
 **The WHY Explanation:**
-Signal Input tracks the input voltage—when the gate is high, the envelope rises and sustains; when it falls, the envelope decays. Trigger Input ignores gate duration entirely—it gets a pulse, does a complete rise/fall cycle, and stops. Most musicians intuitively want ADSR behavior (Trigger), but Maths actually teaches something deeper: **these are two different ways envelopes can relate to time.** With Trigger, you're saying "time belongs to the envelope." With Signal, you're saying "time follows the incoming gate." Understanding this teaches that modulation is fundamentally about **how one signal's timing relates to another's timing.** This is not a feature choice; it's a conceptual foundation of synthesis.
+Signal Input tracks the input voltage; when the gate is high, the envelope rises and sustains; when it falls, the envelope decays. Trigger Input ignores gate duration entirely; it gets a pulse, does a complete rise/fall cycle, and stops. Most musicians intuitively want ADSR behavior (Trigger), but Maths actually teaches something deeper: **these are two different ways envelopes can relate to time.** With Trigger, you're saying "time belongs to the envelope." With Signal, you're saying "time follows the incoming gate." Understanding this teaches that modulation is fundamentally about **how one signal's timing relates to another's timing.** This is not a feature choice; it's a conceptual foundation of synthesis.
 
 **Connection to Maths:**
 Make Noise exposed both options because they teach different synthesis thinking. Most envelope generators hide this choice. Maths forces you to understand it because understanding timing relationships is how you build sophisticated patches.
@@ -600,10 +600,10 @@ Trigger = independent timing, Signal = responsive to gate length. Both are corre
 **Root Cause:** Misunderstanding attenuverter zero-point and assuming 12 o'clock means maximum.
 
 **The WHY Explanation:**
-On most volume knobs, 12 o'clock is full. On Maths attenuverters, 12 o'clock is completely OFF (zero voltage passing through). Clockwise from 12 = positive scaling (amplification). Counter-clockwise from 12 = negative scaling (inversion). This isn't a UI quirk—**it's deliberately teaching that synthesis is fundamentally about polarity and direction, not just quantity.** When you invert a signal, you're not just reducing it; you're flipping its mathematical sign. This is conceptually different from volume. A negative LFO modulation creates entirely different musical results than positive modulation of the same source. Make Noise put zero at the center to force you to think about **mathematical direction as a core synthesis concept.**
+On most volume knobs, 12 o'clock is full. On Maths attenuverters, 12 o'clock is completely OFF (zero voltage passing through). Clockwise from 12 = positive scaling (amplification). Counter-clockwise from 12 = negative scaling (inversion). This isn't a UI quirk: **it's deliberately teaching that synthesis is fundamentally about polarity and direction, not just quantity.** When you invert a signal, you're not just reducing it; you're flipping its mathematical sign. This is conceptually different from volume. A negative LFO modulation creates entirely different musical results than positive modulation of the same source. Make Noise put zero at the center to force you to think about **mathematical direction as a core synthesis concept.**
 
 **Connection to Maths:**
-This design choice encodes a teaching principle: "synthesis operates on polarity." Understanding attenuverters teaches you that modulation isn't unidirectional—it's a choice of mathematical direction.
+This design choice encodes a teaching principle: "synthesis operates on polarity." Understanding attenuverters teaches you that modulation isn't unidirectional; it's a choice of mathematical direction.
 
 **Recognition:**
 You turn attenuverter knobs and hear no change, or you assume maximum effect at 12 o'clock.
@@ -618,7 +618,7 @@ You turn attenuverter knobs and hear no change, or you assume maximum effect at 
 **Root Cause:** Not understanding that normalization is a design feature, not a missing cable.
 
 **The WHY Explanation:**
-Channels 2 and 3 generate +10V internally when nothing is patched to Signal input. This isn't a default—it's deliberate. **+10V in 1V/octave tuning represents 10 octaves above reference, which is musically meaningful.** Make Noise could have made this empty (requiring you to patch a constant voltage source), but instead they designed channels 2 and 3 to reveal a synthesis principle: **voltage references are fundamental.** Absence of a patch becomes a feature. This teaches that modular synthesis doesn't require external sources for everything—sometimes the module itself contains the mathematical relationships you need. Understanding this reveals that **Maths can perform complex mathematics entirely with its own internal references.**
+Channels 2 and 3 generate +10V internally when nothing is patched to Signal input. This isn't a default; it's deliberate. **+10V in 1V/octave tuning represents 10 octaves above reference, which is musically meaningful.** Make Noise could have made this empty (requiring you to patch a constant voltage source), but instead they designed channels 2 and 3 to reveal a synthesis principle: **voltage references are fundamental.** Absence of a patch becomes a feature. This teaches that modular synthesis doesn't require external sources for everything; sometimes the module itself contains the mathematical relationships you need. Understanding this reveals that **Maths can perform complex mathematics entirely with its own internal references.**
 
 **Connection to Maths:**
 This design exposes how analog circuits naturally work. In real electronics, when no voltage is patched, the circuit still does something (generates a reference). Most modules hide this. Maths reveals it as a feature because it's teaching how analog systems actually operate.
@@ -636,7 +636,7 @@ Channels 2 & 3 generate +10V when unpatched. Use this as an offset voltage sourc
 **Root Cause:** Not understanding self-patching feedback and what analog computation means in practice.
 
 **The WHY Explanation:**
-When you patch a Maths output back to another channel's Signal input, you create a feedback loop. The output of one channel becomes input to another, which generates a new output, which influences the first channel again—instantly, with no digital delay. **This reveals something profound about analog computation: it happens in real-time with zero latency.** Digital systems process information in steps (sample, compute, output). Analog systems compute continuously. When you create feedback loops, you're watching **analog mathematics happen**—the circuit solves equations recursively without time passing. This can create self-modulating patches, chaotic behavior, or complex frequency interactions, depending on scaling. It's not a bug; **it's revealing how analog circuits actually work.**
+When you patch a Maths output back to another channel's Signal input, you create a feedback loop. The output of one channel becomes input to another, which generates a new output, which influences the first channel again; instantly, with no digital delay. **This reveals something profound about analog computation: it happens in real-time with zero latency.** Digital systems process information in steps (sample, compute, output). Analog systems compute continuously. When you create feedback loops, you're watching **analog mathematics happen**: the circuit solves equations recursively without time passing. This can create self-modulating patches, chaotic behavior, or complex frequency interactions, depending on scaling. It's not a bug; **it's revealing how analog circuits actually work.**
 
 **Connection to Maths:**
 Self-patching teaches that Maths is a **real analog computer**, not just a digital emulation. The feedback happens at the speed of electricity. This is fundamentally different from digital processing.
@@ -645,16 +645,16 @@ Self-patching teaches that Maths is a **real analog computer**, not just a digit
 You hear unexpected oscillation, self-modulation, or chaotic behavior when patching outputs back to inputs.
 
 **The Learning:**
-Self-patching creates instant feedback loops. This can be musical (self-modulating envelopes) or chaotic (runaway oscillation). Experiment with low attenuverter settings to control feedback intensity. This teaches that **analog computation differs fundamentally from digital processing**—feedback is instantaneous and continuous.
+Self-patching creates instant feedback loops. This can be musical (self-modulating envelopes) or chaotic (runaway oscillation). Experiment with low attenuverter settings to control feedback intensity. This teaches that **analog computation differs fundamentally from digital processing**: feedback is instantaneous and continuous.
 
 ---
 
-### **Issue 6: "Rise and Fall go from instant to 25 minutes—how is that even a useful range?"**
+### **Issue 6: "Rise and Fall go from instant to 25 minutes; how is that even a useful range?"**
 
 **Root Cause:** Not understanding what controls Rise/Fall time, and why the extreme range exists.
 
 **The WHY Explanation:**
-Rise and Fall don't just control speed; they control **the rate at which voltage accumulates on a capacitor.** At fast settings, the capacitor charges almost instantly (microseconds to milliseconds). At slow settings, it charges so gradually that 25 minutes is realistic. This range exists because **Maths performs analog integration**—the fundamental mathematical operation. Capacitors don't know about "musical" timing; they follow electrical laws. **The extreme range teaches that modulation in synthesis isn't just for typical ADSR timing.** You might want a 20-minute pad swell (extremely slow Rise), or FM modulation at audio rate (extremely fast). The range exists because **Maths is teaching you what analog computation actually is: voltage integration over time, at any timescale.** The range reveals the physics.
+Rise and Fall don't just control speed; they control **the rate at which voltage accumulates on a capacitor.** At fast settings, the capacitor charges almost instantly (microseconds to milliseconds). At slow settings, it charges so gradually that 25 minutes is realistic. This range exists because **Maths performs analog integration**: the fundamental mathematical operation. Capacitors don't know about "musical" timing; they follow electrical laws. **The extreme range teaches that modulation in synthesis isn't just for typical ADSR timing.** You might want a 20-minute pad swell (extremely slow Rise), or FM modulation at audio rate (extremely fast). The range exists because **Maths is teaching you what analog computation actually is: voltage integration over time, at any timescale.** The range reveals the physics.
 
 **Connection to Maths:**
 This demonstrates that Maths operates at the electrical level, not just the musical level. Understanding the extreme range teaches how synthesis fundamentally works at the component level.
@@ -667,7 +667,7 @@ Rise/Fall control capacitor charging rate, which is determined by electrical law
 
 ---
 
-### **Issue 7: "I pressed Cycle and my envelope became a wobble—what just happened?"**
+### **Issue 7: "I pressed Cycle and my envelope became a wobble; what just happened?"**
 
 **Root Cause:** Not recognizing that envelopes and LFOs are the same mathematical operation.
 
@@ -690,7 +690,7 @@ Cycle button = continuous repetition. Rise/Fall become LFO speeds. **An envelope
 **Root Cause:** Treating negative scaling as just "less" instead of as polarity inversion.
 
 **The WHY Explanation:**
-A positive attenuverter amplifies the input signal. A negative attenuverter inverts it—**flips the electrical polarity.** This isn't a subtle difference; it's a fundamental mathematical reversal. If an LFO swings from +5V to -5V, turning the attenuverter to +50% sends +2.5V to -2.5V. Turning it to -50% sends -2.5V to +2.5V. **The effect is inverted.** Musically, this creates opposite modulation direction. A LFO that opens your filter when turned positive will close your filter when turned negative. This teaches that **synthesis operates on mathematical polarity;** inversion is as important as amplitude. Make Noise made negative attenuverters possible specifically to teach this principle.
+A positive attenuverter amplifies the input signal. A negative attenuverter inverts it: **flips the electrical polarity.** This isn't a subtle difference; it's a fundamental mathematical reversal. If an LFO swings from +5V to -5V, turning the attenuverter to +50% sends +2.5V to -2.5V. Turning it to -50% sends -2.5V to +2.5V. **The effect is inverted.** Musically, this creates opposite modulation direction. A LFO that opens your filter when turned positive will close your filter when turned negative. This teaches that **synthesis operates on mathematical polarity;** inversion is as important as amplitude. Make Noise made negative attenuverters possible specifically to teach this principle.
 
 **Connection to Maths:**
 Understanding polarity inversion teaches why attenuverters are multipliers, not volume controls. You're scaling both amplitude and mathematical direction simultaneously.
@@ -699,7 +699,7 @@ Understanding polarity inversion teaches why attenuverters are multipliers, not 
 Expecting negative scaling to just be a weaker effect; being surprised that it changes modulation direction entirely.
 
 **The Learning:**
-Negative scaling inverts polarity. This creates opposite musical effects from positive scaling. **Understand that attenuverters control both amplitude and mathematical direction.** Negative modulation is not "less positive"—it's an inverted signal. This is a core synthesis principle.
+Negative scaling inverts polarity. This creates opposite musical effects from positive scaling. **Understand that attenuverters control both amplitude and mathematical direction.** Negative modulation is not "less positive"; it's an inverted signal. This is a core synthesis principle.
 
 ---
 
@@ -708,7 +708,7 @@ Negative scaling inverts polarity. This creates opposite musical effects from po
 **Root Cause:** Not understanding that SUM works through analog addition (Kirchhoff's Law), not just signal combining.
 
 **The WHY Explanation:**
-The SUM output automatically adds the voltages from all four channels together. If Ch1 Variable outputs +2V, Ch2 outputs +1V, Ch3 outputs -3V, and Ch4 outputs +4V, the SUM outputs +4V (the mathematical sum). **This isn't a "mixer feature" bolted onto an envelope generator.** It's the fundamental nature of analog circuits—**when voltages meet at a node, they add.** Make Noise exposed this as a feature by creating the SUM output. This teaches that **in modular synthesis, mixing is literally voltage addition.** When you combine four independent CV sources, you're creating a new control voltage that none of them produced alone. This is how **analog modular systems create complex relationships**—everything combines mathematically at every junction.
+The SUM output automatically adds the voltages from all four channels together. If Ch1 Variable outputs +2V, Ch2 outputs +1V, Ch3 outputs -3V, and Ch4 outputs +4V, the SUM outputs +4V (the mathematical sum). **This isn't a "mixer feature" bolted onto an envelope generator.** It's the fundamental nature of analog circuits: **when voltages meet at a node, they add.** Make Noise exposed this as a feature by creating the SUM output. This teaches that **in modular synthesis, mixing is literally voltage addition.** When you combine four independent CV sources, you're creating a new control voltage that none of them produced alone. This is how **analog modular systems create complex relationships**: everything combines mathematically at every junction.
 
 **Connection to Maths:**
 Understanding SUM teaches the interconnection principle: **modular synthesis works because signals combine mathematically.** Maths reveals this fundamental truth about how analog systems actually operate.
@@ -744,7 +744,7 @@ Unpatched Signal input uses +10V (Channels 2&3) or follows gate normally. Patchi
 **Root Cause:** Misunderstanding Rise/Fall as shape controls instead of as time constants.
 
 **The WHY Explanation:**
-Rise and Fall aren't creating "shapes" (like a saw wave vs sine wave). They're **controlling the rate of voltage accumulation through capacitor charging.** Fast Rise means voltage jumps up almost instantly; slow Rise means it takes minutes. **The envelope "shape" emerges from the physics of capacitor charging**—it's always a curve determined by electrical time constants. Digital systems let you choose shapes (linear, exponential, ease-in). **Maths has one shape per channel: the mathematical curve of capacitor integration.** This reveals that **in analog synthesis, there's no "choosing" the envelope shape in the way digital systems work.** The shape emerges from physics. Understanding this teaches that **analog computation operates through different principles than digital modeling**—you don't choose curves, you let electrical law create them.
+Rise and Fall aren't creating "shapes" (like a saw wave vs sine wave). They're **controlling the rate of voltage accumulation through capacitor charging.** Fast Rise means voltage jumps up almost instantly; slow Rise means it takes minutes. **The envelope "shape" emerges from the physics of capacitor charging**: it's always a curve determined by electrical time constants. Digital systems let you choose shapes (linear, exponential, ease-in). **Maths has one shape per channel: the mathematical curve of capacitor integration.** This reveals that **in analog synthesis, there's no "choosing" the envelope shape in the way digital systems work.** The shape emerges from physics. Understanding this teaches that **analog computation operates through different principles than digital modeling**: you don't choose curves, you let electrical law create them.
 
 **Connection to Maths:**
 This teaches that Maths performs **real analog mathematics**, not digital approximations. The envelope shape isn't chosen; it's inherent to the operation. This is fundamental to understanding analog synthesis.
@@ -762,7 +762,7 @@ Rise/Fall are time constants, not shape controls. **The curve emerges from capac
 **Root Cause:** Not understanding how attenuverter scaling multiplies the input signal, and how four small voltages combine differently than one large voltage.
 
 **The WHY Explanation:**
-If each channel is set to +50% and receives a +2V input, each outputs +1V. When you sum them (1+1+1+1), you get +4V—not as much as a single +8V source. This reveals how **mathematical scaling works: the attenuverter multiplies the input, it doesn't amplify it to a fixed output.** This teaches a crucial synthesis principle: **when you're mixing control voltages, you're combining scaled versions of different sources.** The mathematical relationships matter. If you want strong modulation, you need either a strong input or a high attenuverter setting. This reveals that **modulation design requires understanding both sources and scaling factors.**
+If each channel is set to +50% and receives a +2V input, each outputs +1V. When you sum them (1+1+1+1), you get +4V; not as much as a single +8V source. This reveals how **mathematical scaling works: the attenuverter multiplies the input, it doesn't amplify it to a fixed output.** This teaches a crucial synthesis principle: **when you're mixing control voltages, you're combining scaled versions of different sources.** The mathematical relationships matter. If you want strong modulation, you need either a strong input or a high attenuverter setting. This reveals that **modulation design requires understanding both sources and scaling factors.**
 
 **Connection to Maths:**
 Understanding this teaches that in modular synthesis, **understanding mathematical relationships (input × multiplier = output) is essential to patch design.** SUM isn't a magic combiner; it's a mathematical truth.

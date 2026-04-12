@@ -28,7 +28,7 @@
 **1. Power on and enter Basic mode (30 seconds)**
 - Kali starts on the MAIN PAGE in the last mode you used (likely Basic on first power)
 - Rotate the right encoder to cycle through modes if needed: Basic, Parvati, Kali, External Feedback
-- Basic mode is ping-pong delay—ideal for learning the timebase concept
+- Basic mode is ping-pong delay; ideal for learning the timebase concept
 
 **2. Set initial parameters (2 minutes)**
 - **L Time:** Rotate left encoder menu → adjust to 25% (approximately 100-150ms delay, depending on range; ⚠️ EXACT RANGE NOT DOCUMENTED)
@@ -39,7 +39,7 @@
 
 **3. Send audio through (1 minute)**
 - Connect audio source (drum loop, melodic phrase, voice) to Kali's input
-- Listen to the ping-pong delay. Notice how left and right delays are independent—they create stereo width and rhythmic complexity
+- Listen to the ping-pong delay. Notice how left and right delays are independent; they create stereo width and rhythmic complexity
 
 **4. Introduce modulation (1.5 minutes)**
 - Click left encoder to enter LFO EDIT screen
@@ -53,7 +53,7 @@
 - Click left encoder to return to MAIN PAGE
 - Your patch is remembered when powered off
 
-**What you have created:** A foundational time-domain effect where delay timing, feedback, and modulation are architecturally linked. The LFO does not exist independently—it modulates a delay that is the system's master clock. This is synthesis thinking applied to effects: constraints breed sophistication.
+**What you have created:** A foundational time-domain effect where delay timing, feedback, and modulation are architecturally linked. The LFO does not exist independently; it modulates a delay that is the system's master clock. This is synthesis thinking applied to effects: constraints breed sophistication.
 
 **Next steps:** Explore other LFO modes (Track+Hold for stepwise modulation, S+H for randomness), try Parvati mode for granular texture, or add more LFOs to multiple parameters.
 
@@ -313,7 +313,7 @@ This is the conceptual leap: fixed delay is predictable. Modulated delay is resp
 
 **The Approach:**
 
-1. **Switch to Kali mode (distortion).** Kali mode includes diode emulation and wave folding—feedback becomes colorful, not just loud.
+1. **Switch to Kali mode (distortion).** Kali mode includes diode emulation and wave folding; feedback becomes colorful, not just loud.
 
 2. **Set static parameters:**
    - L Time: 35% (longer delay, more dramatic feedback behavior)
@@ -329,7 +329,7 @@ This is the conceptual leap: fixed delay is predictable. Modulated delay is resp
    - **LFO 2L:** SQUARE mode (⚠️ PULSE WIDTH ADJUSTMENT via LFO ADJ parameter, not documented), assigned to FEEDBACK (create rhythmic feedback swells)
    - **LFO 3L:** RANDOM SHAPE mode (random waveform selection every N cycles; ⚠️ CYCLES PARAMETER UNCLEAR), assigned to META 1 (distortion character modulation)
 
-4. **Adjust rates:** Set each LFO to different multipliers (LFO 1L: x1, LFO 2L: x2, LFO 3L: x0.5). They now have polyrhythmic relationships—multiple periodicities modulating simultaneously.
+4. **Adjust rates:** Set each LFO to different multipliers (LFO 1L: x1, LFO 2L: x2, LFO 3L: x0.5). They now have polyrhythmic relationships; multiple periodicities modulating simultaneously.
 
 5. **Set LFO RATE knob to control all rates proportionally.** Turning the knob speeds up or slows down all three LFOs while preserving their ratios to each other.
 
@@ -337,7 +337,7 @@ This is the conceptual leap: fixed delay is predictable. Modulated delay is resp
 
 7. **Send sustained input (pad, noise, tone) into Kali.** Listen: The material is getting shredded, reassembled, modulated by three independent but related periodicities. Feedback self-sustains the loop. The effect feeds on itself.
 
-**Why this works:** This patch teaches that time-domain processors with synchronized modulation become instruments, not effects. Feedback is no longer "too much reverb"—it is a compositional parameter. Multiple LFOs create polymetric modulation: feedback breathes at one rate, distortion character shifts at another, delay timing oscillates at a third.
+**Why this works:** This patch teaches that time-domain processors with synchronized modulation become instruments, not effects. Feedback is no longer "too much reverb"; it is a compositional parameter. Multiple LFOs create polymetric modulation: feedback breathes at one rate, distortion character shifts at another, delay timing oscillates at a third.
 
 **Similar Effects (Budget/Premium/Different Character):**
 - **Budget:** Make Noise Echophon (delay + reverb, less modulation architecture, simpler design philosophy)
@@ -366,7 +366,7 @@ This is the conceptual leap: fixed delay is predictable. Modulated delay is resp
 
 **The misunderstanding:** You entered LFO EDIT, set an LFO mode, adjusted parameters, but the audio sounds static.
 
-**Why it happens:** LFO parameters are set, but the LFO is not assigned to any effect parameter. Setting an LFO mode alone does not do anything—the LFO must be routed to control something (feedback, delay time, cutoff, etc.). Also, if the LFO is assigned but the LFO RATE knob is at minimum, modulation is running at subsonic speeds and you will not hear the change.
+**Why it happens:** LFO parameters are set, but the LFO is not assigned to any effect parameter. Setting an LFO mode alone does not do anything; the LFO must be routed to control something (feedback, delay time, cutoff, etc.). Also, if the LFO is assigned but the LFO RATE knob is at minimum, modulation is running at subsonic speeds and you will not hear the change.
 
 **The fix:**
 1. Confirm LFO assignment: ⚠️ ASSIGNMENT METHOD NOT DOCUMENTED in wiki. Check: Is there a separate assignment menu? Does selecting the LFO automatically assign it to the selected parameter? (Assume: Yes, based on UI description, but verify with hardware.)
@@ -403,11 +403,11 @@ This is the conceptual leap: fixed delay is predictable. Modulated delay is resp
 4. Switch modes: SINE (smooth pitch sweep), TRIANGLE (angular pitch changes), SQUARE (abrupt pitch jumps), TRACK+HOLD (stepwise randomness).
 5. Now differences are clear: SINE is fluid. SQUARE is clicky. TRACK+HOLD is unpredictable.
 
-**The principle:** LFO mode selection is a tone-shaping tool. SINE = musical smoothness. SQUARE = rhythmic articulation. RANDOM = unpredictability. Choosing the right mode requires understanding what character you want. This teaches that modulation sources are not interchangeable—they have personality.
+**The principle:** LFO mode selection is a tone-shaping tool. SINE = musical smoothness. SQUARE = rhythmic articulation. RANDOM = unpredictability. Choosing the right mode requires understanding what character you want. This teaches that modulation sources are not interchangeable; they have personality.
 
 ### Mistake 5: "My LFOs went out of sync"
 
-**The misunderstanding:** You were editing LFO settings, and now the LFOs are not running together—they phase in and out of sync, creating chaotic modulation.
+**The misunderstanding:** You were editing LFO settings, and now the LFOs are not running together; they phase in and out of sync, creating chaotic modulation.
 
 **Why it happens:** When you change LFO settings, they reset to different starting phases. LFO 1 might start at zero crossing (sine at 0V). LFO 2 might start at peak (sine at +7V). If you edit one LFO but not the other, they end up out of phase. This is intentional in some cases (you want polymetric modulation), but usually accidental.
 
@@ -468,7 +468,7 @@ In traditional effects terminology, feedback is "undesirable" (uncontrolled buil
 4. Modulate feedback with an LFO (low rate, 0.5 Hz).
 5. Listen: The echoes swell and recede based on feedback modulation. You have created a regenerating instrument from a single input.
 
-This teaches that feedback is not "mistake"—it is architecture.
+This teaches that feedback is not "mistake"; it is architecture.
 
 ### Polymetric Modulation
 
@@ -501,10 +501,10 @@ Parvati mode uses granular processing: audio is sliced into short grains (determ
 A: Check: (1) ⚠️ INPUT CONNECTOR TYPE NOT DOCUMENTED (verify 3.5mm stereo or RCA connections). (2) Input cable is connected. (3) Input level ⚠️ (CONTROL LOCATION NOT DOCUMENTED; verify front panel). (4) Source module is outputting audio (test with headphones). (5) Kali is set to Wet/Dry above 0% (if Wet/Dry is 0%, you hear only dry, no processed signal).
 
 **Q: I set parameters but nothing changed on the MAIN PAGE display.**
-A: Parameters are being changed but might not all display on the 4-character screen. The display shows what you are currently adjusting, then returns to default view after timeout. ⚠️ EXACT DISPLAY BEHAVIOR NOT DOCUMENTED. Adjust parameters and listen to audio output—audio will confirm changes even if display does not show them.
+A: Parameters are being changed but might not all display on the 4-character screen. The display shows what you are currently adjusting, then returns to default view after timeout. ⚠️ EXACT DISPLAY BEHAVIOR NOT DOCUMENTED. Adjust parameters and listen to audio output; audio will confirm changes even if display does not show them.
 
 **Q: How do I save patches?**
-A: ⚠️ PATCH SAVE/LOAD FUNCTIONALITY NOT DOCUMENTED. Kali likely remembers settings per mode (Basic, Parvati, Kali, External Feedback) as last-used state. When you power off and back on, it recalls the last settings. No manual save/load mechanism is documented. This is a gap—document findings with hardware testing.
+A: ⚠️ PATCH SAVE/LOAD FUNCTIONALITY NOT DOCUMENTED. Kali likely remembers settings per mode (Basic, Parvati, Kali, External Feedback) as last-used state. When you power off and back on, it recalls the last settings. No manual save/load mechanism is documented. This is a gap; document findings with hardware testing.
 
 **Q: My LFOs sound very slow, almost imperceptible.**
 A: LFO RATE knob is at minimum. Increase it. Also verify Multiplier/Divider: if a LFO has a 0.25x multiplier (dividing by 4), even with RATE at moderate levels, it runs very slow. Increase either the RATE knob or the multiplier to speed up modulation to audible range (1-10 Hz is typical).

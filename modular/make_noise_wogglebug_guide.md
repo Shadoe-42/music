@@ -61,13 +61,13 @@ Using Wogglebug teaches you about **uncertainty as a musical parameter** rather 
 
 ### **The West Coast Philosophy: Voltage Controls Everything**
 
-Wogglebug emerges from a foundational principle of West Coast synthesis: **everything in music is voltage**. Pitch, timbre, timing, dynamics, uncertainty—all are electrical signals that can be modulated, combined, and transformed. But here's the deeper insight: if everything is voltage, then *controlling voltage is controlling music*. This isn't just about having CV inputs; it's about recognizing that the universe of musical possibility exists in the space of voltage relationships.
+Wogglebug emerges from a foundational principle of West Coast synthesis: **everything in music is voltage**. Pitch, timbre, timing, dynamics, uncertainty; all are electrical signals that can be modulated, combined, and transformed. But here's the deeper insight: if everything is voltage, then *controlling voltage is controlling music*. This isn't just about having CV inputs; it's about recognizing that the universe of musical possibility exists in the space of voltage relationships.
 
-Most musicians think of randomness as chaotic noise—a defect. West Coast synthesis flips this: randomness is a *musical material*, like a texture or timbre. Controlled uncertainty becomes an instrument. Wogglebug embodies this philosophy: it's not a random number generator apologizing for being imprecise. It's a source of musical uncertainty, deliberately designed to create unpredictable relationships that keep electronic music sounding alive.
+Most musicians think of randomness as chaotic noise; a defect. West Coast synthesis flips this: randomness is a *musical material*, like a texture or timbre. Controlled uncertainty becomes an instrument. Wogglebug embodies this philosophy: it's not a random number generator apologizing for being imprecise. It's a source of musical uncertainty, deliberately designed to create unpredictable relationships that keep electronic music sounding alive.
 
 ### **From Buchla to Eurorack: Historical Lineage**
 
-Wogglebug is directly descended from the Buchla 265, a random voltage generator that shaped West Coast synthesis. The Buchla philosophy never made it to Eurorack in its pure form—until Make Noise and Wiard brought it back. The original Wiard Wogglebug was analog, chaotic, unpredictable in the best way. When Make Noise licensed the design, they didn't "improve" it by adding digital precision. They preserved its essential character: **controlled chaos that teaches through behavior, not through perfection**.
+Wogglebug is directly descended from the Buchla 265, a random voltage generator that shaped West Coast synthesis. The Buchla philosophy never made it to Eurorack in its pure form; until Make Noise and Wiard brought it back. The original Wiard Wogglebug was analog, chaotic, unpredictable in the best way. When Make Noise licensed the design, they didn't "improve" it by adding digital precision. They preserved its essential character: **controlled chaos that teaches through behavior, not through perfection**.
 
 This lineage matters because it reveals the pedagogical intent. Wogglebug isn't trying to be the most accurate random source. It's trying to teach that **randomness with character is more musical than perfect noise**. Understanding this teaches you something about synthesis design itself: precision isn't always the goal. Character is.
 
@@ -75,13 +75,13 @@ This lineage matters because it reveals the pedagogical intent. Wogglebug isn't 
 
 Why is the control named "Ego/Id" instead of "Spread" or "Range"? Because Make Noise is teaching through metaphor.
 
-In psychology, the Ego is your conscious control—your rational self. The Id is your unconscious drives—your impulsive nature. The balance between them creates personality. Wogglebug translates this into circuit behavior:
+In psychology, the Ego is your conscious control; your rational self. The Id is your unconscious drives; your impulsive nature. The balance between them creates personality. Wogglebug translates this into circuit behavior:
 
 - **Full Ego (CCW):** Random values cluster together. Controlled, predictable, safe.
 - **Full Id (CW):** Random values spread across entire range. Wild, unpredictable, chaotic.
 - **Balanced:** Personality emerges from the tension between control and chaos.
 
-**Why this matters:** This naming teaches that circuitry has personality, not just function. The Ego/Id balance isn't just a technical parameter—it's teaching you to think about the *character* of your modulation, not just its quantity. When you understand this, you start recognizing personality in every module: some feel precise and mathematical, others feel organic and breathing, still others feel chaotic and wild. Understanding Wogglebug's Ego/Id teaches you to hear *character* throughout synthesis.
+**Why this matters:** This naming teaches that circuitry has personality, not just function. The Ego/Id balance isn't just a technical parameter; it's teaching you to think about the *character* of your modulation, not just its quantity. When you understand this, you start recognizing personality in every module: some feel precise and mathematical, others feel organic and breathing, still others feel chaotic and wild. Understanding Wogglebug's Ego/Id teaches you to hear *character* throughout synthesis.
 
 ### **Uncertainty as a Musical Parameter**
 
@@ -95,11 +95,11 @@ Consider what happens when you use Wogglebug's Burst output as a gate:
 
 This teaches a fundamental principle: **life in electronic music comes from controlled unpredictability**. Machines create perfect repetition. Interesting music creates tension between order and chaos. Wogglebug is explicitly designed to be the chaos side of that equation.
 
-Understood this way, Wogglebug teaches that uncertainty isn't a limitation—it's a compositional tool. Every patch that uses Wogglebug is making a deliberate choice to embrace controlled chaos. This changes how you think about all randomness in synthesis: not as something to minimize, but as something to cultivate.
+Understood this way, Wogglebug teaches that uncertainty isn't a limitation; it's a compositional tool. Every patch that uses Wogglebug is making a deliberate choice to embrace controlled chaos. This changes how you think about all randomness in synthesis: not as something to minimize, but as something to cultivate.
 
 ### **Interconnection Through Controlled Uncertainty**
 
-Wogglebug's real power emerges not in isolation but in patches where uncertainty propagates through multiple modules. When Marbles learns from Wogglebug's stepped output, when Function Junction shapes Wogglebug's burst gates, when quantizers turn stepped chaos into melody—that's when you understand interconnection.
+Wogglebug's real power emerges not in isolation but in patches where uncertainty propagates through multiple modules. When Marbles learns from Wogglebug's stepped output, when Function Junction shapes Wogglebug's burst gates, when quantizers turn stepped chaos into melody; that's when you understand interconnection.
 
 Each module transforms the uncertainty in a different way:
 - **Quantizers** impose musical order on chaos (turning random voltage into pitches)

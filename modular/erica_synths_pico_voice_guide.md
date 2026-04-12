@@ -64,7 +64,7 @@
 ## Historical Context
 
 ### **Synthesis Algorithms in Modular History**
-The 8 algorithms in Pico Voice represent landmark moments in synthesis development. Karplus-Strong emerged from physical modeling research in the 1980s, creating organic plucked string sounds from digital algorithms. TB-303 emulation references the legendary acid house synthesizer that shaped electronic music culture. Wavetable morphing descends from classic Fairlight and Emulator synthesis. These algorithms, once requiring dedicated hardware or complex programming, now coexist in a 3HP module—a testament to efficient algorithm design and modern chip capabilities.
+The 8 algorithms in Pico Voice represent landmark moments in synthesis development. Karplus-Strong emerged from physical modeling research in the 1980s, creating organic plucked string sounds from digital algorithms. TB-303 emulation references the legendary acid house synthesizer that shaped electronic music culture. Wavetable morphing descends from classic Fairlight and Emulator synthesis. These algorithms, once requiring dedicated hardware or complex programming, now coexist in a 3HP module; a testament to efficient algorithm design and modern chip capabilities.
 
 ### **Algorithm Diversity in Compact Space**
 Historically, choosing a synthesis approach meant choosing a module: one for wavetable work, another for FM, another for subtractive. Pico Voice collapses this decision, offering multiple complementary synthesis methods with a single button press. This reflects both the maturity of synthesis algorithms and the philosophy that essential creative tools shouldn't require dedicated rack space.
@@ -437,7 +437,7 @@ Don't think of algorithms as mutually exclusive sounds. Use CV to switch between
 Beyond assigning CV to parameters, change assignments mid-performance. Assign to Tune for vibrato, then reassign to PAR1 for filter modulation, then PAR2 for release time control. This transforms a single CV input into a multi-purpose expression tool.
 
 ### **Configuration Mode as Sound Design Tool**
-Configuration mode isn't just setup—it's creative sound design. Different waveforms, note modes, and algorithm-specific settings create timbral variations that coexist with PAR1/PAR2 knob control. Explore all settings per algorithm before declaring the sound "done."
+Configuration mode isn't just setup; it's creative sound design. Different waveforms, note modes, and algorithm-specific settings create timbral variations that coexist with PAR1/PAR2 knob control. Explore all settings per algorithm before declaring the sound "done."
 
 ### **Combining Algorithms for Hybrid Synthesis**
 Use two Pico Voice modules: one on Wavetable, another on Harmonic. Blend them through a mixer, then assign different CV sources to each for hybrid synthesis that combines digital morphing with additive harmonic building. One sequencer feeds both modules at different transpositions for complex polyphonic textures.
@@ -458,7 +458,7 @@ Use two Pico Voice modules: one on Wavetable, another on Harmonic. Blend them th
 
 **"I can't get sustained sounds!"**
 - Some algorithms like Karplus Strong depend entirely on gate length for sound generation
-- **Solution:** Turn PAR2 fully clockwise for sustained operation without external gates. Experiment per algorithm—behavior varies significantly
+- **Solution:** Turn PAR2 fully clockwise for sustained operation without external gates. Experiment per algorithm; behavior varies significantly
 
 **"CV assignment isn't working as expected"**
 - CV assignment affects only the modulation behavior, not fundamental algorithm character. Different algorithms respond differently to the same CV range
@@ -466,7 +466,7 @@ Use two Pico Voice modules: one on Wavetable, another on Harmonic. Blend them th
 
 **"Configuration mode changes disappeared when I switched algorithms"**
 - Each algorithm has independent configuration settings (waveforms, note modes, etc.). Switching algorithms returns those saved settings, but you must be in config mode to verify/change them
-- **Solution:** Always check configuration settings when switching algorithms—what worked on Bassline might not be optimal for Wavetable
+- **Solution:** Always check configuration settings when switching algorithms; what worked on Bassline might not be optimal for Wavetable
 
 ### **🎵 Pro Tips:
 

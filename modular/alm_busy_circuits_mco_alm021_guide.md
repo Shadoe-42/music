@@ -90,10 +90,10 @@
 
 ## Common Mistakes and How to Avoid Them
 
-### **"The upper octaves sound terrible—aliasing ruins everything"**
+### **"The upper octaves sound terrible; aliasing ruins everything"**
 **Problem:** Pitch bends or sequences in the top 3-4 octaves produce digital artifacts, aliasing, and harsh digital noise.
 
-**Why It Happens:** Digital oscillators at high frequencies encounter the Nyquist limit—the highest frequency a digital system can accurately represent is half the sample rate. MCO ALM021 runs at 48kHz, meaning frequencies above 24kHz start aliasing badly. Acoustic sounds rarely reach these frequencies, but synthesized waveforms do. When you play a sawtooth at 14kHz (upper range), the aliasing becomes audible—not as subtle digital character, but as harsh, unpredictable noise. This isn't a bug; it's the nature of digital oscillators. ALM designed it this way intentionally: authentic early 90s character includes the grit and aliasing that defined those synthesizers.
+**Why It Happens:** Digital oscillators at high frequencies encounter the Nyquist limit; the highest frequency a digital system can accurately represent is half the sample rate. MCO ALM021 runs at 48kHz, meaning frequencies above 24kHz start aliasing badly. Acoustic sounds rarely reach these frequencies, but synthesized waveforms do. When you play a sawtooth at 14kHz (upper range), the aliasing becomes audible; not as subtle digital character, but as harsh, unpredictable noise. This isn't a bug; it's the nature of digital oscillators. ALM designed it this way intentionally: authentic early 90s character includes the grit and aliasing that defined those synthesizers.
 
 **Solution:**
 - **Embrace it as character:** Early 90s Ensoniq and Kawai synths all aliased at high pitches. If that's the sound you want, this is correct behavior.
@@ -106,7 +106,7 @@
 ### **"My V/Oct pitch tracking seems off"**
 **Problem:** Playing scales reveals that certain notes are out of tune, or pitch tracking drifts up the keyboard.
 
-**Why It Happens:** V/Oct tracking requires factory calibration. MCO ALM021 comes pre-calibrated for 5+ octave accuracy, but this requires correct power supply voltage (±12V nominal). If your power supply voltage is slightly off (many cases can drift), or if temperature changes shift component values, tracking can suffer. Additionally, V/Oct expects exactly 1.0V per octave—if your sequencer or keyboard has slightly different scaling, tuning issues appear.
+**Why It Happens:** V/Oct tracking requires factory calibration. MCO ALM021 comes pre-calibrated for 5+ octave accuracy, but this requires correct power supply voltage (±12V nominal). If your power supply voltage is slightly off (many cases can drift), or if temperature changes shift component values, tracking can suffer. Additionally, V/Oct expects exactly 1.0V per octave; if your sequencer or keyboard has slightly different scaling, tuning issues appear.
 
 **Solution:**
 - **Check power supply:** Verify your rack PSU is actually outputting ±12V (not 11.8V or 12.2V)
@@ -114,9 +114,9 @@
 - **Allow warmup time:** MCO, like all analog circuits, drifts as it warms up. Run for 5-10 minutes before critical performances
 - **Contact ALM if persistent:** Factory calibration can be adjusted, but this is rare
 
-**The Learning:** This teaches you that digital oscillators rely on analog power supplies—they're not immune to voltage variations. Understanding power supply quality as a system design factor transfers directly to understanding why precision modulation sources are valuable investments.
+**The Learning:** This teaches you that digital oscillators rely on analog power supplies; they're not immune to voltage variations. Understanding power supply quality as a system design factor transfers directly to understanding why precision modulation sources are valuable investments.
 
-### **"Sync doesn't seem to work—or it's creating weird tones"**
+### **"Sync doesn't seem to work; or it's creating weird tones"**
 **Problem:** Patching an audio-rate signal to Sync creates either no effect or strange, unpredictable results instead of classic sync sweep effects.
 
 **Why It Happens:** MCO's Sync input requires a rising edge (the moment the signal goes from low to high). If you're sending a gate (which has slow rise times), sync might not trigger reliably. More commonly, users expect sync to create *continuous* sweep effects when the sync source is running. What actually happens is MCO's phase resets *every time the sync source rises*. If the sync source is a low-frequency LFO, you get sync sweeps. If it's audiorate (a fast oscillator), you get phase-locked tones that sound like nothing special. Understanding the distinction is critical.
@@ -127,23 +127,23 @@
 - **Use fast audio for tonal effects:** Patch another oscillator to Sync for harmonic generation and sync locking
 - **Combine with pitch CV:** Sweep the main V/Oct while syncing to another oscillator for dramatic sync sweep solos
 
-**The Learning:** Understanding sync teaches you about phase relationships—a fundamental concept in all oscillators and modulation sources. Phase is what creates interference patterns, beating, and the illusion of multiple voices from a single source.
+**The Learning:** Understanding sync teaches you about phase relationships; a fundamental concept in all oscillators and modulation sources. Phase is what creates interference patterns, beating, and the illusion of multiple voices from a single source.
 
-### **"PWM isn't doing what I expect—it only affects Pulse Output"**
+### **"PWM isn't doing what I expect; it only affects Pulse Output"**
 **Problem:** You're turning the PWM knob but the main Out isn't changing, only Pulse Out sounds different.
 
-**Why It Happens:** MCO's architecture separates outputs intentionally. Main Out is always the selected waveform unmodified. Pulse Out is the same waveform with Alpha Juno-style pulse width modulation applied. Many users expect PWM to affect everything—that's not how this design works. It's a choice: clean waveform from main output for use with filters and effects, PWM-affected waveform from pulse output for dual-character patches.
+**Why It Happens:** MCO's architecture separates outputs intentionally. Main Out is always the selected waveform unmodified. Pulse Out is the same waveform with Alpha Juno-style pulse width modulation applied. Many users expect PWM to affect everything; that's not how this design works. It's a choice: clean waveform from main output for use with filters and effects, PWM-affected waveform from pulse output for dual-character patches.
 
 **Solution:**
 - **Understand dual-output architecture:** Main Out = pure selected waveform. Pulse Out = PWM-modified version.
-- **Use both outputs:** Typical use is splitting them to different processing chains—clean main through a filter, PWM pulse for rhythmic character
+- **Use both outputs:** Typical use is splitting them to different processing chains; clean main through a filter, PWM pulse for rhythmic character
 - **PWM only on Pulse Output:** If you want PWM, you must use Pulse Output, not main Out
-- **Type parameter:** Modulating Type CV changes how pulse segments are arranged—experiment with this in combination with PWM for complex pulse structures
+- **Type parameter:** Modulating Type CV changes how pulse segments are arranged; experiment with this in combination with PWM for complex pulse structures
 
 ### **"Waveforms sound too digital or too harsh for my music"**
 **Problem:** No matter which waveform you select, MCO sounds harsh, metallic, and digital rather than warm and analog.
 
-**Why It Happens:** That's the point—MCO is designed to sound like early 90s digital character. It's not trying to emulate vintage analog oscillators; it's celebrating the digital sound of that era. If warmth and smoothness are your goal, this approach won't get you there. Additionally, digital oscillators lack the subtle harmonic impurities of analog circuits—they sound too "correct," too mathematically pure. Some people love this; others find it sterile.
+**Why It Happens:** That's the point: MCO is designed to sound like early 90s digital character. It's not trying to emulate vintage analog oscillators; it's celebrating the digital sound of that era. If warmth and smoothness are your goal, this approach won't get you there. Additionally, digital oscillators lack the subtle harmonic impurities of analog circuits; they sound too "correct," too mathematically pure. Some people love this; others find it sterile.
 
 **Solution:**
 - **Filter aggressively:** Digital character is tamed dramatically by filtering. Patch through a resonant low-pass filter and sweep the cutoff. The digital becomes warm very quickly.
@@ -151,16 +151,16 @@
 - **Mix with analog oscillators:** Combine MCO with analog oscillators for hybrid character
 - **Embrace the digital:** The early 90s sound is intentional. If you're using this module, you might actually want this character for the right track
 
-**The Learning:** This teaches you the difference between *sound design choice* and *technical failure*. MCO is working perfectly—it's the character that doesn't match your expectations. Understanding your tools' intentional design philosophy (vs. assuming they're designed to do everything) is fundamental to synthesis.
+**The Learning:** This teaches you the difference between *sound design choice* and *technical failure*. MCO is working perfectly; it's the character that doesn't match your expectations. Understanding your tools' intentional design philosophy (vs. assuming they're designed to do everything) is fundamental to synthesis.
 
 ### **"Sub Output sounds weak or disappears"**
 **Problem:** The Sub Output seems to have minimal level or completely disappears in mixes.
 
-**Why It Happens:** Sub oscillators are consistently one octave lower and one waveform type (fixed square wave). If your main pitch is already in the sub bass range (below 30Hz), the sub would be below 15Hz—inaudible to human ears and potentially draining power from your system. More commonly, sub oscillators get buried in mixes because their fundamental frequency is below the mix's other content. They also need appropriate gain staging and often benefit from slight distortion or filtering to sit properly.
+**Why It Happens:** Sub oscillators are consistently one octave lower and one waveform type (fixed square wave). If your main pitch is already in the sub bass range (below 30Hz), the sub would be below 15Hz; inaudible to human ears and potentially draining power from your system. More commonly, sub oscillators get buried in mixes because their fundamental frequency is below the mix's other content. They also need appropriate gain staging and often benefit from slight distortion or filtering to sit properly.
 
 **Solution:**
 - **Check your pitch:** If main pitch is above 50Hz, sub should be audible. If you're playing 20Hz fundamental, sub at 10Hz won't be heard by humans.
-- **Gain stage the sub:** Use a VCA or mixer with proper level control—sub often needs boosting in the mix
+- **Gain stage the sub:** Use a VCA or mixer with proper level control; sub often needs boosting in the mix
 - **Add subtle distortion:** Slight saturation on sub output adds presence and harmonic content without losing the sub character
 - **Filter carefully:** High-pass anything below 20Hz, but keep the sub's fundamental
 - **Combine with main:** Sub is most effective when layered with the main output, not solo
@@ -168,7 +168,7 @@
 ### **"I can't get consistent results when modulating Wave CV"**
 **Problem:** Wave CV modulation seems jumpy, unpredictable, or doesn't correspond to the knob position.
 
-**Why It Happens:** Wave CV input expects 0-10V for full range across all 10 waveforms. If your modulation source has a different range (±5V, 0-5V), the modulation won't sweep smoothly across all waveforms. Additionally, if your CV source has any noise or slight instability, you'll hear "zipper" noise (audible stepping as the waveform selection changes discretely rather than morphing smoothly). The Wave parameter is essentially a digital selector with analog interpolation—it needs clean, stable CV for smooth morphing.
+**Why It Happens:** Wave CV input expects 0-10V for full range across all 10 waveforms. If your modulation source has a different range (±5V, 0-5V), the modulation won't sweep smoothly across all waveforms. Additionally, if your CV source has any noise or slight instability, you'll hear "zipper" noise (audible stepping as the waveform selection changes discretely rather than morphing smoothly). The Wave parameter is essentially a digital selector with analog interpolation; it needs clean, stable CV for smooth morphing.
 
 **Solution:**
 - **Use 0-10V sources:** Sequencers with 0-10V outputs work best (standard modular). LFOs with 0-10V output ranges are ideal.
@@ -176,12 +176,12 @@
 - **Clean up noisy CV:** If your modulation source is a noisy analog LFO or output, try running it through a slew limiter or low-pass filter first
 - **Smooth modulation:** Combine with envelope generators or slew limiters for slow, smooth morphing
 
-**The Learning:** This teaches you about CV range standardization and why systems require attention to signal levels. Understanding that different CV sources have different ranges—and knowing how to adapt them—is fundamental to building coherent modular systems.
+**The Learning:** This teaches you about CV range standardization and why systems require attention to signal levels. Understanding that different CV sources have different ranges (and knowing how to adapt them) is fundamental to building coherent modular systems.
 
 ### **"Aliasing and digital grittiness are ruining my patches"**
 **Problem:** The digital character, which you initially found interesting, is now making everything sound harsh and cheap.
 
-**Why It Happens:** The early 90s digital character in MCO can be charming in small doses but tiring in larger contexts. Unlike true analog oscillators with subtle component tolerance variations, MCO's digital waveforms are mathematically pure—they have no natural warmth or organic variation. Additionally, the intentional aliasing at high frequencies accumulates if you're using multiple digital voices or extended sequences.
+**Why It Happens:** The early 90s digital character in MCO can be charming in small doses but tiring in larger contexts. Unlike true analog oscillators with subtle component tolerance variations, MCO's digital waveforms are mathematically pure; they have no natural warmth or organic variation. Additionally, the intentional aliasing at high frequencies accumulates if you're using multiple digital voices or extended sequences.
 
 **Solution:**
 - **Use sparingly:** Reserve MCO for specific voices (bright leads, strange effects) rather than all voices
@@ -199,18 +199,18 @@
 
 2. **Confusing V/Oct tuning problems with module defects:** Most tuning drift comes from power supply voltage variation or calibration drift over temperature. Verifying power supply health and allowing warmup time solves 95% of tuning complaints. Understanding that digital oscillators are only as stable as their power supplies teaches you system design principles.
 
-3. **Misunderstanding output architecture (Main vs. Pulse vs. Sub):** MCO deliberately separates outputs—they're not all the same signal with different processing. Understanding why (different musical uses) transforms this from "confusing design" to "flexible architecture."
+3. **Misunderstanding output architecture (Main vs. Pulse vs. Sub):** MCO deliberately separates outputs; they're not all the same signal with different processing. Understanding why (different musical uses) transforms this from "confusing design" to "flexible architecture."
 
-4. **Not understanding Sync requirements:** Sync needs rising edges and benefits from slow modulation sources for sweep effects. Confusion about sync often means confusion about phase relationships and triggering—understanding this through MCO teaches fundamental oscillator principles that apply everywhere.
+4. **Not understanding Sync requirements:** Sync needs rising edges and benefits from slow modulation sources for sweep effects. Confusion about sync often means confusion about phase relationships and triggering; understanding this through MCO teaches fundamental oscillator principles that apply everywhere.
 
-**The Deeper Pattern:** Most MCO issues come from expecting it to be something other than what it is: an intentional early 90s digital wavetable oscillator. MCO isn't a problem—it's a specialist module that excels at its specific character. Issues arise when expectations don't match the design philosophy. Learning to read and honor module design philosophy is more valuable than trying to force any module into inappropriate contexts.
+**The Deeper Pattern:** Most MCO issues come from expecting it to be something other than what it is: an intentional early 90s digital wavetable oscillator. MCO isn't a problem; it's a specialist module that excels at its specific character. Issues arise when expectations don't match the design philosophy. Learning to read and honor module design philosophy is more valuable than trying to force any module into inappropriate contexts.
 
 ---
 
 ## Why This Module Excels
 
 ### **The Philosophy:**
-Most digital oscillators try to emulate analog character. MCO celebrates authentic early 90s digital character instead—harmonic precision, intentional aliasing, mathematical purity—making a virtue of what analog apologizes for.
+Most digital oscillators try to emulate analog character. MCO celebrates authentic early 90s digital character instead (harmonic precision, intentional aliasing, mathematical purity), making a virtue of what analog apologizes for.
 
 ### **The Core Innovation:**
 
@@ -220,13 +220,13 @@ Most digital oscillators try to emulate analog character. MCO celebrates authent
 - **Sawtooth:** Fundamental + all integer harmonics (richest harmonic content)
 - **Bell/Organ/Voice:** Selective harmonics creating timbral character
 
-When you understand MCO's waveforms through morphing, you understand harmonic content—a concept that transfers directly to filter design (filters select which harmonics survive), oscillator frequency relationships (ratios between oscillators are ratios between harmonics), and synthesis design everywhere.
+When you understand MCO's waveforms through morphing, you understand harmonic content; a concept that transfers directly to filter design (filters select which harmonics survive), oscillator frequency relationships (ratios between oscillators are ratios between harmonics), and synthesis design everywhere.
 
-**Output Architecture as System Design:** MCO deliberately separates outputs (Main, Pulse, Sub) instead of processing the same signal. This teaches architectural thinking: different musical uses need different tools. Main Output gives you pure waveforms for filtering and effects. Pulse Output adds PWM character. Sub adds foundation. Understanding this separation teaches you why modular systems should specialize—different tools for different jobs, working together as a system.
+**Output Architecture as System Design:** MCO deliberately separates outputs (Main, Pulse, Sub) instead of processing the same signal. This teaches architectural thinking: different musical uses need different tools. Main Output gives you pure waveforms for filtering and effects. Pulse Output adds PWM character. Sub adds foundation. Understanding this separation teaches you why modular systems should specialize; different tools for different jobs, working together as a system.
 
-**Digital Character as Intentional Philosophy:** By refusing to hide digital nature, MCO teaches that synthesis is about *choice*, not apology. Early 90s synthesizers didn't try to be analog—they celebrated their digital precision, aliasing, and mathematical exactness. Using MCO means understanding that character choices are design decisions. This perspective transfers to all synthesis: understanding *why* a module sounds the way it does is more valuable than wishing it sounded different.
+**Digital Character as Intentional Philosophy:** By refusing to hide digital nature, MCO teaches that synthesis is about *choice*, not apology. Early 90s synthesizers didn't try to be analog; they celebrated their digital precision, aliasing, and mathematical exactness. Using MCO means understanding that character choices are design decisions. This perspective transfers to all synthesis: understanding *why* a module sounds the way it does is more valuable than wishing it sounded different.
 
-**Hard Sync as Phase Principle:** MCO's sync input teaches fundamental phase relationships. Every oscillator has phase—a starting point in its cycle. Sync resets that phase, creating harmonic generation when combined with another oscillator's frequency. Understanding phase through sync teaches principles that appear in:
+**Hard Sync as Phase Principle:** MCO's sync input teaches fundamental phase relationships. Every oscillator has phase; a starting point in its cycle. Sync resets that phase, creating harmonic generation when combined with another oscillator's frequency. Understanding phase through sync teaches principles that appear in:
 - **LFO modulation:** All modulation is essentially phase offset between sources
 - **Filter resonance:** Peaks occur at phase relationships between feedback and input
 - **Interference patterns:** Beating and chorus effects come from phase misalignment
@@ -252,7 +252,7 @@ MCO teaches oscillator fundamentals through wavetable morphing. When you underst
 
 Moreover, MCO's intentional aliasing teaches you digital audio theory at a practical level. Understanding the Nyquist limit and why high frequencies alias badly in digital systems transfers directly to sampling (why you need anti-aliasing filters when recording), modulation sources (why fast LFOs can alias), and digital audio work generally.
 
-The hard sync capability teaches phase relationships—the most fundamental concept in all oscillators and modulation sources. When you master MCO's sync effects, you understand principles that appear in every synthesis context, from filter feedback to LFO interference patterns.
+The hard sync capability teaches phase relationships; the most fundamental concept in all oscillators and modulation sources. When you master MCO's sync effects, you understand principles that appear in every synthesis context, from filter feedback to LFO interference patterns.
 
 ---
 
@@ -304,7 +304,7 @@ Waveform Exploration Guide:
 **Performance:** Real-time wave morphing during sequences reveals timbral possibilities
 **What You're Learning:**
 - **Wavetable harmonic progression:** Understanding that every waveform is a specific collection of harmonics. Noise (all frequencies) → Triangle (few harmonics) → Sawtooth (all harmonics) is a journey through harmonic content. This principle transfers directly to filter design (filters select harmonics), oscillator frequency relationships (ratios between oscillators are harmonic ratios), and timbre itself (which is harmonic distribution).
-- **Digital character intentionality:** Learning that early 90s digital sound is a design choice, not a limitation. Understanding aliasing and digital precision as tools rather than problems teaches you to think about synthesis philosophically—every module makes choices about what it will and won't do.
+- **Digital character intentionality:** Learning that early 90s digital sound is a design choice, not a limitation. Understanding aliasing and digital precision as tools rather than problems teaches you to think about synthesis philosophically; every module makes choices about what it will and won't do.
 - **Waveform selection as tool choice:** Each waveform has different harmonic content for different musical purposes. Noise for percussion and texture, sine for clean fundamentals, saw for rich harmonics. Learning to match waveform to musical need is fundamental oscillator thinking that applies everywhere.
 
 ### **Patch 2: Intermediate - PWM Pulse Segments and Dual Output Character**
@@ -356,7 +356,7 @@ Waveform Exploration Guide:
 
 **Learning Objectives:**
 - **PWM architecture understanding:** PWM (Pulse Width Modulation) is fundamental to oscillator character. Modulating pulse width from 1% to 99% creates the classic "swept" sound. Understanding that this is the same principle as sawtooth oscillators with variable saw morphing teaches you that PWM is really just *waveform morphing* at specific frequencies. This principle appears in filters (resonance sweep), envelopes (time constant variation), and everywhere modulation is used.
-- **Dual output coordination:** MCO deliberately separates Main (pure waveform) from Pulse (PWM-modified). This architectural choice teaches you that different outputs serve different purposes. Learning to use both simultaneously, with different processing chains, teaches system thinking—modular synthesis is about building systems where each component has specific role.
+- **Dual output coordination:** MCO deliberately separates Main (pure waveform) from Pulse (PWM-modified). This architectural choice teaches you that different outputs serve different purposes. Learning to use both simultaneously, with different processing chains, teaches system thinking; modular synthesis is about building systems where each component has specific role.
 - **Type parameter mastery:** The Type CV changes how pulse segments are arranged. This teaches you that digital oscillators have multiple parameters affecting timbre. Learning to coordinate Wave + PWM + Type modulation transforms MCO from "single oscillator" to "multi-dimensional timbre control."
 - **Alpha Juno character:** Understanding the Alpha Juno style PWM effect teaches oscillator history. The Alpha Juno defined digital PWM character in the 90s; understanding that definition teaches you why certain synthesis sounds became iconic.
 
@@ -413,9 +413,9 @@ Waveform Exploration Guide:
 - **Coordinated chaos:** Multiple Wogglebug outputs control different MCO parameters simultaneously
 
 **Learning Objectives:**
-- **Hard sync mastery:** Understanding phase relationships through sync. When you sync one oscillator to another, you're locking their phase relationships. This creates harmonic generation (complementary frequencies) or tonal locking (the synchronized oscillator "locks" to the sync source). Understanding sync teaches you that *phase* is the fundamental concept in all oscillators—every oscillator has phase (a starting point in its cycle), and phase relationships create all interference patterns, beating, and modulation effects.
+- **Hard sync mastery:** Understanding phase relationships through sync. When you sync one oscillator to another, you're locking their phase relationships. This creates harmonic generation (complementary frequencies) or tonal locking (the synchronized oscillator "locks" to the sync source). Understanding sync teaches you that *phase* is the fundamental concept in all oscillators; every oscillator has phase (a starting point in its cycle), and phase relationships create all interference patterns, beating, and modulation effects.
 - **Multi-output architecture:** Coordinating different MCO outputs for complex patches. This teaches you that oscillators can have multiple roles simultaneously: Main for lead tone, Pulse for rhythmic character, Sub for bass foundation. Learning to use all three teaches system design thinking.
-- **Chaos integration:** Using chaotic sources (Wogglebug) for organic digital synthesis. This teaches you that chaos and randomness aren't enemies of synthesis—they're tools for organic variation. Understanding how to channel chaos into musical results is essential for generative and evolving patches.
+- **Chaos integration:** Using chaotic sources (Wogglebug) for organic digital synthesis. This teaches you that chaos and randomness aren't enemies of synthesis; they're tools for organic variation. Understanding how to channel chaos into musical results is essential for generative and evolving patches.
 - **Digital processing techniques:** Enhancing digital character through resonator processing. This teaches the "digital-analog hybrid" philosophy: MCO's mathematical precision processed through analog-modeled resonators creates the best of both worlds.
 
 ### **Patch 4: Expert - Digital Synthesis Brain and Performance System**
@@ -499,8 +499,8 @@ Waveform Exploration Guide:
 - **Complete digital synthesis systems:** MCO as central brain in complex performance setups. This teaches you that single modules become powerful when surrounded by supporting systems. Understanding MCO's role in a complete ecosystem (sequencer providing CV, quantizer ensuring musicality, filter providing warmth) teaches you systems thinking at a professional level.
 - **Multi-parameter coordination:** Simultaneous control of wave morphing, PWM, and pulse segments. This teaches that complex timbre comes from coordinating multiple parameters. When you learn to manage Wave + PWM + Type + Sync simultaneously, you understand timbre complexity and how to create evolving, expressive sounds.
 - **Digital-analog integration:** Blending digital precision with analog processing character. This teaches the philosophy of hybrid synthesis: neither pure analog nor pure digital is complete. Understanding how to leverage MCO's precision while benefiting from analog warmth teaches you to think about synthesis as systems, not isolated tools.
-- **Performance system design:** Real-time control over complex digital synthesis parameters. This teaches that synthesis isn't just sound design in static patches—it's about creating expressive instruments for real-time performance. Learning to layer sequencing (Hermod+), learning systems (Marbles), modulation (Maths), and precision (MCO) teaches you what professional performance synthesis looks like.
-- **Adaptive pattern generation:** Using learning circuits for evolving digital synthesis behavior. This teaches that synthesizers can be *generative*—they can create evolving, non-repeating complexity when given the right modulation sources. Understanding generative synthesis principles transfers to all modular design.
+- **Performance system design:** Real-time control over complex digital synthesis parameters. This teaches that synthesis isn't just sound design in static patches; it's about creating expressive instruments for real-time performance. Learning to layer sequencing (Hermod+), learning systems (Marbles), modulation (Maths), and precision (MCO) teaches you what professional performance synthesis looks like.
+- **Adaptive pattern generation:** Using learning circuits for evolving digital synthesis behavior. This teaches that synthesizers can be *generative*; they can create evolving, non-repeating complexity when given the right modulation sources. Understanding generative synthesis principles transfers to all modular design.
 - **Quantization and coherence:** Using quantization to ensure chaotic modulation remains musical. This teaches that advanced synthesis requires constraints as much as it requires freedom. Learning when to quantize, when to constrain, and when to let chaos reign is sophisticated synthesis thinking.
 
 **Alternative Expert-Level Approaches:**
