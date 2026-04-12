@@ -60,7 +60,7 @@ Every jack you see is a point where voltage flows. Modules **generate** voltage 
 
 **This is modular's core insight:** Voltage is portable, patchable, and modifiable. You're not rearranging hardware connections—you're rerouting voltage flow. That's why the system is infinitely flexible and why it matters to understand voltage as the fundamental concept.
 
-This might sound abstract now. It will become concrete in the guides. For now, hold this: everything you're about to buy is part of a voltage-moving system. The case houses it. The power supply generates the voltages. The patch cables carry them. The modules shape them. You're building an instrument for moving voltage, not pressing buttons.
+This might sound abstract now. It will become concrete in the guides. For now, remeber this: everything you're about to buy is part of a voltage-moving system. The case houses it. The power supply generates the voltages. The patch cables carry them. The modules shape them. You're building an instrument for moving voltage, not pressing buttons.
 
 ---
 
