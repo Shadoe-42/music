@@ -73,6 +73,20 @@
 
 ---
 
+## Why the Numeric Repetitor Excels
+
+Most rhythm generators ask you to program patterns -- set which steps are active across a 16- or 32-step grid. The Numeric Repetitor takes a different approach: it generates rhythmic patterns from prime number mathematics, producing outputs that have specific, predictable mathematical relationships to each other. The result is polyrhythm that feels structured rather than arbitrary.
+
+**Prime number division produces natural-sounding polyrhythm.** When you select a PRIME value, the module divides your clock by that prime number and generates output patterns based on its products. Because prime numbers share no common factors, patterns derived from different primes never synchronize at intermediate points -- they only align at the greatest common multiple, which for large primes can be extremely distant in time. This means Numeric Repetitor polyrhythms cycle slowly and feel continuously evolving rather than repetitive at short intervals.
+
+**PRODUCT outputs generate variations on the same prime without additional programming.** The multiple PRODUCT outputs each apply different arithmetic relationships to the primary PRIME pattern, producing simultaneous related rhythms from one parameter selection. Changing the PRIME knob updates all outputs simultaneously, maintaining the mathematical relationships while shifting the entire rhythmic vocabulary. This makes pattern exploration extremely fast: one parameter change transforms everything coherently rather than requiring per-track reprogramming.
+
+**CV control of PRIME enables live pattern morphing.** Applying CV to the PRIME input shifts the active prime number in real time. Because the module calculates patterns mathematically rather than from a stored sequence, the transition between prime values produces new rhythmic relationships immediately. Assigning a slow LFO, a stepped random source, or a manual CV to PRIME creates rhythmic evolution that is neither random nor mechanically repetitive -- it follows mathematical logic that produces musical results.
+
+**X/Y switch doubles the available pattern vocabulary.** The X/Y switch toggles between two complete sets of patterns derived from the current PRIME setting. Each set has different arithmetic relationships applied. Adding this toggle to a live performance effectively gives two distinct groove settings accessible from a single switch press, with no parameter adjustment required.
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Basic Polyrhythmic Drums**

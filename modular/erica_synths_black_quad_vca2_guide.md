@@ -89,6 +89,18 @@
 
 ---
 
+## Why the Black Quad VCA2 Excels
+
+A VCA is conceptually simple: a signal passes through it, and a control voltage determines how much of the signal gets through. The Black Quad VCA2 takes that simplicity seriously and implements it four times over with enough CV routing flexibility that it functions as a complete amplitude and mixing infrastructure rather than just four independent gates.
+
+**Voltage-controlled normalization chains signals without additional patch cables.** When no cable is patched into channels 2, 3, and 4, each channel's input is normalled to the output of the previous channel. This means the four channels can behave as a single cascaded signal chain under multi-CV control, or as completely independent VCAs depending solely on what is patched. Most VCA modules either link channels or keep them independent; the normalization design makes it configurable without hardware changes.
+
+**Linear and exponential response modes serve different use cases.** Linear mode produces VCA behavior where equal changes in CV produce equal changes in gain. Exponential mode (switchable per channel) produces VCA behavior where equal changes in CV produce equal changes in perceived loudness, matching how human hearing works. For audio envelopes, exponential mode is almost always preferable: a linear envelope from 0V to 5V sounds like it opens slowly then rushes at the top, while an exponential envelope over the same CV range sounds like a smooth, natural opening. For CV and modulation routing, linear mode preserves proportional relationships that exponential would distort.
+
+**Four channels in 10HP covers the amplitude needs of a moderate system.** A complete synthesizer voice needs at minimum two VCAs: one for the audio amplitude envelope and one for any CV routing. A system with multiple voices multiplies that requirement. Four channels of VCA in 10HP means the Black Quad VCA2 can serve an entire small-to-medium system without taking significant rack space. Each channel handles both audio (up to 10Vpp) and CV signals, so the same module works for amplitude control and modulation routing simultaneously.
+
+---
+
 ## Common Mistakes & Troubleshooting
 
 ### **⚠️ Common Mistakes & Learning Opportunities:**

@@ -234,6 +234,20 @@ NIN is a 3HP expander that mounts directly adjacent to Zadar and connects to the
 
 ---
 
+## Why Zadar Excels
+
+Most envelope generators give you four parameters (attack, decay, sustain, release) and a linear or exponential response curve. Zadar gives you any curve drawn from hundreds of pre-defined vector shapes, independent duration scaling, and output polarity control -- per channel, four channels simultaneously, each capable of looping or single-shot behavior. The conceptual distance from an ADSR to Zadar is larger than it first appears.
+
+**Vector shapes cover the full range of envelope behavior in one module.** A standard ADSR can produce slow attacks and fast decays or fast attacks and slow decays, but the shape of the transition is always a fixed curve. Zadar's 100+ shapes include rising and falling exponential curves, S-curves, staircase functions, oscillating shapes, and waveforms that have no analog equivalent in standard envelope design. Selecting shape 1 versus shape 43 is not an aesthetic choice; it is a fundamentally different relationship between the trigger and whatever the envelope is controlling. A shape that rises in steps rather than a smooth curve produces a distinctly different filter opening than a smooth exponential, even at identical TIME settings.
+
+**WARP scales the shape non-linearly without changing the shape selection.** WARP adjusts the distribution of time within the current shape: fully CCW compresses all the shape activity to the beginning of the envelope duration; fully CW stretches it to the end. A shape that normally rises quickly and falls slowly becomes, with WARP fully CW, one that barely moves for most of its duration then rises and falls abruptly at the end. Shape selection and WARP together create a two-dimensional space of envelope behavior that a single ADSR cannot address.
+
+**Four independent channels in 10HP.** Each channel has its own TIME, WARP, SHAPE, LEVEL, LOOP, and REPEAT controls. Four Zadar channels can simultaneously serve as: amplitude envelope on a VCA, filter envelope on a VCF, pitch envelope on a VCO, and a slowly looping LFO for vibrato -- all from the same module. That would require a dedicated module for each function in a traditional rack.
+
+**The NIN expander turns four channels into a performance instrument.** Without NIN, Zadar channels need patched gate signals to trigger. With NIN, four manual buttons (one per channel) allow immediate auditioning and triggering without any patching, plus a second set of CV assignment inputs per channel. During patch building, the NIN buttons eliminate the need for a separate trigger source while experimenting with shapes. During performance, they allow direct manual control of individual envelopes as expressive gestures.
+
+---
+
 ## Patch Examples
 
 ### Patch 1: Single Channel Envelope for VCA

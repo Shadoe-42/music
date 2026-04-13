@@ -228,6 +228,22 @@ Four expander modules are available as separate purchases. All connect to the re
 
 ---
 
+## Why Pamela's PRO Workout Excels
+
+The Pamela's PRO Workout is the most common answer to the question "what clock module should I start with?" That reputation is earned, but understanding why helps you use it to its actual potential rather than just as a metronome with dividers.
+
+**Per-output programmability, not per-module.** Most clock modules give you a fixed set of divisions from a master clock -- /2, /4, /8, and so on, one per output. Pamela's assigns a complete parameter set to every one of its eight outputs independently: wave type, division or multiplication, phase offset, pulse width, amplitude, DC offset, Euclidean pattern, probability, and loop behavior. Eight outputs configured independently means eight independent voices of rhythmic information from one module. A system that would otherwise require three or four separate clock utilities fits in one 8HP slot.
+
+**The 11 wave types span clock and modulation territory simultaneously.** Most clock modules output gates. Pamela's outputs gates, triggers, LFO waveforms (sine, triangle, sawtooth, ramp, square), random stepped voltage, and audio-rate signals, all from the same output at whatever division or multiplication rate you set. A single output can serve as a gate for one patch and as an LFO for another without adding any additional modules. This compresses what would normally be a clock-and-modulation infrastructure into one module.
+
+**FLEX micro-timing makes rhythm feel human.** Quantized steps produce machine-rigid timing. FLEX applies per-step time adjustments -- early or late, in fine gradations -- to individual clock outputs. Assigning different FLEX amounts to kick and snare creates the slight timing imperfections that human drummers produce involuntarily. Combined with probability (random gate skipping), Pamela's generates patterns that move and breathe in ways that strict mathematical division cannot.
+
+**Clock multiplication reaches audio rates.** Pamela's can multiply the master clock upward to the audio frequency range. At a 120 BPM master clock with a high multiplication factor, an output can produce frequencies in the hundreds of Hz: drone tones, buzzes, and FM-style timbres driven entirely by clock logic. This is not the primary use case, but it extends Pamela's into territory that most users never discover.
+
+**The scope display makes the invisible visible.** Every modular system has timing relationships that are difficult to hear in isolation but that shape the overall groove of the system. The built-in scope shows the actual waveform of any output in real time. When something sounds off and you cannot identify why, the scope makes the timing relationship visible. This diagnostic capability has direct teaching value: it shows what different FLEX, probability, and Euclidean settings actually do to the output waveform.
+
+---
+
 ## Patch Examples
 
 ### Patch 1: Polyrhythmic Gate Network

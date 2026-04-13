@@ -247,6 +247,22 @@ When a clock signal is patched into the CLOCK IN jack, the manual trigger button
 
 ---
 
+## Why the Queen of Pentacles Excels
+
+The Queen of Pentacles occupies the space between a fully analog drum synthesizer and a sampler-based drum machine, and its particular blend of the two is the source of most of its distinctive behavior.
+
+**Three analog voices plus four user-replaceable samples.** The bass drum, snare, and clap are pure analog synthesis circuits -- no recordings involved. The four remaining voices (s1 through s4) play back samples stored on a micro SD card that you replace yourself. This architecture means the core percussive DNA of kick, snare, and clap has the physicality and tuning responsiveness of analog circuits, while pitched elements, cymbals, and textural voices can be any audio you load. The combination does not require choosing between analog character and sample flexibility.
+
+**Frequency spectrum design.** The three analog voices are tuned to complement each other in the frequency spectrum: bass drum covers the low end, snare covers mid-range body and crack, clap covers upper-mid and high transients. Like the BLCK_NOIR, this spectral design means a full kit patch sounds clear and balanced immediately without external EQ. The voice arrangement is deliberate architecture, not convention.
+
+**Individual outputs disconnect from the mix.** Patching any voice's individual output removes that voice from the main stereo mix. This is the same behavior as the BLCK_NOIR and is not a limitation -- it is a routing design that gives each voice the choice between going directly to downstream processing or contributing to the shared mix. Understanding this early eliminates the most common source of confusion when building complex routing patches.
+
+**The Cabin Pressure effect processor is shared with the BLCK_NOIR and Grand Terminal.** The same 16-effect processor (8 DARKWAVES drum-oriented + 8 AIRWAYS ambient) appears across multiple Endorphin.es modules. Knowledge of the effect system transfers directly between them. The effect applies to the entire kit from a single set of controls, which encourages treating the kit as a unified sound.
+
+**Sample voice modes give the same hardware two different behaviors.** Each sample voice can operate in Decay mode (normal playback with an envelope) or Pitch mode (pitch-shifted playback without envelope). Pitch mode turns a sample voice into a tunable instrument. Switching between the two modes changes how a voice behaves in a mix -- the same sample can function as an ambient texture in Decay mode and as a melodic element in Pitch mode, with no additional modules required.
+
+---
+
 ## Patch Examples
 
 ### Patch 1: Basic Triggered Drum Kit
