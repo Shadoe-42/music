@@ -96,6 +96,36 @@
 
 ---
 
+## Why Links Excels
+
+Links is a passive (or active, depending on the section) utility that handles signal distribution and combining -- two operations that every patched system needs repeatedly and that dedicated modules rarely handle as compactly.
+
+**One input to three outputs without buffering artifacts.** The 1-to-3 section of Links takes a single signal and passes it to three outputs simultaneously. This is a passive multiple: no active circuitry, no power consumption on this section, no color added to the signal. Distributing a clock signal, a V/OCT pitch CV, or a gate to multiple destinations without introducing level differences or timing offsets is the fundamental use case. Links handles it cleanly.
+
+**Three inputs summed to one output, actively.** The 3-to-1 section is an active mixer with unity gain: three signals combine to one output with the circuit preventing impedance loading from multiple inputs. Combining three modulation sources into a single CV requires this kind of buffering to maintain predictable output levels. A passive junction (using a simple Y-cable or unbuffered multiple) allows the source impedances to interact, which changes the actual combined level and can cause unexpected behavior depending on what is driving the sources. Links' active summing avoids this.
+
+**The two sections are independent, combinable, and linkable.** Each section operates completely independently. You can use only the 1-to-3 distribution, only the 3-to-1 summing, or both simultaneously for different signals. The sections can also be internally linked: the output of the 3-to-1 mixer can be normalled into one input of another configuration. For a module that occupies 4HP, the flexible combinations of its two sections cover more utility ground than the HP count suggests.
+
+**4HP and zero power consumption on the distribution section.** Systems always need more signal distribution than initially planned. Adding Links costs 4HP and no power on the passive section. The active section consumes a small amount of power. For the utility density relative to space and power, Links has few competitors in its category.
+
+---
+
+## Common Mistakes
+
+**1. Using passive multiples for CV distribution and getting unexpected level changes.**
+When multiple modules receive a signal through a passive multiple (a Y-cable or unbuffered multiple), their input impedances load each other and the source. The actual voltage reaching each destination depends on all the connected impedances. Links' 1-to-3 section is passive but designed for the typical Eurorack impedance range. If you need guaranteed level consistency across many destinations (more than three), a buffered multiple adds active circuitry that isolates each output from the others. For most cases with two or three destinations, Links works without issue.
+
+**2. Expecting the 3-to-1 section to attenuate its inputs.**
+The 3-to-1 section sums three signals at unity gain. If three sources each output 5V and you combine them, the output approaches 15V -- well outside the typical Eurorack modular range. This is not a malfunction; it is correct unity-gain summing. When combining CV sources that each carry significant amplitude, attenuate the inputs before Links or attenuate the output after. The module does not clip or limit the output; it passes whatever level the arithmetic produces.
+
+**3. Treating Links as interchangeable with a buffered multiple for V/OCT pitch tracking.**
+Pitch CV requires consistent voltage levels across multiple destinations to maintain tuning accuracy. A passive 1-to-3 multiple works for most pitch distribution, but if one of the destinations has unusually low or high input impedance, it can affect the voltage reaching other destinations. For critical pitch tracking across multiple oscillators, a buffered multiple with active isolation per output is more reliable. Links works fine for most pitch CV applications; just be aware that it is passive on that section.
+
+**4. Not realizing the two sections can work together on the same signal.**
+A common oversight is using Links as either a distributor or a mixer, but not both on related signals. Passing a gate through the 1-to-3 section while simultaneously summing CV modulations in the 3-to-1 section and then routing the sum back into one of the 1-to-3 inputs creates signal relationships that are difficult to achieve with separate modules of twice the HP. The 4HP panel conceals more functional flexibility than new users typically discover on first use.
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Basic - Essential Signal Distribution and Mixing**

@@ -88,6 +88,36 @@
 
 ---
 
+## Why MetaModule Excels
+
+MetaModule is the answer to a specific question: what if the flexibility of VCV Rack -- hundreds of virtual modules, unlimited patching, no hardware cost per module -- could be accessed through a physical Eurorack interface that integrates with real CV and audio? The answer involves trade-offs worth understanding.
+
+**VCV Rack's module library runs inside a 26HP Eurorack module.** VCV Rack has hundreds of free and commercial virtual modules covering oscillators, filters, effects, sequencers, modulators, and utilities that do not exist as hardware. MetaModule runs those plugins with hardware jacks for CV and audio I/O. A virtual patch built in VCV Rack becomes a hardware-compatible device with physical knobs, buttons, and patch points. This gives access to module types and combinations that would require many thousands of dollars of hardware to replicate.
+
+**Physical Knob Sets map panel controls to virtual parameters.** Eight physical knobs, plus buttons and CV inputs, can be assigned to any parameter inside the running virtual patch. A complex virtual synthesizer patch -- oscillator pitch, filter cutoff, envelope attack, LFO rate, reverb mix, all simultaneously -- is accessible from the eight physical knobs in real time. Changing which parameters the knobs control is done in software without rewiring anything.
+
+**Full CV and audio I/O bridges hardware and virtual.** MetaModule has multiple physical CV inputs, gate inputs, audio inputs, CV outputs, gate outputs, and audio outputs that connect directly to hardware modules. Hardware modulation sources can control virtual parameters. Virtual CV sequences can drive hardware oscillators. Hardware audio can be processed through virtual effects and returned to the hardware rack. The module functions as a two-way translator between physical and virtual modular signal flows.
+
+**The module running any given patch determines the sonic character, not MetaModule itself.** MetaModule has no fixed voice or effect. Its character is entirely determined by the virtual patch loaded into it at any given moment. This means the same 26HP slot serves as a complex virtual synthesizer one session and as a granular processor or algorithmic sequencer the next, with no physical reconfiguration. The hardware is a neutral platform; the software defines the instrument.
+
+---
+
+## Common Mistakes
+
+**1. Loading complex virtual patches and expecting real-time performance without optimization.**
+Virtual patches that run smoothly in VCV Rack on a computer may not run without audio glitches on MetaModule's embedded hardware. Processor-intensive virtual modules (complex physical modeling, large polyphonic voices, multiple simultaneous effects) can exceed MetaModule's processing capacity. Start with simpler patches and add complexity incrementally. Monitor the CPU usage indicator; exceeding comfortable levels produces audio artifacts that are not fixable by any control adjustment.
+
+**2. Mapping all eight physical knobs to parameters that interact non-obviously.**
+Knob Set assignments are powerful but require planning. Assigning pitch, filter cutoff, and LFO rate to adjacent knobs without labeling them produces accidental parameter changes during performance when you reach for one and accidentally move another. Plan Knob Set assignments before performance; group related parameters together and document which knob does what. MetaModule does not prevent you from making confusing assignments.
+
+**3. Expecting VCV Rack patches to transfer directly without adjustment.**
+Patches built in VCV Rack on a computer use the computer's display, mouse interaction, and unlimited parameter access. A patch transferred to MetaModule requires defining which parameters are exposed on the Knob Set and which are fixed. Parameters not assigned to Knob Set controls become inaccessible without connecting a display. Before transferring any patch for hardware use, deliberately decide what needs to be performable and assign it; accept that everything else is fixed.
+
+**4. Treating MetaModule as a direct replacement for dedicated hardware modules.**
+A virtual filter running inside MetaModule is not identical to a hardware filter. The analog characteristics of a hardware filter -- the non-linearities, the circuit-specific resonance behavior, the physical response to temperature and gain staging -- are not reproduced by a digital model running on an embedded processor. MetaModule's virtual filters are useful and musical, but different from hardware. Using MetaModule for module types where analog character matters (particularly filters and distortion) requires accepting that the result is a different instrument, not a simulation of the hardware equivalent.
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Basic - Load and Play Existing Patches**
@@ -320,13 +350,13 @@ Complete Hybrid System Architecture:
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modular System Brain Integration):**
+### **Advanced Module Synergies (Modular System Brain Integration):**
 - **Make Noise Maths:** Provides complex CV sources for virtual parameter control and receives virtual CV outputs for hardware modulation
 - **Mutable Marbles:** Adaptive pattern generation feeds virtual sequencers while virtual CV can control Marbles parameters
 - **Squarp Hermod+:** Hardware sequencer coordination with virtual synthesis and synchronized MIDI/CV data exchange
 - **DivKid Ochd & Expander:** Multiple LFO sources for virtual parameter automation while virtual LFOs modulate hardware modules
 - **Erica Synths modules:** Hardware audio sources processed through virtual effects chains with coordinated parameter control
-- **Cross-Phase 2 Integration:** MetaModule serves as modular system brain transforming hardware CV into virtual synthesis while outputting virtual processing back to hardware
+- **Cross-Module Integration:** MetaModule serves as modular system brain transforming hardware CV into virtual synthesis while outputting virtual processing back to hardware
 
 ### **Perfect Partners for Beginners:**
 - **Audio interface modules:** For connecting MetaModule outputs to external audio systems
@@ -355,7 +385,7 @@ Complete Hybrid System Architecture:
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with basic operation:** Master patch loading, basic navigation, and physical interface control
@@ -370,7 +400,7 @@ Complete Hybrid System Architecture:
 - **MetaModule + Marbles:** Adaptive hardware patterns feeding virtual sequencers and synthesis
 - **MetaModule + Hermod+:** Coordinated hardware/virtual sequencing and synchronized data exchange
 - **MetaModule + Hardware voices:** Virtual effects processing of hardware audio sources
-- **All Phase 2 + MetaModule:** Complete ecosystem enabling sophisticated virtual processing within complex modular systems
+- **Advanced Integration + MetaModule:** Complete ecosystem enabling sophisticated virtual processing within complex modular systems
 
 ### **Skill Development Milestones:**
 - **Beginner:** Basic patch playback, simple knob control, understanding virtual-physical interface
@@ -392,4 +422,4 @@ Complete Hybrid System Architecture:
 
 ---
 
-**Bottom Line:** MetaModule isn't just a virtual patch player - it's a **complete modular system brain** that brings the infinite possibilities of VCV Rack's 800+ virtual modules to hardware through a sophisticated physical interface. Every patch teaches something new about virtual synthesis, from basic parameter mapping to complex hybrid system integration. As the **virtual processing coordinator of Phase 2 ecosystems**, it transforms hardware CV and audio into sophisticated virtual synthesis while providing processed audio and CV back to hardware, creating professional hybrid modular systems that combine the best of virtual flexibility and hardware immediacy in 26HP of unlimited sonic potential.
+**Bottom Line:** MetaModule isn't just a virtual patch player - it's a **complete modular system brain** that brings the infinite possibilities of VCV Rack's 800+ virtual modules to hardware through a sophisticated physical interface. Every patch teaches something new about virtual synthesis, from basic parameter mapping to complex hybrid system integration. As the **virtual processing coordinator of complex modular ecosystems**, it transforms hardware CV and audio into sophisticated virtual synthesis while providing processed audio and CV back to hardware, creating professional hybrid modular systems that combine the best of virtual flexibility and hardware immediacy in 26HP of unlimited sonic potential.

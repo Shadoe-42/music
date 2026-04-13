@@ -62,6 +62,20 @@
 
 ---
 
+## Why Bloom Excels
+
+Most sequencers ask you to program notes explicitly -- place a pitch on step 1, another on step 2, and so on until you have a sequence you want to repeat. Bloom generates sequences by growing them from seed patterns using a tree algorithm, which means sequences evolve organically over time without requiring ongoing manual programming.
+
+**The tree algorithm produces natural-sounding evolution.** Bloom's central metaphor is a growing tree: a seed pattern branches into variations according to mathematical rules, and playback traverses these branches according to the BRANCHES setting. The resulting sequences feel like they are developing and changing while maintaining a relationship to their origin. This is categorically different from manual step sequencing, random note generators, or simple transposition; it is generative progression with internal logic.
+
+**BRANCHES controls how far from the seed the sequence wanders.** At low BRANCHES values, playback stays close to the seed pattern, producing a recognizable repeating sequence with small variations. At high values, playback reaches distant branches that are more loosely related to the original. This single parameter moves a sequence from "stable with subtle variation" to "continuously evolving" without changing any notes directly. Assigning CV to BRANCHES while a sequence is playing produces sequences that tighten and loosen their relationship to the seed in real time.
+
+**Multiple channels share the same tree from independent branch positions.** Bloom's channels can each be set to a different branch position on the same tree, producing sequences that are related to each other but not identical. Channel A might play close-in branches while Channel B explores further out simultaneously. Because both derive from the same seed, the sequences complement each other harmonically even as they evolve independently.
+
+**Sequences can be grown without stopping playback.** New nodes can be added to the tree while the sequence is running, and the growth integrates immediately into the evolving pattern. This means Bloom can be used as a live composition tool: grow the sequence forward in performance, not just before it.
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Simple Evolving Melody**

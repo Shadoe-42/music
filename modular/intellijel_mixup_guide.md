@@ -82,6 +82,40 @@
 
 ---
 
+## Why MixUp Excels
+
+MixUp solves the problem that every Eurorack system eventually faces: multiple audio voices need to be combined into a single stereo output, and the options for doing so with adequate level control and minimal signal degradation at reasonable HP cost are fewer than they should be.
+
+**Stereo from the start.** MixUp treats each of its four input channels as a mono source panned to a stereo field, with individual pan control per channel. The two output busses (main L/R mix and the auxiliary output) are both stereo. Many small mixers in Eurorack offer mono-sum outputs or require patching two separate mono channels together to approximate stereo. MixUp produces genuine stereo from four independent mono sources without additional hardware.
+
+**The auxiliary output enables parallel processing or headphone monitoring without splitting the signal.** The auxiliary bus receives the pre-fader signal from any channel assigned to it. This allows a voice to go simultaneously to the main mix and to a parallel effects chain, or allows the main mix to go to modular outputs while the auxiliary feeds headphones or a recording interface. Both use cases require zero additional buffering or splitting.
+
+**In a 1U format.** MixUp fits into Intellijel's 1U tile row (the same row as power supply tiles, MIDI tiles, and other 1U utilities). A 3U mixer in Eurorack typically costs between 10HP and 20HP of primary rack space. MixUp uses none of that primary space. For systems where 3U rack space is at a premium and a 1U tile row is available, MixUp is one of the most efficient ways to resolve the mixing problem.
+
+---
+
+## Why MixUp Has Limitations
+
+MixUp is a final-stage stereo mixer, not a modular routing hub. It has no CV control over levels, no submix bussing for groups of voices, and no insert points for per-channel effects. If your mixing needs grow to include any of those features, a different mixer becomes appropriate. MixUp does what it does with minimal complexity; that simplicity is its value and its constraint simultaneously.
+
+---
+
+## Common Mistakes
+
+**1. Expecting the AUX bus to be an independent mix.**
+The auxiliary output reflects pre-fader signal from channels assigned to it, not an independently leveled submix. If a channel's level knob is at unity, the AUX output receives the full signal regardless of the main output level for that channel. If you need an independently leveled submix for an effects send, assign channels to AUX and adjust the AUX send level separately. Treating AUX as a post-fader send produces unexpected level relationships.
+
+**2. Clipping the output by running hot levels on all four channels simultaneously.**
+MixUp's headroom is limited by Eurorack signal levels. Four channels each running at full output -- particularly from voices with strong transients like drum modules -- can sum to a level that exceeds the output stage's clean range. Watch the clip indicator. Reduce individual channel levels rather than trying to compensate with downstream attenuation; catching the clip at the source produces cleaner audio than trying to reduce a clipped signal later.
+
+**3. Patching the AUX output expecting it to carry the full stereo mix.**
+The AUX bus only carries channels explicitly assigned to it. If you plug a channel into AUX and expect to hear your full mix, you will only hear those specific channels. Assign all four channels to AUX if you want the full mix there, or use the main L/R outputs for the primary mix and AUX only for channels you want to process separately.
+
+**4. Overlooking MixUp because it lives in a 1U row.**
+Users without 1U cases never see MixUp as an option. Users with 1U rows sometimes overlook it because the 1U row tends to be treated as infrastructure (power, I/O, MIDI) rather than signal processing. MixUp belongs in the mixing infrastructure category alongside those other tiles, and is often the most efficient solution available for its form factor.
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Basic Stereo Mix Setup**

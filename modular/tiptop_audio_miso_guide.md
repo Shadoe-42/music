@@ -69,6 +69,20 @@
 
 ---
 
+## Why MISO Excels
+
+MISO (Multiple Input Single Output) is a mixer and signal processor that handles the combining, scaling, and offsetting of CV and audio signals with enough flexibility to solve problems that would otherwise require multiple separate utility modules.
+
+**Four inputs with individual level control output one mixed signal.** The basic function -- combine multiple signals into one -- is simple but essential. A system with multiple modulation sources that need to all affect one destination (say, both a keyboard CV and a sequencer CV modulating a filter cutoff) needs a mixer in the signal path. MISO provides this for both CV and audio without the distinction mattering; it processes voltages, and voltages are voltages.
+
+**Attenuversion lets you invert or scale any input signal.** Each input has an attenuverter, meaning it can scale an incoming signal from full amplitude down to nothing, and also invert the signal (negative values) across the full range. This is the difference between a mixer and an attenuation mixer: MISO can subtract signals from each other, not just add them. An LFO that sweeps 0 to +5V can become a signal that sweeps 0 to -5V with one knob. A bipolar modulation source (+/-5V) can become a half-amplitude signal (+/-2.5V). These transformations happen without requiring additional inverters or attenuverters in the signal chain.
+
+**The DC offset control adds a constant voltage to the mix output.** This allows MISO to shift the center point of any mixed signal up or down. A modulation source that swings around 0V can be raised to swing around +2.5V, making it compatible with inputs that expect only positive voltages. This function -- which is essentially a manual CV offset -- means MISO handles calibration and range-matching for downstream modules that otherwise would need their own offset correction.
+
+**All inputs and the output handle both audio and CV.** There is no separate audio input or CV input. Anything patched to any input gets processed. MISO works as an audio mixer for summing multiple voices before a filter, as a CV mixer for combining multiple modulation sources before a cutoff input, or simultaneously doing both on different channels. The uniformity makes it predictable and eliminates the need to consult a manual to determine whether a particular signal type is valid.
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Dual LFO Mixer**
