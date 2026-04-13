@@ -198,6 +198,61 @@
 
 **The Deeper Pattern:** Most 1003 issues come from expecting it to be something other than what it is: a precise, coordinated dual envelope generator designed for professional voice architecture. The 1003 excels at synchronized dual modulation. Issues arise when expectations don't match the module's actual design philosophy and capabilities. Learning to read design philosophy and work *with* modules rather than against their intended purpose is more valuable than any single feature mastery.
 
+
+---
+
+## Why This Module Excels
+
+### **The Philosophy:**
+Most envelope generators treat envelopes as isolated tools. The 1003 treats envelopes as coordination infrastructure; the fundamental timing backbone of voice architecture.
+
+### **The Core Innovation:**
+
+**Dual Synchronization as Teaching Tool:** The 1003's most important feature is its coordinated dual envelope architecture. A single gate trigger controls both envelopes simultaneously, but each evolves independently. This teaches fundamental synthesis thinking: coordinated timing. Everywhere in synthesis, you need multiple time-based behaviors controlled by the same trigger source:
+- **Amplitude and filter:** Must start together but evolve differently
+- **Multiple oscillators:** May need different modulation timing
+- **Rhythm and processing:** Effects timing needs to stay locked to beat timing
+- **Voice layers:** Bass and melody need coordination
+
+When you understand dual synchronized envelopes, you understand voice architecture. This principle appears in all professional synthesizer design.
+
+**ADSR Time Constants as Fundamental Architecture:** The 1003 forces you to think explicitly about Attack, Decay, Sustain, and Release. Each stage serves a purpose:
+- **Attack:** How fast the sound emerges (acoustic instruments have fast attacks)
+- **Decay:** How quickly the peak drops to sustain level (transient shaping)
+- **Sustain:** The held level during the gate (note body)
+- **Release:** How the sound fades after gate release (note tail)
+
+Understanding ADSR teaches you that all time-based behavior in synthesis is fundamentally envelope-shaped. Filters have attack/decay behavior (resonance settling). Oscillators have startup behavior (sync transients). LFOs have ramping behavior. Every time-based process in synthesis is essentially ADSR thinking.
+
+**Coordinated Modulation as System Philosophy:** The 1003's dual outputs reveal that synthesis is about coordinating multiple modulation sources. You don't just generate envelope shapes; you route them to different destinations (VCA, filter, effects) where they create coordinated musical behavior. Understanding this routing teaches you that modular synthesis is fundamentally about signal architecture: every modulation source needs a destination, and complex synthesis comes from careful routing of multiple modulation sources.
+
+**Bipolar Architecture as Complete Signal Toolset:** The 1003 provides positive and negative outputs, teaching that modulation isn't unidirectional. Inverted envelopes create inverted effects. Understanding bipolar modulation teaches phase relationships, which are fundamental to all synthesis. Phase determines whether signals reinforce or cancel, add or subtract, harmonize or clash.
+
+### **The Practical Benefits:**
+- **Professional voice architecture:** Single gate for coordinated dual modulation is the standard for professional synthesizer design
+- **Timing coordination:** Both envelopes locked together but independent; exactly what professional voice design requires
+- **System efficiency:** Two complete envelope generators in 16HP is compact for professional voice control
+- **Flexible architecture:** Positive/negative outputs, retriggering options, independent timing for each envelope
+- **Teaching instrument:** Every feature reveals fundamental synthesis principles
+
+### **Perfect For:**
+- **Voice architects:** Understanding dual envelope coordination for professional synthesizer design
+- **System builders:** Using envelopes as timing backbone for complex modular systems
+- **Synthesis students:** Learning ADSR fundamentals and voice architecture through hands-on use
+- **Performance synthesis:** Real-time envelope coordination for expressive voice control
+- **Utility specialists:** Understanding how envelopes coordinate everything from amplitude to effects
+
+### **The Interconnection:**
+
+The 1003 teaches that synthesis is fundamentally about timing coordination. Every synthesizer needs envelope generators because every sound needs amplitude shaping. The 1003 reveals this by requiring explicit coordination of multiple time-based behaviors.
+
+Moreover, the 1003 teaches ADSR timing as a universal principle. Every time-based process in synthesis; from filter settling to oscillator transients to effect modulation; can be understood as envelope-shaped behavior. Learning ADSR thinking through the 1003 teaches concepts that apply everywhere.
+
+Finally, understanding dual synchronized envelopes teaches you about coordinated systems. Complex synthesis isn't about individual modules working in isolation; it's about multiple systems coordinated together. The 1003 makes this explicit: your oscillator, filter, VCA, and effects all need coordinated timing. Learning to think about coordination is learning to think like a professional synthesizer designer.
+
+
+---
+
 ---
 
 ## Utility Patches
@@ -283,56 +338,24 @@
 | **Power** | 50mA (+12V), 20mA (-12V) | Standard Eurorack consumption |
 | **Module Width** | 16 HP | Standard Eurorack spacing |
 
+
 ---
 
-## Why This Module Excels
+## Advanced Learning Path
 
-### **The Philosophy:**
-Most envelope generators treat envelopes as isolated tools. The 1003 treats envelopes as coordination infrastructure; the fundamental timing backbone of voice architecture.
+**The 1003 is a foundational building block — learn it deeply before adding more complex envelope tools.**
 
-### **The Core Innovation:**
+1. **Master the four ADSR stages with a single voice.** Before coordinating both envelopes, become fluent in dialing each stage independently. Hear exactly what attack, decay, sustain, and release contribute in isolation. The 1003 rewards patience here.
 
-**Dual Synchronization as Teaching Tool:** The 1003's most important feature is its coordinated dual envelope architecture. A single gate trigger controls both envelopes simultaneously, but each evolves independently. This teaches fundamental synthesis thinking: coordinated timing. Everywhere in synthesis, you need multiple time-based behaviors controlled by the same trigger source:
-- **Amplitude and filter:** Must start together but evolve differently
-- **Multiple oscillators:** May need different modulation timing
-- **Rhythm and processing:** Effects timing needs to stay locked to beat timing
-- **Voice layers:** Bass and melody need coordination
+2. **Understand the shared timing knob.** The single master timing control scaling both envelopes together is a deliberate design choice. Practice using it to maintain proportion between envelopes while adjusting overall speed — this is how the module creates coordinated gesture rather than independent voices.
 
-When you understand dual synchronized envelopes, you understand voice architecture. This principle appears in all professional synthesizer design.
+3. **Explore bipolar outputs (OUT+/OUT−) for push-pull patching.** The inverted output turns one envelope trigger into simultaneous opposing movements — e.g., one filter opens while another closes. This technique is fundamental to expressive dual-voice patches.
 
-**ADSR Time Constants as Fundamental Architecture:** The 1003 forces you to think explicitly about Attack, Decay, Sustain, and Release. Each stage serves a purpose:
-- **Attack:** How fast the sound emerges (acoustic instruments have fast attacks)
-- **Decay:** How quickly the peak drops to sustain level (transient shaping)
-- **Sustain:** The held level during the gate (note body)
-- **Release:** How the sound fades after gate release (note tail)
+4. **Add a second VCO and use each envelope independently.** Build a two-voice patch where each envelope handles its own voice shaping. This is the 1003's native use case — experiencing it this way makes its design philosophy clear.
 
-Understanding ADSR teaches you that all time-based behavior in synthesis is fundamentally envelope-shaped. Filters have attack/decay behavior (resonance settling). Oscillators have startup behavior (sync transients). LFOs have ramping behavior. Every time-based process in synthesis is essentially ADSR thinking.
+5. **Study envelope interaction with retrigger behavior.** Experiment with retrigger on vs. off alongside different gate lengths. Understanding how the 1003 handles overlapping gates prepares you for sequencer-driven patches where gates don't always end cleanly.
 
-**Coordinated Modulation as System Philosophy:** The 1003's dual outputs reveal that synthesis is about coordinating multiple modulation sources. You don't just generate envelope shapes; you route them to different destinations (VCA, filter, effects) where they create coordinated musical behavior. Understanding this routing teaches you that modular synthesis is fundamentally about signal architecture: every modulation source needs a destination, and complex synthesis comes from careful routing of multiple modulation sources.
-
-**Bipolar Architecture as Complete Signal Toolset:** The 1003 provides positive and negative outputs, teaching that modulation isn't unidirectional. Inverted envelopes create inverted effects. Understanding bipolar modulation teaches phase relationships, which are fundamental to all synthesis. Phase determines whether signals reinforce or cancel, add or subtract, harmonize or clash.
-
-### **The Practical Benefits:**
-- **Professional voice architecture:** Single gate for coordinated dual modulation is the standard for professional synthesizer design
-- **Timing coordination:** Both envelopes locked together but independent; exactly what professional voice design requires
-- **System efficiency:** Two complete envelope generators in 16HP is compact for professional voice control
-- **Flexible architecture:** Positive/negative outputs, retriggering options, independent timing for each envelope
-- **Teaching instrument:** Every feature reveals fundamental synthesis principles
-
-### **Perfect For:**
-- **Voice architects:** Understanding dual envelope coordination for professional synthesizer design
-- **System builders:** Using envelopes as timing backbone for complex modular systems
-- **Synthesis students:** Learning ADSR fundamentals and voice architecture through hands-on use
-- **Performance synthesis:** Real-time envelope coordination for expressive voice control
-- **Utility specialists:** Understanding how envelopes coordinate everything from amplitude to effects
-
-### **The Interconnection:**
-
-The 1003 teaches that synthesis is fundamentally about timing coordination. Every synthesizer needs envelope generators because every sound needs amplitude shaping. The 1003 reveals this by requiring explicit coordination of multiple time-based behaviors.
-
-Moreover, the 1003 teaches ADSR timing as a universal principle. Every time-based process in synthesis; from filter settling to oscillator transients to effect modulation; can be understood as envelope-shaped behavior. Learning ADSR thinking through the 1003 teaches concepts that apply everywhere.
-
-Finally, understanding dual synchronized envelopes teaches you about coordinated systems. Complex synthesis isn't about individual modules working in isolation; it's about multiple systems coordinated together. The 1003 makes this explicit: your oscillator, filter, VCA, and effects all need coordinated timing. Learning to think about coordination is learning to think like a professional synthesizer designer.
+6. **Graduate to Make Noise Maths for complex envelopes.** Once the four-stage ADSR is internalized, Maths's function-generator approach to envelope shaping will be immediately readable. The 1003 gives you the vocabulary; Maths expands the grammar.
 
 ---
 

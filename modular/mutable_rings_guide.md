@@ -60,6 +60,45 @@
 - **Musical impact:** Short = percussive, Long = sustained drones
 - **Key to character:** This knob defines whether sounds are attacks or sustains
 
+
+---
+
+## Why This Module Rocks
+
+### **The Philosophy:**
+Rings represents **acoustic reality through electronic means** - not just sound synthesis, but authentic simulation of real physical instruments. It bridges the gap between electronic music and acoustic instruments, proving that modular synthesis can create sounds indistinguishable from real bells, strings, and resonant objects.
+
+### **The Innovation:**
+- **Three distinct physical modeling algorithms** each simulating different acoustic phenomena
+- **Polyphonic voice management** that mimics real instrument behavior
+- **Dual outputs with harmonic separation** for spatial acoustic imaging
+- **Audio processing mode** transforms any sound into acoustic instruments
+- **Built-in decay envelopes** eliminate need for external envelope generators
+
+### **The Practical Benefits:**
+- **Space efficiency:** Three complete acoustic instruments in 14HP
+- **Learning tool:** Experience acoustic instrument physics hands-on
+- **Creative catalyst:** Transform electronic sounds into acoustic reality
+- **Complete voice:** Built-in envelopes and polyphony eliminate external processing needs
+- **Immediate results:** Every setting sounds musical and acoustic
+
+### **Perfect For:**
+- **Electronic producers** wanting to add acoustic realism to electronic music
+- **Sound designers** needing authentic acoustic instrument simulation
+- **Ambient musicians** creating realistic acoustic spaces and environments
+- **Experimental artists** exploring the boundary between electronic and acoustic
+- **Small system builders** needing maximum acoustic variety in minimal space
+- **Acoustic instrument players** wanting electronic versions of familiar instruments
+
+### **The Magic:**
+Rings **democratizes acoustic instrument access** - you don't need to learn violin technique, bell casting, or guitar construction. Just turn knobs and **every acoustic instrument becomes immediately playable**. It's like having a complete acoustic instrument collection that responds to electronic control.
+
+### **Advanced Integration Power:**
+As the **acoustic reality engine of Advanced ecosystems**, Rings transforms organic breathing, controlled chaos, Advanced pattern generation, and mathematical processing into authentic acoustic instrument behavior. **You conduct electronic intelligence toward acoustic musical expression.**
+
+
+---
+
 ---
 
 ## Progressive Patch Examples
@@ -428,40 +467,6 @@
 - **Hybrid Acoustic Processing:** Bridge between electronic and acoustic music creation
 - **Creative Acoustic Direction:** Guide sophisticated pattern generation systems toward acoustic musical expression
 
----
-
-## Why This Module Rocks
-
-### **The Philosophy:**
-Rings represents **acoustic reality through electronic means** - not just sound synthesis, but authentic simulation of real physical instruments. It bridges the gap between electronic music and acoustic instruments, proving that modular synthesis can create sounds indistinguishable from real bells, strings, and resonant objects.
-
-### **The Innovation:**
-- **Three distinct physical modeling algorithms** each simulating different acoustic phenomena
-- **Polyphonic voice management** that mimics real instrument behavior
-- **Dual outputs with harmonic separation** for spatial acoustic imaging
-- **Audio processing mode** transforms any sound into acoustic instruments
-- **Built-in decay envelopes** eliminate need for external envelope generators
-
-### **The Practical Benefits:**
-- **Space efficiency:** Three complete acoustic instruments in 14HP
-- **Learning tool:** Experience acoustic instrument physics hands-on
-- **Creative catalyst:** Transform electronic sounds into acoustic reality
-- **Complete voice:** Built-in envelopes and polyphony eliminate external processing needs
-- **Immediate results:** Every setting sounds musical and acoustic
-
-### **Perfect For:**
-- **Electronic producers** wanting to add acoustic realism to electronic music
-- **Sound designers** needing authentic acoustic instrument simulation
-- **Ambient musicians** creating realistic acoustic spaces and environments
-- **Experimental artists** exploring the boundary between electronic and acoustic
-- **Small system builders** needing maximum acoustic variety in minimal space
-- **Acoustic instrument players** wanting electronic versions of familiar instruments
-
-### **The Magic:**
-Rings **democratizes acoustic instrument access** - you don't need to learn violin technique, bell casting, or guitar construction. Just turn knobs and **every acoustic instrument becomes immediately playable**. It's like having a complete acoustic instrument collection that responds to electronic control.
-
-### **Advanced Integration Power:**
-As the **acoustic reality engine of Advanced ecosystems**, Rings transforms organic breathing, controlled chaos, Advanced pattern generation, and mathematical processing into authentic acoustic instrument behavior. **You conduct electronic intelligence toward acoustic musical expression.**
 
 ---
 

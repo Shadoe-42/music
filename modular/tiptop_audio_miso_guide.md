@@ -241,7 +241,7 @@ MISO (Multiple Input Single Output) is a mixer and signal processor that handles
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Miso fundamentals:** Master MISO functions (Mix, Invert, Scale, Offset) and precision voltage manipulation techniques

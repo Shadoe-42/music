@@ -457,7 +457,7 @@ Moon Phase challenges what a filter can be. Instead of just removing frequencies
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Moon Phase fundamentals:** Master 8-mode operation, stereo imaging, and spatial processing concepts

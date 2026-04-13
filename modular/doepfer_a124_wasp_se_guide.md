@@ -103,6 +103,42 @@ The Wasp filter isn't trying to be smooth or polite - it's designed to add **cha
 ### **Why This Matters:**
 The Wasp SE brings the character of classic British synth design into the modular world - sounds that defined aggressive electronic music, acid house, and industrial genres.
 
+
+---
+
+## Why This Instrument Excels
+
+### **The Philosophy:**
+**Aggressive character over polite filtering.** The Wasp SE doesn't try to be transparent or gentle - it celebrates the **bite, aggression, and character** that made the original Wasp filter legendary in aggressive electronic music.
+
+### **The Innovation:**
+- **Legendary circuit recreation:** Faithful reproduction of the classic Electronic Dream Plant Wasp filter
+- **Aggressive by design:** Every setting adds character and bite to your sounds
+- **Musical self-oscillation:** 1V/octave tracking makes self-oscillation useful as an oscillator
+- **Dynamic response:** Reacts dramatically to input levels and drive settings
+
+### **The Practical Benefits:**
+- **Instant character:** Even subtle settings add personality and aggression
+- **Dual functionality:** Works as both aggressive filter and sine wave oscillator
+- **Musical tracking:** Self-oscillation tracks pitch accurately for melodic use
+- **Performance-oriented:** Responds dramatically to real-time control
+
+### **Perfect For:**
+- **Electronic music producers:** Essential for acid, techno, and aggressive electronic styles
+- **Bass synthesists:** The bite that cuts through dense mixes
+- **Lead synthesists:** Screaming, aggressive lead tones
+- **Sound designers:** Adding character and aggression to any audio source
+- **Performance players:** Dramatic response to real-time control
+
+### **The Magic:**
+Wasp SE proves that **character trumps politeness** in filter design. The intentional aggression, dramatic response, and wild self-oscillation create sounds that grab attention and add serious attitude to your music.
+
+### **Historical Significance:**
+This module preserves the sound of the legendary **Electronic Dream Plant Wasp synthesizer** - an instrument that defined aggressive electronic music, acid house, and industrial sounds throughout the 1980s and beyond.
+
+
+---
+
 ---
 
 ## Beginner Patch Ideas
@@ -452,6 +488,24 @@ This represents **complete aggressive filter mastery** - where probability-based
 
 ---
 
+## Advanced Learning Path
+
+**The Wasp SE rewards progressive exploration — its aggression is a feature, not a flaw to manage around.**
+
+1. **Learn RESONANCE before DRIVE.** Resonance shapes tonal character before saturation comes into the picture. Get comfortable with how resonance changes the filter peak at different CUTOFF positions, then introduce DRIVE to push it further.
+
+2. **Study self-oscillation as a sound source.** Push RESONANCE past the threshold until the filter sings on its own, then use CUTOFF CV (from a keyboard or sequencer V/OCT output) to play it melodically. This technique — filter as oscillator — is central to electronic music history and the Wasp SE does it with distinct character.
+
+3. **Patch CUTOFF CV from an envelope to get the full Wasp character.** A fast-attack envelope on CUTOFF is the foundation of the Wasp sound. Once this is working, vary the envelope shape to explore the range between percussive bite and smooth sweep.
+
+4. **Compare the Wasp SE against a cleaner filter back to back.** The Wasp's CMOS nonlinearity is easiest to hear in contrast. Run the same patch through both and listen to what the Wasp adds — the distortion, the asymmetrical clipping, the slight instability at high DRIVE settings.
+
+5. **Use CV control to automate aggression over time.** Slowly automating DRIVE with an LFO or envelope creates a patch that breathes between clean and dirty. This is the Wasp SE's strength in longer compositions.
+
+6. **Graduate to filter comparison work with other aggressive filters.** Once the Wasp character is internalized, compare it against the Xaoc Belgrad or similar Tier 3 filter options. The goal is a working vocabulary of filter personalities — knowing which tool matches which musical context.
+
+---
+
 ## Pairs Well With
 
 ### **Advanced Module Synergies (Modulation & CV Sources):**
@@ -582,37 +636,6 @@ This represents **complete aggressive filter mastery** - where probability-based
 - **Cutoff sweeps:** Wide sweeps from 8 o'clock to 4 o'clock for maximum drama
 - **Self-oscillation tracking:** Use 1V/octave CV for melodic filter oscillation
 
----
-
-## Why This Instrument Excels
-
-### **The Philosophy:**
-**Aggressive character over polite filtering.** The Wasp SE doesn't try to be transparent or gentle - it celebrates the **bite, aggression, and character** that made the original Wasp filter legendary in aggressive electronic music.
-
-### **The Innovation:**
-- **Legendary circuit recreation:** Faithful reproduction of the classic Electronic Dream Plant Wasp filter
-- **Aggressive by design:** Every setting adds character and bite to your sounds
-- **Musical self-oscillation:** 1V/octave tracking makes self-oscillation useful as an oscillator
-- **Dynamic response:** Reacts dramatically to input levels and drive settings
-
-### **The Practical Benefits:**
-- **Instant character:** Even subtle settings add personality and aggression
-- **Dual functionality:** Works as both aggressive filter and sine wave oscillator
-- **Musical tracking:** Self-oscillation tracks pitch accurately for melodic use
-- **Performance-oriented:** Responds dramatically to real-time control
-
-### **Perfect For:**
-- **Electronic music producers:** Essential for acid, techno, and aggressive electronic styles
-- **Bass synthesists:** The bite that cuts through dense mixes
-- **Lead synthesists:** Screaming, aggressive lead tones
-- **Sound designers:** Adding character and aggression to any audio source
-- **Performance players:** Dramatic response to real-time control
-
-### **The Magic:**
-Wasp SE proves that **character trumps politeness** in filter design. The intentional aggression, dramatic response, and wild self-oscillation create sounds that grab attention and add serious attitude to your music.
-
-### **Historical Significance:**
-This module preserves the sound of the legendary **Electronic Dream Plant Wasp synthesizer** - an instrument that defined aggressive electronic music, acid house, and industrial sounds throughout the 1980s and beyond.
 
 ---
 

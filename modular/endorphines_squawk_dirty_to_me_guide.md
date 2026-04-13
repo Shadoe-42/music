@@ -38,39 +38,6 @@
 
 **Congratulations!** You've just experienced both classic filtering and stereo processing in one module!
 
----
-
-## Why This Instrument Excels
-
-### **The Philosophy:**
-**Filter diversity meets authentic analog character.** Squawk Dirty to Me doesn't try to be a "good all-purpose filter" or a "clean DSP recreation" - it's designed to offer eight fundamentally different classic filter types, each with authentic zero-delay feedback processing that eliminates the digital artifacts plaguing most digital filters. The signature Meta CV parameter makes the filter architecture itself a performance instrument.
-
-### **The Innovation:**
-- **8 complete filter algorithms:** Moog ladder, MS-20 OTA, low-pass gates, DJ isolator, high-pass, band-pass, comb - each with its own sonic identity
-- **Zero-delay feedback processing:** Advanced DSP architecture eliminates phase shifts and digital artifacts while maintaining 96kHz fidelity
-- **Meta CV scanning:** Single CV input morphs through all 8 filter types, enabling real-time algorithmic filter character evolution
-- **All Access Pass stereo mode:** Traditional high-pass filter knob transforms into stereo delay control for spatial processing
-- **Comprehensive CV control:** Every parameter modulation-capable, enabling sophisticated filter automation
-
-### **The Practical Benefits:**
-- **Instant filter character:** Choose from eight completely different filter personalities without hardware changes
-- **Authentic analog sound:** Zero-delay feedback makes digital processing indistinguishable from analog
-- **Performance flexibility:** Meta CV enables algorithmic filter evolution in real-time during live performance
-- **Space efficiency:** Eight filters in 6HP with full stereo capability and zero-delay processing
-- **Integration mastery:** Every filter parameter responds to modulation, enabling sophisticated filter systems
-
-### **Perfect For:**
-- **Filter specialists:** Eight distinct algorithms for deep spectral exploration
-- **Spectral designers:** Zero-delay processing for authentic frequency sculpting
-- **Live performers:** Meta CV scanning enables real-time filter character changes during performance
-- **Texture architects:** Stereo processing creates spatial filter effects
-- **Algorithmic composers:** Meta CV responds to sophisticated modulation systems for filter evolution
-
-### **The Magic:**
-Squawk proves that **digital processing can be truly authentic.** Zero-delay feedback processing sounds like analog because it doesn't introduce the phase shifts that make digital filters sound "wrong." The eight filter types teach you how different circuit topologies create different sonic characters - understanding this transfers across all synthesis. The Meta CV reveals that filter character isn't binary; it's a spectrum you can morph through smoothly or jump across algorithmically.
-
-### **Historical Significance:**
-Squawk represents the moment digital filter processing became genuinely indistinguishable from analog. By solving the phase shift problem through zero-delay feedback architecture, Endorphin.es proved that the future of compact filter design didn't require analog circuits - it required smarter DSP. The eight-algorithm approach demonstrated that comprehensive filter collections could fit in minimal space without sonic compromise.
 
 ---
 
@@ -156,6 +123,44 @@ Squawk represents the moment digital filter processing became genuinely indistin
 - **Character:** Phaser-like static, flanger-like modulated, resonator at full resonance
 - **Best for:** Special effects, metallic textures, harmonic emphasis
 - **Range:** Subtle phasing to dramatic harmonic filtering
+
+
+---
+
+## Why This Instrument Excels
+
+### **The Philosophy:**
+**Filter diversity meets authentic analog character.** Squawk Dirty to Me doesn't try to be a "good all-purpose filter" or a "clean DSP recreation" - it's designed to offer eight fundamentally different classic filter types, each with authentic zero-delay feedback processing that eliminates the digital artifacts plaguing most digital filters. The signature Meta CV parameter makes the filter architecture itself a performance instrument.
+
+### **The Innovation:**
+- **8 complete filter algorithms:** Moog ladder, MS-20 OTA, low-pass gates, DJ isolator, high-pass, band-pass, comb - each with its own sonic identity
+- **Zero-delay feedback processing:** Advanced DSP architecture eliminates phase shifts and digital artifacts while maintaining 96kHz fidelity
+- **Meta CV scanning:** Single CV input morphs through all 8 filter types, enabling real-time algorithmic filter character evolution
+- **All Access Pass stereo mode:** Traditional high-pass filter knob transforms into stereo delay control for spatial processing
+- **Comprehensive CV control:** Every parameter modulation-capable, enabling sophisticated filter automation
+
+### **The Practical Benefits:**
+- **Instant filter character:** Choose from eight completely different filter personalities without hardware changes
+- **Authentic analog sound:** Zero-delay feedback makes digital processing indistinguishable from analog
+- **Performance flexibility:** Meta CV enables algorithmic filter evolution in real-time during live performance
+- **Space efficiency:** Eight filters in 6HP with full stereo capability and zero-delay processing
+- **Integration mastery:** Every filter parameter responds to modulation, enabling sophisticated filter systems
+
+### **Perfect For:**
+- **Filter specialists:** Eight distinct algorithms for deep spectral exploration
+- **Spectral designers:** Zero-delay processing for authentic frequency sculpting
+- **Live performers:** Meta CV scanning enables real-time filter character changes during performance
+- **Texture architects:** Stereo processing creates spatial filter effects
+- **Algorithmic composers:** Meta CV responds to sophisticated modulation systems for filter evolution
+
+### **The Magic:**
+Squawk proves that **digital processing can be truly authentic.** Zero-delay feedback processing sounds like analog because it doesn't introduce the phase shifts that make digital filters sound "wrong." The eight filter types teach you how different circuit topologies create different sonic characters - understanding this transfers across all synthesis. The Meta CV reveals that filter character isn't binary; it's a spectrum you can morph through smoothly or jump across algorithmically.
+
+### **Historical Significance:**
+Squawk represents the moment digital filter processing became genuinely indistinguishable from analog. By solving the phase shift problem through zero-delay feedback architecture, Endorphin.es proved that the future of compact filter design didn't require analog circuits - it required smarter DSP. The eight-algorithm approach demonstrated that comprehensive filter collections could fit in minimal space without sonic compromise.
+
+
+---
 
 ---
 
@@ -472,6 +477,24 @@ This represents the **ultimate filter ecosystem** - where organic breathing, con
 - **🌟 **Stereo Widening:** All Access Pass mode for instant spatial enhancement**
 - **🎵 **Multi-Timbral:** Meta CV scanning for real-time filter character changes**
 - **🔊 **Live Performance:** Multiple modes and CV control for dynamic filter evolution**
+
+---
+
+## Advanced Learning Path
+
+**Squawk Dirty to Me contains eight instruments. Study one before moving to the next.**
+
+1. **Start with Mode I (Moog Ladder) as your reference point.** The transistor ladder is the most widely documented filter topology in synthesis. Learning its behavior in Squawk — how resonance builds, where it self-oscillates, how DRIVE pushes saturation — gives you a reference against which all other modes can be compared.
+
+2. **Spend a dedicated session on each remaining filter type.** The character difference between Mode II (MS-20 OTA), Mode III (Low-Pass Gate), and Mode VIII (Comb Filter) is not subtle. Moving between modes too quickly prevents any single one from becoming functional. Seven modes remain after Mode I — seven sessions.
+
+3. **Learn what META CV scanning actually does.** Patching a slow LFO into the META CV input and sweeping between filter types reveals the continuous nature of the scanning. This is not a stepped selector — it glides between modes. Understanding the rate and curve of the transition opens up long-form filter evolution as a compositional technique.
+
+4. **Use the series High-Pass Filter as a second filter.** The HPF input is a full additional filter in series with the main VCF. Running different CV sources to CUTOFF and HPF simultaneously creates a two-dimensional filter sweep — brightness and lowness controlled independently.
+
+5. **Study the VCA integration.** The built-in VCA means Squawk can replace a VCF and VCA in one module. Practice routing a single envelope to control both filter cutoff and amplitude simultaneously, then use independent CVs for each to understand the degree of control available.
+
+6. **Build a complete voice with only Squawk and a single oscillator.** Squawk's self-contained design supports this. Use one VCO → Squawk in (for filter character and VCA shaping) and one envelope → CUTOFF CV and VCA CV. If this voice reads musically, the module is fully understood.
 
 ---
 

@@ -9,9 +9,6 @@
 ![4ms Rotating Clock Divider V2](https://github.com/Shadoe-42/music/raw/main/modular/images/4ms/rcd_v2/front_panel.jpg)  
 *4ms Rotating Clock Divider V2 - Polyrhythm generator with Clock In, Rotate CV, Reset, and eight division outputs*
 
----
-
-## Quick Start: Get Your First Sound in 5 Minutes
 1. **Patch your sequencer/clock** → RCD V2 **Clock In**
 2. **Leave Rotate CV unplugged** (starting position)
 3. **Patch Output 1** → kick drum (divide by 1 = same speed)
@@ -670,6 +667,24 @@ The divisions, the rotation, the reset function - these aren't just features. Th
 
 ---
 
+## Advanced Learning Path
+
+**Clock division is a deep subject. RCD v2 is the right tool for understanding it — use it to build vocabulary before adding more complex timing modules.**
+
+1. **Start without Rotate CV.** Run the eight outputs into different destinations and simply listen to how divide-by-2 through divide-by-8 relate to each other. Polyrhythm comprehension begins here. Rotate CV adds a layer of transformation on top of this foundation — it makes no sense before the foundation is clear.
+
+2. **Add Rotate CV from a slow LFO and watch the output assignments shift.** The key insight is that the divisions themselves don't change — only which output carries which division. This is a non-obvious but fundamental point. Understanding it makes the module's behavior predictable rather than mysterious.
+
+3. **Study the prime divisions (/3, /5, /7) independently.** These don't fit neatly into standard 4/4 grid structures. Run divide-by-3 alone against a kick drum on the master clock and count how many measures before they align again. Doing this with each prime division builds an intuitive feel for how long polyrhythmic cycles are.
+
+4. **Use Reset to bring controlled order back.** After building a complex rotating patch, add a Reset trigger at a predictable musical point (every 8 bars). Reset gives you the ability to let patterns evolve freely between resets and return to a known state — essential for live performance.
+
+5. **Pair with the SCM Plus to compare division philosophies.** RCD v2 distributes multiple divisions from one clock in parallel; SCM Plus applies one division scheme to a clock and outputs related variations. Understanding both — what each is suited for — deepens clock manipulation vocabulary significantly.
+
+6. **Explore jumper settings once the base behavior is internalized.** The extended range (/1 to /64 instead of /1 to /8) and other jumper options are meaningful only after the standard divisions are fully understood. Save jumper exploration for a dedicated session after the standard module is mastered.
+
+---
+
 ## Pairs Well With
 
 ### **Perfect Modulation Sources:**
@@ -753,35 +768,6 @@ The divisions, the rotation, the reset function - these aren't just features. Th
 - **Experiment gradually:** Change one jumper at a time to understand effects
 - **Document settings:** Note configurations that work well for different music styles
 - **Phase 2 considerations:** Extended ranges (/1 to /64) work well with very slow Marbles timing
-
----
-
-## Why This Module Rocks
-
-### **The Philosophy:**
-Most clock dividers give you standard subdivisions (/2, /4, /8). RCD gives you the "weird" ones (/3, /5, /7) that create fascinating polyrhythms, plus the rotation concept that makes static patterns dynamic.
-
-### **The Mathematical Beauty:**
-- **Prime number divisions** create patterns that take many measures to repeat
-- **Rotation** transforms static mathematical relationships into musical evolution
-- **Reset function** brings order to chaos when needed
-
-### **The Practical Benefits:**
-- **One input, eight related but independent outputs**
-- **Access to divisions impossible with traditional sequencer math**
-- **Real-time pattern transformation** without stopping or repatching
-- **Scalable complexity** from simple to mind-bendingly complex
-
-### **Perfect For:**
-- **Experimental musicians:** Exploring non-standard time relationships
-- **Electronic producers:** Adding mathematical interest to rigid sequences  
-- **Live performers:** Dynamic pattern evolution without menu diving
-- **Rhythm nerds:** Anyone fascinated by polyrhythmic relationships
-- **System builders:** Core component of modular timing networks
-
----
-
-**Bottom Line:** RCD V2 turns clock division into an art form. It's not just about slower tempos - it's about exploring the mathematical relationships that create the most interesting rhythms in music. The rotation feature transforms static patterns into dynamic, evolving polyrhythms that keep listeners engaged.
 
 ---
 

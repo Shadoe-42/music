@@ -63,6 +63,45 @@
 - **Voice flexibility:** Mono, poly, velocity, aftertouch - configure as needed
 - **MIDI effects on CV:** Apply MIDI effects to CV tracks for hybrid processing
 
+
+---
+
+## Why This Module Rocks
+
+### **The Philosophy:**
+Squarp Hermod+ represents **comprehensive advanced sequencing** - serving as the central nervous system that coordinates sophisticated pattern generation across entire musical ecosystems. It proves that advanced sequencing can enhance and direct electronic pattern generation rather than constraining it.
+
+### **The Innovation:**
+- **16-track hybrid architecture** with 8 CV/Gate and 8 MIDI tracks for complete system integration
+- **96PPQ recording resolution** captures every nuance of sophisticated pattern generation without loss
+- **Real-time effects processing** enhances recorded Phase 2 intelligence with additional complexity
+- **Four-mode operation system** provides comprehensive sequencing, performance, and arrangement control
+- **Pattern/sequence hierarchy** enables sophisticated song-level arrangement of intelligent systems
+
+### **The Practical Benefits:**
+- **Central nervous system:** Coordinates entire studios from modular to MIDI to computer integration
+- **Pattern preservation:** 96PPQ recording maintains character of sophisticated pattern generation
+- **Performance direction:** Live control and arrangement of complex electronic pattern generation systems
+- **Format bridging:** Seamless integration between CV, MIDI, and computer domains
+- **Composition architecture:** Complete song-level arrangement capabilities for sophisticated musical systems
+
+### **Perfect For:**
+- **Electronic composers:** Complete sequencing brain for sophisticated musical arrangements
+- **Live performers:** Real-time control and performance direction of complex electronic systems
+- **Studio producers:** Central coordination hub for hybrid modular/MIDI/computer workflows
+- **System integrators:** Bridge between different musical domains and technologies
+- **Phase 2 enthusiasts:** Central sequencing hub for coordinating sophisticated pattern generation
+- **Anyone seeking musical direction:** Transform electronic pattern generation into comprehensive musical compositions
+
+### **The Magic:**
+Hermod+ **democratizes professional sequencing capabilities** - giving everyone access to studio-grade sequencing capabilities that can coordinate and enhance the most sophisticated pattern generation systems.
+
+### **Phase 2 Integration Power:**
+As the **advanced sequencing hub of Phase 2 ecosystems**, Hermod+ coordinates organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision into comprehensive musical direction. **You conduct electronic pattern generation toward complete musical transcendence.**
+
+
+---
+
 ---
 
 ## Beginner Patch Ideas
@@ -308,44 +347,10 @@ This represents the **ultimate advanced sequencing integration** - where organic
 - **Multiple Hermod+ units:** Chain together for comprehensive multi-ecosystem sequencing control
 - **External MIDI Gear:** Integrate synthesizers and drum machines with Phase 2 Eurorack ecosystems
 
----
-
-## Why This Module Rocks
-
-### **The Philosophy:**
-Squarp Hermod+ represents **comprehensive advanced sequencing** - serving as the central nervous system that coordinates sophisticated pattern generation across entire musical ecosystems. It proves that advanced sequencing can enhance and direct electronic pattern generation rather than constraining it.
-
-### **The Innovation:**
-- **16-track hybrid architecture** with 8 CV/Gate and 8 MIDI tracks for complete system integration
-- **96PPQ recording resolution** captures every nuance of sophisticated pattern generation without loss
-- **Real-time effects processing** enhances recorded Phase 2 intelligence with additional complexity
-- **Four-mode operation system** provides comprehensive sequencing, performance, and arrangement control
-- **Pattern/sequence hierarchy** enables sophisticated song-level arrangement of intelligent systems
-
-### **The Practical Benefits:**
-- **Central nervous system:** Coordinates entire studios from modular to MIDI to computer integration
-- **Pattern preservation:** 96PPQ recording maintains character of sophisticated pattern generation
-- **Performance direction:** Live control and arrangement of complex electronic pattern generation systems
-- **Format bridging:** Seamless integration between CV, MIDI, and computer domains
-- **Composition architecture:** Complete song-level arrangement capabilities for sophisticated musical systems
-
-### **Perfect For:**
-- **Electronic composers:** Complete sequencing brain for sophisticated musical arrangements
-- **Live performers:** Real-time control and performance direction of complex electronic systems
-- **Studio producers:** Central coordination hub for hybrid modular/MIDI/computer workflows
-- **System integrators:** Bridge between different musical domains and technologies
-- **Phase 2 enthusiasts:** Central sequencing hub for coordinating sophisticated pattern generation
-- **Anyone seeking musical direction:** Transform electronic pattern generation into comprehensive musical compositions
-
-### **The Magic:**
-Hermod+ **democratizes professional sequencing capabilities** - giving everyone access to studio-grade sequencing capabilities that can coordinate and enhance the most sophisticated pattern generation systems.
-
-### **Phase 2 Integration Power:**
-As the **advanced sequencing hub of Phase 2 ecosystems**, Hermod+ coordinates organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision into comprehensive musical direction. **You conduct electronic pattern generation toward complete musical transcendence.**
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Hermod+ fundamentals:** Master all four modes and understand advanced sequencing coordination

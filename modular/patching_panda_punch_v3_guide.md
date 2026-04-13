@@ -478,7 +478,7 @@ Punch V3 bridges the gap between vintage drum machine simplicity and modern CV e
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Punch V3 fundamentals:** Master dual-mode operation, envelope control, and percussion synthesis concepts

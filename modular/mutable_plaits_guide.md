@@ -61,6 +61,42 @@
 - **TRIGGER input:** Strike the LPG for percussive sounds
 - **Hidden settings:** Hold first button + turn TIMBRE/MORPH to adjust LPG behavior
 
+
+---
+
+## Why This Module Rocks
+
+### **The Philosophy:**
+Plaits proves that **one module can contain entire synthesis traditions**. Instead of choosing between FM, wavetable, granular, or analog synthesis, you get all of them - each implemented excellently and optimized for musical use.
+
+### **The Innovation:**
+- **16 different synthesis engines** in one module
+- **Macro-oscillator approach** - complex algorithms made simple
+- **Built-in LPG** provides complete voice without external processing
+- **Dual outputs** offer main and auxiliary signals for each algorithm
+- **CV control over algorithm selection** enables dynamic sound evolution
+
+### **The Practical Benefits:**
+- **Space efficiency:** Entire synthesis studio in 12HP
+- **Learning tool:** Experience every major synthesis method hands-on
+- **Creative catalyst:** Algorithm switching sparks new musical ideas
+- **Complete voice:** Built-in LPG eliminates need for external filter/VCA
+- **Immediate results:** Every model sounds musical without extensive patching
+
+### **Perfect For:**
+- **Beginners:** Learn synthesis by comparing different algorithms directly
+- **Sound designers:** 16 different approaches to creating unique textures
+- **Melodic players:** Chord generators and harmonic models for instant musicality
+- **Rhythm programmers:** 8 percussion models with built-in envelopes
+- **Small system builders:** Maximum synthesis variety in minimal space
+- **Experimenters:** Model CV switching for constantly evolving sounds
+
+### **The Magic:**
+Plaits **democratizes synthesis knowledge** - you don't need to understand FM theory, wavetable construction, or granular parameters. Just turn knobs and **every synthesis method becomes immediately musical**. It's like having a synthesis textbook that you can hear and play.
+
+
+---
+
 ---
 
 ## Beginner Patch Ideas
@@ -378,37 +414,6 @@
 - **Stereo potential** - route outputs to different processing chains
 - **Self-patching possibilities** - AUX to FM input for complex modulation
 
----
-
-## Why This Module Rocks
-
-### **The Philosophy:**
-Plaits proves that **one module can contain entire synthesis traditions**. Instead of choosing between FM, wavetable, granular, or analog synthesis, you get all of them - each implemented excellently and optimized for musical use.
-
-### **The Innovation:**
-- **16 different synthesis engines** in one module
-- **Macro-oscillator approach** - complex algorithms made simple
-- **Built-in LPG** provides complete voice without external processing
-- **Dual outputs** offer main and auxiliary signals for each algorithm
-- **CV control over algorithm selection** enables dynamic sound evolution
-
-### **The Practical Benefits:**
-- **Space efficiency:** Entire synthesis studio in 12HP
-- **Learning tool:** Experience every major synthesis method hands-on
-- **Creative catalyst:** Algorithm switching sparks new musical ideas
-- **Complete voice:** Built-in LPG eliminates need for external filter/VCA
-- **Immediate results:** Every model sounds musical without extensive patching
-
-### **Perfect For:**
-- **Beginners:** Learn synthesis by comparing different algorithms directly
-- **Sound designers:** 16 different approaches to creating unique textures
-- **Melodic players:** Chord generators and harmonic models for instant musicality
-- **Rhythm programmers:** 8 percussion models with built-in envelopes
-- **Small system builders:** Maximum synthesis variety in minimal space
-- **Experimenters:** Model CV switching for constantly evolving sounds
-
-### **The Magic:**
-Plaits **democratizes synthesis knowledge** - you don't need to understand FM theory, wavetable construction, or granular parameters. Just turn knobs and **every synthesis method becomes immediately musical**. It's like having a synthesis textbook that you can hear and play.
 
 ---
 

@@ -472,7 +472,7 @@ Lyra8-FX embodies Soma's unique approach to electronic instruments - they should
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Lyra8-FX fundamentals:** Master self-modulation, cross-feedback, and organismic processing concepts

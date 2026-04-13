@@ -69,6 +69,27 @@
 - **Calibration:** Fine-tune oscillator accuracy and tracking
 - **Open source:** All firmware and hardware designs available on GitHub
 
+
+---
+
+## Why This Module Rocks
+
+### **The Philosophy:**
+Castor & Pollux II represents the **perfect bridge between vintage and modern** - authentic Juno-106 character with contemporary convenience. Unlike simple oscillator recreations, this module captures the complete DCO experience including the quirks, characteristics, and musical behavior that made the Juno legendary. **The web editor integration means you get vintage soul with modern flexibility.**
+
+### **Perfect For:**
+- **80s music enthusiasts** seeking authentic Juno character in modular format
+- **Modern producers** wanting vintage sounds with contemporary modular integration
+- **Space-conscious builders** needing multiple oscillator functions in reasonable HP
+- **Performance musicians** requiring reliable vintage sounds with modern stability
+- **Phase 2 system builders** adding vintage character to intelligent modular ecosystems
+
+### **The Vintage-Modern Experience:**
+Using Castor & Pollux II teaches you about both **vintage synthesis philosophy and modern modular integration**. The authentic DCO behavior shows you why the Juno became legendary, while the web editor and CV control reveal how vintage concepts translate to contemporary modular workflow. **You experience music history through modern tools.**
+
+
+---
+
 ---
 
 ## Progressive Patch Examples
@@ -400,7 +421,7 @@
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Castor & Pollux fundamentals:** Master vintage DCO synthesis, web editor, and mode switching
@@ -435,22 +456,6 @@
 - **Hybrid Vintage Processing:** Bridge between organic, chaotic, algorithmic, and mathematical vintage control
 - **Creative Vintage Direction:** Guide sophisticated systems toward vintage musical expression
 
----
-
-## Why This Module Rocks
-
-### **The Philosophy:**
-Castor & Pollux II represents the **perfect bridge between vintage and modern** - authentic Juno-106 character with contemporary convenience. Unlike simple oscillator recreations, this module captures the complete DCO experience including the quirks, characteristics, and musical behavior that made the Juno legendary. **The web editor integration means you get vintage soul with modern flexibility.**
-
-### **Perfect For:**
-- **80s music enthusiasts** seeking authentic Juno character in modular format
-- **Modern producers** wanting vintage sounds with contemporary modular integration
-- **Space-conscious builders** needing multiple oscillator functions in reasonable HP
-- **Performance musicians** requiring reliable vintage sounds with modern stability
-- **Phase 2 system builders** adding vintage character to intelligent modular ecosystems
-
-### **The Vintage-Modern Experience:**
-Using Castor & Pollux II teaches you about both **vintage synthesis philosophy and modern modular integration**. The authentic DCO behavior shows you why the Juno became legendary, while the web editor and CV control reveal how vintage concepts translate to contemporary modular workflow. **You experience music history through modern tools.**
 
 ---
 

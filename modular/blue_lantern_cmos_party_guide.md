@@ -1132,40 +1132,6 @@ Understanding which frequency combinations create musical vs experimental result
 
 ---
 
-## Pairs Well With
-
-### **Essential Logic Partners:**
-- **Clock Sources:** Provide timing references for logic operations and pattern generation
-- **Step Sequencers:** Logic outputs create multiple related clock sources for complex sequence programming
-- **Probability Modules:** Random sources fed through logic create evolving pattern behavior and controlled chaos
-- **Clock Dividers:** Provide mathematical timing relationships for logic input sources
-
-### **Advanced Pattern Integration:**
-- **Euclidean Sequencers:** Mathematical patterns enhanced by boolean logic for complex polyrhythmic relationships
-- **Turing Machine:** Binary pattern sources perfect for logic processing and pattern evolution
-- **Marbles:** Probability-based patterns processed through logic for sophisticated pattern generation
-- **Wogglebug:** Chaotic sources tamed and organized through logical operations
-
-### **Audio Rate Applications:**
-- **Square Wave Oscillators:** Audio rate sources for harmonic logic processing and digital synthesis
-- **Ring Modulators:** Compare logic-based ring modulation with traditional analog ring modulation
-- **Digital Filters:** Logic-controlled filtering for dynamic harmonic manipulation and processing
-- **Granular Processors:** Logic outputs control granular parameters for evolving textural processing
-
-### **System Utility Applications:**
-- **Multiple Logic Modules:** Chain several CMOS Party modules for advanced boolean algebra operations
-- **Sequential Switches:** Route logic outputs to different destinations for pattern variation and complexity
-- **Sample & Hold:** Capture logic states for creating stepped control voltages and quantized modulation
-- **Performance Mixers:** Real-time control over logic output levels and routing for expressive logic manipulation
-
-### **Recording and Production:**
-- **DAW Integration:** Logic outputs provide mathematically related timing for multi-track recording
-- **Pattern Libraries:** Document logic combinations for reproducible pattern generation and composition
-- **Automation Control:** Logic outputs control DAW automation for dynamic arrangement evolution
-- **Sound Design:** Audio rate logic processing for creating unique digital synthesis textures
-
----
-
 ## Common Mistakes and How to Avoid Them
 
 ### "The logic isn't working - nothing comes out of any output!"
@@ -1343,6 +1309,7 @@ Understanding which frequency combinations create musical vs experimental result
 
 **The deeper pattern:** CMOS Party teaches pure boolean logic - the foundation of all digital music technology. Issues with CMOS Party usually reveal gaps in understanding digital principles: logic levels, truth tables, binary thinking, deterministic behavior. This utility is teaching you how sequencers, drum machines, digital synthesis, and computers actually make decisions at the most fundamental level.
 
+
 ---
 
 ## Pro Tips
@@ -1377,34 +1344,60 @@ Understanding which frequency combinations create musical vs experimental result
 - **Audio rate stability:** CD4000 chips handle audio rates reliably - explore synthesis applications
 - **Power consistency:** CMOS logic provides stable operation - ideal for critical timing applications
 
+
+
 ---
 
-## Why This Module Rocks
+## Advanced Learning Path
 
-### **The Philosophy:**
-Blue Lantern CMOS Party brings **pure boolean logic education** into the modular world with the simple invitation to "remember my first logic module." It's designed for exploration and learning rather than complexity, making digital logic concepts accessible and musical.
+**Boolean logic is universal. CMOS Party is the hands-on way to internalize it — these operations appear everywhere in modular synthesis and beyond.**
 
-### **The Technical Excellence:**
-- **Complete logic operation set:** AND, NAND, NOR, XOR, OR plus inverted outputs provide every standard boolean operation
-- **CD4000 CMOS reliability:** Classic logic ICs offer stable, predictable operation with distinctive sonic character
-- **No latency processing:** Instant response enables real-time performance and audio rate applications
-- **Audio rate capability:** DC to audio frequency operation opens synthesis and processing applications
+1. **Start with one operation at a time.** AND, OR, and NOT are the three primitives everything else is built from. Spend a session with only AND — understand what happens at all four input combinations (low/low, low/high, high/low, high/high) before moving to OR. Do not jump to XOR until the simpler operations are intuitive.
 
-### **The Innovation:**
-- **Comprehensive boolean coverage:** All standard logic operations in one compact 4HP module
-- **Educational approach:** "First logic module" philosophy makes digital concepts approachable
-- **Dual-domain operation:** Equally capable with slow clocks or audio rate signals
-- **Pure digital character:** Embraces CMOS logic aesthetic without trying to hide digital nature
+2. **Work with truth tables as documentation.** Every logic operation has a truth table with four rows. Write it out physically for each gate you use. This is not busywork — it makes the module's behavior predictable and eliminates guesswork when patches don't behave as expected.
 
-### **Perfect For:**
-- **Logic beginners:** "I remember my first logic module" - designed for learning and exploration
-- **Pattern enthusiasts:** Transform simple patterns into complex polyrhythmic relationships
-- **Digital synthesis explorers:** Audio rate logic processing for unique harmonic generation
-- **System integrators:** Essential utility for clock manipulation and trigger processing
-- **Anyone wanting comprehensive logic:** Complete boolean operation set in minimal space
+3. **Study NAND and NOR as the universal gates.** NAND and NOR alone can implement any boolean function — they're called "universal gates" because of this. Understanding why this is true is one of the more mind-expanding concepts in digital logic and directly applicable to building complex behavior from simple modules.
 
-### **The Magic:**
-CMOS Party proves that **fundamental digital concepts can be immediately musical**. Boolean logic isn't abstract mathematics - it's a direct way to create rhythmic relationships, generate patterns, and process audio that connects digital theory with musical practice in the most direct way possible.
+4. **Use XOR as a rhythmic subtraction tool.** XOR outputs HIGH when the inputs differ. This means it produces output on beats where only one of two rhythmic patterns fires — effectively computing the rhythmic difference between two patterns. This technique is not obvious from the module description but is practically very useful.
+
+5. **Experiment with audio rate inputs.** Feeding audio-frequency signals into the logic gates creates digital waveshaping and ring modulation-adjacent effects. The CMOS character adds harmonic content distinct from analog waveshaping. Explore this domain only after the CV/gate domain is fully understood.
+
+6. **Build a patch using only boolean logic for all rhythmic relationships.** No clock dividers, no euclidean sequencers — just clock inputs and logic operations. The rhythmic complexity achievable from AND, OR, XOR, and NOT alone is the best demonstration of how fundamental these operations are.
+
+
+---
+
+## Pairs Well With
+
+### **Essential Logic Partners:**
+- **Clock Sources:** Provide timing references for logic operations and pattern generation
+- **Step Sequencers:** Logic outputs create multiple related clock sources for complex sequence programming
+- **Probability Modules:** Random sources fed through logic create evolving pattern behavior and controlled chaos
+- **Clock Dividers:** Provide mathematical timing relationships for logic input sources
+
+### **Advanced Pattern Integration:**
+- **Euclidean Sequencers:** Mathematical patterns enhanced by boolean logic for complex polyrhythmic relationships
+- **Turing Machine:** Binary pattern sources perfect for logic processing and pattern evolution
+- **Marbles:** Probability-based patterns processed through logic for sophisticated pattern generation
+- **Wogglebug:** Chaotic sources tamed and organized through logical operations
+
+### **Audio Rate Applications:**
+- **Square Wave Oscillators:** Audio rate sources for harmonic logic processing and digital synthesis
+- **Ring Modulators:** Compare logic-based ring modulation with traditional analog ring modulation
+- **Digital Filters:** Logic-controlled filtering for dynamic harmonic manipulation and processing
+- **Granular Processors:** Logic outputs control granular parameters for evolving textural processing
+
+### **System Utility Applications:**
+- **Multiple Logic Modules:** Chain several CMOS Party modules for advanced boolean algebra operations
+- **Sequential Switches:** Route logic outputs to different destinations for pattern variation and complexity
+- **Sample & Hold:** Capture logic states for creating stepped control voltages and quantized modulation
+- **Performance Mixers:** Real-time control over logic output levels and routing for expressive logic manipulation
+
+### **Recording and Production:**
+- **DAW Integration:** Logic outputs provide mathematically related timing for multi-track recording
+- **Pattern Libraries:** Document logic combinations for reproducible pattern generation and composition
+- **Automation Control:** Logic outputs control DAW automation for dynamic arrangement evolution
+- **Sound Design:** Audio rate logic processing for creating unique digital synthesis textures
 
 ---
 

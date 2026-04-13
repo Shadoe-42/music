@@ -28,39 +28,6 @@
 4. **Select curve type** - Toggle between Linear (LIN) and Exponential (XPO) - XPO sounds more natural
 5. **Choose your realm** - Set Mode to position 1 (Unquantized) for smooth response
 
----
-
-## Why This Instrument Excels
-
-### **The Philosophy:**
-**Texture over functionality.** The Afterneath doesn't try to be a "clean" reverb or a "natural" spatial effect; it's designed to transform audio into otherworldly, warped, and ambient textures. The signature Drag parameter makes the internal reverb architecture visible and manipulable in real-time, turning reverb processing into a performance instrument.
-
-### **The Innovation:**
-- **Drag parameter:** Separates delay lines for stuttering, pitch-shifting, and warped textures impossible with conventional reverbs
-- **9 operational modes:** From smooth unquantized response to quantized scales that impose musical structure on reverb tails
-- **Comprehensive CV control:** Every parameter CV-controllable with dedicated inverting attenuators for complex modulation
-- **Reflect send/return loop:** External processing can shape the reverb feedback path in real-time
-- **Self-oscillation capability:** The reverb can become a pitched oscillator, expanding beyond traditional effects territory
-
-### **The Practical Benefits:**
-- **Instant texture generation:** Even subtle Drag modulation transforms ordinary audio into extraordinary soundscapes
-- **Performance instrument:** Real-time CV control allows Afterneath to evolve and respond rather than sit static
-- **Educational transparency:** The Drag parameter teaches how reverb algorithms actually work; you can hear the mechanics
-- **Dual functionality:** Works as both traditional reverb processor AND sound design generator
-- **Integration flexibility:** External loop allows Afterneath to become part of larger processing chains
-
-### **Perfect For:**
-- **Ambient musicians:** The core use case; generating evolving, spacious textures
-- **Experimental musicians:** Drag modulation and self-oscillation create sounds outside conventional music
-- **Effects processors:** Essential for transforming raw audio into characterized sound
-- **Texture designers:** CV modulation creates evolution impossible with static settings
-- **Performance artists:** Real-time CV control enables expressive effect processing
-
-### **The Magic:**
-Afterneath proves that **effects can be instruments.** The Drag parameter isn't just a tone control; it's a window into reverb design itself. When you turn Drag while audio plays, you're experiencing how delay separation creates texture. The 9 modes teach you that structure can emerge from mathematical relationships. The self-oscillation shows that boundaries between "effect" and "oscillator" are arbitrary.
-
-### **Historical Significance:**
-The Afterneath module represents a successful pedal-to-Eurorack translation that doesn't just reproduce the original; it expands the concept. It demonstrated that guitar effects companies understood modular synthesis deeply enough to create tools that teach synthesis principles, not just copy pedal functions.
 
 ---
 
@@ -99,6 +66,44 @@ The Afterneath module represents a successful pedal-to-Eurorack translation that
 - **Mode 7: Pentatonic Scale** - 5-note always-musical scale
 - **Mode 8: Octaves & Fifths** - Only perfect consonances
 - **Mode 9: Octaves** - Pure octave relationships only
+
+
+---
+
+## Why This Instrument Excels
+
+### **The Philosophy:**
+**Texture over functionality.** The Afterneath doesn't try to be a "clean" reverb or a "natural" spatial effect; it's designed to transform audio into otherworldly, warped, and ambient textures. The signature Drag parameter makes the internal reverb architecture visible and manipulable in real-time, turning reverb processing into a performance instrument.
+
+### **The Innovation:**
+- **Drag parameter:** Separates delay lines for stuttering, pitch-shifting, and warped textures impossible with conventional reverbs
+- **9 operational modes:** From smooth unquantized response to quantized scales that impose musical structure on reverb tails
+- **Comprehensive CV control:** Every parameter CV-controllable with dedicated inverting attenuators for complex modulation
+- **Reflect send/return loop:** External processing can shape the reverb feedback path in real-time
+- **Self-oscillation capability:** The reverb can become a pitched oscillator, expanding beyond traditional effects territory
+
+### **The Practical Benefits:**
+- **Instant texture generation:** Even subtle Drag modulation transforms ordinary audio into extraordinary soundscapes
+- **Performance instrument:** Real-time CV control allows Afterneath to evolve and respond rather than sit static
+- **Educational transparency:** The Drag parameter teaches how reverb algorithms actually work; you can hear the mechanics
+- **Dual functionality:** Works as both traditional reverb processor AND sound design generator
+- **Integration flexibility:** External loop allows Afterneath to become part of larger processing chains
+
+### **Perfect For:**
+- **Ambient musicians:** The core use case; generating evolving, spacious textures
+- **Experimental musicians:** Drag modulation and self-oscillation create sounds outside conventional music
+- **Effects processors:** Essential for transforming raw audio into characterized sound
+- **Texture designers:** CV modulation creates evolution impossible with static settings
+- **Performance artists:** Real-time CV control enables expressive effect processing
+
+### **The Magic:**
+Afterneath proves that **effects can be instruments.** The Drag parameter isn't just a tone control; it's a window into reverb design itself. When you turn Drag while audio plays, you're experiencing how delay separation creates texture. The 9 modes teach you that structure can emerge from mathematical relationships. The self-oscillation shows that boundaries between "effect" and "oscillator" are arbitrary.
+
+### **Historical Significance:**
+The Afterneath module represents a successful pedal-to-Eurorack translation that doesn't just reproduce the original; it expands the concept. It demonstrated that guitar effects companies understood modular synthesis deeply enough to create tools that teach synthesis principles, not just copy pedal functions.
+
+
+---
 
 ---
 
@@ -290,6 +295,24 @@ The Afterneath module represents a successful pedal-to-Eurorack translation that
 - **Budget alternatives:** **Doepfer A-138** series for mixing and multiples, **AI Synthesis AI006** for DIY mixing approach
 - **External processing:** **FX Aid Pro** for comprehensive effects, **Mutable Clouds** for granular processing, **Erica Synths effects** for diverse character
 - **Advanced routing:** **Expert Sleepers ES-9** for computer integration, **4ms Listen IO** for professional I/O, **Make Noise Rosie** for headphone monitoring
+
+---
+
+## Advanced Learning Path
+
+**Afterneath is disorienting at first because it doesn't behave like reverb. Approach it as an instrument, not an effect.**
+
+1. **Start in one unquantized mode and learn its specific behavior.** The nine modes are nine distinct instruments. Pick one — Mode 1 is the most accessible starting point — and spend real time with just that mode before rotating through the others. Rotating through all nine immediately will produce confusion, not understanding.
+
+2. **Learn what DRAG actually controls before touching SIZE.** DRAG is the parameter that sets Afterneath apart from every other reverb. Understanding that it controls the speed of energy circulation inside the reverb network — not feedback or decay in the conventional sense — changes how you use every other control.
+
+3. **Use LENGTH to find the threshold between reverb and resonator.** Short LENGTH values turn the algorithm into a short pitch resonator. Sweep LENGTH while playing a held note and listen to where the character crosses from spatial effect to pitched drone. This threshold is a productive creative zone.
+
+4. **Add CV to DRAG for continuous mode-like behavior.** A slow LFO or envelope on DRAG creates continuous timbral shifting. This is more useful than switching modes mid-patch and reveals the continuous nature of the underlying algorithm.
+
+5. **Study the Reflect loop as a feedback path.** Patching the output back to the Reflect input creates feedback loops that compound the spatial complexity. This requires careful gain staging — approach incrementally and monitor levels.
+
+6. **Explore the quantized scale modes for melodic ambient work.** Once the unquantized modes are familiar, the scale-quantized modes (Modes 5–9) allow generating pitched content from noise or attack transients. These modes blur the line between reverb and pitch processing entirely.
 
 ---
 

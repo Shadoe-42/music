@@ -102,6 +102,39 @@ The "harmonic" control structure is what sets Mob of Emus apart from other multi
 ### **Why This Matters:**
 Instead of randomly setting six channels, you can instantly access **thousands of years** of musical knowledge about what frequency relationships sound good together!
 
+
+---
+
+## Why This Module Rocks
+
+### **The Philosophy:**
+Mob of Emus brings **musical mathematics** into the modular world. Instead of six random channels, you get six channels that understand harmonic relationships, making complex music theory accessible through simple knob turns.
+
+### **The Innovation:**
+- **Harmonic control structure** makes additive synthesis and polyrhythms effortless
+- **15 preset harmonic series** provide instant access to musical relationships
+- **Hex Mode macro layer** maintains musical relationships while adding variation
+- **Six channels, unlimited combinations** - oscillators, LFOs, envelopes, patterns, quantizers
+
+### **The Practical Benefits:**
+- **Replaces multiple modules:** Six oscillators, six LFOs, six envelopes, six quantizers in 16HP
+- **Musical intelligence:** Harmonic relationships ensure results sound musical
+- **Performance-oriented:** Real-time control over complex harmonic and rhythmic relationships
+- **Educational value:** Learn music theory through hands-on harmonic exploration
+
+### **Perfect For:**
+- **Additive synthesis enthusiasts:** Easy access to complex harmonic timbres
+- **Polyrhythm explorers:** Mathematical relationships create intricate rhythmic patterns
+- **Modulation masters:** Six related but different modulation sources
+- **Anyone wanting musical complexity:** Instant access to thousands of years of harmonic knowledge
+- **Small system builders:** Enormous functionality in compact 16HP
+
+### **The Magic:**
+Mob of Emus proves that **mathematical beauty** and **musical intuition** can work together. The harmonic series has been the foundation of music for millennia - now you can explore it directly, hear it instantly, and use it creatively in ways never before possible.
+
+
+---
+
 ---
 
 ## Beginner Patch Ideas
@@ -614,6 +647,24 @@ This represents **complete mathematical harmony mastery** - where mathematical f
 
 ---
 
+## Advanced Learning Path
+
+**Mob of Emus is a deep instrument. Understand the harmonic series as a concept first; the controls will make sense from there.**
+
+1. **Start with a single oscillator in simple mode.** Run WAVE mode with a saw wave, tune it to a root, and listen to how the 15 harmonic series presets change the spectral structure. The goal here is not technique — it's hearing what harmonic ratios do to timbre. This is the foundation everything else rests on.
+
+2. **Understand the difference between WAVE, ENV, and PAT modes.** These three modes change what the six-oscillator bank does — static timbre, envelope-driven dynamics, and euclidean gate patterns respectively. They're three separate instruments sharing one module. Master each independently.
+
+3. **Use PAT mode as a polyrhythmic gate source.** The euclidean gate outputs in PAT mode can drive envelopes, VCAs, or other modules rather than producing audio. Patching the gate outputs to external destinations turns the Mob of Emus into a rhythmic control center — this is one of its most underused capabilities.
+
+4. **Study the HARM# / SERIES control to understand preset harmonic relationships.** The 15 preset series are not random — they correspond to specific acoustic and mathematical harmonic structures (odd harmonics, just intonation, etc.). Identifying which series sounds like what, and why, makes the module navigable without always consulting the manual.
+
+5. **Explore the quantizer function.** Mob of Emus can quantize external CV to its current harmonic series. This turns it into a pitch quantizer that maps incoming notes to harmonically related intervals — a technique that creates melodic coherence across multiple CV sources in a generative patch.
+
+6. **Build a complete self-contained harmonic voice.** Use Mob of Emus as the only sound source in a patch: V/OCT in → ENV mode → filter and VCA out. If the harmonic content reads as an interesting and controlled voice, the module is understood at depth.
+
+---
+
 ## Pairs Well With
 
 ### **Phase 2 Module Synergies (Modulation & CV Sources):**
@@ -700,34 +751,6 @@ This represents **complete mathematical harmony mastery** - where mathematical f
 - **Hard left:** All frequencies converge to Channel 1 (dramatic effect)
 - **Moderate right:** Frequency shifting for complex timbres
 
----
-
-## Why This Module Rocks
-
-### **The Philosophy:**
-Mob of Emus brings **musical mathematics** into the modular world. Instead of six random channels, you get six channels that understand harmonic relationships, making complex music theory accessible through simple knob turns.
-
-### **The Innovation:**
-- **Harmonic control structure** makes additive synthesis and polyrhythms effortless
-- **15 preset harmonic series** provide instant access to musical relationships
-- **Hex Mode macro layer** maintains musical relationships while adding variation
-- **Six channels, unlimited combinations** - oscillators, LFOs, envelopes, patterns, quantizers
-
-### **The Practical Benefits:**
-- **Replaces multiple modules:** Six oscillators, six LFOs, six envelopes, six quantizers in 16HP
-- **Musical intelligence:** Harmonic relationships ensure results sound musical
-- **Performance-oriented:** Real-time control over complex harmonic and rhythmic relationships
-- **Educational value:** Learn music theory through hands-on harmonic exploration
-
-### **Perfect For:**
-- **Additive synthesis enthusiasts:** Easy access to complex harmonic timbres
-- **Polyrhythm explorers:** Mathematical relationships create intricate rhythmic patterns
-- **Modulation masters:** Six related but different modulation sources
-- **Anyone wanting musical complexity:** Instant access to thousands of years of harmonic knowledge
-- **Small system builders:** Enormous functionality in compact 16HP
-
-### **The Magic:**
-Mob of Emus proves that **mathematical beauty** and **musical intuition** can work together. The harmonic series has been the foundation of music for millennia - now you can explore it directly, hear it instantly, and use it creatively in ways never before possible.
 
 ---
 

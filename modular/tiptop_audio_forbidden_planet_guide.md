@@ -344,7 +344,7 @@ Forbidden Planet brings the legendary Steiner-Parker Synthacon filter - one of t
 
 ---
 
-## Phase 2 Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Forbidden Planet fundamentals:** Master all three inputs and understand legendary analog filter character

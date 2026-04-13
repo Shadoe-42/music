@@ -75,6 +75,54 @@ Data uses a screen-based digital interface (rotary encoder + softkeys), which is
 - **Why it's useful:** See the harmonic content of complex sounds, spot problem frequencies
 - **Musical application:** Perfect for analyzing FM tones, filter responses, distortion
 
+
+---
+
+## Why This Module Rocks
+
+### **The Philosophy:**
+Mordax Data represents **visual understanding of electronic music** - transforming invisible electrical signals into comprehensible visual information. It proves that **seeing is understanding**, making the abstract world of voltage and frequency tangible and educational.
+
+### **The Utility Philosophy:**
+Data's design philosophy is radical: **analysis and measurement as creative tools**. Unlike creative modules that generate sound, Data generates *understanding*. This distinction is crucial. Most synthesizers teach you to manipulate sound; Data teaches you to *see* sound - to understand the invisible relationships that make synthesis work. Mastery comes from understanding, not just technique. Data accelerates this mastery by removing the guesswork from electronics.
+
+**This means:**
+- Data isn't a voice or effect processor; it's your X-ray machine for modular synthesis
+- Its value multiplies as your system grows complex; more modules need more understanding, not more modules
+- Using Data transforms experimentation from "did that sound different?" to "here's exactly what changed and why"
+- It teaches principles (filter behavior, harmonic relationships, timing precision) that transfer across all synthesis, not just this module
+
+### **The Innovation:**
+- **Six complete analysis tools** in one module - oscilloscope, spectrum analyzer, tuner, generator, voltmeter, clock
+- **Real-time visual feedback** makes learning modular synthesis intuitive and immediate
+- **Professional-grade measurement** with studio-quality precision and accuracy
+- **Educational design** where every function teaches you something about your system
+- **Dual functionality** - analysis and generation in one comprehensive package
+
+### **The Practical Benefits:**
+- **X-ray vision for your system:** See exactly what every module is actually doing
+- **Perfect tuning and timing:** Achieve musical accuracy impossible with just your ears
+- **Troubleshooting mastery:** Spot problems immediately through visual analysis
+- **Learning acceleration:** Understand synthesis concepts through direct visual feedback
+- **Professional results:** Studio-grade analysis and measurement capabilities
+
+### **Perfect For:**
+- **Anyone learning modular synthesis:** Visual feedback accelerates understanding
+- **Electronic musicians:** Perfect tuning and timing for professional results
+- **Sound designers:** Analyze complex harmonic interactions and spectral content
+- **System builders:** Troubleshoot and optimize system performance
+- **Educators:** Teach synthesis concepts through immediate visual demonstration
+- **Advanced module enthusiasts:** Understand how organic, chaos, and pattern generation actually work
+
+### **The Magic:**
+Data **democratizes professional analysis** - giving everyone access to studio-grade measurement and visualization tools. Whether you're learning your first patch or designing complex systems, Data reveals the invisible world of electronic music.
+
+### **Advanced Integration Power:**
+As the **analysis engine of Advanced ecosystems**, Data reveals the true behavior of organic breathing, controlled chaos, sophisticated pattern generation, and mathematical processing. **You see exactly how electronic intelligence actually works.**
+
+
+---
+
 ---
 
 ## Beginner Patch Ideas
@@ -336,49 +384,6 @@ Data shows how foundational modules create synthesis principles:
 
 **The Principle:** Data isn't just another module; it's the analysis layer that transforms a collection of individual modules into a unified, understandable system.
 
----
-
-## Why This Module Rocks
-
-### **The Philosophy:**
-Mordax Data represents **visual understanding of electronic music** - transforming invisible electrical signals into comprehensible visual information. It proves that **seeing is understanding**, making the abstract world of voltage and frequency tangible and educational.
-
-### **The Utility Philosophy:**
-Data's design philosophy is radical: **analysis and measurement as creative tools**. Unlike creative modules that generate sound, Data generates *understanding*. This distinction is crucial. Most synthesizers teach you to manipulate sound; Data teaches you to *see* sound - to understand the invisible relationships that make synthesis work. Mastery comes from understanding, not just technique. Data accelerates this mastery by removing the guesswork from electronics.
-
-**This means:**
-- Data isn't a voice or effect processor; it's your X-ray machine for modular synthesis
-- Its value multiplies as your system grows complex; more modules need more understanding, not more modules
-- Using Data transforms experimentation from "did that sound different?" to "here's exactly what changed and why"
-- It teaches principles (filter behavior, harmonic relationships, timing precision) that transfer across all synthesis, not just this module
-
-### **The Innovation:**
-- **Six complete analysis tools** in one module - oscilloscope, spectrum analyzer, tuner, generator, voltmeter, clock
-- **Real-time visual feedback** makes learning modular synthesis intuitive and immediate
-- **Professional-grade measurement** with studio-quality precision and accuracy
-- **Educational design** where every function teaches you something about your system
-- **Dual functionality** - analysis and generation in one comprehensive package
-
-### **The Practical Benefits:**
-- **X-ray vision for your system:** See exactly what every module is actually doing
-- **Perfect tuning and timing:** Achieve musical accuracy impossible with just your ears
-- **Troubleshooting mastery:** Spot problems immediately through visual analysis
-- **Learning acceleration:** Understand synthesis concepts through direct visual feedback
-- **Professional results:** Studio-grade analysis and measurement capabilities
-
-### **Perfect For:**
-- **Anyone learning modular synthesis:** Visual feedback accelerates understanding
-- **Electronic musicians:** Perfect tuning and timing for professional results
-- **Sound designers:** Analyze complex harmonic interactions and spectral content
-- **System builders:** Troubleshoot and optimize system performance
-- **Educators:** Teach synthesis concepts through immediate visual demonstration
-- **Advanced module enthusiasts:** Understand how organic, chaos, and pattern generation actually work
-
-### **The Magic:**
-Data **democratizes professional analysis** - giving everyone access to studio-grade measurement and visualization tools. Whether you're learning your first patch or designing complex systems, Data reveals the invisible world of electronic music.
-
-### **Advanced Integration Power:**
-As the **analysis engine of Advanced ecosystems**, Data reveals the true behavior of organic breathing, controlled chaos, sophisticated pattern generation, and mathematical processing. **You see exactly how electronic intelligence actually works.**
 
 ---
 

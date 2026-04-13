@@ -63,6 +63,27 @@
 - **X button:** Voltage memory (melodies repeat/evolve)
 - **Both/neither:** Different combinations create different behaviors
 
+
+---
+
+## Why This Module Rocks
+
+### **The Philosophy:**
+Marbles represents a revolutionary approach to musical randomness - **sophisticated algorithms applied to music creation**. Unlike pure random generators, Marbles uses probability distributions and memory systems to create patterns that sound musical, but **you are still the creative director**. The module responds to your input and settings to create the musical results you guide it toward.
+
+### **Perfect For:**
+- **Electronic producers** seeking intelligent, evolving sequences that never get boring
+- **Ambient musicians** creating long-form generative compositions with slow development
+- **Live performers** who want an AI collaborator that responds to musical context
+- **Experimental composers** exploring machine learning in musical composition
+- **Advanced system builders** creating multi-module pattern generation ecosystems
+
+### **The Learning Experience:**
+Using Marbles teaches you about your own musical preferences by showing you patterns in new ways. As you adjust the DEJA VU and other parameters, you discover which probability distributions and pattern repetitions appeal to you musically. **You guide the system** - it doesn't learn independently, but responds to your creative direction. It's a sophisticated tool for musical exploration.
+
+
+---
+
 ---
 
 ## Progressive Patch Examples
@@ -341,22 +362,6 @@
 - **The further right, the more "musical"** it becomes
 - **Far right = Only root notes** - very consonant but potentially boring
 
----
-
-## Why This Module Rocks
-
-### **The Philosophy:**
-Marbles represents a revolutionary approach to musical randomness - **sophisticated algorithms applied to music creation**. Unlike pure random generators, Marbles uses probability distributions and memory systems to create patterns that sound musical, but **you are still the creative director**. The module responds to your input and settings to create the musical results you guide it toward.
-
-### **Perfect For:**
-- **Electronic producers** seeking intelligent, evolving sequences that never get boring
-- **Ambient musicians** creating long-form generative compositions with slow development
-- **Live performers** who want an AI collaborator that responds to musical context
-- **Experimental composers** exploring machine learning in musical composition
-- **Advanced system builders** creating multi-module pattern generation ecosystems
-
-### **The Learning Experience:**
-Using Marbles teaches you about your own musical preferences by showing you patterns in new ways. As you adjust the DEJA VU and other parameters, you discover which probability distributions and pattern repetitions appeal to you musically. **You guide the system** - it doesn't learn independently, but responds to your creative direction. It's a sophisticated tool for musical exploration.
 
 ---
 
