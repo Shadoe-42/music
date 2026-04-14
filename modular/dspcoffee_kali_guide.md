@@ -2,7 +2,7 @@
 title: DSPcoffee Kali
 manufacturer: DSPcoffee
 primary_role: SHAPER
-secondary_roles: [MODULATOR]
+secondary_roles: MODULATOR
 hp: 24
 ---
 
