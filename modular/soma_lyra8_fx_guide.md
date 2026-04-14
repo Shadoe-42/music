@@ -3,6 +3,7 @@ title: Soma Lyra-8 FX
 manufacturer: Soma Laboratory
 primary_role: SHAPER
 secondary_roles: []
+hp: 20
 ---
 
 # Soma Lyra8-FX - Beginner's Guide
