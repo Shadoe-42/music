@@ -1,3 +1,11 @@
+---
+title: 4ms SCM Plus
+manufacturer: 4ms Company
+primary_role: CONTROLLER
+secondary_roles: []
+hp: 12
+---
+
 # 4ms SCM Plus - Guide
 
 **The Swiss Army Knife of Clock Manipulation**

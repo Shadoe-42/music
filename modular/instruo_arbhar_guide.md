@@ -1,3 +1,11 @@
+---
+title: Instruo Arbhar
+manufacturer: Instruo
+primary_role: SHAPER
+secondary_roles: [SOURCE]
+hp: 18
+---
+
 # Instruo Arbhar - Guide
 
 **The Granular Time Machine**

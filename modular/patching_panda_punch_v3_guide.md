@@ -1,3 +1,11 @@
+---
+title: Patching Panda Punch v3
+manufacturer: Patching Panda
+primary_role: MODULATOR
+secondary_roles: [AMPLIFIER]
+hp: 9
+---
+
 # Patching Panda Punch V3 - Beginner's Guide
 
 **The Ultimate VCA-Decay Module for Dynamic Percussion**

@@ -1,3 +1,11 @@
+---
+title: Patching Panda Moon Phase
+manufacturer: Patching Panda
+primary_role: MODULATOR
+secondary_roles: [SHAPER]
+hp: 14
+---
+
 # Patching Panda Moon Phase - Beginner's Guide
 
 ![Patching Panda Moon Phase](https://github.com/Shadoe-42/music/raw/main/modular/images/patching_panda/moon_phase/front_panel.jpg)

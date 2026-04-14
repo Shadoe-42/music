@@ -1,3 +1,11 @@
+---
+title: Intellijel MixUp
+manufacturer: Intellijel
+primary_role: AMPLIFIER
+secondary_roles: [ROUTER]
+hp: 6
+---
+
 # Intellijel Mixup - Guide
 
 **The Chainable Stereo Audio Utility Mixer**

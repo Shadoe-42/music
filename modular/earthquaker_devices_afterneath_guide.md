@@ -1,3 +1,11 @@
+---
+title: EarthQuaker Devices Afterneath
+manufacturer: EarthQuaker Devices
+primary_role: SHAPER
+secondary_roles: [SOURCE]
+hp: 16
+---
+
 # EarthQuaker Devices Afterneath - Guide
 
 **The Otherworldly Reverberation Machine - A Wizard in a Cave**

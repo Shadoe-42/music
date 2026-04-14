@@ -1,3 +1,11 @@
+---
+title: ALM Busy Circuits MCO ALM021
+manufacturer: ALM Busy Circuits
+primary_role: SOURCE
+secondary_roles: []
+hp: 6
+---
+
 # ALM Busy Circuits MCO ALM021 - Guide
 
 **The Compact Digital Wavetable Oscillator with Early 90s Character**

@@ -1,3 +1,11 @@
+---
+title: Blue Lantern CMOS Party
+manufacturer: Blue Lantern
+primary_role: ROUTER
+secondary_roles: [MODULATOR]
+hp: 4
+---
+
 # Blue Lantern CMOS Party - Guide
 
 **The Complete Boolean Logic Processor for Clock and Audio Rate Processing**

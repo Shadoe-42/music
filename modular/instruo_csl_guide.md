@@ -1,3 +1,11 @@
+---
+title: Instruo Cs-L
+manufacturer: Instruo
+primary_role: SOURCE
+secondary_roles: [SHAPER]
+hp: 20
+---
+
 # Instruo Cs-L - Beginner's Guide
 
 **The West Coast Synthesis Powerhouse**

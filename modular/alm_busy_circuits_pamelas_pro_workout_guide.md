@@ -1,3 +1,14 @@
+---
+title: ALM Busy Circuits Pamela's PRO Workout
+manufacturer: ALM Busy Circuits
+primary_role: CONTROLLER
+secondary_roles: [MODULATOR]
+memory: full
+transport: receive
+screen: true
+hp: 8
+---
+
 # ALM Busy Circuits Pamela's PRO Workout Guide
 
 **Module:** ALM034 Pamela's PRO Workout  

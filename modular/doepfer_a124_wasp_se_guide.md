@@ -1,3 +1,11 @@
+---
+title: Doepfer A-124 Wasp SE
+manufacturer: Doepfer
+primary_role: SHAPER
+secondary_roles: [SOURCE]
+hp: 8
+---
+
 # Doepfer A-124 Wasp SE - Guide
 
 **The Aggressive Ladder Filter Beast**

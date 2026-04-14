@@ -1,3 +1,10 @@
+---
+title: Turing Machine Ecosystem
+manufacturer: Music Thing Modular
+primary_role: CONTROLLER
+secondary_roles: [SOURCE, MODULATOR]
+---
+
 # Music Thing Modular Turing Machine V2 Ecosystem - Guide
 
 **The Musical Chaos Generator and Expander System**

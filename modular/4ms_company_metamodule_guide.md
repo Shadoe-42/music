@@ -1,3 +1,15 @@
+---
+title: 4ms Company MetaModule
+manufacturer: 4ms Company
+primary_role: UTILITY
+secondary_roles: []
+memory: full
+transport: full
+screen: true
+hybrid: true
+hp: 26
+---
+
 # 4ms Company MetaModule - Guide
 
 **The Virtual Patch Player - Complete Modular System in 26HP**

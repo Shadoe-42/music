@@ -1,3 +1,11 @@
+---
+title: Erica Synths Black Envelope Generator 2
+manufacturer: Erica Synths
+primary_role: MODULATOR
+secondary_roles: []
+hp: 8
+---
+
 # Erica Synths Black Envelope Generator 2 - Guide
 
 ![Erica Synths Black Envelope Generator 2](https://github.com/Shadoe-42/music/raw/main/modular/images/erica_synths/black_eg2/front_panel.jpg)  

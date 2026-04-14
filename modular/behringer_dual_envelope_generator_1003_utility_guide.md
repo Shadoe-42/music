@@ -1,3 +1,11 @@
+---
+title: Behringer Dual Envelope Generator 1003
+manufacturer: Behringer
+primary_role: MODULATOR
+secondary_roles: []
+hp: 16
+---
+
 # Behringer Dual Envelope Generator 1003 - Utility Guide
 
 **Coordinated Dual ADSR System for Professional Voice Architecture**

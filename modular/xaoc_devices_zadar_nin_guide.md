@@ -1,3 +1,13 @@
+---
+title: Xaoc Devices Zadar + NIN
+manufacturer: Xaoc Devices
+primary_role: MODULATOR
+secondary_roles: []
+memory: basic
+screen: true
+hp: 10
+---
+
 # Xaoc Devices Zadar & NIN Guide
 
 **Quadruple Envelope Generator & Expander**  

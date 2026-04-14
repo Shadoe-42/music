@@ -1,3 +1,11 @@
+---
+title: Endorphin.es Squawk Dirty to Me
+manufacturer: Endorphin.es
+primary_role: SHAPER
+secondary_roles: [AMPLIFIER]
+hp: 6
+---
+
 # Endorphin.es Squawk Dirty to Me - Guide
 
 **The Stereo Filter Shapeshifter**

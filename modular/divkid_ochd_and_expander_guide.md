@@ -1,3 +1,11 @@
+---
+title: DivKid Ochd + Expander
+manufacturer: DivKid
+primary_role: MODULATOR
+secondary_roles: []
+hp: 8
+---
+
 # DivKid ochd + ochd Expander - Guide
 
 **The Ultimate 8HP Modulation Powerhouse**

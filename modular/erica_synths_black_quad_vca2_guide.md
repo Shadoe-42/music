@@ -1,3 +1,11 @@
+---
+title: Erica Synths Black Quad VCA2
+manufacturer: Erica Synths
+primary_role: AMPLIFIER
+secondary_roles: [ROUTER]
+hp: 10
+---
+
 # Erica Synths Black Quad VCA2 - Guide
 
 ![Erica Synths Black Quad VCA2](https://github.com/Shadoe-42/music/raw/main/modular/images/erica_synths/black_quad_vca/front_panel.jpg)  

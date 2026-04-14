@@ -1,3 +1,11 @@
+---
+title: Noise Engineering Loquelic Iteritas
+manufacturer: Noise Engineering
+primary_role: SOURCE
+secondary_roles: []
+hp: 10
+---
+
 # Noise Engineering Loquelic Iteritas - Beginner's Guide
 
 ![Noise Engineering Loquelic Iteritas](https://github.com/Shadoe-42/music/raw/main/modular/images/noise_engineering/loquelic_iteritas/front_panel.jpg)

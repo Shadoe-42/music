@@ -1,3 +1,11 @@
+---
+title: Intellijel Stomp
+manufacturer: Intellijel
+primary_role: ROUTER
+secondary_roles: [MODULATOR]
+hp: 6
+---
+
 # Intellijel Stomp - Guide
 
 **The Eurorack-to-Pedal Bridge with Expression Control**

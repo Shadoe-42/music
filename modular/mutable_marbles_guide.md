@@ -1,3 +1,11 @@
+---
+title: Mutable Instruments Marbles
+manufacturer: Mutable Instruments
+primary_role: MODULATOR
+secondary_roles: [SOURCE, CONTROLLER]
+hp: 18
+---
+
 # Mutable Instruments Marbles - Beginner's Guide
 
 ![Mutable Instruments Marbles](https://github.com/Shadoe-42/music/raw/main/modular/images/mutable_instruments/marbles/front_panel.jpg)

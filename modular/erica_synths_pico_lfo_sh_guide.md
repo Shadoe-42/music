@@ -1,3 +1,11 @@
+---
+title: Erica Synths Pico LFO SH
+manufacturer: Erica Synths
+primary_role: MODULATOR
+secondary_roles: [SOURCE]
+hp: 3
+---
+
 # Erica Synths Pico LFO/S&H - Guide
 
 **Essential Modulation in 3HP**

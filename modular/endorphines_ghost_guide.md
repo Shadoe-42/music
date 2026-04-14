@@ -1,3 +1,11 @@
+---
+title: Endorphin.es Ghost
+manufacturer: Endorphin.es
+primary_role: SHAPER
+secondary_roles: [ROUTER]
+hp: 16
+---
+
 # GHOST Module Guide
 **Endorphin.es × Andrew Huang | 16hp Multi-Dimensional Effects Processor | Firmware V3.0+**
 

@@ -1,3 +1,11 @@
+---
+title: Endorphin.es BLCK_NOIR
+manufacturer: Endorphin.es
+primary_role: SOURCE
+secondary_roles: [SHAPER]
+hp: 30
+---
+
 # Endorphin.es BLCK_NOIR Guide
 
 **Analog Drum Synthesizer**  

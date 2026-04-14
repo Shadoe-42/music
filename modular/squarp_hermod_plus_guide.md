@@ -1,3 +1,14 @@
+---
+title: Squarp Hermod+
+manufacturer: Squarp
+primary_role: CONTROLLER
+secondary_roles: [ROUTER]
+memory: full
+transport: full
+screen: true
+hp: 26
+---
+
 # Squarp Hermod+ - Beginner's Guide
 
 **The Modular System Brain**

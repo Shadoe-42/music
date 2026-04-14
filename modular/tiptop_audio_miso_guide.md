@@ -1,3 +1,11 @@
+---
+title: Tiptop Audio MISO
+manufacturer: Tiptop Audio
+primary_role: AMPLIFIER
+secondary_roles: [ROUTER]
+hp: 4
+---
+
 # Tiptop Audio Miso - Beginner's Guide
 
 **The CV Laboratory and Signal Sculptor**

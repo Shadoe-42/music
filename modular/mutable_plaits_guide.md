@@ -1,3 +1,11 @@
+---
+title: Mutable Instruments Plaits
+manufacturer: Mutable Instruments
+primary_role: SOURCE
+secondary_roles: [SHAPER]
+hp: 12
+---
+
 # Mutable Instruments Plaits - Beginner's Guide
 
 ![Mutable Instruments Plaits](https://github.com/Shadoe-42/music/raw/main/modular/images/mutable_instruments/plaits/front_panel.jpg)

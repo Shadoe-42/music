@@ -1,3 +1,11 @@
+---
+title: 4ms Rotating Clock Divider v2
+manufacturer: 4ms Company
+primary_role: CONTROLLER
+secondary_roles: [ROUTER]
+hp: 8
+---
+
 # 4ms Rotating Clock Divider V2 - Guide
 
 **The Polyrhythm Generator That Thinks Outside the Box**

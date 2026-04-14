@@ -1,3 +1,12 @@
+---
+title: Mordax Data
+manufacturer: Mordax
+primary_role: ANALYZER
+secondary_roles: []
+screen: true
+hp: 16
+---
+
 # Mordax Data - Beginner's Guide
 
 ![Mordax Data](https://github.com/Shadoe-42/music/raw/main/modular/images/mordax/data/front_panel.jpg)

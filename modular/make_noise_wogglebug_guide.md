@@ -1,3 +1,11 @@
+---
+title: Make Noise Wogglebug
+manufacturer: Make Noise
+primary_role: MODULATOR
+secondary_roles: [SOURCE]
+hp: 10
+---
+
 # Make Noise Wogglebug - Beginner's Guide
 
 ![Make Noise Wogglebug](https://github.com/Shadoe-42/music/raw/main/modular/images/make_noise/wogglebug/front_panel.jpg)

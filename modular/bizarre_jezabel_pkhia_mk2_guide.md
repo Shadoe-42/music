@@ -1,3 +1,11 @@
+---
+title: Bizarre Jezabel PKHIA MK2
+manufacturer: Bizarre Jezabel
+primary_role: SHAPER
+secondary_roles: []
+hp: 10
+---
+
 # Bizarre Jezabel Pkhia MK2 - Guide
 
 **The Analog Stereo Filter Sculptor**

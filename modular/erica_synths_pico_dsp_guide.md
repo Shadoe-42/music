@@ -1,3 +1,11 @@
+---
+title: Erica Synths Pico DSP
+manufacturer: Erica Synths
+primary_role: SHAPER
+secondary_roles: []
+hp: 3
+---
+
 # Erica Synths Pico DSP - Guide
 
 **Professional Effects Studio in 3HP**

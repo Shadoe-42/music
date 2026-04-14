@@ -1,3 +1,10 @@
+---
+title: VPME QD + QEX Euclidean Circles Ecosystem
+manufacturer: VPME
+primary_role: CONTROLLER
+secondary_roles: [SOURCE]
+---
+
 # VPME.de QD + QEX + Euclidean Circles V2 - Guide
 
 **The Analog Drum Synthesis + Mathematical Rhythm Ecosystem**

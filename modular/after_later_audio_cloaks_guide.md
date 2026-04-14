@@ -1,3 +1,11 @@
+---
+title: After Later Audio Cloaks
+manufacturer: After Later Audio
+primary_role: ROUTER
+secondary_roles: []
+hp: 10
+---
+
 # After Later Audio Cloaks - Guide
 
 **The Quad VCA and Voltage-Controlled Mixer**

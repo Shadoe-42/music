@@ -1,3 +1,11 @@
+---
+title: Noise Engineering Ruina Versio
+manufacturer: Noise Engineering
+primary_role: SHAPER
+secondary_roles: []
+hp: 10
+---
+
 # Noise Engineering Ruina Versio - Beginner's Guide
 
 ![Noise Engineering Ruina Versio](https://github.com/Shadoe-42/music/raw/main/modular/images/noise_engineering/ruina_versio/front_panel.jpg)

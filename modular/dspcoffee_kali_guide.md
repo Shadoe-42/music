@@ -1,3 +1,10 @@
+---
+title: DSPcoffee Kali
+manufacturer: DSPcoffee
+primary_role: SHAPER
+secondary_roles: []
+---
+
 # dsp.coffee Kali
 
 **32-bit stereo time-domain effects processor with 6 synchronized CV outputs, 4 effect modes, and 16+ LFO variants. Audio in, complex modulated sound out.**

@@ -1,3 +1,11 @@
+---
+title: 4ms Company Listen IO
+manufacturer: 4ms Company
+primary_role: UTILITY
+secondary_roles: [ROUTER]
+hp: 6
+---
+
 # 4ms Company Listen IO - Guide
 
 **The Essential Audio Interface for Modular Systems**

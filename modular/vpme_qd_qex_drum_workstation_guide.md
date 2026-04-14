@@ -1,3 +1,11 @@
+---
+title: VPME QD + QEX Drum Workstation
+manufacturer: VPME
+primary_role: SOURCE
+secondary_roles: [CONTROLLER, SHAPER]
+hp: 26
+---
+
 # VPME.de QD + QEX Drum Workstation - Guide
 
 **The Complete Professional Analog Drum Synthesis Workstation**

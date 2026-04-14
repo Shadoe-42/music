@@ -1,3 +1,11 @@
+---
+title: Cre8audio Chipz + Cellz + Niftycase Bundle
+manufacturer: Cre8audio
+primary_role: UTILITY
+secondary_roles: [SOURCE, CONTROLLER]
+hybrid: true
+---
+
 # Cre8audio Chipz + Cellz + NiftyCase Bundle - Complete Guide
 
 **The Ultimate Chiptune Performance System**

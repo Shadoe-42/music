@@ -1,3 +1,11 @@
+---
+title: Blue Lantern BLM Looping Simple ADSR v21
+manufacturer: Blue Lantern
+primary_role: MODULATOR
+secondary_roles: []
+hp: 7
+---
+
 # Blue Lantern Modules BLM Looping Simple ADSR v2.1 - Guide
 
 **The Digital ADSR Envelope Generator with Looping Capabilities**

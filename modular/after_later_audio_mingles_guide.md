@@ -1,3 +1,11 @@
+---
+title: After Later Audio Mingles
+manufacturer: After Later Audio
+primary_role: ROUTER
+secondary_roles: [AMPLIFIER, MODULATOR]
+hp: 12
+---
+
 # After Later Audio Mingles - Guide
 
 **Dual 3-Channel VC Panning Mixer with Integrated LFO**

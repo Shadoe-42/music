@@ -1,3 +1,11 @@
+---
+title: Cre8audio Cellz
+manufacturer: Cre8audio
+primary_role: CONTROLLER
+secondary_roles: [SOURCE]
+hp: 8
+---
+
 # Cre8audio Cellz - Guide
 
 **The Touch-Sensitive CV Playground**

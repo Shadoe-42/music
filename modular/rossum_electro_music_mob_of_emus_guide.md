@@ -1,3 +1,11 @@
+---
+title: Rossum Electro-Music Mob of Emus
+manufacturer: Rossum Electro-Music
+primary_role: SOURCE
+secondary_roles: [CONTROLLER]
+hp: 16
+---
+
 # Rossum Electro-Music Mob of Emus Beginner's Guide
 
 ![Rossum Electro-Music Mob of Emus](https://github.com/Shadoe-42/music/raw/main/modular/images/rossum_electro-music/mob_of_emus/front_panel.jpg)

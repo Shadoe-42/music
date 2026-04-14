@@ -1,3 +1,10 @@
+---
+title: Endorphin.es Queen of Pentacles
+manufacturer: Endorphin.es
+primary_role: SOURCE
+secondary_roles: [SHAPER]
+---
+
 # Endorphin.es Queen of Pentacles Guide
 
 **7-Voice Hybrid Drum Kit**  

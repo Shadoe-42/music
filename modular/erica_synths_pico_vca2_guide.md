@@ -1,3 +1,11 @@
+---
+title: Erica Synths Pico VCA2
+manufacturer: Erica Synths
+primary_role: AMPLIFIER
+secondary_roles: []
+hp: 3
+---
+
 # Erica Synths Pico VCA2 - Guide
 
 **The Compact Dual Linear VCA with Bias Control**

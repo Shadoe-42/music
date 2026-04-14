@@ -1,3 +1,13 @@
+---
+title: Expert Sleepers Disting MK4
+manufacturer: Expert Sleepers
+primary_role: UTILITY
+secondary_roles: []
+memory: basic
+screen: true
+hp: 4
+---
+
 # Disting mk4 - Guide
 *The Swiss Army Knife of Eurorack*
 

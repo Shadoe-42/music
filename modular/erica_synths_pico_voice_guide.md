@@ -1,3 +1,11 @@
+---
+title: Erica Synths Pico Voice
+manufacturer: Erica Synths
+primary_role: SOURCE
+secondary_roles: [SHAPER, AMPLIFIER]
+hp: 3
+---
+
 # Erica Synths Pico Voice - Beginner's Guide
 
 **8 Complete Synthesizers in 3HP**

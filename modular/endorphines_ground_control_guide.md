@@ -1,3 +1,14 @@
+---
+title: Endorphin.es Ground Control
+manufacturer: Endorphin.es
+primary_role: CONTROLLER
+secondary_roles: [MODULATOR]
+memory: full
+transport: receive
+screen: true
+hp: 42
+---
+
 # Endorphin.es Ground Control
 
 **42 HP polymetric/polyrhythmic performance sequencer with CV/MIDI/USB integration, pattern randomization, and CV modulation matrix.**

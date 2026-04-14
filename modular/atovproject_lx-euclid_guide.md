@@ -1,3 +1,12 @@
+---
+title: AtoVproject lx-euclid
+manufacturer: AtoVproject
+primary_role: CONTROLLER
+secondary_roles: []
+screen: true
+hp: 16
+---
+
 # AtoVproject lx-euclid Guide
 
 **4-Channel Euclidean Trigger Sequencer**  

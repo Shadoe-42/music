@@ -1,3 +1,11 @@
+---
+title: Cre8audio Function Junction
+manufacturer: Cre8audio
+primary_role: ROUTER
+secondary_roles: [MODULATOR]
+hp: 16
+---
+
 # Cre8audio Function Junction - Beginner's Guide
 
 **The Modulation Command Center**

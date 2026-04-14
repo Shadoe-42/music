@@ -1,3 +1,11 @@
+---
+title: Make Noise Maths
+manufacturer: Make Noise
+primary_role: MODULATOR
+secondary_roles: [SOURCE, SHAPER, ROUTER]
+hp: 20
+---
+
 # Make Noise Maths - Guide
 *The Swiss Army Knife of Eurorack*
 

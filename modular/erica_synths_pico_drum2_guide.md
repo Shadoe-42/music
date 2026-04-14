@@ -1,3 +1,11 @@
+---
+title: Erica Synths Pico Drum2
+manufacturer: Erica Synths
+primary_role: SOURCE
+secondary_roles: []
+hp: 3
+---
+
 # Erica Synths Pico DRUM2 - Guide
 
 **The 8-Algorithm Drum Synthesizer in 3HP**

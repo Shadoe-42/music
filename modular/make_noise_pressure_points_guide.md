@@ -1,3 +1,11 @@
+---
+title: Make Noise Pressure Points
+manufacturer: Make Noise
+primary_role: CONTROLLER
+secondary_roles: [SOURCE]
+hp: 24
+---
+
 # Make Noise Pressure Points - Guide
 
 ![Make Noise Pressure Points](https://github.com/Shadoe-42/music/raw/main/modular/images/make_noise/pressure_points/front_panel.jpg)

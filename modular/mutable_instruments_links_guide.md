@@ -1,3 +1,11 @@
+---
+title: Mutable Instruments Links
+manufacturer: Mutable Instruments
+primary_role: ROUTER
+secondary_roles: []
+hp: 4
+---
+
 # Mutable Instruments Links - Guide
 
 ![Mutable Instruments Links](https://github.com/Shadoe-42/music/raw/main/modular/images/mutable_instruments/links/front_panel.jpg)

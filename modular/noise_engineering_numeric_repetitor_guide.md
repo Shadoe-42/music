@@ -1,3 +1,11 @@
+---
+title: Noise Engineering Numeric Repetitor
+manufacturer: Noise Engineering
+primary_role: CONTROLLER
+secondary_roles: [MODULATOR]
+hp: 8
+---
+
 # Noise Engineering Numeric Repetitor - Beginner's Guide
 
 ![Noise Engineering Numeric Repetitor](https://github.com/Shadoe-42/music/raw/main/modular/images/noise_engineering/numeric_repetitor/front_panel.jpg)

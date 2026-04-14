@@ -1,3 +1,11 @@
+---
+title: Cre8audio Chipz
+manufacturer: Cre8audio
+primary_role: SOURCE
+secondary_roles: []
+hp: 12
+---
+
 # Cre8audio Chipz - Guide
 
 **The Lo-Fi Chiptune Powerhouse**

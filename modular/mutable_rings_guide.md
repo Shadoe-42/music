@@ -1,3 +1,11 @@
+---
+title: Mutable Instruments Rings
+manufacturer: Mutable Instruments
+primary_role: SOURCE
+secondary_roles: [SHAPER]
+hp: 14
+---
+
 # Mutable Instruments Rings - Beginner's Guide
 
 ![Mutable Instruments Rings](https://github.com/Shadoe-42/music/raw/main/modular/images/mutable_instruments/rings/front_panel.jpg)

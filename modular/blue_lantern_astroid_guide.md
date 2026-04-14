@@ -1,3 +1,11 @@
+---
+title: Blue Lantern Astroid
+manufacturer: Blue Lantern
+primary_role: MODULATOR
+secondary_roles: []
+hp: 6
+---
+
 # Blue Lantern Astroid - Guide
 
 **The Classic Twin-T Drum Synthesizer with Accent Control**

@@ -1,3 +1,11 @@
+---
+title: Erica Synths Black Polyvoks VCF
+manufacturer: Erica Synths
+primary_role: SHAPER
+secondary_roles: []
+hp: 12
+---
+
 # Erica Synths Black Polyvoks VCF V2 - Beginner's Guide
 
 ![Erica Synths Black Polyvoks VCF](https://github.com/Shadoe-42/music/raw/main/modular/images/erica_synths/black_polyvoks/front_panel.jpg)  

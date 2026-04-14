@@ -1,3 +1,11 @@
+---
+title: Tiptop Audio Forbidden Planet
+manufacturer: Tiptop Audio
+primary_role: SHAPER
+secondary_roles: [SOURCE]
+hp: 8
+---
+
 # Tiptop Audio Forbidden Planet - Beginner's Guide
 
 **The Steiner-Parker Synthacon Filter Reborn**

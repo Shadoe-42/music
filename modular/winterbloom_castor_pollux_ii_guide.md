@@ -1,3 +1,11 @@
+---
+title: Winterbloom Castor & Pollux II
+manufacturer: Winterbloom
+primary_role: SOURCE
+secondary_roles: []
+hp: 18
+---
+
 # Winterbloom Castor & Pollux II - Beginner's Guide
 
 **The Modern Juno Twins**

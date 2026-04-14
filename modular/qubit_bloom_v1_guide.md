@@ -1,3 +1,13 @@
+---
+title: Qubit Bloom v1
+manufacturer: Qubit
+primary_role: CONTROLLER
+secondary_roles: []
+memory: basic
+screen: true
+hp: 16
+---
+
 # Qu-Bit Bloom V1 - Beginner's Guide
 
 **The Fractal Sequencing Garden**
