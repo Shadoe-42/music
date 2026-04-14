@@ -2,7 +2,7 @@
 title: Endorphin.es Queen of Pentacles
 manufacturer: Endorphin.es
 primary_role: SOURCE
-secondary_roles: SHAPER
+secondary_roles: [SHAPER]
 hp: 30
 ---
 
