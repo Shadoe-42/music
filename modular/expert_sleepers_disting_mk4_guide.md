@@ -580,7 +580,7 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 
 ---
 
-## Multi-Function Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Disting fundamentals:** Master algorithm navigation and basic CV/audio processing

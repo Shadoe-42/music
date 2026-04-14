@@ -383,7 +383,7 @@ Professional System Integration:
 
 ---
 
-## Modular Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with basic routing:** Master each section individually and understand LED indicators

@@ -544,7 +544,7 @@ The Expander adds 16 outputs (Full Wave Rectifiers, Logic Pairs, Cascading Trigg
 
 ---
 
-## Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start here:** Master ochd basics and organic modulation concepts

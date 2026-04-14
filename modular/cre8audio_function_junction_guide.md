@@ -785,7 +785,7 @@ Simple modules have obvious behavior - one purpose, clear controls, predictable 
 
 ---
 
-## **Advanced Learning Path**
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Function Junction fundamentals:** Master ADSR, Function Generator, LFO, and Mixer sections
