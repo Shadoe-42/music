@@ -1,7 +1,7 @@
 # Current Work Roadmap
 
-**Last Updated:** November 21, 2025
-**Status:** Active planning phase
+**Last Updated:** April 14, 2026
+**Status:** Active development — taxonomy implemented, structural repairs complete, new guides in progress
 **Mission:** Educate for generations. Anyone with an interest should be able to use guides independently.
 
 ---
@@ -80,8 +80,8 @@ Column structure:
 - [ ] Format: Date | Guide Name | Feedback Type | What User Found Confusing | Change Made
 - [ ] Link this to commit messages (when feedback drives a change, reference the feedback)
 
-### Document Perfect Circuit Feedback
-- [ ] After holiday conversation: Capture what they say
+### Perfect Circuit Feedback (Ongoing Relationship)
+- [ ] Continue capturing feedback from each interaction
 - [ ] Mark which guides they tested
 - [ ] Note specific criticisms/suggestions
 - [ ] Prioritize changes based on their expertise
@@ -129,16 +129,16 @@ Column structure:
 ### Module Guides (Priority Ranked)
 
 **Tier 1: Core Drum Voice Teaching (HIGH IMPACT)**
-- [ ] **Endorphin.es Queen of Pentacles** (909-inspired analog drum)
+- [x] **Endorphin.es Queen of Pentacles** (909-inspired analog drum)
   - Why: Ground Control guide exists but teaching lacks the drum voice itself. Core analog drum philosophy.
   - Difficulty: Moderate (comprehensive but self-contained)
   
-- [ ] **Endorphin.es BLCK_Noir** (CR-78 inspired digital drum)
+- [x] **Endorphin.es BLCK_Noir** (CR-78 inspired digital drum)
   - Why: Teaches analog vs. digital drum philosophy as direct comparison with Queen of Pentacles
   - Difficulty: Moderate (digital concepts add complexity but teaching value high)
 
 **Tier 2: Sequencing Evolution (MODERATE IMPACT, HIGH EASE)**
-- [ ] **AtoVproject lx-euclid** (Euclidian sequencer)
+- [x] **AtoVproject lx-euclid** (Euclidian sequencer)
   - Why: Euclidian Circles guide exists; lx-euclid teaches dedicated drum sequencing progression
   - Difficulty: Easy to moderate (builds on existing Euclidian teaching)
   - Teaching pair: Euclidian Circles v2 + lx-euclid show sequencing specialization
@@ -167,13 +167,13 @@ Column structure:
 
 ### VCAs & Mixers (5 modules - alphabetical order)
 
-- [ ] **After Later Audio - Cloaks** ← STARTING POINT
+- [x] **After Later Audio - Cloaks**
   - Classification: VCA
   - Type: Mutable Instruments Veils 2020 replica
   - Teaching scope: Linear VCA with routing
   - Why: Commonly found, clear VCA teaching moment
   
-- [ ] **After Later Audio - Mingles**
+- [x] **After Later Audio - Mingles**
   - Classification: VCA
   - Type: Dual 3 Channel Mixer/VC Autopanner
   - Teaching scope: Mixer + panning combo
@@ -199,31 +199,60 @@ Column structure:
 
 ### Clock/Timing (4 modules - alphabetical order)
 
-- [ ] **4ms Company - RCD Breakout**
+- [x] **4ms Company - RCD Breakout** *(covered by RCD V2 guide)*
   - Classification: Clock
   - Type: Breakout module for Rotating Clock Divider
   - Teaching scope: RCD functionality expansion
   - Why: Ecosystem teaching; expands division possibilities
   
-- [ ] **4ms Company - Rotating Clock Divider V2**
+- [x] **4ms Company - Rotating Clock Divider V2**
   - Classification: Clock
   - Type: Divides clock input with rotation concept
   - Teaching scope: Clock division + creative rotation
   - Why: Clock manipulation fundamental; rotation adds creative dimension beyond division
   
-- [ ] **4ms Company - Shuffling Clock Multiplier Plus**
+- [x] **4ms Company - Shuffling Clock Multiplier Plus**
   - Classification: Clock
   - Type: Clock Multiplication & Breakout
   - Teaching scope: Clock multiplication + rhythm shuffling
   - Why: Rhythm variation teaching through clock manipulation
   
-- [ ] **ALM Busy Circuits - Pamela's Pro Workout**
+- [x] **ALM Busy Circuits - Pamela's Pro Workout**
   - Classification: Clock
   - Type: Clock Modulator
   - Teaching scope: Advanced clock control with modulation
   - Why: Extended clock possibilities; different approach from simple dividers
 
 **Note:** Turing Machine ecosystem (Pulses, Volts, Turing Machine LPG Expander) covered in existing `turing_machine_ecosystem_guide.md`
+
+---
+
+## Phase 5: April 2026 — Structural & Taxonomy Work
+
+**Completed:** April 2026 | **Scope:** System-wide structural repairs + role taxonomy implementation
+
+### Anchor Section Corpus Repair (63-guide audit)
+- [x] Type 1: Missing anchor sections — written from scratch (Ghost, CMOS Party, and others)
+- [x] Type 2: "Why This Excels" in wrong position — repositioned to immediately before patches (13 guides)
+- [x] Type 3: Major structural overhauls — RCD v2, CMOS Party, Ghost
+- [x] Type 4: "Phase 2 Learning Path" → "Advanced Learning Path" batch rename (10 guides)
+- [x] ALP heading normalization — Function Junction, Ochd+Expander, Disting MK4, Links
+- [x] Stomp Common Mistakes written
+- [ ] Pressure Points — needs full Type 3 restructure (back half inverted; tagged for dedicated session)
+
+### Role Taxonomy & YAML Frontmatter
+- [x] Eight-role taxonomy defined: SOURCE · SHAPER · AMPLIFIER · MODULATOR · CONTROLLER · ROUTER · ANALYZER · UTILITY
+- [x] Graduated tags defined: memory (none|basic|full), transport (none|receive|full), screen, hybrid
+- [x] YAML frontmatter added to all 64 module guides
+- [x] Dual implementation: YAML frontmatter (programmatic) + Key Specs Role line (human-readable)
+
+### Wayfinding
+- [x] `/modular/README.md` created — role-organized entry point with module table by function category
+- [x] Basics sequence already exists (`/modular/basics/`) — routing to it from README
+
+### External Audit
+- Astra (ChatGPT) reviewed the repo; key contributions: domain collapse framing, IR as generation-time tool, role weighting model, confirmed wayfinding gap
+- Taxonomy design is a direct result of that exchange
 
 ---
 
@@ -259,7 +288,7 @@ Seq OUT ---[G]---> VCA Gate
 ## Known Constraints & Context
 
 **Module Guide Inventory:**
-- 56 total module guides
+- 64 total module guides
 - ~75% updated to current standards
 - ~25-30% actively used by external users with integrated feedback
 - MetaModule and similar complex modules require extensive sustained testing (on roadmap, not blocking)
@@ -272,7 +301,7 @@ Seq OUT ---[G]---> VCA Gate
 
 **Validation In Progress:**
 - 25-30% guides with real external user feedback
-- Perfect Circuit testing/feedback incoming (post-holiday)
+- Perfect Circuit: ongoing relationship, feedback integration is continuous
 - Feedback source documentation needs formalization (not yet captured systematically)
 
 **Core Mission:**
@@ -301,131 +330,18 @@ Seq OUT ---[G]---> VCA Gate
 - Not excessive; this is smart operational practice
 - Continue as-is
 
----
-
-## Last Review
-
-**Date:** November 21, 2025
-**Reviewer:** Shadoe + Claude collaboration session
-**Key Insight:** Project is further along than "problem diagnosis" suggests. Real validation happening, appropriate timeline, clear mission alignment. Cleanup is refinement, not crisis response.
-
-**Next Review:** After Perfect Circuit feedback (post-holiday)
-
----
-
-## Teaching Rack: Separate System
-
-**Updated:** April 2026
-
-The following modules have guides but do NOT appear in the main rack CSV (mg_data_sheet_rack3069924.csv). These are installed in a dedicated teaching rack and their guides serve that specific educational purpose. Do NOT flag as orphaned.
-
-- Noise Engineering Ruina Versio
-- Qu-Bit Bloom v1
-- Tiptop Audio Forbidden Planet
-- Intellijel Stomp
-- Cre8audio Function Junction
-- Erica Synths Pico LFO/SH
-- Erica Synths Pico Voice
-
----
-
-## Module Gap Analysis: Main Rack
-
-**Updated:** April 2026
-**Source:** Modular Grid export mg_data_sheet_rack3069924.csv (February 2026, ~95% accurate)
-**Total modules in main rack:** 125
-**Guides existing:** ~58 (including teaching rack guides above)
-**Guides needed:** ~60+ modules
-
-### Expanders: Covered by Parent Guides (No Separate Guide Needed)
-- Instruō arbhar USB Expander; covered by arbhar guide
-- Instruō arbhar expander; covered by arbhar guide
-- Winterbloom Castor & Pollux II expander; covered by C&P II guide
-- Xaoc Devices Nin; covered by Zadar guide (when created)
-- Xaoc Devices Poti II; covered by Batumi II guide (when created)
-- 4ms RCD Breakout v1.1; covered by RCD V2 guide
-- 4ms MetaModule Wi-Fi Expander; covered by MetaModule guide
-- 4ms MetaAIO; covered by MetaModule guide
-- 4ms MetaButtons; covered by MetaModule guide
-- Music Thing Modular Volts; covered by Turing Machine ecosystem guide
-- Music Thing Modular Pulses Mk II; covered by Turing Machine ecosystem guide
-- WORNG Electronics Turing Machine LPG Expander; covered by Turing Machine ecosystem guide
-- Xaoc Devices Zadar Nin expander; covered by Zadar guide (when created)
-
-### Blank Panels & Passive Utilities (No Guide Needed)
-- Other/unknown Attenuate! Blank Panel 6HP
-- Other/unknown MentalNoise (x2)
-- 2hp Mult (x3)
-- Intellijel Buff Mult
-- Intellijel Mult
-
-### Guides Needed: Prioritized
-
-**Tier 1: High Impact / Complex Modules**
-- Endorphin.es Queen of Pentacles: 909-inspired analog drum voice
-- Endorphin.es Blck_Noir: CR-78 inspired digital drum voice
-- Endorphin.es Furthrrrr Generator; dual oscillator, complex voice
-- Endorphin.es Grand Terminal; complex filter/effects
-- Endorphin.es NEW GODSPEED: (assess scope)
-- Endorphin.es Cockpit 2; performance mixer/controller
-- Xaoc Devices Belgrad; state variable multimode filter
-- Xaoc Devices Batumi II; quad LFO (include Poti II expander)
-- Xaoc Devices Zadar; complex envelope generator (include Nin expander)
-- Noise Engineering Basimilus Iteritas Alter; percussion oscillator
-- Noise Engineering Manis Iteritas Alia; distorted voice
-- Noise Engineering Pons Asinorum: (assess scope)
-- Befaco Oneiroi; complex oscillator/effects
-- Gamechanger Audio PLASMA Voice; ionized gas oscillator
-- Qu-Bit Aurora; reverb/spectral processor
-- Qu-Bit Prism; multiband processor
-- Qu-Bit Mojave; granular oscillator
-- Qu-Bit Stardust; sample player
-- Qu-Bit Nautilus; delay/looper
-- Qu-Bit Chord v2; polyphonic oscillator
-- Instruō Selam; complex oscillator (Tesseract Modular)
-- dsp.coffee YYS: (assess scope)
-- dsp.coffee 22 Deaf Chinchillas: (assess scope)
-- Schlappi Engineering 100 Grit; distortion/waveshaper
-- Steady State Fate SSG Stereo Field; stereo processor
-- Patching Panda ETNA; morphing filter
-
-**Tier 2: Moderate Impact**
-- After Later Audio Cloaks: Veils clone, VCA
-- After Later Audio Mingles; dual mixer/autopanner
-- After Later Audio Scenes: (assess scope)
-- After Later Audio Bartender V2: (assess scope)
-- After Later Audio Light Rail: (assess scope)
-- Frap Tools 411; quad linear VCA
-- Frap Tools 333; mixer/utility
-- Vostok Instruments Ceres; linear VCA/mixer
-- AtoVproject lx-euclid: Euclidean sequencer
-- ALM Busy Circuits Pamela's PRO Workout; clock modulator
-- Erica Synths Black Joystick2; performance controller
-- Erica Synths Pico Quant; quantizer
-- Bela Gliss: (assess scope)
-- Tesseract Modular Radioactive: (assess scope)
-- Altered State Machines Eris: (assess scope)
-- CalSynth uO_C; utility/multi-function
-- Blue Lantern Subharmonic Generator: (assess scope)
-
-**Tier 3: Smaller Scope**
-- 4ms Percussion Interface + Expander
-- Pittsburgh Modular The Toad; filter
-- 2hp LFO v2
-- 2hp Verb
-- 2hp Swarm
-- Qu-Bit Lunar Orbiter: (assess scope)
-- Error Instruments Eraserhead Theremin: (assess scope)
 
 ---
 
 ## Last Review
 
-**Date:** November 21, 2025
+**Date:** April 14, 2026
 **Reviewer:** Shadoe + Claude collaboration session
 **Key Insight:** Project is further along than "problem diagnosis" suggests. Real validation happening, appropriate timeline, clear mission alignment. Cleanup is refinement, not crisis response.
 
-**Next Review:** After Perfect Circuit feedback (post-holiday)
+**What changed this session:** YAML frontmatter + role taxonomy added to all 64 guides; anchor section repairs completed across 63-guide corpus; modular/README.md created as directory front door; ALP headings normalized; Stomp Common Mistakes written.
+
+**Next Review:** When next batch of guides completes or major structural work is done
 
 ---
 
