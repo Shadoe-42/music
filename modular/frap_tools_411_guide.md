@@ -122,9 +122,11 @@ The -6dB switches are a practical quality-of-life feature. Managing 0-5V versus 
 **Goal:** Understand the open-by-default behavior and semi-normalling from two cables.
 
 **Setup:**
-- Oscillator OUT ---[A]---> 411 ch1 IN
-- Envelope OUT ---[C]---> 411 ch1 CV
-- 411 ALL OUT ---[A]---> Mixer
+```
+Oscillator OUT        ---[A]---> 411 ch1 IN
+Envelope OUT          ---[C]---> 411 ch1 CV
+411 ALL OUT           ---[A]---> Mixer
+```
 
 **Procedure:**
 1. Before triggering anything, notice that the oscillator passes through to ALL OUT at full level (open by default)
@@ -142,12 +144,14 @@ The -6dB switches are a practical quality-of-life feature. Managing 0-5V versus 
 **Goal:** Send one source through all four channels with different CV shapes, observe results at ALL and UNPATCHED.
 
 **Setup:**
-- Oscillator OUT ---[A]---> 411 ch1 IN (normals to all channels)
-- Envelope OUT ---[C]---> 411 ch1 CV
-- LFO OUT ---[C]---> 411 ch2 CV (breaks CV normal at ch2; ch3 and ch4 share ch2's LFO unless broken)
-- 411 ch3 OUT ---[A]---> Filter IN
-- 411 ALL OUT ---[A]---> Main mix
-- 411 UNPATCHED OUT ---[A]---> Secondary mix
+```
+Oscillator OUT        ---[A]---> 411 ch1 IN  (normals to all channels)
+Envelope OUT          ---[C]---> 411 ch1 CV
+LFO OUT               ---[C]---> 411 ch2 CV  (breaks CV normal at ch2)
+411 ch3 OUT           ---[A]---> Filter IN
+411 ALL OUT           ---[A]---> Main mix
+411 UNPATCHED OUT     ---[A]---> Secondary mix
+```
 
 **What this creates:**
 - Ch1: envelope-controlled amplitude
@@ -166,12 +170,14 @@ ALL output contains all four channels summed. UNPATCHED output contains only ch1
 **Goal:** Use the 411 to control the depth of modulation sources, not audio.
 
 **Setup:**
-- LFO 1 OUT ---[C]---> 411 ch1 IN
-- LFO 2 OUT ---[C]---> 411 ch2 IN (breaks signal normal at ch2)
-- Envelope 1 OUT ---[C]---> 411 ch1 CV
-- Envelope 2 OUT ---[C]---> 411 ch2 CV (breaks CV normal at ch2)
-- 411 ch1 OUT ---[C]---> VCO FM input
-- 411 ch2 OUT ---[C]---> Filter FM input
+```
+LFO 1 OUT             ---[C]---> 411 ch1 IN
+LFO 2 OUT             ---[C]---> 411 ch2 IN  (breaks signal normal at ch2)
+Envelope 1 OUT        ---[C]---> 411 ch1 CV
+Envelope 2 OUT        ---[C]---> 411 ch2 CV  (breaks CV normal at ch2)
+411 ch1 OUT           ---[C]---> VCO FM input
+411 ch2 OUT           ---[C]---> Filter FM input
+```
 
 **Procedure:**
 1. Engage -6dB switch if envelopes are 0-10V

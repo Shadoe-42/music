@@ -119,10 +119,12 @@ The 3360 chip means the signal path is quiet. Ceres is specifically described in
 **Goal:** Basic VCA application, establishing the default behavior before exploring the architecture.
 
 **Setup:**
-- Oscillator OUT ---[A]---> Ceres ch1 IN
-- Envelope OUT ---[C]---> Ceres ch1 CV
-- Ceres ch6 MIX OUT ---[A]---> Mixer
-- Gate ---[G]---> Envelope GATE
+```
+Oscillator OUT        ---[A]---> Ceres ch1 IN
+Envelope OUT          ---[C]---> Ceres ch1 CV
+Ceres ch6 MIX OUT     ---[A]---> Mixer
+Gate                  ---[G]---> Envelope GATE
+```
 
 **Procedure:**
 1. Set ch1 LEVEL to fully clockwise
@@ -139,12 +141,14 @@ The 3360 chip means the signal path is quiet. Ceres is specifically described in
 **Goal:** Use the daisy-chain and mix bus to apply different CV shapes to one audio source and collect a composite waveform at the output.
 
 **Setup:**
-- Oscillator OUT ---[A]---> Ceres ch1 IN (daisy-chains through all channels automatically)
-- Envelope OUT ---[C]---> ch1 CV
-- LFO (triangle) OUT ---[C]---> ch2 CV
-- LFO (square) OUT ---[C]---> ch3 CV
-- Random CV ---[C]---> ch4 CV
-- Ceres ch6 MIX OUT ---[A]---> Mixer
+```
+Oscillator OUT        ---[A]---> Ceres ch1 IN  (daisy-chains to all channels)
+Envelope OUT          ---[C]---> ch1 CV
+LFO (triangle) OUT    ---[C]---> ch2 CV
+LFO (square) OUT      ---[C]---> ch3 CV
+Random CV             ---[C]---> ch4 CV
+Ceres ch6 MIX OUT     ---[A]---> Mixer
+```
 
 **Procedure:**
 1. Set ch1 through ch4 LEVEL to 12 o'clock
@@ -163,12 +167,14 @@ The 3360 chip means the signal path is quiet. Ceres is specifically described in
 **Goal:** Send the same source to multiple destinations with independent level control for each.
 
 **Setup:**
-- Oscillator OUT ---[A]---> Ceres ch1 IN
-- Envelope OUT ---[C]---> ch1 CV (all channels receive this via normalling)
-- Ceres ch1 OUT ---[A]---> Filter A IN
-- Ceres ch2 OUT ---[A]---> Filter B IN
-- Ceres ch3 OUT ---[A]---> Delay IN
-- Ceres ch6 MIX OUT ---[A]---> Main mixer
+```
+Oscillator OUT        ---[A]---> Ceres ch1 IN
+Envelope OUT          ---[C]---> ch1 CV  (normals to all channels)
+Ceres ch1 OUT         ---[A]---> Filter A IN
+Ceres ch2 OUT         ---[A]---> Filter B IN
+Ceres ch3 OUT         ---[A]---> Delay IN
+Ceres ch6 MIX OUT     ---[A]---> Main mixer
+```
 
 **Procedure:**
 1. Set ch1, ch2, ch3 LEVEL to different positions for different levels to each destination

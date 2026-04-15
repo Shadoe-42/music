@@ -188,10 +188,12 @@ The TITO switch is not a novelty. It is a discrete three-position gesture that c
 **Goal:** Hear the difference between single-peak and dual-peak filtering in a direct comparison.
 
 **Setup:**
-- Oscillator OUT ---[A]---> Belgrad IN
-- LFO OUT (slow, triangle) ---[C]---> FREQ CV
-- Belgrad OUT ---[A]---> VCA IN
-- ENV OUT ---[C]---> VCA CV
+```
+Oscillator OUT        ---[A]---> Belgrad IN
+LFO OUT (slow, tri)   ---[C]---> FREQ CV
+Belgrad OUT           ---[A]---> VCA IN
+ENV OUT               ---[C]---> VCA CV
+```
 
 **Procedure:**
 1. Set MODE to LL
@@ -213,10 +215,12 @@ The TITO switch is not a novelty. It is a discrete three-position gesture that c
 **Goal:** Produce a vowel-like formant response using SPAN as interval control and BALANCE as morphing.
 
 **Setup:**
-- Oscillator (sawtooth or square, pitched) OUT ---[A]---> Belgrad IN
-- Slow random CV or S&H ---[C]---> SPAN CV
-- LFO (slow, triangle) ---[C]---> BALANCE CV
-- Belgrad OUT ---[A]---> Mixer
+```
+Oscillator (saw/sq) OUT   ---[A]---> Belgrad IN
+Slow random CV or S&H     ---[C]---> SPAN CV
+LFO (slow, triangle)      ---[C]---> BALANCE CV
+Belgrad OUT               ---[A]---> Mixer
+```
 
 **Procedure:**
 1. Set MODE to HB (double bandpass)
@@ -237,10 +241,12 @@ The TITO switch is not a novelty. It is a discrete three-position gesture that c
 **Goal:** Use Belgrad in HL mode to add resonant body to percussive transients, producing tuned metallic percussion.
 
 **Setup:**
-- Drum voice or noise source OUT ---[A]---> Belgrad IN
-- Percussive envelope (fast attack, short decay) ---[C]---> FREQ CV
-- Gate or trigger ---[G]---> Envelope GATE
-- Belgrad OUT ---[A]---> Mixer
+```
+Drum or noise source OUT      ---[A]---> Belgrad IN
+Percussive envelope OUT       ---[C]---> FREQ CV
+Gate or trigger               ---[G]---> Envelope GATE
+Belgrad OUT                   ---[A]---> Mixer
+```
 
 **Procedure:**
 1. Set MODE to HL (cascaded highpass + lowpass = bandpass with dual resonant edges)
@@ -261,11 +267,13 @@ The TITO switch is not a novelty. It is a discrete three-position gesture that c
 **Goal:** Use Belgrad as a dual-sine oscillator with FM synthesis between the two cores via TITO XM.
 
 **Setup:**
-- Pitch CV (sequencer or keyboard) ---[C]---> V/OCT
-- Envelope or gate ---[C]---> RESO CV (optional: trigger RESO to spike into and out of self-oscillation)
-- Belgrad OUT ---[A]---> VCA IN
-- ENV OUT ---[C]---> VCA CV
-- No audio input required
+```
+Pitch CV (seq/kbd)            ---[C]---> V/OCT
+Envelope or gate              ---[C]---> RESO CV  (optional)
+Belgrad OUT                   ---[A]---> VCA IN
+ENV OUT                       ---[C]---> VCA CV
+(no audio input required)
+```
 
 **Procedure:**
 1. Set MODE to HH or BH (both recommended for TITO XM in the manual)

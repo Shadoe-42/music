@@ -61,7 +61,16 @@ Source → Process → Destination
   VCO   → Filter → Output
 ```
 
-### **5. Core ASCII Symbols**
+### **5. Patch Setup Format (Standard for All Patch Sections)**
+```
+Source Module         ---[A]---> Destination
+Another Source        ---[C]---> Another Destination
+Trigger Source        ---[G]---> Gate Input
+```
+
+Use fenced code blocks (triple backticks) for all patch Setup sections. Column-align source names to a consistent width within each patch. Inline notes are allowed in parentheses after the destination: `---[A]---> ch1 IN  (normals to all channels)`. This format uses pure ASCII and renders correctly in any monospace environment: terminal, text editor, Vim, GitHub, or otherwise.
+
+### **6. Core ASCII Symbols**
 - **○** = Output jack
 - **◀** = Input jack
 - **──** = Audio cable [A]
@@ -418,6 +427,44 @@ Signal types: [A]=Audio  [C]=CV
       ║        [C] Feedback
    [C] 1V/Oct
 ```
+
+### **Patch Setup Diagram Format**
+
+Two formats are in use. Choose based on diagram purpose.
+
+**Format 1: Fenced Code Block (standard for all patch Setup sections)**
+
+Use for the connection list in every patch example Setup section. Pure ASCII, renders correctly in any monospace environment (terminal, Vim, Sublime, GitHub). Column-align source names within each patch.
+
+```
+Oscillator OUT        ---[A]---> Filter IN
+Envelope OUT          ---[C]---> Filter CV
+Gate OUT              ---[G]---> Envelope GATE
+Filter OUT            ---[A]---> VCA IN
+```
+
+Arrow convention: `---[A]--->` for audio, `---[C]--->` for CV, `---[G]--->` for gate/trigger. Inline clarifying notes in parentheses after the destination are permitted when needed:
+
+```
+Oscillator OUT        ---[A]---> Ceres ch1 IN  (normals to all channels)
+Envelope OUT          ---[C]---> ch1 CV
+LFO (triangle) OUT    ---[C]---> ch2 CV
+LFO (square) OUT      ---[C]---> ch3 CV
+Ceres ch6 MIX OUT     ---[A]---> Mixer
+```
+
+**Format 2: Bordered Box (reserved for complex multi-output architecture diagrams)**
+
+Use when illustrating module architecture, multi-module signal chains, or feedback paths where the spatial relationships between inputs and outputs matter. These diagrams use Unicode box-drawing characters and are appropriate for the Architecture sections of complex guides. Do not use this format for patch Setup connection lists.
+
+```
+┌─VCO─────┐    ┌─Filter──┐
+│ Out ○───┼────┼─▶Audio  │ [A]
+│ CV  ◀───┼────┼── CV1   │ [C]
+└─────────┘    └─────────┘
+```
+
+**Rule:** Patch Setup sections always use Format 1. Architecture and overview diagrams use Format 2 where warranted.
 
 ---
 

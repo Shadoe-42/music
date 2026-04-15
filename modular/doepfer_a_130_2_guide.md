@@ -110,10 +110,12 @@ DC coupling is often not highlighted on VCAs but matters practically. Any signal
 **Goal:** Shape a synthesizer voice's volume with an envelope.
 
 **Setup:**
-- VCO OUT ---[A]---> A-130-2 IN (ch1)
-- ENV OUT ---[C]---> A-130-2 CV (ch1)
-- A-130-2 OUT (ch1) ---[A]---> Filter or Mixer
-- Gate OUT ---[G]---> ENV GATE
+```
+VCO OUT               ---[A]---> A-130-2 IN (ch1)
+ENV OUT               ---[C]---> A-130-2 CV (ch1)
+A-130-2 OUT (ch1)     ---[A]---> Filter or Mixer
+Gate OUT              ---[G]---> ENV GATE
+```
 
 **Procedure:**
 1. Set lin/exp to exp
@@ -131,10 +133,12 @@ DC coupling is often not highlighted on VCAs but matters practically. Any signal
 **Goal:** Use the A-130-2 to control how deeply an LFO modulates a target, with that depth shaped by an envelope.
 
 **Setup:**
-- LFO OUT ---[C]---> A-130-2 IN (ch1)
-- ENV OUT ---[C]---> A-130-2 CV (ch1)
-- A-130-2 OUT (ch1) ---[C]---> Filter FM or VCO FM input
-- Gate ---[G]---> ENV GATE
+```
+LFO OUT               ---[C]---> A-130-2 IN (ch1)
+ENV OUT               ---[C]---> A-130-2 CV (ch1)
+A-130-2 OUT (ch1)     ---[C]---> Filter FM or VCO FM input
+Gate                  ---[G]---> ENV GATE
+```
 
 **Procedure:**
 1. Set lin/exp to lin (CV processing requires linear response)
@@ -151,13 +155,15 @@ DC coupling is often not highlighted on VCAs but matters practically. Any signal
 **Goal:** Use both channels independently for two separate voices in one module.
 
 **Setup:**
-- VCO 1 OUT ---[A]---> A-130-2 IN (ch1)
-- ENV 1 OUT ---[C]---> A-130-2 CV (ch1)
-- A-130-2 OUT (ch1) ---[A]---> Mixer ch1
+```
+VCO 1 OUT             ---[A]---> A-130-2 IN (ch1)
+ENV 1 OUT             ---[C]---> A-130-2 CV (ch1)
+A-130-2 OUT (ch1)     ---[A]---> Mixer ch1
 
-- VCO 2 OUT ---[A]---> A-130-2 IN (ch2)
-- ENV 2 OUT ---[C]---> A-130-2 CV (ch2)
-- A-130-2 OUT (ch2) ---[A]---> Mixer ch2
+VCO 2 OUT             ---[A]---> A-130-2 IN (ch2)
+ENV 2 OUT             ---[C]---> A-130-2 CV (ch2)
+A-130-2 OUT (ch2)     ---[A]---> Mixer ch2
+```
 
 **Procedure:**
 1. Set ch1 to exp for the melodic voice
