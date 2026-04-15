@@ -3,6 +3,10 @@ title: After Later Audio Cloaks
 manufacturer: After Later Audio
 primary_role: ROUTER
 secondary_roles: []
+form_factor: eurorack
+functions: [vca, mixer]
+behavior_tags: [clean, stable, linear, reactive]
+use_cases: [audio mixing and routing, CV-controlled voice mixing, signal summing]
 hp: 10
 ---
 

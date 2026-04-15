@@ -3,6 +3,10 @@ title: Intellijel Stomp
 manufacturer: Intellijel
 primary_role: ROUTER
 secondary_roles: [MODULATOR]
+form_factor: eurorack
+functions: [audio-interface, switch-router]
+behavior_tags: [clean, stable, linear, reactive]
+use_cases: [guitar pedal integration in Eurorack, effects loop routing, audio interface for pedals]
 hp: 6
 ---
 

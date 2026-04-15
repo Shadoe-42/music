@@ -3,7 +3,12 @@ title: Erica Synths Pico DSP
 manufacturer: Erica Synths
 primary_role: SHAPER
 secondary_roles: []
+form_factor: eurorack
+functions: [fx-time, fx-modulation]
+behavior_tags: [stable, clean, evolving, linear]
+use_cases: [stereo signal processing, evolving ambient texture, reverb and delay in small system]
 hp: 3
+memory: none
 ---
 
 # Erica Synths Pico DSP - Guide

@@ -131,7 +131,7 @@ Most modules serve more than one role depending on how they're patched. The role
 | Module | Function | Guide |
 |--------|----------|-------|
 | After Later Audio Cloaks | Eight-channel mute/unmute utility | [Guide](after_later_audio_cloaks_guide.md) |
-| After Later Audio Mingles | Passive four-channel mult and mixer | [Guide](after_later_audio_mingles_guide.md) |
+| After Later Audio Mingles | VC panning mixer with LFO and four-channel routing | [Guide](after_later_audio_mingles_guide.md) |
 | Blue Lantern CMOS Party | Boolean logic processor with all standard gate operations | [Guide](blue_lantern_cmos_party_guide.md) |
 | Cre8audio Function Junction | Logic, comparator, and utility functions | [Guide](cre8audio_function_junction_guide.md) |
 | Intellijel Stomp | Guitar pedal interface adapter and signal router | [Guide](intellijel_stomp_guide.md) |

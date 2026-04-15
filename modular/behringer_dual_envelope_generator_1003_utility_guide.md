@@ -3,6 +3,10 @@ title: Behringer Dual Envelope Generator 1003
 manufacturer: Behringer
 primary_role: MODULATOR
 secondary_roles: []
+form_factor: eurorack
+functions: [envelope-generator]
+behavior_tags: [stable, gated, linear, reactive]
+use_cases: [envelope shaping, gate and trigger source, drum envelope control]
 hp: 16
 ---
 

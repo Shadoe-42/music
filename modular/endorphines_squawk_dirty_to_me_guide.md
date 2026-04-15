@@ -3,6 +3,10 @@ title: Endorphin.es Squawk Dirty to Me
 manufacturer: Endorphin.es
 primary_role: SHAPER
 secondary_roles: [AMPLIFIER]
+form_factor: eurorack
+functions: [filter]
+behavior_tags: [dirty, warm, nonlinear, reactive, performance-oriented]
+use_cases: [timbral movement and shaping, stereo signal processing, aggressive filter character]
 hp: 6
 ---
 

@@ -3,10 +3,14 @@ title: ALM Busy Circuits Pamela's PRO Workout
 manufacturer: ALM Busy Circuits
 primary_role: CONTROLLER
 secondary_roles: [MODULATOR]
+form_factor: eurorack
+functions: [clock-source, euclidean-generator, lfo]
+behavior_tags: [stable, percussive, linear, performance-oriented, generative]
+use_cases: [clock source for full system, euclidean rhythm source, gate and trigger source]
+hp: 8
 memory: full
 transport: receive
 screen: true
-hp: 8
 ---
 
 # ALM Busy Circuits Pamela's PRO Workout Guide

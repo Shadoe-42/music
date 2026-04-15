@@ -3,10 +3,14 @@ title: Endorphin.es Ground Control
 manufacturer: Endorphin.es
 primary_role: CONTROLLER
 secondary_roles: [MODULATOR]
-memory: full
-transport: receive
-screen: true
+form_factor: eurorack
+functions: [sequencer, clock-source]
+behavior_tags: [stable, performance-oriented, reactive, linear]
+use_cases: [generative melodic sequence, gate and trigger source, clock source for full system]
 hp: 42
+memory: full
+transport: full
+screen: true
 ---
 
 # Endorphin.es Ground Control

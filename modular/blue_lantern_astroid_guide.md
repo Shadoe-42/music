@@ -3,6 +3,10 @@ title: Blue Lantern Astroid
 manufacturer: Blue Lantern
 primary_role: MODULATOR
 secondary_roles: []
+form_factor: eurorack
+functions: [drum-voice]
+behavior_tags: [percussive, gated, warm, dirty, performance-oriented]
+use_cases: [808 style kick drum voice, analog percussion synthesis, percussive bass layer]
 hp: 6
 ---
 

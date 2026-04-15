@@ -3,6 +3,10 @@ title: Cre8audio Chipz + Cellz + Niftycase Bundle
 manufacturer: Cre8audio
 primary_role: UTILITY
 secondary_roles: [SOURCE, CONTROLLER]
+form_factor: eurorack
+functions: [oscillator, sequencer]
+behavior_tags: [stable, warm, performance-oriented]
+use_cases: [complete starter system, beginner voice and control, semi-modular exploration]
 hybrid: true
 ---
 

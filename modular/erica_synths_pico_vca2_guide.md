@@ -3,6 +3,10 @@ title: Erica Synths Pico VCA2
 manufacturer: Erica Synths
 primary_role: AMPLIFIER
 secondary_roles: []
+form_factor: eurorack
+functions: [vca]
+behavior_tags: [clean, stable, linear, reactive]
+use_cases: [envelope shaping, audio mixing and routing, CV scaling and utility]
 hp: 3
 ---
 
@@ -99,6 +103,34 @@ Two fundamental VCA response curves exist: linear and exponential. Linear VCAs (
 
 ### **The AS3330 Chip and Modern VCA Design**
 The AS3330 represents professional-grade VCA design; developed for studio and broadcast applications where reliability and sonic transparency matter. It delivers low distortion, predictable response, and stability across voltage ranges. In compact modules like Pico VCA2, the AS3330 proves that essential professional performance doesn't require excessive space or complexity.
+
+---
+
+## Why This Instrument Excels
+
+### **The Philosophy**
+Amplitude control is the invisible architecture of synthesis. Every note, modulation, and effect passes through VCAs; they're gatekeepers determining what reaches the listener. Pico VCA2 provides professional-grade linear VCA performance (the AS3330 chip is industry standard) in 3HP, making dual VCAs accessible to every system size.
+
+### **The Engineering**
+- **AS3330 VCA chip:** Professional broadcast/studio standard for low distortion and predictable response
+- **Dual linear response:** Proportional amplitude control ideal for mixing and CV processing
+- **Intelligent normalling:** Reduces cable count while maintaining patch flexibility
+- **BIAS control:** Essential tool for CV ranging and tremolo effects
+- **DC coupling:** Audio and CV amplitude control in a single module
+
+### **The Practical Benefits**
+- **Space efficient:** Two VCAs in 3HP, with bias control included
+- **Professional performance:** AS3330 standard delivers transparent VCA character
+- **Workflow optimization:** Normalling reduces patching complexity without sacrificing flexibility
+- **Linear response:** Predictable amplitude control for precision mixing and CV processing
+- **Thermal stable:** Operates reliably across temperature ranges and voltage fluctuations
+
+### **Perfect For**
+- **Every system:** VCAs are fundamental; every patch benefits from amplitude control
+- **Mixing:** Two independent channels for precise audio level balancing
+- **Modulation control:** CV processing and depth scaling for complex patches
+- **Performers:** Real-time tremolo and dynamics control during live play
+- **Compact systems:** Maximum VCA capability in minimum space
 
 ---
 
@@ -327,33 +359,6 @@ Intelligent patching with normalling: Leave inputs unpatched for automatic signa
 
 ---
 
-## Why This Instrument Excels
-
-### **The Philosophy**
-Amplitude control is the invisible architecture of synthesis. Every note, modulation, and effect passes through VCAs; they're gatekeepers determining what reaches the listener. Pico VCA2 provides professional-grade linear VCA performance (the AS3330 chip is industry standard) in 3HP, making dual VCAs accessible to every system size.
-
-### **The Engineering**
-- **AS3330 VCA chip:** Professional broadcast/studio standard for low distortion and predictable response
-- **Dual linear response:** Proportional amplitude control ideal for mixing and CV processing
-- **Intelligent normalling:** Reduces cable count while maintaining patch flexibility
-- **BIAS control:** Essential tool for CV ranging and tremolo effects
-- **DC coupling:** Audio and CV amplitude control in a single module
-
-### **The Practical Benefits**
-- **Space efficient:** Two VCAs in 3HP, with bias control included
-- **Professional performance:** AS3330 standard delivers transparent VCA character
-- **Workflow optimization:** Normalling reduces patching complexity without sacrificing flexibility
-- **Linear response:** Predictable amplitude control for precision mixing and CV processing
-- **Thermal stable:** Operates reliably across temperature ranges and voltage fluctuations
-
-### **Perfect For**
-- **Every system:** VCAs are fundamental; every patch benefits from amplitude control
-- **Mixing:** Two independent channels for precise audio level balancing
-- **Modulation control:** CV processing and depth scaling for complex patches
-- **Performers:** Real-time tremolo and dynamics control during live play
-- **Compact systems:** Maximum VCA capability in minimum space
-
----
 
 ## Common Use Cases
 

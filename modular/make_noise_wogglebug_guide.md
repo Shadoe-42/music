@@ -3,6 +3,10 @@ title: Make Noise Wogglebug
 manufacturer: Make Noise
 primary_role: MODULATOR
 secondary_roles: [SOURCE]
+form_factor: eurorack
+functions: [random-source, noise-source]
+behavior_tags: [stochastic, evolving, noisy, chaotic, generative]
+use_cases: [stochastic modulation, random CV generator, chaotic texture source]
 hp: 10
 ---
 

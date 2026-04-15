@@ -3,6 +3,10 @@ title: Patching Panda Punch v3
 manufacturer: Patching Panda
 primary_role: MODULATOR
 secondary_roles: [AMPLIFIER]
+form_factor: eurorack
+functions: [vca, envelope-generator]
+behavior_tags: [percussive, gated, reactive, warm, performance-oriented]
+use_cases: [percussive voice shaping, drum hit dynamics, envelope shaping]
 hp: 9
 ---
 

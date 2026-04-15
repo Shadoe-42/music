@@ -3,6 +3,10 @@ title: Endorphin.es Ghost
 manufacturer: Endorphin.es
 primary_role: SHAPER
 secondary_roles: [ROUTER]
+form_factor: eurorack
+functions: [fx-time, fx-modulation]
+behavior_tags: [evolving, clean, warm, nonlinear]
+use_cases: [evolving ambient texture, stereo signal processing, dark atmospheric layer]
 hp: 16
 ---
 

@@ -3,6 +3,10 @@ title: VPME QD + QEX Euclidean Circles Ecosystem
 manufacturer: VPME
 primary_role: CONTROLLER
 secondary_roles: [SOURCE]
+form_factor: eurorack
+functions: [euclidean-generator, clock-divider]
+behavior_tags: [stable, percussive, generative, linear]
+use_cases: [euclidean rhythm source, polyrhythmic pattern generator, rhythmic gate patterns]
 ---
 
 # VPME.de QD + QEX + Euclidean Circles V2 - Guide

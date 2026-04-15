@@ -3,6 +3,10 @@ title: Doepfer A-124 Wasp SE
 manufacturer: Doepfer
 primary_role: SHAPER
 secondary_roles: [SOURCE]
+form_factor: eurorack
+functions: [filter]
+behavior_tags: [dirty, warm, harmonic, nonlinear, unstable]
+use_cases: [timbral movement and shaping, dirty filter character, lead voice when self-oscillating]
 hp: 8
 ---
 

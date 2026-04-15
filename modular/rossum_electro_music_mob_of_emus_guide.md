@@ -3,7 +3,13 @@ title: Rossum Electro-Music Mob of Emus
 manufacturer: Rossum Electro-Music
 primary_role: SOURCE
 secondary_roles: [CONTROLLER]
+form_factor: eurorack
+functions: [fm-oscillator]
+behavior_tags: [harmonic, inharmonic, stable, performance-oriented, nonlinear]
+use_cases: [lead voice, chord voice, complex FM texture, metallic percussion voice]
 hp: 16
+memory: full
+screen: true
 ---
 
 # Rossum Electro-Music Mob of Emus Beginner's Guide

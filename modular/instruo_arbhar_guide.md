@@ -3,6 +3,10 @@ title: Instruo Arbhar
 manufacturer: Instruo
 primary_role: SHAPER
 secondary_roles: [SOURCE]
+form_factor: eurorack
+functions: [granular]
+behavior_tags: [evolving, nonlinear, stochastic, generative, performance-oriented]
+use_cases: [granular texture bed, evolving ambient texture, dark atmospheric layer]
 hp: 18
 ---
 

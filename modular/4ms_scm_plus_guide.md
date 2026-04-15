@@ -3,7 +3,12 @@ title: 4ms SCM Plus
 manufacturer: 4ms Company
 primary_role: CONTROLLER
 secondary_roles: []
+form_factor: eurorack
+functions: [clock-multiplier, clock-divider]
+behavior_tags: [stable, percussive, linear]
+use_cases: [clock multiplication for fast divisions, swing and shuffle timing, polyrhythmic clock source]
 hp: 12
+transport: receive
 ---
 
 # 4ms SCM Plus - Guide

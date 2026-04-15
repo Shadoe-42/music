@@ -3,6 +3,10 @@ title: Mutable Instruments Plaits
 manufacturer: Mutable Instruments
 primary_role: SOURCE
 secondary_roles: [SHAPER]
+form_factor: eurorack
+functions: [complex-oscillator, drum-voice]
+behavior_tags: [harmonic, stable, warm, gated, performance-oriented]
+use_cases: [lead voice, bass voice, percussive voice, chord voice]
 hp: 12
 ---
 

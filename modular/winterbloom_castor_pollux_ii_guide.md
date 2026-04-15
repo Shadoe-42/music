@@ -3,7 +3,13 @@ title: Winterbloom Castor & Pollux II
 manufacturer: Winterbloom
 primary_role: SOURCE
 secondary_roles: []
+form_factor: eurorack
+functions: [oscillator, fx-modulation]
+behavior_tags: [warm, stable, harmonic, bright, evolving]
+use_cases: [lead voice, chord voice, lush stereo oscillator, bass voice]
 hp: 18
+memory: full
+hybrid: true
 ---
 
 # Winterbloom Castor & Pollux II - Beginner's Guide

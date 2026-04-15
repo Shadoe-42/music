@@ -3,11 +3,15 @@ title: 4ms Company MetaModule
 manufacturer: 4ms Company
 primary_role: UTILITY
 secondary_roles: []
+form_factor: eurorack
+functions: [audio-interface]
+behavior_tags: [stable, performance-oriented, generative]
+use_cases: [VCV Rack patch in hardware, software-defined synthesis, generative patch deployment]
+hp: 26
 memory: full
 transport: full
 screen: true
 hybrid: true
-hp: 26
 ---
 
 # 4ms Company MetaModule - Guide

@@ -3,6 +3,10 @@ title: 4ms Company Listen IO
 manufacturer: 4ms Company
 primary_role: UTILITY
 secondary_roles: [ROUTER]
+form_factor: eurorack
+functions: [audio-interface]
+behavior_tags: [clean, stable, linear, reactive]
+use_cases: [stereo output to external mixer, headphone monitoring in patch, recording Eurorack audio]
 hp: 6
 ---
 

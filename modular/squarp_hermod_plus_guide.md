@@ -3,10 +3,14 @@ title: Squarp Hermod+
 manufacturer: Squarp
 primary_role: CONTROLLER
 secondary_roles: [ROUTER]
+form_factor: eurorack
+functions: [sequencer, signal-router]
+behavior_tags: [stable, performance-oriented, reactive, linear]
+use_cases: [generative melodic sequence, clock source for full system, MIDI and CV integration hub]
+hp: 26
 memory: full
 transport: full
 screen: true
-hp: 26
 ---
 
 # Squarp Hermod+ - Beginner's Guide

@@ -3,6 +3,10 @@ title: Soma Lyra-8 FX
 manufacturer: Soma Laboratory
 primary_role: SHAPER
 secondary_roles: []
+form_factor: eurorack
+functions: [fx-modulation, distortion]
+behavior_tags: [dirty, warm, chaotic, nonlinear, generative, evolving]
+use_cases: [dark atmospheric layer, drone foundation, chaotic texture source, self-evolving patch element]
 hp: 20
 ---
 

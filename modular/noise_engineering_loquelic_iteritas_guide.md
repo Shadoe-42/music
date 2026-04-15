@@ -3,6 +3,10 @@ title: Noise Engineering Loquelic Iteritas
 manufacturer: Noise Engineering
 primary_role: SOURCE
 secondary_roles: []
+form_factor: eurorack
+functions: [fm-oscillator]
+behavior_tags: [harsh, inharmonic, harmonic, nonlinear, performance-oriented]
+use_cases: [lead voice, inharmonic texture, metallic percussion voice]
 hp: 10
 ---
 

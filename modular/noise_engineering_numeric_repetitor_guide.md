@@ -3,6 +3,10 @@ title: Noise Engineering Numeric Repetitor
 manufacturer: Noise Engineering
 primary_role: CONTROLLER
 secondary_roles: [MODULATOR]
+form_factor: eurorack
+functions: [sequencer, euclidean-generator]
+behavior_tags: [stable, percussive, generative, stochastic, performance-oriented]
+use_cases: [rhythmic pattern generator, euclidean rhythm source, polyrhythmic gate patterns]
 hp: 8
 ---
 

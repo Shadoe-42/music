@@ -3,6 +3,10 @@ title: Doepfer A-130-2
 manufacturer: Doepfer
 primary_role: AMPLIFIER
 secondary_roles: []
+form_factor: eurorack
+functions: [vca]
+behavior_tags: [clean, stable, linear, reactive]
+use_cases: [envelope shaping, audio mixing and routing, CV-controlled attenuation]
 hp: 4
 ---
 

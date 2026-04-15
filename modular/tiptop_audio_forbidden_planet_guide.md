@@ -3,6 +3,10 @@ title: Tiptop Audio Forbidden Planet
 manufacturer: Tiptop Audio
 primary_role: SHAPER
 secondary_roles: [SOURCE]
+form_factor: eurorack
+functions: [filter]
+behavior_tags: [warm, clean, stable, nonlinear, reactive]
+use_cases: [timbral movement and shaping, filter as primary voice character, lead voice when self-oscillating]
 hp: 8
 ---
 

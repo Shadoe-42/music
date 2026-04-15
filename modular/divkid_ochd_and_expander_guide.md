@@ -3,6 +3,10 @@ title: DivKid Ochd + Expander
 manufacturer: DivKid
 primary_role: MODULATOR
 secondary_roles: []
+form_factor: eurorack
+functions: [lfo]
+behavior_tags: [free-running, evolving, stable, generative]
+use_cases: [modulation source, evolving ambient texture, stochastic modulation]
 hp: 8
 ---
 
@@ -74,6 +78,36 @@ hp: 8
 - **Section 3:** Cascading Triggers - rhythmic triggers from the left-side LFOs
 - **Section 4:** 4-Bit DACs - stepped random voltages ("slow noise")
 - **Interconnection Teaching:** The Expander transforms simple signals through mathematical operations. Full Wave Rectification appears in precision rectifier modules and audio interfaces. Min/Max logic is Boolean operations - the same circuits power logic modules and sequencers. DACs are the inverse of ADCs found in samplers and audio interfaces. Understanding these operations teaches how ALL signal processing works: take simple signals, apply mathematical transformations, create complexity. Every sophisticated synthesis system follows this pattern: minimize source count, maximize processing sophistication.
+
+---
+
+## Why This Instrument Excels
+
+### **The Philosophy:**
+DivKid wanted something to "keep patches organically drifting and moving" rather than rigid, synced modulation. Richard Devine called it "the most organic little modulator ever" - that says it all!
+
+### **The Innovation: How Ochd's Design Differs From Other Approaches**
+
+**The Sync Dilemma in Synthesis:**
+Most LFO modules work hard to achieve perfect synchronization. They use digital processors, sample-accurate timing, and precise phase locking. This sounds logical - synchronized modulation should be more musical. But ochd's designer Ben Wilson discovered something counterintuitive: **perfect sync creates predictable phasing relationships that repeat exactly every cycle. Humans notice repetition and lose interest. But slightly imperfect analog drift, where each LFO gradually moves in and out of phase with the others, creates perpetual freshness.** Each cycle is slightly different. Nothing exactly repeats. This teaches you about modular philosophy: sometimes accepting analog imprecision creates better musical results than demanding perfection.
+
+**Why Eight LFOs in 4HP?**
+Ochd could have been 2-3 LFOs with more features. Instead it chose breadth over depth - eight independent oscillators arranged specifically from fastest to slowest. This teaches you that modulation power comes from variety (different speeds available simultaneously) rather than complexity (many parameters on each LFO). When you want modulation, you often want several simultaneous speeds working together. Ochd acknowledges this by giving you exactly that.
+
+**The Expander's Elegance:**
+The Expander adds 16 outputs (Full Wave Rectifiers, Logic Pairs, Cascading Triggers, DACs) but uses only 5mA power on each rail. How? Because it's not generating new signals - it's mathematically transforming ochd's existing 8 LFOs. This teaches you that signal processing is more efficient than signal generation. Raw output power (LFOs in ochd) is expensive. Processing that output (Expander circuits) is inexpensive. Most sophisticated synthesis systems follow this pattern: minimal number of sources, extensive processing of those sources.
+
+### **The Practical Benefits:**
+- **Small footprint, huge impact:** 8HP total for 24 modulation sources
+- **One-knob performance:** Rate controls your entire modulation ecosystem
+- **No menu diving:** Everything is immediate and patchable
+- **Expander magic:** 8+4^2 = mathematical modulation expansion
+
+### **Perfect For:**
+- **Beginners:** Simple concept, immediate results, teaches modulation fundamentals
+- **Pros:** Adds movement "without hogging a lot of space" in larger systems
+- **Live performers:** Predictable but never boring modulation
+- **Sound designers:** "Slow noise" DAC outputs for stepped randomness
 
 ---
 
@@ -510,35 +544,6 @@ Users often think patches are linear (A → B → C). But modulation sources can
 
 ---
 
-## Why This Instrument Excels
-
-### **The Philosophy:**
-DivKid wanted something to "keep patches organically drifting and moving" rather than rigid, synced modulation. Richard Devine called it "the most organic little modulator ever" - that says it all!
-
-### **The Innovation: How Ochd's Design Differs From Other Approaches**
-
-**The Sync Dilemma in Synthesis:**
-Most LFO modules work hard to achieve perfect synchronization. They use digital processors, sample-accurate timing, and precise phase locking. This sounds logical - synchronized modulation should be more musical. But ochd's designer Ben Wilson discovered something counterintuitive: **perfect sync creates predictable phasing relationships that repeat exactly every cycle. Humans notice repetition and lose interest. But slightly imperfect analog drift, where each LFO gradually moves in and out of phase with the others, creates perpetual freshness.** Each cycle is slightly different. Nothing exactly repeats. This teaches you about modular philosophy: sometimes accepting analog imprecision creates better musical results than demanding perfection.
-
-**Why Eight LFOs in 4HP?**
-Ochd could have been 2-3 LFOs with more features. Instead it chose breadth over depth - eight independent oscillators arranged specifically from fastest to slowest. This teaches you that modulation power comes from variety (different speeds available simultaneously) rather than complexity (many parameters on each LFO). When you want modulation, you often want several simultaneous speeds working together. Ochd acknowledges this by giving you exactly that.
-
-**The Expander's Elegance:**
-The Expander adds 16 outputs (Full Wave Rectifiers, Logic Pairs, Cascading Triggers, DACs) but uses only 5mA power on each rail. How? Because it's not generating new signals - it's mathematically transforming ochd's existing 8 LFOs. This teaches you that signal processing is more efficient than signal generation. Raw output power (LFOs in ochd) is expensive. Processing that output (Expander circuits) is inexpensive. Most sophisticated synthesis systems follow this pattern: minimal number of sources, extensive processing of those sources.
-
-### **The Practical Benefits:**
-- **Small footprint, huge impact:** 8HP total for 24 modulation sources
-- **One-knob performance:** Rate controls your entire modulation ecosystem
-- **No menu diving:** Everything is immediate and patchable
-- **Expander magic:** 8+4^2 = mathematical modulation expansion
-
-### **Perfect For:**
-- **Beginners:** Simple concept, immediate results, teaches modulation fundamentals
-- **Pros:** Adds movement "without hogging a lot of space" in larger systems
-- **Live performers:** Predictable but never boring modulation
-- **Sound designers:** "Slow noise" DAC outputs for stepped randomness
-
----
 
 **Bottom Line:** ochd + Expander gives you an entire modulation ecosystem in just 8HP. It's not about precision - it's about bringing your patches to life with organic, musical movement that never gets boring. As the **foundation of sophisticated modulation networks**, it enables the creation of intelligent musical systems that learn, evolve, and become personalized instruments.
 

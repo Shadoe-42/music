@@ -37,7 +37,52 @@ from pathlib import Path
 VALID_PRIMARY_ROLES = {
     "SOURCE", "SHAPER", "AMPLIFIER", "MODULATOR",
     "CONTROLLER", "ROUTER", "ANALYZER", "UTILITY",
+    "EVENT_VOICE",  # Added v2: trigger-dependent sound engine
 }
+
+VALID_FORM_FACTORS = {
+    "eurorack", "semi-modular", "standalone", "pedal", "rack",
+    "guitar", "bass", "amplifier", "cabinet", "monitor", "headphones",
+    "blank-panel",
+}
+
+VALID_FUNCTIONS = {
+    # Sources
+    "oscillator", "complex-oscillator", "fm-oscillator", "noise-source",
+    "drum-voice", "sample-player", "granular", "physical-model", "string-instrument",
+    # Shaping
+    "filter", "wavefolder", "distortion", "resonator", "eq", "dynamics",
+    "fx-time", "fx-modulation", "fx-pitch", "fx-spectral",
+    # Modulation
+    "envelope-generator", "lfo", "function-generator", "sample-hold",
+    "random-source", "slew-limiter", "quantizer",
+    # Sequencing & Timing
+    "sequencer", "clock-source", "clock-divider", "clock-multiplier",
+    "euclidean-generator",
+    # Routing & Utility
+    "vca", "mixer", "attenuator", "mult", "switch-router", "signal-router",
+    "logic-processor", "cv-processor",
+    # System
+    "preamp", "power-amp", "audio-interface", "oscilloscope", "tuner",
+    "power-distribution", "transducer", "microphone",
+}
+
+VALID_BEHAVIOR_TAGS = {
+    # Stability
+    "stable", "unstable", "chaotic",
+    # Temporal character
+    "percussive", "sustained", "evolving", "static", "free-running", "gated",
+    # Sonic character
+    "clean", "dirty", "warm", "harsh", "dark", "bright",
+    "metallic", "noisy", "harmonic", "inharmonic",
+    # Control character
+    "linear", "nonlinear", "sensitive", "reactive", "performance-oriented",
+    # Behavioral flags
+    "self-modulating", "generative", "stochastic",
+}
+
+VALID_GRADUATED = {"none", "basic", "full"}
+VALID_BOOL      = {"true", "false"}
 
 # Files that live in modular/ but are not standard module guides
 NON_GUIDE_FILES = {
@@ -113,6 +158,21 @@ def parse_frontmatter(content):
 
 def has_frontmatter(content):
     return content.startswith("---\n") and "\n---" in content[4:]
+
+
+def parse_yaml_array(val):
+    """
+    Parse a YAML inline array string like '[item1, item2]' into a list of strings.
+    Returns None if the value is not in array format.
+    Returns [] for an empty array '[]'.
+    """
+    val = val.strip()
+    if not (val.startswith("[") and val.endswith("]")):
+        return None
+    inner = val[1:-1].strip()
+    if not inner:
+        return []
+    return [item.strip() for item in inner.split(",") if item.strip()]
 
 
 # ---------------------------------------------------------------------------
@@ -451,17 +511,144 @@ def check_phase_2_heading(fp, content, lines, fm):
 
 
 # ---------------------------------------------------------------------------
+# v2 schema checks
+# ---------------------------------------------------------------------------
+
+def check_yaml_form_factor(fp, content, lines, fm):
+    if not has_frontmatter(content):
+        return []
+    if "form_factor" not in fm:
+        return [Issue("yaml_form_factor", CAT_YAML, WARNING,
+                      "Missing `form_factor` field (v2 schema)")]
+    val = fm["form_factor"].strip().lower()
+    if val not in VALID_FORM_FACTORS:
+        valid = ", ".join(sorted(VALID_FORM_FACTORS))
+        return [Issue("yaml_form_factor_valid", CAT_YAML, ERROR,
+                      f"`form_factor` value \"{fm['form_factor']}\" not in valid set: {valid}")]
+    return []
+
+
+def check_yaml_functions(fp, content, lines, fm):
+    if not has_frontmatter(content):
+        return []
+    if "functions" not in fm:
+        return [Issue("yaml_functions", CAT_YAML, WARNING,
+                      "Missing `functions` field (v2 schema)")]
+    items = parse_yaml_array(fm["functions"])
+    if items is None:
+        return [Issue("yaml_functions_format", CAT_YAML, ERROR,
+                      f"`functions` must be array format, got: `{fm['functions']}`")]
+    if len(items) == 0:
+        return []  # blank panels legitimately have empty functions
+    issues = []
+    if len(items) > 3:
+        issues.append(Issue("yaml_functions_count", CAT_YAML, WARNING,
+                            f"`functions` has {len(items)} items; maximum is 3"))
+    for item in items:
+        if item.lower() not in VALID_FUNCTIONS:
+            issues.append(Issue("yaml_functions_vocab", CAT_YAML, ERROR,
+                                f"`functions` contains unknown term: \"{item}\""))
+    return issues
+
+
+def check_yaml_behavior_tags(fp, content, lines, fm):
+    if not has_frontmatter(content):
+        return []
+    if "behavior_tags" not in fm:
+        return [Issue("yaml_behavior_tags", CAT_YAML, WARNING,
+                      "Missing `behavior_tags` field (v2 schema)")]
+    items = parse_yaml_array(fm["behavior_tags"])
+    if items is None:
+        return [Issue("yaml_behavior_tags_format", CAT_YAML, ERROR,
+                      f"`behavior_tags` must be array format, got: `{fm['behavior_tags']}`")]
+    issues = []
+    if len(items) < 3:
+        issues.append(Issue("yaml_behavior_tags_count_low", CAT_YAML, WARNING,
+                            f"`behavior_tags` has {len(items)} items; minimum is 3"))
+    if len(items) > 8:
+        issues.append(Issue("yaml_behavior_tags_count_high", CAT_YAML, WARNING,
+                            f"`behavior_tags` has {len(items)} items; maximum is 8"))
+    for item in items:
+        if item.lower() not in VALID_BEHAVIOR_TAGS:
+            issues.append(Issue("yaml_behavior_tags_vocab", CAT_YAML, ERROR,
+                                f"`behavior_tags` contains unknown term: \"{item}\""))
+    return issues
+
+
+def check_yaml_use_cases(fp, content, lines, fm):
+    if not has_frontmatter(content):
+        return []
+    if "use_cases" not in fm:
+        return [Issue("yaml_use_cases", CAT_YAML, WARNING,
+                      "Missing `use_cases` field (v2 schema)")]
+    items = parse_yaml_array(fm["use_cases"])
+    if items is None:
+        return [Issue("yaml_use_cases_format", CAT_YAML, ERROR,
+                      f"`use_cases` must be array format, got: `{fm['use_cases']}`")]
+    issues = []
+    if len(items) > 4:
+        issues.append(Issue("yaml_use_cases_count", CAT_YAML, WARNING,
+                            f"`use_cases` has {len(items)} items; maximum is 4"))
+    for item in items:
+        word_count = len(item.split())
+        if word_count < 2:
+            issues.append(Issue("yaml_use_cases_too_short", CAT_YAML, WARNING,
+                                f"`use_cases` item too short ({word_count} word): \"{item}\""))
+        if word_count > 7:
+            issues.append(Issue("yaml_use_cases_too_long", CAT_YAML, WARNING,
+                                f"`use_cases` item too long ({word_count} words): \"{item}\""))
+    return issues
+
+
+def check_yaml_capability_flags(fp, content, lines, fm):
+    """Validate memory, cv (graduated: none/basic/full), transport (none/receive/full),
+    screen, hybrid (boolean) if present."""
+    if not has_frontmatter(content):
+        return []
+    issues = []
+    # memory and cv use the standard graduated vocabulary: none / basic / full
+    for field in ("memory", "cv"):
+        if field in fm:
+            val = fm[field].strip().lower()
+            if val not in VALID_GRADUATED:
+                issues.append(Issue(f"yaml_{field}_valid", CAT_YAML, ERROR,
+                                    f"`{field}` value \"{fm[field]}\" must be: "
+                                    f"none, basic, or full"))
+    # transport uses its own vocabulary: none / receive / full
+    if "transport" in fm:
+        val = fm["transport"].strip().lower()
+        if val not in {"none", "receive", "full"}:
+            issues.append(Issue("yaml_transport_valid", CAT_YAML, ERROR,
+                                f"`transport` value \"{fm['transport']}\" must be: "
+                                f"none, receive, or full"))
+    for field in ("screen", "hybrid"):
+        if field in fm:
+            val = fm[field].strip().lower()
+            if val not in VALID_BOOL:
+                issues.append(Issue(f"yaml_{field}_valid", CAT_YAML, ERROR,
+                                    f"`{field}` value \"{fm[field]}\" must be: "
+                                    f"true or false"))
+    return issues
+
+
+# ---------------------------------------------------------------------------
 # Check registry — add new functions here to include them in every audit run
 # ---------------------------------------------------------------------------
 
 CHECKS = [
-    # YAML frontmatter
+    # YAML frontmatter — v1
     check_yaml_present,
     check_yaml_title,
     check_yaml_manufacturer,
     check_yaml_primary_role,
     check_yaml_secondary_roles,
     check_yaml_hp,
+    # YAML frontmatter — v2
+    check_yaml_form_factor,
+    check_yaml_functions,
+    check_yaml_behavior_tags,
+    check_yaml_use_cases,
+    check_yaml_capability_flags,
     # Required sections
     check_section_historical_context,
     check_section_why_excels,

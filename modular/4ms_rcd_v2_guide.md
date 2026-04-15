@@ -3,7 +3,12 @@ title: 4ms Rotating Clock Divider v2
 manufacturer: 4ms Company
 primary_role: CONTROLLER
 secondary_roles: [ROUTER]
+form_factor: eurorack
+functions: [clock-divider]
+behavior_tags: [stable, percussive, linear, performance-oriented]
+use_cases: [polyrhythmic clock division, rhythmic gate patterns, clock distribution]
 hp: 8
+transport: receive
 ---
 
 # 4ms Rotating Clock Divider V2 - Guide

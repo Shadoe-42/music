@@ -3,6 +3,10 @@ title: Mutable Instruments Marbles
 manufacturer: Mutable Instruments
 primary_role: MODULATOR
 secondary_roles: [SOURCE, CONTROLLER]
+form_factor: eurorack
+functions: [random-source, sequencer]
+behavior_tags: [stochastic, evolving, generative, free-running, performance-oriented]
+use_cases: [generative melodic sequence, stochastic modulation, random CV generator, self-evolving patch element]
 hp: 18
 ---
 

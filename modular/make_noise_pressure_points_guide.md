@@ -3,6 +3,10 @@ title: Make Noise Pressure Points
 manufacturer: Make Noise
 primary_role: CONTROLLER
 secondary_roles: [SOURCE]
+form_factor: eurorack
+functions: [sequencer]
+behavior_tags: [stable, performance-oriented, reactive, sensitive, gated]
+use_cases: [performance touch control, pitch CV source, gate and trigger source]
 hp: 24
 ---
 

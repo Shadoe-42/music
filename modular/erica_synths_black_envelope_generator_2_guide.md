@@ -3,6 +3,10 @@ title: Erica Synths Black Envelope Generator 2
 manufacturer: Erica Synths
 primary_role: MODULATOR
 secondary_roles: []
+form_factor: eurorack
+functions: [envelope-generator]
+behavior_tags: [stable, gated, linear, reactive]
+use_cases: [envelope shaping, gate and trigger source, modulation source]
 hp: 8
 ---
 

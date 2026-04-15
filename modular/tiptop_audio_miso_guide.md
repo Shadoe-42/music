@@ -3,6 +3,10 @@ title: Tiptop Audio MISO
 manufacturer: Tiptop Audio
 primary_role: AMPLIFIER
 secondary_roles: [ROUTER]
+form_factor: eurorack
+functions: [vca, attenuator, cv-processor]
+behavior_tags: [clean, stable, linear, reactive]
+use_cases: [CV scaling and utility, signal distribution, attenuation and inversion]
 hp: 4
 ---
 

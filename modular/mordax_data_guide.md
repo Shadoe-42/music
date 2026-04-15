@@ -3,8 +3,12 @@ title: Mordax Data
 manufacturer: Mordax
 primary_role: ANALYZER
 secondary_roles: []
-screen: true
+form_factor: eurorack
+functions: [oscilloscope, tuner]
+behavior_tags: [stable, clean, linear, reactive]
+use_cases: [signal analysis and measurement, tuning and calibration, patch visualization]
 hp: 16
+screen: true
 ---
 
 # Mordax Data - Beginner's Guide

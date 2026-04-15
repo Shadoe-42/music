@@ -3,7 +3,14 @@ title: Endorphin.es Queen of Pentacles
 manufacturer: Endorphin.es
 primary_role: SOURCE
 secondary_roles: [SHAPER]
+form_factor: eurorack
+functions: [drum-voice, sample-player]
+behavior_tags: [percussive, gated, dirty, warm, performance-oriented]
+use_cases: [hybrid drum voice set, rhythmic percussion layer, full drum kit with samples]
 hp: 30
+memory: basic
+screen: true
+hybrid: true
 ---
 
 # Endorphin.es Queen of Pentacles Guide

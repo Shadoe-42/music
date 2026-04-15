@@ -3,6 +3,10 @@ title: Frap Tools 411
 manufacturer: Frap Tools
 primary_role: AMPLIFIER
 secondary_roles: [ROUTER]
+form_factor: eurorack
+functions: [vca, mixer]
+behavior_tags: [clean, stable, linear, reactive]
+use_cases: [audio mixing and routing, CV-controlled mixing, signal distribution]
 hp: 6
 ---
 

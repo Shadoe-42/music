@@ -3,6 +3,10 @@ title: After Later Audio Mingles
 manufacturer: After Later Audio
 primary_role: ROUTER
 secondary_roles: [AMPLIFIER, MODULATOR]
+form_factor: eurorack
+functions: [mixer, lfo]
+behavior_tags: [clean, warm, stable, performance-oriented]
+use_cases: [audio mixing and routing, VC panning and stereo placement, modulated mixing]
 hp: 12
 ---
 

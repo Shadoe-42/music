@@ -3,6 +3,10 @@ title: Blue Lantern CMOS Party
 manufacturer: Blue Lantern
 primary_role: ROUTER
 secondary_roles: [MODULATOR]
+form_factor: eurorack
+functions: [logic-processor]
+behavior_tags: [stable, percussive, reactive, linear]
+use_cases: [trigger pattern generation, clock manipulation, audio rate logic processing]
 hp: 4
 ---
 

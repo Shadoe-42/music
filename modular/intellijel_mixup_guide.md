@@ -3,6 +3,10 @@ title: Intellijel MixUp
 manufacturer: Intellijel
 primary_role: AMPLIFIER
 secondary_roles: [ROUTER]
+form_factor: eurorack
+functions: [mixer]
+behavior_tags: [clean, stable, linear]
+use_cases: [audio mixing and routing, signal summing, stereo bus mixing]
 hp: 6
 ---
 

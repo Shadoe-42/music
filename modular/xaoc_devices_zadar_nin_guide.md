@@ -3,9 +3,13 @@ title: Xaoc Devices Zadar + NIN
 manufacturer: Xaoc Devices
 primary_role: MODULATOR
 secondary_roles: []
-memory: basic
-screen: true
+form_factor: eurorack
+functions: [function-generator]
+behavior_tags: [free-running, gated, evolving, nonlinear, generative, performance-oriented]
+use_cases: [envelope shaping, modulation source, generative CV source, stochastic modulation]
 hp: 10
+memory: full
+screen: true
 ---
 
 # Xaoc Devices Zadar & NIN Guide

@@ -3,6 +3,10 @@ title: Xaoc Devices Belgrad
 manufacturer: Xaoc Devices
 primary_role: SHAPER
 secondary_roles: [SOURCE]
+form_factor: eurorack
+functions: [filter, wavefolder]
+behavior_tags: [warm, harmonic, nonlinear, evolving, performance-oriented]
+use_cases: [timbral movement and shaping, complex filter character, self-evolving patch element]
 hp: 14
 ---
 

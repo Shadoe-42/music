@@ -3,6 +3,11 @@ title: Turing Machine Ecosystem
 manufacturer: Music Thing Modular
 primary_role: CONTROLLER
 secondary_roles: [SOURCE, MODULATOR]
+form_factor: eurorack
+functions: [sequencer, random-source]
+behavior_tags: [stochastic, evolving, generative, chaotic, performance-oriented]
+use_cases: [generative melodic sequence, stochastic modulation, self-evolving patch element, probability-based variation]
+transport: receive
 ---
 
 # Music Thing Modular Turing Machine V2 Ecosystem - Guide

@@ -3,6 +3,10 @@ title: Mutable Instruments Rings
 manufacturer: Mutable Instruments
 primary_role: SOURCE
 secondary_roles: [SHAPER]
+form_factor: eurorack
+functions: [resonator, physical-model]
+behavior_tags: [harmonic, sustained, metallic, evolving, performance-oriented]
+use_cases: [harmonic pad, evolving ambient texture, chord voice, drone foundation]
 hp: 14
 ---
 

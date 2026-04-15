@@ -3,6 +3,10 @@ title: Erica Synths Black Quad VCA2
 manufacturer: Erica Synths
 primary_role: AMPLIFIER
 secondary_roles: [ROUTER]
+form_factor: eurorack
+functions: [vca, mixer]
+behavior_tags: [clean, stable, linear, reactive]
+use_cases: [audio mixing and routing, CV-controlled mixing, voice summing]
 hp: 10
 ---
 

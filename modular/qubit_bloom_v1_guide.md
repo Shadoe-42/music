@@ -3,9 +3,14 @@ title: Qubit Bloom v1
 manufacturer: Qubit
 primary_role: CONTROLLER
 secondary_roles: []
-memory: basic
-screen: true
+form_factor: eurorack
+functions: [sequencer]
+behavior_tags: [stable, generative, stochastic, evolving, performance-oriented]
+use_cases: [generative melodic sequence, self-evolving patch element, probability-based variation]
 hp: 16
+memory: full
+transport: receive
+screen: true
 ---
 
 # Qu-Bit Bloom V1 - Beginner's Guide

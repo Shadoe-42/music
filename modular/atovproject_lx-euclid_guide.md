@@ -3,8 +3,12 @@ title: AtoVproject lx-euclid
 manufacturer: AtoVproject
 primary_role: CONTROLLER
 secondary_roles: []
-screen: true
+form_factor: eurorack
+functions: [euclidean-generator, sequencer]
+behavior_tags: [stable, percussive, linear, generative]
+use_cases: [euclidean rhythm source, polyrhythmic pattern generator, rhythmic gate patterns]
 hp: 16
+screen: true
 ---
 
 # AtoVproject lx-euclid Guide

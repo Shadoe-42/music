@@ -3,6 +3,10 @@ title: Make Noise Maths
 manufacturer: Make Noise
 primary_role: MODULATOR
 secondary_roles: [SOURCE, SHAPER, ROUTER]
+form_factor: eurorack
+functions: [function-generator, cv-processor]
+behavior_tags: [free-running, evolving, nonlinear, performance-oriented, generative]
+use_cases: [envelope shaping, modulation source, CV scaling and utility, self-evolving patch element]
 hp: 20
 ---
 

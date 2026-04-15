@@ -3,6 +3,10 @@ title: Erica Synths Pico LFO SH
 manufacturer: Erica Synths
 primary_role: MODULATOR
 secondary_roles: [SOURCE]
+form_factor: eurorack
+functions: [lfo, sample-hold]
+behavior_tags: [free-running, stable, stochastic, generative]
+use_cases: [modulation source, random CV generator, stochastic modulation]
 hp: 3
 ---
 
@@ -96,6 +100,33 @@ The Pico LFO/S&H maintains pure analog signal paths, preserving the subtle chara
 - **Other LFOs:** Turn smooth LFOs into stepped sequences  
 - **Audio signals:** Sample audio for unusual CV patterns
 - **Manual voltage:** Use offset/attenuator modules for controlled values
+
+---
+
+## Why This Instrument Excels
+
+### **The Philosophy:**
+LFO and Sample & Hold are the most fundamental modulation sources in synthesis. Pico LFO/S&H provides both in pure analog form with the space efficiency that makes it accessible to every rack size.
+
+### **The Engineering:**
+- **Full analog circuitry:** No digital artifacts or aliasing
+- **AS1100CK2 IC:** Professional-grade S&H chip for stability and precision
+- **Overvoltage protection:** Safe operation even with hot signals
+- **Reverse power protection:** Won't damage if power is connected wrong
+
+### **The Practical Benefits:**
+- **Space efficient:** Two essential functions in just 3HP
+- **Power efficient:** Only 13mA +12V, 10mA -12V
+- **Immediately useful:** Every patch can benefit from these functions
+- **No configuration:** Plug in and start modulating immediately
+- **Visual feedback:** LED makes timing relationships clear
+
+### **Perfect For:**
+- **Every rack:** These are fundamental synthesis building blocks
+- **Beginners:** Learn core modulation concepts with simple interface
+- **Small cases:** Maximum utility in minimum space
+- **Performers:** Reliable, tactile control without complexity
+- **Producers:** Essential modulation covered efficiently
 
 ---
 
@@ -272,32 +303,6 @@ Mixer (Mixup, Performance Mixer) → Combined modulation output
 
 ---
 
-## Why This Instrument Excels
-
-### **The Philosophy:**
-LFO and Sample & Hold are the most fundamental modulation sources in synthesis. Pico LFO/S&H provides both in pure analog form with the space efficiency that makes it accessible to every rack size.
-
-### **The Engineering:**
-- **Full analog circuitry:** No digital artifacts or aliasing
-- **AS1100CK2 IC:** Professional-grade S&H chip for stability and precision
-- **Overvoltage protection:** Safe operation even with hot signals
-- **Reverse power protection:** Won't damage if power is connected wrong
-
-### **The Practical Benefits:**
-- **Space efficient:** Two essential functions in just 3HP
-- **Power efficient:** Only 13mA +12V, 10mA -12V
-- **Immediately useful:** Every patch can benefit from these functions
-- **No configuration:** Plug in and start modulating immediately
-- **Visual feedback:** LED makes timing relationships clear
-
-### **Perfect For:**
-- **Every rack:** These are fundamental synthesis building blocks
-- **Beginners:** Learn core modulation concepts with simple interface
-- **Small cases:** Maximum utility in minimum space
-- **Performers:** Reliable, tactile control without complexity
-- **Producers:** Essential modulation covered efficiently
-
----
 
 **Bottom Line:** Pico LFO/S&H proves that the most important modules are often the simplest ones. LFO + Sample & Hold in 3HP covers fundamental analog modulation that every synthesist needs. As the **modulation core of performance ecosystems**, it transforms human expression and mathematical precision into unified analog modulation evolution.
 

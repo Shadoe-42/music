@@ -3,6 +3,10 @@ title: Cre8audio Chipz
 manufacturer: Cre8audio
 primary_role: SOURCE
 secondary_roles: []
+form_factor: eurorack
+functions: [oscillator]
+behavior_tags: [stable, bright, harmonic, linear]
+use_cases: [lead voice, chiptune synthesis, bass voice]
 hp: 12
 ---
 

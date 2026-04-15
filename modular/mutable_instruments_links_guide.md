@@ -3,6 +3,10 @@ title: Mutable Instruments Links
 manufacturer: Mutable Instruments
 primary_role: ROUTER
 secondary_roles: []
+form_factor: eurorack
+functions: [mult, attenuator]
+behavior_tags: [clean, stable, linear]
+use_cases: [signal distribution, CV scaling and utility, audio mixing and routing]
 hp: 4
 ---
 

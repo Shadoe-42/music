@@ -3,6 +3,10 @@ title: Cre8audio Cellz
 manufacturer: Cre8audio
 primary_role: CONTROLLER
 secondary_roles: [SOURCE]
+form_factor: eurorack
+functions: [sequencer]
+behavior_tags: [stable, performance-oriented, reactive, sensitive]
+use_cases: [gate and trigger source, performance touch control, pitch CV source]
 hp: 8
 ---
 

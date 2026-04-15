@@ -3,6 +3,10 @@ title: ALM Busy Circuits MCO ALM021
 manufacturer: ALM Busy Circuits
 primary_role: SOURCE
 secondary_roles: []
+form_factor: eurorack
+functions: [oscillator]
+behavior_tags: [stable, clean, bright, linear]
+use_cases: [lead voice, bass voice, stable pitch reference]
 hp: 6
 ---
 

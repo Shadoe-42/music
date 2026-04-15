@@ -3,7 +3,13 @@ title: DSPcoffee Kali
 manufacturer: DSPcoffee
 primary_role: SHAPER
 secondary_roles: [MODULATOR]
+form_factor: eurorack
+functions: [fx-time, lfo]
+behavior_tags: [evolving, warm, nonlinear, generative, performance-oriented]
+use_cases: [evolving ambient texture, stereo signal processing, modulation source, self-evolving patch element]
 hp: 24
+memory: full
+screen: true
 ---
 
 # dsp.coffee Kali

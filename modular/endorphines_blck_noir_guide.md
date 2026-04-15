@@ -3,7 +3,14 @@ title: Endorphin.es BLCK_NOIR
 manufacturer: Endorphin.es
 primary_role: SOURCE
 secondary_roles: [SHAPER]
+form_factor: eurorack
+functions: [drum-voice]
+behavior_tags: [percussive, gated, dirty, warm, harmonic, performance-oriented]
+use_cases: [rhythmic percussion layer, analog drum voice set, full drum kit synthesis]
 hp: 30
+memory: basic
+screen: true
+hybrid: true
 ---
 
 # Endorphin.es BLCK_NOIR Guide

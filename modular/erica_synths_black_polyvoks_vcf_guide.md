@@ -3,6 +3,10 @@ title: Erica Synths Black Polyvoks VCF
 manufacturer: Erica Synths
 primary_role: SHAPER
 secondary_roles: []
+form_factor: eurorack
+functions: [filter]
+behavior_tags: [dirty, harsh, nonlinear, unstable, performance-oriented]
+use_cases: [timbral movement and shaping, dirty filter character, aggressive sound design]
 hp: 12
 ---
 

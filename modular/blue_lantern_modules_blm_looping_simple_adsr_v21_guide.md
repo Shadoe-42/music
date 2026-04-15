@@ -3,6 +3,10 @@ title: Blue Lantern BLM Looping Simple ADSR v21
 manufacturer: Blue Lantern
 primary_role: MODULATOR
 secondary_roles: []
+form_factor: eurorack
+functions: [envelope-generator]
+behavior_tags: [stable, gated, free-running, linear]
+use_cases: [envelope shaping, modulation source, looping LFO-style envelope]
 hp: 7
 ---
 

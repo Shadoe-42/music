@@ -3,6 +3,10 @@ title: Instruo Cs-L
 manufacturer: Instruo
 primary_role: SOURCE
 secondary_roles: [SHAPER]
+form_factor: eurorack
+functions: [complex-oscillator]
+behavior_tags: [harmonic, warm, nonlinear, evolving, performance-oriented]
+use_cases: [lead voice, complex harmonic texture, bass voice, chord voice]
 hp: 20
 ---
 

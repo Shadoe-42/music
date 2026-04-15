@@ -3,7 +3,14 @@ title: VPME QD + QEX Drum Workstation
 manufacturer: VPME
 primary_role: SOURCE
 secondary_roles: [CONTROLLER, SHAPER]
+form_factor: eurorack
+functions: [sample-player, sequencer]
+behavior_tags: [percussive, gated, stable, performance-oriented, reactive]
+use_cases: [rhythmic percussion layer, full drum kit with samples, sequenced drum workstation]
 hp: 26
+memory: full
+transport: full
+screen: true
 ---
 
 # VPME.de QD + QEX Drum Workstation - Guide

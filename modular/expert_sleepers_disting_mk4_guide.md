@@ -3,9 +3,13 @@ title: Expert Sleepers Disting MK4
 manufacturer: Expert Sleepers
 primary_role: UTILITY
 secondary_roles: []
-memory: basic
-screen: true
+form_factor: eurorack
+functions: [oscillator, fx-time, envelope-generator]
+behavior_tags: [stable, linear, reactive, performance-oriented]
+use_cases: [utility fill-in role, problem-solving in-patch, whatever is needed right now]
 hp: 4
+memory: none
+screen: true
 ---
 
 # Disting mk4 - Guide

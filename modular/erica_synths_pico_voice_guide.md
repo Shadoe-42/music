@@ -3,6 +3,10 @@ title: Erica Synths Pico Voice
 manufacturer: Erica Synths
 primary_role: SOURCE
 secondary_roles: [SHAPER, AMPLIFIER]
+form_factor: eurorack
+functions: [oscillator, filter, envelope-generator]
+behavior_tags: [warm, stable, gated, linear, performance-oriented]
+use_cases: [complete voice in small system, lead voice, bass voice]
 hp: 3
 ---
 
@@ -131,6 +135,34 @@ The ability to assign CV control to any parameter without menu diving represents
 - **PAR2:** Release time
 - **Setting:** Base waveform selection
 - **Sound:** Rich, organ-like tones with controllable harmonic content
+
+---
+
+## Why This Instrument Excels
+
+### **The Philosophy:**
+Erica Synths challenged themselves: "Can we make ANY superior functionality synth module 3HP wide and affordable?" The answer is yes, and Pico Voice proves it.
+
+### **The Engineering:**
+- **8 complete synthesis algorithms** in 3HP
+- **Full 1V/Oct tracking** over 8 octaves
+- **User memory** remembers your settings
+- **Assignable CV control** for performance flexibility
+- **Color-coded interface** for intuitive operation
+
+### **The Practical Benefits:**
+- **Space efficient:** Complete voice in minimal HP
+- **Immediately musical:** No complex programming required
+- **Versatile:** Covers bass, leads, pads, and experimental sounds
+- **Performance ready:** Real-time control without menu diving
+- **Affordable:** Professional synthesis algorithms at Pico prices
+
+### **Perfect For:**
+- **Small cases:** Maximum synthesis in minimum space
+- **Beginners:** Easy to understand, immediately rewarding
+- **Producers:** Quick access to classic synthesis methods
+- **Performers:** Reliable, hands-on control
+- **Everyone:** Sounds way bigger than its 3HP footprint!
 
 ---
 
@@ -503,33 +535,6 @@ Use two Pico Voice modules: one on Wavetable, another on Harmonic. Blend them th
 
 ---
 
-## Why This Instrument Excels
-
-### **The Philosophy:**
-Erica Synths challenged themselves: "Can we make ANY superior functionality synth module 3HP wide and affordable?" The answer is yes, and Pico Voice proves it.
-
-### **The Engineering:**
-- **8 complete synthesis algorithms** in 3HP
-- **Full 1V/Oct tracking** over 8 octaves
-- **User memory** remembers your settings
-- **Assignable CV control** for performance flexibility
-- **Color-coded interface** for intuitive operation
-
-### **The Practical Benefits:**
-- **Space efficient:** Complete voice in minimal HP
-- **Immediately musical:** No complex programming required
-- **Versatile:** Covers bass, leads, pads, and experimental sounds
-- **Performance ready:** Real-time control without menu diving
-- **Affordable:** Professional synthesis algorithms at Pico prices
-
-### **Perfect For:**
-- **Small cases:** Maximum synthesis in minimum space
-- **Beginners:** Easy to understand, immediately rewarding
-- **Producers:** Quick access to classic synthesis methods
-- **Performers:** Reliable, hands-on control
-- **Everyone:** Sounds way bigger than its 3HP footprint!
-
----
 
 ## Creative Learning Path
 

@@ -3,6 +3,10 @@ title: Noise Engineering Ruina Versio
 manufacturer: Noise Engineering
 primary_role: SHAPER
 secondary_roles: []
+form_factor: eurorack
+functions: [distortion]
+behavior_tags: [dirty, harsh, nonlinear, performance-oriented, harmonic]
+use_cases: [waveshaping and distortion, aggressive sound design, timbral movement and shaping]
 hp: 10
 ---
 

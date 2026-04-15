@@ -3,6 +3,10 @@ title: Cre8audio Function Junction
 manufacturer: Cre8audio
 primary_role: ROUTER
 secondary_roles: [MODULATOR]
+form_factor: eurorack
+functions: [cv-processor, mixer, logic-processor]
+behavior_tags: [stable, linear, reactive]
+use_cases: [CV scaling and utility, audio mixing and routing, signal distribution]
 hp: 16
 ---
 

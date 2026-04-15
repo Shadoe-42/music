@@ -3,6 +3,10 @@ title: Erica Synths Pico Drum2
 manufacturer: Erica Synths
 primary_role: SOURCE
 secondary_roles: []
+form_factor: eurorack
+functions: [sample-player]
+behavior_tags: [percussive, gated, reactive, stable]
+use_cases: [rhythmic percussion layer, sample playback, drum voice in small system]
 hp: 3
 ---
 

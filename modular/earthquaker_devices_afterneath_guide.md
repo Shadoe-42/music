@@ -3,6 +3,10 @@ title: EarthQuaker Devices Afterneath
 manufacturer: EarthQuaker Devices
 primary_role: SHAPER
 secondary_roles: [SOURCE]
+form_factor: eurorack
+functions: [fx-time]
+behavior_tags: [evolving, dark, nonlinear, generative]
+use_cases: [evolving ambient texture, dark atmospheric layer, drone foundation]
 hp: 16
 ---
 
