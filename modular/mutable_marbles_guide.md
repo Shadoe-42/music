@@ -112,9 +112,9 @@ Using Marbles teaches you about your own musical preferences by showing you patt
                     │   ●     │   ●     │ │
                     │         └─────────┘ │
                     │                     │
-                    │ X1 ○────────────────┼─── CV (Blue)
+                    │ X1 ○────────────────┼─── [C]
                     │    ║                │     ║
-                    │ t2 ○────────────────┼─── Gate (Yellow)
+                    │ t2 ○────────────────┼─── [G]
                     │    ║                │     ║
                     └────║────────────────┘     ▼
                          ▼                ┌──────────────┐
@@ -125,8 +125,8 @@ Using Marbles teaches you about your own musical preferences by showing you patt
                     │ Trigger  ◀──┼───────┼─ Audio Out ○ │
                     │             │       │              │
                     │ Output   ○  │       └────┬─────────┘
-                    └────┬────────┘            ║ Audio (Red)
-                         ║ CV (Blue)           ▼
+                    └────┬────────┘            ║ [A]
+                         ║ [C]           ▼
                          ▼                ┌─────────────┐
                     ┌─────────────┐       │     VCA     │
                     │     VCA     │       │             │
@@ -139,10 +139,10 @@ Using Marbles teaches you about your own musical preferences by showing you patt
 
 | Connection | Cable Type | Purpose | Learning Objective |
 |------------|------------|---------|-------------------|
-| Marbles X1 → Oscillator 1V/Oct | CV (Blue) | **Random pitch control** | **Creates evolving melodies** |
-| Marbles t2 → Envelope Trigger | Gate (Yellow) | **Rhythmic triggering** | **Main beat with variations** |
-| Oscillator Audio → VCA Audio | Audio (Red) | **Signal path** | **Complete voice chain** |
-| Envelope Out → VCA CV | CV (Blue) | **Amplitude shaping** | **Musical note envelopes** |
+| Marbles X1 → Oscillator 1V/Oct | [C] | **Random pitch control** | **Creates evolving melodies** |
+| Marbles t2 → Envelope Trigger | [G] | **Rhythmic triggering** | **Main beat with variations** |
+| Oscillator Audio → VCA Audio | [A] | **Signal path** | **Complete voice chain** |
+| Envelope Out → VCA CV | [C] | **Amplitude shaping** | **Musical note envelopes** |
 
 **Module Settings:**
 - **Marbles RATE:** 12 o'clock (120 BPM)
@@ -184,13 +184,13 @@ Using Marbles teaches you about your own musical preferences by showing you patt
    │       ║            │      │                     │
    │ LFO 7 ○────────────┼──────┼─▶ BIAS CV           │
    │       ║            │      │                     │
-   │       ║            │      │ X1 ○────────────────┼─── CV (Blue)
-   │       ║            │      │ X2 ○────────────────┼─── CV (Blue)
-   │       ║            │      │ t1 ○────────────────┼─── Gate (Yellow)
-   │       ║            │      │ Y  ○────────────────┼─── CV (Blue)
+   │       ║            │      │ X1 ○────────────────┼─── [C]
+   │       ║            │      │ X2 ○────────────────┼─── [C]
+   │       ║            │      │ t1 ○────────────────┼─── [G]
+   │       ║            │      │ Y  ○────────────────┼─── [C]
    └───────║────────────┘      └─────────────────────┘
            ║                           ║      ║    ║    ║
-   CV (Blue)║                   CV (Blue)║      ║    ║    ║
+   [C]║                   [C]║      ║    ║    ║
            ▼                           ║      ║    ║    ║
    ┌─────────────┐                    ▼      ▼    ▼    ▼
    │   Filter    │           ┌──────────────────────────┐
@@ -246,10 +246,10 @@ Using Marbles teaches you about your own musical preferences by showing you patt
                     │         └─────────┘ │
                     │ Algorithm: Red      │
                     │                     │
-                    │ t1 ○─────────────────┼─── Gate (Yellow)
-                    │ t2 ○─────────────────┼─── Gate (Yellow)
-                    │ t3 ○─────────────────┼─── Gate (Yellow)
-                    │ Y  ○─────────────────┼─── CV (Blue)
+                    │ t1 ○─────────────────┼─── [G]
+                    │ t2 ○─────────────────┼─── [G]
+                    │ t3 ○─────────────────┼─── [G]
+                    │ Y  ○─────────────────┼─── [C]
                     │    ╚══════════════╗  │      ║
                     │        DEJA VU CV◀┼──┼──────╚═══ Self-Modulation
                     └─────────────────────┘
@@ -278,10 +278,10 @@ Using Marbles teaches you about your own musical preferences by showing you patt
 
 | Connection | Cable Type | Purpose | Musical Function |
 |------------|------------|---------|-----------------|
-| Marbles t1 → Kick Trigger | Gate (Yellow) | **Main beat generator** | **Foundational rhythm** |
-| Marbles t2 → Snare Trigger | Gate (Yellow) | **Secondary rhythm** | **Syncopated patterns** |
-| Marbles t3 → Hihat Trigger | Gate (Yellow) | **Tertiary rhythm** | **Complex polyrhythms** |
-| Marbles Y → Marbles DEJA VU CV | CV (Blue) | **Self-modulation** | **Evolving memory patterns** |
+| Marbles t1 → Kick Trigger | [G] | **Main beat generator** | **Foundational rhythm** |
+| Marbles t2 → Snare Trigger | [G] | **Secondary rhythm** | **Syncopated patterns** |
+| Marbles t3 → Hihat Trigger | [G] | **Tertiary rhythm** | **Complex polyrhythms** |
+| Marbles Y → Marbles DEJA VU CV | [C] | **Self-modulation** | **Evolving memory patterns** |
 
 **Module Settings:**
 - **Marbles Algorithm:** Red mode (complex polyrhythms)

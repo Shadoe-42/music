@@ -88,25 +88,25 @@ The ability to assign CV control to any parameter without menu diving represents
 
 ## The 8 Algorithms Explained
 
-### **🔴 RED - Karplus Strong (Plucked Strings)**
+### **RED - Karplus Strong (Plucked Strings)**
 - **PAR1:** Distortion amount
 - **PAR2:** Noise burst (initial pluck character)
 - **Gate/Trigger:** Essential - initiates the "pluck" (note: Pico Voice doesn't have a dedicated gate input - uses note changes on 1V/Oct)
 - **Sound:** Realistic plucked strings, harps, guitar-like tones
 
-### **🟡 YELLOW - Chords (Harmonic Stacks)**
+### **YELLOW - Chords (Harmonic Stacks)**
 - **PAR1:** Chord type (Major, minor, 7th, diminished, etc.)
 - **PAR2:** Release time
 - **Setting:** Waveform (Sine, Triangle, Saw, Square)
 - **Sound:** Rich harmonic chords, perfect for pads and stabs
 
-### **🟢 GREEN - Wavetable (Digital Wave Morphing)**
+### **GREEN - Wavetable (Digital Wave Morphing)**
 - **PAR1:** Wave surfing (morphs through wavetable)
 - **PAR2:** Release time  
 - **Setting:** 1 or 2 note operation
 - **Sound:** Digital, evolving textures like classic wavetable synths
 
-### **🟦 BLUE - Bassline (TB-303 Emulation)**
+### **BLUE - Bassline (TB-303 Emulation)**
 - **PAR1:** Resonance (filter resonance)
 - **PAR2:** Release time
 - **Setting:** Saw or Pulse waveform
@@ -118,19 +118,19 @@ The ability to assign CV control to any parameter without menu diving represents
 - **Setting:** 1, 2, or 3 note operation
 - **Sound:** Classic analog-style pulse waves with movement
 
-### **🟠 ORANGE - Supersaw (Detuned Sawtooth Stack)**
+### **ORANGE - Supersaw (Detuned Sawtooth Stack)**
 - **PAR1:** Detune amount (spread between oscillators)
 - **PAR2:** Release time
 - **Setting:** Phase lock on/off
 - **Sound:** Massive, wide sawtooth stacks like classic trance leads
 
-### **🟦 CYAN - Wavefold (Harmonic Distortion)**
+### **CYAN - Wavefold (Harmonic Distortion)**
 - **PAR1:** Fold amount (harmonic distortion)
 - **PAR2:** Release time
 - **Setting:** Sine, 2x Sine, Triangle, 2x Triangle base waves
 - **Sound:** Complex harmonic textures from simple waveforms
 
-### **🟢 LIME - Harmonic (Additive Synthesis)**
+### **LIME - Harmonic (Additive Synthesis)**
 - **PAR1:** Add harmonics (builds harmonic content)
 - **PAR2:** Release time
 - **Setting:** Base waveform selection
@@ -221,9 +221,9 @@ Erica Synths challenged themselves: "Can we make ANY superior functionality synt
    │       ║            │      │                         │
    │ LFO 7 ○────────────┼──────┼─▶ CV Input (Tune)      │
    │       ║            │      │                         │
-   └───────║────────────┘      │ Voice Out ○───────────┼─── Audio (Red)
+   └───────║────────────┘      │ Voice Out ○───────────┼─── [A]
            ║                   │ (Natural Voice Flow)   │
-   CV (Blue)║                  └─────────────────────────┘
+   [C]║                  └─────────────────────────┘
            ║                           ║
            ▼                    Audio ║
    ┌─────────────┐               (Red)║
@@ -282,9 +282,9 @@ Erica Synths challenged themselves: "Can we make ANY superior functionality synt
    │       ║            │      │                         │
    │ Burst CV ○─────────┼──────┼─▶ Config Mode Toggle    │
    │       ║            │      │                         │
-   └───────║────────────┘      │ Voice Out ○───────────┼─── Audio (Red)
+   └───────║────────────┘      │ Voice Out ○───────────┼─── [A]
            ║                   │ (Chaotic Voice Output) │
-   CV (Blue)║                  └─────────────────────────┘
+   [C]║                  └─────────────────────────┘
            ║                           ║
            ▼                    Audio ║
    ┌─────────────┐               (Red)║

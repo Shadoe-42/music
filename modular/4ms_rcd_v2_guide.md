@@ -196,12 +196,12 @@ Each output shifts to the next higher division number:
 
 | Connection | Cable Type | Purpose | Learning Objective |
 |------------|------------|---------|-------------------|
-| Clock Source → RCD Clock In | Gate (Yellow) | **Master timing input** | **Understand clock division concept** |
-| RCD Output 1 → Kick Trigger | Gate (Yellow) | **Same speed as input** | **Experience /1 division (no change)** |
-| RCD Output 2 → Snare Trigger | Gate (Yellow) | **Half speed (backbeat)** | **Learn /2 division (standard)** |
-| RCD Output 3 → Percussion | Gate (Yellow) | **Triplet feel** | **Experience /3 polyrhythm** |
-| RCD Output 5 → Hi-hat Trigger | Gate (Yellow) | **Complex 5-against-4** | **Learn odd number divisions** |
-| Slow LFO → Rotate CV | CV (Blue) | **Pattern evolution** | **Understand rotation concept** |
+| Clock Source → RCD Clock In | [G] | **Master timing input** | **Understand clock division concept** |
+| RCD Output 1 → Kick Trigger | [G] | **Same speed as input** | **Experience /1 division (no change)** |
+| RCD Output 2 → Snare Trigger | [G] | **Half speed (backbeat)** | **Learn /2 division (standard)** |
+| RCD Output 3 → Percussion | [G] | **Triplet feel** | **Experience /3 polyrhythm** |
+| RCD Output 5 → Hi-hat Trigger | [G] | **Complex 5-against-4** | **Learn odd number divisions** |
+| Slow LFO → Rotate CV | [C] | **Pattern evolution** | **Understand rotation concept** |
 
 **Module Settings:**
 - **RCD Clock In:** 16th note clock from sequencer (moderate tempo)
@@ -271,12 +271,12 @@ Each output shifts to the next higher division number:
 
 | Connection | Cable Type | Purpose | Advanced Concept |
 |------------|------------|---------|------------------|
-| Fast Clock → RCD Clock In | Gate (Yellow) | **High-resolution timing** | **32nd notes for detailed arpeggios** |
-| RCD Output 2 → Arpeggiator 1 | Gate (Yellow) | **16th note arpeggios** | **Standard arpeggio timing** |
-| RCD Output 4 → Arpeggiator 2 | Gate (Yellow) | **8th note arpeggios** | **Slower, more deliberate arps** |
-| RCD Output 6 → Bass Sequencer | Gate (Yellow) | **Long intervals** | **Slow bass foundation** |
-| Stepped Random → Rotate CV | CV (Blue) | **Sudden pattern shifts** | **Rhythmic "gear changes"** |
-| Main Sequencer → Reset | Gate (Yellow) | **Structure maintenance** | **Keep polyrhythms organized** |
+| Fast Clock → RCD Clock In | [G] | **High-resolution timing** | **32nd notes for detailed arpeggios** |
+| RCD Output 2 → Arpeggiator 1 | [G] | **16th note arpeggios** | **Standard arpeggio timing** |
+| RCD Output 4 → Arpeggiator 2 | [G] | **8th note arpeggios** | **Slower, more deliberate arps** |
+| RCD Output 6 → Bass Sequencer | [G] | **Long intervals** | **Slow bass foundation** |
+| Stepped Random → Rotate CV | [C] | **Sudden pattern shifts** | **Rhythmic "gear changes"** |
+| Main Sequencer → Reset | [G] | **Structure maintenance** | **Keep polyrhythms organized** |
 
 **Module Settings:**
 - **RCD Clock In:** Fast 32nd note clock for detailed timing
@@ -680,17 +680,17 @@ The divisions, the rotation, the reset function - these aren't just features. Th
 
 ## Advanced Learning Path
 
-**Clock division is a deep subject. RCD v2 is the right tool for understanding it — use it to build vocabulary before adding more complex timing modules.**
+**Clock division is a deep subject. RCD v2 is the right tool for understanding it; use it to build vocabulary before adding more complex timing modules.**
 
-1. **Start without Rotate CV.** Run the eight outputs into different destinations and simply listen to how divide-by-2 through divide-by-8 relate to each other. Polyrhythm comprehension begins here. Rotate CV adds a layer of transformation on top of this foundation — it makes no sense before the foundation is clear.
+1. **Start without Rotate CV.** Run the eight outputs into different destinations and simply listen to how divide-by-2 through divide-by-8 relate to each other. Polyrhythm comprehension begins here. Rotate CV adds a layer of transformation on top of this foundation; it makes no sense before the foundation is clear.
 
-2. **Add Rotate CV from a slow LFO and watch the output assignments shift.** The key insight is that the divisions themselves don't change — only which output carries which division. This is a non-obvious but fundamental point. Understanding it makes the module's behavior predictable rather than mysterious.
+2. **Add Rotate CV from a slow LFO and watch the output assignments shift.** The key insight is that the divisions themselves do not change; only which output carries which division. This is a non-obvious but fundamental point. Understanding it makes the module's behavior predictable rather than mysterious.
 
 3. **Study the prime divisions (/3, /5, /7) independently.** These don't fit neatly into standard 4/4 grid structures. Run divide-by-3 alone against a kick drum on the master clock and count how many measures before they align again. Doing this with each prime division builds an intuitive feel for how long polyrhythmic cycles are.
 
-4. **Use Reset to bring controlled order back.** After building a complex rotating patch, add a Reset trigger at a predictable musical point (every 8 bars). Reset gives you the ability to let patterns evolve freely between resets and return to a known state — essential for live performance.
+4. **Use Reset to bring controlled order back.** After building a complex rotating patch, add a Reset trigger at a predictable musical point (every 8 bars). Reset gives you the ability to let patterns evolve freely between resets and return to a known state: this is essential for live performance.
 
-5. **Pair with the SCM Plus to compare division philosophies.** RCD v2 distributes multiple divisions from one clock in parallel; SCM Plus applies one division scheme to a clock and outputs related variations. Understanding both — what each is suited for — deepens clock manipulation vocabulary significantly.
+5. **Pair with the SCM Plus to compare division philosophies.** RCD v2 distributes multiple divisions from one clock in parallel; SCM Plus applies one division scheme to a clock and outputs related variations. Understanding both (what each is suited for) deepens clock manipulation vocabulary significantly.
 
 6. **Explore jumper settings once the base behavior is internalized.** The extended range (/1 to /64 instead of /1 to /8) and other jumper options are meaningful only after the standard divisions are fully understood. Save jumper exploration for a dedicated session after the standard module is mastered.
 

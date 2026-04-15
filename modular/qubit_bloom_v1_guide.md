@@ -140,10 +140,10 @@ Most sequencers ask you to program notes explicitly -- place a pitch on step 1, 
 │       ║     │ │       ║        │
 │ LFO 8   ○──┼─┼─Mutation CV   │
 │       ║     │ │                │
-│ Natural     │ │ CH A CV    ○──┼─── Organic Sequences (Blue)
-│ Breathing   │ │ CH A Gate  ○──┼─── Living Gates (Yellow)
-│ Organic     │ │ CH B CV    ○──┼─── Evolving Harmony (Blue)
-│ Evolution   │ │ CH B Gate  ○──┼─── Natural Rhythm (Yellow)
+│ Natural     │ │ CH A CV    ○──┼─── Organic Sequences [C]
+│ Breathing   │ │ CH A Gate  ○──┼─── Living Gates [G]
+│ Organic     │ │ CH B CV    ○──┼─── Evolving Harmony [C]
+│ Evolution   │ │ CH B Gate  ○──┼─── Natural Rhythm [G]
 └─────────────┘ └─────────────────┘
         ║               ║
         ▼               ▼
@@ -196,10 +196,10 @@ Most sequencers ask you to program notes explicitly -- place a pitch on step 1, 
 │       ║     │ │       ○────┼─┼─Mutation CV    │
 │ Ch4 Out ○──┼─┼─Div4 In    │ │                 │
 │       ║     │ │ 8x Out ○──┼─┼─External Clock  │
-│ Mathematical│ │ Polyrhythm  │ │ CH A CV    ○──┼─── Math Sequences (Blue)
-│ Functions   │ │ Generation  │ │ CH A Gate  ○──┼─── Fractal Gates (Yellow)
-│ Complex     │ │ Multiple    │ │ CH B CV    ○──┼─── Harmonic Math (Blue)
-│ Processing  │ │ Clock Rates │ │ CH B Gate  ○──┼─── Rhythm Division (Yellow)
+│ Mathematical│ │ Polyrhythm  │ │ CH A CV    ○──┼─── Math Sequences [C]
+│ Functions   │ │ Generation  │ │ CH A Gate  ○──┼─── Fractal Gates [G]
+│ Complex     │ │ Multiple    │ │ CH B CV    ○──┼─── Harmonic Math [C]
+│ Processing  │ │ Clock Rates │ │ CH B Gate  ○──┼─── Rhythm Division [G]
 └─────────────┘ └─────────────┘ └─────────────────┘
         ║               ║               ║
         ▼               ▼               ▼
@@ -253,10 +253,10 @@ Most sequencers ask you to program notes explicitly -- place a pitch on step 1, 
 │       ║     │ │       ○────┼─┼─Input D    │ │       ║         │
 │ Ch4 Out ○──┼─┼─Div4 In    │ │ OR Out  ○──┼─┼─Clock Input    │
 │       ║     │ │ 8x Out ○──┼─┼─Clock Ref  │ │       ║         │
-│ Mathematical│ │ Pattern ○──┼─┼─Pattern    │ │ CH A CV    ○──┼─── Complete Sequences (Blue)
-│ Functions   │ │ Reset  ○──┼─┼─Reset      │ │ CH A Gate  ○──┼─── Logic Gates (Yellow)
-│ Complex     │ │ Polyrhythm  │ │ Logic      │ │ CH B CV    ○──┼─── Harmonic Evolution (Blue)
-│ Processing  │ │ Generation  │ │ Processing  │ │ CH B Gate  ○──┼─── Pattern Control (Yellow)
+│ Mathematical│ │ Pattern ○──┼─┼─Pattern    │ │ CH A CV    ○──┼─── Complete Sequences [C]
+│ Functions   │ │ Reset  ○──┼─┼─Reset      │ │ CH A Gate  ○──┼─── Logic Gates [G]
+│ Complex     │ │ Polyrhythm  │ │ Logic      │ │ CH B CV    ○──┼─── Harmonic Evolution [C]
+│ Processing  │ │ Generation  │ │ Processing  │ │ CH B Gate  ○──┼─── Pattern Control [G]
 └─────────────┘ └─────────────┘ └─────────────┘ └─────────────────┘
         ║               ║               ║               ║
         ▼               ▼               ▼               ▼

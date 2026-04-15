@@ -238,7 +238,7 @@ The normalling system reveals this: use sections independently when needed, use 
                     │   Gate Source       │
                     │ (Keyboard/Sequencer)│
                     │                     │
-                    │ Gate Output ○───────┼─── Gate (Yellow)
+                    │ Gate Output ○───────┼─── [G]
                     └─────────────────────┘      ║
                                                   ▼
                     ┌────────────────────┐      ║
@@ -252,13 +252,13 @@ The normalling system reveals this: use sections independently when needed, use 
                     │ S: Sustain   ●     │
                     │ R: Release   ●     │
                     │                    │
-                    │ A OUT JACK ○───────┼─── CV (Blue)
+                    │ A OUT JACK ○───────┼─── [C]
                     └────────────────────┘      ║
                                                   ▼
                     ┌────────────────────┐      ║
                     │       VCA          │      ║
                     │                    │      ║
-                    │ Audio Input     ◀──┼──────┼─── Audio (Red)
+                    │ Audio Input     ◀──┼──────┼─── [A]
                     │                    │      ║
                     │ CV Input        ◀──┼──────┘
                     │                    │
@@ -268,9 +268,9 @@ The normalling system reveals this: use sections independently when needed, use 
 
 | Connection | Cable Type | Purpose | Learning Objective |
 |------------|------------|---------|-------------------|
-| Gate Source → A IN JACK | Gate (Yellow) | **Trigger envelope** | **Understand gate-to-envelope relationship** |
-| A OUT JACK → VCA CV | CV (Blue) | **Control amplitude** | **Learn envelope modulation basics** |
-| Audio Source → VCA Audio In | Audio (Red) | **Signal to be shaped** | **Complete signal chain concept** |
+| Gate Source → A IN JACK | [G] | **Trigger envelope** | **Understand gate-to-envelope relationship** |
+| A OUT JACK → VCA CV | [C] | **Control amplitude** | **Learn envelope modulation basics** |
+| Audio Source → VCA Audio In | [A] | **Signal to be shaped** | **Complete signal chain concept** |
 
 **Module Settings:**
 - **Attack:** 9 o'clock (quick rise)
@@ -308,13 +308,13 @@ The normalling system reveals this: use sections independently when needed, use 
    │       ║            │      │ LOOP:   ON         │
    │       ║            │      │ MOD:    Attack     │
    │       ║            │      │                    │
-   │       ║            │      │ F OUT JACK ○───────┼─── CV (Blue)
+   │       ║            │      │ F OUT JACK ○───────┼─── [C]
    │       ║            │      │       ║            │
-   │       ║            │      │ L TRI JACK ○───────┼─── CV (Blue)
+   │       ║            │      │ L TRI JACK ○───────┼─── [C]
    │       ║            │      │       ║            │
    └───────║────────────┘      └───────║────────────┘
            ║                           ║    ║
-   CV (Blue)║                   CV (Blue)║    ║ CV (Blue)
+   [C]║                   [C]║    ║ [C]
            ▼                           ║    ║
    ┌────────────────────┐              ▼    ▼
    │      Filter        │      ┌──────────────────┐
@@ -329,11 +329,11 @@ The normalling system reveals this: use sections independently when needed, use 
 
 | Connection | Cable Type | Purpose | Integration |
 |------------|------------|---------|---------------------|
-| øchd LFO 2 → F MOD CV | CV (Blue) | **Organic envelope shaping** | **Modulation processing** |
-| øchd Trigger 1 → F IN JACK | Gate (Yellow) | **Organic timing** | **Non-mechanical function triggers** |
-| øchd LFO 6 → LFO Rate CV | CV (Blue) | **Tempo modulation** | **Organic LFO speed control** |
-| F OUT JACK → Filter Cutoff | CV (Blue) | **Shaped filter modulation** | **Musical envelope filtering** |
-| L TRI JACK → Oscillator PWM | CV (Blue) | **Pulse width modulation** | **Organic timbral changes** |
+| øchd LFO 2 → F MOD CV | [C] | **Organic envelope shaping** | **Modulation processing** |
+| øchd Trigger 1 → F IN JACK | [G] | **Organic timing** | **Non-mechanical function triggers** |
+| øchd LFO 6 → LFO Rate CV | [C] | **Tempo modulation** | **Organic LFO speed control** |
+| F OUT JACK → Filter Cutoff | [C] | **Shaped filter modulation** | **Musical envelope filtering** |
+| L TRI JACK → Oscillator PWM | [C] | **Pulse width modulation** | **Organic timbral changes** |
 
 **Module Settings:**
 - **Function Generator:** Attack 9 o'clock, Decay 12 o'clock, LOOP ON

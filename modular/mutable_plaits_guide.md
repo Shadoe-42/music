@@ -134,10 +134,10 @@ Plaits **democratizes synthesis knowledge** - you don't need to understand FM th
 
 | Connection | Cable Type | Notes |
 |------------|------------|-------|
-| Keyboard V/OCT → Plaits V/OCT | CV (Blue) | Pitch tracking |
-| Keyboard Gate → Envelope Trig | Gate (Yellow) | Triggers envelope |
-| Envelope Out → Plaits LEVEL | CV (Blue) | Controls internal LPG |
-| Plaits OUT → Audio destination | Audio (Red) | Main output |
+| Keyboard V/OCT → Plaits V/OCT | [C] | Pitch tracking |
+| Keyboard Gate → Envelope Trig | [G] | Triggers envelope |
+| Envelope Out → Plaits LEVEL | [C] | Controls internal LPG |
+| Plaits OUT → Audio destination | [A] | Main output |
 
 **Module Settings:**
 - **Plaits:** Model 1 (first LED), FREQUENCY at 12 o'clock
@@ -175,8 +175,8 @@ Plaits **democratizes synthesis knowledge** - you don't need to understand FM th
 
 | Connection | Cable Type | Notes |
 |------------|------------|-------|
-| Clock/Sequencer → Plaits TRIG | Gate (Yellow) | Triggers percussion sounds |
-| Plaits OUT → Mixer/Audio Out | Audio (Red) | Complete drum sounds |
+| Clock/Sequencer → Plaits TRIG | [G] | Triggers percussion sounds |
+| Plaits OUT → Mixer/Audio Out | [A] | Complete drum sounds |
 
 **Module Settings:**
 - **Plaits:** Right bank models (second row LEDs) - try kick, snare, hi-hat
@@ -206,9 +206,9 @@ Plaits **democratizes synthesis knowledge** - you don't need to understand FM th
 │    Ochd     │ │ Wogglebug   │ │ Function    │
 │ (Organic)   │ │ (Chaos)     │ │ Junction    │
 │             │ │             │ │ (Processing)│
-│ LFO 3 ○─────┼─┼─Disturb  ○   │ │ F OUT ○─────┼─── CV (Blue)
+│ LFO 3 ○─────┼─┼─Disturb  ○   │ │ F OUT ○─────┼─── [C]
 │       ║     │ │        ║    │ │       ║     │
-│ LFO 5 ○─────┼─┼─Smooth  ○   │ │ ADSR ○──────┼─── CV (Blue)
+│ LFO 5 ○─────┼─┼─Smooth  ○   │ │ ADSR ○──────┼─── [C]
 │       ║     │ │        ║    │ │       ║     │
 └───────║─────┘ └────────║────┘ └───────║─────┘
         ║                ║              ║
@@ -283,10 +283,10 @@ Plaits **democratizes synthesis knowledge** - you don't need to understand FM th
 
 | Connection | Cable Type | Notes |
 |------------|------------|-------|
-| LFO → Plaits MORPH CV | CV (Blue) | Modulates phoneme selection |
-| Trigger Seq → Plaits TRIG | Gate (Yellow) | Triggers speech utterances |
-| Plaits OUT → Reverb | Audio (Red) | Main speech synthesis |
-| Plaits AUX → Reverb | Audio (Red) | Alternative formants |
+| LFO → Plaits MORPH CV | [C] | Modulates phoneme selection |
+| Trigger Seq → Plaits TRIG | [G] | Triggers speech utterances |
+| Plaits OUT → Reverb | [A] | Main speech synthesis |
+| Plaits AUX → Reverb | [A] | Alternative formants |
 
 **Module Settings:**
 - **Plaits:** Model 8 (last LED in first bank) - Speech synthesis

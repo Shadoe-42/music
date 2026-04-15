@@ -482,12 +482,12 @@ Use this to predict what each logic output will do:
 **Key takeaway:** Simple clock division + boolean logic = complex rhythmic patterns. This principle scales from basic trigger manipulation to advanced generative sequencing across all modular synthesis.
 
 | Connection | Cable Type | Logic Result |
-| Master Clock → Input A | Gate (Yellow) | Primary timing reference |
-| Divided Clock → Input B | Gate (Yellow) | Secondary timing for comparison |
-| AND Out → Kick Drum | Gate (Yellow) | Triggers only when both clocks align |
-| OR Out → Hi-hat | Gate (Yellow) | Triggers when either clock is active |
-| XOR Out → Snare | Gate (Yellow) | Alternating pattern between clocks |
-| Inv A Out → Off-beat | Gate (Yellow) | Triggers between main clock beats |
+| Master Clock → Input A | [G] | Primary timing reference |
+| Divided Clock → Input B | [G] | Secondary timing for comparison |
+| AND Out → Kick Drum | [G] | Triggers only when both clocks align |
+| OR Out → Hi-hat | [G] | Triggers when either clock is active |
+| XOR Out → Snare | [G] | Alternating pattern between clocks |
+| Inv A Out → Off-beat | [G] | Triggers between main clock beats |
 
 **What you're learning:**
 - **Truth table thinking:** Understanding how two binary inputs create predictable outputs through boolean operations
@@ -1362,19 +1362,19 @@ Understanding which frequency combinations create musical vs experimental result
 
 ## Advanced Learning Path
 
-**Boolean logic is universal. CMOS Party is the hands-on way to internalize it — these operations appear everywhere in modular synthesis and beyond.**
+**Boolean logic is universal. CMOS Party is the hands-on way to internalize it; these operations appear everywhere in modular synthesis and beyond.**
 
-1. **Start with one operation at a time.** AND, OR, and NOT are the three primitives everything else is built from. Spend a session with only AND — understand what happens at all four input combinations (low/low, low/high, high/low, high/high) before moving to OR. Do not jump to XOR until the simpler operations are intuitive.
+1. **Start with one operation at a time.** AND, OR, and NOT are the three primitives everything else is built from. Spend a session with only AND: understand what happens at all four input combinations (low/low, low/high, high/low, high/high) before moving to OR. Do not jump to XOR until the simpler operations are intuitive.
 
-2. **Work with truth tables as documentation.** Every logic operation has a truth table with four rows. Write it out physically for each gate you use. This is not busywork — it makes the module's behavior predictable and eliminates guesswork when patches don't behave as expected.
+2. **Work with truth tables as documentation.** Every logic operation has a truth table with four rows. Write it out physically for each gate you use. This is not busywork; it makes the module's behavior predictable and eliminates guesswork when patches don't behave as expected.
 
-3. **Study NAND and NOR as the universal gates.** NAND and NOR alone can implement any boolean function — they're called "universal gates" because of this. Understanding why this is true is one of the more mind-expanding concepts in digital logic and directly applicable to building complex behavior from simple modules.
+3. **Study NAND and NOR as the universal gates.** NAND and NOR alone can implement any boolean function; they are called "universal gates" because of this. Understanding why this is true is one of the more mind-expanding concepts in digital logic and directly applicable to building complex behavior from simple modules.
 
-4. **Use XOR as a rhythmic subtraction tool.** XOR outputs HIGH when the inputs differ. This means it produces output on beats where only one of two rhythmic patterns fires — effectively computing the rhythmic difference between two patterns. This technique is not obvious from the module description but is practically very useful.
+4. **Use XOR as a rhythmic subtraction tool.** XOR outputs HIGH when the inputs differ. This means it produces output on beats where only one of two rhythmic patterns fires, effectively computing the rhythmic difference between two patterns. This technique is not obvious from the module description but is practically very useful.
 
 5. **Experiment with audio rate inputs.** Feeding audio-frequency signals into the logic gates creates digital waveshaping and ring modulation-adjacent effects. The CMOS character adds harmonic content distinct from analog waveshaping. Explore this domain only after the CV/gate domain is fully understood.
 
-6. **Build a patch using only boolean logic for all rhythmic relationships.** No clock dividers, no euclidean sequencers — just clock inputs and logic operations. The rhythmic complexity achievable from AND, OR, XOR, and NOT alone is the best demonstration of how fundamental these operations are.
+6. **Build a patch using only boolean logic for all rhythmic relationships.** No clock dividers, no euclidean sequencers: just clock inputs and logic operations. The rhythmic complexity achievable from AND, OR, XOR, and NOT alone is the best demonstration of how fundamental these operations are.
 
 
 ---

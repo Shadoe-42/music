@@ -120,7 +120,7 @@ Using Castor & Pollux II teaches you about both **vintage synthesis philosophy a
                     │ Castor PULSE: 25%              │
                     │ CROSSFADE: 9 o'clock           │
                     │                                │
-                    │ Castor OUT ○───────────────────┼─── Audio (Red)
+                    │ Castor OUT ○───────────────────┼─── [A]
                     │                                │
                     │ Status: Classic Juno Voice     │
                     └─────────────────────────────────┘
@@ -139,8 +139,8 @@ Using Castor & Pollux II teaches you about both **vintage synthesis philosophy a
 
 | Connection | Cable Type | Notes |
 |------------|------------|-------|
-| 1V/Oct CV → Castor PITCH | CV (Blue) | Keyboard or sequencer pitch control |
-| Castor OUT → Filter | Audio (Red) | Classic Juno sawtooth tone |
+| 1V/Oct CV → Castor PITCH | [C] | Keyboard or sequencer pitch control |
+| Castor OUT → Filter | [A] | Classic Juno sawtooth tone |
 
 **Module Settings:**
 - **Mode:** Chorus (default blue LED)
@@ -178,7 +178,7 @@ Using Castor & Pollux II teaches you about both **vintage synthesis philosophy a
    │                    │      │                                │
    └───────║────────────┘      │ CROSSFADE OUT ○────────────────┼─── Organic
            ║                   │                                │    Juno
-   CV (Blue)║                   └─────────────────────────────────┘    Evolution
+   [C]║                   └─────────────────────────────────┘    Evolution
            ▼                            ║
    ┌─────────────────┐                 Audio║
    │   Effects       │                 (Red)║
@@ -236,7 +236,7 @@ Using Castor & Pollux II teaches you about both **vintage synthesis philosophy a
 │ (Slow evolution)    │    │                                │
 └─────────────────────┘    └─────────────────────────────────┘
                                     ║      ║    ║    ║
-                            CV (Blue)║      ║    ║    ║
+                            [C]║      ║    ║    ║
                                     ▼      ▼    ▼    ▼
                            ┌─────────────────────────────────┐
                            │  Winterbloom Castor & Pollux   │

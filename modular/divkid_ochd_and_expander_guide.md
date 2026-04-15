@@ -133,9 +133,9 @@ The Expander adds 16 outputs (Full Wave Rectifiers, Logic Pairs, Cascading Trigg
 
 | Connection | Cable Type | Purpose | Learning Objective |
 |------------|------------|---------|-------------------|
-| LFO 1 → Oscillator FM | CV (Blue) | **Fast modulation** | **Experience fastest LFO speed** |
-| LFO 4 → Filter Cutoff | CV (Blue) | **Medium-speed sweeps** | **Learn mid-range modulation rates** |
-| LFO 8 → VCA CV | CV (Blue) | **Slow amplitude changes** | **Understand slowest LFO behavior** |
+| LFO 1 → Oscillator FM | [C] | **Fast modulation** | **Experience fastest LFO speed** |
+| LFO 4 → Filter Cutoff | [C] | **Medium-speed sweeps** | **Learn mid-range modulation rates** |
+| LFO 8 → VCA CV | [C] | **Slow amplitude changes** | **Understand slowest LFO behavior** |
 
 **Module Settings:**
 - **Ochd Rate:** 2 o'clock (active but musical movement)
@@ -186,10 +186,10 @@ The Expander adds 16 outputs (Full Wave Rectifiers, Logic Pairs, Cascading Trigg
 
 | Connection | Cable Type | Purpose | Advanced Concept |
 |------------|------------|---------|------------------|
-| Full Wave Rect 1 → Oscillator 1V/Oct | CV (Blue) | **Unipolar pitch modulation** | **Always moves up in pitch** |
-| Full Wave Rect 3 → Effects Filter CV | CV (Blue) | **Positive filter sweeps** | **Only opens filter, never closes** |
-| DAC Output A → Delay Time | CV (Blue) | **Stepped random delays** | **Quantized time modulation** |
-| Min Output → Effects Mix CV | CV (Blue) | **Smooth dynamics control** | **Logic-based mixing** |
+| Full Wave Rect 1 → Oscillator 1V/Oct | [C] | **Unipolar pitch modulation** | **Always moves up in pitch** |
+| Full Wave Rect 3 → Effects Filter CV | [C] | **Positive filter sweeps** | **Only opens filter, never closes** |
+| DAC Output A → Delay Time | [C] | **Stepped random delays** | **Quantized time modulation** |
+| Min Output → Effects Mix CV | [C] | **Smooth dynamics control** | **Logic-based mixing** |
 
 **Module Settings:**
 - **Ochd Rate:** 12 o'clock (standard musical rates)

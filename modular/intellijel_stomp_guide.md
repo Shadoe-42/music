@@ -251,23 +251,23 @@ The practical consequence is that an existing pedal collection stops being a sep
 
 ## Common Mistakes
 
-### **"The pedal isn't doing anything — signal is bypassed!"**
+### **"The pedal is not doing anything: signal is bypassed"**
 **Why it happens:** The LEVEL switch is set to INST but you're sending modular-level audio (or vice versa). INST expects high-impedance, instrument-level signals; modular outputs are line-level and will either overdrive or barely register.
 **Solution:** Set LEVEL to LINE for any modular source. Use INST only for actual guitar or bass input.
 
 ### **"Expression control isn't reaching the full parameter range on my pedal!"**
-**Why it happens:** Expression pedals expect TRS (stereo) cable connections, not TS (mono). With a TS cable, the wiper and one of the other terminals are shorted — the control range collapses.
+**Why it happens:** Expression pedals expect TRS (stereo) cable connections, not TS (mono). With a TS cable, the wiper and one of the other terminals are shorted; the control range collapses.
 **Solution:** Use TRS cables from Stomp's Expression outputs to the pedal's expression input. If range is still limited, adjust EXPR LEVEL.
 
 ### **"The effect sounds dry even though it's patched through Stomp!"**
 **Why it happens:** Two separate mix controls exist: Stomp's MIX knob AND the pedal's own wet/dry blend. A fully dry result usually means the pedal's internal mix is at zero, not Stomp's.
-**Solution:** Check the pedal's own mix or effects level control first. Stomp's MIX only blends the signal Stomp receives back from the pedal — it can't compensate for a pedal that outputs nothing wet.
+**Solution:** Check the pedal's own mix or effects level control first. Stomp's MIX only blends the signal Stomp receives back from the pedal; it cannot compensate for a pedal that outputs nothing wet.
 
 ### **"There's a loud hum or buzz when the pedal is patched in!"**
 **Why it happens:** Ground loops between the pedal's wall-wart power supply and the modular's PSU are extremely common. Pedals and Eurorack share chassis ground through the patch cables, creating a loop antenna.
 **Solution:** Power the pedal from an isolated, floating output on a dedicated pedal power supply (Cioks, Strymon Zuma, Voodoo Lab). Daisy-chaining or using cheap single-output adapters almost always creates hum.
 
-### **"The LFO automation sounds robotic — no variation!"**
+### **"The LFO automation sounds robotic: no variation"**
 **Why it happens:** The internal LFO waveform is set to Square, which produces abrupt jumps rather than smooth sweeps. Expression pedals are designed for continuous control; stepped CV sounds unnatural.
 **Solution:** Switch LFO SHAPE to Sine or Triangle for smooth, organic sweeps. For more interesting automation, replace the internal LFO with an external source like Ochd patched into the CV input.
 

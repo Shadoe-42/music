@@ -79,7 +79,7 @@ Kali's architecture revolves around **delay time as timebase** and **LFOs as syn
 
 **Signal Flow:**
 
-🔴 **Audio** │ 🔵 **CV** │ 🟡 **Gate**
+[A]=Audio [C]=CV [G]=Gate
 
 ```
 ┌─KALI EFFECT PROCESSOR─────────────────────────────────────┐

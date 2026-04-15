@@ -2067,37 +2067,37 @@ Without GHOST's routing flexibility and CV inputs, this workflow requires multip
 ## Common Mistakes
 
 **"All three routing orders sound the same to me."**
-This is the most common starting confusion, and it usually means the individual processors are all turned up to similar levels simultaneously. The difference between routing orders is most audible when you push individual processors to extremes — high resonance, high distortion drive, heavy delay feedback. With everything at 10–20% intensity, routing order is subtle. Increase individual processor depth first, then compare routings.
+This is the most common starting confusion, and it usually means the individual processors are all turned up to similar levels simultaneously. The difference between routing orders is most audible when you push individual processors to extremes (high resonance, high distortion drive, heavy delay feedback). With everything at 10–20% intensity, routing order is subtle. Increase individual processor depth first, then compare routings.
 
 **"I'm using GHOST as just a reverb/delay module."**
-The FX section is the most obvious entry point, but using only FX misses GHOST's architecture entirely. The DIST and VCF sections are not supplementary — they're equal participants in the processing chain. A common result of ignoring DIST and VCF is that GHOST sounds like any other reverb module in the system. The character comes from the interaction between all three processors.
+The FX section is the most obvious entry point, but using only FX misses GHOST's architecture entirely. The DIST and VCF sections are not supplementary; they are equal participants in the processing chain. A common result of ignoring DIST and VCF is that GHOST sounds like any other reverb module in the system. The character comes from the interaction between all three processors.
 
 **"The routing button isn't doing anything audible when I switch."**
-Either the patch isn't sending audio through GHOST (check the dry/wet balance — if DRY is at 100%, no processing is happening), or the three processors are set too close to neutral. Routing order differences require some level of each processor to be active before the order matters.
+Either the patch isn't sending audio through GHOST (check the dry/wet balance: if DRY is at 100%, no processing is happening), or the three processors are set too close to neutral. Routing order differences require some level of each processor to be active before the order matters.
 
 **"I'm not using CV on anything except maybe one parameter."**
-GHOST has CV inputs for routing-relevant parameters across all three sections. If you're treating it as a set-and-forget effects module, you're leaving most of what makes GHOST distinctive unused. CV modulation of filter cutoff, distortion drive, and delay time simultaneously — each from different sources — is where GHOST stops sounding like a preset and starts sounding like a performance instrument.
+GHOST has CV inputs for routing-relevant parameters across all three sections. If you're treating it as a set-and-forget effects module, you're leaving most of what makes GHOST distinctive unused. CV modulation of filter cutoff, distortion drive, and delay time simultaneously (each from different sources) is where GHOST stops sounding like a preset and starts sounding like a performance instrument.
 
 **"The Karplus-Strong synthesis patch from the manual doesn't sound like much."**
-This technique requires the delay to be set at audio rates — the delay time must be very short (audio-rate frequencies). The pre-delay time parameter is doing pitch assignment, not rhythm. If the patch sounds like a wet delay instead of a plucked string, the delay time is too long. Shorten it drastically until the delay feedback becomes a tone, then tune from there.
+This technique requires the delay to be set at audio rates: the delay time must be very short (audio-rate frequencies). The pre-delay time parameter is doing pitch assignment, not rhythm. If the patch sounds like a wet delay instead of a plucked string, the delay time is too long. Shorten it drastically until the delay feedback becomes a tone, then tune from there.
 
 ---
 
 ## Advanced Learning Path
 
-**GHOST rewards systematic exploration over random experimentation. The routing orders are the organizing principle — use them as a curriculum.**
+**GHOST rewards systematic exploration over random experimentation. The routing orders are the organizing principle: use them as a curriculum.**
 
 1. **Spend a dedicated session on each routing order in isolation.** Start with FX→DIST→VCF (Routing 1). Keep the other two processors bypassed or at neutral. Learn what spatial processing followed by distortion followed by filtering sounds like at different settings. Do the same for each routing. You should be able to hear a difference before bringing all three together.
 
-2. **Master the pre-VCA control before exploring deep modulation.** The pre-VCA is the gain management system for the whole chain. Understanding its role in preventing clipping and managing dynamics — and specifically how different processor depths interact with it — is the prerequisite for predictable results when things get complex.
+2. **Master the pre-VCA control before exploring deep modulation.** The pre-VCA is the gain management system for the whole chain. Understanding its role in preventing clipping and managing dynamics (and specifically how different processor depths interact with it) is the prerequisite for predictable results when things get complex.
 
 3. **Use CV on only one parameter at a time initially.** GHOST's micro-modulation matrix means multiple parameters interact unexpectedly. Introducing CV modulation on multiple parameters simultaneously before understanding the individual parameter responses will produce unpredictable results that are difficult to analyze and replicate. One CV, one parameter, understand the response, then add the next.
 
-4. **Explore the Karplus-Strong synthesis capability as a dedicated study.** Running the delay at audio rates turns GHOST into a physical modeling voice generator. This requires careful tuning and timing but produces sounds available from no other module in the system. It represents a fundamental shift in what GHOST is doing — from processing to generating — and understanding it expands the module's creative scope significantly.
+4. **Explore the Karplus-Strong synthesis capability as a dedicated study.** Running the delay at audio rates turns GHOST into a physical modeling voice generator. This requires careful tuning and timing but produces sounds available from no other module in the system. It represents a fundamental shift in what GHOST is doing (from processing to generating), and understanding it expands the module's creative scope significantly.
 
 5. **Build a patch integrating GHOST into the Cabin Pressure ecosystem.** BLCK_NOIR for drum synthesis → GHOST for drum processing, or Queen of Pentacles sample → GHOST for tonal processing. The Endorphines modules share design language and work together in ways that weren't coincidental. Experiencing the ecosystem in use reveals the integrated design intent.
 
-6. **Study the sidechain input for dynamics-driven processing.** The sidechain input lets external triggers control GHOST's internal dynamics. Using a kick drum gate to duck GHOST during kick transients, then release it afterward, is a standard mixing technique made modular. This is a studio production skill (parallel compression, ducking) translated into a patch — worth studying for both the sound and the understanding it builds about signal dynamics.
+6. **Study the sidechain input for dynamics-driven processing.** The sidechain input lets external triggers control GHOST's internal dynamics. Using a kick drum gate to duck GHOST during kick transients, then release it afterward, is a standard mixing technique made modular. This is a studio production skill (parallel compression, ducking) translated into a patch; worth studying for both the sound and the understanding it builds about signal dynamics.
 
 ---
 
@@ -2110,7 +2110,7 @@ This technique requires the delay to be set at audio rates — the delay time mu
 ### **Sound Sources for Processing:**
 - **Mutable Instruments Plaits:** Diverse oscillator algorithms → GHOST for complete effects-processed voice design
 - **Noise Engineering Ruina Versio:** Distortion + GHOST FX section for layered saturation and spatial combination
-- **Any VCO/complex oscillator:** GHOST can transform any audio source — its routing flexibility makes it module-agnostic
+- **Any VCO/complex oscillator:** GHOST can transform any audio source; its routing flexibility makes it module-agnostic
 
 ### **Modulation Sources:**
 - **Make Noise Maths:** Complex envelope/function generation for simultaneous multi-parameter CV modulation across GHOST's three sections

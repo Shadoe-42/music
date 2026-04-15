@@ -215,11 +215,11 @@ The Turing Machine ecosystem proves that **chaos can be musical** when properly 
 
 **The Turing Machine is a probability engine. Learn to control the probability first; the musical results follow.**
 
-1. **Spend time only at the probability extremes before touching the middle.** At fully clockwise (100% locked), the pattern repeats perfectly. At fully counterclockwise (100% random), nothing repeats. The middle range — where the interesting behavior lives — is only meaningful after hearing both poles. Know what you're navigating between.
+1. **Spend time only at the probability extremes before touching the middle.** At fully clockwise (100% locked), the pattern repeats perfectly. At fully counterclockwise (100% random), nothing repeats. The middle range (where the interesting behavior lives) is only meaningful after hearing both poles. Know what you're navigating between.
 
 2. **Learn the probability sweet spots by ear.** The range between 7 and 10 o'clock (slight randomness) tends to produce patterns that evolve slowly. The range between 4 and 7 o'clock (more chaos) produces patterns that shift faster. Develop a feel for these zones rather than watching the knob position.
 
-3. **Add the Volts expander before the Pulses expander.** Volts generates CV from the same shift register that drives the main output. Hearing how the CV and the gate outputs relate to the same binary stream — same bits, different representations — is the conceptual core of how the ecosystem works. Add Pulses afterward to extend the rhythmic dimension.
+3. **Add the Volts expander before the Pulses expander.** Volts generates CV from the same shift register that drives the main output. Hearing how the CV and the gate outputs relate to the same binary stream (same bits, different representations) is the conceptual core of how the ecosystem works. Add Pulses afterward to extend the rhythmic dimension.
 
 4. **Build a patch using only the ecosystem.** Turing Machine (melody probability) + Volts (pitch CV) + Pulses (gate patterns) → VCO + VCA. No external sequencer. The goal is a self-generating patch where musical behavior emerges from probability tuning alone.
 

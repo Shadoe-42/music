@@ -139,8 +139,8 @@ The Afterneath module represents a successful pedal-to-Eurorack translation that
 
 | Connection | Cable Type | Purpose | Learning Objective |
 |------------|------------|---------|--------------------|
-| Audio Source → Afterneath In | Audio (Red) | **Rich harmonic content for texture generation** | **Experience core Afterneath character** |
-| Afterneath Out → Monitor | Audio (Red) | **Processed signal to monitoring system** | **Hear the reverb and Drag effect in context** |
+| Audio Source → Afterneath In | [A] | **Rich harmonic content for texture generation** | **Experience core Afterneath character** |
+| Afterneath Out → Monitor | [A] | **Processed signal to monitoring system** | **Hear the reverb and Drag effect in context** |
 
 **Module Settings:**
 - **Audio Source:** Any oscillator with rich harmonics (saw or square)
@@ -178,12 +178,12 @@ The Afterneath module represents a successful pedal-to-Eurorack translation that
 
 | Connection | Cable Type | Purpose | Learning Objective |
 |------------|------------|---------|--------------------|
-| Audio Source → Afterneath In | Audio (Red) | **Audio source for texture processing** | **Experience texture generation with modulation** |
-| LFO → Drag CV | CV (Blue) | **Oscillating modulation of Drag parameter** | **Learn how periodic Drag changes create rhythmic warping** |
-| Envelope → Length CV | CV (Blue) | **Dynamic control of reverb decay time** | **Understand envelope-controlled reverb evolution** |
-| Reflect Send → Filter Input | Audio (Red) | **Feedback path sent to external filter** | **Learn how external processing shapes reverb character** |
-| Filter Output → Reflect Return | Audio (Red) | **Filtered feedback returning to reverb** | **Hear how spectral filtering colors reverb tails** |
-| Afterneath Out → Monitor | Audio (Red) | **Processed, modulated texture to output** | **Perceive evolution from multiple simultaneous modulations** |
+| Audio Source → Afterneath In | [A] | **Audio source for texture processing** | **Experience texture generation with modulation** |
+| LFO → Drag CV | [C] | **Oscillating modulation of Drag parameter** | **Learn how periodic Drag changes create rhythmic warping** |
+| Envelope → Length CV | [C] | **Dynamic control of reverb decay time** | **Understand envelope-controlled reverb evolution** |
+| Reflect Send → Filter Input | [A] | **Feedback path sent to external filter** | **Learn how external processing shapes reverb character** |
+| Filter Output → Reflect Return | [A] | **Filtered feedback returning to reverb** | **Hear how spectral filtering colors reverb tails** |
+| Afterneath Out → Monitor | [A] | **Processed, modulated texture to output** | **Perceive evolution from multiple simultaneous modulations** |
 
 **Module Settings:**
 - **Audio Source:** Any oscillator
@@ -222,10 +222,10 @@ The Afterneath module represents a successful pedal-to-Eurorack translation that
 
 | Connection | Cable Type | Purpose | Learning Objective |
 |------------|------------|---------|--------------------|
-| Keyboard/Seq CV → Drag CV | CV (Blue) | **1V/octave pitch control** | **Learn Afterneath's self-oscillation tracking capabilities** |
-| Envelope → VCA In | CV (Blue) | **Amplitude envelope for note articulation** | **Understand how to shape self-oscillation using amplitude control** |
-| Afterneath Out → VCA In | Audio (Red) | **Self-oscillating sine tone to VCA** | **Experience Afterneath as an oscillator, not just an effect** |
-| VCA Out → Output | Audio (Red) | **Envelope-shaped oscillator output** | **Hear how amplitude modulation brings articulation to tone** |
+| Keyboard/Seq CV → Drag CV | [C] | **1V/octave pitch control** | **Learn Afterneath's self-oscillation tracking capabilities** |
+| Envelope → VCA In | [C] | **Amplitude envelope for note articulation** | **Understand how to shape self-oscillation using amplitude control** |
+| Afterneath Out → VCA In | [A] | **Self-oscillating sine tone to VCA** | **Experience Afterneath as an oscillator, not just an effect** |
+| VCA Out → Output | [A] | **Envelope-shaped oscillator output** | **Hear how amplitude modulation brings articulation to tone** |
 
 **Module Settings:**
 - **No Audio Input:** Afterneath produces pure self-oscillation
@@ -282,13 +282,13 @@ The Afterneath module represents a successful pedal-to-Eurorack translation that
 
 | Connection | Cable Type | Purpose | Learning Objective |
 |------------|------------|---------|--------------------|
-| Audio Source → Afterneath In | Audio (Red) | **Source audio for ambient texture processing** | **Experience rich stereo texture from single source** |
-| Multi-LFO → Drag/Length/Diffuse CV | CV (Blue) | **Multiple simultaneous parameter modulation** | **Learn how polyphonic modulation creates evolving character** |
-| Afterneath Main Out → L Channel | Audio (Red) | **Dry direct signal to left channel** | **Understand stereo imaging through signal separation** |
-| Reflect Send → Multiple/Router | Audio (Red) | **Feedback path split for external processing** | **Learn how to integrate external effects into reverb feedback** |
-| External Processing Out → Reflect Return | Audio (Red) | **Processed feedback returning to reverb core** | **Hear how external processing shapes internal feedback** |
-| Reflect Send (alternate) → R Channel | Audio (Red) | **Unprocessed feedback to right channel** | **Create pseudo-stereo effect from single Afterneath** |
-| Stereo Mixer Out → Final Output | Audio (Red) | **Stereo-imaged, professionally mixed output** | **Achieve professional stereo ambient aesthetic** |
+| Audio Source → Afterneath In | [A] | **Source audio for ambient texture processing** | **Experience rich stereo texture from single source** |
+| Multi-LFO → Drag/Length/Diffuse CV | [C] | **Multiple simultaneous parameter modulation** | **Learn how polyphonic modulation creates evolving character** |
+| Afterneath Main Out → L Channel | [A] | **Dry direct signal to left channel** | **Understand stereo imaging through signal separation** |
+| Reflect Send → Multiple/Router | [A] | **Feedback path split for external processing** | **Learn how to integrate external effects into reverb feedback** |
+| External Processing Out → Reflect Return | [A] | **Processed feedback returning to reverb core** | **Hear how external processing shapes internal feedback** |
+| Reflect Send (alternate) → R Channel | [A] | **Unprocessed feedback to right channel** | **Create pseudo-stereo effect from single Afterneath** |
+| Stereo Mixer Out → Final Output | [A] | **Stereo-imaged, professionally mixed output** | **Achieve professional stereo ambient aesthetic** |
 
 **Module Settings:**
 - **Audio Source:** Any sound (ambient best)
@@ -314,15 +314,15 @@ The Afterneath module represents a successful pedal-to-Eurorack translation that
 
 **Afterneath is disorienting at first because it doesn't behave like reverb. Approach it as an instrument, not an effect.**
 
-1. **Start in one unquantized mode and learn its specific behavior.** The nine modes are nine distinct instruments. Pick one — Mode 1 is the most accessible starting point — and spend real time with just that mode before rotating through the others. Rotating through all nine immediately will produce confusion, not understanding.
+1. **Start in one unquantized mode and learn its specific behavior.** The nine modes are nine distinct instruments. Pick one (Mode 1 is the most accessible starting point) and spend real time with just that mode before rotating through the others. Rotating through all nine immediately will produce confusion, not understanding.
 
-2. **Learn what DRAG actually controls before touching SIZE.** DRAG is the parameter that sets Afterneath apart from every other reverb. Understanding that it controls the speed of energy circulation inside the reverb network — not feedback or decay in the conventional sense — changes how you use every other control.
+2. **Learn what DRAG actually controls before touching SIZE.** DRAG is the parameter that sets Afterneath apart from every other reverb. Understanding that it controls the speed of energy circulation inside the reverb network (not feedback or decay in the conventional sense); this changes how you use every other control.
 
 3. **Use LENGTH to find the threshold between reverb and resonator.** Short LENGTH values turn the algorithm into a short pitch resonator. Sweep LENGTH while playing a held note and listen to where the character crosses from spatial effect to pitched drone. This threshold is a productive creative zone.
 
 4. **Add CV to DRAG for continuous mode-like behavior.** A slow LFO or envelope on DRAG creates continuous timbral shifting. This is more useful than switching modes mid-patch and reveals the continuous nature of the underlying algorithm.
 
-5. **Study the Reflect loop as a feedback path.** Patching the output back to the Reflect input creates feedback loops that compound the spatial complexity. This requires careful gain staging — approach incrementally and monitor levels.
+5. **Study the Reflect loop as a feedback path.** Patching the output back to the Reflect input creates feedback loops that compound the spatial complexity. This requires careful gain staging; approach incrementally and monitor levels.
 
 6. **Explore the quantized scale modes for melodic ambient work.** Once the unquantized modes are familiar, the scale-quantized modes (Modes 5–9) allow generating pitched content from noise or attack transients. These modes blur the line between reverb and pitch processing entirely.
 

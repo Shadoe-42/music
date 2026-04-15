@@ -90,25 +90,25 @@ The Pico series, particularly the DSP, introduced the concept that effects shoul
 
 ## The 8 Effects Explained
 
-### **🔴 RED - Mono Delay**
+### **RED - Mono Delay**
 - **PAR1:** Delay time (how long until echo)
 - **PAR2:** Feedback (how many repeats)
 - **Character:** Classic single-tap delay, mono processing
 - **Use cases:** Slapback echo, rhythmic repeats, doubling
 
-### **🟡 YELLOW - Pitch Shift Delay**
+### **YELLOW - Pitch Shift Delay**
 - **PAR1:** Pitch shift amount (up/down in semitones)
 - **PAR2:** Delay time
 - **Character:** Pitch-shifted echoes create harmonies
 - **Use cases:** Harmonized delays, alien textures, pitch effects
 
-### **🟢 GREEN - Stereo Delay**
+### **GREEN - Stereo Delay**
 - **PAR1:** Delay time (synchronized L/R timing)
 - **PAR2:** Feedback amount
 - **Character:** Wide stereo delays with spatial movement
 - **Use cases:** Ping-pong delays, stereo echoes, rhythmic textures
 
-### **🟦 BLUE - Granular Delay**
+### **BLUE - Granular Delay**
 - **PAR1:** Feedback amount (FULL CW = freeze mode!)
 - **PAR2:** Delay time
 - **Character:** Grainy, textural delays with freezing capability
@@ -120,19 +120,19 @@ The Pico series, particularly the DSP, introduced the concept that effects shoul
 - **Character:** Clean, spacious reverb algorithm
 - **Use cases:** Room ambience, hall reverbs, spatial depth
 
-### **🟠 ORANGE - Saturated Reverb**
+### **ORANGE - Saturated Reverb**
 - **PAR1:** Tone control (saturation character)
 - **PAR2:** Reverb time
 - **Character:** Warm, driven reverb with harmonic saturation
 - **Use cases:** Vintage reverb sounds, colored spaces, musical distortion
 
-### **🟦 CYAN - Leslie Speaker**
+### **CYAN - Leslie Speaker**
 - **PAR1:** Rotation speed (slow/fast Leslie simulation)
 - **PAR2:** High-pass filter (removes low frequencies)
 - **Character:** Classic rotating speaker cabinet simulation
 - **Use cases:** Organ sounds, vintage effects, psychedelic textures
 
-### **🟢 LIME - Overdrive/Bitcrush**
+### **LIME - Overdrive/Bitcrush**
 - **PAR1:** Overdrive amount (analog-style distortion)
 - **PAR2:** Bitcrush amount (digital decimation)
 - **Character:** Hybrid analog/digital distortion

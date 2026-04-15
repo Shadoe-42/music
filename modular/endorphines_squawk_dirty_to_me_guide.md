@@ -191,7 +191,7 @@ Squawk represents the moment digital filter processing became genuinely indistin
                     │ RESONANCE: 10 o'clock          │
                     │ HPF: 7 o'clock                 │
                     │                                │
-                    │ OUT 1 ○────────────────────────┼─── Audio (Red)
+                    │ OUT 1 ○────────────────────────┼─── [A]
                     │                                │
                     │ Status LEDs: ● ○ ○ ○ (Filter I)│
                     └─────────────────────────────────┘
@@ -210,8 +210,8 @@ Squawk represents the moment digital filter processing became genuinely indistin
 
 | Connection | Cable Type | Notes |
 |------------|------------|-------|
-| VCO Audio → Squawk IN 1 | Audio (Red) | Any oscillator or audio source |
-| Squawk OUT 1 → Mixer | Audio (Red) | Filtered audio output |
+| VCO Audio → Squawk IN 1 | [A] | Any oscillator or audio source |
+| Squawk OUT 1 → Mixer | [A] | Filtered audio output |
 
 **Module Settings:**
 - **Filter Mode:** I (Moog Ladder) - classic warm filtering
@@ -256,7 +256,7 @@ Squawk represents the moment digital filter processing became genuinely indistin
    │                    │      │                                │
    └───────║────────────┘      │ OUT 1,2 ○──────────────────────┼─── Stereo
            ║                   │                                │    Organic
-   CV (Blue)║                   └─────────────────────────────────┘    Filter
+   [C]║                   └─────────────────────────────────┘    Filter
            ▼                            ║                           Evolution
    ┌─────────────────┐                 Audio║
    │   Synthesis     │                 (Red)║
@@ -321,7 +321,7 @@ Squawk represents the moment digital filter processing became genuinely indistin
 │ (Slow evolution)    │    │                                │
 └─────────────────────┘    └─────────────────────────────────┘
                                     ║      ║    ║    ║
-                            CV (Blue)║      ║    ║    ║
+                            [C]║      ║    ║    ║
                                     ▼      ▼    ▼    ▼
                            ┌─────────────────────────────────┐
                            │    Endorphin.es Squawk         │
@@ -496,13 +496,13 @@ This represents the **ultimate filter ecosystem** - where organic breathing, con
 
 **Squawk Dirty to Me contains eight instruments. Study one before moving to the next.**
 
-1. **Start with Mode I (Moog Ladder) as your reference point.** The transistor ladder is the most widely documented filter topology in synthesis. Learning its behavior in Squawk — how resonance builds, where it self-oscillates, how DRIVE pushes saturation — gives you a reference against which all other modes can be compared.
+1. **Start with Mode I (Moog Ladder) as your reference point.** The transistor ladder is the most widely documented filter topology in synthesis. Learning its behavior in Squawk (how resonance builds, where it self-oscillates, how DRIVE pushes saturation) gives you a reference against which all other modes can be compared.
 
-2. **Spend a dedicated session on each remaining filter type.** The character difference between Mode II (MS-20 OTA), Mode III (Low-Pass Gate), and Mode VIII (Comb Filter) is not subtle. Moving between modes too quickly prevents any single one from becoming functional. Seven modes remain after Mode I — seven sessions.
+2. **Spend a dedicated session on each remaining filter type.** The character difference between Mode II (MS-20 OTA), Mode III (Low-Pass Gate), and Mode VIII (Comb Filter) is not subtle. Moving between modes too quickly prevents any single one from becoming functional. Seven modes remain after Mode I: seven sessions.
 
-3. **Learn what META CV scanning actually does.** Patching a slow LFO into the META CV input and sweeping between filter types reveals the continuous nature of the scanning. This is not a stepped selector — it glides between modes. Understanding the rate and curve of the transition opens up long-form filter evolution as a compositional technique.
+3. **Learn what META CV scanning actually does.** Patching a slow LFO into the META CV input and sweeping between filter types reveals the continuous nature of the scanning. This is not a stepped selector; it glides between modes. Understanding the rate and curve of the transition opens up long-form filter evolution as a compositional technique.
 
-4. **Use the series High-Pass Filter as a second filter.** The HPF input is a full additional filter in series with the main VCF. Running different CV sources to CUTOFF and HPF simultaneously creates a two-dimensional filter sweep — brightness and lowness controlled independently.
+4. **Use the series High-Pass Filter as a second filter.** The HPF input is a full additional filter in series with the main VCF. Running different CV sources to CUTOFF and HPF simultaneously creates a two-dimensional filter sweep: brightness and lowness controlled independently.
 
 5. **Study the VCA integration.** The built-in VCA means Squawk can replace a VCF and VCA in one module. Practice routing a single envelope to control both filter cutoff and amplitude simultaneously, then use independent CVs for each to understand the degree of control available.
 

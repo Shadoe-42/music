@@ -169,10 +169,10 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
                     │ (Turn for Major,    │
                     │  Minor, etc.)       │
                     │                     │
-                    │ A Output ○─────────┼─── CV (Blue)
+                    │ A Output ○─────────┼─── [C]
                     │ (Quantized CV)      │
                     │                     │
-                    │ B Output ○─────────┼─── Gate (Yellow)
+                    │ B Output ○─────────┼─── [G]
                     │ (Note Change Trig)  │
                     └─────────────────────┘
                              ║       ║
@@ -219,9 +219,9 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 
 | Connection | Cable Type | Notes |
 |------------|------------|-------|
-| Random CV → Disting X Input | CV (Blue) | Unquantized pitch CV |
-| Disting A Out → Oscillator V/OCT | CV (Blue) | Quantized to musical scale |
-| Disting B Out → Envelope Trigger | Gate (Yellow) | Fires on note changes |
+| Random CV → Disting X Input | [C] | Unquantized pitch CV |
+| Disting A Out → Oscillator V/OCT | [C] | Quantized to musical scale |
+| Disting B Out → Envelope Trigger | [G] | Fires on note changes |
 
 **Module Settings:**
 - **Disting:** Algorithm A-6 Quantizer
@@ -257,10 +257,10 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
    │                     │              │ Z Knob: Resonance   │
    └─────────────────────┘              │ (Real-time control) │
                                       │                     │
-                                      │ A Output ○────────┼─── Audio (Red)
+                                      │ A Output ○────────┼─── [A]
                                       │ (Resonant Audio)    │
                                       │                     │
-                                      │ B Output ○────────┼─── CV (Blue)
+                                      │ B Output ○────────┼─── [C]
                                       │ (Envelope Follower) │
                                       └─────────────────────┘
                                                ║       ║
@@ -280,10 +280,10 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 
 | Connection | Cable Type | Purpose | Advanced Function |
 |------------|------------|---------|------------------|
-| Audio Source → X Input | Audio (Red) | **Signal to be processed** | **Resonant filtering** |
-| Clock/LFO → Y Input | CV (Blue) | **Frequency modulation** | **Dynamic resonance control** |
-| A Output → Effects Audio | Audio (Red) | **Processed signal** | **Resonant audio character** |
-| B Output → Effects Mod | CV (Blue) | **Envelope follower CV** | **Audio-reactive modulation** |
+| Audio Source → X Input | [A] | **Signal to be processed** | **Resonant filtering** |
+| Clock/LFO → Y Input | [C] | **Frequency modulation** | **Dynamic resonance control** |
+| A Output → Effects Audio | [A] | **Processed signal** | **Resonant audio character** |
+| B Output → Effects Mod | [C] | **Envelope follower CV** | **Audio-reactive modulation** |
 
 **Module Settings:**
 - **Disting Algorithm:** C-5 (Resonator)
@@ -314,7 +314,7 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
    │                     │      │ (LFO + Quantizer)   │
    │ Audio Out ○─────────┼──────┼─▶ X Input           │
    │                     │      │                     │
-   └─────────────────────┘      │ B Output ○──────────┼─── CV (Blue)
+   └─────────────────────┘      │ B Output ○──────────┼─── [C]
                                 │ (Quantized CV)      │
    ┌─────────────────────┐      │                     │
    │   Make Noise Maths  │      │ Z Knob: Scale       │
@@ -323,7 +323,7 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
    │ Ch1 Unity Out ○─────┼──────────────┐     └─────────────────────┘
    │                     │              │     ║
    │ Ch4 Variable Out○───┼──────────────┼─────╬═══════════▶ Multiple
-   │                     │              │     ║ CV (Blue)   Destinations
+   │                     │              │     ║ [C]   Destinations
    │ SUM Output ○────────┼──────────────┘     ▼
    │                     │              ┌──────────────┐
    └─────────────────────┘              │   Synthesis  │

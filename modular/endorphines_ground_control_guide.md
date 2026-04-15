@@ -82,7 +82,7 @@ Ground Control's architecture centers on **4 independent tracks**, each with its
 
 **Track Structure:**
 
-🔴 **Audio** │ 🔵 **CV** │ 🟡 **Gate**
+[A]=Audio [C]=CV [G]=Gate
 
 ```
 ┌─GROUND CONTROL───────────────────────────────────────────┐

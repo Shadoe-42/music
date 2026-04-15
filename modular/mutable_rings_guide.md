@@ -133,9 +133,9 @@ As the **acoustic reality engine of Advanced ecosystems**, Rings transforms orga
                     │ Resonator Mode:     │
                     │ Green LED (Modal)   │
                     │                     │
-                    │ ODD Output ○───────┼─── Audio (Red)
+                    │ ODD Output ○───────┼─── [A]
                     │                     │
-                    │ EVEN Output ○──────┼─── Audio (Red)
+                    │ EVEN Output ○──────┼─── [A]
                     └─────────────────────┘
                              ║       ║
                         Audio║  Audio║
@@ -154,10 +154,10 @@ As the **acoustic reality engine of Advanced ecosystems**, Rings transforms orga
 
 | Connection | Cable Type | Purpose | Learning Objective |
 |------------|------------|---------|-------------------|
-| 1V/Oct CV → V/OCT Input | CV (Blue) | **Harmonic pitch tracking** | **Learn physical modeling fundamentals** |
-| Gate/Trigger → STRUM Input | Gate (Yellow) | **Trigger resonant bursts** | **Experience acoustic triggering** |
-| ODD Output → Left Mix | Audio (Red) | **Odd harmonics** | **Understand harmonic separation** |
-| EVEN Output → Right Mix | Audio (Red) | **Even harmonics** | **Stereo harmonic imaging** |
+| 1V/Oct CV → V/OCT Input | [C] | **Harmonic pitch tracking** | **Learn physical modeling fundamentals** |
+| Gate/Trigger → STRUM Input | [G] | **Trigger resonant bursts** | **Experience acoustic triggering** |
+| ODD Output → Left Mix | [A] | **Odd harmonics** | **Understand harmonic separation** |
+| EVEN Output → Right Mix | [A] | **Even harmonics** | **Stereo harmonic imaging** |
 
 **Module Settings:**
 - **Rings Mode:** Green LED (Modal resonator)
@@ -202,12 +202,12 @@ As the **acoustic reality engine of Advanced ecosystems**, Rings transforms orga
    │       ║            │      │ Polyphonic Mode:    │
    │       ║            │      │ 4-voice chords      │
    │       ║            │      │                     │
-   │       ║            │      │ ODD Output ○───────┼─── Audio (Red)
+   │       ║            │      │ ODD Output ○───────┼─── [A]
    │       ║            │      │                     │
-   │       ║            │      │ EVEN Output ○──────┼─── Audio (Red)
+   │       ║            │      │ EVEN Output ○──────┼─── [A]
    └───────║────────────┘      └─────────────────────┘
            ║                           ║       ║
-   CV (Blue)║                      Audio║  Audio║
+   [C]║                      Audio║  Audio║
            ▼                      (Red)║ (Red) ║
    ┌─────────────┐                    ▼       ▼
    │ Sequencer/    │           ┌─────────────────────┐
@@ -258,9 +258,9 @@ As the **acoustic reality engine of Advanced ecosystems**, Rings transforms orga
    └───────────║──────┘      │ Resonator Mode:     │
           Audio║                 │ Red LED (String)    │
          (Red) ║                 │                     │
-               ▼                 │ ODD Output ○──────┼─── Audio (Red)
+               ▼                 │ ODD Output ○──────┼─── [A]
        ┌─────────────┐         │                     │
-       │ Audio Source  │         │ EVEN Output ○─────┼─── Audio (Red)
+       │ Audio Source  │         │ EVEN Output ○─────┼─── [A]
        │ (Drums, Voice,│         └─────────────────────┘
        │  Noise, etc.) │                      ║       ║
        │               │                 Audio║  Audio║

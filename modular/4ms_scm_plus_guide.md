@@ -314,7 +314,7 @@ Moreover, understanding how groove works teaches you that the "magic" in electro
 
 ## Advanced Learning Path
 
-**Master SCM Plus in stages — each stage unlocks more rhythmic complexity.**
+**Master SCM Plus in stages: each stage unlocks more rhythmic complexity.**
 
 1. **One control at a time.** Start with only ROTATE to understand clock distribution, then add SKIP to thin patterns, then SHUFFLE to add swing. Adding all five controls at once will produce mud before it produces groove.
 
@@ -322,11 +322,11 @@ Moreover, understanding how groove works teaches you that the "magic" in electro
 
 3. **Map timing against a drum machine or sequencer.** The SCM Plus's value becomes clearest when syncing with a structured rhythm source. Run a drum machine from one output and a modulation sequencer from another to hear how the divisions relate.
 
-4. **Use SLIP to deliberately create metric displacement.** Practice shifting melodies slightly off the grid and returning them — this is a technique in live electronic music. SCM Plus makes it a physical gesture.
+4. **Use SLIP to deliberately create metric displacement.** Practice shifting melodies slightly off the grid and returning them; this is a technique in live electronic music. SCM Plus makes it a physical gesture.
 
 5. **Explore SKIP probability for generative variation.** Rather than fixed patterns, let SKIP CV create stochastic rhythms. Combine a slow random source on SKIP CV with a steady clock to get patterns that evolve without cycling predictably.
 
-6. **Study the SCM Plus alongside the Rotating Clock Divider (RCD).** The RCD and SCM Plus are complementary tools for clock manipulation — understanding their different approaches to division and rotation deepens command over both.
+6. **Study the SCM Plus alongside the Rotating Clock Divider (RCD).** The RCD and SCM Plus are complementary tools for clock manipulation; understanding their different approaches to division and rotation deepens command over both.
 
 ---
 

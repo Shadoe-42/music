@@ -355,15 +355,15 @@ Finally, understanding dual synchronized envelopes teaches you about coordinated
 
 ## Advanced Learning Path
 
-**The 1003 is a foundational building block — learn it deeply before adding more complex envelope tools.**
+**The 1003 is a foundational building block: learn it deeply before adding more complex envelope tools.**
 
 1. **Master the four ADSR stages with a single voice.** Before coordinating both envelopes, become fluent in dialing each stage independently. Hear exactly what attack, decay, sustain, and release contribute in isolation. The 1003 rewards patience here.
 
-2. **Understand the shared timing knob.** The single master timing control scaling both envelopes together is a deliberate design choice. Practice using it to maintain proportion between envelopes while adjusting overall speed — this is how the module creates coordinated gesture rather than independent voices.
+2. **Understand the shared timing knob.** The single master timing control scaling both envelopes together is a deliberate design choice. Practice using it to maintain proportion between envelopes while adjusting overall speed; this is how the module creates coordinated gesture rather than independent voices.
 
-3. **Explore bipolar outputs (OUT+/OUT−) for push-pull patching.** The inverted output turns one envelope trigger into simultaneous opposing movements — e.g., one filter opens while another closes. This technique is fundamental to expressive dual-voice patches.
+3. **Explore bipolar outputs (OUT+/OUT−) for push-pull patching.** The inverted output turns one envelope trigger into simultaneous opposing movements (one filter opens while another closes). This technique is fundamental to expressive dual-voice patches.
 
-4. **Add a second VCO and use each envelope independently.** Build a two-voice patch where each envelope handles its own voice shaping. This is the 1003's native use case — experiencing it this way makes its design philosophy clear.
+4. **Add a second VCO and use each envelope independently.** Build a two-voice patch where each envelope handles its own voice shaping. This is the 1003's native use case; experiencing it this way makes its design philosophy clear.
 
 5. **Study envelope interaction with retrigger behavior.** Experiment with retrigger on vs. off alongside different gate lengths. Understanding how the 1003 handles overlapping gates prepares you for sequencer-driven patches where gates don't always end cleanly.
 

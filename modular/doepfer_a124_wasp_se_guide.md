@@ -173,9 +173,9 @@ This module preserves the sound of the legendary **Electronic Dream Plant Wasp s
 
 | Connection | Cable Type | Purpose | Learning Objective |
 |------------|------------|---------|-------------------|
-| Oscillator → Wasp Audio In | Audio (Red) | **Rich harmonics for aggressive filtering** | **Experience ladder filter aggression** |
-| Envelope → Wasp Cutoff CV | CV (Blue) | **Classic filter modulation** | **Learn filter sweep dynamics** |
-| Wasp Out → VCA Audio In | Audio (Red) | **Filtered aggressive bass output** | **Understand Wasp character impact** |
+| Oscillator → Wasp Audio In | [A] | **Rich harmonics for aggressive filtering** | **Experience ladder filter aggression** |
+| Envelope → Wasp Cutoff CV | [C] | **Classic filter modulation** | **Learn filter sweep dynamics** |
+| Wasp Out → VCA Audio In | [A] | **Filtered aggressive bass output** | **Understand Wasp character impact** |
 
 **Module Settings:**
 - **Oscillator:** Sawtooth wave for rich harmonics
@@ -207,9 +207,9 @@ This module preserves the sound of the legendary **Electronic Dream Plant Wasp s
 
 | Connection | Cable Type | Purpose | Learning Objective |
 |------------|------------|---------|-------------------|
-| Sequencer → Wasp Cutoff CV | CV (Blue) | **Melodic self-oscillation control** | **Experience filter as oscillator** |
-| LFO → Wasp Resonance CV | CV (Blue) | **Dynamic aggression modulation** | **Learn resonance sweep dynamics** |
-| Wasp Out → Effects | Audio (Red) | **Pure sine wave self-oscillation** | **Understand self-oscillation musicality** |
+| Sequencer → Wasp Cutoff CV | [C] | **Melodic self-oscillation control** | **Experience filter as oscillator** |
+| LFO → Wasp Resonance CV | [C] | **Dynamic aggression modulation** | **Learn resonance sweep dynamics** |
+| Wasp Out → Effects | [A] | **Pure sine wave self-oscillation** | **Understand self-oscillation musicality** |
 
 **Module Settings:**
 - **Wasp Resonance:** 4 o'clock for strong self-oscillation
@@ -243,9 +243,9 @@ This module preserves the sound of the legendary **Electronic Dream Plant Wasp s
 
 | Connection | Cable Type | Purpose | Learning Objective |
 |------------|------------|---------|-------------------|
-| Drum Source → Wasp Audio In | Audio (Red) | **Drum signal processing** | **Experience aggressive filter character** |
-| Trigger → Wasp Cutoff CV | Gate (Yellow) | **Gate-controlled filter sweep** | **Learn trigger-based modulation** |
-| Wasp Out → Drum Output | Audio (Red) | **Aggressive processed drums** | **Understand filter aggression impact** |
+| Drum Source → Wasp Audio In | [A] | **Drum signal processing** | **Experience aggressive filter character** |
+| Trigger → Wasp Cutoff CV | [G] | **Gate-controlled filter sweep** | **Learn trigger-based modulation** |
+| Wasp Out → Drum Output | [A] | **Aggressive processed drums** | **Understand filter aggression impact** |
 
 **Module Settings:**
 - **Wasp Cutoff:** 2 o'clock for bright starting point
@@ -502,19 +502,19 @@ This represents **complete aggressive filter mastery** - where probability-based
 
 ## Advanced Learning Path
 
-**The Wasp SE rewards progressive exploration — its aggression is a feature, not a flaw to manage around.**
+**The Wasp SE rewards progressive exploration; its aggression is a feature, not a flaw to manage around.**
 
 1. **Learn RESONANCE before DRIVE.** Resonance shapes tonal character before saturation comes into the picture. Get comfortable with how resonance changes the filter peak at different CUTOFF positions, then introduce DRIVE to push it further.
 
-2. **Study self-oscillation as a sound source.** Push RESONANCE past the threshold until the filter sings on its own, then use CUTOFF CV (from a keyboard or sequencer V/OCT output) to play it melodically. This technique — filter as oscillator — is central to electronic music history and the Wasp SE does it with distinct character.
+2. **Study self-oscillation as a sound source.** Push RESONANCE past the threshold until the filter sings on its own, then use CUTOFF CV (from a keyboard or sequencer V/OCT output) to play it melodically. This technique (filter as oscillator) is central to electronic music history and the Wasp SE does it with distinct character.
 
 3. **Patch CUTOFF CV from an envelope to get the full Wasp character.** A fast-attack envelope on CUTOFF is the foundation of the Wasp sound. Once this is working, vary the envelope shape to explore the range between percussive bite and smooth sweep.
 
-4. **Compare the Wasp SE against a cleaner filter back to back.** The Wasp's CMOS nonlinearity is easiest to hear in contrast. Run the same patch through both and listen to what the Wasp adds — the distortion, the asymmetrical clipping, the slight instability at high DRIVE settings.
+4. **Compare the Wasp SE against a cleaner filter back to back.** The Wasp's CMOS nonlinearity is easiest to hear in contrast. Run the same patch through both and listen to what the Wasp adds: the distortion, the asymmetrical clipping, the slight instability at high DRIVE settings.
 
 5. **Use CV control to automate aggression over time.** Slowly automating DRIVE with an LFO or envelope creates a patch that breathes between clean and dirty. This is the Wasp SE's strength in longer compositions.
 
-6. **Graduate to filter comparison work with other aggressive filters.** Once the Wasp character is internalized, compare it against the Xaoc Belgrad or similar Tier 3 filter options. The goal is a working vocabulary of filter personalities — knowing which tool matches which musical context.
+6. **Graduate to filter comparison work with other aggressive filters.** Once the Wasp character is internalized, compare it against the Xaoc Belgrad or similar Tier 3 filter options. The goal is a working vocabulary of filter personalities: knowing which tool matches which musical context.
 
 ---
 

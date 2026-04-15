@@ -162,9 +162,9 @@ Arbhar isn't just a processor - it's a philosophical statement about what synthe
                     │ LENGTH: 11 o'clock    │
                     │ SPRAY: 9 o'clock      │
                     │                       │
-                    │ OUT 1 ○───────────────┼─── Audio (Red)
+                    │ OUT 1 ○───────────────┼─── [A]
                     │                       │
-                    │ OUT 2 ○───────────────┼─── Audio (Red)
+                    │ OUT 2 ○───────────────┼─── [A]
                     └─────────────────────┘
                                               ║      ║
                                          Audio║ Audio║
@@ -179,8 +179,8 @@ Arbhar isn't just a processor - it's a philosophical statement about what synthe
 
 | Connection | Cable Type | Notes |
 |------------|------------|-------|
-| Audio Source → Arbhar IN | Audio (Red) | Any audio source - voice, instrument, field recording |
-| Arbhar OUT 1,2 → Final Output | Audio (Red) | Stereo granular processing |
+| Audio Source → Arbhar IN | [A] | Any audio source - voice, instrument, field recording |
+| Arbhar OUT 1,2 → Final Output | [A] | Stereo granular processing |
 
 **Module Settings:**
 - **Capture:** Press to record 10 seconds of incoming audio
@@ -222,7 +222,7 @@ Arbhar isn't just a processor - it's a philosophical statement about what synthe
    │ Rate: 12 o'clock   │      │ Layer: α              │
    └───────║────────────┘      │ OUT 1,2 ○───────────┼─── Organic
            ║                            │                     │    Granular
-   CV (Blue)║                            └─────────────────────┘    Evolution
+   [C]║                            └─────────────────────┘    Evolution
            ▼                                     ║
    ┌─────────────────┐                              Audio║
    │   Effects     │                              (Red)║
@@ -286,7 +286,7 @@ Arbhar isn't just a processor - it's a philosophical statement about what synthe
 └─────────────────────┘    │ ADSR Out ○──────────┼─── To Arbhar Strike
                                 └─────────────────────┘
                                          ║      ║    ║    ║
-                                 CV (Blue)║      ║    ║    ║
+                                 [C]║      ║    ║    ║
                                          ▼      ▼    ▼    ▼
                                 ┌─────────────────────────────────┐
                                 │         Instruo Arbhar          │

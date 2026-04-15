@@ -299,14 +299,14 @@ graph LR
                                        │     ║     │       │
                                        └─────║─────┘       │
                                              ║             │
-                                      CV (Blue)            │
+                                      [C]            │
                                                            🔴
 ```
 
 | Connection | Cable Type | Notes |
 |------------|------------|-------|
-| Sequencer Gate → Maths Ch1 TRIG | Gate (Yellow) | Triggers envelope on each step |
-| Maths Ch1 UNITY → VCA CV In | CV (Blue) | Controls amplitude |
+| Sequencer Gate → Maths Ch1 TRIG | [G] | Triggers envelope on each step |
+| Maths Ch1 UNITY → VCA CV In | [C] | Controls amplitude |
 
 **Module Settings:**
 - **Maths:** Rise knob at 12 o'clock, Fall knob at 12 o'clock

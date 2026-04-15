@@ -203,8 +203,8 @@ Understanding this reveals why the Interconnection Principle matters: nothing ex
 
 | Connection | Cable Type | Purpose | Learning Objective |
 |------------|------------|---------|-------------------|
-| Stepped → Oscillator 1V/Oct | CV (Blue) | **Random pitch control** | **Experience discrete chaos** - stepping between values teaches the same principle that quantizers use to impose musical order |
-| Smooth → Filter Cutoff | CV (Blue) | **Continuous filter sweeps** | **Learn smooth randomness** - smooth curves between values teach about modulation curves that appear in all envelope generators and filters |
+| Stepped → Oscillator 1V/Oct | [C] | **Random pitch control** | **Experience discrete chaos** - stepping between values teaches the same principle that quantizers use to impose musical order |
+| Smooth → Filter Cutoff | [C] | **Continuous filter sweeps** | **Learn smooth randomness** - smooth curves between values teach about modulation curves that appear in all envelope generators and filters |
 
 **Settings:** Speed/Chaos: 12 o'clock, Ego/Id: 3 o'clock (full chaos)
 **Result:** Oscillator jumps randomly between pitches while filter sweeps smoothly

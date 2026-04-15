@@ -176,10 +176,10 @@ Mob of Emus proves that **mathematical beauty** and **musical intuition** can wo
 
 | Connection | Cable Type | Notes |
 |------------|------------|-------|
-| LFO → MOE H.GAIN CV | CV (Blue) | Rhythmic harmonic intensity |
-| Envelope → MOE Full CV Freq | CV (Blue) | Pitch modulation |
-| MOE Mix Out → Filter Audio In | Audio (Red) | Rich additive signal |
-| Filter Out → VCA Audio In | Audio (Red) | Filtered harmonics |
+| LFO → MOE H.GAIN CV | [C] | Rhythmic harmonic intensity |
+| Envelope → MOE Full CV Freq | [C] | Pitch modulation |
+| MOE Mix Out → Filter Audio In | [A] | Rich additive signal |
+| Filter Out → VCA Audio In | [A] | Filtered harmonics |
 
 **Module Settings:**
 - **Mob of Emus:** Load Preset 7, Hex Mode ON
@@ -215,13 +215,13 @@ Mob of Emus proves that **mathematical beauty** and **musical intuition** can wo
 
 | Connection | Cable Type | Notes |
 |------------|------------|-------|
-| Tap/Trig → MOE Sync Input | Clock (Yellow) | Sets tempo for all channels |
-| MOE Ch1 → VCA 1 CV Input | CV (Blue) | 1x tempo (fundamental) |
-| MOE Ch2 → VCA 2 CV Input | CV (Blue) | 2x tempo (half notes) |
-| MOE Ch3 → Filter CV Input | CV (Blue) | 4x tempo (quarter notes) |
-| MOE Ch4 → LFO Rate CV | CV (Blue) | 8x tempo (eighth notes) |
-| MOE Ch5 → Oscillator Pitch | CV (Blue) | 16x tempo (sixteenth notes) |
-| MOE Ch6 → Effect Parameter | CV (Blue) | 32x tempo (thirty-second notes) |
+| Tap/Trig → MOE Sync Input | [G] | Sets tempo for all channels |
+| MOE Ch1 → VCA 1 CV Input | [C] | 1x tempo (fundamental) |
+| MOE Ch2 → VCA 2 CV Input | [C] | 2x tempo (half notes) |
+| MOE Ch3 → Filter CV Input | [C] | 4x tempo (quarter notes) |
+| MOE Ch4 → LFO Rate CV | [C] | 8x tempo (eighth notes) |
+| MOE Ch5 → Oscillator Pitch | [C] | 16x tempo (sixteenth notes) |
+| MOE Ch6 → Effect Parameter | [C] | 32x tempo (thirty-second notes) |
 
 **Module Settings:**
 - **Mob of Emus:** Octave at -3 (LFO rates), Hex Mode ON
@@ -665,15 +665,15 @@ This represents **complete mathematical harmony mastery** - where mathematical f
 
 **Mob of Emus is a deep instrument. Understand the harmonic series as a concept first; the controls will make sense from there.**
 
-1. **Start with a single oscillator in simple mode.** Run WAVE mode with a saw wave, tune it to a root, and listen to how the 15 harmonic series presets change the spectral structure. The goal here is not technique — it's hearing what harmonic ratios do to timbre. This is the foundation everything else rests on.
+1. **Start with a single oscillator in simple mode.** Run WAVE mode with a saw wave, tune it to a root, and listen to how the 15 harmonic series presets change the spectral structure. The goal here is not technique; it is hearing what harmonic ratios do to timbre. This is the foundation everything else rests on.
 
-2. **Understand the difference between WAVE, ENV, and PAT modes.** These three modes change what the six-oscillator bank does — static timbre, envelope-driven dynamics, and euclidean gate patterns respectively. They're three separate instruments sharing one module. Master each independently.
+2. **Understand the difference between WAVE, ENV, and PAT modes.** These three modes change what the six-oscillator bank does: static timbre, envelope-driven dynamics, and euclidean gate patterns respectively. They're three separate instruments sharing one module. Master each independently.
 
-3. **Use PAT mode as a polyrhythmic gate source.** The euclidean gate outputs in PAT mode can drive envelopes, VCAs, or other modules rather than producing audio. Patching the gate outputs to external destinations turns the Mob of Emus into a rhythmic control center — this is one of its most underused capabilities.
+3. **Use PAT mode as a polyrhythmic gate source.** The euclidean gate outputs in PAT mode can drive envelopes, VCAs, or other modules rather than producing audio. Patching the gate outputs to external destinations turns the Mob of Emus into a rhythmic control center; this is one of its most underused capabilities.
 
-4. **Study the HARM# / SERIES control to understand preset harmonic relationships.** The 15 preset series are not random — they correspond to specific acoustic and mathematical harmonic structures (odd harmonics, just intonation, etc.). Identifying which series sounds like what, and why, makes the module navigable without always consulting the manual.
+4. **Study the HARM# / SERIES control to understand preset harmonic relationships.** The 15 preset series are not random; they correspond to specific acoustic and mathematical harmonic structures (odd harmonics, just intonation, etc.). Identifying which series sounds like what, and why, makes the module navigable without always consulting the manual.
 
-5. **Explore the quantizer function.** Mob of Emus can quantize external CV to its current harmonic series. This turns it into a pitch quantizer that maps incoming notes to harmonically related intervals — a technique that creates melodic coherence across multiple CV sources in a generative patch.
+5. **Explore the quantizer function.** Mob of Emus can quantize external CV to its current harmonic series. This turns it into a pitch quantizer that maps incoming notes to harmonically related intervals, a technique that creates melodic coherence across multiple CV sources in a generative patch.
 
 6. **Build a complete self-contained harmonic voice.** Use Mob of Emus as the only sound source in a patch: V/OCT in → ENV mode → filter and VCA out. If the harmonic content reads as an interesting and controlled voice, the module is understood at depth.
 
