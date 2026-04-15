@@ -1,10 +1,10 @@
 ---
 title: Patching Panda Moon Phase
 manufacturer: Patching Panda
-primary_role: MODULATOR
-secondary_roles: [SHAPER]
+primary_role: SHAPER
+secondary_roles: []
 form_factor: eurorack
-functions: [lfo]
+functions: [filter]
 behavior_tags: [clean, stable, dark, nonlinear, performance-oriented]
 use_cases: [stereo signal processing, timbral movement and shaping, evolving ambient texture]
 hp: 14

@@ -1,7 +1,7 @@
 ---
 title: Blue Lantern Astroid
 manufacturer: Blue Lantern
-primary_role: MODULATOR
+primary_role: EVENT_VOICE
 secondary_roles: []
 form_factor: eurorack
 functions: [drum-voice]

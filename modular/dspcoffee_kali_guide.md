@@ -4,7 +4,7 @@ manufacturer: DSPcoffee
 primary_role: SHAPER
 secondary_roles: [MODULATOR]
 form_factor: eurorack
-functions: [fx-time, lfo]
+functions: [fx-time, distortion, fx-modulation]
 behavior_tags: [evolving, warm, nonlinear, generative, performance-oriented]
 use_cases: [evolving ambient texture, stereo signal processing, modulation source, self-evolving patch element]
 hp: 24

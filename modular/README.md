@@ -61,7 +61,7 @@ Most modules serve more than one role depending on how they're patched. The role
 |--------|----------|-------|
 | Bizarre Jezabel PKHIA MK2 | Wavefolder | [Guide](bizarre_jezabel_pkhia_mk2_guide.md) |
 | Doepfer A-124 Wasp SE | Filter | [Guide](doepfer_a124_wasp_se_guide.md) |
-| DSPcoffee Kali | FX Time, LFO | [Guide](dspcoffee_kali_guide.md) |
+| DSPcoffee Kali | FX Time, Distortion, FX Modulation | [Guide](dspcoffee_kali_guide.md) |
 | EarthQuaker Devices Afterneath | FX Time | [Guide](earthquaker_devices_afterneath_guide.md) |
 | Endorphin.es Ghost | FX Time, FX Modulation | [Guide](endorphines_ghost_guide.md) |
 | Endorphin.es Squawk Dirty to Me | Filter | [Guide](endorphines_squawk_dirty_to_me_guide.md) |
@@ -69,6 +69,7 @@ Most modules serve more than one role depending on how they're patched. The role
 | Erica Synths Pico DSP | FX Time, FX Modulation | [Guide](erica_synths_pico_dsp_guide.md) |
 | Instruo Arbhar | Granular | [Guide](instruo_arbhar_guide.md) |
 | Noise Engineering Ruina Versio | Distortion | [Guide](noise_engineering_ruina_versio_guide.md) |
+| Patching Panda Moon Phase | Filter | [Guide](patching_panda_moon_phase_guide.md) |
 | Soma Lyra-8 FX | FX Modulation, Distortion | [Guide](soma_lyra8_fx_guide.md) |
 | Tiptop Audio Forbidden Planet | Filter | [Guide](tiptop_audio_forbidden_planet_guide.md) |
 | Xaoc Devices Belgrad | Filter, Wavefolder | [Guide](xaoc_devices_belgrad_guide.md) |
@@ -96,7 +97,6 @@ Most modules serve more than one role depending on how they're patched. The role
 | Module | Function | Guide |
 |--------|----------|-------|
 | Behringer Dual Envelope Generator 1003 | Envelope Generator | [Guide](behringer_dual_envelope_generator_1003_utility_guide.md) |
-| Blue Lantern Astroid | Drum Voice | [Guide](blue_lantern_astroid_guide.md) |
 | Blue Lantern BLM Looping Simple ADSR v21 | Envelope Generator | [Guide](blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md) |
 | DivKid Ochd + Expander | LFO | [Guide](divkid_ochd_and_expander_guide.md) |
 | Erica Synths Black Envelope Generator 2 | Envelope Generator | [Guide](erica_synths_black_envelope_generator_2_guide.md) |
@@ -104,7 +104,6 @@ Most modules serve more than one role depending on how they're patched. The role
 | Make Noise Maths | Function Generator, CV Processor | [Guide](make_noise_maths_guide.md) |
 | Make Noise Wogglebug | Random Source, Noise Source | [Guide](make_noise_wogglebug_guide.md) |
 | Mutable Instruments Marbles | Random Source, Sequencer | [Guide](mutable_marbles_guide.md) |
-| Patching Panda Moon Phase | LFO | [Guide](patching_panda_moon_phase_guide.md) |
 | Patching Panda Punch v3 | VCA, Envelope Generator | [Guide](patching_panda_punch_v3_guide.md) |
 | Xaoc Devices Zadar + NIN | Function Generator | [Guide](xaoc_devices_zadar_nin_guide.md) |
 
@@ -150,6 +149,15 @@ Most modules serve more than one role depending on how they're patched. The role
 | Module | Function | Guide |
 |--------|----------|-------|
 | Mordax Data | Oscilloscope, Tuner | [Guide](mordax_data_guide.md) |
+
+---
+
+### EVENT_VOICE
+*Trigger-dependent sound engine with internally managed amplitude envelope.*
+
+| Module | Function | Guide |
+|--------|----------|-------|
+| Blue Lantern Astroid | Drum Voice | [Guide](blue_lantern_astroid_guide.md) |
 
 ---
 
