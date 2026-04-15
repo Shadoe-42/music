@@ -146,6 +146,90 @@ Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 ---
 
+## **YAML Frontmatter**
+
+Every guide begins with a YAML frontmatter block. This is the machine-readable metadata that drives automated table generation, compliance auditing, and the README generator. The complete vocabulary lists live in `tooling/yaml_spec_v2.md`.
+
+### **Complete Schema**
+
+```yaml
+---
+title: STRING                        # Full manufacturer + module name
+manufacturer: STRING                 # Manufacturer name exactly as used in guides
+primary_role: SEE ROLE TAXONOMY     # One value; see taxonomy below
+secondary_roles: [LIST]             # Array; use [] if none
+form_factor: eurorack | desktop | keyboard-synth | rack-unit | pedal | semi-modular | software | bundle | other
+functions: [LIST, 1-3 items]        # Structural capability; locked vocabulary in yaml_spec_v2.md
+behavior_tags: [LIST, 3-8 items]    # Tonal/temporal/sonic character; locked vocabulary in yaml_spec_v2.md
+use_cases: [LIST, 1-4 items]        # Musical intent phrases; natural language
+hp: NUMBER                          # Eurorack only; omit for other form factors
+memory: none | basic | full
+transport: none | receive | full    # Note: transport uses receive, not basic
+screen: true | false
+hybrid: true | false
+cv: none | basic | full
+---
+```
+
+### **Role Taxonomy**
+
+One primary role per guide. Secondary roles are the additional functions the module serves when patched differently.
+
+| Role | Definition |
+|------|------------|
+| `SOURCE` | Generates signal — audio, CV, gates, or noise |
+| `SHAPER` | Transforms signal character — timbre, spectrum, space, texture |
+| `AMPLIFIER` | Controls signal level — gain staging, mixing, dynamics |
+| `MODULATOR` | Generates time-varying control signals — envelopes, LFOs, random |
+| `CONTROLLER` | Defines timing, sequencing, and performance structure |
+| `ROUTER` | Distributes, combines, switches, or applies logic to signal paths |
+| `ANALYZER` | Observes, measures, and displays signal behavior |
+| `EVENT_VOICE` | Trigger-dependent sound engine with internally managed amplitude envelope |
+| `UTILITY` | Multi-function, hybrid, or cross-category modules |
+
+**EVENT_VOICE boundary rule:** Remove the external VCA. If the sound shape breaks, the module is SOURCE. If it still produces a complete shaped note event, it is EVENT_VOICE.
+
+### **Key Field Rules**
+
+`secondary_roles` is always an array, even if empty: `[]`.
+
+`functions` describes structural capability — what the module physically does. 1-3 items from the locked vocabulary. Not sound character; not use case. "filter" is a function. "warm" is not.
+
+`behavior_tags` describes tonal, temporal, and sonic character. 3-8 items. Answers "what does this sound or behave like?" Use these to distinguish a warm analog filter from an aggressive digital one even though both have `functions: [filter]`.
+
+`use_cases` is natural musical intent language. 1-4 phrases. "harmonic pad", "clock subdivision", "send/return effects loop". These power intent-based lookup: someone searching for "ambient texture" finds modules tagged accordingly without knowing the category.
+
+`transport` uses its own three-value vocabulary: `none | receive | full`. This is distinct from `memory` and `cv`, which use `none | basic | full`. Do not use `basic` for transport.
+
+Capability flags (`memory`, `transport`, `screen`, `hybrid`, `cv`) are omitted only for form factors where they are structurally irrelevant (a passive module, a blank panel). For eurorack modules, all flags are required.
+
+### **Example**
+
+```yaml
+---
+title: Mutable Instruments Rings
+manufacturer: Mutable Instruments
+primary_role: SOURCE
+secondary_roles: [SHAPER]
+form_factor: eurorack
+functions: [resonator, physical-model]
+behavior_tags: [harmonic, sustained, metallic, evolving, performance-oriented]
+use_cases: [harmonic pad, evolving ambient texture, chord voice, drone foundation]
+hp: 14
+memory: none
+transport: none
+screen: false
+hybrid: false
+cv: full
+---
+```
+
+### **Compliance**
+
+Every guide must have complete YAML frontmatter. Run `python3 tooling/audit_guides.py` from the Music directory to verify. All controlled vocabulary fields must use only the defined terms from `yaml_spec_v2.md`. The audit script checks every field and reports violations as errors or warnings.
+
+---
+
 ## **Content Structure & Quality**
 
 ### **Required Sections:**
@@ -218,9 +302,12 @@ A guide that documents every jack and parameter on a complex module but omits th
 **Mandatory Format:**
 ```
 **Key Specifications:**
-- **Width:** [X] HP
-- **Depth:** [X] mm
-- **Power:** [X] mA @ +12V / [X] mA @ -12V / [X] mA @ +5V
+
+| Spec | Value |
+|------|-------|
+| Width | [X] HP |
+| Depth | [X] mm |
+| Power | [X] mA +12V / [X] mA -12V / [X] mA +5V |
 ```
 
 **Why This Placement:**
@@ -247,9 +334,12 @@ If applicable, add module-specific technical specs:
 **Example (Pico DRUM2):**
 ```
 **Key Specifications:**
-- **Width:** 3 HP
-- **Depth:** 35 mm
-- **Power:** 28 mA @ +12V / 5 mA @ -12V / 0 mA @ +5V
+
+| Spec | Value |
+|------|-------|
+| Width | 3 HP |
+| Depth | 35 mm |
+| Power | 28 mA +12V / 5 mA -12V / 0 mA +5V |
 ```
 
 **Compliance Requirement:** Every guide must include Key Specifications in Quick Start. This is non-negotiable; users cannot evaluate module fit without this information.
@@ -414,7 +504,7 @@ The em dash has become a reliable signal of AI-generated text in the eyes of rea
 ## **Framework Application**
 
 ### **For New Guides:**
-1. Determine module classification
+1. Determine module classification and write complete YAML frontmatter (all v2 fields)
 2. Complete workflow checklist
 3. Single comprehensive write with mandatory compliance elements
 4. **Verify framework compliance** using systematic testing criteria
@@ -431,6 +521,7 @@ The em dash has become a reliable signal of AI-generated text in the eyes of rea
 **Comprehensive verification checklist - systematic testing revealed tunnel vision failures when verification was incomplete**
 
 **Mandatory Checklist (ALL Requirements):**
+- [ ] **YAML frontmatter complete** — all v2 fields present with valid vocabulary values; verify with `python3 tooling/audit_guides.py`
 - [ ] **GitHub image integration present** with proper URL format and descriptive caption
 - [ ] **Enhanced format alternatives in ALL patches** (budget/premium/different character)
 - [ ] **Terminology consistency** - "Advanced" not "Phase 2" throughout entire guide
