@@ -119,7 +119,7 @@ Instead of randomly setting six channels, you can instantly access **thousands o
 
 ---
 
-## Why This Module Rocks
+## Why Rossum Electro-Music Mob of Emus Excels
 
 ### **The Philosophy:**
 Mob of Emus brings **musical mathematics** into the modular world. Instead of six random channels, you get six channels that understand harmonic relationships, making complex music theory accessible through simple knob turns.

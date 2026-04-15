@@ -86,7 +86,7 @@ hybrid: true
 
 ---
 
-## Why This Module Rocks
+## Why Winterbloom Castor & Pollux II Excels
 
 ### **The Philosophy:**
 Castor & Pollux II represents the **perfect bridge between vintage and modern** - authentic Juno-106 character with contemporary convenience. Unlike simple oscillator recreations, this module captures the complete DCO experience including the quirks, characteristics, and musical behavior that made the Juno legendary. **The web editor integration means you get vintage soul with modern flexibility.**

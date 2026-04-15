@@ -81,7 +81,7 @@ screen: true
 
 ---
 
-## Why This Module Rocks
+## Why Squarp Hermod+ Excels
 
 ### **The Philosophy:**
 Squarp Hermod+ represents **comprehensive advanced sequencing** - serving as the central nervous system that coordinates sophisticated pattern generation across entire musical ecosystems. It proves that advanced sequencing can enhance and direct electronic pattern generation rather than constraining it.

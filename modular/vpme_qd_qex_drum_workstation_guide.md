@@ -286,6 +286,42 @@ This system provides **professional drum production capabilities** in modular fo
 
 ---
 
+## Why VPME QD/QEX Drum Workstation Excels
+
+### **The Philosophy:**
+**Professional drum production in modular format.** The QD + QEX workstation proves that modular systems can offer the depth, flexibility, and professional capabilities of dedicated drum machines while integrating seamlessly with modular synthesis environments.
+
+### **The Innovation:**
+- **Complete drum studio:** Synthesis + samples + mixing + effects + spatial processing in 26HP
+- **Professional routing:** 4-channel output with advanced mixing modes and individual processing
+- **Advanced modulation:** 8 LFOs + envelope generators + 8 CV inputs for comprehensive automation
+- **Hidden depth:** Easter egg features and EXTRA parameters provide endless sound design possibilities
+
+### **The Professional Benefits:**
+- **Studio integration:** Professional routing and mixing capabilities for serious production work
+- **Performance ready:** Preset system, spatial control, and real-time parameter automation
+- **Modular integration:** CV control over all parameters while maintaining standalone capabilities
+- **Future-proof:** Firmware updates continue to add features and capabilities
+
+### **Perfect For:**
+- **Electronic music producers:** Complete drum production capabilities in modular format
+- **Live performers:** Professional drum workstation with preset system and spatial control
+- **Studio engineers:** Advanced routing and processing capabilities for professional mixing
+- **Sound designers:** Deep synthesis capabilities + sample integration + hidden features
+
+### **The Magic:**
+The QD + QEX workstation proves that **modular doesn't mean compromised**. This system offers professional drum production capabilities that rival dedicated drum machines while providing the flexibility and integration benefits of modular synthesis.
+
+---
+
+**Bottom Line:** The QD + QEX workstation isn't just drum voices in a modular system - it's a **complete professional drum production studio** that transforms synthesis algorithms, sample libraries, and spatial processing into unified musical instruments. Every feature teaches you something new about how professional drum production really works. As a **complete drum workstation**, it bridges modular flexibility with professional studio capabilities.
+
+---
+
+*Visit [VPME.de](https://vpme.de/qd) for complete documentation, firmware updates, sample libraries, and the full mathematical music ecosystem*
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Basic Professional Drum Kit**
@@ -624,38 +660,4 @@ This system provides **professional drum production capabilities** in modular fo
 - **Cross-parameter modulation:** Modulate FADE with envelopes for triggered spatial movement
 - **8-LFO orchestration:** Use all 8 LFOs together for complex, evolving drum textures
 
----
 
-## Why This Workstation Rocks
-
-### **The Philosophy:**
-**Professional drum production in modular format.** The QD + QEX workstation proves that modular systems can offer the depth, flexibility, and professional capabilities of dedicated drum machines while integrating seamlessly with modular synthesis environments.
-
-### **The Innovation:**
-- **Complete drum studio:** Synthesis + samples + mixing + effects + spatial processing in 26HP
-- **Professional routing:** 4-channel output with advanced mixing modes and individual processing
-- **Advanced modulation:** 8 LFOs + envelope generators + 8 CV inputs for comprehensive automation
-- **Hidden depth:** Easter egg features and EXTRA parameters provide endless sound design possibilities
-
-### **The Professional Benefits:**
-- **Studio integration:** Professional routing and mixing capabilities for serious production work
-- **Performance ready:** Preset system, spatial control, and real-time parameter automation
-- **Modular integration:** CV control over all parameters while maintaining standalone capabilities
-- **Future-proof:** Firmware updates continue to add features and capabilities
-
-### **Perfect For:**
-- **Electronic music producers:** Complete drum production capabilities in modular format
-- **Live performers:** Professional drum workstation with preset system and spatial control
-- **Studio engineers:** Advanced routing and processing capabilities for professional mixing
-- **Sound designers:** Deep synthesis capabilities + sample integration + hidden features
-
-### **The Magic:**
-The QD + QEX workstation proves that **modular doesn't mean compromised**. This system offers professional drum production capabilities that rival dedicated drum machines while providing the flexibility and integration benefits of modular synthesis.
-
----
-
-**Bottom Line:** The QD + QEX workstation isn't just drum voices in a modular system - it's a **complete professional drum production studio** that transforms synthesis algorithms, sample libraries, and spatial processing into unified musical instruments. Every feature teaches you something new about how professional drum production really works. As a **complete drum workstation**, it bridges modular flexibility with professional studio capabilities.
-
----
-
-*Visit [VPME.de](https://vpme.de/qd) for complete documentation, firmware updates, sample libraries, and the full mathematical music ecosystem*

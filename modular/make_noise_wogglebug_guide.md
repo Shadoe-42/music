@@ -52,7 +52,7 @@ hp: 10
 
 ---
 
-## Why This Module Rocks
+## Why Make Noise Wogglebug Excels
 
 ### **The Philosophy:**
 Wogglebug represents **controlled chaos as a musical instrument** - not random noise, but sophisticated unpredictability that responds to musical context. Based on the legendary Buchla 265, it brings the West Coast philosophy of "controlled voltage, controlled chaos" to Eurorack. **In advanced ecosystems, it becomes the uncertainty engine that adds life and unpredictability to sophisticated musical systems.**

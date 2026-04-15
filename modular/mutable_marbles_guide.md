@@ -78,7 +78,7 @@ hp: 18
 
 ---
 
-## Why This Module Rocks
+## Why Mutable Instruments Marbles Excels
 
 ### **The Philosophy:**
 Marbles represents a revolutionary approach to musical randomness - **sophisticated algorithms applied to music creation**. Unlike pure random generators, Marbles uses probability distributions and memory systems to create patterns that sound musical, but **you are still the creative director**. The module responds to your input and settings to create the musical results you guide it toward.

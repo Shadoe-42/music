@@ -117,6 +117,18 @@ hp: 6
 
 ---
 
+## Why Intellijel Stomp Excels
+
+Guitar pedals and Eurorack modular systems exist in different electrical worlds: pedals expect high-impedance instrument signals or balanced line levels, modular runs unbalanced at Eurorack levels, and expression pedals communicate via a 0-3.3V unipolar voltage range that has no natural equivalent in a standard modular patch. Most attempts to bridge these worlds involve compromises: signal loss, impedance mismatches, ground loops, or a pile of passive adapters that solve one problem while creating two others. Stomp is built from the ground up to solve all of it in 6HP.
+
+The LEVEL switch is the critical piece that most DIY approaches miss. Proper high-impedance buffering for guitars and basses versus correct gain staging for modular-level signals is not a passive problem. Stomp handles the conversion in both directions cleanly, which means the pedal on the other end receives the signal it was designed for rather than something that technically works but sounds wrong.
+
+The expression automation circuit is where Stomp earns its place in a system beyond basic send/return duty. Any pedal with an expression input becomes a CV-addressable modular effect. The internal LFO driving the expression output is a legitimate modulation source in its own right: slow sine automation on a reverb decay time, triangle sweeps on a chorus rate, or random waveform control over a filter. Replace the internal LFO with an external CV source and the automation becomes as sophisticated as anything else in the system. This turns a static pedal into a dynamic, parameter-modulated processor without modifying the pedal or adding any external conversion hardware.
+
+The practical consequence is that an existing pedal collection stops being a separate domain and becomes an extension of the modular signal chain. Distortion boxes, boutique reverbs, vintage chorus units, tape echo emulations: any of them can be inserted into a modular patch with correct levels and come back out addressable by CV. That is a significant expansion of available processing without adding rack modules, and Stomp is the single module that enables it.
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Basic Modular-to-Pedal Processing**

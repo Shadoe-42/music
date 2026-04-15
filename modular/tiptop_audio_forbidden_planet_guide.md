@@ -96,6 +96,39 @@ hp: 8
 
 ---
 
+## Why Tiptop Audio Forbidden Planet Excels
+
+### **The Heritage:**
+Forbidden Planet brings the legendary Steiner-Parker Synthacon filter - one of the most distinctive filters in synthesizer history - into the affordable Eurorack format. This isn't just another filter; it's a piece of analog synthesis history.
+
+### **The Unique Approach:**
+- **Three inputs instead of mode switching** - completely different workflow
+- **Volume-retaining resonance** - unusual behavior that sounds musical
+- **Aggressive self-oscillation** - perfect for sound design and sci-fi effects
+- **HP signature sound** - crisp, clean high-pass filtering unlike anything else
+
+### **The Practical Benefits:**
+- **Compact 8HP** - legendary filter sound in minimal space
+- **Low power consumption** - 10mA on both rails
+- **Affordable** - access to rare Synthacon character without vintage prices
+- **Multiple uses** - filter, oscillator, processor, effect
+
+### **Perfect For:**
+- **Electronic musicians:** Seeking classic analog character with modern convenience
+- **Sound designers:** Unique resonance and self-oscillation for sci-fi effects
+- **Mix engineers:** Excellent high-pass filtering for cleaning up mixes
+- **Vintage synth fans:** Experience legendary Synthacon sound in modular format
+- **Anyone wanting distinctive filtering:** Sounds unlike Moog, ARP, or other common filters
+
+---
+
+**Bottom Line:** Forbidden Planet proves that some vintage designs are so good they deserve to be rediscovered. The Steiner-Parker Synthacon filter was ahead of its time in 1975, and it's still ahead of its time today.
+
+---
+
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Classic Analog Bass**
@@ -323,38 +356,6 @@ This represents the **ultimate analog-digital integration** - where organic brea
 - **Input hopping:** Move signals between inputs for instant timbre changes
 - **Self-oscillation mode:** Remove input, use filter as sound source
 - **Multiple inputs:** Process different elements of your mix simultaneously
-
----
-
-## Why This Module Rocks
-
-### **The Heritage:**
-Forbidden Planet brings the legendary Steiner-Parker Synthacon filter - one of the most distinctive filters in synthesizer history - into the affordable Eurorack format. This isn't just another filter; it's a piece of analog synthesis history.
-
-### **The Unique Approach:**
-- **Three inputs instead of mode switching** - completely different workflow
-- **Volume-retaining resonance** - unusual behavior that sounds musical
-- **Aggressive self-oscillation** - perfect for sound design and sci-fi effects
-- **HP signature sound** - crisp, clean high-pass filtering unlike anything else
-
-### **The Practical Benefits:**
-- **Compact 8HP** - legendary filter sound in minimal space
-- **Low power consumption** - 10mA on both rails
-- **Affordable** - access to rare Synthacon character without vintage prices
-- **Multiple uses** - filter, oscillator, processor, effect
-
-### **Perfect For:**
-- **Electronic musicians:** Seeking classic analog character with modern convenience
-- **Sound designers:** Unique resonance and self-oscillation for sci-fi effects
-- **Mix engineers:** Excellent high-pass filtering for cleaning up mixes
-- **Vintage synth fans:** Experience legendary Synthacon sound in modular format
-- **Anyone wanting distinctive filtering:** Sounds unlike Moog, ARP, or other common filters
-
----
-
-**Bottom Line:** Forbidden Planet proves that some vintage designs are so good they deserve to be rediscovered. The Steiner-Parker Synthacon filter was ahead of its time in 1975, and it's still ahead of its time today.
-
----
 
 ## Advanced Learning Path
 

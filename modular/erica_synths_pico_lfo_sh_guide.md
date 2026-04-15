@@ -308,7 +308,7 @@ Mixer (Mixup, Performance Mixer) → Combined modulation output
 
 ---
 
-## Multi-Function Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Pico LFO/S&H fundamentals:** Master dual analog modulation, S&H concepts, and fundamental modulation theory

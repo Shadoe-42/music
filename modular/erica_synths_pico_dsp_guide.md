@@ -140,7 +140,7 @@ The Pico series, particularly the DSP, introduced the concept that effects shoul
 
 ---
 
-## Why This Module Rocks
+## Why Erica Synths Pico DSP Excels
 
 ### **The Philosophy:**
 Professional studio effects shouldn't require rack-mount units and multiple cables. Pico DSP proves that high-quality DSP processing can fit in 3HP while maintaining the flexibility and creativity of modular synthesis.
@@ -432,7 +432,7 @@ Most Pico DSP beginner frustrations come from misunderstanding **three core conc
 
 ---
 
-## Multi-Function Learning Path
+## Advanced Learning Path
 
 ### **Recommended Study Progression:**
 1. **Start with Pico DSP fundamentals:** Master 8-effect operation, stereo processing, and effects synthesis concepts

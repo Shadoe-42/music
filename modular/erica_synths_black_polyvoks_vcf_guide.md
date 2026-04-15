@@ -114,6 +114,35 @@ hp: 12
 
 ---
 
+## Why Erica Synths Black Polyvoks VCF Excels
+
+### **The Heritage:**
+The Polyvoks VCF isn't just another filter - it's a piece of synthesizer history. The original Formanta Polyvoks was a Soviet-era synthesizer that created sounds impossible to achieve with Western designs, and this filter was its heart.
+
+### **The Authenticity:**
+- **Original Russian ICs:** Using actual K140UD12 chips for authentic character
+- **Circuit accuracy:** Faithful reproduction of the original design
+- **Enhanced for modular:** All the character, but adapted for contemporary use
+- **No compromises:** High-end Black series build quality
+
+### **The Sound:**
+- **Aggressive character:** More punchy and in-your-face than typical filters
+- **Unique resonance:** Distinctive peaks and self-oscillation behavior
+- **Deep bass response:** Particularly strong low-frequency performance
+- **Cutting leads:** Ability to slice through dense mixes
+
+### **Perfect For:**
+- **Acid house producers:** This IS the acid filter sound
+- **Electronic musicians:** Classic synthesizer heritage in modular format
+- **Sound designers:** Unique character not available in other filters
+- **Performers:** Big knobs and immediate response for live control
+- **Anyone wanting authentic vintage synthesis character**
+
+---
+
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Classic Acid Bassline**
@@ -628,34 +657,6 @@ Reality: Analog circuits drift, interact unpredictably, and create variation. Th
 - **Lowpass:** Warm, dark character - best for bass and smooth leads
 - **Bandpass:** Hollow, nasal character - great for aggressive leads and vocal textures
 - **Performance switching:** Use mode changes as dramatic arrangement tool
-
----
-
-## Why This Module Rocks
-
-### **The Heritage:**
-The Polyvoks VCF isn't just another filter - it's a piece of synthesizer history. The original Formanta Polyvoks was a Soviet-era synthesizer that created sounds impossible to achieve with Western designs, and this filter was its heart.
-
-### **The Authenticity:**
-- **Original Russian ICs:** Using actual K140UD12 chips for authentic character
-- **Circuit accuracy:** Faithful reproduction of the original design
-- **Enhanced for modular:** All the character, but adapted for contemporary use
-- **No compromises:** High-end Black series build quality
-
-### **The Sound:**
-- **Aggressive character:** More punchy and in-your-face than typical filters
-- **Unique resonance:** Distinctive peaks and self-oscillation behavior
-- **Deep bass response:** Particularly strong low-frequency performance
-- **Cutting leads:** Ability to slice through dense mixes
-
-### **Perfect For:**
-- **Acid house producers:** This IS the acid filter sound
-- **Electronic musicians:** Classic synthesizer heritage in modular format
-- **Sound designers:** Unique character not available in other filters
-- **Performers:** Big knobs and immediate response for live control
-- **Anyone wanting authentic vintage synthesis character**
-
----
 
 ## Advanced Learning Path
 

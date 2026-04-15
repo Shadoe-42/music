@@ -116,6 +116,34 @@ hp: 14
 
 ---
 
+## Why Patching Panda Moon Phase Excels
+
+### **The Philosophy:**
+Moon Phase challenges what a filter can be. Instead of just removing frequencies, it sculpts stereo space, creates unique textures, and processes sound in ways impossible with traditional filters.
+
+### **The Innovation:**
+- **Stereo imaging integrated with filtering** - not just parallel processing
+- **8 different filter mode combinations** accessible via single button
+- **Resonance behavior affected by stereo imaging** - creates unique interactions
+- **Audio rate modulation of all parameters** - extreme sound design possibilities
+
+### **The Practical Benefits:**
+- **Mono to stereo conversion** with character and movement
+- **Unique resonance behavior** that doesn't self-oscillate but adds character
+- **Creative processing capabilities** beyond traditional filtering
+- **Compact stereo filter solution** in 14HP
+
+### **Perfect For:**
+- **Sound designers:** Unique textures and effects not available elsewhere
+- **Electronic producers:** Creative stereo processing and enhancement
+- **Experimental musicians:** Breaking conventional filtering rules
+- **Anyone wanting unique stereo effects:** Transform any mono source into wide stereo
+
+---
+
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Stereo Drum Processing**
@@ -441,33 +469,6 @@ This represents **advanced spatial consciousness** - where organic breathing, co
 - **Slow modulation** of stereo parameters creates evolving textures
 - **Combined modulation** of multiple parameters for complex interactions
 - **Envelope control** of ST IMAGER for dynamic width changes
-
----
-
-## Why This Module Rocks
-
-### **The Philosophy:**
-Moon Phase challenges what a filter can be. Instead of just removing frequencies, it sculpts stereo space, creates unique textures, and processes sound in ways impossible with traditional filters.
-
-### **The Innovation:**
-- **Stereo imaging integrated with filtering** - not just parallel processing
-- **8 different filter mode combinations** accessible via single button
-- **Resonance behavior affected by stereo imaging** - creates unique interactions
-- **Audio rate modulation of all parameters** - extreme sound design possibilities
-
-### **The Practical Benefits:**
-- **Mono to stereo conversion** with character and movement
-- **Unique resonance behavior** that doesn't self-oscillate but adds character
-- **Creative processing capabilities** beyond traditional filtering
-- **Compact stereo filter solution** in 14HP
-
-### **Perfect For:**
-- **Sound designers:** Unique textures and effects not available elsewhere
-- **Electronic producers:** Creative stereo processing and enhancement
-- **Experimental musicians:** Breaking conventional filtering rules
-- **Anyone wanting unique stereo effects:** Transform any mono source into wide stereo
-
----
 
 ## Advanced Learning Path
 

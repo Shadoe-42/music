@@ -91,7 +91,7 @@ Data uses a screen-based digital interface (rotary encoder + softkeys), which is
 
 ---
 
-## Why This Module Rocks
+## Why Mordax Data Excels
 
 ### **The Philosophy:**
 Mordax Data represents **visual understanding of electronic music** - transforming invisible electrical signals into comprehensible visual information. It proves that **seeing is understanding**, making the abstract world of voltage and frequency tangible and educational.

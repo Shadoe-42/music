@@ -96,6 +96,35 @@ hp: 9
 
 ---
 
+## Why Patching Panda Punch V3 Excels
+
+### **The Philosophy:**
+Punch V3 bridges the gap between vintage drum machine simplicity and modern CV expressiveness. It recognizes that sometimes you want the reliability of classic drum machines, and sometimes you want the expressiveness of contemporary synthesis.
+
+### **The Dual-Mode Innovation:**
+- **Vintage mode:** Captures the character of classic analog drum machines
+- **CV mode:** Brings modern velocity sensitivity and expression
+- **Switchable:** Choose the right mode for each application
+- **Envelope output:** Use the generated envelopes to control other modules
+
+### **The Practical Benefits:**
+- **Instant percussion:** Turn any sound source into drums
+- **Dynamic control:** From subtle expression to dramatic punch
+- **Dual channel:** Two independent voice processors
+- **Compact:** Complete percussion voice in minimal HP
+
+### **Perfect For:**
+- **Drum machine builders:** Essential component for analog drum synthesis
+- **Percussion programmers:** Add dynamics and character to any source
+- **Live performers:** Expressive control and reliable operation
+- **Sound designers:** Creative envelope shaping and AM effects
+- **Anyone wanting punchy, dynamic sounds:** From subtle to extreme
+
+---
+
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Classic Kick Drum**
@@ -461,34 +490,6 @@ This represents **multi-function percussion mastery** - where generative sequenc
 - **Normal envelope:** Standard VCA behavior
 - **Inverted envelope:** Ducking, sidechain, reverse effects
 - **Performance technique:** Live inversion switching for dramatic effects
-
----
-
-## Why This Module Rocks
-
-### **The Philosophy:**
-Punch V3 bridges the gap between vintage drum machine simplicity and modern CV expressiveness. It recognizes that sometimes you want the reliability of classic drum machines, and sometimes you want the expressiveness of contemporary synthesis.
-
-### **The Dual-Mode Innovation:**
-- **Vintage mode:** Captures the character of classic analog drum machines
-- **CV mode:** Brings modern velocity sensitivity and expression
-- **Switchable:** Choose the right mode for each application
-- **Envelope output:** Use the generated envelopes to control other modules
-
-### **The Practical Benefits:**
-- **Instant percussion:** Turn any sound source into drums
-- **Dynamic control:** From subtle expression to dramatic punch
-- **Dual channel:** Two independent voice processors
-- **Compact:** Complete percussion voice in minimal HP
-
-### **Perfect For:**
-- **Drum machine builders:** Essential component for analog drum synthesis
-- **Percussion programmers:** Add dynamics and character to any source
-- **Live performers:** Expressive control and reliable operation
-- **Sound designers:** Creative envelope shaping and AM effects
-- **Anyone wanting punchy, dynamic sounds:** From subtle to extreme
-
----
 
 ## Advanced Learning Path
 

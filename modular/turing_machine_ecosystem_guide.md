@@ -129,7 +129,7 @@ This system bridges the gap between rigid sequences (boring) and pure randomness
 
 ---
 
-## Why This Ecosystem Rocks
+## Why Turing Machine Ecosystem Excels
 
 ### **The Philosophy:**
 **Musical randomness over pure chaos.** The Turing Machine ecosystem doesn't create random noise - it creates **controlled randomness that serves musicality**. It's chaos with a musical brain that understands repetition, development, and surprise.

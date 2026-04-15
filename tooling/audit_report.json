@@ -2,12 +2,12 @@
   "generated": "2026-04-15",
   "summary": {
     "total_guides": 68,
-    "guides_with_issues": 59,
-    "guides_clean": 9,
-    "total_issues": 264,
-    "error_count": 1,
+    "guides_with_issues": 57,
+    "guides_clean": 11,
+    "total_issues": 243,
+    "error_count": 0,
     "warning_count": 242,
-    "deferred_count": 21
+    "deferred_count": 1
   },
   "guides": {
     "4ms_company_listen_io_guide.md": {
@@ -1136,20 +1136,12 @@
       ]
     },
     "erica_synths_black_polyvoks_vcf_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
       "warning_count": 0,
-      "deferred_count": 1,
-      "issues": [
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 634
-        }
-      ]
+      "deferred_count": 0,
+      "issues": []
     },
     "erica_synths_black_quad_vca2_guide.md": {
       "clean": false,
@@ -1176,10 +1168,10 @@
     },
     "erica_synths_pico_dsp_guide.md": {
       "clean": false,
-      "issue_count": 5,
+      "issue_count": 3,
       "error_count": 0,
       "warning_count": 3,
-      "deferred_count": 2,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "emoji_labels",
@@ -1201,38 +1193,16 @@
           "severity": "warning",
           "detail": "Old color label: \"**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjustin\"",
           "line": 297
-        },
-        {
-          "check_id": "alp_variant_heading",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Non-standard ALP heading: \"## Multi-Function Learning Path\" (should be `## Advanced Learning Path`)",
-          "line": 435
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 143
         }
       ]
     },
     "erica_synths_pico_lfo_sh_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
       "warning_count": 0,
-      "deferred_count": 1,
-      "issues": [
-        {
-          "check_id": "alp_variant_heading",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Non-standard ALP heading: \"## Multi-Function Learning Path\" (should be `## Advanced Learning Path`)",
-          "line": 311
-        }
-      ]
+      "deferred_count": 0,
+      "issues": []
     },
     "erica_synths_pico_vca2_guide.md": {
       "clean": true,
@@ -1400,17 +1370,11 @@
     },
     "intellijel_stomp_guide.md": {
       "clean": false,
-      "issue_count": 6,
-      "error_count": 1,
+      "issue_count": 5,
+      "error_count": 0,
       "warning_count": 5,
       "deferred_count": 0,
       "issues": [
-        {
-          "check_id": "section_why_excels",
-          "category": "Missing or Misplaced Sections",
-          "severity": "error",
-          "detail": "Missing `## Why [Module] Excels` section (no 'Why' heading found)"
-        },
         {
           "check_id": "section_historical_context",
           "category": "Missing or Misplaced Sections",
@@ -1422,28 +1386,28 @@
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Em dash in prose: \"### **\"The pedal isn't doing anything — signal is bypassed!\"**\"",
-          "line": 242
+          "line": 254
         },
         {
           "check_id": "em_dash",
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Em dash in prose: \"**Why it happens:** Expression pedals expect TRS (stereo) cable connections, not TS (mono)\"",
-          "line": 247
+          "line": 259
         },
         {
           "check_id": "em_dash",
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Em dash in prose: \"**Solution:** Check the pedal's own mix or effects level control first. Stomp's MIX only b\"",
-          "line": 252
+          "line": 264
         },
         {
           "check_id": "em_dash",
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Em dash in prose: \"### **\"The LFO automation sounds robotic — no variation!\"**\"",
-          "line": 258
+          "line": 270
         }
       ]
     },
@@ -1494,10 +1458,10 @@
     },
     "make_noise_wogglebug_guide.md": {
       "clean": false,
-      "issue_count": 4,
+      "issue_count": 3,
       "error_count": 0,
       "warning_count": 3,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "section_historical_context",
@@ -1518,22 +1482,15 @@
           "severity": "warning",
           "detail": "Old color label: \"| Smooth → Filter Cutoff | CV (Blue) | **Continuous filter sweeps** | **Learn smooth rando\"",
           "line": 207
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 55
         }
       ]
     },
     "mordax_data_guide.md": {
       "clean": false,
-      "issue_count": 3,
+      "issue_count": 2,
       "error_count": 0,
       "warning_count": 2,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "section_historical_context",
@@ -1546,13 +1503,6 @@
           "category": "Missing or Misplaced Sections",
           "severity": "warning",
           "detail": "Missing `## Common Mistakes` section"
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 94
         }
       ]
     },
@@ -1573,10 +1523,10 @@
     },
     "mutable_marbles_guide.md": {
       "clean": false,
-      "issue_count": 12,
+      "issue_count": 11,
       "error_count": 0,
       "warning_count": 11,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "section_historical_context",
@@ -1651,22 +1601,15 @@
           "severity": "warning",
           "detail": "Old color label: \"| Marbles Y → Marbles DEJA VU CV | CV (Blue) | **Self-modulation** | **Evolving memory pat\"",
           "line": 284
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 81
         }
       ]
     },
     "mutable_plaits_guide.md": {
       "clean": false,
-      "issue_count": 12,
+      "issue_count": 11,
       "error_count": 0,
       "warning_count": 11,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "section_historical_context",
@@ -1743,22 +1686,15 @@
           "severity": "warning",
           "detail": "Old color label: \"| Plaits AUX → Reverb | Audio (Red) | Alternative formants |\"",
           "line": 289
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 79
         }
       ]
     },
     "mutable_rings_guide.md": {
       "clean": false,
-      "issue_count": 6,
+      "issue_count": 5,
       "error_count": 0,
       "warning_count": 5,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "section_historical_context",
@@ -1793,22 +1729,15 @@
           "severity": "warning",
           "detail": "Old color label: \"| EVEN Output → Right Mix | Audio (Red) | **Even harmonics** | **Stereo harmonic imaging**\"",
           "line": 160
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 78
         }
       ]
     },
     "noise_engineering_loquelic_iteritas_guide.md": {
       "clean": false,
-      "issue_count": 3,
+      "issue_count": 2,
       "error_count": 0,
       "warning_count": 2,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "section_historical_context",
@@ -1821,13 +1750,6 @@
           "category": "Missing or Misplaced Sections",
           "severity": "warning",
           "detail": "Missing `## Common Mistakes` section"
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 328
         }
       ]
     },
@@ -1875,45 +1797,31 @@
     },
     "patching_panda_moon_phase_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
       "warning_count": 1,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "section_historical_context",
           "category": "Missing or Misplaced Sections",
           "severity": "warning",
           "detail": "Missing `## Historical Context` section"
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 447
         }
       ]
     },
     "patching_panda_punch_v3_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
       "warning_count": 1,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "section_historical_context",
           "category": "Missing or Misplaced Sections",
           "severity": "warning",
           "detail": "Missing `## Historical Context` section"
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 467
         }
       ]
     },
@@ -1954,10 +1862,10 @@
     },
     "rossum_electro_music_mob_of_emus_guide.md": {
       "clean": false,
-      "issue_count": 18,
+      "issue_count": 17,
       "error_count": 0,
       "warning_count": 17,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "section_historical_context",
@@ -2076,44 +1984,30 @@
           "severity": "warning",
           "detail": "Old color label: \"| MOE Ch6 → Effect Parameter | CV (Blue) | 32x tempo (thirty-second notes) |\"",
           "line": 224
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 122
         }
       ]
     },
     "soma_lyra8_fx_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
       "warning_count": 1,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "section_historical_context",
           "category": "Missing or Misplaced Sections",
           "severity": "warning",
           "detail": "Missing `## Historical Context` section"
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 461
         }
       ]
     },
     "squarp_hermod_plus_guide.md": {
       "clean": false,
-      "issue_count": 3,
+      "issue_count": 2,
       "error_count": 0,
       "warning_count": 2,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "section_historical_context",
@@ -2126,35 +2020,21 @@
           "category": "Missing or Misplaced Sections",
           "severity": "warning",
           "detail": "Missing `## Common Mistakes` section"
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 84
         }
       ]
     },
     "tiptop_audio_forbidden_planet_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
       "warning_count": 1,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "section_historical_context",
           "category": "Missing or Misplaced Sections",
           "severity": "warning",
           "detail": "Missing `## Historical Context` section"
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 329
         }
       ]
     },
@@ -2181,10 +2061,10 @@
     },
     "turing_machine_ecosystem_guide.md": {
       "clean": false,
-      "issue_count": 5,
+      "issue_count": 4,
       "error_count": 0,
       "warning_count": 4,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "yaml_hp",
@@ -2211,13 +2091,6 @@
           "severity": "warning",
           "detail": "Em dash in prose: \"3. **Add the Volts expander before the Pulses expander.** Volts generates CV from the same\"",
           "line": 222
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Ecosystem Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 132
         }
       ]
     },
@@ -2231,10 +2104,10 @@
     },
     "vpme_qd_qex_drum_workstation_guide.md": {
       "clean": false,
-      "issue_count": 6,
+      "issue_count": 5,
       "error_count": 0,
       "warning_count": 5,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "section_historical_context",
@@ -2269,22 +2142,15 @@
           "severity": "warning",
           "detail": "Old color label: \"- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis\"",
           "line": 76
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Workstation Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 629
         }
       ]
     },
     "vpme_qd_qex_euclidean_circles_ecosystem_guide.md": {
       "clean": false,
-      "issue_count": 7,
+      "issue_count": 6,
       "error_count": 0,
       "warning_count": 6,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "yaml_hp",
@@ -2325,22 +2191,15 @@
           "severity": "warning",
           "detail": "Old color label: \"- **Voice 4 (Green):** Typically percussion - flexible synthesis for any drum sound\"",
           "line": 72
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Ecosystem Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 319
         }
       ]
     },
     "winterbloom_castor_pollux_ii_guide.md": {
       "clean": false,
-      "issue_count": 5,
+      "issue_count": 4,
       "error_count": 0,
       "warning_count": 4,
-      "deferred_count": 1,
+      "deferred_count": 0,
       "issues": [
         {
           "check_id": "section_historical_context",
@@ -2367,13 +2226,6 @@
           "severity": "warning",
           "detail": "Old color label: \"| Castor OUT → Filter | Audio (Red) | Classic Juno sawtooth tone |\"",
           "line": 143
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 89
         }
       ]
     },
@@ -3052,7 +2904,7 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Em dash in prose: \"### **\"The pedal isn't doing anything — signal is bypassed!\"**\"",
-        "line": 242
+        "line": 254
       },
       {
         "file": "intellijel_stomp_guide.md",
@@ -3060,7 +2912,7 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Em dash in prose: \"**Why it happens:** Expression pedals expect TRS (stereo) cable connections, not TS (mono)\"",
-        "line": 247
+        "line": 259
       },
       {
         "file": "intellijel_stomp_guide.md",
@@ -3068,7 +2920,7 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Em dash in prose: \"**Solution:** Check the pedal's own mix or effects level control first. Stomp's MIX only b\"",
-        "line": 252
+        "line": 264
       },
       {
         "file": "intellijel_stomp_guide.md",
@@ -3076,7 +2928,7 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Em dash in prose: \"### **\"The LFO automation sounds robotic — no variation!\"**\"",
-        "line": 258
+        "line": 270
       },
       {
         "file": "rossum_electro_music_mob_of_emus_guide.md",
@@ -4220,183 +4072,12 @@
     ],
     "why_section_old_wording": [
       {
-        "file": "erica_synths_black_polyvoks_vcf_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 634
-      },
-      {
-        "file": "erica_synths_pico_dsp_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 143
-      },
-      {
         "file": "make_noise_pressure_points_guide.md",
         "check_id": "why_section_old_wording",
         "category": "Deferred Items",
         "severity": "deferred",
         "detail": "Gen-1 'Rocks' wording: \"Why Pressure Points Rocks\" — rename to `## Why [Module] Excels`",
         "line": 348
-      },
-      {
-        "file": "make_noise_wogglebug_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 55
-      },
-      {
-        "file": "mordax_data_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 94
-      },
-      {
-        "file": "mutable_marbles_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 81
-      },
-      {
-        "file": "mutable_plaits_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 79
-      },
-      {
-        "file": "mutable_rings_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 78
-      },
-      {
-        "file": "noise_engineering_loquelic_iteritas_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 328
-      },
-      {
-        "file": "patching_panda_moon_phase_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 447
-      },
-      {
-        "file": "patching_panda_punch_v3_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 467
-      },
-      {
-        "file": "rossum_electro_music_mob_of_emus_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 122
-      },
-      {
-        "file": "soma_lyra8_fx_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 461
-      },
-      {
-        "file": "squarp_hermod_plus_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 84
-      },
-      {
-        "file": "tiptop_audio_forbidden_planet_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 329
-      },
-      {
-        "file": "turing_machine_ecosystem_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Ecosystem Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 132
-      },
-      {
-        "file": "vpme_qd_qex_drum_workstation_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Workstation Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 629
-      },
-      {
-        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Ecosystem Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 319
-      },
-      {
-        "file": "winterbloom_castor_pollux_ii_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 89
-      }
-    ],
-    "alp_variant_heading": [
-      {
-        "file": "erica_synths_pico_dsp_guide.md",
-        "check_id": "alp_variant_heading",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Non-standard ALP heading: \"## Multi-Function Learning Path\" (should be `## Advanced Learning Path`)",
-        "line": 435
-      },
-      {
-        "file": "erica_synths_pico_lfo_sh_guide.md",
-        "check_id": "alp_variant_heading",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Non-standard ALP heading: \"## Multi-Function Learning Path\" (should be `## Advanced Learning Path`)",
-        "line": 311
-      }
-    ],
-    "section_why_excels": [
-      {
-        "file": "intellijel_stomp_guide.md",
-        "check_id": "section_why_excels",
-        "category": "Missing or Misplaced Sections",
-        "severity": "error",
-        "detail": "Missing `## Why [Module] Excels` section (no 'Why' heading found)"
       }
     ],
     "section_common_mistakes": [

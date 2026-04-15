@@ -76,7 +76,7 @@ hp: 12
 
 ---
 
-## Why This Module Rocks
+## Why Mutable Instruments Plaits Excels
 
 ### **The Philosophy:**
 Plaits proves that **one module can contain entire synthesis traditions**. Instead of choosing between FM, wavetable, granular, or analog synthesis, you get all of them - each implemented excellently and optimized for musical use.

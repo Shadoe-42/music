@@ -105,6 +105,35 @@ hp: 20
 
 ---
 
+## Why Soma Lyra-8 FX Excels
+
+### **The Organismic Philosophy:**
+Lyra8-FX embodies Soma's unique approach to electronic instruments - they should be alive, unpredictable, and have their own personality. It's not trying to be a perfect, transparent processor; it's designed to add character, mystery, and organic unpredictability.
+
+### **The Build Quality:**
+- **Handmade construction:** Through-hole components, no SMDs
+- **Chunky Moog-style knobs:** Substantial, performance-ready controls
+- **Heavy, robust construction:** Built to last and inspire confidence
+- **Russian engineering:** Unique approach to electronic design
+
+### **The Unique Sound:**
+- **Lo-fi digital character:** PT2399 chips with intentional limitations
+- **Self-modulation capability:** Effects that modify themselves
+- **Cross-feedback complexity:** Multiple interacting delay lines
+- **Organismic behavior:** Unpredictable, alive, breathing effects
+
+### **Perfect For:**
+- **Experimental musicians:** Seeking unpredictable, characterful processing
+- **Ambient producers:** Organic, evolving textures
+- **Sound designers:** Unique lo-fi digital character
+- **Live performers:** Real-time control and autonomous behavior
+- **Anyone tired of pristine, perfect effects:** Adds grit, character, and life
+
+---
+
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: Murky Ambient Processing**
@@ -455,34 +484,6 @@ This represents **advanced organismic consciousness** - where organic breathing,
 - **CV modulation:** Audio-rate drive modulation creates pitched artifacts
 - **Full-spectrum:** Unlike guitar pedals, processes entire frequency range
 - **Mix control:** Essential for balancing clean and processed signals
-
----
-
-## Why This Module Rocks
-
-### **The Organismic Philosophy:**
-Lyra8-FX embodies Soma's unique approach to electronic instruments - they should be alive, unpredictable, and have their own personality. It's not trying to be a perfect, transparent processor; it's designed to add character, mystery, and organic unpredictability.
-
-### **The Build Quality:**
-- **Handmade construction:** Through-hole components, no SMDs
-- **Chunky Moog-style knobs:** Substantial, performance-ready controls
-- **Heavy, robust construction:** Built to last and inspire confidence
-- **Russian engineering:** Unique approach to electronic design
-
-### **The Unique Sound:**
-- **Lo-fi digital character:** PT2399 chips with intentional limitations
-- **Self-modulation capability:** Effects that modify themselves
-- **Cross-feedback complexity:** Multiple interacting delay lines
-- **Organismic behavior:** Unpredictable, alive, breathing effects
-
-### **Perfect For:**
-- **Experimental musicians:** Seeking unpredictable, characterful processing
-- **Ambient producers:** Organic, evolving textures
-- **Sound designers:** Unique lo-fi digital character
-- **Live performers:** Real-time control and autonomous behavior
-- **Anyone tired of pristine, perfect effects:** Adds grit, character, and life
-
----
 
 ## Advanced Learning Path
 

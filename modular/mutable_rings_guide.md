@@ -75,7 +75,7 @@ hp: 14
 
 ---
 
-## Why This Module Rocks
+## Why Mutable Instruments Rings Excels
 
 ### **The Philosophy:**
 Rings represents **acoustic reality through electronic means** - not just sound synthesis, but authentic simulation of real physical instruments. It bridges the gap between electronic music and acoustic instruments, proving that modular synthesis can create sounds indistinguishable from real bells, strings, and resonant objects.

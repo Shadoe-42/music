@@ -90,6 +90,44 @@ hp: 10
 
 ---
 
+## Why Noise Engineering Loquelic Iteritas Excels
+
+### **The Philosophy:**
+Noise Engineering Loquelic Iteritas represents **impossible digital synthesis** - implementing three legendary synthesis algorithms that would be unachievable in analog hardware. It proves that digital synthesis can create textures and complexity impossible in the physical world.
+
+### **The Innovation:**
+- **Three complete synthesis algorithms** in one module - VOSIM, Summation Synthesis, and Phase Modulation
+- **Algorithm-specific behavior** where each mode responds differently to the same modulation
+- **Continuous parameter control** designed for real-time manipulation and evolution
+- **Variable sample rate technology** where aliasing becomes musically useful
+- **No traditional oscillator modes** - all three algorithms are specialized synthesis techniques
+
+### **The Practical Benefits:**
+- **Impossible analog textures:** Digital algorithms create sounds unachievable with traditional synthesis
+- **Educational synthesis laboratory:** Learn three classic synthesis techniques in hardware
+- **Compact complexity:** Three complete synthesizers in 10HP
+- **Advanced integration power:** All four tone controls respond beautifully to sophisticated modulation
+- **Algorithm exploration:** Same sources create completely different results per algorithm
+
+### **Perfect For:**
+- **Electronic producers:** Cutting-edge digital synthesis for modern electronic music
+- **Sound designers:** Unique textures perfect for film scoring and experimental soundtracks
+- **Synthesis students:** Learn VOSIM, summation synthesis, and phase modulation hands-on
+- **Experimental musicians:** Algorithms encourage non-traditional musical thinking
+- **Advanced enthusiasts:** Transform sophisticated modulation into impossible digital complexity
+- **Anyone seeking unique sounds:** Textures impossible with traditional analog or simple digital synthesis
+
+### **The Magic:**
+Loquelic Iteritas **democratizes legendary synthesis algorithms** - giving everyone access to VOSIM vocal simulation, mathematical summation synthesis, and complex phase modulation in affordable hardware form.
+
+### **Advanced Integration Power:**
+As the **complex digital synthesis engine of Advanced ecosystems**, Loquelic Iteritas transforms organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision into impossible digital textures. **You conduct electronic intelligence toward digital synthesis transcendence.**
+
+---
+
+
+---
+
 ## Beginner Patch Ideas
 
 ### **Patch 1: VOSIM Vocal Bass**
@@ -322,43 +360,6 @@ This represents the **ultimate digital synthesis complexity** - where organic br
 - **Quantizers:** Ensure musical relationships when using independent pitch control
 - **Performance Controllers:** Real-time algorithm switching and parameter control
 - **Analysis Tools:** Mordax Data reveals the harmonic complexity of digital algorithms
-
----
-
-## Why This Module Rocks
-
-### **The Philosophy:**
-Noise Engineering Loquelic Iteritas represents **impossible digital synthesis** - implementing three legendary synthesis algorithms that would be unachievable in analog hardware. It proves that digital synthesis can create textures and complexity impossible in the physical world.
-
-### **The Innovation:**
-- **Three complete synthesis algorithms** in one module - VOSIM, Summation Synthesis, and Phase Modulation
-- **Algorithm-specific behavior** where each mode responds differently to the same modulation
-- **Continuous parameter control** designed for real-time manipulation and evolution
-- **Variable sample rate technology** where aliasing becomes musically useful
-- **No traditional oscillator modes** - all three algorithms are specialized synthesis techniques
-
-### **The Practical Benefits:**
-- **Impossible analog textures:** Digital algorithms create sounds unachievable with traditional synthesis
-- **Educational synthesis laboratory:** Learn three classic synthesis techniques in hardware
-- **Compact complexity:** Three complete synthesizers in 10HP
-- **Advanced integration power:** All four tone controls respond beautifully to sophisticated modulation
-- **Algorithm exploration:** Same sources create completely different results per algorithm
-
-### **Perfect For:**
-- **Electronic producers:** Cutting-edge digital synthesis for modern electronic music
-- **Sound designers:** Unique textures perfect for film scoring and experimental soundtracks
-- **Synthesis students:** Learn VOSIM, summation synthesis, and phase modulation hands-on
-- **Experimental musicians:** Algorithms encourage non-traditional musical thinking
-- **Advanced enthusiasts:** Transform sophisticated modulation into impossible digital complexity
-- **Anyone seeking unique sounds:** Textures impossible with traditional analog or simple digital synthesis
-
-### **The Magic:**
-Loquelic Iteritas **democratizes legendary synthesis algorithms** - giving everyone access to VOSIM vocal simulation, mathematical summation synthesis, and complex phase modulation in affordable hardware form.
-
-### **Advanced Integration Power:**
-As the **complex digital synthesis engine of Advanced ecosystems**, Loquelic Iteritas transforms organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision into impossible digital textures. **You conduct electronic intelligence toward digital synthesis transcendence.**
-
----
 
 ## Advanced Learning Path
 

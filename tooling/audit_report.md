@@ -9,12 +9,12 @@ Generated: 2026-04-15
 | Metric | Count |
 |--------|-------|
 | Guides scanned | 68 |
-| Guides with issues | 59 |
-| Guides clean | 9 |
-| Total issues | 264 |
-| ❌ Errors (fix now) | 1 |
+| Guides with issues | 57 |
+| Guides clean | 11 |
+| Total issues | 243 |
+| ❌ Errors (fix now) | 0 |
 | ⚠️  Warnings (fix when touching) | 242 |
-| 📌 Deferred (tracked, low priority) | 21 |
+| 📌 Deferred (tracked, low priority) | 1 |
 
 ---
 
@@ -32,7 +32,6 @@ Generated: 2026-04-15
 
 | File | Line | Severity | Issue |
 |------|------|----------|-------|
-| `intellijel_stomp_guide.md` | — | ❌ error | Missing `## Why [Module] Excels` section (no 'Why' heading found) |
 | `4ms_company_listen_io_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `4ms_company_metamodule_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `4ms_rcd_v2_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
@@ -217,10 +216,10 @@ Generated: 2026-04-15
 | `expert_sleepers_disting_mk4_guide.md` | 286 | ⚠️  warning | Old color label: "\| B Output → Effects Mod \| CV (Blue) \| **Envelope follower CV** \| **Audio-reactive modulat" |
 | `instruo_arbhar_guide.md` | 182 | ⚠️  warning | Old color label: "\| Audio Source → Arbhar IN \| Audio (Red) \| Any audio source - voice, instrument, field rec" |
 | `instruo_arbhar_guide.md` | 183 | ⚠️  warning | Old color label: "\| Arbhar OUT 1,2 → Final Output \| Audio (Red) \| Stereo granular processing \|" |
-| `intellijel_stomp_guide.md` | 242 | ⚠️  warning | Em dash in prose: "### **"The pedal isn't doing anything — signal is bypassed!"**" |
-| `intellijel_stomp_guide.md` | 247 | ⚠️  warning | Em dash in prose: "**Why it happens:** Expression pedals expect TRS (stereo) cable connections, not TS (mono)" |
-| `intellijel_stomp_guide.md` | 252 | ⚠️  warning | Em dash in prose: "**Solution:** Check the pedal's own mix or effects level control first. Stomp's MIX only b" |
-| `intellijel_stomp_guide.md` | 258 | ⚠️  warning | Em dash in prose: "### **"The LFO automation sounds robotic — no variation!"**" |
+| `intellijel_stomp_guide.md` | 254 | ⚠️  warning | Em dash in prose: "### **"The pedal isn't doing anything — signal is bypassed!"**" |
+| `intellijel_stomp_guide.md` | 259 | ⚠️  warning | Em dash in prose: "**Why it happens:** Expression pedals expect TRS (stereo) cable connections, not TS (mono)" |
+| `intellijel_stomp_guide.md` | 264 | ⚠️  warning | Em dash in prose: "**Solution:** Check the pedal's own mix or effects level control first. Stomp's MIX only b" |
+| `intellijel_stomp_guide.md` | 270 | ⚠️  warning | Em dash in prose: "### **"The LFO automation sounds robotic — no variation!"**" |
 | `make_noise_maths_guide.md` | 308 | ⚠️  warning | Old color label: "\| Sequencer Gate → Maths Ch1 TRIG \| Gate (Yellow) \| Triggers envelope on each step \|" |
 | `make_noise_maths_guide.md` | 309 | ⚠️  warning | Old color label: "\| Maths Ch1 UNITY → VCA CV In \| CV (Blue) \| Controls amplitude \|" |
 | `make_noise_wogglebug_guide.md` | 206 | ⚠️  warning | Old color label: "\| Stepped → Oscillator 1V/Oct \| CV (Blue) \| **Random pitch control** \| **Experience discre" |
@@ -282,27 +281,7 @@ Generated: 2026-04-15
 
 | File | Line | Severity | Issue |
 |------|------|----------|-------|
-| `erica_synths_black_polyvoks_vcf_guide.md` | 634 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` |
-| `erica_synths_pico_dsp_guide.md` | 435 | 📌 deferred | Non-standard ALP heading: "## Multi-Function Learning Path" (should be `## Advanced Learning Path`) |
-| `erica_synths_pico_dsp_guide.md` | 143 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` |
-| `erica_synths_pico_lfo_sh_guide.md` | 311 | 📌 deferred | Non-standard ALP heading: "## Multi-Function Learning Path" (should be `## Advanced Learning Path`) |
 | `make_noise_pressure_points_guide.md` | 348 | 📌 deferred | Gen-1 'Rocks' wording: "Why Pressure Points Rocks" — rename to `## Why [Module] Excels` |
-| `make_noise_wogglebug_guide.md` | 55 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` |
-| `mordax_data_guide.md` | 94 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` |
-| `mutable_marbles_guide.md` | 81 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` |
-| `mutable_plaits_guide.md` | 79 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` |
-| `mutable_rings_guide.md` | 78 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` |
-| `noise_engineering_loquelic_iteritas_guide.md` | 328 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` |
-| `patching_panda_moon_phase_guide.md` | 447 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` |
-| `patching_panda_punch_v3_guide.md` | 467 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` |
-| `rossum_electro_music_mob_of_emus_guide.md` | 122 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` |
-| `soma_lyra8_fx_guide.md` | 461 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` |
-| `squarp_hermod_plus_guide.md` | 84 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` |
-| `tiptop_audio_forbidden_planet_guide.md` | 329 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` |
-| `turing_machine_ecosystem_guide.md` | 132 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Ecosystem Rocks" — rename to `## Why [Module] Excels` |
-| `vpme_qd_qex_drum_workstation_guide.md` | 629 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Workstation Rocks" — rename to `## Why [Module] Excels` |
-| `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | 319 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Ecosystem Rocks" — rename to `## Why [Module] Excels` |
-| `winterbloom_castor_pollux_ii_guide.md` | 89 | 📌 deferred | Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` |
 
 ---
 
@@ -487,21 +466,13 @@ Generated: 2026-04-15
 **`erica_synths_black_envelope_generator_2_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
-**`erica_synths_black_polyvoks_vcf_guide.md`** — 1 deferred
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` *(line 634)*
-
 **`erica_synths_black_quad_vca2_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
-**`erica_synths_pico_dsp_guide.md`** — 3 warnings, 2 deferred
+**`erica_synths_pico_dsp_guide.md`** — 3 warnings
   - ⚠️ `emoji_labels` — Old emoji color label: "### **🔴 RED - Mono Delay**" *(line 93)*
   - ⚠️ `emoji_labels` — Old emoji color label: "### **🟡 YELLOW - Pitch Shift Delay**" *(line 99)*
   - ⚠️ `color_labels` — Old color label: "**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjustin" *(line 297)*
-  - 📌 `alp_variant_heading` — Non-standard ALP heading: "## Multi-Function Learning Path" (should be `## Advanced Learning Path`) *(line 435)*
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` *(line 143)*
-
-**`erica_synths_pico_lfo_sh_guide.md`** — 1 deferred
-  - 📌 `alp_variant_heading` — Non-standard ALP heading: "## Multi-Function Learning Path" (should be `## Advanced Learning Path`) *(line 311)*
 
 **`erica_synths_pico_voice_guide.md`** — 5 warnings
   - ⚠️ `emoji_labels` — Old emoji color label: "### **🔴 RED - Karplus Strong (Plucked Strings)**" *(line 91)*
@@ -526,13 +497,12 @@ Generated: 2026-04-15
 **`intellijel_mixup_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
-**`intellijel_stomp_guide.md`** — 1 error, 5 warnings
-  - ❌ `section_why_excels` — Missing `## Why [Module] Excels` section (no 'Why' heading found)
+**`intellijel_stomp_guide.md`** — 5 warnings
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-  - ⚠️ `em_dash` — Em dash in prose: "### **"The pedal isn't doing anything — signal is bypassed!"**" *(line 242)*
-  - ⚠️ `em_dash` — Em dash in prose: "**Why it happens:** Expression pedals expect TRS (stereo) cable connections, not TS (mono)" *(line 247)*
-  - ⚠️ `em_dash` — Em dash in prose: "**Solution:** Check the pedal's own mix or effects level control first. Stomp's MIX only b" *(line 252)*
-  - ⚠️ `em_dash` — Em dash in prose: "### **"The LFO automation sounds robotic — no variation!"**" *(line 258)*
+  - ⚠️ `em_dash` — Em dash in prose: "### **"The pedal isn't doing anything — signal is bypassed!"**" *(line 254)*
+  - ⚠️ `em_dash` — Em dash in prose: "**Why it happens:** Expression pedals expect TRS (stereo) cable connections, not TS (mono)" *(line 259)*
+  - ⚠️ `em_dash` — Em dash in prose: "**Solution:** Check the pedal's own mix or effects level control first. Stomp's MIX only b" *(line 264)*
+  - ⚠️ `em_dash` — Em dash in prose: "### **"The LFO automation sounds robotic — no variation!"**" *(line 270)*
 
 **`make_noise_maths_guide.md`** — 2 warnings
   - ⚠️ `color_labels` — Old color label: "| Sequencer Gate → Maths Ch1 TRIG | Gate (Yellow) | Triggers envelope on each step |" *(line 308)*
@@ -542,21 +512,19 @@ Generated: 2026-04-15
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why Pressure Points Rocks" — rename to `## Why [Module] Excels` *(line 348)*
 
-**`make_noise_wogglebug_guide.md`** — 3 warnings, 1 deferred
+**`make_noise_wogglebug_guide.md`** — 3 warnings
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - ⚠️ `color_labels` — Old color label: "| Stepped → Oscillator 1V/Oct | CV (Blue) | **Random pitch control** | **Experience discre" *(line 206)*
   - ⚠️ `color_labels` — Old color label: "| Smooth → Filter Cutoff | CV (Blue) | **Continuous filter sweeps** | **Learn smooth rando" *(line 207)*
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` *(line 55)*
 
-**`mordax_data_guide.md`** — 2 warnings, 1 deferred
+**`mordax_data_guide.md`** — 2 warnings
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` *(line 94)*
 
 **`mutable_instruments_links_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
-**`mutable_marbles_guide.md`** — 11 warnings, 1 deferred
+**`mutable_marbles_guide.md`** — 11 warnings
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
   - ⚠️ `section_pairs_well` — Missing `## Pairs Well With` section
@@ -568,9 +536,8 @@ Generated: 2026-04-15
   - ⚠️ `color_labels` — Old color label: "| Marbles t2 → Snare Trigger | Gate (Yellow) | **Secondary rhythm** | **Syncopated pattern" *(line 282)*
   - ⚠️ `color_labels` — Old color label: "| Marbles t3 → Hihat Trigger | Gate (Yellow) | **Tertiary rhythm** | **Complex polyrhythms" *(line 283)*
   - ⚠️ `color_labels` — Old color label: "| Marbles Y → Marbles DEJA VU CV | CV (Blue) | **Self-modulation** | **Evolving memory pat" *(line 284)*
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` *(line 81)*
 
-**`mutable_plaits_guide.md`** — 11 warnings, 1 deferred
+**`mutable_plaits_guide.md`** — 11 warnings
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - ⚠️ `color_labels` — Old color label: "| Keyboard V/OCT → Plaits V/OCT | CV (Blue) | Pitch tracking |" *(line 137)*
   - ⚠️ `color_labels` — Old color label: "| Keyboard Gate → Envelope Trig | Gate (Yellow) | Triggers envelope |" *(line 138)*
@@ -582,20 +549,17 @@ Generated: 2026-04-15
   - ⚠️ `color_labels` — Old color label: "| Trigger Seq → Plaits TRIG | Gate (Yellow) | Triggers speech utterances |" *(line 287)*
   - ⚠️ `color_labels` — Old color label: "| Plaits OUT → Reverb | Audio (Red) | Main speech synthesis |" *(line 288)*
   - ⚠️ `color_labels` — Old color label: "| Plaits AUX → Reverb | Audio (Red) | Alternative formants |" *(line 289)*
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` *(line 79)*
 
-**`mutable_rings_guide.md`** — 5 warnings, 1 deferred
+**`mutable_rings_guide.md`** — 5 warnings
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - ⚠️ `color_labels` — Old color label: "| 1V/Oct CV → V/OCT Input | CV (Blue) | **Harmonic pitch tracking** | **Learn physical mod" *(line 157)*
   - ⚠️ `color_labels` — Old color label: "| Gate/Trigger → STRUM Input | Gate (Yellow) | **Trigger resonant bursts** | **Experience " *(line 158)*
   - ⚠️ `color_labels` — Old color label: "| ODD Output → Left Mix | Audio (Red) | **Odd harmonics** | **Understand harmonic separati" *(line 159)*
   - ⚠️ `color_labels` — Old color label: "| EVEN Output → Right Mix | Audio (Red) | **Even harmonics** | **Stereo harmonic imaging**" *(line 160)*
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` *(line 78)*
 
-**`noise_engineering_loquelic_iteritas_guide.md`** — 2 warnings, 1 deferred
+**`noise_engineering_loquelic_iteritas_guide.md`** — 2 warnings
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` *(line 328)*
 
 **`noise_engineering_numeric_repetitor_guide.md`** — 2 warnings
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
@@ -605,13 +569,11 @@ Generated: 2026-04-15
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
-**`patching_panda_moon_phase_guide.md`** — 1 warning, 1 deferred
+**`patching_panda_moon_phase_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` *(line 447)*
 
-**`patching_panda_punch_v3_guide.md`** — 1 warning, 1 deferred
+**`patching_panda_punch_v3_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` *(line 467)*
 
 **`qubit_bloom_v1_guide.md`** — 4 warnings
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
@@ -619,7 +581,7 @@ Generated: 2026-04-15
   - ⚠️ `color_labels` — Old color label: "3. **Press CHANNEL button** until Channel A LED (blue) lights up" *(line 29)*
   - ⚠️ `color_labels` — Old color label: "- **Press CHANNEL button** to switch between A (blue) and B (green)" *(line 338)*
 
-**`rossum_electro_music_mob_of_emus_guide.md`** — 17 warnings, 1 deferred
+**`rossum_electro_music_mob_of_emus_guide.md`** — 17 warnings
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - ⚠️ `em_dash` — Em dash in prose: "1. **Start with a single oscillator in simple mode.** Run WAVE mode with a saw wave, tune " *(line 668)*
   - ⚠️ `em_dash` — Em dash in prose: "2. **Understand the difference between WAVE, ENV, and PAT modes.** These three modes chang" *(line 670)*
@@ -637,69 +599,63 @@ Generated: 2026-04-15
   - ⚠️ `color_labels` — Old color label: "| MOE Ch4 → LFO Rate CV | CV (Blue) | 8x tempo (eighth notes) |" *(line 222)*
   - ⚠️ `color_labels` — Old color label: "| MOE Ch5 → Oscillator Pitch | CV (Blue) | 16x tempo (sixteenth notes) |" *(line 223)*
   - ⚠️ `color_labels` — Old color label: "| MOE Ch6 → Effect Parameter | CV (Blue) | 32x tempo (thirty-second notes) |" *(line 224)*
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` *(line 122)*
 
-**`soma_lyra8_fx_guide.md`** — 1 warning, 1 deferred
+**`soma_lyra8_fx_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` *(line 461)*
 
-**`squarp_hermod_plus_guide.md`** — 2 warnings, 1 deferred
+**`squarp_hermod_plus_guide.md`** — 2 warnings
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` *(line 84)*
 
-**`tiptop_audio_forbidden_planet_guide.md`** — 1 warning, 1 deferred
+**`tiptop_audio_forbidden_planet_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` *(line 329)*
 
 **`tiptop_audio_miso_guide.md`** — 2 warnings
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
-**`turing_machine_ecosystem_guide.md`** — 4 warnings, 1 deferred
+**`turing_machine_ecosystem_guide.md`** — 4 warnings
   - ⚠️ `yaml_hp` — Missing `hp` field
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - ⚠️ `em_dash` — Em dash in prose: "1. **Spend time only at the probability extremes before touching the middle.** At fully cl" *(line 218)*
   - ⚠️ `em_dash` — Em dash in prose: "3. **Add the Volts expander before the Pulses expander.** Volts generates CV from the same" *(line 222)*
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Ecosystem Rocks" — rename to `## Why [Module] Excels` *(line 132)*
 
-**`vpme_qd_qex_drum_workstation_guide.md`** — 5 warnings, 1 deferred
+**`vpme_qd_qex_drum_workstation_guide.md`** — 5 warnings
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - ⚠️ `color_labels` — Old color label: "- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis" *(line 73)*
   - ⚠️ `color_labels` — Old color label: "- **Voice 2 (Red):** Typically snares - wide percussion synthesis range" *(line 74)*
   - ⚠️ `color_labels` — Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" *(line 75)*
   - ⚠️ `color_labels` — Old color label: "- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis" *(line 76)*
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Workstation Rocks" — rename to `## Why [Module] Excels` *(line 629)*
 
-**`vpme_qd_qex_euclidean_circles_ecosystem_guide.md`** — 6 warnings, 1 deferred
+**`vpme_qd_qex_euclidean_circles_ecosystem_guide.md`** — 6 warnings
   - ⚠️ `yaml_hp` — Missing `hp` field
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - ⚠️ `color_labels` — Old color label: "- **Voice 1 (Blue):** Typically kick drums - full range analog synthesis" *(line 69)*
   - ⚠️ `color_labels` — Old color label: "- **Voice 2 (Red):** Typically snare - wide range of percussion synthesis" *(line 70)*
   - ⚠️ `color_labels` — Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" *(line 71)*
   - ⚠️ `color_labels` — Old color label: "- **Voice 4 (Green):** Typically percussion - flexible synthesis for any drum sound" *(line 72)*
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Ecosystem Rocks" — rename to `## Why [Module] Excels` *(line 319)*
 
-**`winterbloom_castor_pollux_ii_guide.md`** — 4 warnings, 1 deferred
+**`winterbloom_castor_pollux_ii_guide.md`** — 4 warnings
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
   - ⚠️ `color_labels` — Old color label: "| 1V/Oct CV → Castor PITCH | CV (Blue) | Keyboard or sequencer pitch control |" *(line 142)*
   - ⚠️ `color_labels` — Old color label: "| Castor OUT → Filter | Audio (Red) | Classic Juno sawtooth tone |" *(line 143)*
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why This Module Rocks" — rename to `## Why [Module] Excels` *(line 89)*
 
 **`xaoc_devices_zadar_nin_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
 ---
 
-## Clean Guides (9)
+## Clean Guides (11)
 
 No issues detected:
 
 - `after_later_audio_cloaks_guide.md`
 - `cre8audio_cellz_guide.md`
 - `doepfer_a_130_2_guide.md`
+- `erica_synths_black_polyvoks_vcf_guide.md`
 - `erica_synths_pico_drum2_guide.md`
+- `erica_synths_pico_lfo_sh_guide.md`
 - `erica_synths_pico_vca2_guide.md`
 - `frap_tools_411_guide.md`
 - `instruo_csl_guide.md`
