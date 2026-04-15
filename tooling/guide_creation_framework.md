@@ -484,6 +484,14 @@ The em dash has become a reliable signal of AI-generated text in the eyes of rea
 - **Integrated into existing sections** not separate section
 - **Educational focus** - module's place in synthesis history
 
+### **When There Is No Historical Context**
+
+Some modules are wholly original contemporary designs with no meaningful lineage — not clones, not revivals, not derivatives of influential instruments. Forcing a Historical Context section onto these produces filler that dishonors the standard.
+
+For these guides, add `historical_context: false` to the YAML frontmatter. This records the decision explicitly in the file and suppresses the audit warning. Use it only when the module genuinely has nothing to say — not as a shortcut to skip research.
+
+**Examples of modules with no meaningful historical context:** Contemporary DSP modules built on modern platforms (Daisy, etc.), new utility designs without lineage, purpose-built contemporary tools.
+
 ---
 
 ## **Workflow Integration**

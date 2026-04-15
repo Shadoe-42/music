@@ -35,6 +35,7 @@ transport: none | receive | full
 screen: true | false
 hybrid: true | false
 cv: none | basic | full
+historical_context: false          # Optional. Omit when section is present or pending.
 ---
 ```
 
@@ -45,6 +46,9 @@ cv: none | basic | full
   they are structurally irrelevant (e.g., a blank panel, a speaker cabinet)
 - `behavior_tags` and `use_cases` are required once the vocabulary is locked and
   migration is complete
+- `historical_context: false` suppresses the audit check for that guide. Use only
+  when the module is a wholly original contemporary design with no meaningful lineage
+  to document. Omit this field entirely if the section exists or may be written later.
 
 ---
 

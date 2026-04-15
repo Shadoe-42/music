@@ -289,6 +289,10 @@ def check_yaml_hp(fp, content, lines, fm):
 # ---------------------------------------------------------------------------
 
 def check_section_historical_context(fp, content, lines, fm):
+    # historical_context: false in frontmatter means the author has decided
+    # this module has no meaningful historical context — skip the check.
+    if str(fm.get("historical_context", "")).strip().lower() == "false":
+        return []
     headings = get_headings(lines)
     if not find_heading(headings, r"historical context"):
         return [Issue("section_historical_context", CAT_SECTIONS, WARNING,
