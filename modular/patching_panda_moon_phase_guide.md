@@ -4,7 +4,7 @@ manufacturer: Patching Panda
 primary_role: MODULATOR
 secondary_roles: [SHAPER]
 form_factor: eurorack
-functions: [filter]
+functions: [lfo]
 behavior_tags: [clean, stable, dark, nonlinear, performance-oriented]
 use_cases: [stereo signal processing, timbral movement and shaping, evolving ambient texture]
 hp: 14
