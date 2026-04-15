@@ -1,0 +1,4545 @@
+{
+  "generated": "2026-04-14",
+  "summary": {
+    "total_guides": 68,
+    "guides_with_issues": 60,
+    "guides_clean": 8,
+    "total_issues": 269,
+    "error_count": 6,
+    "warning_count": 242,
+    "deferred_count": 21
+  },
+  "guides": {
+    "4ms_company_listen_io_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    },
+    "4ms_company_metamodule_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    },
+    "4ms_rcd_v2_guide.md": {
+      "clean": false,
+      "issue_count": 18,
+      "error_count": 0,
+      "warning_count": 18,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"**Clock division is a deep subject. RCD v2 is the right tool for understanding it — use it\"",
+          "line": 678
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"1. **Start without Rotate CV.** Run the eight outputs into different destinations and simp\"",
+          "line": 680
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"2. **Add Rotate CV from a slow LFO and watch the output assignments shift.** The key insig\"",
+          "line": 682
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"4. **Use Reset to bring controlled order back.** After building a complex rotating patch, \"",
+          "line": 686
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"5. **Pair with the SCM Plus to compare division philosophies.** RCD v2 distributes multipl\"",
+          "line": 688
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Clock Source → RCD Clock In | Gate (Yellow) | **Master timing input** | **Understand clo\"",
+          "line": 194
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| RCD Output 1 → Kick Trigger | Gate (Yellow) | **Same speed as input** | **Experience /1 \"",
+          "line": 195
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| RCD Output 2 → Snare Trigger | Gate (Yellow) | **Half speed (backbeat)** | **Learn /2 di\"",
+          "line": 196
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| RCD Output 3 → Percussion | Gate (Yellow) | **Triplet feel** | **Experience /3 polyrhyth\"",
+          "line": 197
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| RCD Output 5 → Hi-hat Trigger | Gate (Yellow) | **Complex 5-against-4** | **Learn odd nu\"",
+          "line": 198
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Slow LFO → Rotate CV | CV (Blue) | **Pattern evolution** | **Understand rotation concept\"",
+          "line": 199
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Fast Clock → RCD Clock In | Gate (Yellow) | **High-resolution timing** | **32nd notes fo\"",
+          "line": 269
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| RCD Output 2 → Arpeggiator 1 | Gate (Yellow) | **16th note arpeggios** | **Standard arpe\"",
+          "line": 270
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| RCD Output 4 → Arpeggiator 2 | Gate (Yellow) | **8th note arpeggios** | **Slower, more d\"",
+          "line": 271
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| RCD Output 6 → Bass Sequencer | Gate (Yellow) | **Long intervals** | **Slow bass foundat\"",
+          "line": 272
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Stepped Random → Rotate CV | CV (Blue) | **Sudden pattern shifts** | **Rhythmic \"gear ch\"",
+          "line": 273
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Main Sequencer → Reset | Gate (Yellow) | **Structure maintenance** | **Keep polyrhythms \"",
+          "line": 274
+        }
+      ]
+    },
+    "4ms_scm_plus_guide.md": {
+      "clean": false,
+      "issue_count": 4,
+      "error_count": 0,
+      "warning_count": 4,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"**Master SCM Plus in stages — each stage unlocks more rhythmic complexity.**\"",
+          "line": 312
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"4. **Use SLIP to deliberately create metric displacement.** Practice shifting melodies sli\"",
+          "line": 320
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"6. **Study the SCM Plus alongside the Rotating Clock Divider (RCD).** The RCD and SCM Plus\"",
+          "line": 324
+        }
+      ]
+    },
+    "after_later_audio_cloaks_guide.md": {
+      "clean": true,
+      "issue_count": 0,
+      "error_count": 0,
+      "warning_count": 0,
+      "deferred_count": 0,
+      "issues": []
+    },
+    "after_later_audio_mingles_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    },
+    "alm_busy_circuits_mco_alm021_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    },
+    "alm_busy_circuits_pamelas_pro_workout_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    },
+    "atovproject_lx-euclid_guide.md": {
+      "clean": false,
+      "issue_count": 2,
+      "error_count": 0,
+      "warning_count": 2,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"**Channel selection buttons (4):** Four buttons below the display, color-coded left to rig\"",
+          "line": 58
+        }
+      ]
+    },
+    "behringer_dual_envelope_generator_1003_utility_guide.md": {
+      "clean": false,
+      "issue_count": 5,
+      "error_count": 0,
+      "warning_count": 5,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"**The 1003 is a foundational building block — learn it deeply before adding more complex e\"",
+          "line": 354
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"2. **Understand the shared timing knob.** The single master timing control scaling both en\"",
+          "line": 358
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"3. **Explore bipolar outputs (OUT+/OUT−) for push-pull patching.** The inverted output tur\"",
+          "line": 360
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"4. **Add a second VCO and use each envelope independently.** Build a two-voice patch where\"",
+          "line": 362
+        }
+      ]
+    },
+    "bizarre_jezabel_pkhia_mk2_guide.md": {
+      "clean": false,
+      "issue_count": 2,
+      "error_count": 1,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "why_excels_order",
+          "category": "Missing or Misplaced Sections",
+          "severity": "error",
+          "detail": "`Why This Excels` (line 577) appears AFTER first patch heading (line 113); must precede patch examples"
+        },
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    },
+    "blue_lantern_astroid_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    },
+    "blue_lantern_cmos_party_guide.md": {
+      "clean": false,
+      "issue_count": 13,
+      "error_count": 0,
+      "warning_count": 13,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"**Boolean logic is universal. CMOS Party is the hands-on way to internalize it — these ope\"",
+          "line": 1361
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"1. **Start with one operation at a time.** AND, OR, and NOT are the three primitives every\"",
+          "line": 1363
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"2. **Work with truth tables as documentation.** Every logic operation has a truth table wi\"",
+          "line": 1365
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"3. **Study NAND and NOR as the universal gates.** NAND and NOR alone can implement any boo\"",
+          "line": 1367
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"4. **Use XOR as a rhythmic subtraction tool.** XOR outputs HIGH when the inputs differ. Th\"",
+          "line": 1369
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"6. **Build a patch using only boolean logic for all rhythmic relationships.** No clock div\"",
+          "line": 1373
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Master Clock → Input A | Gate (Yellow) | Primary timing reference |\"",
+          "line": 481
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Divided Clock → Input B | Gate (Yellow) | Secondary timing for comparison |\"",
+          "line": 482
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| AND Out → Kick Drum | Gate (Yellow) | Triggers only when both clocks align |\"",
+          "line": 483
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| OR Out → Hi-hat | Gate (Yellow) | Triggers when either clock is active |\"",
+          "line": 484
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| XOR Out → Snare | Gate (Yellow) | Alternating pattern between clocks |\"",
+          "line": 485
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Inv A Out → Off-beat | Gate (Yellow) | Triggers between main clock beats |\"",
+          "line": 486
+        }
+      ]
+    },
+    "blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    },
+    "cre8audio_cellz_guide.md": {
+      "clean": true,
+      "issue_count": 0,
+      "error_count": 0,
+      "warning_count": 0,
+      "deferred_count": 0,
+      "issues": []
+    },
+    "cre8audio_chipz_cellz_niftycase_bundle_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "yaml_hp",
+          "category": "YAML Frontmatter",
+          "severity": "warning",
+          "detail": "Missing `hp` field"
+        }
+      ]
+    },
+    "cre8audio_chipz_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    },
+    "cre8audio_function_junction_guide.md": {
+      "clean": false,
+      "issue_count": 9,
+      "error_count": 0,
+      "warning_count": 9,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Gate Source → A IN JACK | Gate (Yellow) | **Trigger envelope** | **Understand gate-to-en\"",
+          "line": 267
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| A OUT JACK → VCA CV | CV (Blue) | **Control amplitude** | **Learn envelope modulation ba\"",
+          "line": 268
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Audio Source → VCA Audio In | Audio (Red) | **Signal to be shaped** | **Complete signal \"",
+          "line": 269
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| øchd LFO 2 → F MOD CV | CV (Blue) | **Organic envelope shaping** | **Modulation processi\"",
+          "line": 328
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| øchd Trigger 1 → F IN JACK | Gate (Yellow) | **Organic timing** | **Non-mechanical funct\"",
+          "line": 329
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| øchd LFO 6 → LFO Rate CV | CV (Blue) | **Tempo modulation** | **Organic LFO speed contro\"",
+          "line": 330
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| F OUT JACK → Filter Cutoff | CV (Blue) | **Shaped filter modulation** | **Musical envelo\"",
+          "line": 331
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| L TRI JACK → Oscillator PWM | CV (Blue) | **Pulse width modulation** | **Organic timbral\"",
+          "line": 332
+        }
+      ]
+    },
+    "divkid_ochd_and_expander_guide.md": {
+      "clean": false,
+      "issue_count": 8,
+      "error_count": 1,
+      "warning_count": 7,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "why_excels_order",
+          "category": "Missing or Misplaced Sections",
+          "severity": "error",
+          "detail": "`Why This Excels` (line 513) appears AFTER first patch heading (line 80); must precede patch examples"
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| LFO 1 → Oscillator FM | CV (Blue) | **Fast modulation** | **Experience fastest LFO speed\"",
+          "line": 102
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| LFO 4 → Filter Cutoff | CV (Blue) | **Medium-speed sweeps** | **Learn mid-range modulati\"",
+          "line": 103
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| LFO 8 → VCA CV | CV (Blue) | **Slow amplitude changes** | **Understand slowest LFO behav\"",
+          "line": 104
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Full Wave Rect 1 → Oscillator 1V/Oct | CV (Blue) | **Unipolar pitch modulation** | **Alw\"",
+          "line": 155
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Full Wave Rect 3 → Effects Filter CV | CV (Blue) | **Positive filter sweeps** | **Only o\"",
+          "line": 156
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| DAC Output A → Delay Time | CV (Blue) | **Stepped random delays** | **Quantized time mod\"",
+          "line": 157
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Min Output → Effects Mix CV | CV (Blue) | **Smooth dynamics control** | **Logic-based mi\"",
+          "line": 158
+        }
+      ]
+    },
+    "doepfer_a124_wasp_se_guide.md": {
+      "clean": false,
+      "issue_count": 13,
+      "error_count": 0,
+      "warning_count": 13,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"**The Wasp SE rewards progressive exploration — its aggression is a feature, not a flaw to\"",
+          "line": 501
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"2. **Study self-oscillation as a sound source.** Push RESONANCE past the threshold until t\"",
+          "line": 505
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"4. **Compare the Wasp SE against a cleaner filter back to back.** The Wasp's CMOS nonlinea\"",
+          "line": 509
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"6. **Graduate to filter comparison work with other aggressive filters.** Once the Wasp cha\"",
+          "line": 513
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Oscillator → Wasp Audio In | Audio (Red) | **Rich harmonics for aggressive filtering** |\"",
+          "line": 172
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Envelope → Wasp Cutoff CV | CV (Blue) | **Classic filter modulation** | **Learn filter s\"",
+          "line": 173
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Wasp Out → VCA Audio In | Audio (Red) | **Filtered aggressive bass output** | **Understa\"",
+          "line": 174
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Sequencer → Wasp Cutoff CV | CV (Blue) | **Melodic self-oscillation control** | **Experi\"",
+          "line": 206
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| LFO → Wasp Resonance CV | CV (Blue) | **Dynamic aggression modulation** | **Learn resona\"",
+          "line": 207
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Wasp Out → Effects | Audio (Red) | **Pure sine wave self-oscillation** | **Understand se\"",
+          "line": 208
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Drum Source → Wasp Audio In | Audio (Red) | **Drum signal processing** | **Experience ag\"",
+          "line": 242
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Trigger → Wasp Cutoff CV | Gate (Yellow) | **Gate-controlled filter sweep** | **Learn tr\"",
+          "line": 243
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Wasp Out → Drum Output | Audio (Red) | **Aggressive processed drums** | **Understand fil\"",
+          "line": 244
+        }
+      ]
+    },
+    "doepfer_a_130_2_guide.md": {
+      "clean": true,
+      "issue_count": 0,
+      "error_count": 0,
+      "warning_count": 0,
+      "deferred_count": 0,
+      "issues": []
+    },
+    "dspcoffee_kali_guide.md": {
+      "clean": false,
+      "issue_count": 2,
+      "error_count": 0,
+      "warning_count": 2,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "emoji_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old emoji color label: \"🔴 **Audio** │ 🔵 **CV** │ 🟡 **Gate**\"",
+          "line": 76
+        }
+      ]
+    },
+    "earthquaker_devices_afterneath_guide.md": {
+      "clean": false,
+      "issue_count": 22,
+      "error_count": 0,
+      "warning_count": 22,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"1. **Start in one unquantized mode and learn its specific behavior.** The nine modes are n\"",
+          "line": 313
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"2. **Learn what DRAG actually controls before touching SIZE.** DRAG is the parameter that \"",
+          "line": 315
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"5. **Study the Reflect loop as a feedback path.** Patching the output back to the Reflect \"",
+          "line": 321
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Audio Source → Afterneath In | Audio (Red) | **Rich harmonic content for texture generat\"",
+          "line": 138
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Afterneath Out → Monitor | Audio (Red) | **Processed signal to monitoring system** | **H\"",
+          "line": 139
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Audio Source → Afterneath In | Audio (Red) | **Audio source for texture processing** | *\"",
+          "line": 177
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| LFO → Drag CV | CV (Blue) | **Oscillating modulation of Drag parameter** | **Learn how p\"",
+          "line": 178
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Envelope → Length CV | CV (Blue) | **Dynamic control of reverb decay time** | **Understa\"",
+          "line": 179
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Reflect Send → Filter Input | Audio (Red) | **Feedback path sent to external filter** | \"",
+          "line": 180
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Filter Output → Reflect Return | Audio (Red) | **Filtered feedback returning to reverb**\"",
+          "line": 181
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Afterneath Out → Monitor | Audio (Red) | **Processed, modulated texture to output** | **\"",
+          "line": 182
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Keyboard/Seq CV → Drag CV | CV (Blue) | **1V/octave pitch control** | **Learn Afterneath\"",
+          "line": 221
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Envelope → VCA In | CV (Blue) | **Amplitude envelope for note articulation** | **Underst\"",
+          "line": 222
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Afterneath Out → VCA In | Audio (Red) | **Self-oscillating sine tone to VCA** | **Experi\"",
+          "line": 223
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| VCA Out → Output | Audio (Red) | **Envelope-shaped oscillator output** | **Hear how ampl\"",
+          "line": 224
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Audio Source → Afterneath In | Audio (Red) | **Source audio for ambient texture processi\"",
+          "line": 281
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Multi-LFO → Drag/Length/Diffuse CV | CV (Blue) | **Multiple simultaneous parameter modul\"",
+          "line": 282
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Afterneath Main Out → L Channel | Audio (Red) | **Dry direct signal to left channel** | \"",
+          "line": 283
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Reflect Send → Multiple/Router | Audio (Red) | **Feedback path split for external proces\"",
+          "line": 284
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| External Processing Out → Reflect Return | Audio (Red) | **Processed feedback returning \"",
+          "line": 285
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Reflect Send (alternate) → R Channel | Audio (Red) | **Unprocessed feedback to right cha\"",
+          "line": 286
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Stereo Mixer Out → Final Output | Audio (Red) | **Stereo-imaged, professionally mixed ou\"",
+          "line": 287
+        }
+      ]
+    },
+    "endorphines_blck_noir_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    },
+    "endorphines_ghost_guide.md": {
+      "clean": false,
+      "issue_count": 11,
+      "error_count": 0,
+      "warning_count": 11,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"This is the most common starting confusion, and it usually means the individual processors\"",
+          "line": 2066
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"The FX section is the most obvious entry point, but using only FX misses GHOST's architect\"",
+          "line": 2069
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"Either the patch isn't sending audio through GHOST (check the dry/wet balance — if DRY is \"",
+          "line": 2072
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"GHOST has CV inputs for routing-relevant parameters across all three sections. If you're t\"",
+          "line": 2075
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"This technique requires the delay to be set at audio rates — the delay time must be very s\"",
+          "line": 2078
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"**GHOST rewards systematic exploration over random experimentation. The routing orders are\"",
+          "line": 2084
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"2. **Master the pre-VCA control before exploring deep modulation.** The pre-VCA is the gai\"",
+          "line": 2088
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"4. **Explore the Karplus-Strong synthesis capability as a dedicated study.** Running the d\"",
+          "line": 2092
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"6. **Study the sidechain input for dynamics-driven processing.** The sidechain input lets \"",
+          "line": 2096
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"- **Any VCO/complex oscillator:** GHOST can transform any audio source — its routing flexi\"",
+          "line": 2109
+        }
+      ]
+    },
+    "endorphines_ground_control_guide.md": {
+      "clean": false,
+      "issue_count": 2,
+      "error_count": 0,
+      "warning_count": 2,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "emoji_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old emoji color label: \"🔴 **Audio** │ 🔵 **CV** │ 🟡 **Gate**\"",
+          "line": 81
+        }
+      ]
+    },
+    "endorphines_queen_of_pentacles_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    },
+    "endorphines_squawk_dirty_to_me_guide.md": {
+      "clean": false,
+      "issue_count": 6,
+      "error_count": 0,
+      "warning_count": 6,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"1. **Start with Mode I (Moog Ladder) as your reference point.** The transistor ladder is t\"",
+          "line": 495
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"2. **Spend a dedicated session on each remaining filter type.** The character difference b\"",
+          "line": 497
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"3. **Learn what META CV scanning actually does.** Patching a slow LFO into the META CV inp\"",
+          "line": 499
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"4. **Use the series High-Pass Filter as a second filter.** The HPF input is a full additio\"",
+          "line": 501
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| VCO Audio → Squawk IN 1 | Audio (Red) | Any oscillator or audio source |\"",
+          "line": 209
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Squawk OUT 1 → Mixer | Audio (Red) | Filtered audio output |\"",
+          "line": 210
+        }
+      ]
+    },
+    "erica_synths_black_envelope_generator_2_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    },
+    "erica_synths_black_polyvoks_vcf_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 0,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 630
+        }
+      ]
+    },
+    "erica_synths_black_quad_vca2_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    },
+    "erica_synths_pico_drum2_guide.md": {
+      "clean": true,
+      "issue_count": 0,
+      "error_count": 0,
+      "warning_count": 0,
+      "deferred_count": 0,
+      "issues": []
+    },
+    "erica_synths_pico_dsp_guide.md": {
+      "clean": false,
+      "issue_count": 5,
+      "error_count": 0,
+      "warning_count": 3,
+      "deferred_count": 2,
+      "issues": [
+        {
+          "check_id": "emoji_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old emoji color label: \"### **🔴 RED - Mono Delay**\"",
+          "line": 88
+        },
+        {
+          "check_id": "emoji_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old emoji color label: \"### **🟡 YELLOW - Pitch Shift Delay**\"",
+          "line": 94
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjustin\"",
+          "line": 292
+        },
+        {
+          "check_id": "alp_variant_heading",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Non-standard ALP heading: \"## Multi-Function Learning Path\" (should be `## Advanced Learning Path`)",
+          "line": 430
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 138
+        }
+      ]
+    },
+    "erica_synths_pico_lfo_sh_guide.md": {
+      "clean": false,
+      "issue_count": 2,
+      "error_count": 1,
+      "warning_count": 0,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "why_excels_order",
+          "category": "Missing or Misplaced Sections",
+          "severity": "error",
+          "detail": "`Why This Excels` (line 275) appears AFTER first patch heading (line 104); must precede patch examples"
+        },
+        {
+          "check_id": "alp_variant_heading",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Non-standard ALP heading: \"## Multi-Function Learning Path\" (should be `## Advanced Learning Path`)",
+          "line": 306
+        }
+      ]
+    },
+    "erica_synths_pico_vca2_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 1,
+      "warning_count": 0,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "why_excels_order",
+          "category": "Missing or Misplaced Sections",
+          "severity": "error",
+          "detail": "`Why This Excels` (line 330) appears AFTER first patch heading (line 107); must precede patch examples"
+        }
+      ]
+    },
+    "erica_synths_pico_voice_guide.md": {
+      "clean": false,
+      "issue_count": 6,
+      "error_count": 1,
+      "warning_count": 5,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "why_excels_order",
+          "category": "Missing or Misplaced Sections",
+          "severity": "error",
+          "detail": "`Why This Excels` (line 506) appears AFTER first patch heading (line 139); must precede patch examples"
+        },
+        {
+          "check_id": "emoji_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old emoji color label: \"### **🔴 RED - Karplus Strong (Plucked Strings)**\"",
+          "line": 87
+        },
+        {
+          "check_id": "emoji_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old emoji color label: \"### **🟡 YELLOW - Chords (Harmonic Stacks)**\"",
+          "line": 93
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"- **Algorithm:** Chords (Yellow)\"",
+          "line": 140
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"- **Algorithm:** Bassline (Blue)\"",
+          "line": 153
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"- **Algorithm:** Wavetable (Green)\"",
+          "line": 166
+        }
+      ]
+    },
+    "expert_sleepers_disting_mk4_guide.md": {
+      "clean": false,
+      "issue_count": 7,
+      "error_count": 0,
+      "warning_count": 7,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Random CV → Disting X Input | CV (Blue) | Unquantized pitch CV |\"",
+          "line": 218
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Disting A Out → Oscillator V/OCT | CV (Blue) | Quantized to musical scale |\"",
+          "line": 219
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Disting B Out → Envelope Trigger | Gate (Yellow) | Fires on note changes |\"",
+          "line": 220
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Audio Source → X Input | Audio (Red) | **Signal to be processed** | **Resonant filtering\"",
+          "line": 279
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Clock/LFO → Y Input | CV (Blue) | **Frequency modulation** | **Dynamic resonance control\"",
+          "line": 280
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| A Output → Effects Audio | Audio (Red) | **Processed signal** | **Resonant audio charact\"",
+          "line": 281
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| B Output → Effects Mod | CV (Blue) | **Envelope follower CV** | **Audio-reactive modulat\"",
+          "line": 282
+        }
+      ]
+    },
+    "frap_tools_411_guide.md": {
+      "clean": true,
+      "issue_count": 0,
+      "error_count": 0,
+      "warning_count": 0,
+      "deferred_count": 0,
+      "issues": []
+    },
+    "instruo_arbhar_guide.md": {
+      "clean": false,
+      "issue_count": 2,
+      "error_count": 0,
+      "warning_count": 2,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Audio Source → Arbhar IN | Audio (Red) | Any audio source - voice, instrument, field rec\"",
+          "line": 178
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Arbhar OUT 1,2 → Final Output | Audio (Red) | Stereo granular processing |\"",
+          "line": 179
+        }
+      ]
+    },
+    "instruo_csl_guide.md": {
+      "clean": true,
+      "issue_count": 0,
+      "error_count": 0,
+      "warning_count": 0,
+      "deferred_count": 0,
+      "issues": []
+    },
+    "intellijel_mixup_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    },
+    "intellijel_stomp_guide.md": {
+      "clean": false,
+      "issue_count": 6,
+      "error_count": 1,
+      "warning_count": 5,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_why_excels",
+          "category": "Missing or Misplaced Sections",
+          "severity": "error",
+          "detail": "Missing `## Why [Module] Excels` section (no 'Why' heading found)"
+        },
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"### **\"The pedal isn't doing anything — signal is bypassed!\"**\"",
+          "line": 238
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"**Why it happens:** Expression pedals expect TRS (stereo) cable connections, not TS (mono)\"",
+          "line": 243
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"**Solution:** Check the pedal's own mix or effects level control first. Stomp's MIX only b\"",
+          "line": 248
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"### **\"The LFO automation sounds robotic — no variation!\"**\"",
+          "line": 254
+        }
+      ]
+    },
+    "make_noise_maths_guide.md": {
+      "clean": false,
+      "issue_count": 2,
+      "error_count": 0,
+      "warning_count": 2,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Sequencer Gate → Maths Ch1 TRIG | Gate (Yellow) | Triggers envelope on each step |\"",
+          "line": 304
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Maths Ch1 UNITY → VCA CV In | CV (Blue) | Controls amplitude |\"",
+          "line": 305
+        }
+      ]
+    },
+    "make_noise_pressure_points_guide.md": {
+      "clean": false,
+      "issue_count": 2,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why Pressure Points Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 344
+        }
+      ]
+    },
+    "make_noise_wogglebug_guide.md": {
+      "clean": false,
+      "issue_count": 4,
+      "error_count": 0,
+      "warning_count": 3,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Stepped → Oscillator 1V/Oct | CV (Blue) | **Random pitch control** | **Experience discre\"",
+          "line": 202
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Smooth → Filter Cutoff | CV (Blue) | **Continuous filter sweeps** | **Learn smooth rando\"",
+          "line": 203
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 51
+        }
+      ]
+    },
+    "mordax_data_guide.md": {
+      "clean": false,
+      "issue_count": 3,
+      "error_count": 0,
+      "warning_count": 2,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "section_common_mistakes",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Common Mistakes` section"
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 90
+        }
+      ]
+    },
+    "mutable_instruments_links_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    },
+    "mutable_marbles_guide.md": {
+      "clean": false,
+      "issue_count": 12,
+      "error_count": 0,
+      "warning_count": 11,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "section_common_mistakes",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Common Mistakes` section"
+        },
+        {
+          "check_id": "section_pairs_well",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Pairs Well With` section"
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Marbles X1 → Oscillator 1V/Oct | CV (Blue) | **Random pitch control** | **Creates evolvi\"",
+          "line": 138
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Marbles t2 → Envelope Trigger | Gate (Yellow) | **Rhythmic triggering** | **Main beat wi\"",
+          "line": 139
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Oscillator Audio → VCA Audio | Audio (Red) | **Signal path** | **Complete voice chain** \"",
+          "line": 140
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Envelope Out → VCA CV | CV (Blue) | **Amplitude shaping** | **Musical note envelopes** |\"",
+          "line": 141
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Marbles t1 → Kick Trigger | Gate (Yellow) | **Main beat generator** | **Foundational rhy\"",
+          "line": 277
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Marbles t2 → Snare Trigger | Gate (Yellow) | **Secondary rhythm** | **Syncopated pattern\"",
+          "line": 278
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Marbles t3 → Hihat Trigger | Gate (Yellow) | **Tertiary rhythm** | **Complex polyrhythms\"",
+          "line": 279
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Marbles Y → Marbles DEJA VU CV | CV (Blue) | **Self-modulation** | **Evolving memory pat\"",
+          "line": 280
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 77
+        }
+      ]
+    },
+    "mutable_plaits_guide.md": {
+      "clean": false,
+      "issue_count": 12,
+      "error_count": 0,
+      "warning_count": 11,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Keyboard V/OCT → Plaits V/OCT | CV (Blue) | Pitch tracking |\"",
+          "line": 133
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Keyboard Gate → Envelope Trig | Gate (Yellow) | Triggers envelope |\"",
+          "line": 134
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Envelope Out → Plaits LEVEL | CV (Blue) | Controls internal LPG |\"",
+          "line": 135
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Plaits OUT → Audio destination | Audio (Red) | Main output |\"",
+          "line": 136
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Clock/Sequencer → Plaits TRIG | Gate (Yellow) | Triggers percussion sounds |\"",
+          "line": 174
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Plaits OUT → Mixer/Audio Out | Audio (Red) | Complete drum sounds |\"",
+          "line": 175
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| LFO → Plaits MORPH CV | CV (Blue) | Modulates phoneme selection |\"",
+          "line": 282
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Trigger Seq → Plaits TRIG | Gate (Yellow) | Triggers speech utterances |\"",
+          "line": 283
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Plaits OUT → Reverb | Audio (Red) | Main speech synthesis |\"",
+          "line": 284
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Plaits AUX → Reverb | Audio (Red) | Alternative formants |\"",
+          "line": 285
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 75
+        }
+      ]
+    },
+    "mutable_rings_guide.md": {
+      "clean": false,
+      "issue_count": 6,
+      "error_count": 0,
+      "warning_count": 5,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| 1V/Oct CV → V/OCT Input | CV (Blue) | **Harmonic pitch tracking** | **Learn physical mod\"",
+          "line": 153
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Gate/Trigger → STRUM Input | Gate (Yellow) | **Trigger resonant bursts** | **Experience \"",
+          "line": 154
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| ODD Output → Left Mix | Audio (Red) | **Odd harmonics** | **Understand harmonic separati\"",
+          "line": 155
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| EVEN Output → Right Mix | Audio (Red) | **Even harmonics** | **Stereo harmonic imaging**\"",
+          "line": 156
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 74
+        }
+      ]
+    },
+    "noise_engineering_loquelic_iteritas_guide.md": {
+      "clean": false,
+      "issue_count": 3,
+      "error_count": 0,
+      "warning_count": 2,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "section_common_mistakes",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Common Mistakes` section"
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 324
+        }
+      ]
+    },
+    "noise_engineering_numeric_repetitor_guide.md": {
+      "clean": false,
+      "issue_count": 2,
+      "error_count": 0,
+      "warning_count": 2,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "section_common_mistakes",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Common Mistakes` section"
+        }
+      ]
+    },
+    "noise_engineering_ruina_versio_guide.md": {
+      "clean": false,
+      "issue_count": 2,
+      "error_count": 0,
+      "warning_count": 2,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "section_common_mistakes",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Common Mistakes` section"
+        }
+      ]
+    },
+    "patching_panda_moon_phase_guide.md": {
+      "clean": false,
+      "issue_count": 2,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 443
+        }
+      ]
+    },
+    "patching_panda_punch_v3_guide.md": {
+      "clean": false,
+      "issue_count": 2,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 463
+        }
+      ]
+    },
+    "qubit_bloom_v1_guide.md": {
+      "clean": false,
+      "issue_count": 4,
+      "error_count": 0,
+      "warning_count": 4,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "section_common_mistakes",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Common Mistakes` section"
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"3. **Press CHANNEL button** until Channel A LED (blue) lights up\"",
+          "line": 24
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"- **Press CHANNEL button** to switch between A (blue) and B (green)\"",
+          "line": 333
+        }
+      ]
+    },
+    "rossum_electro_music_mob_of_emus_guide.md": {
+      "clean": false,
+      "issue_count": 18,
+      "error_count": 0,
+      "warning_count": 17,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"1. **Start with a single oscillator in simple mode.** Run WAVE mode with a saw wave, tune \"",
+          "line": 662
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"2. **Understand the difference between WAVE, ENV, and PAT modes.** These three modes chang\"",
+          "line": 664
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"3. **Use PAT mode as a polyrhythmic gate source.** The euclidean gate outputs in PAT mode \"",
+          "line": 666
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"4. **Study the HARM# / SERIES control to understand preset harmonic relationships.** The 1\"",
+          "line": 668
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"5. **Explore the quantizer function.** Mob of Emus can quantize external CV to its current\"",
+          "line": 670
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| LFO → MOE H.GAIN CV | CV (Blue) | Rhythmic harmonic intensity |\"",
+          "line": 173
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Envelope → MOE Full CV Freq | CV (Blue) | Pitch modulation |\"",
+          "line": 174
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| MOE Mix Out → Filter Audio In | Audio (Red) | Rich additive signal |\"",
+          "line": 175
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Filter Out → VCA Audio In | Audio (Red) | Filtered harmonics |\"",
+          "line": 176
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Tap/Trig → MOE Sync Input | Clock (Yellow) | Sets tempo for all channels |\"",
+          "line": 212
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| MOE Ch1 → VCA 1 CV Input | CV (Blue) | 1x tempo (fundamental) |\"",
+          "line": 213
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| MOE Ch2 → VCA 2 CV Input | CV (Blue) | 2x tempo (half notes) |\"",
+          "line": 214
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| MOE Ch3 → Filter CV Input | CV (Blue) | 4x tempo (quarter notes) |\"",
+          "line": 215
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| MOE Ch4 → LFO Rate CV | CV (Blue) | 8x tempo (eighth notes) |\"",
+          "line": 216
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| MOE Ch5 → Oscillator Pitch | CV (Blue) | 16x tempo (sixteenth notes) |\"",
+          "line": 217
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| MOE Ch6 → Effect Parameter | CV (Blue) | 32x tempo (thirty-second notes) |\"",
+          "line": 218
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 116
+        }
+      ]
+    },
+    "soma_lyra8_fx_guide.md": {
+      "clean": false,
+      "issue_count": 2,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 457
+        }
+      ]
+    },
+    "squarp_hermod_plus_guide.md": {
+      "clean": false,
+      "issue_count": 3,
+      "error_count": 0,
+      "warning_count": 2,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "section_common_mistakes",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Common Mistakes` section"
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 80
+        }
+      ]
+    },
+    "tiptop_audio_forbidden_planet_guide.md": {
+      "clean": false,
+      "issue_count": 2,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 325
+        }
+      ]
+    },
+    "tiptop_audio_miso_guide.md": {
+      "clean": false,
+      "issue_count": 2,
+      "error_count": 0,
+      "warning_count": 2,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "section_common_mistakes",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Common Mistakes` section"
+        }
+      ]
+    },
+    "turing_machine_ecosystem_guide.md": {
+      "clean": false,
+      "issue_count": 5,
+      "error_count": 0,
+      "warning_count": 4,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "yaml_hp",
+          "category": "YAML Frontmatter",
+          "severity": "warning",
+          "detail": "Missing `hp` field"
+        },
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"1. **Spend time only at the probability extremes before touching the middle.** At fully cl\"",
+          "line": 213
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"3. **Add the Volts expander before the Pulses expander.** Volts generates CV from the same\"",
+          "line": 217
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Ecosystem Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 127
+        }
+      ]
+    },
+    "vostok_instruments_ceres_guide.md": {
+      "clean": true,
+      "issue_count": 0,
+      "error_count": 0,
+      "warning_count": 0,
+      "deferred_count": 0,
+      "issues": []
+    },
+    "vpme_qd_qex_drum_workstation_guide.md": {
+      "clean": false,
+      "issue_count": 6,
+      "error_count": 0,
+      "warning_count": 5,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis\"",
+          "line": 66
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"- **Voice 2 (Red):** Typically snares - wide percussion synthesis range\"",
+          "line": 67
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
+          "line": 68
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis\"",
+          "line": 69
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Workstation Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 622
+        }
+      ]
+    },
+    "vpme_qd_qex_euclidean_circles_ecosystem_guide.md": {
+      "clean": false,
+      "issue_count": 7,
+      "error_count": 0,
+      "warning_count": 6,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "yaml_hp",
+          "category": "YAML Frontmatter",
+          "severity": "warning",
+          "detail": "Missing `hp` field"
+        },
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"- **Voice 1 (Blue):** Typically kick drums - full range analog synthesis\"",
+          "line": 65
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"- **Voice 2 (Red):** Typically snare - wide range of percussion synthesis\"",
+          "line": 66
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
+          "line": 67
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"- **Voice 4 (Green):** Typically percussion - flexible synthesis for any drum sound\"",
+          "line": 68
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Ecosystem Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 315
+        }
+      ]
+    },
+    "winterbloom_castor_pollux_ii_guide.md": {
+      "clean": false,
+      "issue_count": 5,
+      "error_count": 0,
+      "warning_count": 4,
+      "deferred_count": 1,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        },
+        {
+          "check_id": "section_common_mistakes",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Common Mistakes` section"
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| 1V/Oct CV → Castor PITCH | CV (Blue) | Keyboard or sequencer pitch control |\"",
+          "line": 136
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"| Castor OUT → Filter | Audio (Red) | Classic Juno sawtooth tone |\"",
+          "line": 137
+        },
+        {
+          "check_id": "why_section_old_wording",
+          "category": "Deferred Items",
+          "severity": "deferred",
+          "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+          "line": 83
+        }
+      ]
+    },
+    "xaoc_devices_belgrad_guide.md": {
+      "clean": true,
+      "issue_count": 0,
+      "error_count": 0,
+      "warning_count": 0,
+      "deferred_count": 0,
+      "issues": []
+    },
+    "xaoc_devices_zadar_nin_guide.md": {
+      "clean": false,
+      "issue_count": 1,
+      "error_count": 0,
+      "warning_count": 1,
+      "deferred_count": 0,
+      "issues": [
+        {
+          "check_id": "section_historical_context",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing `## Historical Context` section"
+        }
+      ]
+    }
+  },
+  "by_check": {
+    "section_historical_context": [
+      {
+        "file": "4ms_company_listen_io_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "4ms_company_metamodule_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "4ms_scm_plus_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "after_later_audio_mingles_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "alm_busy_circuits_mco_alm021_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "alm_busy_circuits_pamelas_pro_workout_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "atovproject_lx-euclid_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "behringer_dual_envelope_generator_1003_utility_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "bizarre_jezabel_pkhia_mk2_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "blue_lantern_astroid_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "blue_lantern_cmos_party_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "cre8audio_chipz_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "cre8audio_function_junction_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "dspcoffee_kali_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "endorphines_blck_noir_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "endorphines_ghost_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "endorphines_ground_control_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "endorphines_queen_of_pentacles_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "erica_synths_black_envelope_generator_2_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "erica_synths_black_quad_vca2_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "intellijel_mixup_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "intellijel_stomp_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "make_noise_pressure_points_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "make_noise_wogglebug_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "mordax_data_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "mutable_instruments_links_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "mutable_marbles_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "mutable_plaits_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "mutable_rings_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "noise_engineering_loquelic_iteritas_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "noise_engineering_numeric_repetitor_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "noise_engineering_ruina_versio_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "patching_panda_moon_phase_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "patching_panda_punch_v3_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "qubit_bloom_v1_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "soma_lyra8_fx_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "squarp_hermod_plus_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "tiptop_audio_forbidden_planet_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "tiptop_audio_miso_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "turing_machine_ecosystem_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "vpme_qd_qex_drum_workstation_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "winterbloom_castor_pollux_ii_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "xaoc_devices_zadar_nin_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      }
+    ],
+    "em_dash": [
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"**Clock division is a deep subject. RCD v2 is the right tool for understanding it — use it\"",
+        "line": 678
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"1. **Start without Rotate CV.** Run the eight outputs into different destinations and simp\"",
+        "line": 680
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"2. **Add Rotate CV from a slow LFO and watch the output assignments shift.** The key insig\"",
+        "line": 682
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"4. **Use Reset to bring controlled order back.** After building a complex rotating patch, \"",
+        "line": 686
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"5. **Pair with the SCM Plus to compare division philosophies.** RCD v2 distributes multipl\"",
+        "line": 688
+      },
+      {
+        "file": "4ms_scm_plus_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"**Master SCM Plus in stages — each stage unlocks more rhythmic complexity.**\"",
+        "line": 312
+      },
+      {
+        "file": "4ms_scm_plus_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"4. **Use SLIP to deliberately create metric displacement.** Practice shifting melodies sli\"",
+        "line": 320
+      },
+      {
+        "file": "4ms_scm_plus_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"6. **Study the SCM Plus alongside the Rotating Clock Divider (RCD).** The RCD and SCM Plus\"",
+        "line": 324
+      },
+      {
+        "file": "behringer_dual_envelope_generator_1003_utility_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"**The 1003 is a foundational building block — learn it deeply before adding more complex e\"",
+        "line": 354
+      },
+      {
+        "file": "behringer_dual_envelope_generator_1003_utility_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"2. **Understand the shared timing knob.** The single master timing control scaling both en\"",
+        "line": 358
+      },
+      {
+        "file": "behringer_dual_envelope_generator_1003_utility_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"3. **Explore bipolar outputs (OUT+/OUT−) for push-pull patching.** The inverted output tur\"",
+        "line": 360
+      },
+      {
+        "file": "behringer_dual_envelope_generator_1003_utility_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"4. **Add a second VCO and use each envelope independently.** Build a two-voice patch where\"",
+        "line": 362
+      },
+      {
+        "file": "blue_lantern_cmos_party_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"**Boolean logic is universal. CMOS Party is the hands-on way to internalize it — these ope\"",
+        "line": 1361
+      },
+      {
+        "file": "blue_lantern_cmos_party_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"1. **Start with one operation at a time.** AND, OR, and NOT are the three primitives every\"",
+        "line": 1363
+      },
+      {
+        "file": "blue_lantern_cmos_party_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"2. **Work with truth tables as documentation.** Every logic operation has a truth table wi\"",
+        "line": 1365
+      },
+      {
+        "file": "blue_lantern_cmos_party_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"3. **Study NAND and NOR as the universal gates.** NAND and NOR alone can implement any boo\"",
+        "line": 1367
+      },
+      {
+        "file": "blue_lantern_cmos_party_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"4. **Use XOR as a rhythmic subtraction tool.** XOR outputs HIGH when the inputs differ. Th\"",
+        "line": 1369
+      },
+      {
+        "file": "blue_lantern_cmos_party_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"6. **Build a patch using only boolean logic for all rhythmic relationships.** No clock div\"",
+        "line": 1373
+      },
+      {
+        "file": "doepfer_a124_wasp_se_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"**The Wasp SE rewards progressive exploration — its aggression is a feature, not a flaw to\"",
+        "line": 501
+      },
+      {
+        "file": "doepfer_a124_wasp_se_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"2. **Study self-oscillation as a sound source.** Push RESONANCE past the threshold until t\"",
+        "line": 505
+      },
+      {
+        "file": "doepfer_a124_wasp_se_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"4. **Compare the Wasp SE against a cleaner filter back to back.** The Wasp's CMOS nonlinea\"",
+        "line": 509
+      },
+      {
+        "file": "doepfer_a124_wasp_se_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"6. **Graduate to filter comparison work with other aggressive filters.** Once the Wasp cha\"",
+        "line": 513
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"1. **Start in one unquantized mode and learn its specific behavior.** The nine modes are n\"",
+        "line": 313
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"2. **Learn what DRAG actually controls before touching SIZE.** DRAG is the parameter that \"",
+        "line": 315
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"5. **Study the Reflect loop as a feedback path.** Patching the output back to the Reflect \"",
+        "line": 321
+      },
+      {
+        "file": "endorphines_ghost_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"This is the most common starting confusion, and it usually means the individual processors\"",
+        "line": 2066
+      },
+      {
+        "file": "endorphines_ghost_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"The FX section is the most obvious entry point, but using only FX misses GHOST's architect\"",
+        "line": 2069
+      },
+      {
+        "file": "endorphines_ghost_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"Either the patch isn't sending audio through GHOST (check the dry/wet balance — if DRY is \"",
+        "line": 2072
+      },
+      {
+        "file": "endorphines_ghost_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"GHOST has CV inputs for routing-relevant parameters across all three sections. If you're t\"",
+        "line": 2075
+      },
+      {
+        "file": "endorphines_ghost_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"This technique requires the delay to be set at audio rates — the delay time must be very s\"",
+        "line": 2078
+      },
+      {
+        "file": "endorphines_ghost_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"**GHOST rewards systematic exploration over random experimentation. The routing orders are\"",
+        "line": 2084
+      },
+      {
+        "file": "endorphines_ghost_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"2. **Master the pre-VCA control before exploring deep modulation.** The pre-VCA is the gai\"",
+        "line": 2088
+      },
+      {
+        "file": "endorphines_ghost_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"4. **Explore the Karplus-Strong synthesis capability as a dedicated study.** Running the d\"",
+        "line": 2092
+      },
+      {
+        "file": "endorphines_ghost_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"6. **Study the sidechain input for dynamics-driven processing.** The sidechain input lets \"",
+        "line": 2096
+      },
+      {
+        "file": "endorphines_ghost_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"- **Any VCO/complex oscillator:** GHOST can transform any audio source — its routing flexi\"",
+        "line": 2109
+      },
+      {
+        "file": "endorphines_squawk_dirty_to_me_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"1. **Start with Mode I (Moog Ladder) as your reference point.** The transistor ladder is t\"",
+        "line": 495
+      },
+      {
+        "file": "endorphines_squawk_dirty_to_me_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"2. **Spend a dedicated session on each remaining filter type.** The character difference b\"",
+        "line": 497
+      },
+      {
+        "file": "endorphines_squawk_dirty_to_me_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"3. **Learn what META CV scanning actually does.** Patching a slow LFO into the META CV inp\"",
+        "line": 499
+      },
+      {
+        "file": "endorphines_squawk_dirty_to_me_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"4. **Use the series High-Pass Filter as a second filter.** The HPF input is a full additio\"",
+        "line": 501
+      },
+      {
+        "file": "intellijel_stomp_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"### **\"The pedal isn't doing anything — signal is bypassed!\"**\"",
+        "line": 238
+      },
+      {
+        "file": "intellijel_stomp_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"**Why it happens:** Expression pedals expect TRS (stereo) cable connections, not TS (mono)\"",
+        "line": 243
+      },
+      {
+        "file": "intellijel_stomp_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"**Solution:** Check the pedal's own mix or effects level control first. Stomp's MIX only b\"",
+        "line": 248
+      },
+      {
+        "file": "intellijel_stomp_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"### **\"The LFO automation sounds robotic — no variation!\"**\"",
+        "line": 254
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"1. **Start with a single oscillator in simple mode.** Run WAVE mode with a saw wave, tune \"",
+        "line": 662
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"2. **Understand the difference between WAVE, ENV, and PAT modes.** These three modes chang\"",
+        "line": 664
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"3. **Use PAT mode as a polyrhythmic gate source.** The euclidean gate outputs in PAT mode \"",
+        "line": 666
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"4. **Study the HARM# / SERIES control to understand preset harmonic relationships.** The 1\"",
+        "line": 668
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"5. **Explore the quantizer function.** Mob of Emus can quantize external CV to its current\"",
+        "line": 670
+      },
+      {
+        "file": "turing_machine_ecosystem_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"1. **Spend time only at the probability extremes before touching the middle.** At fully cl\"",
+        "line": 213
+      },
+      {
+        "file": "turing_machine_ecosystem_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"3. **Add the Volts expander before the Pulses expander.** Volts generates CV from the same\"",
+        "line": 217
+      }
+    ],
+    "color_labels": [
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Clock Source → RCD Clock In | Gate (Yellow) | **Master timing input** | **Understand clo\"",
+        "line": 194
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| RCD Output 1 → Kick Trigger | Gate (Yellow) | **Same speed as input** | **Experience /1 \"",
+        "line": 195
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| RCD Output 2 → Snare Trigger | Gate (Yellow) | **Half speed (backbeat)** | **Learn /2 di\"",
+        "line": 196
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| RCD Output 3 → Percussion | Gate (Yellow) | **Triplet feel** | **Experience /3 polyrhyth\"",
+        "line": 197
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| RCD Output 5 → Hi-hat Trigger | Gate (Yellow) | **Complex 5-against-4** | **Learn odd nu\"",
+        "line": 198
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Slow LFO → Rotate CV | CV (Blue) | **Pattern evolution** | **Understand rotation concept\"",
+        "line": 199
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Fast Clock → RCD Clock In | Gate (Yellow) | **High-resolution timing** | **32nd notes fo\"",
+        "line": 269
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| RCD Output 2 → Arpeggiator 1 | Gate (Yellow) | **16th note arpeggios** | **Standard arpe\"",
+        "line": 270
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| RCD Output 4 → Arpeggiator 2 | Gate (Yellow) | **8th note arpeggios** | **Slower, more d\"",
+        "line": 271
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| RCD Output 6 → Bass Sequencer | Gate (Yellow) | **Long intervals** | **Slow bass foundat\"",
+        "line": 272
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Stepped Random → Rotate CV | CV (Blue) | **Sudden pattern shifts** | **Rhythmic \"gear ch\"",
+        "line": 273
+      },
+      {
+        "file": "4ms_rcd_v2_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Main Sequencer → Reset | Gate (Yellow) | **Structure maintenance** | **Keep polyrhythms \"",
+        "line": 274
+      },
+      {
+        "file": "atovproject_lx-euclid_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"**Channel selection buttons (4):** Four buttons below the display, color-coded left to rig\"",
+        "line": 58
+      },
+      {
+        "file": "blue_lantern_cmos_party_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Master Clock → Input A | Gate (Yellow) | Primary timing reference |\"",
+        "line": 481
+      },
+      {
+        "file": "blue_lantern_cmos_party_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Divided Clock → Input B | Gate (Yellow) | Secondary timing for comparison |\"",
+        "line": 482
+      },
+      {
+        "file": "blue_lantern_cmos_party_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| AND Out → Kick Drum | Gate (Yellow) | Triggers only when both clocks align |\"",
+        "line": 483
+      },
+      {
+        "file": "blue_lantern_cmos_party_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| OR Out → Hi-hat | Gate (Yellow) | Triggers when either clock is active |\"",
+        "line": 484
+      },
+      {
+        "file": "blue_lantern_cmos_party_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| XOR Out → Snare | Gate (Yellow) | Alternating pattern between clocks |\"",
+        "line": 485
+      },
+      {
+        "file": "blue_lantern_cmos_party_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Inv A Out → Off-beat | Gate (Yellow) | Triggers between main clock beats |\"",
+        "line": 486
+      },
+      {
+        "file": "cre8audio_function_junction_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Gate Source → A IN JACK | Gate (Yellow) | **Trigger envelope** | **Understand gate-to-en\"",
+        "line": 267
+      },
+      {
+        "file": "cre8audio_function_junction_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| A OUT JACK → VCA CV | CV (Blue) | **Control amplitude** | **Learn envelope modulation ba\"",
+        "line": 268
+      },
+      {
+        "file": "cre8audio_function_junction_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Audio Source → VCA Audio In | Audio (Red) | **Signal to be shaped** | **Complete signal \"",
+        "line": 269
+      },
+      {
+        "file": "cre8audio_function_junction_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| øchd LFO 2 → F MOD CV | CV (Blue) | **Organic envelope shaping** | **Modulation processi\"",
+        "line": 328
+      },
+      {
+        "file": "cre8audio_function_junction_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| øchd Trigger 1 → F IN JACK | Gate (Yellow) | **Organic timing** | **Non-mechanical funct\"",
+        "line": 329
+      },
+      {
+        "file": "cre8audio_function_junction_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| øchd LFO 6 → LFO Rate CV | CV (Blue) | **Tempo modulation** | **Organic LFO speed contro\"",
+        "line": 330
+      },
+      {
+        "file": "cre8audio_function_junction_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| F OUT JACK → Filter Cutoff | CV (Blue) | **Shaped filter modulation** | **Musical envelo\"",
+        "line": 331
+      },
+      {
+        "file": "cre8audio_function_junction_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| L TRI JACK → Oscillator PWM | CV (Blue) | **Pulse width modulation** | **Organic timbral\"",
+        "line": 332
+      },
+      {
+        "file": "divkid_ochd_and_expander_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| LFO 1 → Oscillator FM | CV (Blue) | **Fast modulation** | **Experience fastest LFO speed\"",
+        "line": 102
+      },
+      {
+        "file": "divkid_ochd_and_expander_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| LFO 4 → Filter Cutoff | CV (Blue) | **Medium-speed sweeps** | **Learn mid-range modulati\"",
+        "line": 103
+      },
+      {
+        "file": "divkid_ochd_and_expander_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| LFO 8 → VCA CV | CV (Blue) | **Slow amplitude changes** | **Understand slowest LFO behav\"",
+        "line": 104
+      },
+      {
+        "file": "divkid_ochd_and_expander_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Full Wave Rect 1 → Oscillator 1V/Oct | CV (Blue) | **Unipolar pitch modulation** | **Alw\"",
+        "line": 155
+      },
+      {
+        "file": "divkid_ochd_and_expander_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Full Wave Rect 3 → Effects Filter CV | CV (Blue) | **Positive filter sweeps** | **Only o\"",
+        "line": 156
+      },
+      {
+        "file": "divkid_ochd_and_expander_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| DAC Output A → Delay Time | CV (Blue) | **Stepped random delays** | **Quantized time mod\"",
+        "line": 157
+      },
+      {
+        "file": "divkid_ochd_and_expander_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Min Output → Effects Mix CV | CV (Blue) | **Smooth dynamics control** | **Logic-based mi\"",
+        "line": 158
+      },
+      {
+        "file": "doepfer_a124_wasp_se_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Oscillator → Wasp Audio In | Audio (Red) | **Rich harmonics for aggressive filtering** |\"",
+        "line": 172
+      },
+      {
+        "file": "doepfer_a124_wasp_se_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Envelope → Wasp Cutoff CV | CV (Blue) | **Classic filter modulation** | **Learn filter s\"",
+        "line": 173
+      },
+      {
+        "file": "doepfer_a124_wasp_se_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Wasp Out → VCA Audio In | Audio (Red) | **Filtered aggressive bass output** | **Understa\"",
+        "line": 174
+      },
+      {
+        "file": "doepfer_a124_wasp_se_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Sequencer → Wasp Cutoff CV | CV (Blue) | **Melodic self-oscillation control** | **Experi\"",
+        "line": 206
+      },
+      {
+        "file": "doepfer_a124_wasp_se_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| LFO → Wasp Resonance CV | CV (Blue) | **Dynamic aggression modulation** | **Learn resona\"",
+        "line": 207
+      },
+      {
+        "file": "doepfer_a124_wasp_se_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Wasp Out → Effects | Audio (Red) | **Pure sine wave self-oscillation** | **Understand se\"",
+        "line": 208
+      },
+      {
+        "file": "doepfer_a124_wasp_se_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Drum Source → Wasp Audio In | Audio (Red) | **Drum signal processing** | **Experience ag\"",
+        "line": 242
+      },
+      {
+        "file": "doepfer_a124_wasp_se_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Trigger → Wasp Cutoff CV | Gate (Yellow) | **Gate-controlled filter sweep** | **Learn tr\"",
+        "line": 243
+      },
+      {
+        "file": "doepfer_a124_wasp_se_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Wasp Out → Drum Output | Audio (Red) | **Aggressive processed drums** | **Understand fil\"",
+        "line": 244
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Audio Source → Afterneath In | Audio (Red) | **Rich harmonic content for texture generat\"",
+        "line": 138
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Afterneath Out → Monitor | Audio (Red) | **Processed signal to monitoring system** | **H\"",
+        "line": 139
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Audio Source → Afterneath In | Audio (Red) | **Audio source for texture processing** | *\"",
+        "line": 177
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| LFO → Drag CV | CV (Blue) | **Oscillating modulation of Drag parameter** | **Learn how p\"",
+        "line": 178
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Envelope → Length CV | CV (Blue) | **Dynamic control of reverb decay time** | **Understa\"",
+        "line": 179
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Reflect Send → Filter Input | Audio (Red) | **Feedback path sent to external filter** | \"",
+        "line": 180
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Filter Output → Reflect Return | Audio (Red) | **Filtered feedback returning to reverb**\"",
+        "line": 181
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Afterneath Out → Monitor | Audio (Red) | **Processed, modulated texture to output** | **\"",
+        "line": 182
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Keyboard/Seq CV → Drag CV | CV (Blue) | **1V/octave pitch control** | **Learn Afterneath\"",
+        "line": 221
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Envelope → VCA In | CV (Blue) | **Amplitude envelope for note articulation** | **Underst\"",
+        "line": 222
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Afterneath Out → VCA In | Audio (Red) | **Self-oscillating sine tone to VCA** | **Experi\"",
+        "line": 223
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| VCA Out → Output | Audio (Red) | **Envelope-shaped oscillator output** | **Hear how ampl\"",
+        "line": 224
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Audio Source → Afterneath In | Audio (Red) | **Source audio for ambient texture processi\"",
+        "line": 281
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Multi-LFO → Drag/Length/Diffuse CV | CV (Blue) | **Multiple simultaneous parameter modul\"",
+        "line": 282
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Afterneath Main Out → L Channel | Audio (Red) | **Dry direct signal to left channel** | \"",
+        "line": 283
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Reflect Send → Multiple/Router | Audio (Red) | **Feedback path split for external proces\"",
+        "line": 284
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| External Processing Out → Reflect Return | Audio (Red) | **Processed feedback returning \"",
+        "line": 285
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Reflect Send (alternate) → R Channel | Audio (Red) | **Unprocessed feedback to right cha\"",
+        "line": 286
+      },
+      {
+        "file": "earthquaker_devices_afterneath_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Stereo Mixer Out → Final Output | Audio (Red) | **Stereo-imaged, professionally mixed ou\"",
+        "line": 287
+      },
+      {
+        "file": "endorphines_squawk_dirty_to_me_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| VCO Audio → Squawk IN 1 | Audio (Red) | Any oscillator or audio source |\"",
+        "line": 209
+      },
+      {
+        "file": "endorphines_squawk_dirty_to_me_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Squawk OUT 1 → Mixer | Audio (Red) | Filtered audio output |\"",
+        "line": 210
+      },
+      {
+        "file": "erica_synths_pico_dsp_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjustin\"",
+        "line": 292
+      },
+      {
+        "file": "erica_synths_pico_voice_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"- **Algorithm:** Chords (Yellow)\"",
+        "line": 140
+      },
+      {
+        "file": "erica_synths_pico_voice_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"- **Algorithm:** Bassline (Blue)\"",
+        "line": 153
+      },
+      {
+        "file": "erica_synths_pico_voice_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"- **Algorithm:** Wavetable (Green)\"",
+        "line": 166
+      },
+      {
+        "file": "expert_sleepers_disting_mk4_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Random CV → Disting X Input | CV (Blue) | Unquantized pitch CV |\"",
+        "line": 218
+      },
+      {
+        "file": "expert_sleepers_disting_mk4_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Disting A Out → Oscillator V/OCT | CV (Blue) | Quantized to musical scale |\"",
+        "line": 219
+      },
+      {
+        "file": "expert_sleepers_disting_mk4_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Disting B Out → Envelope Trigger | Gate (Yellow) | Fires on note changes |\"",
+        "line": 220
+      },
+      {
+        "file": "expert_sleepers_disting_mk4_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Audio Source → X Input | Audio (Red) | **Signal to be processed** | **Resonant filtering\"",
+        "line": 279
+      },
+      {
+        "file": "expert_sleepers_disting_mk4_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Clock/LFO → Y Input | CV (Blue) | **Frequency modulation** | **Dynamic resonance control\"",
+        "line": 280
+      },
+      {
+        "file": "expert_sleepers_disting_mk4_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| A Output → Effects Audio | Audio (Red) | **Processed signal** | **Resonant audio charact\"",
+        "line": 281
+      },
+      {
+        "file": "expert_sleepers_disting_mk4_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| B Output → Effects Mod | CV (Blue) | **Envelope follower CV** | **Audio-reactive modulat\"",
+        "line": 282
+      },
+      {
+        "file": "instruo_arbhar_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Audio Source → Arbhar IN | Audio (Red) | Any audio source - voice, instrument, field rec\"",
+        "line": 178
+      },
+      {
+        "file": "instruo_arbhar_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Arbhar OUT 1,2 → Final Output | Audio (Red) | Stereo granular processing |\"",
+        "line": 179
+      },
+      {
+        "file": "make_noise_maths_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Sequencer Gate → Maths Ch1 TRIG | Gate (Yellow) | Triggers envelope on each step |\"",
+        "line": 304
+      },
+      {
+        "file": "make_noise_maths_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Maths Ch1 UNITY → VCA CV In | CV (Blue) | Controls amplitude |\"",
+        "line": 305
+      },
+      {
+        "file": "make_noise_wogglebug_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Stepped → Oscillator 1V/Oct | CV (Blue) | **Random pitch control** | **Experience discre\"",
+        "line": 202
+      },
+      {
+        "file": "make_noise_wogglebug_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Smooth → Filter Cutoff | CV (Blue) | **Continuous filter sweeps** | **Learn smooth rando\"",
+        "line": 203
+      },
+      {
+        "file": "mutable_marbles_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Marbles X1 → Oscillator 1V/Oct | CV (Blue) | **Random pitch control** | **Creates evolvi\"",
+        "line": 138
+      },
+      {
+        "file": "mutable_marbles_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Marbles t2 → Envelope Trigger | Gate (Yellow) | **Rhythmic triggering** | **Main beat wi\"",
+        "line": 139
+      },
+      {
+        "file": "mutable_marbles_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Oscillator Audio → VCA Audio | Audio (Red) | **Signal path** | **Complete voice chain** \"",
+        "line": 140
+      },
+      {
+        "file": "mutable_marbles_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Envelope Out → VCA CV | CV (Blue) | **Amplitude shaping** | **Musical note envelopes** |\"",
+        "line": 141
+      },
+      {
+        "file": "mutable_marbles_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Marbles t1 → Kick Trigger | Gate (Yellow) | **Main beat generator** | **Foundational rhy\"",
+        "line": 277
+      },
+      {
+        "file": "mutable_marbles_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Marbles t2 → Snare Trigger | Gate (Yellow) | **Secondary rhythm** | **Syncopated pattern\"",
+        "line": 278
+      },
+      {
+        "file": "mutable_marbles_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Marbles t3 → Hihat Trigger | Gate (Yellow) | **Tertiary rhythm** | **Complex polyrhythms\"",
+        "line": 279
+      },
+      {
+        "file": "mutable_marbles_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Marbles Y → Marbles DEJA VU CV | CV (Blue) | **Self-modulation** | **Evolving memory pat\"",
+        "line": 280
+      },
+      {
+        "file": "mutable_plaits_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Keyboard V/OCT → Plaits V/OCT | CV (Blue) | Pitch tracking |\"",
+        "line": 133
+      },
+      {
+        "file": "mutable_plaits_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Keyboard Gate → Envelope Trig | Gate (Yellow) | Triggers envelope |\"",
+        "line": 134
+      },
+      {
+        "file": "mutable_plaits_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Envelope Out → Plaits LEVEL | CV (Blue) | Controls internal LPG |\"",
+        "line": 135
+      },
+      {
+        "file": "mutable_plaits_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Plaits OUT → Audio destination | Audio (Red) | Main output |\"",
+        "line": 136
+      },
+      {
+        "file": "mutable_plaits_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Clock/Sequencer → Plaits TRIG | Gate (Yellow) | Triggers percussion sounds |\"",
+        "line": 174
+      },
+      {
+        "file": "mutable_plaits_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Plaits OUT → Mixer/Audio Out | Audio (Red) | Complete drum sounds |\"",
+        "line": 175
+      },
+      {
+        "file": "mutable_plaits_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| LFO → Plaits MORPH CV | CV (Blue) | Modulates phoneme selection |\"",
+        "line": 282
+      },
+      {
+        "file": "mutable_plaits_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Trigger Seq → Plaits TRIG | Gate (Yellow) | Triggers speech utterances |\"",
+        "line": 283
+      },
+      {
+        "file": "mutable_plaits_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Plaits OUT → Reverb | Audio (Red) | Main speech synthesis |\"",
+        "line": 284
+      },
+      {
+        "file": "mutable_plaits_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Plaits AUX → Reverb | Audio (Red) | Alternative formants |\"",
+        "line": 285
+      },
+      {
+        "file": "mutable_rings_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| 1V/Oct CV → V/OCT Input | CV (Blue) | **Harmonic pitch tracking** | **Learn physical mod\"",
+        "line": 153
+      },
+      {
+        "file": "mutable_rings_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Gate/Trigger → STRUM Input | Gate (Yellow) | **Trigger resonant bursts** | **Experience \"",
+        "line": 154
+      },
+      {
+        "file": "mutable_rings_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| ODD Output → Left Mix | Audio (Red) | **Odd harmonics** | **Understand harmonic separati\"",
+        "line": 155
+      },
+      {
+        "file": "mutable_rings_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| EVEN Output → Right Mix | Audio (Red) | **Even harmonics** | **Stereo harmonic imaging**\"",
+        "line": 156
+      },
+      {
+        "file": "qubit_bloom_v1_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"3. **Press CHANNEL button** until Channel A LED (blue) lights up\"",
+        "line": 24
+      },
+      {
+        "file": "qubit_bloom_v1_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"- **Press CHANNEL button** to switch between A (blue) and B (green)\"",
+        "line": 333
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| LFO → MOE H.GAIN CV | CV (Blue) | Rhythmic harmonic intensity |\"",
+        "line": 173
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Envelope → MOE Full CV Freq | CV (Blue) | Pitch modulation |\"",
+        "line": 174
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| MOE Mix Out → Filter Audio In | Audio (Red) | Rich additive signal |\"",
+        "line": 175
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Filter Out → VCA Audio In | Audio (Red) | Filtered harmonics |\"",
+        "line": 176
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Tap/Trig → MOE Sync Input | Clock (Yellow) | Sets tempo for all channels |\"",
+        "line": 212
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| MOE Ch1 → VCA 1 CV Input | CV (Blue) | 1x tempo (fundamental) |\"",
+        "line": 213
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| MOE Ch2 → VCA 2 CV Input | CV (Blue) | 2x tempo (half notes) |\"",
+        "line": 214
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| MOE Ch3 → Filter CV Input | CV (Blue) | 4x tempo (quarter notes) |\"",
+        "line": 215
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| MOE Ch4 → LFO Rate CV | CV (Blue) | 8x tempo (eighth notes) |\"",
+        "line": 216
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| MOE Ch5 → Oscillator Pitch | CV (Blue) | 16x tempo (sixteenth notes) |\"",
+        "line": 217
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| MOE Ch6 → Effect Parameter | CV (Blue) | 32x tempo (thirty-second notes) |\"",
+        "line": 218
+      },
+      {
+        "file": "vpme_qd_qex_drum_workstation_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis\"",
+        "line": 66
+      },
+      {
+        "file": "vpme_qd_qex_drum_workstation_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"- **Voice 2 (Red):** Typically snares - wide percussion synthesis range\"",
+        "line": 67
+      },
+      {
+        "file": "vpme_qd_qex_drum_workstation_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
+        "line": 68
+      },
+      {
+        "file": "vpme_qd_qex_drum_workstation_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis\"",
+        "line": 69
+      },
+      {
+        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"- **Voice 1 (Blue):** Typically kick drums - full range analog synthesis\"",
+        "line": 65
+      },
+      {
+        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"- **Voice 2 (Red):** Typically snare - wide range of percussion synthesis\"",
+        "line": 66
+      },
+      {
+        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
+        "line": 67
+      },
+      {
+        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"- **Voice 4 (Green):** Typically percussion - flexible synthesis for any drum sound\"",
+        "line": 68
+      },
+      {
+        "file": "winterbloom_castor_pollux_ii_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| 1V/Oct CV → Castor PITCH | CV (Blue) | Keyboard or sequencer pitch control |\"",
+        "line": 136
+      },
+      {
+        "file": "winterbloom_castor_pollux_ii_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"| Castor OUT → Filter | Audio (Red) | Classic Juno sawtooth tone |\"",
+        "line": 137
+      }
+    ],
+    "why_excels_order": [
+      {
+        "file": "bizarre_jezabel_pkhia_mk2_guide.md",
+        "check_id": "why_excels_order",
+        "category": "Missing or Misplaced Sections",
+        "severity": "error",
+        "detail": "`Why This Excels` (line 577) appears AFTER first patch heading (line 113); must precede patch examples"
+      },
+      {
+        "file": "divkid_ochd_and_expander_guide.md",
+        "check_id": "why_excels_order",
+        "category": "Missing or Misplaced Sections",
+        "severity": "error",
+        "detail": "`Why This Excels` (line 513) appears AFTER first patch heading (line 80); must precede patch examples"
+      },
+      {
+        "file": "erica_synths_pico_lfo_sh_guide.md",
+        "check_id": "why_excels_order",
+        "category": "Missing or Misplaced Sections",
+        "severity": "error",
+        "detail": "`Why This Excels` (line 275) appears AFTER first patch heading (line 104); must precede patch examples"
+      },
+      {
+        "file": "erica_synths_pico_vca2_guide.md",
+        "check_id": "why_excels_order",
+        "category": "Missing or Misplaced Sections",
+        "severity": "error",
+        "detail": "`Why This Excels` (line 330) appears AFTER first patch heading (line 107); must precede patch examples"
+      },
+      {
+        "file": "erica_synths_pico_voice_guide.md",
+        "check_id": "why_excels_order",
+        "category": "Missing or Misplaced Sections",
+        "severity": "error",
+        "detail": "`Why This Excels` (line 506) appears AFTER first patch heading (line 139); must precede patch examples"
+      }
+    ],
+    "yaml_hp": [
+      {
+        "file": "cre8audio_chipz_cellz_niftycase_bundle_guide.md",
+        "check_id": "yaml_hp",
+        "category": "YAML Frontmatter",
+        "severity": "warning",
+        "detail": "Missing `hp` field"
+      },
+      {
+        "file": "turing_machine_ecosystem_guide.md",
+        "check_id": "yaml_hp",
+        "category": "YAML Frontmatter",
+        "severity": "warning",
+        "detail": "Missing `hp` field"
+      },
+      {
+        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
+        "check_id": "yaml_hp",
+        "category": "YAML Frontmatter",
+        "severity": "warning",
+        "detail": "Missing `hp` field"
+      }
+    ],
+    "emoji_labels": [
+      {
+        "file": "dspcoffee_kali_guide.md",
+        "check_id": "emoji_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old emoji color label: \"🔴 **Audio** │ 🔵 **CV** │ 🟡 **Gate**\"",
+        "line": 76
+      },
+      {
+        "file": "endorphines_ground_control_guide.md",
+        "check_id": "emoji_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old emoji color label: \"🔴 **Audio** │ 🔵 **CV** │ 🟡 **Gate**\"",
+        "line": 81
+      },
+      {
+        "file": "erica_synths_pico_dsp_guide.md",
+        "check_id": "emoji_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old emoji color label: \"### **🔴 RED - Mono Delay**\"",
+        "line": 88
+      },
+      {
+        "file": "erica_synths_pico_dsp_guide.md",
+        "check_id": "emoji_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old emoji color label: \"### **🟡 YELLOW - Pitch Shift Delay**\"",
+        "line": 94
+      },
+      {
+        "file": "erica_synths_pico_voice_guide.md",
+        "check_id": "emoji_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old emoji color label: \"### **🔴 RED - Karplus Strong (Plucked Strings)**\"",
+        "line": 87
+      },
+      {
+        "file": "erica_synths_pico_voice_guide.md",
+        "check_id": "emoji_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old emoji color label: \"### **🟡 YELLOW - Chords (Harmonic Stacks)**\"",
+        "line": 93
+      }
+    ],
+    "why_section_old_wording": [
+      {
+        "file": "erica_synths_black_polyvoks_vcf_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 630
+      },
+      {
+        "file": "erica_synths_pico_dsp_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 138
+      },
+      {
+        "file": "make_noise_pressure_points_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why Pressure Points Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 344
+      },
+      {
+        "file": "make_noise_wogglebug_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 51
+      },
+      {
+        "file": "mordax_data_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 90
+      },
+      {
+        "file": "mutable_marbles_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 77
+      },
+      {
+        "file": "mutable_plaits_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 75
+      },
+      {
+        "file": "mutable_rings_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 74
+      },
+      {
+        "file": "noise_engineering_loquelic_iteritas_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 324
+      },
+      {
+        "file": "patching_panda_moon_phase_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 443
+      },
+      {
+        "file": "patching_panda_punch_v3_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 463
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 116
+      },
+      {
+        "file": "soma_lyra8_fx_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 457
+      },
+      {
+        "file": "squarp_hermod_plus_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 80
+      },
+      {
+        "file": "tiptop_audio_forbidden_planet_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 325
+      },
+      {
+        "file": "turing_machine_ecosystem_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Ecosystem Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 127
+      },
+      {
+        "file": "vpme_qd_qex_drum_workstation_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Workstation Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 622
+      },
+      {
+        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Ecosystem Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 315
+      },
+      {
+        "file": "winterbloom_castor_pollux_ii_guide.md",
+        "check_id": "why_section_old_wording",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Gen-1 'Rocks' wording: \"Why This Module Rocks\" — rename to `## Why [Module] Excels`",
+        "line": 83
+      }
+    ],
+    "alp_variant_heading": [
+      {
+        "file": "erica_synths_pico_dsp_guide.md",
+        "check_id": "alp_variant_heading",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Non-standard ALP heading: \"## Multi-Function Learning Path\" (should be `## Advanced Learning Path`)",
+        "line": 430
+      },
+      {
+        "file": "erica_synths_pico_lfo_sh_guide.md",
+        "check_id": "alp_variant_heading",
+        "category": "Deferred Items",
+        "severity": "deferred",
+        "detail": "Non-standard ALP heading: \"## Multi-Function Learning Path\" (should be `## Advanced Learning Path`)",
+        "line": 306
+      }
+    ],
+    "section_why_excels": [
+      {
+        "file": "intellijel_stomp_guide.md",
+        "check_id": "section_why_excels",
+        "category": "Missing or Misplaced Sections",
+        "severity": "error",
+        "detail": "Missing `## Why [Module] Excels` section (no 'Why' heading found)"
+      }
+    ],
+    "section_common_mistakes": [
+      {
+        "file": "mordax_data_guide.md",
+        "check_id": "section_common_mistakes",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Common Mistakes` section"
+      },
+      {
+        "file": "mutable_marbles_guide.md",
+        "check_id": "section_common_mistakes",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Common Mistakes` section"
+      },
+      {
+        "file": "noise_engineering_loquelic_iteritas_guide.md",
+        "check_id": "section_common_mistakes",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Common Mistakes` section"
+      },
+      {
+        "file": "noise_engineering_numeric_repetitor_guide.md",
+        "check_id": "section_common_mistakes",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Common Mistakes` section"
+      },
+      {
+        "file": "noise_engineering_ruina_versio_guide.md",
+        "check_id": "section_common_mistakes",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Common Mistakes` section"
+      },
+      {
+        "file": "qubit_bloom_v1_guide.md",
+        "check_id": "section_common_mistakes",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Common Mistakes` section"
+      },
+      {
+        "file": "squarp_hermod_plus_guide.md",
+        "check_id": "section_common_mistakes",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Common Mistakes` section"
+      },
+      {
+        "file": "tiptop_audio_miso_guide.md",
+        "check_id": "section_common_mistakes",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Common Mistakes` section"
+      },
+      {
+        "file": "winterbloom_castor_pollux_ii_guide.md",
+        "check_id": "section_common_mistakes",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Common Mistakes` section"
+      }
+    ],
+    "section_pairs_well": [
+      {
+        "file": "mutable_marbles_guide.md",
+        "check_id": "section_pairs_well",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Pairs Well With` section"
+      }
+    ]
+  }
+}
