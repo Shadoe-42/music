@@ -8,6 +8,7 @@ functions: [fx-time, fx-modulation]
 behavior_tags: [evolving, clean, warm, nonlinear]
 use_cases: [evolving ambient texture, stereo signal processing, dark atmospheric layer]
 hp: 16
+historical_context: false
 ---
 
 # GHOST Module Guide

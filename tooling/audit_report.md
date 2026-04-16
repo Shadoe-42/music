@@ -9,11 +9,11 @@ Generated: 2026-04-15
 | Metric | Count |
 |--------|-------|
 | Guides scanned | 68 |
-| Guides with issues | 45 |
-| Guides clean | 23 |
-| Total issues | 71 |
+| Guides with issues | 40 |
+| Guides clean | 28 |
+| Total issues | 66 |
 | ❌ Errors (fix now) | 0 |
-| ⚠️  Warnings (fix when touching) | 70 |
+| ⚠️  Warnings (fix when touching) | 65 |
 | 📌 Deferred (tracked, low priority) | 1 |
 
 ---
@@ -38,14 +38,9 @@ Generated: 2026-04-15
 | `behringer_dual_envelope_generator_1003_utility_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `bizarre_jezabel_pkhia_mk2_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `blue_lantern_astroid_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `blue_lantern_cmos_party_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `cre8audio_chipz_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `cre8audio_function_junction_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `dspcoffee_kali_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `endorphines_blck_noir_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `endorphines_ghost_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `endorphines_ground_control_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `endorphines_queen_of_pentacles_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `erica_synths_black_envelope_generator_2_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `erica_synths_black_quad_vca2_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
@@ -134,9 +129,6 @@ Generated: 2026-04-15
 **`blue_lantern_astroid_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
-**`blue_lantern_cmos_party_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
 **`blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
@@ -146,19 +138,7 @@ Generated: 2026-04-15
 **`cre8audio_chipz_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
-**`cre8audio_function_junction_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`dspcoffee_kali_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
 **`endorphines_blck_noir_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`endorphines_ghost_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`endorphines_ground_control_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
 **`endorphines_queen_of_pentacles_guide.md`** — 1 warning
@@ -278,7 +258,7 @@ Generated: 2026-04-15
 
 ---
 
-## Clean Guides (23)
+## Clean Guides (28)
 
 No issues detected:
 
@@ -288,11 +268,16 @@ No issues detected:
 - `4ms_scm_plus_guide.md`
 - `after_later_audio_cloaks_guide.md`
 - `after_later_audio_mingles_guide.md`
+- `blue_lantern_cmos_party_guide.md`
 - `cre8audio_cellz_guide.md`
+- `cre8audio_function_junction_guide.md`
 - `divkid_ochd_and_expander_guide.md`
 - `doepfer_a124_wasp_se_guide.md`
 - `doepfer_a_130_2_guide.md`
+- `dspcoffee_kali_guide.md`
 - `earthquaker_devices_afterneath_guide.md`
+- `endorphines_ghost_guide.md`
+- `endorphines_ground_control_guide.md`
 - `endorphines_squawk_dirty_to_me_guide.md`
 - `erica_synths_black_polyvoks_vcf_guide.md`
 - `erica_synths_pico_drum2_guide.md`

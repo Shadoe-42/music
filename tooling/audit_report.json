@@ -2,11 +2,11 @@
   "generated": "2026-04-15",
   "summary": {
     "total_guides": 68,
-    "guides_with_issues": 45,
-    "guides_clean": 23,
-    "total_issues": 71,
+    "guides_with_issues": 40,
+    "guides_clean": 28,
+    "total_issues": 66,
     "error_count": 0,
-    "warning_count": 70,
+    "warning_count": 65,
     "deferred_count": 1
   },
   "guides": {
@@ -156,19 +156,12 @@
       ]
     },
     "blue_lantern_cmos_party_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md": {
       "clean": false,
@@ -224,19 +217,12 @@
       ]
     },
     "cre8audio_function_junction_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "divkid_ochd_and_expander_guide.md": {
       "clean": true,
@@ -263,19 +249,12 @@
       "issues": []
     },
     "dspcoffee_kali_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "earthquaker_devices_afterneath_guide.md": {
       "clean": true,
@@ -301,34 +280,20 @@
       ]
     },
     "endorphines_ghost_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "endorphines_ground_control_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "endorphines_queen_of_pentacles_guide.md": {
       "clean": false,
@@ -1087,13 +1052,6 @@
         "detail": "Missing `## Historical Context` section"
       },
       {
-        "file": "blue_lantern_cmos_party_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
         "file": "blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md",
         "check_id": "section_historical_context",
         "category": "Missing or Misplaced Sections",
@@ -1108,35 +1066,7 @@
         "detail": "Missing `## Historical Context` section"
       },
       {
-        "file": "cre8audio_function_junction_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "dspcoffee_kali_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
         "file": "endorphines_blck_noir_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "endorphines_ghost_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "endorphines_ground_control_guide.md",
         "check_id": "section_historical_context",
         "category": "Missing or Misplaced Sections",
         "severity": "warning",

@@ -8,6 +8,7 @@ functions: [logic-processor]
 behavior_tags: [stable, percussive, reactive, linear]
 use_cases: [trigger pattern generation, clock manipulation, audio rate logic processing]
 hp: 4
+historical_context: false
 ---
 
 # Blue Lantern CMOS Party - Guide

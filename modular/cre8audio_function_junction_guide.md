@@ -8,6 +8,7 @@ functions: [cv-processor, mixer, logic-processor]
 behavior_tags: [stable, linear, reactive]
 use_cases: [CV scaling and utility, audio mixing and routing, signal distribution]
 hp: 16
+historical_context: false
 ---
 
 # Cre8audio Function Junction - Beginner's Guide

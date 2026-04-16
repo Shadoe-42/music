@@ -10,6 +10,7 @@ use_cases: [evolving ambient texture, stereo signal processing, modulation sourc
 hp: 24
 memory: full
 screen: true
+historical_context: false
 ---
 
 # dsp.coffee Kali

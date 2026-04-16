@@ -11,6 +11,7 @@ hp: 42
 memory: full
 transport: full
 screen: true
+historical_context: false
 ---
 
 # Endorphin.es Ground Control
