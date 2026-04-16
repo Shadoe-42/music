@@ -9,11 +9,11 @@ Generated: 2026-04-15
 | Metric | Count |
 |--------|-------|
 | Guides scanned | 68 |
-| Guides with issues | 35 |
-| Guides clean | 33 |
-| Total issues | 60 |
+| Guides with issues | 32 |
+| Guides clean | 36 |
+| Total issues | 50 |
 | ❌ Errors (fix now) | 0 |
-| ⚠️  Warnings (fix when touching) | 59 |
+| ⚠️  Warnings (fix when touching) | 49 |
 | 📌 Deferred (tracked, low priority) | 1 |
 
 ---
@@ -50,29 +50,19 @@ Generated: 2026-04-15
 | `mutable_marbles_guide.md` | — | ⚠️  warning | Missing `## Pairs Well With` section |
 | `mutable_plaits_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `mutable_rings_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `noise_engineering_loquelic_iteritas_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `noise_engineering_loquelic_iteritas_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-| `noise_engineering_numeric_repetitor_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `noise_engineering_numeric_repetitor_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-| `noise_engineering_ruina_versio_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `noise_engineering_ruina_versio_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-| `patching_panda_moon_phase_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `patching_panda_punch_v3_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `qubit_bloom_v1_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `qubit_bloom_v1_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `rossum_electro_music_mob_of_emus_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `soma_lyra8_fx_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `squarp_hermod_plus_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `squarp_hermod_plus_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `tiptop_audio_forbidden_planet_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `tiptop_audio_miso_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `tiptop_audio_miso_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `turing_machine_ecosystem_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `vpme_qd_qex_drum_workstation_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `winterbloom_castor_pollux_ii_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `winterbloom_castor_pollux_ii_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-| `xaoc_devices_zadar_nin_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 
 ### Format Issues
 
@@ -83,12 +73,12 @@ Generated: 2026-04-15
 | `erica_synths_pico_voice_guide.md` | 172 | ⚠️  warning | Old color label: "- **Algorithm:** Chords (Yellow)" |
 | `erica_synths_pico_voice_guide.md` | 185 | ⚠️  warning | Old color label: "- **Algorithm:** Bassline (Blue)" |
 | `erica_synths_pico_voice_guide.md` | 198 | ⚠️  warning | Old color label: "- **Algorithm:** Wavetable (Green)" |
-| `qubit_bloom_v1_guide.md` | 29 | ⚠️  warning | Old color label: "3. **Press CHANNEL button** until Channel A LED (blue) lights up" |
-| `qubit_bloom_v1_guide.md` | 338 | ⚠️  warning | Old color label: "- **Press CHANNEL button** to switch between A (blue) and B (green)" |
-| `vpme_qd_qex_drum_workstation_guide.md` | 73 | ⚠️  warning | Old color label: "- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis" |
-| `vpme_qd_qex_drum_workstation_guide.md` | 74 | ⚠️  warning | Old color label: "- **Voice 2 (Red):** Typically snares - wide percussion synthesis range" |
-| `vpme_qd_qex_drum_workstation_guide.md` | 75 | ⚠️  warning | Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" |
-| `vpme_qd_qex_drum_workstation_guide.md` | 76 | ⚠️  warning | Old color label: "- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis" |
+| `qubit_bloom_v1_guide.md` | 30 | ⚠️  warning | Old color label: "3. **Press CHANNEL button** until Channel A LED (blue) lights up" |
+| `qubit_bloom_v1_guide.md` | 339 | ⚠️  warning | Old color label: "- **Press CHANNEL button** to switch between A (blue) and B (green)" |
+| `vpme_qd_qex_drum_workstation_guide.md` | 74 | ⚠️  warning | Old color label: "- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis" |
+| `vpme_qd_qex_drum_workstation_guide.md` | 75 | ⚠️  warning | Old color label: "- **Voice 2 (Red):** Typically snares - wide percussion synthesis range" |
+| `vpme_qd_qex_drum_workstation_guide.md` | 76 | ⚠️  warning | Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" |
+| `vpme_qd_qex_drum_workstation_guide.md` | 77 | ⚠️  warning | Old color label: "- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis" |
 | `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | 69 | ⚠️  warning | Old color label: "- **Voice 1 (Blue):** Typically kick drums - full range analog synthesis" |
 | `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | 70 | ⚠️  warning | Old color label: "- **Voice 2 (Red):** Typically snare - wide range of percussion synthesis" |
 | `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | 71 | ⚠️  warning | Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" |
@@ -167,29 +157,19 @@ Generated: 2026-04-15
 **`mutable_rings_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
-**`noise_engineering_loquelic_iteritas_guide.md`** — 2 warnings
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
+**`noise_engineering_loquelic_iteritas_guide.md`** — 1 warning
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
-**`noise_engineering_numeric_repetitor_guide.md`** — 2 warnings
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
+**`noise_engineering_numeric_repetitor_guide.md`** — 1 warning
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
-**`noise_engineering_ruina_versio_guide.md`** — 2 warnings
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
+**`noise_engineering_ruina_versio_guide.md`** — 1 warning
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
-**`patching_panda_moon_phase_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`patching_panda_punch_v3_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`qubit_bloom_v1_guide.md`** — 4 warnings
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
+**`qubit_bloom_v1_guide.md`** — 3 warnings
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
-  - ⚠️ `color_labels` — Old color label: "3. **Press CHANNEL button** until Channel A LED (blue) lights up" *(line 29)*
-  - ⚠️ `color_labels` — Old color label: "- **Press CHANNEL button** to switch between A (blue) and B (green)" *(line 338)*
+  - ⚠️ `color_labels` — Old color label: "3. **Press CHANNEL button** until Channel A LED (blue) lights up" *(line 30)*
+  - ⚠️ `color_labels` — Old color label: "- **Press CHANNEL button** to switch between A (blue) and B (green)" *(line 339)*
 
 **`rossum_electro_music_mob_of_emus_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
@@ -197,27 +177,24 @@ Generated: 2026-04-15
 **`soma_lyra8_fx_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
-**`squarp_hermod_plus_guide.md`** — 2 warnings
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
+**`squarp_hermod_plus_guide.md`** — 1 warning
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
 **`tiptop_audio_forbidden_planet_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
-**`tiptop_audio_miso_guide.md`** — 2 warnings
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
+**`tiptop_audio_miso_guide.md`** — 1 warning
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
 **`turing_machine_ecosystem_guide.md`** — 2 warnings
   - ⚠️ `yaml_hp` — Missing `hp` field
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
-**`vpme_qd_qex_drum_workstation_guide.md`** — 5 warnings
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-  - ⚠️ `color_labels` — Old color label: "- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis" *(line 73)*
-  - ⚠️ `color_labels` — Old color label: "- **Voice 2 (Red):** Typically snares - wide percussion synthesis range" *(line 74)*
-  - ⚠️ `color_labels` — Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" *(line 75)*
-  - ⚠️ `color_labels` — Old color label: "- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis" *(line 76)*
+**`vpme_qd_qex_drum_workstation_guide.md`** — 4 warnings
+  - ⚠️ `color_labels` — Old color label: "- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis" *(line 74)*
+  - ⚠️ `color_labels` — Old color label: "- **Voice 2 (Red):** Typically snares - wide percussion synthesis range" *(line 75)*
+  - ⚠️ `color_labels` — Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" *(line 76)*
+  - ⚠️ `color_labels` — Old color label: "- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis" *(line 77)*
 
 **`vpme_qd_qex_euclidean_circles_ecosystem_guide.md`** — 6 warnings
   - ⚠️ `yaml_hp` — Missing `hp` field
@@ -231,12 +208,9 @@ Generated: 2026-04-15
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
-**`xaoc_devices_zadar_nin_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
 ---
 
-## Clean Guides (33)
+## Clean Guides (36)
 
 No issues detected:
 
@@ -271,5 +245,8 @@ No issues detected:
 - `intellijel_stomp_guide.md`
 - `make_noise_maths_guide.md`
 - `mutable_instruments_links_guide.md`
+- `patching_panda_moon_phase_guide.md`
+- `patching_panda_punch_v3_guide.md`
 - `vostok_instruments_ceres_guide.md`
 - `xaoc_devices_belgrad_guide.md`
+- `xaoc_devices_zadar_nin_guide.md`

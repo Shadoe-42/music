@@ -11,6 +11,7 @@ hp: 16
 memory: full
 transport: receive
 screen: true
+historical_context: false
 ---
 
 # Qu-Bit Bloom V1 - Beginner's Guide

@@ -10,6 +10,7 @@ use_cases: [envelope shaping, modulation source, generative CV source, stochasti
 hp: 10
 memory: full
 screen: true
+historical_context: false
 ---
 
 # Xaoc Devices Zadar & NIN Guide

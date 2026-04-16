@@ -8,6 +8,7 @@ functions: [distortion]
 behavior_tags: [dirty, harsh, nonlinear, performance-oriented, harmonic]
 use_cases: [waveshaping and distortion, aggressive sound design, timbral movement and shaping]
 hp: 10
+historical_context: false
 ---
 
 # Noise Engineering Ruina Versio - Beginner's Guide
@@ -17,6 +18,7 @@ hp: 10
 
 **The Stereo Destruction Engine**
 
+historical_context: false
 ---
 
 ## Quick Start: Get Your First Destroyed Sound in 5 Minutes
@@ -33,6 +35,7 @@ hp: 10
 
 **Congratulations!** You've just experienced the "gentlest" side of Ruina Versio - it only gets more destructive from here!
 
+historical_context: false
 ---
 
 ## Essential Parameters (The Destruction Arsenal)
@@ -87,6 +90,7 @@ hp: 10
 - **Essential for:** Controlling intensity of destruction
 - **Parallel processing:** Allows blending clean and destroyed signals
 
+historical_context: false
 ---
 
 ## Advanced Controls (The Routing & Filtering System)
@@ -112,6 +116,7 @@ hp: 10
 - **Use sparingly:** This is intentionally over-the-top
 - **Performance tool:** Great for dramatic effect moments
 
+historical_context: false
 ---
 
 ## Why Ruina Versio Excels
@@ -126,6 +131,7 @@ Ruina Versio is not a gentle processor. The name -- Latin for "ruin" and "versio
 
 **The Versio platform means alternative firmware is available.** Ruina Versio runs on Noise Engineering's Versio hardware platform, which is shared by other modules (Imitor Versio, Melotus Versio, Desmodus Versio, and others). Alternative firmware images can be loaded via audio update, changing Ruina Versio into a reverb, delay, or granular processor. The hardware itself is neutral; the character is determined by firmware. Users who want multiple effect types from one module slot can reflash as needed.
 
+historical_context: false
 ---
 
 ## Beginner Patch Ideas
@@ -356,6 +362,7 @@ This represents **advanced destruction consciousness** - where organic breathing
 **🔊 **Mix Bus Saturation:** Subtle multiband processing for mix cohesion**
 **🎭 **Performance Tool:** Real-time destruction control for live sets**
 
+historical_context: false
 ---
 
 ## Beginner "Gotchas"
@@ -395,6 +402,7 @@ This represents **advanced destruction consciousness** - where organic breathing
 - **Update availability:** New firmwares released regularly
 - **Open source:** You can even write your own firmware
 
+historical_context: false
 ---
 
 ## Next Steps
@@ -408,6 +416,7 @@ This represents **advanced destruction consciousness** - where organic breathing
 
 **Remember:** Ruina Versio rewards experimentation but can be overwhelming. Start gentle and work up to the extreme settings!
 
+historical_context: false
 ---
 
 ## Pairs Well With
@@ -464,6 +473,7 @@ This represents **advanced destruction consciousness** - where organic breathing
 - **Rhythmic destruction:** Sequence different routing modes for rhythmic effects
 - **Stereo processing:** Use different settings on L vs R inputs for wide effects
 
+historical_context: false
 ---
 
 ## Advanced Learning Path
@@ -501,10 +511,12 @@ This represents **advanced destruction consciousness** - where organic breathing
 - **Hybrid Modulation:** Bridge between organic, chaos, pattern, and destruction processing
 - **Educational Tool:** Learn stereo destruction processing and advanced distortion concepts
 
+historical_context: false
 ---
 
 **Bottom Line:** Ruina Versio isn't just a distortion module - it's a **stereo destruction processor** that transforms simple audio into complex chaos through multiple destruction algorithms. Every patch teaches you something new about how stereo destruction processing really works. As the **destruction brain of Advanced ecosystems**, it transforms organic breathing, controlled chaos, and pattern learning into unified stereo destruction evolution.
 
+historical_context: false
 ---
 
 *Ruina Versio is designed for sonic destruction - embrace the chaos, but always protect your hearing and your speakers!*

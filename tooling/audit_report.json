@@ -2,11 +2,11 @@
   "generated": "2026-04-15",
   "summary": {
     "total_guides": 68,
-    "guides_with_issues": 35,
-    "guides_clean": 33,
-    "total_issues": 60,
+    "guides_with_issues": 32,
+    "guides_clean": 36,
+    "total_issues": 50,
     "error_count": 0,
-    "warning_count": 59,
+    "warning_count": 49,
     "deferred_count": 1
   },
   "guides": {
@@ -587,17 +587,11 @@
     },
     "noise_engineering_loquelic_iteritas_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
-      "warning_count": 2,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        },
         {
           "check_id": "section_common_mistakes",
           "category": "Missing or Misplaced Sections",
@@ -608,17 +602,11 @@
     },
     "noise_engineering_numeric_repetitor_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
-      "warning_count": 2,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        },
         {
           "check_id": "section_common_mistakes",
           "category": "Missing or Misplaced Sections",
@@ -629,17 +617,11 @@
     },
     "noise_engineering_ruina_versio_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
-      "warning_count": 2,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        },
         {
           "check_id": "section_common_mistakes",
           "category": "Missing or Misplaced Sections",
@@ -649,48 +631,28 @@
       ]
     },
     "patching_panda_moon_phase_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "patching_panda_punch_v3_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "qubit_bloom_v1_guide.md": {
       "clean": false,
-      "issue_count": 4,
+      "issue_count": 3,
       "error_count": 0,
-      "warning_count": 4,
+      "warning_count": 3,
       "deferred_count": 0,
       "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        },
         {
           "check_id": "section_common_mistakes",
           "category": "Missing or Misplaced Sections",
@@ -702,14 +664,14 @@
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Old color label: \"3. **Press CHANNEL button** until Channel A LED (blue) lights up\"",
-          "line": 29
+          "line": 30
         },
         {
           "check_id": "color_labels",
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Old color label: \"- **Press CHANNEL button** to switch between A (blue) and B (green)\"",
-          "line": 338
+          "line": 339
         }
       ]
     },
@@ -745,17 +707,11 @@
     },
     "squarp_hermod_plus_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
-      "warning_count": 2,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        },
         {
           "check_id": "section_common_mistakes",
           "category": "Missing or Misplaced Sections",
@@ -781,17 +737,11 @@
     },
     "tiptop_audio_miso_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
-      "warning_count": 2,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        },
         {
           "check_id": "section_common_mistakes",
           "category": "Missing or Misplaced Sections",
@@ -831,44 +781,38 @@
     },
     "vpme_qd_qex_drum_workstation_guide.md": {
       "clean": false,
-      "issue_count": 5,
+      "issue_count": 4,
       "error_count": 0,
-      "warning_count": 5,
+      "warning_count": 4,
       "deferred_count": 0,
       "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        },
         {
           "check_id": "color_labels",
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Old color label: \"- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis\"",
-          "line": 73
-        },
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"- **Voice 2 (Red):** Typically snares - wide percussion synthesis range\"",
           "line": 74
         },
         {
           "check_id": "color_labels",
           "category": "Format Issues",
           "severity": "warning",
-          "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
+          "detail": "Old color label: \"- **Voice 2 (Red):** Typically snares - wide percussion synthesis range\"",
           "line": 75
         },
         {
           "check_id": "color_labels",
           "category": "Format Issues",
           "severity": "warning",
-          "detail": "Old color label: \"- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis\"",
+          "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
           "line": 76
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis\"",
+          "line": 77
         }
       ]
     },
@@ -951,19 +895,12 @@
       "issues": []
     },
     "xaoc_devices_zadar_nin_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     }
   },
   "by_check": {
@@ -1074,48 +1011,6 @@
         "detail": "Missing `## Historical Context` section"
       },
       {
-        "file": "noise_engineering_loquelic_iteritas_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "noise_engineering_numeric_repetitor_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "noise_engineering_ruina_versio_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "patching_panda_moon_phase_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "patching_panda_punch_v3_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "qubit_bloom_v1_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
         "file": "rossum_electro_music_mob_of_emus_guide.md",
         "check_id": "section_historical_context",
         "category": "Missing or Misplaced Sections",
@@ -1130,13 +1025,6 @@
         "detail": "Missing `## Historical Context` section"
       },
       {
-        "file": "squarp_hermod_plus_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
         "file": "tiptop_audio_forbidden_planet_guide.md",
         "check_id": "section_historical_context",
         "category": "Missing or Misplaced Sections",
@@ -1144,21 +1032,7 @@
         "detail": "Missing `## Historical Context` section"
       },
       {
-        "file": "tiptop_audio_miso_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
         "file": "turing_machine_ecosystem_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "vpme_qd_qex_drum_workstation_guide.md",
         "check_id": "section_historical_context",
         "category": "Missing or Misplaced Sections",
         "severity": "warning",
@@ -1173,13 +1047,6 @@
       },
       {
         "file": "winterbloom_castor_pollux_ii_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "xaoc_devices_zadar_nin_guide.md",
         "check_id": "section_historical_context",
         "category": "Missing or Misplaced Sections",
         "severity": "warning",
@@ -1233,7 +1100,7 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Old color label: \"3. **Press CHANNEL button** until Channel A LED (blue) lights up\"",
-        "line": 29
+        "line": 30
       },
       {
         "file": "qubit_bloom_v1_guide.md",
@@ -1241,7 +1108,7 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Old color label: \"- **Press CHANNEL button** to switch between A (blue) and B (green)\"",
-        "line": 338
+        "line": 339
       },
       {
         "file": "vpme_qd_qex_drum_workstation_guide.md",
@@ -1249,14 +1116,6 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Old color label: \"- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis\"",
-        "line": 73
-      },
-      {
-        "file": "vpme_qd_qex_drum_workstation_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"- **Voice 2 (Red):** Typically snares - wide percussion synthesis range\"",
         "line": 74
       },
       {
@@ -1264,7 +1123,7 @@
         "check_id": "color_labels",
         "category": "Format Issues",
         "severity": "warning",
-        "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
+        "detail": "Old color label: \"- **Voice 2 (Red):** Typically snares - wide percussion synthesis range\"",
         "line": 75
       },
       {
@@ -1272,8 +1131,16 @@
         "check_id": "color_labels",
         "category": "Format Issues",
         "severity": "warning",
-        "detail": "Old color label: \"- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis\"",
+        "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
         "line": 76
+      },
+      {
+        "file": "vpme_qd_qex_drum_workstation_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis\"",
+        "line": 77
       },
       {
         "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",

@@ -11,6 +11,7 @@ hp: 26
 memory: full
 transport: full
 screen: true
+historical_context: false
 ---
 
 # VPME.de QD + QEX Drum Workstation - Guide

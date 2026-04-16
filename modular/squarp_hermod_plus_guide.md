@@ -11,6 +11,7 @@ hp: 26
 memory: full
 transport: full
 screen: true
+historical_context: false
 ---
 
 # Squarp Hermod+ - Beginner's Guide

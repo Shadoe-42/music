@@ -8,6 +8,7 @@ functions: [fm-oscillator]
 behavior_tags: [harsh, inharmonic, harmonic, nonlinear, performance-oriented]
 use_cases: [lead voice, inharmonic texture, metallic percussion voice]
 hp: 10
+historical_context: false
 ---
 
 # Noise Engineering Loquelic Iteritas - Beginner's Guide
@@ -17,6 +18,7 @@ hp: 10
 
 **The Three-Algorithm Digital Beast**
 
+historical_context: false
 ---
 
 ## Quick Start: Get Your First Complex Sound in 5 Minutes
@@ -33,6 +35,7 @@ hp: 10
 
 **Congratulations!** You've just experienced one of the most unique oscillators in Eurorack!
 
+historical_context: false
 ---
 
 ## Essential Parameters (The Algorithm Triad)
@@ -88,6 +91,7 @@ hp: 10
 - **DAMP:** Filtering and harmonic damping
 - **Best for:** Bell tones, metallic sounds, aggressive digital textures
 
+historical_context: false
 ---
 
 ## Why Noise Engineering Loquelic Iteritas Excels
@@ -123,9 +127,11 @@ Loquelic Iteritas **democratizes legendary synthesis algorithms** - giving every
 ### **Advanced Integration Power:**
 As the **complex digital synthesis engine of Advanced ecosystems**, Loquelic Iteritas transforms organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision into impossible digital textures. **You conduct electronic intelligence toward digital synthesis transcendence.**
 
+historical_context: false
 ---
 
 
+historical_context: false
 ---
 
 ## Beginner Patch Ideas
@@ -265,6 +271,7 @@ Mode: Any
 **Philosophical Achievement:**
 This represents the **ultimate digital synthesis complexity** - where organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision all control impossible digital algorithms, creating synthesis textures that would be unachievable with traditional analog or simple digital methods under your creative direction.
 
+historical_context: false
 ---
 
 ## Common Use Cases
@@ -279,6 +286,7 @@ This represents the **ultimate digital synthesis complexity** - where organic br
 8. **🧪 Algorithm Study:** Learn classic synthesis techniques in hardware form
 9. **🌀 Advanced Complex Synthesis:** Transform sophisticated modulation into impossible digital textures
 
+historical_context: false
 ---
 
 ## Beginner "Gotchas"
@@ -318,6 +326,7 @@ This represents the **ultimate digital synthesis complexity** - where organic br
 - **Can sound "broken" at extreme settings** - this is often desirable
 - **Trust your ears** over technical expectations
 
+historical_context: false
 ---
 
 ## Next Steps
@@ -331,6 +340,7 @@ This represents the **ultimate digital synthesis complexity** - where organic br
 
 **Remember:** Loquelic Iteritas is designed to sound unique, not familiar. Let it teach you new approaches to synthesis!
 
+historical_context: false
 ---
 
 ## Pairs Well With
@@ -396,10 +406,12 @@ This represents the **ultimate digital synthesis complexity** - where organic br
 - **Educational Digital Tool:** Learn classic synthesis algorithms through hands-on Advanced integration
 - **Creative Digital Direction:** Guide sophisticated pattern generation toward impossible digital synthesis
 
+historical_context: false
 ---
 
 **Bottom Line:** Noise Engineering Loquelic Iteritas isn't just a digital oscillator - it's an **impossible synthesis laboratory** that brings three legendary digital algorithms to modular synthesis. Every algorithm teaches you something new about digital synthesis possibilities, and Advanced integration reveals how sophisticated intelligence can control synthesis complexity impossible with traditional methods. As the **complex digital synthesis engine of Advanced ecosystems**, it transforms electronic intelligence into digital synthesis transcendence under your creative direction.
 
+historical_context: false
 ---
 
 *Loquelic Iteritas rewards patience and experimentation - don't expect immediate gratification, but do expect sounds you've never heard before!*

@@ -8,6 +8,7 @@ functions: [sequencer, euclidean-generator]
 behavior_tags: [stable, percussive, generative, stochastic, performance-oriented]
 use_cases: [rhythmic pattern generator, euclidean rhythm source, polyrhythmic gate patterns]
 hp: 8
+historical_context: false
 ---
 
 # Noise Engineering Numeric Repetitor - Beginner's Guide
@@ -17,6 +18,7 @@ hp: 8
 
 **The Mathematical Rhythm Generator**
 
+historical_context: false
 ---
 
 ## Quick Start: Get Your First Prime Rhythm in 5 Minutes
@@ -33,6 +35,7 @@ hp: 8
 
 **Congratulations!** You've just created polyrhythmic patterns using mathematical principles!
 
+historical_context: false
 ---
 
 ## Essential Parameters (The Mathematical Controls)
@@ -83,6 +86,7 @@ hp: 8
 - **Real-time control:** Change patterns and variations during performance
 - **Modulation friendly:** All parameters respond well to slow CV changes
 
+historical_context: false
 ---
 
 ## Why the Numeric Repetitor Excels
@@ -97,6 +101,7 @@ Most rhythm generators ask you to program patterns -- set which steps are active
 
 **X/Y switch doubles the available pattern vocabulary.** The X/Y switch toggles between two complete sets of patterns derived from the current PRIME setting. Each set has different arithmetic relationships applied. Adding this toggle to a live performance effectively gives two distinct groove settings accessible from a single switch press, with no parameter adjustment required.
 
+historical_context: false
 ---
 
 ## Beginner Patch Ideas
@@ -319,6 +324,7 @@ This represents **advanced mathematical consciousness in rhythm** - where organi
 **🧮 **Educational Tool:** Learn polyrhythms through mathematical relationships**
 **⏰ **Clock Processing:** Transform simple clocks into complex rhythmic patterns**
 
+historical_context: false
 ---
 
 ## Beginner "Gotchas"
@@ -358,6 +364,7 @@ This represents **advanced mathematical consciousness in rhythm** - where organi
 - **No CV control:** Switch position must be changed manually
 - **Performance limitation:** Can't sequence between X and Y sets
 
+historical_context: false
 ---
 
 ## Next Steps
@@ -371,6 +378,7 @@ This represents **advanced mathematical consciousness in rhythm** - where organi
 
 **Remember:** You don't need to understand the math - just listen and explore the relationships!
 
+historical_context: false
 ---
 
 ## Pairs Well With
@@ -432,6 +440,7 @@ This represents **advanced mathematical consciousness in rhythm** - where organi
 - **Prime number theory:** Musical applications of mathematical concepts
 - **Algorithmic composition:** Learn non-traditional approaches to rhythm
 
+historical_context: false
 ---
 
 ## Advanced Learning Path
@@ -469,10 +478,12 @@ This represents **advanced mathematical consciousness in rhythm** - where organi
 - **Hybrid Intelligence:** Bridge between organic, chaos, AI, and mathematical rhythm processing
 - **Educational Tool:** Learn algorithmic composition and mathematical music theory concepts
 
+historical_context: false
 ---
 
 **Bottom Line:** Numeric Repetitor isn't just a rhythm generator - it's a **mathematical rhythm processor** that transforms simple modulation into complex polyrhythmic relationships through prime number algorithms. Every patch teaches you something new about how algorithmic rhythm generation really works. As the **rhythmic brain of Advanced ecosystems**, it transforms organic breathing, controlled chaos, and artificial intelligence into unified mathematical polyrhythmic evolution.
 
+historical_context: false
 ---
 
 *Numeric Repetitor makes complex polyrhythms accessible through mathematical elegance - trust your ears over your understanding of the math!*

@@ -8,12 +8,14 @@ functions: [vca, envelope-generator]
 behavior_tags: [percussive, gated, reactive, warm, performance-oriented]
 use_cases: [percussive voice shaping, drum hit dynamics, envelope shaping]
 hp: 9
+historical_context: false
 ---
 
 # Patching Panda Punch V3 - Beginner's Guide
 
 **The Ultimate VCA-Decay Module for Dynamic Percussion**
 
+historical_context: false
 ---
 
 ## Quick Start: Get Your First Sound in 5 Minutes
@@ -36,6 +38,7 @@ hp: 9
 4. **Notice** how the dynamics change with velocity!
 5. **Turn CURVE** knob - changes from smooth to aggressive response
 
+historical_context: false
 ---
 
 ## Essential Parameters (The Big 6)
@@ -76,6 +79,7 @@ hp: 9
 - **Creative applications:** Inverted envelopes for ducking/sidechain effects
 - **Modulation source:** Use envelope to control other parameters
 
+historical_context: false
 ---
 
 ## Understanding the Two Modes
@@ -94,6 +98,7 @@ hp: 9
 - **Use cases:** Expressive playing, dynamic sequences, modern production
 - **Character:** Responsive, musical, contemporary feel
 
+historical_context: false
 ---
 
 ## Why Patching Panda Punch V3 Excels
@@ -120,9 +125,11 @@ Punch V3 bridges the gap between vintage drum machine simplicity and modern CV e
 - **Sound designers:** Creative envelope shaping and AM effects
 - **Anyone wanting punchy, dynamic sounds:** From subtle to extreme
 
+historical_context: false
 ---
 
 
+historical_context: false
 ---
 
 ## Beginner Patch Ideas
@@ -343,6 +350,7 @@ Punch V3 bridges the gap between vintage drum machine simplicity and modern CV e
 **Philosophical Achievement:**
 This represents **multi-function percussion mastery** - where generative sequencing, algorithmic processing, and mathematical CV operations all serve the percussion engine, creating a professional workstation that leverages each module's complete capabilities rather than using them as single-function devices.
 
+historical_context: false
 ---
 
 ## Advanced Techniques
@@ -365,6 +373,7 @@ This represents **multi-function percussion mastery** - where generative sequenc
 - **Accent patterns** create emphasis and groove
 - **Combine with clock dividers** for polyrhythmic effects
 
+historical_context: false
 ---
 
 ## Creative Applications
@@ -387,6 +396,7 @@ This represents **multi-function percussion mastery** - where generative sequenc
 - **Dynamic processing:** Real-time envelope shaping of any source
 - **Experimental AM:** Audio rate modulation of the amount parameter
 
+historical_context: false
 ---
 
 ## Common Use Cases
@@ -409,6 +419,7 @@ This represents **multi-function percussion mastery** - where generative sequenc
 - **Percussion layers:** Create multiple percussion elements
 - **Creative processing:** Unique envelope shaping of any source
 
+historical_context: false
 ---
 
 ## Pairs Well With
@@ -445,6 +456,7 @@ This represents **multi-function percussion mastery** - where generative sequenc
 - **Sample & Hold:** Use percussion gates to trigger variation in other parts of the system
 - **Phase 1 modules:** Punch V3 integrates perfectly with Plaits, Maths, and other core synthesis modules
 
+historical_context: false
 ---
 
 ## Beginner "Gotchas" & Pro Tips
@@ -526,10 +538,12 @@ This represents **multi-function percussion mastery** - where generative sequenc
 - **Hybrid Processing:** Bridge between traditional percussion and dynamic modulation processing
 - **Educational Tool:** Learn percussion synthesis and advanced VCA envelope concepts
 
+historical_context: false
 ---
 
 **Bottom Line:** Punch V3 isn't just a VCA with envelopes - it's a **dynamic percussion processing brain** that transforms simple audio into punchy, evolving rhythms through dual-mode envelope control. Every patch teaches you something new about how percussion synthesis and dynamic processing really works. As the **percussion processor of multi-function workstations**, it transforms generative sequencing, algorithmic processing, and mathematical CV operations into unified professional percussion systems.
 
+historical_context: false
 ---
 
 *Visit [Patching Panda](http://patchingpanda.com/) for complete documentation and more innovative percussion modules*

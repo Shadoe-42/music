@@ -8,12 +8,14 @@ functions: [vca, attenuator, cv-processor]
 behavior_tags: [clean, stable, linear, reactive]
 use_cases: [CV scaling and utility, signal distribution, attenuation and inversion]
 hp: 4
+historical_context: false
 ---
 
 # Tiptop Audio Miso - Beginner's Guide
 
 **The CV Laboratory and Signal Sculptor**
 
+historical_context: false
 ---
 
 ## Quick Start: Get Your First Mixed Signal in 5 Minutes
@@ -30,6 +32,7 @@ hp: 4
 
 **Congratulations!** You've just created a complex CV signal from simple sources using mathematical signal processing!
 
+historical_context: false
 ---
 
 ## Essential Parameters (The MISO Toolkit)
@@ -79,6 +82,7 @@ hp: 4
 - **Internal routing:** Outputs can be patched to inputs for feedback
 - **No normalling:** Everything requires explicit patching for maximum flexibility
 
+historical_context: false
 ---
 
 ## Why MISO Excels
@@ -93,6 +97,7 @@ MISO (Multiple Input Single Output) is a mixer and signal processor that handles
 
 **All inputs and the output handle both audio and CV.** There is no separate audio input or CV input. Anything patched to any input gets processed. MISO works as an audio mixer for summing multiple voices before a filter, as a CV mixer for combining multiple modulation sources before a cutoff input, or simultaneously doing both on different channels. The uniformity makes it predictable and eliminates the need to consult a manual to determine whether a particular signal type is valid.
 
+historical_context: false
 ---
 
 ## Beginner Patch Ideas
@@ -144,6 +149,7 @@ MISO (Multiple Input Single Output) is a mixer and signal processor that handles
 **Rhythmic:** Gate sequence creates rhythmic switching between melodies
 **Expandable:** Add offset to transpose one sequence relative to other
 
+historical_context: false
 ---
 
 ## Common Use Cases
@@ -157,6 +163,7 @@ MISO (Multiple Input Single Output) is a mixer and signal processor that handles
 **🌊 **Wave Shaping:** Create new LFO shapes from simple sources**
 **🎵 **Audio Crossfading:** Smooth transitions between audio sources**
 
+historical_context: false
 ---
 
 ## Beginner "Gotchas"
@@ -196,6 +203,7 @@ MISO (Multiple Input Single Output) is a mixer and signal processor that handles
 - **Routing complexity:** Easy to get confused about which output does what
 - **Plan your patches:** Think about which outputs you need before patching
 
+historical_context: false
 ---
 
 ## Next Steps
@@ -209,6 +217,7 @@ MISO (Multiple Input Single Output) is a mixer and signal processor that handles
 
 **Remember:** Miso rewards experimentation - it's more powerful than it first appears!
 
+historical_context: false
 ---
 
 ## Pairs Well With
@@ -251,6 +260,7 @@ MISO (Multiple Input Single Output) is a mixer and signal processor that handles
 - **Precision voltage mathematics:** Professional-grade signal processing with mathematical rigor and scientific methodology
 - **Cross-system integration:** Miso integrates with all synthesis systems while providing mathematical signal processing core
 
+historical_context: false
 ---
 
 ## Advanced Learning Path
@@ -288,10 +298,12 @@ MISO (Multiple Input Single Output) is a mixer and signal processor that handles
 - **Professional CV Processing:** Studio-quality signal processing with mathematical precision and professional monitoring
 - **Educational Tool:** Learn mathematical signal processing concepts through hands-on precision voltage manipulation
 
+historical_context: false
 ---
 
 **Bottom Line:** Miso isn't just a CV utility - it's a **mathematical signal laboratory** that transforms function generation, data analysis, and probability control into precision voltage processing systems. Every patch teaches you something new about how mathematical signal processing really works. As the **precision voltage heart of mathematical CV ecosystems**, it transforms multi-function control into unified scientific signal evolution.
 
+historical_context: false
 ---
 
 *Visit [Tiptop Audio](https://tiptopaudio.com/) for complete documentation and explore the full range of precision modular utilities*

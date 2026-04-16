@@ -8,6 +8,7 @@ functions: [filter]
 behavior_tags: [clean, stable, dark, nonlinear, performance-oriented]
 use_cases: [stereo signal processing, timbral movement and shaping, evolving ambient texture]
 hp: 14
+historical_context: false
 ---
 
 # Patching Panda Moon Phase - Beginner's Guide
@@ -17,6 +18,7 @@ hp: 14
 
 **The Stereo Imaging Filter That Breaks All the Rules**
 
+historical_context: false
 ---
 
 ## Quick Start: Get Your First Sound in 5 Minutes
@@ -37,6 +39,7 @@ hp: 14
 - **Watch the LEDs** - they show which mode you're in
 - **Each mode sounds completely different** - from dual lowpass to notch + bandpass
 
+historical_context: false
 ---
 
 ## Essential Parameters (The Big 5)
@@ -78,6 +81,7 @@ hp: 14
 - **Stereo interaction:** Behavior dramatically affected by ST IMAGER setting
 - **Range:** Smooth filtering to aggressive distortion and artifacts
 
+historical_context: false
 ---
 
 ## Understanding the 8 Modes
@@ -114,6 +118,7 @@ hp: 14
 - **Character:** Hollow left, focused right
 - **Use cases:** Creative notching effects, unusual textures
 
+historical_context: false
 ---
 
 ## Why Patching Panda Moon Phase Excels
@@ -139,9 +144,11 @@ Moon Phase challenges what a filter can be. Instead of just removing frequencies
 - **Experimental musicians:** Breaking conventional filtering rules
 - **Anyone wanting unique stereo effects:** Transform any mono source into wide stereo
 
+historical_context: false
 ---
 
 
+historical_context: false
 ---
 
 ## Beginner Patch Ideas
@@ -349,6 +356,7 @@ Moon Phase challenges what a filter can be. Instead of just removing frequencies
 **Philosophical Achievement:**
 This represents **advanced spatial consciousness** - where organic breathing, controlled chaos, and pattern learning all become stereo imaging processing, computed through spatial algorithms into pure evolved musical space.
 
+historical_context: false
 ---
 
 ## Advanced Techniques
@@ -371,6 +379,7 @@ This represents **advanced spatial consciousness** - where organic breathing, co
 - **Different modes** = different resonance characteristics
 - **No self-oscillation** = focus on character and distortion instead
 
+historical_context: false
 ---
 
 ## Common Use Cases
@@ -393,6 +402,7 @@ This represents **advanced spatial consciousness** - where organic breathing, co
 - **CV automation** of stereo parameters
 - **Interactive filtering** with unique stereo behaviors
 
+historical_context: false
 ---
 
 ## Pairs Well With
@@ -429,6 +439,7 @@ This represents **advanced spatial consciousness** - where organic breathing, co
 - **Sample & Hold:** Use spatial gates to trigger variation in other parts of the system
 - **Phase 1 modules:** Moon Phase integrates perfectly with Plaits, Maths, and other core synthesis modules
 
+historical_context: false
 ---
 
 ## Beginner "Gotchas" & Pro Tips
@@ -505,10 +516,12 @@ This represents **advanced spatial consciousness** - where organic breathing, co
 - **Hybrid Processing:** Bridge between traditional filtering and spatial imaging processing
 - **Educational Tool:** Learn stereo imaging and advanced spatial processing concepts
 
+historical_context: false
 ---
 
 **Bottom Line:** Moon Phase isn't just a filter - it's a **stereo imaging processing brain** that transforms mono sources into evolving spatial landscapes through 8-mode filtering and stereo manipulation. Every patch teaches you something new about how spatial processing and stereo imaging really works. As the **spatial brain of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, and pattern learning into unified stereo space evolution.
 
+historical_context: false
 ---
 
 *Visit [Patching Panda](http://patchingpanda.com/) for complete documentation and more innovative modules*
