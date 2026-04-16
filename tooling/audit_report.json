@@ -2,11 +2,11 @@
   "generated": "2026-04-15",
   "summary": {
     "total_guides": 68,
-    "guides_with_issues": 40,
-    "guides_clean": 28,
-    "total_issues": 66,
+    "guides_with_issues": 35,
+    "guides_clean": 33,
+    "total_issues": 60,
     "error_count": 0,
-    "warning_count": 65,
+    "warning_count": 59,
     "deferred_count": 1
   },
   "guides": {
@@ -319,19 +319,12 @@
       "issues": []
     },
     "erica_synths_black_envelope_generator_2_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "erica_synths_black_polyvoks_vcf_guide.md": {
       "clean": true,
@@ -342,19 +335,12 @@
       "issues": []
     },
     "erica_synths_black_quad_vca2_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "erica_synths_pico_drum2_guide.md": {
       "clean": true,
@@ -459,34 +445,20 @@
       "issues": []
     },
     "intellijel_mixup_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "intellijel_stomp_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "make_noise_maths_guide.md": {
       "clean": true,
@@ -535,17 +507,11 @@
     },
     "mordax_data_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
-      "warning_count": 2,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        },
         {
           "check_id": "section_common_mistakes",
           "category": "Missing or Misplaced Sections",
@@ -555,19 +521,12 @@
       ]
     },
     "mutable_instruments_links_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "mutable_marbles_guide.md": {
       "clean": false,
@@ -1080,34 +1039,6 @@
         "detail": "Missing `## Historical Context` section"
       },
       {
-        "file": "erica_synths_black_envelope_generator_2_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "erica_synths_black_quad_vca2_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "intellijel_mixup_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "intellijel_stomp_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
         "file": "make_noise_pressure_points_guide.md",
         "check_id": "section_historical_context",
         "category": "Missing or Misplaced Sections",
@@ -1116,20 +1047,6 @@
       },
       {
         "file": "make_noise_wogglebug_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "mordax_data_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "mutable_instruments_links_guide.md",
         "check_id": "section_historical_context",
         "category": "Missing or Misplaced Sections",
         "severity": "warning",

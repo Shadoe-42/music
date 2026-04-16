@@ -9,6 +9,7 @@ behavior_tags: [stable, clean, linear, reactive]
 use_cases: [signal analysis and measurement, tuning and calibration, patch visualization]
 hp: 16
 screen: true
+historical_context: false
 ---
 
 # Mordax Data - Beginner's Guide

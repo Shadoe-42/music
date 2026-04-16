@@ -8,6 +8,7 @@ functions: [mixer]
 behavior_tags: [clean, stable, linear]
 use_cases: [audio mixing and routing, signal summing, stereo bus mixing]
 hp: 6
+historical_context: false
 ---
 
 # Intellijel Mixup - Guide

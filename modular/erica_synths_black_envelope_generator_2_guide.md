@@ -8,6 +8,7 @@ functions: [envelope-generator]
 behavior_tags: [stable, gated, linear, reactive]
 use_cases: [envelope shaping, gate and trigger source, modulation source]
 hp: 8
+historical_context: false
 ---
 
 # Erica Synths Black Envelope Generator 2 - Guide

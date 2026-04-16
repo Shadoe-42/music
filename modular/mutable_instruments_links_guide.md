@@ -8,6 +8,7 @@ functions: [mult, attenuator]
 behavior_tags: [clean, stable, linear]
 use_cases: [signal distribution, CV scaling and utility, audio mixing and routing]
 hp: 4
+historical_context: false
 ---
 
 # Mutable Instruments Links - Guide

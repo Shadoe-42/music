@@ -9,11 +9,11 @@ Generated: 2026-04-15
 | Metric | Count |
 |--------|-------|
 | Guides scanned | 68 |
-| Guides with issues | 40 |
-| Guides clean | 28 |
-| Total issues | 66 |
+| Guides with issues | 35 |
+| Guides clean | 33 |
+| Total issues | 60 |
 | ❌ Errors (fix now) | 0 |
-| ⚠️  Warnings (fix when touching) | 65 |
+| ⚠️  Warnings (fix when touching) | 59 |
 | 📌 Deferred (tracked, low priority) | 1 |
 
 ---
@@ -42,15 +42,9 @@ Generated: 2026-04-15
 | `cre8audio_chipz_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `endorphines_blck_noir_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `endorphines_queen_of_pentacles_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `erica_synths_black_envelope_generator_2_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `erica_synths_black_quad_vca2_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `intellijel_mixup_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `intellijel_stomp_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `make_noise_pressure_points_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `make_noise_wogglebug_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `mordax_data_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `mordax_data_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-| `mutable_instruments_links_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `mutable_marbles_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `mutable_marbles_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `mutable_marbles_guide.md` | — | ⚠️  warning | Missing `## Pairs Well With` section |
@@ -144,12 +138,6 @@ Generated: 2026-04-15
 **`endorphines_queen_of_pentacles_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
-**`erica_synths_black_envelope_generator_2_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`erica_synths_black_quad_vca2_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
 **`erica_synths_pico_dsp_guide.md`** — 1 warning
   - ⚠️ `color_labels` — Old color label: "**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjustin" *(line 297)*
 
@@ -158,12 +146,6 @@ Generated: 2026-04-15
   - ⚠️ `color_labels` — Old color label: "- **Algorithm:** Bassline (Blue)" *(line 185)*
   - ⚠️ `color_labels` — Old color label: "- **Algorithm:** Wavetable (Green)" *(line 198)*
 
-**`intellijel_mixup_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`intellijel_stomp_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
 **`make_noise_pressure_points_guide.md`** — 1 warning, 1 deferred
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why Pressure Points Rocks" — rename to `## Why [Module] Excels` *(line 348)*
@@ -171,12 +153,8 @@ Generated: 2026-04-15
 **`make_noise_wogglebug_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
-**`mordax_data_guide.md`** — 2 warnings
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
+**`mordax_data_guide.md`** — 1 warning
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
-
-**`mutable_instruments_links_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
 **`mutable_marbles_guide.md`** — 3 warnings
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
@@ -258,7 +236,7 @@ Generated: 2026-04-15
 
 ---
 
-## Clean Guides (28)
+## Clean Guides (33)
 
 No issues detected:
 
@@ -279,7 +257,9 @@ No issues detected:
 - `endorphines_ghost_guide.md`
 - `endorphines_ground_control_guide.md`
 - `endorphines_squawk_dirty_to_me_guide.md`
+- `erica_synths_black_envelope_generator_2_guide.md`
 - `erica_synths_black_polyvoks_vcf_guide.md`
+- `erica_synths_black_quad_vca2_guide.md`
 - `erica_synths_pico_drum2_guide.md`
 - `erica_synths_pico_lfo_sh_guide.md`
 - `erica_synths_pico_vca2_guide.md`
@@ -287,6 +267,9 @@ No issues detected:
 - `frap_tools_411_guide.md`
 - `instruo_arbhar_guide.md`
 - `instruo_csl_guide.md`
+- `intellijel_mixup_guide.md`
+- `intellijel_stomp_guide.md`
 - `make_noise_maths_guide.md`
+- `mutable_instruments_links_guide.md`
 - `vostok_instruments_ceres_guide.md`
 - `xaoc_devices_belgrad_guide.md`

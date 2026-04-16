@@ -8,6 +8,7 @@ functions: [vca, mixer]
 behavior_tags: [clean, stable, linear, reactive]
 use_cases: [audio mixing and routing, CV-controlled mixing, voice summing]
 hp: 10
+historical_context: false
 ---
 
 # Erica Synths Black Quad VCA2 - Guide
