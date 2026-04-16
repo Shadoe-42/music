@@ -9,6 +9,7 @@ behavior_tags: [stable, percussive, linear]
 use_cases: [clock multiplication for fast divisions, swing and shuffle timing, polyrhythmic clock source]
 hp: 12
 transport: receive
+historical_context: false
 ---
 
 # 4ms SCM Plus - Guide

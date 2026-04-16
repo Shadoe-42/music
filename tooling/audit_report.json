@@ -2,73 +2,45 @@
   "generated": "2026-04-15",
   "summary": {
     "total_guides": 68,
-    "guides_with_issues": 50,
-    "guides_clean": 18,
-    "total_issues": 76,
+    "guides_with_issues": 45,
+    "guides_clean": 23,
+    "total_issues": 71,
     "error_count": 0,
-    "warning_count": 75,
+    "warning_count": 70,
     "deferred_count": 1
   },
   "guides": {
     "4ms_company_listen_io_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "4ms_company_metamodule_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "4ms_rcd_v2_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "4ms_scm_plus_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "after_later_audio_cloaks_guide.md": {
       "clean": true,
@@ -79,19 +51,12 @@
       "issues": []
     },
     "after_later_audio_mingles_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "alm_busy_circuits_mco_alm021_guide.md": {
       "clean": false,
@@ -1079,41 +1044,6 @@
   },
   "by_check": {
     "section_historical_context": [
-      {
-        "file": "4ms_company_listen_io_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "4ms_company_metamodule_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "4ms_rcd_v2_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "4ms_scm_plus_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "after_later_audio_mingles_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
       {
         "file": "alm_busy_circuits_mco_alm021_guide.md",
         "check_id": "section_historical_context",

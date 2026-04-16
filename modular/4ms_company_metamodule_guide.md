@@ -12,6 +12,7 @@ memory: full
 transport: full
 screen: true
 hybrid: true
+historical_context: false
 ---
 
 # 4ms Company MetaModule - Guide

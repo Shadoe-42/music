@@ -9,6 +9,7 @@ behavior_tags: [stable, percussive, linear, performance-oriented]
 use_cases: [polyrhythmic clock division, rhythmic gate patterns, clock distribution]
 hp: 8
 transport: receive
+historical_context: false
 ---
 
 # 4ms Rotating Clock Divider V2 - Guide

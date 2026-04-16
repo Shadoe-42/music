@@ -8,6 +8,7 @@ functions: [audio-interface]
 behavior_tags: [clean, stable, linear, reactive]
 use_cases: [stereo output to external mixer, headphone monitoring in patch, recording Eurorack audio]
 hp: 6
+historical_context: false
 ---
 
 # 4ms Company Listen IO - Guide

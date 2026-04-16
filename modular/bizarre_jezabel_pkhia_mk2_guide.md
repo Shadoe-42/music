@@ -5,7 +5,7 @@ primary_role: SHAPER
 secondary_roles: []
 form_factor: eurorack
 functions: [filter]
-behavior_tags: [warm, resonant, clean, musical, performance-oriented]
+behavior_tags: [warm, clean, nonlinear, reactive, performance-oriented]
 use_cases: [stereo filtering, timbral shaping, frequency sculpting, dual-mono processing]
 hp: 10
 ---

@@ -8,6 +8,7 @@ functions: [mixer, lfo]
 behavior_tags: [clean, warm, stable, performance-oriented]
 use_cases: [audio mixing and routing, VC panning and stereo placement, modulated mixing]
 hp: 12
+historical_context: false
 ---
 
 # After Later Audio Mingles - Guide

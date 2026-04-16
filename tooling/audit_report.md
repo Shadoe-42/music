@@ -9,11 +9,11 @@ Generated: 2026-04-15
 | Metric | Count |
 |--------|-------|
 | Guides scanned | 68 |
-| Guides with issues | 50 |
-| Guides clean | 18 |
-| Total issues | 76 |
+| Guides with issues | 45 |
+| Guides clean | 23 |
+| Total issues | 71 |
 | ❌ Errors (fix now) | 0 |
-| ⚠️  Warnings (fix when touching) | 75 |
+| ⚠️  Warnings (fix when touching) | 70 |
 | 📌 Deferred (tracked, low priority) | 1 |
 
 ---
@@ -32,11 +32,6 @@ Generated: 2026-04-15
 
 | File | Line | Severity | Issue |
 |------|------|----------|-------|
-| `4ms_company_listen_io_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `4ms_company_metamodule_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `4ms_rcd_v2_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `4ms_scm_plus_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `after_later_audio_mingles_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `alm_busy_circuits_mco_alm021_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `alm_busy_circuits_pamelas_pro_workout_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `atovproject_lx-euclid_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
@@ -119,21 +114,6 @@ Generated: 2026-04-15
 ---
 
 ## Per-Guide Detail
-
-**`4ms_company_listen_io_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`4ms_company_metamodule_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`4ms_rcd_v2_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`4ms_scm_plus_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`after_later_audio_mingles_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
 **`alm_busy_circuits_mco_alm021_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
@@ -298,11 +278,16 @@ Generated: 2026-04-15
 
 ---
 
-## Clean Guides (18)
+## Clean Guides (23)
 
 No issues detected:
 
+- `4ms_company_listen_io_guide.md`
+- `4ms_company_metamodule_guide.md`
+- `4ms_rcd_v2_guide.md`
+- `4ms_scm_plus_guide.md`
 - `after_later_audio_cloaks_guide.md`
+- `after_later_audio_mingles_guide.md`
 - `cre8audio_cellz_guide.md`
 - `divkid_ochd_and_expander_guide.md`
 - `doepfer_a124_wasp_se_guide.md`
