@@ -59,7 +59,7 @@ Most modules serve more than one role depending on how they're patched. The role
 
 | Module | Function | Guide |
 |--------|----------|-------|
-| Bizarre Jezabel PKHIA MK2 | Wavefolder | [Guide](bizarre_jezabel_pkhia_mk2_guide.md) |
+| Bizarre Jezabel PKHIA MK2 | Filter | [Guide](bizarre_jezabel_pkhia_mk2_guide.md) |
 | Doepfer A-124 Wasp SE | Filter | [Guide](doepfer_a124_wasp_se_guide.md) |
 | DSPcoffee Kali | FX Time, Distortion, FX Modulation | [Guide](dspcoffee_kali_guide.md) |
 | EarthQuaker Devices Afterneath | FX Time | [Guide](earthquaker_devices_afterneath_guide.md) |

@@ -4,9 +4,9 @@ manufacturer: Bizarre Jezabel
 primary_role: SHAPER
 secondary_roles: []
 form_factor: eurorack
-functions: [wavefolder]
-behavior_tags: [dirty, harmonic, nonlinear, reactive, performance-oriented]
-use_cases: [waveshaping and distortion, timbral movement and shaping, harmonic enrichment]
+functions: [filter]
+behavior_tags: [warm, resonant, clean, musical, performance-oriented]
+use_cases: [stereo filtering, timbral shaping, frequency sculpting, dual-mono processing]
 hp: 10
 ---
 
