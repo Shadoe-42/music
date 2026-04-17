@@ -60,17 +60,18 @@ A minimal functional voice needs these building blocks. The specific modules don
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│  Case (e.g., Intellijel NiftyCase or similar compact case)      │
+│  Case (e.g., Cre8audio NiftyCase — 84HP, 10-port flying bus,    │
+│  1500mA +12V / 500mA -12V / 500mA +5V — or similar)            │
 │                                                                  │
 │  ┌──────┐ ┌──────┐ ┌────────┐ ┌──────┐ ┌────┐ ┌──────┐ ┌────┐ │
-│  │  SEQ │ │ VCO  │ │ FILTER │ │ VCA  │ │ EG │ │  FX  │ │OUT │ │
+│  │  SEQ │ │ VCO  │ │ FILTER │ │ VCA  │ │ EG │ │ LFO  │ │OUT │ │
 │  └──────┘ └──────┘ └────────┘ └──────┘ └────┘ └──────┘ └────┘ │
 │                                                                  │
 │  ═══════════════════ Bus Board ══════════════════════════════   │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-**Sequencer (SEQ):** Generates the musical pattern. Outputs pitch CV (1V/octave) and gate signals on each step. The pitch CV tells the oscillator what note to play; the gate triggers the envelope. Example: any basic step sequencer, Keystep Pro, or even a MIDI keyboard with a CV interface.
+**Sequencer (SEQ):** Generates the musical pattern. Outputs pitch CV (1V/octave) and gate signals on each step. The pitch CV tells the oscillator what note to play; the gate triggers the envelope. Good compact in-case options: ALM Busy Circuits Pamela's Pro Workout, Qu-Bit Bloom, Noise Engineering Mimetic Digitwolis, Intellijel Scales. A MIDI keyboard with a CV interface also works if you prefer to play rather than program.
 
 **Oscillator (VCO):** Generates audio voltage at the pitch set by the incoming V/Oct CV. This is the sound source. A sawtooth or square wave gives you harmonic content for the filter to work with. Example: Doepfer A-110-1, Mutable Instruments Plaits, any VCO with V/Oct and audio output.
 
@@ -80,9 +81,9 @@ A minimal functional voice needs these building blocks. The specific modules don
 
 **Envelope Generator (EG):** Fires a time-based voltage contour when triggered by the sequencer's gate. That contour simultaneously controls the VCA (amplitude shape) and the filter cutoff (timbral shape). One EG can serve both destinations through a passive mult — or use two EGs for independent amplitude and timbral envelopes. Example: Doepfer A-140, Mutable Instruments Stages, any ADSR or AR envelope.
 
-**Effects (FX):** Optional at this stage, but even a simple reverb turns a dry voice into something that exists in a space. Sits after the VCA, before the output. Example: Erica Synths Pico DSP, any small reverb or delay module.
+**LFO:** Generates a slow, repeating control voltage — the continuous modulation counterpart to the envelope's triggered response. Where the envelope fires once per gate and returns to zero, the LFO cycles endlessly without waiting for anything. Route it to filter cutoff for a rhythmic brightness sweep, to VCO pitch for vibrato, or to VCA level for tremolo. The distinction between triggered modulation (envelope) and free-running modulation (LFO) is one of the core architectural concepts in synthesis — having both in the system makes that difference tangible. Example: Erica Synths Pico LFO, Make Noise Ochd, any dedicated LFO module. Many multi-function modules (Maths, Stages) also provide LFO outputs. FX — a reverb or delay — is the natural next addition once the voice feels complete; even a small module like Erica Synths Pico DSP transforms a dry patch into something that exists in a space.
 
-**Output Module (OUT):** Brings modular-level voltage down to line level for external equipment. Non-negotiable — plugging Eurorack directly into a mixer or interface input at full level can damage equipment. Example: Intellijel Outs, ALM Busy Circuits S.B.G., 4ms Listen IO.
+**Output Module (OUT):** Brings modular-level voltage down to line level for external equipment. Non-negotiable — plugging Eurorack directly into a mixer or interface input at full level can damage equipment. Example: Intellijel Outs, ALM Busy Circuits S.B.G., 4ms Listen IO. If you're using a Cre8audio NiftyCase, it has built-in stereo outputs on the case itself — those work fine as your first output stage without adding a separate module.
 
 ---
 
@@ -91,40 +92,39 @@ A minimal functional voice needs these building blocks. The specific modules don
 With the modules in the case and power connected, this is how audio and control voltage flow:
 
 ```
-[SEQ]
-  │
-  ├─[G]─ Gate ──────────────────────────────▶ [EG] Trigger In
-  │                                               │
-  └─[C]─ Pitch CV ──────────────────────────▶ [VCO] V/Oct
-                                                  │
-                                    [A] Audio Out │
-                                                  ▼
-                                              [FILTER] Audio In
-                                                  │
-                               [EG] ──[C]────▶ Filter CV In
-                                                  │
-                                    [A] Audio Out │
-                                                  ▼
-                                               [VCA] Audio In
-                                                  │
-                               [EG] ──[C]────▶ VCA CV In
-                                                  │
-                                    [A] Audio Out │
-                                                  ▼
-                                               [FX] In
-                                                  │
-                                    [A] Audio Out │
-                                                  ▼
-                                               [OUT] Modular In
-                                                  │
-                             Line Level Out ───────┘
+[SEQ]                            [LFO]
+  │                                │
+  ├─[G]─ Gate ──────────────────▶ [EG] Trigger In
+  │                                │
+  └─[C]─ Pitch CV ──────────────▶ [VCO] V/Oct
+                                    │
+                      [A] Audio Out │
+                                    ▼
+                                [FILTER] Audio In
+                                    │
+                     [EG]  ──[C]──▶ Filter CV In
+                     [LFO] ──[C]──▶ Filter CV In (mult or second input)
+                                    │
+                      [A] Audio Out │
+                                    ▼
+                                 [VCA] Audio In
+                                    │
+                     [EG]  ──[C]──▶ VCA CV In
+                                    │
+                      [A] Audio Out │
+                                    ▼
+                                 [OUT] Modular In
+                                    │
+               Line Level Out ───────┘
 ```
 
 **What each connection does:**
 
-The sequencer's gate output fires the envelope each time a step plays. The sequencer's pitch CV tells the oscillator what note to play. The oscillator produces audio voltage at that pitch. That audio passes through the filter, which shapes the tonal character — brighter when the envelope pushes the cutoff higher, darker as the envelope falls. The filtered audio then passes through the VCA, which opens and closes with the same envelope contour, giving each note a defined attack and release. The output module brings the resulting signal to line level.
+The sequencer's gate output fires the envelope each time a step plays. The sequencer's pitch CV tells the oscillator what note to play. The oscillator produces audio voltage at that pitch. That audio passes through the filter, which shapes the tonal character — brighter when the envelope pushes the cutoff higher, darker as it falls. The filtered audio passes through the VCA, which opens and closes with the envelope contour, giving each note a defined attack and release. The output module brings the signal to line level.
 
-The envelope does double duty here — driving both the filter and the VCA from one source. For a more expressive patch, use two separate envelopes with different attack and decay settings: a fast one for the VCA (tight amplitude shape) and a slower one for the filter (longer, more languid brightness movement).
+The LFO adds continuous movement on top of the envelope's triggered response. Routing it to the filter's CV input alongside the envelope creates a filter that both responds to notes and drifts slowly over time — two modulation behaviors layered at the same destination. Move the LFO to the VCO's pitch input instead and you get vibrato. Move it to the VCA and you get tremolo. The LFO doesn't know where it's going; it just generates repeating voltage. The destination determines the musical result.
+
+The envelope does double duty here — driving both the filter and the VCA from one source. For a more expressive patch, use two separate envelopes: a fast one for the VCA (tight amplitude shape) and a slower one for the filter (longer brightness movement).
 
 ---
 
