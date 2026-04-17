@@ -20,6 +20,7 @@ The basics sequence builds from the ground up:
 - [03 — Musical Phrases](basics/03_musical_phrases.md) — sequencers, melody, rhythm
 - [04 — Rhythm and Percussion](basics/04_rhythm_and_percussion.md) — drum voices, percussion architecture
 - [05 — Signal Types and Mults](basics/05_signal_types_and_mults.md) — what is actually going through your cables
+- [06 — Your First System](basics/06_your_first_system.md) — the physical connectivity needed to make sounds
 
 After working through the basics, use the role-organized table below to find guides relevant to what you want to build.
 
