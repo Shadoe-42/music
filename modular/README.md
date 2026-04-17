@@ -19,6 +19,7 @@ The basics sequence builds from the ground up:
 - [02 — Controlling Sound](basics/02_controlling_sound.md) — envelopes, filters, shaping a voice
 - [03 — Musical Phrases](basics/03_musical_phrases.md) — sequencers, melody, rhythm
 - [04 — Rhythm and Percussion](basics/04_rhythm_and_percussion.md) — drum voices, percussion architecture
+- [05 — Signal Types and Mults](basics/05_signal_types_and_mults.md) — what is actually going through your cables
 
 After working through the basics, use the role-organized table below to find guides relevant to what you want to build.
 
