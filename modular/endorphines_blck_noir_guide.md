@@ -36,6 +36,14 @@ This approach gives the BLCK_NOIR personality that differs from "accurate" digit
 
 ---
 
+## Historical Context
+
+The BLCK_NOIR's circuit design traces directly to the Roland CR-78 CompuRhythm, released in 1978. The CR-78 was the first drum machine to offer full programmability by the user, a shift that changed how rhythm machines were understood and marketed. Its architecture combined a digital microcontroller for timing and pattern storage with discrete analog voice circuits, and those voice circuits used inductor coils as key filtering components. Inductors store and release electromagnetic energy differently than the resistor-capacitor circuits that dominate most analog designs, producing denser transients and a particular low-mid saturation that became the sonic signature of that generation of Roland hardware. The CR-78 fed directly into the TR-808 (1980), which carried forward similar design principles while expanding the voice count and programmability. The BLCK_NOIR's inductor-based noise circuits are a deliberate continuation of that electrical lineage rather than an approximation of its sound.
+
+The gated reverb effect built into the DARKWAVES processor bank has its own history worth knowing. In 1980, engineer Hugh Padgham was working at Townhouse Studios in London on Peter Gabriel's third album alongside producer Steve Lillywhite. An SSL console's talkback circuit, left open during a session, was picking up the room ambience around Phil Collins's drum kit, then compressing and gating it through the console's dynamics processing. The result was a reverb tail that bloomed and then cut off abruptly rather than decaying naturally. Padgham and Lillywhite recognized what they were hearing and developed the technique deliberately; the track "Intruder" was the first recorded use. Collins then brought the same approach to his 1981 solo single "In the Air Tonight," where the technique became one of the most imitated drum sounds in popular music. The BLCK_NOIR's Gated Reverb effect in the DARKWAVES bank is a direct implementation of that sound: a reverb body gated by a threshold, with CABIN FEVER setting the decay and the secondary function setting the gate threshold.
+
+---
+
 ## Architecture Overview
 
 The BLCK_NOIR has 7 drum voices organized into 5 channels. Understanding which voices share a channel matters before patching, because shared channels cannot be fully separated.
