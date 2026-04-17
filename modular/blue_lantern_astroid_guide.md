@@ -8,6 +8,7 @@ functions: [drum-voice]
 behavior_tags: [percussive, gated, warm, dirty, performance-oriented]
 use_cases: [808 style kick drum voice, analog percussion synthesis, percussive bass layer]
 hp: 6
+historical_context: false
 ---
 
 # Blue Lantern Astroid - Guide
@@ -47,7 +48,7 @@ hp: 6
 
 ### The Philosophy: Pure Analog Drum Synthesis Through Proven Circuit Topology
 
-Blue Lantern Astroid represents **fundamental analog drum synthesis** - not through sample playback or digital waveshaping, but through the same circuit topology that powered legendary drum machines from the late 1970s through today. Understanding the Astroid means understanding how analog circuits create percussion.
+Blue Lantern Astroid represents **fundamental analog drum synthesis** - not through sample playback or digital waveshaping, but through the same circuit topology that powered legendary drum machines from the late 1970s through today, Roland's CR-78 (1978) and TR-808 (1980) chief among them. Understanding the Astroid means understanding how analog circuits create percussion.
 
 ### The Twin-T Oscillator: Frequency-Selective Feedback Creates Pure Sine Waves
 
@@ -70,8 +71,8 @@ Blue Lantern Astroid represents **fundamental analog drum synthesis** - not thro
 - **Psychoacoustic power:** A pure 50Hz sine with proper envelope feels bigger than a harmonically rich 50Hz waveform at the same amplitude
 
 **How this appears across drum synthesis:**
-- **TR-808:** Twin-T oscillator creating pure sine, all power at fundamental
-- **TR-909:** Bridged-T oscillator (similar principle) for the kick fundamental  
+- **Roland TR-808 (1980):** Twin-T oscillator creating pure sine, all power at fundamental
+- **Roland TR-909 (1983):** Bridged-T oscillator (similar principle) for the kick fundamental  
 - **Modern sub-bass:** Synthesizers and samplers recreate this with filtered sine waves
 - **Dance music mastering:** Kick fundamentals kept pure, harmonics added carefully above
 
