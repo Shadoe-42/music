@@ -1,22 +1,107 @@
 {
-  "generated": "2026-04-15",
+  "generated": "2026-04-17",
   "summary": {
     "total_guides": 68,
-    "guides_with_issues": 32,
-    "guides_clean": 36,
-    "total_issues": 50,
+    "guides_with_issues": 31,
+    "guides_clean": 37,
+    "total_issues": 60,
     "error_count": 0,
-    "warning_count": 49,
+    "warning_count": 59,
     "deferred_count": 1
   },
   "guides": {
     "4ms_company_listen_io_guide.md": {
-      "clean": true,
-      "issue_count": 0,
+      "clean": false,
+      "issue_count": 12,
       "error_count": 0,
-      "warning_count": 0,
+      "warning_count": 12,
       "deferred_count": 0,
-      "issues": []
+      "issues": [
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"The dual LED bar graphs make this normally invisible process visible. Gain staging — manag\"",
+          "line": 110
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"- **Different character:** Add the Intellijel Stomp between guitar and Listen IO for prope\"",
+          "line": 178
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"- **Different character:** Use the 4ms MetaModule as the external processor — route modula\"",
+          "line": 279
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"- **Different character:** Replace the external effects loop with Erica Synths Pico DSP in\"",
+          "line": 381
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"**Intellijel Stomp** — Handles the high-impedance buffering that Listen IO's general-purpo\"",
+          "line": 681
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"**Any envelope follower (Maths works as one in a pinch)** — Route an external instrument t\"",
+          "line": 683
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"**Frap Tools 411 or Intellijel Mixup** — A pre-conversion stereo mixer for combining multi\"",
+          "line": 685
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"**Erica Synths Pico DSP or any onboard effects module** — Route Listen IO's Mod Out into m\"",
+          "line": 687
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"**4ms MetaModule** — Plugin-quality processing inside the Eurorack case. Listen IO provide\"",
+          "line": 689
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"The output section converts modular signals downward to levels appropriate for studio moni\"",
+          "line": 697
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"Start with a single external source and headphone monitoring as the entire patch. The goal\"",
+          "line": 705
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"When both sections feel natural, begin using them simultaneously in the same patch. Route \"",
+          "line": 709
+        }
+      ]
     },
     "4ms_company_metamodule_guide.md": {
       "clean": true,
@@ -265,19 +350,12 @@
       "issues": []
     },
     "endorphines_blck_noir_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "endorphines_ghost_guide.md": {
       "clean": true,
@@ -296,19 +374,12 @@
       "issues": []
     },
     "endorphines_queen_of_pentacles_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "endorphines_squawk_dirty_to_me_guide.md": {
       "clean": true,
@@ -904,6 +975,104 @@
     }
   },
   "by_check": {
+    "em_dash": [
+      {
+        "file": "4ms_company_listen_io_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"The dual LED bar graphs make this normally invisible process visible. Gain staging — manag\"",
+        "line": 110
+      },
+      {
+        "file": "4ms_company_listen_io_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"- **Different character:** Add the Intellijel Stomp between guitar and Listen IO for prope\"",
+        "line": 178
+      },
+      {
+        "file": "4ms_company_listen_io_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"- **Different character:** Use the 4ms MetaModule as the external processor — route modula\"",
+        "line": 279
+      },
+      {
+        "file": "4ms_company_listen_io_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"- **Different character:** Replace the external effects loop with Erica Synths Pico DSP in\"",
+        "line": 381
+      },
+      {
+        "file": "4ms_company_listen_io_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"**Intellijel Stomp** — Handles the high-impedance buffering that Listen IO's general-purpo\"",
+        "line": 681
+      },
+      {
+        "file": "4ms_company_listen_io_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"**Any envelope follower (Maths works as one in a pinch)** — Route an external instrument t\"",
+        "line": 683
+      },
+      {
+        "file": "4ms_company_listen_io_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"**Frap Tools 411 or Intellijel Mixup** — A pre-conversion stereo mixer for combining multi\"",
+        "line": 685
+      },
+      {
+        "file": "4ms_company_listen_io_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"**Erica Synths Pico DSP or any onboard effects module** — Route Listen IO's Mod Out into m\"",
+        "line": 687
+      },
+      {
+        "file": "4ms_company_listen_io_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"**4ms MetaModule** — Plugin-quality processing inside the Eurorack case. Listen IO provide\"",
+        "line": 689
+      },
+      {
+        "file": "4ms_company_listen_io_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"The output section converts modular signals downward to levels appropriate for studio moni\"",
+        "line": 697
+      },
+      {
+        "file": "4ms_company_listen_io_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"Start with a single external source and headphone monitoring as the entire patch. The goal\"",
+        "line": 705
+      },
+      {
+        "file": "4ms_company_listen_io_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"When both sections feel natural, begin using them simultaneously in the same patch. Route \"",
+        "line": 709
+      }
+    ],
     "section_historical_context": [
       {
         "file": "alm_busy_circuits_mco_alm021_guide.md",
@@ -956,20 +1125,6 @@
       },
       {
         "file": "cre8audio_chipz_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "endorphines_blck_noir_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "endorphines_queen_of_pentacles_guide.md",
         "check_id": "section_historical_context",
         "category": "Missing or Misplaced Sections",
         "severity": "warning",

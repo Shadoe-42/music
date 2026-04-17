@@ -1,6 +1,6 @@
 # Guide Audit Report
 
-Generated: 2026-04-15
+Generated: 2026-04-17
 
 ---
 
@@ -9,11 +9,11 @@ Generated: 2026-04-15
 | Metric | Count |
 |--------|-------|
 | Guides scanned | 68 |
-| Guides with issues | 32 |
-| Guides clean | 36 |
-| Total issues | 50 |
+| Guides with issues | 31 |
+| Guides clean | 37 |
+| Total issues | 60 |
 | ❌ Errors (fix now) | 0 |
-| ⚠️  Warnings (fix when touching) | 49 |
+| ⚠️  Warnings (fix when touching) | 59 |
 | 📌 Deferred (tracked, low priority) | 1 |
 
 ---
@@ -40,8 +40,6 @@ Generated: 2026-04-15
 | `blue_lantern_astroid_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `cre8audio_chipz_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `endorphines_blck_noir_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `endorphines_queen_of_pentacles_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `make_noise_pressure_points_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `make_noise_wogglebug_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `mordax_data_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
@@ -68,6 +66,18 @@ Generated: 2026-04-15
 
 | File | Line | Severity | Issue |
 |------|------|----------|-------|
+| `4ms_company_listen_io_guide.md` | 110 | ⚠️  warning | Em dash in prose: "The dual LED bar graphs make this normally invisible process visible. Gain staging — manag" |
+| `4ms_company_listen_io_guide.md` | 178 | ⚠️  warning | Em dash in prose: "- **Different character:** Add the Intellijel Stomp between guitar and Listen IO for prope" |
+| `4ms_company_listen_io_guide.md` | 279 | ⚠️  warning | Em dash in prose: "- **Different character:** Use the 4ms MetaModule as the external processor — route modula" |
+| `4ms_company_listen_io_guide.md` | 381 | ⚠️  warning | Em dash in prose: "- **Different character:** Replace the external effects loop with Erica Synths Pico DSP in" |
+| `4ms_company_listen_io_guide.md` | 681 | ⚠️  warning | Em dash in prose: "**Intellijel Stomp** — Handles the high-impedance buffering that Listen IO's general-purpo" |
+| `4ms_company_listen_io_guide.md` | 683 | ⚠️  warning | Em dash in prose: "**Any envelope follower (Maths works as one in a pinch)** — Route an external instrument t" |
+| `4ms_company_listen_io_guide.md` | 685 | ⚠️  warning | Em dash in prose: "**Frap Tools 411 or Intellijel Mixup** — A pre-conversion stereo mixer for combining multi" |
+| `4ms_company_listen_io_guide.md` | 687 | ⚠️  warning | Em dash in prose: "**Erica Synths Pico DSP or any onboard effects module** — Route Listen IO's Mod Out into m" |
+| `4ms_company_listen_io_guide.md` | 689 | ⚠️  warning | Em dash in prose: "**4ms MetaModule** — Plugin-quality processing inside the Eurorack case. Listen IO provide" |
+| `4ms_company_listen_io_guide.md` | 697 | ⚠️  warning | Em dash in prose: "The output section converts modular signals downward to levels appropriate for studio moni" |
+| `4ms_company_listen_io_guide.md` | 705 | ⚠️  warning | Em dash in prose: "Start with a single external source and headphone monitoring as the entire patch. The goal" |
+| `4ms_company_listen_io_guide.md` | 709 | ⚠️  warning | Em dash in prose: "When both sections feel natural, begin using them simultaneously in the same patch. Route " |
 | `atovproject_lx-euclid_guide.md` | 62 | ⚠️  warning | Old color label: "**Channel selection buttons (4):** Four buttons below the display, color-coded left to rig" |
 | `erica_synths_pico_dsp_guide.md` | 297 | ⚠️  warning | Old color label: "**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjustin" |
 | `erica_synths_pico_voice_guide.md` | 172 | ⚠️  warning | Old color label: "- **Algorithm:** Chords (Yellow)" |
@@ -93,6 +103,20 @@ Generated: 2026-04-15
 ---
 
 ## Per-Guide Detail
+
+**`4ms_company_listen_io_guide.md`** — 12 warnings
+  - ⚠️ `em_dash` — Em dash in prose: "The dual LED bar graphs make this normally invisible process visible. Gain staging — manag" *(line 110)*
+  - ⚠️ `em_dash` — Em dash in prose: "- **Different character:** Add the Intellijel Stomp between guitar and Listen IO for prope" *(line 178)*
+  - ⚠️ `em_dash` — Em dash in prose: "- **Different character:** Use the 4ms MetaModule as the external processor — route modula" *(line 279)*
+  - ⚠️ `em_dash` — Em dash in prose: "- **Different character:** Replace the external effects loop with Erica Synths Pico DSP in" *(line 381)*
+  - ⚠️ `em_dash` — Em dash in prose: "**Intellijel Stomp** — Handles the high-impedance buffering that Listen IO's general-purpo" *(line 681)*
+  - ⚠️ `em_dash` — Em dash in prose: "**Any envelope follower (Maths works as one in a pinch)** — Route an external instrument t" *(line 683)*
+  - ⚠️ `em_dash` — Em dash in prose: "**Frap Tools 411 or Intellijel Mixup** — A pre-conversion stereo mixer for combining multi" *(line 685)*
+  - ⚠️ `em_dash` — Em dash in prose: "**Erica Synths Pico DSP or any onboard effects module** — Route Listen IO's Mod Out into m" *(line 687)*
+  - ⚠️ `em_dash` — Em dash in prose: "**4ms MetaModule** — Plugin-quality processing inside the Eurorack case. Listen IO provide" *(line 689)*
+  - ⚠️ `em_dash` — Em dash in prose: "The output section converts modular signals downward to levels appropriate for studio moni" *(line 697)*
+  - ⚠️ `em_dash` — Em dash in prose: "Start with a single external source and headphone monitoring as the entire patch. The goal" *(line 705)*
+  - ⚠️ `em_dash` — Em dash in prose: "When both sections feel natural, begin using them simultaneously in the same patch. Route " *(line 709)*
 
 **`alm_busy_circuits_mco_alm021_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
@@ -120,12 +144,6 @@ Generated: 2026-04-15
   - ⚠️ `yaml_hp` — Missing `hp` field
 
 **`cre8audio_chipz_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`endorphines_blck_noir_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`endorphines_queen_of_pentacles_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
 **`erica_synths_pico_dsp_guide.md`** — 1 warning
@@ -210,11 +228,10 @@ Generated: 2026-04-15
 
 ---
 
-## Clean Guides (36)
+## Clean Guides (37)
 
 No issues detected:
 
-- `4ms_company_listen_io_guide.md`
 - `4ms_company_metamodule_guide.md`
 - `4ms_rcd_v2_guide.md`
 - `4ms_scm_plus_guide.md`
@@ -228,8 +245,10 @@ No issues detected:
 - `doepfer_a_130_2_guide.md`
 - `dspcoffee_kali_guide.md`
 - `earthquaker_devices_afterneath_guide.md`
+- `endorphines_blck_noir_guide.md`
 - `endorphines_ghost_guide.md`
 - `endorphines_ground_control_guide.md`
+- `endorphines_queen_of_pentacles_guide.md`
 - `endorphines_squawk_dirty_to_me_guide.md`
 - `erica_synths_black_envelope_generator_2_guide.md`
 - `erica_synths_black_polyvoks_vcf_guide.md`
