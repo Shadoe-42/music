@@ -373,10 +373,9 @@ If applicable, add module-specific technical specs:
    - **Non-negotiable:** Every guide must include proper GitHub image integration
 
 2. **Enhanced Format Alternatives (MANDATORY - ALL PATCHES):**
-   - **Required for EVERY patch:** Budget/Premium/Different character options
-   - **Format:** Main Example + Alternative Options with specific module names
+   - **Required for EVERY patch:** Budget/Different character/Premium options with specific module names
    - **Cannot be skipped:** Testing revealed systematic omission when not explicitly required
-   - **All patches means ALL patches:** No exceptions for any patch in any guide
+   - **See Patch Section Palette** for full format, additional optional blocks, and sequencing rules
 
 ### **Quality Requirements:**
 - **Interface accuracy** - Verify jack names against `comprehensive_interface_database.md`
@@ -422,6 +421,76 @@ If applicable, add module-specific technical specs:
 - **ASCII symbols:** ○ = output, ◀ = input, ── = audio, ║ = CV
 - **Module boxes:** Standard format (see `visual_communication_standards.md` for details)
 - **GitHub images:** `![Module](https://github.com/Shadoe-42/music/raw/main/modular/images/[module]/front_panel.jpg)`
+
+---
+
+## **Patch Section Palette**
+
+Each patch in a guide is built from a core structure (diagram, Setup, Controls, Result) plus optional blocks drawn from this palette. The palette exists because the guides document a modular ecosystem — the documentation itself should reflect that compositional flexibility. Use what serves the patch. Omit what does not. Never force a block to fill space.
+
+### **Core Structure (required in every patch)**
+
+- **ASCII signal flow diagram** — shows the actual patch connections
+- **Setup** — what to connect before turning anything on
+- **Controls** — what to adjust once running
+- **Result** — what the patch produces and why it matters
+
+### **Palette Blocks (use when they serve the patch)**
+
+---
+
+**Enhanced Alternatives** *(use in every patch — the only palette block that is effectively mandatory)*
+
+Provides three concrete substitution options at different price/character points so the patch is not locked to one exact module configuration.
+
+```
+**Enhanced Alternatives:**
+- **Budget:** [specific module] — [one-line rationale]
+- **Different character:** [specific module] — [one-line rationale]
+- **Premium:** [specific module] — [one-line rationale]
+```
+
+Use manufacturer + module name for every entry. Do not write generic descriptions ("any VCA") when a specific module name exists.
+
+---
+
+**Learning Objectives** *(use when the patch teaches a transferable principle)*
+
+States what the musician learns from this specific patch — not what the module does, but what understanding they walk away with. Best when the principle applies beyond this module.
+
+```
+**Learning Objectives:**
+- [Principle 1 — one sentence, written as a takeaway, not a feature description]
+- [Principle 2]
+- [Principle 3]
+```
+
+Two to four items. If there is nothing genuinely transferable, omit the block rather than generating placeholder content.
+
+---
+
+**Experimentation Ideas** *(use when the patch has natural room to grow)*
+
+Numbered list of variations and extensions the musician can try from this starting point. Encourages divergence without scripting the outcome.
+
+```
+**Experimentation Ideas:**
+1. [Variation or extension — starts with an action verb, one to two sentences]
+2. ...
+```
+
+Three to five items. Framed as invitations, not instructions. If the patch is already at the edge of the module's range, omit rather than inventing artificial extensions.
+
+---
+
+### **Sequencing Within a Patch**
+
+When multiple palette blocks appear in the same patch, maintain this order:
+
+1. Core structure (diagram + Setup/Controls/Result)
+2. Enhanced Alternatives
+3. Learning Objectives
+4. Experimentation Ideas
 
 ---
 
