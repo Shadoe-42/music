@@ -218,6 +218,18 @@ The lx-euclid does something unusual: it takes a mathematically rigorous concept
 
 ---
 
+## Historical Context
+
+Godfried Toussaint's 2005 paper establishing the Euclidean algorithm as a generator of traditional world rhythms entered the Eurorack community quickly. By the early 2010s, several designers had implemented Euclidean rhythm generation in module form, including early DIY projects by Tom Whitwell and Vladimir Pantelic. The algorithm was not difficult to implement in firmware; a dozen lines of code could produce all the basic Euclidean patterns. What varied across implementations was the interface: how a player would specify the beat count and step length, read the current pattern, and modify it in real time. Most modules used rotary encoders and LED rings or rows of buttons. The geometry of the representation was almost always linear, even though the underlying mathematics is circular.
+
+Lucas Bonvin is an embedded systems engineer from Switzerland who trained at the HES-SO University of Applied Sciences and Arts Western Switzerland, graduating in 2017. He came to the lx-euclid through a collaboration with AtoVproject, releasing the module in 2024 as his first commercial hardware product. The design question he was asking was not how to implement Euclidean rhythms, since that problem was long solved, but what the interface for interacting with them should feel like. His starting point was the geometry of the algorithm itself. A Euclidean rhythm is fundamentally a problem of distributing points around a circle: how many points, over how many positions, arranged as evenly as possible. That is not a linear structure. It is a circular one. Most interfaces forced it into a line. Bonvin built an interface that preserved the circle.
+
+The lx-euclid's two concentric touch rings correspond directly to the two primary parameters of any Euclidean rhythm: the outer ring sets the total number of steps, the inner ring sets the beat count. A player traces the outer ring once to set the pattern length, traces the inner ring once to set the number of beats, and the pattern is set. The circular display shows the current state as a ring of illuminated and dark positions. The match between the interface geometry and the underlying mathematical geometry is not cosmetic; it changes how quickly a player can form an intention and execute it, and it makes the relationship between the two parameters physically intuitive rather than conceptually abstract.
+
+Beyond the standard Euclidean distribution, Bonvin extended the algorithm into three variant modes: Exponential, which clusters beats toward the beginning of the pattern; Inverse Exponential, which accumulates them toward the end; and Symmetric, which alternates accumulation between the two halves. All three preserve the total beat count while redistributing where within the cycle those beats land. The same three beats across eight steps produces four distinct rhythmic characters across the four algorithms. This transforms the distribution algorithm from a single mathematical property into a groove texture parameter, and turns the lx-euclid from an implementation of a known idea into an instrument with its own expressive vocabulary.
+
+---
+
 ## Patch Examples
 
 ### Patch 1: Four-Channel Drum Pattern with Independent Subdivisions
