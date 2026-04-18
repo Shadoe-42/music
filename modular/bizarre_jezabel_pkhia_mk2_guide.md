@@ -94,13 +94,6 @@ hp: 10
 - **Function:** Switches between dual-mono mode (two independent channels with separate control) and true stereo mode (both channels linked as a coordinated stereo processor)
 - **Dual-mono:** Each channel operates independently — different filter settings, separate CV inputs, no interaction between left and right
 - **Stereo:** Channels operate as a unified stereo instrument — use this when processing a stereo source and want both sides to track together as one voice
-- **User research needed:** If you discover what this controls, please document your findings
-- **Testing approach:** Try both positions during different patches and note any changes in:
-  - Filter response or coupling behavior
-  - Signal routing characteristics
-  - Stereo image or channel interaction
-  - VCA operation or bypass behavior
-  - Overall tonal character
 - **Hand-built reality:** European small-batch modules sometimes include features that emerge during the design process but remain undocumented
 - **Community knowledge:** Share findings with other Pkhia users to build collective understanding
 
