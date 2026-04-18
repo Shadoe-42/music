@@ -88,11 +88,12 @@ hp: 10
 - **Modulation friendly:** Excellent for LFO sweeps, envelope control, sequencing on both filters AND VCAs
 - **Dual CV system:** Complete independent control over filtering AND amplitude per channel
 
-### **6. Mystery Switch (Function Unknown)**
+### **6. Mono/Stereo Mode Switch**
 - **Location:** Left side near the lp outputs
 - **Symbol:** Solid gold circle overlapping a gold ring
-- **Function:** Currently undocumented - testing required
-- **Documentation status:** Bizarre Jezabel hasn't specified this switch's purpose in available materials
+- **Function:** Switches between dual-mono mode (two independent channels with separate control) and true stereo mode (both channels linked as a coordinated stereo processor)
+- **Dual-mono:** Each channel operates independently — different filter settings, separate CV inputs, no interaction between left and right
+- **Stereo:** Channels operate as a unified stereo instrument — use this when processing a stereo source and want both sides to track together as one voice
 - **User research needed:** If you discover what this controls, please document your findings
 - **Testing approach:** Try both positions during different patches and note any changes in:
   - Filter response or coupling behavior
