@@ -12,7 +12,7 @@ hp: 18
 
 # Mutable Instruments Marbles - Beginner's Guide
 
-![Mutable Instruments Marbles](https://github.com/Shadoe-42/music/raw/main/modular/images/mutable_instruments/marbles/front_panel.jpg)
+![Mutable Instruments Marbles](https://github.com/Shadoe-42/music/raw/main/modular/images/mutable_instruments/marbles/front_panel.jpg)  
 *Intelligent chaos generator with musical memory: algorithmic pattern generation using probability distributions, DEJA VU memory system, and sophisticated randomness for musical sequences*
 
 *The Intelligent Chaos Generator with Musical Memory*
