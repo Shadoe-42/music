@@ -53,8 +53,8 @@ Dann Green founded 4ms Company in Nashville, Tennessee around 2008-2009. The Rot
 | Spec | Value |
 |------|-------|
 | Width | 8HP |
-| Depth | ⚠️ ~24mm |
-| Power | ⚠️ +50mA / 0mA |
+| Depth | 24mm |
+| Power | +50mA / 0mA |
 | Inputs | Clock In, Rotate CV, Reset |
 | Outputs | Out 1-8 (gate or trigger, selectable) |
 | Division range | /1 to /8 default; /1 to /64 via jumper or Breakout |
