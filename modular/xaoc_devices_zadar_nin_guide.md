@@ -27,8 +27,7 @@ historical_context: false
 
 ---
 
-## Quick Reference
-
+## Quick Start: First Sound in 5 Minutes
 | Spec | Zadar | NIN |
 |------|-------|-----|
 | Width | 10HP | 3HP |
@@ -87,8 +86,7 @@ The **OLED display** shows the current shape, all active parameter values, and i
 
 ---
 
-## Per-Channel Parameters
-
+## Essential Parameters (The Channel Controls)
 ### Shape Selection
 
 Turn the SHAPE/REV encoder to scroll through the 270 shapes. The bank letter and shape number are visible on screen during selection. Push the encoder to reverse the shape; useful for turning a sharp attack with a slow decay into a slow attack with a sharp decay.

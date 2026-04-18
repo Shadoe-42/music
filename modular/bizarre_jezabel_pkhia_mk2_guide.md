@@ -24,11 +24,14 @@ hp: 10
 **What is Pkhia MK2?** A dual/stereo analog multi-mode filter AND VCA module designed specifically for stereo processing. It combines two analog filters with pre-filter VCAs, allowing complete dynamic and frequency shaping in one module. Each channel offers multiple filter modes (low-pass, band-pass, high-pass) plus voltage-controlled amplification, and they can work independently as dual-mono or together as a true stereo processor with integrated VCA control.
 
 **Key Specifications:**
-- **Width:** 10HP
-- **Depth:** 20mm  
-- **Power:** 50mA @ +12V / 10mA @ -12V
-- **Architecture:** Dual analog filters + Pre-filter VCAs
-- **Filter Slope:** 12dB (2-pole)
+
+| Spec | Value |
+|------|-------|
+| Width | 10HP |
+| Depth | 20mm |
+| Power | +50mA / -10mA |
+| Architecture | Dual analog filters + Pre-filter VCAs |
+| Filter Slope | 12dB (2-pole) |
 
 ### Your First Stereo Filter Sweep
 1. **Connect audio source** → **i ●, i ●●** (or just i ● for mono-to-stereo)
@@ -726,38 +729,12 @@ When you master pre-filter VCA architecture, stereo width creation through proce
 
 ## Advanced Learning Path
 
-**Recommended Study Progression:**
 1. **Start with Pkhia fundamentals:** Master dual filter architecture, stereo processing, and boutique European analog character
 2. **Add expressive touch control:** Integrate Cre8audio Cellz for touch-responsive stereo filter performance (see Cellz guide)
 3. **Include musical sequencing:** Use Squarp Hermod+ for musical stereo filter sequences with quantization (see Hermod+ guide)
 4. **Add function enhancement:** Apply Make Noise Maths for mathematical processing of expressive control signals (see Maths guide)
 5. **Include performance interfaces:** Use 16n Faderbank or Tetrapad for multi-parameter performance control
 6. **Complete the ecosystem:** Add all multi-function modules for complete expressive filter performance workstation
-
-**Cross-Module Learning Opportunities:**
-- **Pkhia + Cellz:** Learn expressive stereo filtering through touch-responsive performance control
-- **Pkhia + Hermod+:** Master musical stereo filter sequencing with quantized frequency relationships
-- **Pkhia + Maths:** Understand mathematical enhancement of expressive filter control signals
-- **Pkhia + Performance Controllers:** Explore multi-parameter control for live stereo filter performance
-- **All Multi-Function + Pkhia:** Build complete expressive filter ecosystems with boutique European character
-
-**Skill Development Milestones:**
-- **Beginner:** Use Pkhia for basic stereo filtering and multi-mode processing techniques
-- **Intermediate:** Master expressive stereo filtering with touch-based performance control
-- **Advanced:** Create musical stereo filter sequences with quantized frequency relationships and mathematical enhancement
-- **Expert:** Design complete expressive filter systems where Pkhia serves as boutique analog core for performance ecosystems
-
-**Advanced Expressive Filter Concepts:**
-- **Boutique European Character:** Understand analog warmth and musical filtering characteristics of European craftsmanship
-- **Expressive Touch Control:** Master touch-responsive stereo filter performance with real-time human expression
-- **Musical Filter Sequencing:** Explore quantized stereo filter sequences that follow musical scales and intervals
-- **Complete Performance Ecosystems:** Design systems where expressive control serves boutique analog stereo character
-
-**Performance Applications:**
-- **Live Expressive Control:** Real-time Pkhia stereo filter control for dynamic performance with touch and expression
-- **Musical Filter Performance:** Foundation for sequenced stereo filtering with musical processing and quantized control
-- **Boutique Analog Processing:** Bridge between digital control precision and European analog stereo character
-- **Educational Tool:** Learn expressive filter concepts through hands-on boutique analog interaction
 
 ---
 

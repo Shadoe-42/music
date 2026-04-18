@@ -24,10 +24,13 @@ hp: 3
 **What is Pico LFO/S&H?** A fully analog dual utility module combining a low frequency oscillator with simultaneous triangle and square outputs, plus a sample & hold circuit. It's the fundamental modulation source that every rack needs, condensed into just 3HP.
 
 **Key Specifications:**
-- **Width:** 3 HP
-- **Depth:** 35 mm
-- **Power:** 13 mA @ +12V / 10 mA @ -12V / 0 mA @ +5V
-- **Architecture:** Fully analog dual utility (LFO + Sample & Hold)
+
+| Spec | Value |
+|------|-------|
+| Width | 3HP |
+| Depth | 35mm |
+| Power | +13mA / -10mA |
+| Architecture | Fully analog dual utility (LFO + Sample & Hold) |
 
 ### Your First LFO Modulation
 1. **Turn Rate knob** to 12 o'clock position
@@ -130,8 +133,7 @@ LFO and Sample & Hold are the most fundamental modulation sources in synthesis. 
 
 ---
 
-## Utility Patch Applications
-
+## Patches
 ### **Patch 1: Basic - Fundamental Modulation Setup**
 ```
 VCO (Plaits, Braids, STO) → Target Module
@@ -306,42 +308,3 @@ Mixer (Mixup, Performance Mixer) → Combined modulation output
 
 
 ---
-
-## Advanced Learning Path
-
-**Recommended Study Progression:**
-1. **Start with Pico LFO/S&H fundamentals:** Master dual analog modulation, S&H concepts, and fundamental modulation theory
-2. **Add rhythmic relationships:** Integrate 4ms RCD v2 for polyrhythmic modulation with clock division/multiplication (see RCD guide)
-3. **Include mathematical processing:** Use Make Noise Maths for complex function-based modulation control (see Maths guide)
-4. **Add musical intelligence:** Apply Intellijel Scales for quantized, musical modulation results (see Scales guide)
-5. **Include expressive timing:** Use 2hp Brst for manual control and burst pattern timing (see Brst guide)
-6. **Complete the workstation:** Add Disting mk4 (algorithm processing) + Function Junction (CV mathematics) + RCD v2 (rhythmic timing) for complete algorithmic modulation control
-
-**Cross-Module Learning Opportunities:**
-- **Pico LFO/S&H + RCD:** Learn polyrhythmic modulation relationships through mathematical clock processing
-- **Pico LFO/S&H + Maths:** Master function-based modulation control with complex mathematical relationships
-- **Pico LFO/S&H + Scales:** Understand musical modulation through quantization and scale relationships
-- **Pico LFO/S&H + Brst:** Explore expressive timing control with manual triggers and burst patterns
-- **All Multi-Function + Pico LFO/S&H:** Build complete modulation performance systems where analog modulation responds to human expression
-
-**Skill Development Milestones:**
-- **Beginner:** Use LFO and S&H functions for basic analog modulation and voltage processing
-- **Intermediate:** Master clock relationships and mathematical modulation control through multi-function integration
-- **Advanced:** Create performance modulation patches with musical intelligence and expressive timing
-- **Expert:** Design complete modulation performance systems where Pico LFO/S&H serves as analog core for expressive control
-
-**Advanced Modulation Concepts:**
-- **Analog LFO Mastery:** Understand triangle vs square wave characteristics and their musical applications
-- **S&H Processing Theory:** Master sampling, holding, and stepped voltage generation concepts
-- **Clock Relationship Integration:** Explore how mathematical timing affects analog modulation character
-- **Performance Modulation:** Design systems where human expression controls fundamental analog modulation
-
-**Performance Applications:**
-- **Live Modulation Control:** Real-time LFO rate and S&H timing control for dynamic performance
-- **Generative Modulation Systems:** Foundation for self-evolving analog modulation with mathematical precision
-- **Expressive Analog Processing:** Bridge between human performance and fundamental analog modulation circuits
-- **Educational Tool:** Learn fundamental modulation concepts through hands-on analog circuit interaction
-
----
-
-*Visit [Erica Synths](https://www.ericasynths.lv/) for complete documentation and the full Pico series*

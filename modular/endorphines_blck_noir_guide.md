@@ -64,8 +64,7 @@ Metallic (mb/cy) is one channel shared by two voices: metallic beat (mb) and cym
 
 ---
 
-## Triggering Your Drums
-
+## Quick Start: Trigger Your First Voice in 5 Minutes
 Each voice receives triggers through dedicated inputs at the bottom of the panel. The inputs accept standard V-trigger signals (0...+5V or 0...+10V pulses) with a 0.65V threshold. Minimum trigger length is 1ms, though 10ms is recommended for reliable triggering across all sequencers and sources.
 
 **Velocity CV (pre-fader VCA):** Every voice channel has a velocity input above the trigger input. This input controls amplitude before the channel's manual volume fader, functioning as a VCA. The range is 0...+5V. At 0V the drum is silent. At +5V it plays at full amplitude. When nothing is patched into the velocity jack, that channel defaults to full volume automatically. Patching a CV source gives you dynamic control over each hit. The manual suggests thinking of this input as either a velocity control (for accent and dynamics) or an envelope input (for shaping how the level evolves within a hit). Any CV source in the 0...+5V range works: LFOs, S&H outputs, sequencer CV lanes, or envelopes.
@@ -74,8 +73,7 @@ Each voice receives triggers through dedicated inputs at the bottom of the panel
 
 ---
 
-## Per-Voice Parameters
-
+## Essential Parameters (The Voice Controls)
 ### Bass Drum (BD)
 
 The bass drum is the deepest voice and the only one generated entirely from an analog resonant circuit without noise injection.

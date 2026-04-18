@@ -27,6 +27,16 @@ TARGET_GUIDES = [
     "endorphines_ground_control_guide.md",
     "erica_synths_pico_dsp_guide.md",
     "make_noise_maths_guide.md",
+    # Tier 1 batch — April 2026
+    "alm_busy_circuits_mco_alm021_guide.md",
+    "behringer_dual_envelope_generator_1003_utility_guide.md",
+    "bizarre_jezabel_pkhia_mk2_guide.md",
+    "blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md",
+    "cre8audio_chipz_guide.md",
+    "erica_synths_black_quad_vca2_guide.md",
+    "erica_synths_pico_drum2_guide.md",
+    "erica_synths_pico_lfo_sh_guide.md",
+    "erica_synths_pico_vca2_guide.md",
 ]
 
 # ---------------------------------------------------------------------------

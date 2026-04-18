@@ -34,12 +34,15 @@ historical_context: false
 **What is Black Quad VCA2?** A versatile four-channel voltage-controlled amplifier with sequential output mixing, normalled CV inputs, and selectable linear/logarithmic response curves - designed for complex modular systems requiring sophisticated amplitude control.
 
 **Key Specifications:**
-- **Width:** 10 HP
-- **Depth:** 35 mm
-- **Power:** 64 mA @ +12V / 62 mA @ -12V
-- **Channels:** Four independent VCA channels with sequential mixing
-- **CV Inputs:** Normalled series (CV1 → CV2 → CV3 → CV4), -10V to +10V range
-- **Response Modes:** Selectable linear (precise CV control) or logarithmic (musical amplitude curves)
+
+| Spec | Value |
+|------|-------|
+| Width | 10HP |
+| Depth | 35mm |
+| Power | +64mA / -62mA |
+| Channels | Four independent VCA channels with sequential mixing |
+| CV Inputs | Normalled series (CV1 → CV2 → CV3 → CV4), -10V to +10V range |
+| Response Modes | Selectable linear (precise CV control) or logarithmic (musical amplitude curves) |
 
 ### Your First VCA Setup
 1. **Connect audio source** - Patch an oscillator or voice to IN1
@@ -352,11 +355,11 @@ Reality: Linear is mathematically even but not musically even. Logarithmic match
 - **Different approach:** Fonitronik VC Amp II (fully analog design, different character, more compact)
 - **Premium:** Make Noise Optomix (optical VCA with internal mixing and filtering, completely different paradigm)
 
-### **Patch 3: Expert - Phase 2 Amplitude Brain Ecosystem**
+### **Patch 3: Expert - Four-Source Amplitude Coordination**
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│ Complete Phase 2│    │   MetaModule    │    │ Make Noise      │    │ Erica Black     │
-│ Ecosystem       │    │                 │    │ Wogglebug       │    │ Quad VCA2       │
+│  Audio Sources  │    │   MetaModule    │    │ Make Noise      │    │ Erica Black     │
+│                 │    │                 │    │ Wogglebug       │    │ Quad VCA2       │
 │                 │    │ Fundamental     │    │                 │    │                 │
 │ Main Mix ○──────┼────┼─ VCO Plugin     │    │ Smooth ○────────┼────┼─ CV1 ◀          │
 │                 │    │                 │    │                 │    │                 │
@@ -517,38 +520,12 @@ Reality: Linear is mathematically even but not musically even. Logarithmic match
 
 ## Advanced Learning Path
 
-**Recommended Study Progression:**
 1. **Start with VCA fundamentals:** Master basic amplitude control and response curve selection
 2. **Add sequential mixing:** Explore automatic mixing and grouped output configurations
 3. **Include CV normalling control:** Use normalled CV inputs and strategic breaking techniques
 4. **Add organic amplitude automation:** Integrate natural CV sources for evolving amplitude control
 5. **Include chaos and pattern learning:** Add chaotic and adaptive amplitude control for complex behavior
 6. **Complete the amplitude ecosystem:** Integrate multiple amplitude sources for coordinated amplitude processing
-
-**Cross-Module Learning Opportunities:**
-- **VCA + Ochd:** Natural amplitude automation through organic LFO amplitude control
-- **VCA + Wogglebug:** Chaotic amplitude control creating unpredictable but musical volume variations
-- **VCA + Marbles:** Adaptive amplitude patterns that evolve with musical context and input patterns
-- **VCA + Hermod+:** Sequenced amplitude control with precise timing and pattern programming
-- **All Advanced modules + VCA:** Complete ecosystem enabling sophisticated amplitude control within complex modular systems
-
-**Skill Development Milestones:**
-- **Beginner:** Basic VCA operation, response curve selection, sequential mixing understanding
-- **Intermediate:** CV normalling control, advanced mixing configurations, performance amplitude control
-- **Advanced:** Multi-source amplitude control, chaos integration, adaptive amplitude behavior
-- **Expert:** Complete amplitude ecosystem design with multi-module coordination and sophisticated amplitude brain operation
-
-**Advanced VCA Concepts:**
-- **Response Curve Theory:** Understanding linear vs logarithmic amplitude curves for different applications
-- **Sequential Mixing Behavior:** How automatic mixing creates flexible routing without external mixers
-- **CV Normalling Networks:** Understanding series CV distribution and strategic interruption techniques
-- **Amplitude Coordination:** Managing multiple amplitude sources within integrated modular systems
-
-**Performance Applications:**
-- **Live Amplitude Control:** Real-time amplitude shaping during performance through CV automation and manual control
-- **Dynamic Amplitude Systems:** Self-evolving amplitude behavior using chaos and learning circuits
-- **Complex Amplitude Processing:** Sophisticated amplitude coordination for advanced musical applications
-- **Professional Mixing:** Studio-quality amplitude management for multi-channel modular recording
 
 ---
 

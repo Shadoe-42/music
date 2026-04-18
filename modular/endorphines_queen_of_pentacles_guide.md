@@ -26,8 +26,7 @@ hybrid: true
 
 ---
 
-## Quick Reference
-
+## Quick Start: First Sound in 5 Minutes
 | Spec | Value |
 |------|-------|
 | Voices | 7 total: BD, SD, CP (analog) + s1, s2, s3, s4 (sample) |
@@ -72,8 +71,7 @@ The combination is intentional: the analog voices handle the core punch and body
 
 ---
 
-## The Analog Voices
-
+## Essential Parameters (The Voice Controls)
 ### Bass Drum (BD)
 
 The bass drum is built around an internal triangle oscillator. Several parameters shape its character:

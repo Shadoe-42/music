@@ -399,38 +399,12 @@ Always set G. LENGTH first, then patch the module, then test. If you change G. L
 
 ## Advanced Learning Path
 
-**Recommended Study Progression:**
 1. **Start with EG2 fundamentals:** Master internal gate operation and basic ADSR envelope generation
 2. **Add retriggering techniques:** Explore complex trigger patterns and envelope restart behavior
 3. **Include CV gate length control:** Use external CV sources for dynamic envelope timing
 4. **Add chaos and organic modulation:** Integrate chaotic and natural CV sources for evolving envelope behavior
 5. **Include adaptive patterns:** Add learning circuits for evolving envelope characteristics
 6. **Complete the envelope ecosystem:** Integrate multiple envelope sources for coordinated envelope processing
-
-**Cross-Module Learning Opportunities:**
-- **EG2 + Ochd:** Natural envelope timing automation through organic LFO gate length control
-- **EG2 + Wogglebug:** Chaotic envelope timing creating unpredictable but musical envelope behavior
-- **EG2 + Marbles:** Adaptive envelope patterns that evolve with musical context and trigger input
-- **EG2 + Hermod+:** Sequenced envelope control with precise timing and pattern programming
-- **All Advanced Modules + EG2:** Complete ecosystem enabling sophisticated envelope control within complex modular systems
-
-**Skill Development Milestones:**
-- **Beginner:** Internal gate operation, basic ADSR envelope shaping, loop vs single modes
-- **Intermediate:** Retriggering techniques, CV modulation of envelope parameters, complex timing control
-- **Advanced:** Multi-source envelope control, chaos integration, adaptive envelope behavior
-- **Expert:** Complete envelope ecosystem design with multi-module coordination and sophisticated envelope brain operation
-
-**Advanced Envelope Concepts:**
-- **Internal Gate Theory:** Understanding how trigger-to-gate conversion enables full ADSR operation
-- **Retriggering Behavior:** How envelope restart during active periods creates complex rhythmic patterns
-- **CV Envelope Control:** Dynamic modulation of envelope timing for evolving musical textures
-- **Envelope Coordination:** Managing multiple envelope sources within integrated modular systems
-
-**Performance Applications:**
-- **Live Envelope Control:** Real-time envelope shaping during performance through CV automation
-- **Generative Envelope Systems:** Self-evolving envelope behavior using chaos and learning circuits
-- **Complex Envelope Processing:** Sophisticated envelope coordination for advanced musical applications
-- **Educational Tool:** Learning envelope fundamentals through hands-on internal gate and retriggering operation
 
 ---
 

@@ -24,14 +24,17 @@ hp: 12
 **What is Chipz?** Think of it as three oscillators in one compact package - two chiptune-style VCOs inspired by classic 8-bit video game consoles (Commodore, Atari, NES) plus an LFO for modulation. Despite the nostalgic inspiration, it's capable of much more than just retro gaming sounds, offering everything from classic analog tones to digital noise textures.
 
 **Key Specifications:**
-- **Width:** 12HP
-- **Depth:** 38mm
-- **Power:** +12V: 75mA / -12V: 5mA
-- **Oscillators:** 2 independent chiptune VCOs + 1 LFO
-- **Waveforms:** 5 morphing waveforms per oscillator (Sine/Triangle/Saw/Square/Noise)
-- **CV Inputs:** V/OCT pitch control per oscillator + Filter CV (Chip1) + Width CV (Chip2)
-- **Special Feature:** LFO with 4X output for frequency multiplication
-- **Character:** Intentional lo-fi digital with aliasing and bit-crushing
+
+| Spec | Value |
+|------|-------|
+| Width | 12HP |
+| Depth | 38mm |
+| Power | +75mA / -5mA |
+| Oscillators | 2 independent chiptune VCOs + 1 LFO |
+| Waveforms | 5 morphing waveforms per oscillator (Sine/Triangle/Saw/Square/Noise) |
+| CV Inputs | V/OCT pitch control per oscillator + Filter CV (Chip1) + Width CV (Chip2) |
+| Special Feature | LFO with 4X output for frequency multiplication |
+| Character | Intentional lo-fi digital with aliasing and bit-crushing |
 
 ### Your First Chiptune Beep
 1. **Connect Chip1 output** → **your mixer or audio interface**
@@ -687,38 +690,12 @@ Cre8audio began developing Chipz with the intention of using actual vintage soun
 
 ## Advanced Learning Path
 
-**Recommended Study Progression:**
 1. **Start with Chipz fundamentals:** Master dual oscillator control, waveform morphing, and lo-fi gaming character
 2. **Add musical sequencing:** Integrate Squarp Hermod+ for professional composition with quantization (see Hermod+ guide)
 3. **Include signal management:** Add proper attenuation and gain staging for hot outputs
 4. **Add external filtering:** Explore complex filters to expand beyond basic Chip1 low-pass
 5. **Include performance control:** Use Cre8audio Cellz for expressive touch-based chiptune performance
 6. **Build complete systems:** Integrate Chipz with multi-function modules for professional chiptune workflows
-
-**Cross-Module Learning Opportunities:**
-- **Chipz + Cellz:** Natural pairing for NiftyBundle - touch control plus chiptune generation
-- **Chipz + Sequencers:** Learn musical composition through quantized sequencing and chiptune aesthetics
-- **Chipz + Filters:** Understand filtering beyond basic low-pass through external filter modules
-- **Chipz + Effects:** Explore how modern processing enhances lo-fi character without destroying it
-- **Chipz + Complete Systems:** Build retro-modern ecosystems with gaming sound at the core
-
-**Skill Development Milestones:**
-- **Beginner:** Use Chipz for basic chiptune generation and waveform morphing techniques
-- **Intermediate:** Master dual oscillator techniques, proper gain staging, and musical sequencing
-- **Advanced:** Create retro-modern hybrid systems with external processing and performance control
-- **Expert:** Design complete chiptune performance systems with professional signal management
-
-**Advanced Chiptune Concepts:**
-- **Lo-Fi Gaming Character:** Understand digital aesthetic and intentional artifacts of classic console sound
-- **Digital Oscillator Principles:** Master aliasing, quantization, and bit-crushing as musical features
-- **Waveform Morphing Technology:** Explore continuous timbral transition through limited palette
-- **PWM vs Filtering:** Compare two different approaches to timbral variation and their sonic results
-
-**Performance Applications:**
-- **Live Chiptune Performance:** Real-time Chipz control with touch interfaces and musical sequencing
-- **Retro-Modern Composition:** Foundation for music that bridges classic gaming with modern production
-- **Lo-Fi Production:** Understanding intentional digital artifacts as aesthetic choice in synthesis
-- **Educational Tool:** Learn digital synthesis concepts through hands-on gaming sound interaction
 
 ---
 

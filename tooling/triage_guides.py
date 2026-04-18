@@ -66,12 +66,13 @@ PHASE2_PHRASES = [
 ]
 
 # Old-generation ALP sub-section headings: (pattern, readable_name)
+# Patterns require bold heading format (**text:**) to avoid matching prose.
 ALP_SUBSECTION_HEADINGS = [
-    (r"recommended study progression", "Recommended Study Progression"),
-    (r"cross-?module learning",        "Cross-Module Learning Opportunities"),
-    (r"skill development milestones",  "Skill Development Milestones"),
-    (r"performance applications",      "Performance Applications"),
-    (r"advanced .{3,30} concepts",     "Advanced [X] Concepts"),
+    (r"^\*\*recommended study progression\*\*",  "Recommended Study Progression"),
+    (r"^\*\*cross-?module learning",             "Cross-Module Learning Opportunities"),
+    (r"^\*\*skill development milestones\*\*",   "Skill Development Milestones"),
+    (r"^\*\*performance applications\*\*",       "Performance Applications"),
+    (r"^\*\*advanced .{3,30} concepts\*\*",      "Advanced [X] Concepts"),
 ]
 
 # Old-generation patch table column headers (Tier 3 signal)
@@ -217,7 +218,7 @@ def t3_alp_no_numbered_list(lines):
         return False, []
     alp_text = "\n".join(alp)
     found_subs = [name for pat, name in ALP_SUBSECTION_HEADINGS
-                  if re.search(pat, alp_text, re.IGNORECASE)]
+                  if re.search(pat, alp_text, re.IGNORECASE | re.MULTILINE)]
     has_numbered = bool(re.search(r"^\d+\.", alp_text, re.MULTILINE))
     if found_subs and not has_numbered:
         return True, found_subs
@@ -257,7 +258,7 @@ def t2_alp_subsections_with_numbered(lines):
         return False, []
     alp_text = "\n".join(alp)
     found_subs = [name for pat, name in ALP_SUBSECTION_HEADINGS
-                  if re.search(pat, alp_text, re.IGNORECASE)]
+                  if re.search(pat, alp_text, re.IGNORECASE | re.MULTILINE)]
     # Also flag any ### headings inside ALP even without named patterns
     has_any_hash3 = any(line.startswith("###") for line in alp)
     has_numbered = bool(re.search(r"^\d+\.", alp_text, re.MULTILINE))

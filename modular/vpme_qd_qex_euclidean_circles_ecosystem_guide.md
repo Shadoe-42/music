@@ -9,7 +9,7 @@ behavior_tags: [stable, percussive, generative, linear]
 use_cases: [euclidean rhythm source, polyrhythmic pattern generator, rhythmic gate patterns]
 ---
 
-# VPME.de QD + QEX + Euclidean Circles V2 - Guide
+# VPME.de QD + QEX + Euclidean Circles V2
 
 **The Analog Drum Synthesis + Mathematical Rhythm Ecosystem**
 
@@ -34,37 +34,36 @@ use_cases: [euclidean rhythm source, polyrhythmic pattern generator, rhythmic ga
 
 ## Understanding the QD + EC2 Philosophy
 
-### **What Makes This Combination Special:**
+**What Makes This Combination Special:**
 The QD provides **analog drum synthesis** - real synthesis engines creating kick drums, snares, hi-hats, and percussion from scratch using digital modeling and samples. EC2 provides **mathematical rhythm patterns** based on Euclidean algorithms that distribute beats evenly across time signatures, creating patterns that feel both mathematical and musical.
 
-### **The Analog Drum Synthesis Concept:**
+**The Analog Drum Synthesis Concept:**
 - **Four independent voices:** Each QD voice is a complete drum synthesizer
 - **Digital modeling:** Classic analog drum circuits recreated digitally with perfect recall
 - **Sample playback:** Load your own samples from SD card for hybrid synthesis
 - **Wavetable oscillators:** Use wavetables as drum voices for unique textures
 - **Built-in mixing:** Stereo panning, EQ, and compression built into QD
 
-### **The Euclidean Rhythm Concept:**
+**The Euclidean Rhythm Concept:**
 - **Mathematical distribution:** Euclidean algorithm evenly distributes beats across measures
 - **Musical results:** Creates polyrhythmic patterns that sound complex but feel natural
 - **Six independent channels:** Each EC2 channel can drive different QD voices
 - **Real-time pattern editing:** Change Length and Fill on the fly for live performance
 - **Visual feedback:** LED circle shows patterns as they play for immediate understanding
 
-### **The Complete Ecosystem:**
+**The Complete Ecosystem:**
 1. **QD (Quad Drum Voice):** Four analog drum synthesizers with built-in mixing and effects
 2. **QEX (QD Expander):** Adds individual outputs, additional CV control, and preset management
 3. **EC2 (Euclidean Circles V2):** Six-channel Euclidean rhythm generator with live pattern editing
 
-### **Why This Matters:**
+**Why This Matters:**
 This system bridges **mathematical precision with musical expression**. EC2 generates patterns that are mathematically perfect but musically interesting, while QD provides the warm analog character that makes electronic drums feel alive and punchy.
 
 ---
 
 ## Essential Parameters (The Drum + Pattern System)
 
-### **QD (Quad Drum Voice) - The Analog Brain**
-
+**QD (Quad Drum Voice) - The Analog Brain**
 #### **1. FOUR DRUM VOICES**
 - **Voice 1 (Blue):** Typically kick drums - full range analog synthesis
 - **Voice 2 (Red):** Typically snare - wide range of percussion synthesis
@@ -94,8 +93,7 @@ This system bridges **mathematical precision with musical expression**. EC2 gene
 - **Pitch control:** ±1 octave for samples, ±2 octaves for wavetables
 - **Low pass gates:** Special envelope mode for organic sample decay
 
-### **QEX (QD Expander) - The Enhancement**
-
+**QEX (QD Expander) - The Enhancement**
 #### **1. INDIVIDUAL OUTPUTS**
 - **Four separate outputs:** Individual audio output for each QD voice
 - **Direct patching:** Route each drum voice to different effects or mixers
@@ -114,8 +112,7 @@ This system bridges **mathematical precision with musical expression**. EC2 gene
 - **64 presets:** Large library of drum sounds and complete kits
 - **Preset morphing:** CV control over preset selection for dynamic kit changes
 
-### **EC2 (Euclidean Circles V2) - The Pattern Engine**
-
+**EC2 (Euclidean Circles V2) - The Pattern Engine**
 #### **1. SIX EUCLIDEAN CHANNELS**
 - **Independent rhythm generators:** Each channel creates different Euclidean patterns
 - **Length parameter:** Pattern length from 1-16 steps per channel
@@ -143,21 +140,21 @@ This system bridges **mathematical precision with musical expression**. EC2 gene
 
 ---
 
-## Why VPME Euclidean Circles Ecosystem Excels
+## Why This Instrument Excels
 
-### **The Philosophy:**
+**The Philosophy:**
 **Mathematical precision meets analog warmth.** The QD+EC2 ecosystem proves that mathematical patterns can be musical when combined with analog synthesis character. It's not about cold calculation - it's about using mathematics to create patterns that feel both structured and organic.
 
-### **The Innovation:**
+**The Innovation:**
 - **Euclidean rhythm generation:** Mathematical algorithms create musical patterns automatically
 - **Analog drum synthesis:** Digital modeling of classic analog circuits with perfect recall
 - **Complete integration:** Pattern generator and drum synthesizer designed to work together
 - **Performance-oriented:** Real-time pattern editing and touch control for live mathematical music
 
-### **The Magic:**
+**The Magic:**
 The QD+EC2 ecosystem proves that **mathematics can be musical** when properly applied. Euclidean algorithms create patterns that feel both logical and organic, while analog synthesis provides the warmth and character that makes mathematical music emotionally engaging.
 
-### **Educational Value:**
+**Educational Value:**
 The combination teaches fundamental concepts of **mathematical music**, **polyrhythmic relationships**, and **the balance between structure and expression** that are essential to understanding both electronic music and mathematical approaches to composition.
 
 ---
@@ -174,9 +171,8 @@ Pantelic's work has extended beyond VPME. He has contributed embedded systems an
 
 ---
 
-## Beginner Patch Ideas
-
-### **Patch 1: Basic Euclidean Drum Kit**
+## Patches
+**Patch 1: Basic Euclidean Drum Kit**
 ```
 ┌─────────────┐    ┌──────────────┐    ┌──────────────┐
 │ Master      │───▶│ Euclidean    │───▶│ VPME.de QD   │
@@ -211,7 +207,7 @@ Pantelic's work has extended beyond VPME. He has contributed embedded systems an
 - **QD Voice 3:** Hi-hat model, short decay for crisp sound
 - **Result:** Classic drum kit with mathematically interesting Euclidean patterns
 
-### **Patch 4: Touch-Enhanced Euclidean Performance**
+**Patch 4: Touch-Enhanced Euclidean Performance**
 ```
 ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
 │  Cre8audio  │ │ Euclidean   │ │   VPME.de QD    │
@@ -246,19 +242,19 @@ Pantelic's work has extended beyond VPME. He has contributed embedded systems an
 
 ## Advanced Techniques
 
-### **Euclidean Pattern Mathematics:**
+**Euclidean Pattern Mathematics:**
 - **Length = time signature:** Length 16 = 4/4 time, Length 12 = 3/4 time
 - **Fill = beat density:** More fill = more dense patterns, less fill = sparser patterns
 - **Rotation = pattern offset:** Shift pattern start point for variation without changing the pattern
 - **Polyrhythmic relationships:** Different lengths create complex polyrhythmic interactions
 
-### **QD Synthesis Techniques:**
+**QD Synthesis Techniques:**
 - **Model selection:** Each drum model responds differently to pitch, decay, and mod parameters
 - **Sample integration:** Mix digital models with your own samples for hybrid drum sounds
 - **Wavetable drums:** Use wavetables as drum voices for unique electronic percussion
 - **Low pass gates:** Special envelope mode creates organic, breathing drum sounds
 
-### **Performance Integration:**
+**Performance Integration:**
 - **F-button mapping:** Map EC2 functions to front panel for live pattern manipulation
 - **Six Switches expansion:** Individual channel control for live pattern arrangement
 - **Real-time editing:** Change EC2 patterns while playing for dynamic performance
@@ -268,7 +264,7 @@ Pantelic's work has extended beyond VPME. He has contributed embedded systems an
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Touch + Pattern + Logic Enhancement):**
+**Phase 2 Module Synergies (Touch + Pattern + Logic Enhancement):**
 - **Cre8audio Cellz:** Touch sequencer + performance interface → QD+EC2 for expressive mathematical drum control with human touch
 - **Qubit Bloom:** Generative pattern evolution + probability control → EC2 for naturally evolving Euclidean pattern development
 - **Cre8audio Function Junction:** Logic operations + signal processing → QD for complex drum parameter relationships and pattern enhancement
@@ -276,13 +272,13 @@ Pantelic's work has extended beyond VPME. He has contributed embedded systems an
 - **Squarp Hermod+:** Musical sequencing + song structure → EC2 for musical framework around mathematical patterns
 - **Cross-Phase 2 Integration:** QD+EC2 serves as mathematical drum core enhanced by multi-function touch, generative, and logic control
 
-### **Essential Performance Partners:**
+**Essential Performance Partners:**
 - **Touch interfaces (Cellz, Tetrapad):** Real-time expressive control of mathematical drum patterns with human touch
 - **Pattern generators (Bloom, Marbles):** Generative evolution of Euclidean patterns for naturally developing drum sequences
 - **Performance controllers (16n, QuNexus):** Multi-parameter control for live mathematical drum performance
 - **Clocking systems (Pamela's, Tempi):** Complex clock relationships for advanced polyrhythmic mathematical patterns
 
-### **Advanced System Integration:**
+**Advanced System Integration:**
 - **Complete drum workstations:** QD+EC2 + multi-function modules create professional mathematical drum performance systems
 - **Mathematical composition tools:** Euclidean patterns combined with touch control for expressive mathematical music creation
 - **Hybrid analog/digital systems:** Digital pattern generation with analog drum synthesis for warm mathematical precision
@@ -292,7 +288,6 @@ Pantelic's work has extended beyond VPME. He has contributed embedded systems an
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
 1. **Start with QD fundamentals:** Master analog drum synthesis, four voice architecture, and digital modeling vs samples
 2. **Add Euclidean patterns:** Integrate EC2 for mathematical pattern generation and polyrhythmic relationships (see EC2 guide)
 3. **Include touch performance:** Use Cre8audio Cellz for expressive control over mathematical patterns (see Cellz guide)
@@ -300,25 +295,11 @@ Pantelic's work has extended beyond VPME. He has contributed embedded systems an
 5. **Include logic processing:** Use Function Junction for complex parameter relationships and pattern enhancement (see Function Junction guide)
 6. **Complete the ecosystem:** Combine all elements for complete mathematical drum performance workstation
 
-### **Cross-Module Learning Opportunities:**
-- **QD + EC2:** Learn mathematical drum programming through Euclidean pattern generation with analog synthesis character
-- **EC2 + Cellz:** Master expressive pattern control through touch-responsive mathematical pattern performance
-- **QD + Bloom:** Understand generative drum synthesis through probabilistic parameter control and pattern evolution
-- **EC2 + Function Junction:** Explore logic-enhanced pattern processing for complex mathematical pattern relationships
-- **All Phase 2 + QD Ecosystem:** Build complete mathematical drum systems with touch, generative, and logic enhancement
-
-### **Advanced Mathematical Concepts:**
-- **Euclidean Mathematics:** Understand even distribution algorithms and their musical applications in drum programming
-- **Polyrhythmic Relationships:** Master complex time signature interactions through mathematical pattern generation
-- **Analog + Mathematical Synthesis:** Explore how mathematical patterns enhance rather than replace analog drum character
-- **Performance Mathematics:** Design systems where human expression serves mathematical precision for musical results
-
 ---
 
-## Beginner "Gotchas" & Pro Tips
+## Common Mistakes and How to Avoid Them
 
-### **⚠️ Common Mistakes:**
-
+**⚠️ Common Mistakes:**
 **"My Euclidean patterns sound too mechanical!"**
 - EC2 patterns are mathematically perfect, which can feel rigid without variation
 - **Solution:** Use rotation parameter, pattern chaining, or generative control (Bloom) for natural evolution
@@ -331,8 +312,7 @@ Pantelic's work has extended beyond VPME. He has contributed embedded systems an
 - Internal mixing may need adjustment, or individual voice levels may be too low
 - **Solution:** Use built-in compressor, adjust EQ, or use individual QEX outputs for external processing
 
-### **🎵 Pro Tips:**
-
+**🎵 Pro Tips:**
 **Euclidean Pattern Strategy:**
 - **Start simple:** Begin with Length 16 and different Fill values to understand basic relationships
 - **Build polyrhythms gradually:** Add one new Length at a time to hear how polyrhythms develop

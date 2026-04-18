@@ -27,8 +27,7 @@ screen: true
 
 ---
 
-## Quick Reference
-
+## Quick Start: First Sound in 5 Minutes
 | Spec | Value |
 |------|-------|
 | Outputs | 8, independently configurable |
@@ -96,8 +95,7 @@ Two Pamela's units can be synced together by patching one unit's x24 output into
 
 ---
 
-## Per-Output Parameters
-
+## Essential Parameters (Per-Output Controls)
 Each of the 8 outputs can be independently configured with the following parameters.
 
 ### Wave Types (11)

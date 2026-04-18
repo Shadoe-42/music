@@ -11,14 +11,14 @@ hp: 10
 historical_context: false
 ---
 
-# Noise Engineering Loquelic Iteritas - Beginner's Guide
+# Noise Engineering Loquelic Iteritas
 
 ![Noise Engineering Loquelic Iteritas](https://github.com/Shadoe-42/music/raw/main/modular/images/noise_engineering/loquelic_iteritas/front_panel.jpg)
 *Three-algorithm digital complex oscillator featuring VOSIM vocal simulation, Summation Synthesis, and Phase Modulation in 10HP*
 
 **The Three-Algorithm Digital Beast**
 
-historical_context: false
+
 ---
 
 ## Quick Start: Get Your First Complex Sound in 5 Minutes
@@ -35,7 +35,6 @@ historical_context: false
 
 **Congratulations!** You've just experienced one of the most unique oscillators in Eurorack!
 
-historical_context: false
 ---
 
 ## Essential Parameters (The Algorithm Triad)
@@ -91,7 +90,7 @@ historical_context: false
 - **DAMP:** Filtering and harmonic damping
 - **Best for:** Bell tones, metallic sounds, aggressive digital textures
 
-historical_context: false
+
 ---
 
 ## Why This Instrument Excels
@@ -124,14 +123,21 @@ Noise Engineering Loquelic Iteritas represents **impossible digital synthesis** 
 **The Magic:**
 Loquelic Iteritas **democratizes legendary synthesis algorithms** - giving everyone access to VOSIM vocal simulation, mathematical summation synthesis, and complex phase modulation in affordable hardware form.
 
-**Advanced Integration Power:**
-As the **complex digital synthesis engine of Advanced ecosystems**, Loquelic Iteritas transforms organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision into impossible digital textures. **You conduct electronic intelligence toward digital synthesis transcendence.**
+**Advanced Integration:**
+All four tone controls (MORPH, FOLD, MODULATE, DAMP) respond well to simultaneous CV modulation. Routing different modulation sources to different parameters, organic LFOs to MORPH and MODULATE, stepped random to FOLD and DAMP, creates evolving complexity without any single modulation source dominating.
 
-historical_context: false
 ---
 
+## Historical Context
 
-historical_context: false
+VOSIM was developed in 1978 by Werner Kaegi and Stan Tempelaars at the Institute of Sonology in Utrecht as a method for synthesizing vocal sounds through controlled bursts of energy. The name stands for VOice SIMulation. Rather than using resonant filter banks to approximate vocal tract formants as most speech synthesis research did, Kaegi and Tempelaars built the vocal texture by shaping the amplitude envelope of short pulse trains in ways that mimicked the glottal pulse of the human voice. The system ran on the PDP-15 computer at the Institute and was designed for composition rather than telephony.
+
+Summation synthesis emerged from James Moorer's work at CCRMA at Stanford University through the mid-1970s. Moorer was working on the mathematical relationship between a signal's spectral content and the sounds composers wanted to produce. Summation synthesis offered a path to precise spectral composition: defining a harmonic series mathematically and summing sinusoids to build the target timbre from the frequency domain down. The approach gave composers deterministic spectral control in exchange for the sonic unpredictability that FM synthesis offered.
+
+Phase modulation synthesis had its technical origin in John Chowning's frequency modulation research at Stanford in 1967, which Yamaha licensed and commercialized as the DX7 in 1983. What the DX7 actually implements is technically phase modulation rather than frequency modulation, because the operators modulate each other's phase angle rather than their instantaneous frequency, but the two approaches are perceptually identical across most musical applications. Phase modulation became the dominant form of digital synthesis for much of the 1980s through the DX7's commercial success.
+
+By the time Noise Engineering, a Los Angeles company founded by Brad Scott and Kris Kaiser, released Loquelic Iteritas around 2015, these three algorithms had spent decades living in software environments, academic research contexts, and vintage hardware. Putting all three into 10HP of Eurorack with full CV control over the synthesis parameters made them physically accessible in a performance context for the first time, and the module's embrace of aliasing as an aesthetic feature rather than a limitation to minimize completed that argument: these are algorithms that were designed under different assumptions, running in hardware that makes no attempt to hide that fact.
+
 ---
 
 ## Patches
@@ -183,95 +189,41 @@ Mode: Any
 **Controls:** MODULATE controls how much the oscillators interact
 **Experiment:** Try different musical intervals between the sequences
 
-### **Patch 5: Expert - Complete Advanced Complex Synthesis Ecosystem**
+### **Patch 5: Expert - Four-Parameter Modulation Matrix**
+
+This patch routes independent modulation sources to all four tone controls simultaneously. MORPH and MODULATE receive organic LFO signals running at different rates; FOLD and DAMP receive stepped and smooth chaos voltages. Marbles provides independent pitch sequences to both oscillators. The result is a constantly shifting synthesis voice where waveform character, harmonic folding, oscillator interaction, and damping all evolve on different timescales.
+
 ```
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│   DivKid    │ │ Make Noise  │ │ Mutable     │ │ 4ms RCD v2  │
-│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │ (Phase 2)   │
-│ (Organic)   │ │ (Chaos)     │ │ (Patterns)  │ │             │
-│             │ │             │ │             │ │ Div 2 ○─────┼─┼─Clock Base  │
-│ LFO 1 ○─────┼─┼─Stepped ○   │ │ X1 Out ○───┼─┼─             │
-│       ║     │ │        ║    │ │       ║     │ │ Div 3 ○─────┼─┼─Polyrhythm  │
-│ LFO 4 ○─────┼─┼─Smooth ○    │ │ X2 Out ○───┼─┼─             │
-│       ║     │ │        ║    │ │       ║     │ │             │
-└───────║─────┘ └────────║────┘ └───────║─────┘ └─────────────┘
-        ║                ║              ║              ║
-        ▼                ▼              ▼              ▼
-┌──────────────────────────────────────────────────────────────────────────────┐
-│                          Noise Engineering                           │
-│                        Loquelic Iteritas                          │
-│                   (Phase 2 Complex Synthesis Hub)                 │
-│                                                                        │
-│ Algorithm: Dynamically Switched via Performance Control               │
-│                                                                        │
-│ PITCH A ◀───────────── Pattern-based pitch control (Marbles X1)        │
-│ PITCH B ◀───────────── Independent harmonic relationships (Marbles X2)  │
-│                                                                        │
-│ MORPH CV ◀──────────── Organic algorithm character evolution (Ochd LFO1) │
-│ FOLD CV  ◀──────────── Chaos-driven harmonic complexity (Wogglebug Step)│
-│ MODULATE CV ◀────────── Organic oscillator interaction (Ochd LFO4)       │
-│ DAMP CV  ◀──────────── Chaos-controlled filtering (Wogglebug Smooth)   │
-│                                                                        │
-│ Algorithm Behavior under Phase 2 Control:                             │
-│                                                                        │
-│ • VOSIM Mode: Organic breathing creates vocal-like evolution           │
-│ • Summation Synthesis: Mathematical patterns drive harmonic complexity  │
-│ • Phase Modulation: Chaos creates unpredictable metallic textures      │
-│                                                                        │
-│ Real-time Algorithm Switching:                                         │
-│ • Manual mode switching reveals different algorithm characters          │
-│ • Same Phase 2 sources create completely different results per mode     │
-│ • Polyrhythmic triggers from RCD control algorithm changes             │
-│                                                                        │
-│ Audio OUTPUT ○─────────────────────────────────────────┼─── Complete
-│                                                                        │
-│ SYNC OUTPUT ○─────────────────────────────────────────┼─── Phase 2
-└──────────────────────────────────────────────────────────────────────────────┘   Complex
-                              ║                                 Digital
-                         Complex║                                Synthesis
-                        Digital║
-                       Synthesis║
-                              ▼
-                    ┌─────────────────────┐
-                    │   Impossible Sounds  │
-                    │                     │
-                    │ Organic + Chaos +   │
-                    │ Patterns + Math =   │
-                    │ Complex Digital     │
-                    │ Algorithm Control   │
-                    │                     │
-                    │ System Output ○─────┼─── Sophisticated
-                    └─────────────────────┘       Digital Synthesis
+[Marbles X1]         ---> [PITCH A / 1V/8VA]
+[Marbles X2]         ---> [PITCH B / 1V/8VB]
+
+[Ochd LFO 1]         ---> [MORPH CV]
+[Wogglebug Stepped]  ---> [FOLD CV]
+[Ochd LFO 4]         ---> [MODULATE CV]
+[Wogglebug Smooth]   ---> [DAMP CV]
+
+[RCD Div 2]          ---> clock reference
+[RCD Div 3]          ---> gate trigger for envelope
+
+[Audio OUTPUT]       ---> filter or VCA -> out
+[SYNC OUTPUT]        ---> optional sync target
 ```
 
-**Complete Advanced Complex Digital Synthesis Integration:**
+**Setup:**
+1. Patch Marbles X1 -> 1V/8VA; Marbles X2 -> 1V/8VB
+2. Ochd LFO 1 -> MORPH CV input (set attenuator to 9-10 o'clock; start subtle)
+3. Wogglebug Stepped -> FOLD CV input (attenuator at 9 o'clock)
+4. Ochd LFO 4 -> MODULATE CV input (attenuator to taste)
+5. Wogglebug Smooth -> DAMP CV input (attenuator at 9 o'clock)
+6. Choose a starting algorithm (VO is a good entry point)
+7. Set all four tone control knobs to 12 o'clock as a baseline
+8. Let the patch run before touching anything; listen to how the parameters evolve on their own
 
-| Intelligence Layer | Function | Loquelic Iteritas Control | Digital Synthesis Result |
-|-------------------|----------|---------------------------|---------------------------|
-| **Organic (Ochd)** | Natural breathing | **MORPH + MODULATE modulation** | **Breathing vocal/harmonic evolution** |
-| **Chaos (Wogglebug)** | Controlled uncertainty | **FOLD + DAMP modulation** | **Unpredictable digital complexity** |
-| **Pattern (Marbles)** | Sophisticated sequences | **Dual pitch control (A+B)** | **Musical harmonic relationships** |
-| **Mathematical (RCD)** | Polyrhythmic timing | **Algorithm switching triggers** | **Rhythmic synthesis character changes** |
-| **Digital Algorithms** | Complex synthesis | **Three synthesis engines** | **Impossible analog-defying textures** |
+**What to listen for:** Each algorithm responds differently to the same modulation sources. In VO mode, MORPH evolution creates vocal formant shifts while FOLD adds progressive brightness; in PM mode, the same MORPH movement reshapes the modulation index and the output becomes more metallic or bell-like. Switching algorithm with the mode switch while the patch is running reveals these differences without changing any other settings.
 
-**Expert System Design:**
-- **Loquelic Iteritas as digital complexity engine:** All Advanced intelligence controls sophisticated digital algorithms
-- **Algorithm-specific behavior:** Each synthesis algorithm responds differently to same Advanced sources
-- **Real-time algorithm switching:** Polyrhythmic triggers change synthesis character dynamically
-- **Multi-algorithm exploration:** Same modulation sources create completely different results per algorithm
-- **Digital transcendence:** Advanced intelligence controls impossible synthesis complexity
+The two Ochd LFOs are unrelated in rate, so MORPH and MODULATE drift in and out of phase with each other over time. The Wogglebug Stepped and Smooth outputs have a loose timing relationship, which means FOLD (stepped) and DAMP (smooth) interact in ways that feel semi-predictable rather than purely random. The dual Marbles outputs allow harmonic intervals between the two internal oscillators; the X1/X2 relationship in Marbles determines whether the two oscillators are in consonant or dissonant relationship at any given moment.
 
-**Advanced Performance:**
-1. **Advanced initialization:** All intelligence sources establish their character
-2. **Algorithm exploration:** Manual switching reveals how different algorithms respond to same sources
-3. **Real-time digital evolution:** Advanced sources drive impossible digital synthesis complexity
-4. **Algorithm interaction:** Use polyrhythmic triggers to switch algorithms musically
-5. **Digital complexity transcendence:** Advanced intelligence creates digital synthesis impossible with traditional methods
 
-**Philosophical Achievement:**
-This represents the **ultimate digital synthesis complexity** - where organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision all control impossible digital algorithms, creating synthesis textures that would be unachievable with traditional analog or simple digital methods under your creative direction.
-
-historical_context: false
 ---
 
 ## Common Use Cases
@@ -284,9 +236,8 @@ historical_context: false
 6. **🎛️ Modulation Destination:** All four tone controls beg for CV modulation
 7. **⚡ Hard Sync Source:** Built-in sync for classic sync lead sounds
 8. **🧪 Algorithm Study:** Learn classic synthesis techniques in hardware form
-9. **🌀 Advanced Complex Synthesis:** Transform sophisticated modulation into impossible digital textures
 
-historical_context: false
+
 ---
 
 ## Common Mistakes
@@ -326,7 +277,7 @@ historical_context: false
 - **Can sound "broken" at extreme settings** - this is often desirable
 - **Trust your ears** over technical expectations
 
-historical_context: false
+
 ---
 
 ## Next Steps
@@ -340,7 +291,7 @@ historical_context: false
 
 **Remember:** Loquelic Iteritas is designed to sound unique, not familiar. Let it teach you new approaches to synthesis!
 
-historical_context: false
+
 ---
 
 ## Pairs Well With
@@ -373,7 +324,6 @@ historical_context: false
 
 ## Advanced Learning Path
 
-**Recommended Study Progression:**
 1. **Start with Loquelic fundamentals:** Master all three algorithms and understand digital synthesis complexity
 2. **Add organic digital evolution:** Integrate DivKid Ochd for breathing digital algorithm control (see Ochd guide)
 3. **Include chaos digital complexity:** Use Make Noise Wogglebug for chaotic digital parameter control (see Wogglebug guide)
@@ -381,36 +331,9 @@ historical_context: false
 5. **Include algorithmic switching:** Use 4ms RCD v2 for polyrhythmic algorithm changes (see RCD guide)
 6. **Complete the digital ecosystem:** Add Cre8audio Function Junction for processed digital modulation (see Function Junction guide)
 
-**Cross-Module Learning Opportunities:**
-- **Loquelic + Ochd:** Learn organic digital algorithm evolution across all three synthesis types
-- **Loquelic + Wogglebug:** Master chaotic digital complexity through unpredictable parameter control
-- **Loquelic + Marbles:** Understand sophisticated pattern-based digital harmonic relationships
-- **Loquelic + RCD:** Explore polyrhythmic algorithm switching for dynamic synthesis character changes
-- **All Advanced + Loquelic:** Build complete digital ecosystems where sophisticated intelligence controls impossible synthesis
-
-**Skill Development Milestones:**
-- **Beginner:** Master individual algorithms and basic digital synthesis concepts
-- **Intermediate:** Understand algorithm-specific behavior and complex parameter interaction
-- **Advanced:** Create Advanced integration patches with sophisticated digital synthesis complexity
-- **Expert:** Design digital ecosystems where sophisticated intelligence creates impossible synthesis textures
-
-**Advanced Digital Synthesis Concepts:**
-- **Multi-Algorithm Control:** Understand how same modulation creates different results per synthesis algorithm
-- **Advanced Digital Intelligence:** Use sophisticated pattern generation to control impossible digital complexity
-- **Algorithm Performance:** Real-time algorithm switching for dynamic synthesis character changes
-- **Digital Complexity Design:** Create patches where sophisticated intelligence controls legendary synthesis algorithms
-
-**Performance Applications:**
-- **Live Digital Control:** Real-time algorithm switching and parameter control for dynamic performance
-- **Generative Digital Systems:** Foundation for self-evolving digital synthesis complexity
-- **Educational Digital Tool:** Learn classic synthesis algorithms through hands-on Advanced integration
-- **Creative Digital Direction:** Guide sophisticated pattern generation toward impossible digital synthesis
-
-historical_context: false
 ---
 
 
-historical_context: false
 ---
 
 *Loquelic Iteritas rewards patience and experimentation - don't expect immediate gratification, but do expect sounds you've never heard before!*

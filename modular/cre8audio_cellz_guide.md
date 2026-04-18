@@ -24,13 +24,16 @@ hp: 8
 **What is Cellz?** Think of it as a programmable touch-sensitive keyboard that outputs CV instead of MIDI. It's a 4×4 grid of touch pads where each pad can store two different voltage values. You can play it like an instrument, sequence it automatically, or use it as a creative controller for any CV-controllable parameter in your system.
 
 **Key Specifications:**
-- **Width:** 8HP
-- **Depth:** 38mm
-- **Power:** +12V: 95mA / -12V: 5mA
-- **Touch Pads:** 16 capacitive touch pads (4×4 grid)
-- **Outputs:** Dual independent CV (OUT1, OUT2) + Gates (GATE1, GATE2)
-- **CV Range:** 0-10V per output
-- **Sequencing:** 2D grid navigation via trigger inputs
+
+| Spec | Value |
+|------|-------|
+| Width | 8HP |
+| Depth | 38mm |
+| Power | +95mA / -5mA |
+| Touch Pads | 16 capacitive touch pads (4×4 grid) |
+| Outputs | Dual independent CV (OUT1, OUT2) + Gates (GATE1, GATE2) |
+| CV Range | 0-10V per output |
+| Sequencing | 2D grid navigation via trigger inputs |
 
 ### Your First Touch Melody
 1. **Connect Cellz OUT1** → **oscillator V/OCT input**
@@ -269,6 +272,18 @@ Understanding dual outputs teaches you that parallel processing and coupled para
 **The Magic:**
 
 Cellz proves that **interface design is instrument design**. How you organize voltage relationships spatially determines what's musically possible. Traditional keyboards dictate musical relationships through their layout (chromatic scale, fixed intervals). Cellz lets you design the relationships - organize by hand reach, by musical function, by modulation amount. When you understand interface design through Cellz, you understand that the interface IS the instrument - how you interact shapes what you can create. This applies to every musical tool from pianos to modular synthesizers.
+
+---
+
+## Historical Context
+
+Don Buchla built the first touch-sensitive voltage source in 1964 as part of the Buchla Series 100 for the San Francisco Tape Music Center, where Morton Subotnick and Ramon Sender were developing electronic compositions. The 112 and 113 Touch Controlled Voltage Source consisted of metal plates that detected finger capacitance and converted the contact into control voltage. Buchla's position was explicit: importing the piano keyboard into electronic music meant importing the wrong set of assumptions along with it. The keyboard carried centuries of trained muscle memory, fixed semitone relationships, and a model of pitch as the primary musical parameter that did not map naturally onto synthesis systems where timbre, texture, and voltage were equally valid targets. His touch surfaces had no built-in hierarchy and carried no predetermined musical meaning; their behavior depended entirely on how the surrounding circuit was configured.
+
+Subotnick used Buchla instruments throughout the late 1960s. His 1967 composition "Silver Apples of the Moon," the first electronic work commissioned directly by a record label, was built on a Buchla system where touch-controlled surfaces were primary performance interfaces. The piece demonstrated that gestural control over synthesis parameters could be a compositional strategy in itself rather than merely a convenience. The distinction between touch as gesture and key as note remained a recurring design question in electronic instrument development through the following decades.
+
+The grid controller entered modular and electronic music practice through Monome, started by Brian Crabtree and Kelli Cain in 2006. The Monome 40h was a 64-button grid of backlit pads with no built-in function: each pad could do whatever the performer's software assigned it. The grid format made spatial arrangement of function a first-class design decision rather than an afterthought. Rows and columns could represent harmonic relationships, rhythmic subdivisions, timbre zones, or any other category the performer chose to work with.
+
+Cre8audio's Cellz carries both threads into Eurorack: a 4x4 grid of capacitive pads where each pad stores two independent control voltages, with the spatial arrangement of those values determined entirely by the performer. The output is control voltage rather than MIDI, which means a single touch event simultaneously drives two separate parameters anywhere in the system. The connection back to Buchla's touch plates is direct: human body capacitance completing a circuit, converting gesture to voltage, with the relationship between gesture and musical result defined by whoever programmed the pads rather than by the instrument manufacturer.
 
 ---
 
@@ -625,38 +640,12 @@ Cellz proves that **interface design is instrument design**. How you organize vo
 
 ## Advanced Learning Path
 
-**Recommended Study Progression:**
 1. **Start with Cellz fundamentals:** Master touch programming, dual outputs, and expressive human control interface basics
 2. **Add musical quantization:** Integrate quantizers for proper musical intervals and scale control (see quantizer guides)
 3. **Include 2D sequencing:** Use both sequencing inputs for complex grid navigation and rhythmic patterns
 4. **Add multi-parameter control:** Explore dual output architecture for coupled parameter relationships
 5. **Include advanced patches:** Experiment with modulation applications beyond pitch control
 6. **Build complete systems:** Integrate Cellz with multi-function modules for professional performance workflows
-
-**Cross-Module Learning Opportunities:**
-- **Cellz + Quantizers:** Learn musical interval programming through proper pitch quantization and scale control
-- **Cellz + 2D Sequencers:** Master grid addressing and spatial sequence organization through clock relationships
-- **Cellz + Chaos Generators:** Understand hybrid human/organic control through chaos-enhanced touch performance
-- **Cellz + Analysis Modules:** Explore performance monitoring through real-time CV visualization and feedback
-- **Cellz + Complete Systems:** Build expressive performance ecosystems with human touch at the center
-
-**Skill Development Milestones:**
-- **Beginner:** Use Cellz for basic touch control, dual-parameter programming, and simple musical applications
-- **Intermediate:** Master 2D sequencing, modulation control, and touch override during automatic playback
-- **Advanced:** Create complex parameter coupling, multi-output routing, and integrated performance systems
-- **Expert:** Design complete expressive performance systems where Cellz serves as human expression core
-
-**Advanced Touch Interface Concepts:**
-- **Capacitive Sensing Principles:** Deep understanding of how touch becomes voltage through electrical field changes
-- **Programmable Mapping Design:** Master arbitrary voltage relationships and custom interface layouts
-- **2D Grid Organization:** Understand spatial programming and how layout affects musical performance
-- **Human-Machine Interface Theory:** Learn latency, gesture design, and ergonomic controller principles
-
-**Performance Applications:**
-- **Live Touch Performance:** Real-time Cellz control with performance monitoring and visual feedback integration
-- **Custom Instrument Design:** Create personal performance interfaces through programmable voltage mapping
-- **Expressive Control Systems:** Build interfaces where human touch remains primary expression method
-- **Educational Tool:** Learn interface design concepts through hands-on programmable touch interaction
 
 ---
 

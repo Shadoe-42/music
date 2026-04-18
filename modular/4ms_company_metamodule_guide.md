@@ -404,38 +404,12 @@ Complete Hybrid System Architecture:
 
 ## Advanced Learning Path
 
-**Recommended Study Progression:**
 1. **Start with basic operation:** Master patch loading, basic navigation, and physical interface control
 2. **Add VCV Rack fundamentals:** Learn basic patch creation and virtual-to-physical mapping concepts
 3. **Include multi-module patches:** Understand complex virtual routing and knob set organization
 4. **Add external integration:** Master MIDI, CV, and audio integration for hybrid systems
 5. **Include performance techniques:** Develop real-time control and live performance workflows
 6. **Complete the system brain:** Integrate as central processing hub in complex modular ecosystems
-
-**Cross-Module Learning Opportunities:**
-- **MetaModule + Maths:** Hardware CV sources controlling virtual synthesis parameters
-- **MetaModule + Marbles:** Adaptive hardware patterns feeding virtual sequencers and synthesis
-- **MetaModule + Hermod+:** Coordinated hardware/virtual sequencing and synchronized data exchange
-- **MetaModule + Hardware voices:** Virtual effects processing of hardware audio sources
-- **Advanced Integration + MetaModule:** Complete ecosystem enabling sophisticated virtual processing within complex modular systems
-
-**Skill Development Milestones:**
-- **Beginner:** Basic patch playback, simple knob control, understanding virtual-physical interface
-- **Intermediate:** VCV Rack patch creation, basic mapping, simple multi-module patches
-- **Advanced:** Complex virtual patches, knob set organization, MIDI/CV integration
-- **Expert:** Hybrid system design, performance architecture, professional workflow integration
-
-**Advanced Virtual Synthesis Concepts:**
-- **Virtual-Physical Interface Design:** Understanding mapping strategies for optimal hardware control
-- **Knob Set Architecture:** Organizing complex parameter control for performance applications
-- **Hybrid Signal Flow:** Coordinating hardware and virtual processing for enhanced capabilities
-- **System Brain Theory:** Using MetaModule as central coordinator in complex modular ecosystems
-
-**Performance Applications:**
-- **Live Virtual Synthesis:** Real-time control over complex virtual patches using physical interface
-- **Hybrid Performance Systems:** Coordinating hardware and virtual elements in live performance
-- **Studio Integration:** Professional virtual processing within hardware-based studio workflows
-- **Educational Virtual Synthesis:** Understanding modular synthesis concepts through virtual experimentation
 
 ---
 

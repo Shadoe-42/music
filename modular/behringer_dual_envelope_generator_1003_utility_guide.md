@@ -24,10 +24,13 @@ hp: 16
 **What is the 1003?** A dual ADSR envelope generator that triggers both envelopes simultaneously from a single gate input. Each envelope can have completely different timing characteristics, making it perfect for coordinated dual modulation - like controlling both amplitude and filter cutoff with synchronized but independent envelope shapes.
 
 **Key Specifications:**
-- **Width:** 16HP
-- **Depth:** 40mm
-- **Power:** 50mA @ +12V / 20mA @ -12V
-- **Architecture:** Dual synchronized ADSR envelope generators with independent timing control; single gate input triggers both; dual bipolar outputs (±10V)
+
+| Spec | Value |
+|------|-------|
+| Width | 16HP |
+| Depth | 40mm |
+| Power | +50mA / -20mA |
+| Architecture | Dual synchronized ADSR envelope generators with independent timing control; single gate input triggers both; dual bipolar outputs (±10V) |
 
 ### Basic Utility Setup
 1. **Connect single gate source** - Patch sequencer or keyboard gate to GATE input
@@ -277,8 +280,7 @@ Behringer announced their System 100 Eurorack clone series at NAMM in January 20
 
 ---
 
-## Utility Patches
-
+## Patches
 ### **Patch 1: Coordinated Voice Control**
 - **Clock/gate source** → 1003 Gate input
 - **1003 Left envelope** → VCA CV input (amplitude control)

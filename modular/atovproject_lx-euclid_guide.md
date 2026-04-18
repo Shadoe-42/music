@@ -24,6 +24,18 @@ screen: true
 
 ---
 
+## Quick Start: Get Your First Rhythm in 5 Minutes
+
+1. **Connect clock** — Patch any gate or clock source to the C (Clock) input
+2. **Connect outputs** — Patch the D (Gate outputs) to drum trigger inputs or envelope generators
+3. **Select channel 1** — Press the Yellow channel button (first press enters edit page 1)
+4. **Set Length** — Scroll the outer ring to set total steps (8 or 16 are good starting points)
+5. **Set Beats** — Scroll the inner ring to set how many beats fire (try 3 in 8, or 5 in 16)
+
+The lx-euclid immediately outputs the Euclidean pattern. Add channels 2 through 4 for polyrhythmic layering — each channel runs the same clock but with independent Length, Beats, Rotation, and Probability settings.
+
+---
+
 ## What Is a Euclidean Rhythm?
 
 In 2004, computer scientist Godfried Toussaint observed that a large number of traditional rhythmic patterns from around the world can be described by a single mathematical principle: distribute a given number of beats as evenly as possible across a given number of steps.
@@ -53,7 +65,7 @@ The lx-euclid is a 4-channel trigger sequencer. Each channel produces a gate sig
 
 ---
 
-## Interface: Touch Rings and Controls
+## Essential Parameters (The Interface Controls)
 
 **Inner ring and Outer ring:** Two concentric capacitive touch rings surround the circular display. Both rings can be tapped and scrolled. The motion is similar to the original iPod click wheel: run a finger along the ring surface to scroll through values, or tap to confirm. The inner ring and outer ring are assigned different functions depending on which edit page is active. Their default main-page functions can be reassigned via the Macro system.
 

@@ -25,10 +25,13 @@ screen: true
 **What is Disting mk4?** A **multi-algorithm utility module** that can function as 80+ different modules in one tiny 4HP package. Think of it as having an entire modular system that you can switch between instantly - oscillators, filters, delays, quantizers, LFOs, envelopes, and much more.
 
 **Key Specifications:**
-- **Width:** 4 HP
-- **Depth:** 42 mm
-- **Power:** 51 mA @ +12V / 19 mA @ -12V / 0 mA @ +5V
-- **Architecture:** 80+ algorithm multi-function utility with SD card integration
+
+| Spec | Value |
+|------|-------|
+| Width | 4HP |
+| Depth | 42mm |
+| Power | +51mA / -19mA |
+| Architecture | 80+ algorithm multi-function utility with SD card integration |
 
 ### Your First Algorithm - Precision Adder
 1. **Power up** - watch the startup LED sequence (columns then rows)
@@ -153,8 +156,7 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 
 ---
 
-## Multi-Function Patch Applications
-
+## Patches
 ### **Patch 1: First Steps - Musical CV Quantizer**
 ```
                     ┌─────────────────────┐
@@ -355,96 +357,49 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 - **Complex signal routing:** Multiple modules, multiple functions, musical results
 - **System-level thinking:** Design patches as integrated ecosystems
 
-### **Patch 4: Expert - Complete Phase 2 Utility Ecosystem**
+### **Patch 4: Expert - Three-Algorithm Live Switching**
+
+This patch uses Disting's preset recall system to switch between three different algorithm configurations during performance. Each preset serves a different role in a larger modulation system: quantizing organic LFO voltages into musical scale degrees, performing boolean logic on chaotic gate streams, and providing a reference LFO plus precision CV addition. The performance technique is switching presets by ear as the patch evolves.
+
 ```
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│   DivKid    │ │ Make Noise  │ │ Mutable     │ │ 4ms RCD v2  │
-│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │ (Phase 2)   │
-│ (Organic)   │ │ (Chaos)     │ │ (Patterns)  │ │             │
-│             │ │             │ │             │ │ Div 2 ○─────┼─┼─Clock Ref   │
-│ LFO 2 ○─────┼─┼─Stepped ○   │ │ X1 Out ○───┼─┼─             │
-│       ║     │ │        ║    │ │       ║     │ │ Div 4 ○─────┼─┼─Gate Seq    │
-│ LFO 6 ○─────┼─┼─Smooth ○    │ │ X2 Out ○───┼─┼─             │
-│       ║     │ │        ║    │ │       ║     │ │             │
-└───────║─────┘ └────────║────┘ └───────║─────┘ └─────────────┘
-        ║                ║              ║
-        ▼                ▼              ▼
-┌──────────────────────────────────────────────────────────────────────────────┐
-│                              Disting mk4                               │
-│                        (Central Utility Hub)                        │
-│                                                                        │
-│ Algorithm Switching via Preset System:                                │
-│                                                                        │
-│ Preset 1: A-6 Quantizer                                               │
-│ • X Input ◀─ Organic LFO CV (musical scale processing)                │
-│ • A Output ─▶ Quantized organic CV → Synthesis modules             │
-│ • Z Knob: Scale selection (Major, Minor, Exotic scales)               │
-│                                                                        │
-│ Preset 2: H-1 Logic Operations                                        │
-│ • X Input ◀─ Chaos stepped CV (logic processing)                     │
-│ • Y Input ◀─ Pattern gates (complex boolean operations)              │
-│ • A/B Outputs ─▶ Complex trigger patterns → Rhythm modules        │
-│                                                                        │
-│ Preset 3: B-5 LFO + A-1 Precision Adder (Dual Function)              │
-│ • Internal LFO generation for system clock reference                   │
-│ • CV addition/offset for pitch and modulation processing               │
-│ • Real-time switching between functions via preset recall              │
-│                                                                        │
-│ Live Performance Features:                                             │
-│ • Instant algorithm switching via preset system                        │
-│ • Real-time Z knob control for performance expression                  │
-│ • Visual feedback via socket LEDs and display                          │
-│                                                                        │
-│ A Output ○───────────────────────────────────────────────┼─── Processed
-│                                                                        │
-│ B Output ○───────────────────────────────────────────────┼─── Phase 2
-└──────────────────────────────────────────────────────────────────────────────┘   Intelligence
-                              ║                                 Processing
-                         Utility║
-                      Processing║
-                              ▼
-                    ┌─────────────────────┐
-                    │   Complete Musical  │
-                    │     Ecosystem       │
-                    │                     │
-                    │ Organic + Chaos +   │
-                    │ Patterns + Math +   │
-                    │ Utility Processing  │
-                    │ = Total Control     │
-                    │                     │
-                    │ System Output ○─────┼─── Perfect Musical
-                    └─────────────────────┘       Utility Processing
+[Ochd LFO 2]         ---> [Disting X Input]   (for Preset 1: Quantizer)
+[Wogglebug Stepped]  ---> [Disting X Input]   (for Preset 2: Logic)
+[Marbles T gates]    ---> [Disting Y Input]   (for Preset 2: Logic)
+[RCD Div 2]          ---> clock reference
+
+Preset 1: A-6 Quantizer
+  X Input <-- Ochd LFO 2 (unquantized organic CV)
+  Z Knob: scale selection (Major, Pentatonic, etc.)
+  A Output --> oscillator 1V/Oct or other pitch destination
+  B Output --> gate on note change
+
+Preset 2: H-1 Logic Operations
+  X Input <-- Wogglebug Stepped (logic input A)
+  Y Input <-- Marbles T gates (logic input B)
+  A Output --> complex trigger pattern
+  B Output --> inverted trigger pattern
+
+Preset 3: B-5 LFO + A-1 Precision Adder
+  Internal LFO --> system reference or modulation
+  Z Knob: LFO rate
+  X Input <-- any CV for offset addition
+  A Output --> offset/summed CV
+
+[A Output]           ---> destination depends on active preset
+[B Output]           ---> destination depends on active preset
 ```
 
-**Complete Phase 2 Utility Processing Integration:**
+**Setup:**
+1. Save three Disting presets: Preset 1 = A-6 Quantizer, Preset 2 = H-1 Logic, Preset 3 = B-5 LFO
+2. Route Ochd LFO 2 to X Input for Quantizer work
+3. For Logic work, route Wogglebug Stepped to X Input and Marbles T output to Y Input
+4. Patch A Output to a synthesis destination that benefits from the active algorithm
+5. Use the preset recall system to switch algorithms during performance
+6. Z Knob controls the most immediate parameter in each algorithm: scale for Quantizer, rate for LFO
 
-| Intelligence Layer | Function | Disting Processing | Musical Result |
-|-------------------|----------|-------------------|----------------|
-| **Organic (Ochd)** | Natural breathing | **Quantizer algorithms** | **Musical scale processing of organic modulation** |
-| **Chaos (Wogglebug)** | Controlled uncertainty | **Logic + CV processing** | **Mathematical taming of chaos** |
-| **Pattern (Marbles)** | Sophisticated sequences | **Trigger processing + probability** | **Pattern enhancement and routing** |
-| **Mathematical (RCD)** | Polyrhythmic timing | **Clock processing + division** | **Complex timing relationships** |
-| **Utility (Disting)** | Universal processing | **80+ algorithms available** | **Perfect utility processing for any need** |
+**What to listen for:** Each preset change reconfigures what Disting is doing entirely. The Quantizer turns continuous organic LFO movement into stepwise musical intervals; the scale setting (Z Knob) determines which steps are available. The Logic operations combine the Wogglebug and Marbles gate streams using boolean AND, OR, or XOR depending on the algorithm parameter, creating trigger patterns that neither source could produce alone. The LFO preset turns Disting into an additional modulation source that can be tuned to complement or contrast with Ochd.
 
-**Expert System Design:**
-- **Disting as central utility brain:** All Phase 2 sources processed through optimal algorithms
-- **Preset-based algorithm switching:** Instant reconfiguration for different processing needs
-- **Real-time utility control:** Z knob and parameter control for live utility processing
-- **Universal problem solving:** Any utility function needed is available instantly
-- **Complete utility ecosystem:** Every processing need covered by single 4HP module
-
-**Advanced Performance:**
-1. **System initialization:** Each Phase 2 module establishes its character
-2. **Utility processing:** Disting optimally processes each source type with appropriate algorithms
-3. **Real-time switching:** Preset system allows instant algorithm changes for different musical contexts
-4. **Universal processing:** Any utility function becomes available when needed
-5. **Utility transcendence:** Perfect processing of sophisticated pattern generation systems
-
-**Learning Objectives:**
-- **Advanced utility concepts:** Use specific algorithms for different processing needs
-- **Multi-algorithm workflows:** Understand how to chain different algorithms for complex processing
-- **System problem solving:** Apply targeted algorithms to solve specific synthesis challenges
-- **Real-time processing:** Experience algorithm switching for live performance and dynamic system reconfiguration
+The practical skill this builds is learning to think of Disting as a reconfigurable tool rather than a fixed module, and developing the habit of saving useful configurations to preset slots before a performance.
 
 **Alternative Module Options:**
 - **For organic modulation sources:** **DivKid Ochd** for natural breathing LFOs, **Batumi** for quad LFO with phase relationships, **2HP LFO** for budget modulation
@@ -548,7 +503,7 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 3. **🔊 Audio Processing:** Filters in every configuration, delays with tape simulation, effects including phaser/chorus/vocoder
 4. **🎵 Sample Playback & Sequencing:** Audio playback with pitch control, MIDI file playback, wavetable synthesis, multi-sampling
 5. **⏰ System Utilities:** Clock generation and division, tuning references, MIDI/CV conversion, signal mixing
-6. **🎛️ Utility Hub:** Central processing unit for Phase 2 modulation ecosystems
+6. **🎛️ Utility Hub:** Central processing and conversion for modulation, timing, and pitch
 7. **🔧 Problem Solver:** Always have the exact utility function needed for any synthesis challenge
 8. **📚 Learning Tool:** Explore every aspect of modular synthesis through 80+ algorithm implementations
 
@@ -583,45 +538,3 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 - **Studio Systems:** Recall-able setups via comprehensive preset system
 
 ---
-
-## Advanced Learning Path
-
-**Recommended Study Progression:**
-1. **Start with Disting fundamentals:** Master algorithm navigation and basic CV/audio processing
-2. **Add organic processing:** Use quantizer and CV utilities to process natural modulation sources like DivKid Ochd
-3. **Include chaos processing:** Apply logic and CV processing algorithms to controlled randomness from sources like Make Noise Wogglebug
-4. **Add algorithmic processing:** Use probability and pattern algorithms with sophisticated sequencers like Mutable Marbles
-5. **Include polyrhythmic processing:** Apply clock and timing algorithms to complex rhythm generators like 4ms RCD v2
-6. **Complete the ecosystem:** Use as utility hub for comprehensive CV processing with modules like Function Junction
-
-**Cross-Module Learning Opportunities:**
-- **Disting + Organic Sources:** Learn to quantize natural modulation into musical scales and patterns
-- **Disting + Chaos Sources:** Master chaos processing through mathematical and logical operations
-- **Disting + Pattern Generators:** Understand algorithmic pattern processing and probability manipulation
-- **Disting + Clock Processors:** Explore clock processing and mathematical timing relationships
-- **Complete Integration:** Build ecosystems where Disting serves as central utility processor
-
-**Skill Development Milestones:**
-- **Beginner:** Master algorithm navigation and basic CV/audio processing functions
-- **Intermediate:** Understand algorithm categories and complex signal routing
-- **Advanced:** Create integration patches where Disting processes multiple modulation types
-- **Expert:** Design utility networks where Disting serves as central processor for entire ecosystems
-
-**Advanced Utility Concepts:**
-- **Multi-Algorithm Workflows:** Chain multiple algorithms for complex processing
-- **Utility Hub Design:** Use Disting as central processor for modulation ecosystems
-- **System Problem Solving:** Apply specific algorithms to solve synthesis and modulation challenges
-- **Real-Time Processing:** Use algorithm switching for live performance and system reconfiguration
-
-**Performance Applications:**
-- **Live Utility Switching:** Real-time algorithm changes for dynamic system reconfiguration
-- **Generative Processing:** Foundation for self-evolving utility processing systems
-- **Hybrid Processing:** Bridge between different modulation types and synthesis approaches
-- **Educational Tool:** Learn every aspect of modular synthesis through hands-on algorithm exploration
-
----
-
-
----
-
-*Visit [Expert Sleepers](https://www.expert-sleepers.co.uk/disting.html) for complete documentation, firmware updates, and the latest algorithm additions*

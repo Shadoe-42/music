@@ -304,24 +304,12 @@ The practical consequence is that an existing pedal collection stops being a sep
 
 ## Advanced Learning Path
 
-**Recommended Study Progression:**
 1. **Start with Stomp fundamentals:** Understanding impedance matching, level conversion, and send/return concepts
 2. **Add expression automation:** Integrate internal LFO for basic pedal parameter automation
 3. **Include external CV control:** Use Ochd or other CV sources for sophisticated expression automation
 4. **Add chaos mathematics:** Integrate Wogglebug or chaos sources for unpredictable expression control
 5. **Include multi-function sequencing:** Add Hermod+ for programmed expression sequences
 6. **Complete the ecosystem:** Integrate Function Junction for advanced CV processing and multi-pedal control
-
-**Cross-Module Learning Opportunities:**
-- **Stomp + Ochd:** Natural timing automation for musical expression pedal control
-- **Stomp + Wogglebug:** Mathematical chaos applied to expression pedal automation
-- **Stomp + Hermod+:** Sequenced expression automation with quantization and programming capabilities
-- **Advanced ecosystem integration:** Complete system enabling sophisticated pedal automation within modular systems
-
-**Advanced Expression Control Concepts:**
-- **Impedance Theory:** Understanding high-Z vs low-Z, instrument vs line levels, and proper signal matching
-- **Expression Voltage Standards:** 0-3.3V unipolar signals, TRS wiring, and pedal compatibility considerations
-- **CV Signal Processing:** Bipolar-to-unipolar conversion, scaling, offsetting, and multi-source coordination
 
 ---
 

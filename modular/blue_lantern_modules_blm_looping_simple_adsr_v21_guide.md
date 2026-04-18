@@ -24,13 +24,16 @@ hp: 7
 **What is BLM Simple ADSR v2.1?** A 7HP digital envelope generator providing classic ADSR envelopes with three operational modes: standard 1-shot, loop activated gate, and continuous loop. Features CV-controllable output level, time adjustment, and both linear and exponential curves for versatile envelope shaping.
 
 **Key Specifications:**
-- **Width:** 7HP
-- **Depth:** 30mm
-- **Power:** +12V: 35mA / -12V: 5mA
-- **Envelope Type:** Digital ADSR with linear/exponential curves
-- **Modes:** 1-Shot, Loop Gate, Continuous Loop
-- **Output Range:** 0-10V (scalable via Level control)
-- **CV Inputs:** Gate, Level CV
+
+| Spec | Value |
+|------|-------|
+| Width | 7HP |
+| Depth | 30mm |
+| Power | +35mA / -5mA |
+| Envelope Type | Digital ADSR with linear/exponential curves |
+| Modes | 1-Shot, Loop Gate, Continuous Loop |
+| Output Range | 0-10V (scalable via Level control) |
+| CV Inputs | Gate, Level CV |
 
 ### Your First Envelope
 1. **Connect gate source** - Patch sequencer or keyboard gate to green GATE input
@@ -681,37 +684,11 @@ Advanced Operation Modes:
 
 ## Advanced Learning Path
 
-**Recommended Study Progression:**
 1. **Start with basic ADSR operation:** Master fundamental envelope generation and VCA control
 2. **Add operational mode exploration:** Understand 1-shot vs loop modes for different musical contexts
 3. **Include CV level control:** Implement dynamic envelope scaling for performance applications
 4. **Add system integration:** Coordinate multiple envelopes and efficient signal distribution
 5. **Include professional techniques:** Complex envelope architecture in complete modular systems
-
-**Cross-Module Learning Opportunities:**
-- **Simple ADSR + VCA modules:** Fundamental amplitude control and signal shaping techniques
-- **Simple ADSR + Filter modules:** Timbral envelope control beyond amplitude applications
-- **Simple ADSR + Sequencers:** Gate pattern coordination and rhythmic envelope triggering
-- **Simple ADSR + Performance controllers:** Real-time envelope expression and dynamic control
-- **All Advanced + Simple ADSR:** Reliable envelope generation within sophisticated modulation ecosystems
-
-**Skill Development Milestones:**
-- **Beginner:** Basic ADSR operation, VCA control, understanding envelope stages
-- **Intermediate:** Operational mode selection, CV level control, multi-destination routing
-- **Advanced:** Complex envelope coordination, professional system integration
-- **Expert:** Dynamic envelope architecture design, performance-oriented envelope systems
-
-**Advanced Envelope Concepts:**
-- **Envelope Stage Theory:** Understanding Attack, Decay, Sustain, Release behavior and musical applications
-- **Curve Characteristic Impact:** Linear vs Exponential envelope shapes and their musical effects
-- **Loop Mode Applications:** Rhythmic modulation generation through envelope looping
-- **System Integration Principles:** Efficient envelope distribution and coordination in complex systems
-
-**Performance Applications:**
-- **Dynamic amplitude control:** Real-time envelope expression through CV level modulation
-- **Rhythmic modulation:** Loop modes for tempo-synchronized amplitude and timbral effects
-- **Multi-parameter envelope control:** Single envelope controlling multiple synthesis parameters
-- **Professional envelope architecture:** Reliable envelope generation for studio and performance applications
 
 ---
 

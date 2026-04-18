@@ -24,9 +24,12 @@ hp: 3
 **What is Pico DRUM2?** A compact yet versatile percussion synthesizer featuring 8 distinct drum synthesis algorithms, each with 3 CV-controllable parameters, algorithm switching, and 1V/oct tuning capability - all in just 3HP.
 
 **Key Specifications:**
-- **Width:** 3 HP
-- **Depth:** 35 mm
-- **Power:** 28 mA @ +12V / 5 mA @ -12V / 0 mA @ +5V
+
+| Spec | Value |
+|------|-------|
+| Width | 3HP |
+| Depth | 35mm |
+| Power | +28mA / -5mA |
 
 ### Your First Drum Beat
 1. **Connect trigger source** - Patch a clock or sequencer to TRIGG input
@@ -550,38 +553,12 @@ Most Pico DRUM2 beginner frustrations come from misunderstanding **three core co
 
 ## Advanced Learning Path
 
-**Recommended Study Progression:**
 1. **Start with algorithm fundamentals:** Master all 8 synthesis algorithms and their parameter functions
 2. **Add CV parameter control:** Explore CV automation of synthesis parameters and 1V/oct tuning
 3. **Include algorithm switching:** Use CV-controlled algorithm selection for dynamic drum voices
 4. **Add chaos and organic modulation:** Integrate chaotic and natural CV sources for evolving drum behavior
 5. **Include adaptive patterns:** Add learning circuits for evolving rhythm and algorithm characteristics
 6. **Complete the rhythm ecosystem:** Integrate multiple rhythm sources for coordinated percussion synthesis
-
-**Cross-Module Learning Opportunities:**
-- **DRUM2 + Ochd:** Natural drum parameter automation through organic LFO modulation
-- **DRUM2 + Wogglebug:** Chaotic drum synthesis creating unpredictable but musical percussion variations
-- **DRUM2 + Marbles:** Adaptive rhythm patterns and algorithm selection that evolve with musical context
-- **DRUM2 + Hermod+:** Sequenced drum control with precise timing, CV automation, and melodic percussion
-- **All Advanced + DRUM2:** Complete ecosystem enabling sophisticated rhythm synthesis within complex modular systems
-
-**Skill Development Milestones:**
-- **Beginner:** Algorithm selection and exploration, basic parameter control, trigger programming
-- **Intermediate:** CV parameter automation, 1V/oct melodic programming, configuration mode mastery
-- **Advanced:** CV algorithm switching, complex modulation, multi-source parameter control
-- **Expert:** Complete rhythm ecosystem design with multi-module coordination and sophisticated rhythm brain operation
-
-**Advanced Drum Synthesis Concepts:**
-- **Algorithm Architecture:** Understanding different synthesis approaches within single module
-- **CV Assignment Theory:** Configuration mode usage for optimal CV routing and parameter control
-- **1V/oct Integration:** Using drum synthesizer as melodic percussion instrument
-- **Rhythm Brain Coordination:** Managing complex rhythm synthesis within integrated modular systems
-
-**Performance Applications:**
-- **Live Rhythm Control:** Real-time algorithm switching and parameter automation during performance
-- **Generative Rhythm Systems:** Self-evolving drum behavior using chaos and learning circuits
-- **Melodic Percussion:** Musical drum programming using 1V/oct tracking for harmonic relationships
-- **Professional Rhythm Production:** Studio-quality drum synthesis for modular-based music production
 
 ---
 

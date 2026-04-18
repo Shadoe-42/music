@@ -11,12 +11,9 @@ hp: 4
 historical_context: false
 ---
 
-# Tiptop Audio Miso - Beginner's Guide
+# Tiptop Audio Miso
 
 **The CV Laboratory and Signal Sculptor**
-
-historical_context: false
----
 
 ## Quick Start: Get Your First Mixed Signal in 5 Minutes
 
@@ -31,9 +28,6 @@ historical_context: false
 6. **Try the crossfader** to blend between the 1+2 and A+B sections
 
 **Congratulations!** You've just created a complex CV signal from simple sources using mathematical signal processing!
-
-historical_context: false
----
 
 ## Essential Parameters (The MISO Toolkit)
 
@@ -82,9 +76,6 @@ historical_context: false
 - **Internal routing:** Outputs can be patched to inputs for feedback
 - **No normalling:** Everything requires explicit patching for maximum flexibility
 
-historical_context: false
----
-
 ## Why This Instrument Excels
 
 MISO (Multiple Input Single Output) is a mixer and signal processor that handles the combining, scaling, and offsetting of CV and audio signals with enough flexibility to solve problems that would otherwise require multiple separate utility modules.
@@ -96,9 +87,6 @@ MISO (Multiple Input Single Output) is a mixer and signal processor that handles
 **The DC offset control adds a constant voltage to the mix output.** This allows MISO to shift the center point of any mixed signal up or down. A modulation source that swings around 0V can be raised to swing around +2.5V, making it compatible with inputs that expect only positive voltages. This function -- which is essentially a manual CV offset -- means MISO handles calibration and range-matching for downstream modules that otherwise would need their own offset correction.
 
 **All inputs and the output handle both audio and CV.** There is no separate audio input or CV input. Anything patched to any input gets processed. MISO works as an audio mixer for summing multiple voices before a filter, as a CV mixer for combining multiple modulation sources before a cutoff input, or simultaneously doing both on different channels. The uniformity makes it predictable and eliminates the need to consult a manual to determine whether a particular signal type is valid.
-
-historical_context: false
----
 
 ## Patches
 
@@ -149,9 +137,6 @@ historical_context: false
 **Rhythmic:** Gate sequence creates rhythmic switching between melodies
 **Expandable:** Add offset to transpose one sequence relative to other
 
-historical_context: false
----
-
 ## Common Use Cases
 
 **🎛️ **CV Mixing:** Combine multiple modulation sources into complex shapes**
@@ -162,9 +147,6 @@ historical_context: false
 **🔧 **Format Conversion:** Bipolar ↔ unipolar, voltage range adjustments**
 **🌊 **Wave Shaping:** Create new LFO shapes from simple sources**
 **🎵 **Audio Crossfading:** Smooth transitions between audio sources**
-
-historical_context: false
----
 
 ## Common Mistakes
 
@@ -203,9 +185,6 @@ historical_context: false
 - **Routing complexity:** Easy to get confused about which output does what
 - **Plan your patches:** Think about which outputs you need before patching
 
-historical_context: false
----
-
 ## Next Steps
 
 1. **Master each function individually** - Mix, Invert, Scale, Offset separately
@@ -216,9 +195,6 @@ historical_context: false
 6. **Learn signal conversion** - bipolar/unipolar, voltage range adjustments
 
 **Remember:** Miso rewards experimentation - it's more powerful than it first appears!
-
-historical_context: false
----
 
 ## Pairs Well With
 
@@ -260,12 +236,8 @@ historical_context: false
 - **Precision voltage mathematics:** Professional-grade signal processing with mathematical rigor and scientific methodology
 - **Cross-system integration:** Miso integrates with all synthesis systems while providing mathematical signal processing core
 
-historical_context: false
----
-
 ## Advanced Learning Path
 
-**Recommended Study Progression:**
 1. **Start with Miso fundamentals:** Master MISO functions (Mix, Invert, Scale, Offset) and precision voltage manipulation techniques
 2. **Add mathematical function control:** Integrate Make Noise Maths for precision mathematical signal processing (see Maths guide)
 3. **Include professional analysis:** Use Mordax Data for scientific CV laboratory analysis with visual monitoring (see Data guide)
@@ -273,36 +245,6 @@ historical_context: false
 5. **Include additional utilities:** Use other multi-function modules for complete mathematical CV processing systems
 6. **Complete the ecosystem:** Add all multi-function modules for complete mathematical CV processing laboratory
 
-**Cross-Module Learning Opportunities:**
-- **Miso + Maths:** Learn mathematical signal processing through function-generated precision voltage control
-- **Miso + Data:** Master scientific CV laboratory methodology with professional analysis and visual monitoring
-- **Miso + Bloom:** Understand probability-controlled signal processing with controlled chaos and random enhancement
-- **Miso + Analysis Systems:** Explore professional signal processing with scientific methodology and measurement feedback
-- **All Multi-Function + Miso:** Build complete mathematical CV ecosystems with Miso as precision signal laboratory core
-
-**Skill Development Milestones:**
-- **Beginner:** Use Miso for basic signal mixing and voltage manipulation techniques
-- **Intermediate:** Master mathematical signal processing with function-generated precision control
-- **Advanced:** Create scientific CV laboratory systems with professional analysis and probability enhancement
-- **Expert:** Design complete mathematical processing systems where Miso serves as precision signal laboratory for professional ecosystems
-
-**Advanced Mathematical Signal Concepts:**
-- **Precision Voltage Mathematics:** Understand mathematical relationships in signal processing with scientific rigor
-- **Mathematical Function Control:** Master function-generated signal processing for precision voltage manipulation
-- **Scientific CV Laboratory Methodology:** Explore hypothesis-driven signal processing with measurement and analysis
-- **Complete Mathematical Ecosystems:** Design systems where mathematical precision serves signal processing with scientific methodology
-
-**Performance Applications:**
-- **Live Mathematical Control:** Real-time Miso signal processing with mathematical function generation and scientific precision
-- **Laboratory Signal Processing:** Foundation for scientific approach to CV processing with hypothesis, experimentation, and analysis
-- **Professional CV Processing:** Studio-quality signal processing with mathematical precision and professional monitoring
-- **Educational Tool:** Learn mathematical signal processing concepts through hands-on precision voltage manipulation
-
-historical_context: false
----
-
-
-historical_context: false
 ---
 
 *Visit [Tiptop Audio](https://tiptopaudio.com/) for complete documentation and explore the full range of precision modular utilities*

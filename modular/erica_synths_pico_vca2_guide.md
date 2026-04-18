@@ -24,10 +24,13 @@ hp: 3
 **What is Pico VCA2?** A 3HP dual linear VCA module based on the professional AS3330 chip, featuring two independent voltage-controlled amplifiers with bias control on VCA1, input normalling for signal splitting, and DC coupling for both audio and CV amplitude control.
 
 **Key Specifications:**
-- **Width:** 3 HP
-- **Depth:** 35 mm
-- **Power:** 20 mA @ +12V / 19 mA @ -12V / 0 mA @ +5V
-- **Architecture:** Dual linear VCA with bias control and intelligent normalling
+
+| Spec | Value |
+|------|-------|
+| Width | 3HP |
+| Depth | 35mm |
+| Power | +20mA / -19mA |
+| Architecture | Dual linear VCA with bias control and intelligent normalling |
 
 ### Your First VCA Setup
 1. **Connect audio source** - Patch oscillator or audio to IN1 input
@@ -134,8 +137,7 @@ Amplitude control is the invisible architecture of synthesis. Every note, modula
 
 ---
 
-## Utility Patch Applications
-
+## Patches
 ### **Patch 1: Fundamental - Essential VCA Operation and Signal Routing**
 ```
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
@@ -441,8 +443,7 @@ Intelligent patching with normalling: Leave inputs unpatched for automatic signa
 
 ---
 
-## Utility Learning Path
-
+## Advanced Learning Path
 ### **Recommended Study Progression:**
 1. **Start with basic VCA operation:** Master fundamental amplitude control and normalling behavior
 2. **Add bias control:** Understand CV offset applications for tremolo and ranging

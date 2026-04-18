@@ -10,7 +10,7 @@ use_cases: [timbral movement and shaping, dirty filter character, aggressive sou
 hp: 12
 ---
 
-# Erica Synths Black Polyvoks VCF V2 - Beginner's Guide
+# Erica Synths Black Polyvoks VCF V2
 
 ![Erica Synths Black Polyvoks VCF](https://github.com/Shadoe-42/music/raw/main/modular/images/erica_synths/black_polyvoks/front_panel.jpg)  
 *Erica Synths Black Polyvoks VCF - Front panel showing CV1, CV2, Audio In, and Filter Out*
@@ -33,12 +33,15 @@ hp: 12
 **What is the Black Polyvoks VCF?** An authentic emulation of the famous Russian Formanta Polivoks synthesizer filter, using original K140UD12 ICs. This is THE filter that defined the sound of acid house and techno - known for its crazy resonance sweeps, deep bass, and ability to self-oscillate into screaming leads.
 
 **Key Specifications:**
-- **Width:** 12 HP
-- **Depth:** 25 mm
-- **Power:** 11 mA @ +12V / 11 mA @ -12V
-- **Filter Architecture:** Dual filter modes (Lowpass 12dB/oct + Bandpass 6dB/oct) with original K140UD12 Russian ICs
-- **CV Inputs:** Dual attenuverters with ±10V range, independent cutoff modulation
-- **Key Feature:** Self-oscillation to sine wave oscillator, mode switching without clicks
+
+| Spec | Value |
+|------|-------|
+| Width | 12HP |
+| Depth | 25mm |
+| Power | +11mA / -11mA |
+| Filter Architecture | Dual filter modes (Lowpass 12dB/oct + Bandpass 6dB/oct) with original K140UD12 Russian ICs |
+| CV Inputs | Dual attenuverters with ±10V range, independent cutoff modulation |
+| Key Feature | Self-oscillation to sine wave oscillator, mode switching without clicks |
 
 ### Your First Acid Sweep
 1. **Patch your oscillator** → **Audio In** (sawtooth wave works great)
@@ -140,6 +143,13 @@ The Polyvoks VCF isn't just another filter - it's a piece of synthesizer history
 
 ---
 
+## Historical Context
+
+Vladimir Kuzmin designed the Polivoks at Formanta Electronics, a state enterprise based in Sverdlovsk (now Yekaterinburg) in the Ural region of Russia, and the instrument went into production in 1982. The name Поливокс means roughly multi-voice. The MIDI standard was finalized in 1983, after the Polivoks design was complete. The Soviet electronics industry did not have access to Western component pipelines and operated under different manufacturing constraints; the K140UD12 operational amplifier chips at the core of the filter circuit were Soviet-designed and manufactured to different tolerances than Western equivalents. Kuzmin designed the filter around the components that were available rather than targeting a particular topology, which is why the Polivoks filter does not sound like a Moog transistor ladder or a Steiner-Parker Sallen-Key design: it is the product of a different set of engineering constraints resolved in a different industrial context.
+
+The filter runs in two modes, a 12dB per octave low-pass and a 6dB per octave band-pass, with self-oscillation behavior that produces a relatively controlled sine tone at maximum resonance rather than chaotic instability. The input stage accepts and saturates at higher signal levels, introducing harmonic distortion before the filtering action begins. Western filter designers of the same era generally worked to keep the input stage clean; Kuzmin's design treats input saturation as part of the filter character rather than a limitation to suppress.
+
+The Polivoks circulated within the Soviet Union and Eastern Bloc countries through the 1980s and reached international used markets after the Soviet collapse in 1991. European and American producers in the acid house and industrial music scenes encountered the filter character in the early 1990s and recognized its aggressive resonance as immediately useful. Erica Synths, founded by Girts Ozolins in Riga, Latvia in 2012, works in the post-Soviet Baltic context. Latvia regained independence from the Soviet Union in 1991, and the Latvian music technology scene that followed developed with access to both the Soviet instrument heritage and Western synthesis practice simultaneously. The Black Polyvoks VCF is a faithful reproduction of the Kuzmin circuit using original K140UD12 chips sourced from old Soviet stock, adapted for Eurorack voltage standards while keeping the filter core unchanged.
 
 ---
 
@@ -660,38 +670,12 @@ Reality: Analog circuits drift, interact unpredictably, and create variation. Th
 
 ## Advanced Learning Path
 
-**Recommended Study Progression:**
-1. **Start with Polyvoks fundamentals:** Master cutoff control, resonance behavior, and legendary Russian acid filter character
-2. **Add generative evolution:** Integrate Qubit Bloom for probability-based acid filter evolution (see Bloom guide)
-3. **Include mathematical precision:** Use Disting mk4 for algorithmic acid filter control (see Disting guide)
-4. **Add mathematical processing:** Apply Function Junction for CV conditioning and mathematical control (see Function Junction guide)
-5. **Include polyrhythmic timing:** Use 4ms RCD v2 for complex acid filter timing relationships (see RCD guide)
-6. **Complete the ecosystem:** Add all multi-function modules for complete acid synthesis workstation
-
-**Cross-Module Learning Opportunities:**
-- **Polyvoks + Bloom:** Learn generative acid synthesis through probability-based filter evolution
-- **Polyvoks + Disting:** Master algorithmic acid control with switchable algorithm processing
-- **Polyvoks + Function Junction:** Understand mathematical acid processing through CV conditioning
-- **Polyvoks + RCD:** Explore polyrhythmic acid relationships through mathematical timing
-- **All Multi-Function + Polyvoks:** Build complete acid synthesis ecosystems with legendary Russian character
-
-**Skill Development Milestones:**
-- **Beginner:** Use Polyvoks for classic acid filter sweeps and self-oscillation techniques
-- **Intermediate:** Master generative acid processing with probability-based filter evolution
-- **Advanced:** Create algorithmic acid patches with mathematical precision and CV conditioning
-- **Expert:** Design complete acid synthesis systems where Polyvoks serves as legendary filter core for mathematical ecosystems
-
-**Advanced Acid Synthesis Concepts:**
-- **Legendary Filter Character:** Understand authentic Russian K140UD12 chip character and acid house heritage
-- **Generative Acid Evolution:** Master probability-based acid sequences that evolve through Polyvoks character
-- **Mathematical Acid Control:** Explore algorithmic precision applied to classic analog acid filter processing
-- **Complete Acid Ecosystems:** Design systems where mathematical processing serves legendary analog acid character
-
-**Performance Applications:**
-- **Live Acid Control:** Real-time Polyvoks cutoff and resonance control for dynamic acid house performance
-- **Generative Acid Systems:** Foundation for self-evolving acid synthesis with mathematical precision and legendary character
-- **Mathematical Acid Processing:** Bridge between algorithmic precision and authentic analog Russian filter character
-- **Educational Tool:** Learn legendary acid synthesis concepts through hands-on Russian filter interaction
+1. **Start with Polyvoks fundamentals:** Master the cutoff, resonance, and input level controls. Spend time in both LP and BP modes before adding any CV modulation.
+2. **Add envelope control:** Route a fast envelope to CV1 for classic acid filter dynamics. Vary the decay time and attenuverter setting to understand how envelope shape interacts with resonance.
+3. **Explore self-oscillation:** Turn resonance to maximum with no audio input and use CV1 with a pitch sequence. The filter becomes a sine oscillator that tracks V/Oct.
+4. **Use both CV inputs simultaneously:** Route an LFO to CV1 and an envelope to CV2 with the attenuverter inverted. Cutoff moves in two opposing directions at once.
+5. **Drive the input stage:** Increase Input Level past 12 o'clock while listening for the saturation that begins to appear before the filter; that distortion is part of the circuit's identity, not a problem to avoid.
+6. **Study the topology:** Compare LP and BP mode at the same resonance and cutoff settings. Understanding why they sound different teaches you filter design principles that apply to every VCF you encounter.
 
 ---
 

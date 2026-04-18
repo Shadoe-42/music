@@ -297,7 +297,7 @@ Squawk represents the moment digital filter processing became genuinely indistin
 - **For effects processing:** **Mutable Clouds** for granular processing, **FX Aid Pro** for comprehensive effects, **2HP Verb** for budget reverb
 - **Advanced modulation:** **Pamela's New Workout** for algorithmic patterns, **Hermod+** for comprehensive sequencing with modulation
 
-### **Patch 3: Advanced - Algorithmic Filter Intelligence**
+### **Patch 3: Advanced - Algorithmic Filter Modulation**
 ```
 ┌─────────────────────┐    ┌─────────────────────────────────┐
 │   Mutable Marbles   │    │ Cre8audio Function Junction    │
@@ -326,14 +326,14 @@ Squawk represents the moment digital filter processing became genuinely indistin
                            ┌─────────────────────────────────┐
                            │    Endorphin.es Squawk         │
                            │      Dirty to Me               │
-                           │    (Filter Intelligence)       │
+                           │     (Squawk Dirty to Me)       │
                            │                                │
                            │ Meta CV      ◀─ Algorithmic    │
                            │ Cutoff CV    ◀─ Pattern Control │
                            │ Resonance CV ◀─ User-Guided    │
                            │ VCA CV       ◀─ Envelope       │
                            │                                │
-                           │ Intelligent Filter Processing  │
+                           │ Four-Input Filter Modulation   │
                            │                                │
                            │ OUT 1,2 ○──────────────────────┼─── Sophisticated
                            └─────────────────────────────────┘    Filter Music
@@ -341,22 +341,22 @@ Squawk represents the moment digital filter processing became genuinely indistin
 
 | Algorithmic + Processing Chain | Function | Purpose | Advanced Integration |
 |-------------------------------|----------|---------|---------------------|
-| **Marbles X1,X2 → Function Junction** | Algorithmic voltage processing | **Intelligent filter control** | **User-guided pattern processing** |
+| **Marbles X1,X2 → Function Junction** | Algorithmic voltage processing | **Algorithmic filter control** | **Processed CV pattern control** |
 | **Marbles t1 → ADSR Gate** | Algorithmic timing | **Musical envelope generation** | **Pattern-based filter triggering** |
 | **Function Junction processing** | Envelope shaping | **Musical filter modulation** | **Processed algorithmic control** |
-| **All CVs → Squawk parameters** | Complete control | **Every aspect modulated** | **Sophisticated filter intelligence** |
+| **All CVs → Squawk parameters** | Complete control | **Every aspect modulated** | **Complete filter modulation** |
 
 **Module Settings:**
 - **Marbles:** User-controlled sophisticated pattern generation
 - **Function Junction:** Processes algorithmic patterns into musical filter control
-- **Squawk:** All parameters under intelligent modulation control
+- **Squawk:** All parameters under simultaneous modulation control
 - **Meta Mode:** Enabled for algorithmic filter type selection
 
 **Learning Objectives:**
 - **Algorithmic filter processing:** Sophisticated pattern generation controls filter parameters
-- **Complete parameter control:** Every aspect of filtering under intelligent modulation
+- **Complete parameter control:** Every aspect of filtering under simultaneous modulation
 - **User-guided complexity:** You direct sophisticated systems toward filter musical goals
-- **Advanced system design:** Multi-module ecosystems creating intelligent filter music
+- **Advanced system design:** Multi-module routing producing complex filter behavior
 
 **Alternative Module Options:**
 - **For pattern generation:** Try **Mutable Marbles** for probability-based control, **Turing Machine + Expanders** for binary sequences, or **2HP Rnd** for compact randomness
@@ -365,11 +365,11 @@ Squawk represents the moment digital filter processing became genuinely indistin
 - **Different character:** **ALM Pamela's New Workout** for algorithmic patterns, **Intellijel Metropolix** for probability sequencing
 - **Advanced integration:** **Expert Sleepers Disting mk4** for multi-algorithm processing, **Hermod+** for comprehensive sequencing
 
-### **Patch 4: Expert - Complete Filter Ecosystem**
+### **Patch 4: Expert - Four-Source Filter Modulation**
 ```
 ┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
 │   DivKid    │ │ Make Noise  │ │ 4ms RCD v2  │ │ Mutable     │
-│    Ochd     │ │ Wogglebug   │ │ (Phase 2)   │ │ Marbles     │
+│    Ochd     │ │ Wogglebug   │ │ (Polyrhythm)│ │ Marbles     │
 │ (Organic)   │ │ (Chaos)     │ │             │ │ (Algorithms)│
 │             │ │             │ │ Out 2 ○─────┼─┼─t1 Clock   │
 │ LFO 3 ○─────┼─┼─Stepped ○   │ │             │ │             │
@@ -384,12 +384,12 @@ Squawk represents the moment digital filter processing became genuinely indistin
 │                (Filter Command Center)              ║     │
 │                                                      ▼     │
 │ Meta CV       ◀─ Organic + Chaos + Mathematical + Algorithmic │
-│ Cutoff CV     ◀─ Multi-Intelligence Filter Control          │
+│ Cutoff CV     ◀─ Multi-Source Filter Control                │
 │ Resonance CV  ◀─ Sophisticated Pattern Processing           │
 │ HPF CV        ◀─ Polyrhythmic Filter Evolution              │
-│ VCA CV        ◀─ Intelligent Amplitude Control              │
+│ VCA CV        ◀─ Envelope-Gated Amplitude Control           │
 │                                                            │
-│ All Advanced Intelligence Types Control Filtering:         │
+│ All Four Sources Modulate Filtering Parameters:            │
 │ • 8 Filter Types Available for AI Selection               │
 │ • Zero-Delay Feedback Processing                          │
 │ • Stereo Processing with All Access Pass                  │
@@ -398,11 +398,11 @@ Squawk represents the moment digital filter processing became genuinely indistin
 └────────────────────────────────────────────────────────────┘   Complete
                               ║                                 Advanced
                          Dual Audio                           Filter
-                         (Red)║                              Intelligence
+                         (Red)║                              Processing
                               ▼
                     ┌─────────────────────┐
-                    │   Complete Musical  │
-                    │     Intelligence    │
+                    │   Spectral Output   │
+                    │    (Four Sources)   │
                     │                     │
                     │ Organic + Chaos +   │
                     │ Mathematical +      │
@@ -410,42 +410,42 @@ Squawk represents the moment digital filter processing became genuinely indistin
                     │ Filter Evolution    │
                     │                     │
                     │ System Output ○─────┼─── Evolving Filter
-                    └─────────────────────┘       Intelligence
+                    └─────────────────────┘       Processing
 ```
 
 **Complete Advanced Filter Integration:**
 
-| Intelligence Layer | Function | Squawk Control | Musical Evolution |
-|-------------------|----------|----------------|-------------------|
+| Modulation Source | Function | Squawk Control | Musical Result |
+|------------------|----------|----------------|----------------|
 | **Organic (Ochd)** | Natural breathing | **Cutoff/Resonance timing** | **Breathing filter character** |
 | **Chaos (Wogglebug)** | Controlled uncertainty | **Meta/HPF modulation** | **Chaotic filter morphing** |
 | **Mathematical (RCD)** | Precise timing relationships | **Polyrhythmic VCA control** | **Mathematical filter timing** |
-| **Algorithmic (Marbles)** | Sophisticated pattern generation | **Filter type selection** | **Intelligent filter evolution** |
+| **Algorithmic (Marbles)** | Sophisticated pattern generation | **Filter type selection** | **Algorithmic filter variation** |
 | **Filter (Squawk)** | Spectral shaping | **All parameters controlled** | **Complete spectral expression** |
 
 **Expert System Design:**
-- **Squawk as filter brain:** All advanced intelligence types control every filter aspect
-- **Multi-modal filtering:** 8 different filter types respond to 4 intelligence types
-- **User-guided filter evolution:** You direct sophisticated systems toward filter musical goals
+- **Squawk as filter hub:** All four modulation sources affect every filter parameter
+- **Multi-modal filtering:** 8 different filter types respond to 4 modulation sources
+- **Guided filter evolution:** Adjust each source to steer the filter toward different musical results
 - **Emergent spectral complexity:** Simple modular interactions create sophisticated filter music
-- **Complete filter ecosystem:** Every aspect of filtering controlled by every intelligence type
+- **Complete filter routing:** Every filter parameter modulated by every source simultaneously
 
 **Advanced Performance:**
 1. **Organic foundation:** Ochd establishes natural breathing in filter parameters
 2. **Chaos integration:** Wogglebug adds controlled uncertainty to filter character
 3. **Mathematical structure:** RCD provides precise polyrhythmic filter timing
-4. **Algorithmic sophistication:** Marbles provides intelligent filter type evolution
-5. **Spectral transcendence:** All intelligence types merge into pure filter-based musical expression
+4. **Algorithmic variation:** Marbles drives filter type selection via Meta CV
+5. **Spectral convergence:** All four sources modulate the filter simultaneously, producing behavior no single source could create
 
 **Philosophical Achievement:**
-This represents the **ultimate filter ecosystem** - where organic breathing, controlled chaos, mathematical precision, and sophisticated algorithmic pattern generation all control every aspect of filtering, creating music that transcends traditional spectral manipulation under your creative direction.
+This patch routes four distinct modulation sources into every Squawk parameter simultaneously: organic LFO movement, stepped chaos, polyrhythmic clock divisions, and probability-based sequences. The result is filter behavior that no single modulation source could produce independently: spectral evolution that breathes, shifts, locks to rhythm, and drifts all at once.
 
 **Alternative Module Options:**
 - **For organic sources:** **DivKid ochd** for natural breathing, **Batumi** for geometric patterns, **Intellijel Quadrax** for complex envelopes
-- **Budget alternatives:** **2HP LFO + 2HP Rnd + 2HP S&H** for basic modulation ecosystem, **Doepfer A-143-3 + A-149-1** for quad LFO plus random
+- **Budget alternatives:** **2HP LFO + 2HP Rnd + 2HP S&H** for basic modulation chain, **Doepfer A-143-3 + A-149-1** for quad LFO plus random
 - **For chaos generation:** **Make Noise Wogglebug** for stepped chaos, **Turing Machine + Expanders** for binary sequences, **Music Thing Radio Music** for sample chaos
 - **Advanced timing:** **4ms RCD v2** for polyrhythmic divisions, **ALM Pamela's Pro** for comprehensive clocking, **Tempi** for advanced clock manipulation
-- **System alternatives:** **MetaModule** for infinite algorithm possibilities, **Hermod+** for comprehensive sequencing ecosystem
+- **System alternatives:** **MetaModule** for infinite algorithm possibilities, **Hermod+** for comprehensive sequencing
 
 ---
 
@@ -834,7 +834,7 @@ Squawk's comprehensive CV control enables sophisticated live performance.
 **Combining Advanced Features: Complete Spectral Mastery**
 When combining Meta CV, multiple modulation sources, stereo processing, and zero-delay feedback, you achieve complete spectral control.
 
-**Three-Intelligence Filter System (Example):**
+**Three-Source Filter System (Example):**
 - **Organic modulation (Ochd LFOs):** Slow breathing on cutoff and resonance
 - **Algorithmic modulation (Marbles):** Meta CV scans through filter types
 - **Percussive modulation (Envelope):** VCA creates attack/release dynamics

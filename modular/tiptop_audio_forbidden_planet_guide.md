@@ -10,7 +10,7 @@ use_cases: [timbral movement and shaping, filter as primary voice character, lea
 hp: 8
 ---
 
-# Tiptop Audio Forbidden Planet - Beginner's Guide
+# Tiptop Audio Forbidden Planet
 
 **The Steiner-Parker Synthacon Filter Reborn**
 
@@ -157,102 +157,38 @@ The Synthacon was manufactured between 1975 and 1979, and the filter circuit lar
 - **Manual FREQUENCY tweaks** for alien textures
 - **Result:** Perfect Forbidden Planet soundtrack sounds!
 
-### **Patch 4: Expert - Complete Phase 2 Analog Character Ecosystem**
+### **Patch 4: Expert - Three-Input Simultaneous Processing**
+
+This patch uses all three inputs at once, the defining capability of the Steiner-Parker architecture. Most patches route a single source through one input. This configuration sends three different audio sources into HP, BP, and LP simultaneously while two independent modulation sources drive both filter parameters at different rates.
+
 ```
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│   DivKid    │ │ Make Noise  │ │ Mutable     │ │ 4ms RCD v2  │
-│    Ochd     │ │ Wogglebug   │ │  Plaits     │ │ (Phase 2)   │
-│ (Organic)   │ │ (Chaos)     │ │ (Synthesis) │ │             │
-│             │ │             │ │             │ │ Div 2 ○─────┼─┼─Clock       │
-│ LFO 2 ○─────┼─┼─Stepped ○   │ │ Main Out ○──┼─┼─             │
-│       ║     │ │        ║    │ │         ║   │ │ Div 4 ○─────┼─┼─Polyrhythm  │
-│ LFO 6 ○─────┼─┼─Smooth ○    │ │ Aux Out ○───┼─┼─             │
-│       ║     │ │        ║    │ │         ║   │ │             │
-└───────║─────┘ └────────║────┘ └─────────║───┘ └─────────────┘
-        ║                ║              ║              ║
-        ▼                ▼              ▼              ▼
-┌──────────────────────────────────────────────────────────────────────────────┐
-│                          Tiptop Audio                            │
-│                       Forbidden Planet                         │
-│                 (Phase 2 Analog Character Hub)                │
-│                                                                        │
-│ Three Input Design for Phase 2 Intelligence Processing:               │
-│                                                                        │
-│ HP INPUT ◀────────────── Plaits Main Out (complex synthesis material)      │
-│ • Crisp high-pass character processing                                │
-│ • Signature Synthacon high-frequency clarity                         │
-│                                                                        │
-│ BP INPUT ◀────────────── Plaits Aux Out (alternative material)            │
-│ • Band-pass isolation of synthesis harmonics                          │
-│ • Focused frequency range processing                                  │
-│                                                                        │
-│ LP INPUT ◀────────────── Mixed/Processed Audio (traditional filtering)     │
-│ • Classic low-pass warmth and character                               │
-│ • Traditional analog filter behavior                                  │
-│                                                                        │
-│ CV Modulation via Phase 2 Intelligence:                               │
-│                                                                        │
-│ FREQUENCY CV ◀────────── Organic breathing filter movement (Ochd LFO2)     │
-│ ATTENUATED CV ◀───────── Chaos-controlled filter sweeps (Wogglebug Stepped)│
-│ FULL CV ◀─────────────── Organic resonance modulation (Ochd LFO6)          │
-│                                                                        │
-│ Legendary Analog Behavior:                                            │
-│ • Volume-retaining resonance (unlike most filters)                    │
-│ • Aggressive self-oscillation for Phase 2 chaos enhancement           │
-│ • Three-input design allows simultaneous Phase 2 source processing    │
-│ • 1975 Steiner-Parker Synthacon character with modern CV control       │
-│                                                                        │
-│ Performance Features:                                                  │
-│ • Real-time input switching for dynamic analog character changes       │
-│ • Polyrhythmic triggering of resonance sweeps via RCD timing           │
-│ • Manual RESO control for live analog character expression             │
-│                                                                        │
-│ MAIN OUTPUT ○────────────────────────────────────────┼─── Complete
-└──────────────────────────────────────────────────────────────────────────────┘   Phase 2
-                              ║                                 Analog
-                         Analog║                                Character
-                       Character║
-                       Processing║
-                              ▼
-                    ┌─────────────────────┐
-                    │  Legendary Analog   │
-                    │     Character       │
-                    │                     │
-                    │ Organic + Chaos +   │
-                    │ Intelligence =      │
-                    │ 1975 Synthacon     │
-                    │ Filter Magic       │
-                    │                     │
-                    │ System Output ○─────┼─── Sophisticated
-                    └─────────────────────┘       Analog Filtering
+[Plaits Main Out]    ---> [HP Input]
+[Plaits Aux Out]     ---> [BP Input]
+[HP + BP mix]        ---> [LP Input]
+
+[Ochd LFO 2]         ---> [FREQUENCY CV]
+[Wogglebug Stepped]  ---> [ATTENUATED CV]  (attenuator at 9 o'clock)
+[Ochd LFO 6]         ---> [FULL CV]
+
+[RCD Div 2]          ---> clock reference
+[RCD Div 4]          ---> polyrhythmic subdivision
+
+[MAIN OUTPUT]        ---> VCA -> out
 ```
 
-**Complete Phase 2 Analog Character Integration:**
+**Setup:**
+1. Patch Plaits Main Out -> HP Input
+2. Patch Plaits Aux Out -> BP Input
+3. Use a mult or mixer to combine both Plaits outputs -> LP Input, or route any other audio source into LP
+4. Ochd LFO 2 -> Frequency CV Input
+5. Wogglebug Stepped Out -> Attenuated CV Input; set attenuator to 9 o'clock
+6. Ochd LFO 6 -> Full CV Input
+7. Start with FREQUENCY at 12 o'clock, RESO at 10 o'clock
+8. Raise RESO slowly until tonal emphasis appears; stop before self-oscillation unless that is the goal
 
-| Intelligence Layer | Function | Forbidden Planet Control | Analog Character Result |
-|-------------------|----------|---------------------------|-------------------------|
-| **Organic (Ochd)** | Natural breathing | **FREQUENCY + Full CV modulation** | **Breathing analog filter evolution** |
-| **Chaos (Wogglebug)** | Controlled uncertainty | **Attenuated CV filter sweeps** | **Unpredictable analog character** |
-| **Synthesis (Plaits)** | Complex material | **Dual input processing (Main+Aux)** | **Multi-band analog character** |
-| **Mathematical (RCD)** | Polyrhythmic timing | **Performance trigger timing** | **Rhythmic analog filter expression** |
-| **Analog Heritage** | 1975 Synthacon character | **Three-input legendary circuit** | **Impossible vintage analog behavior** |
+**What to listen for:** HP and BP process the two Plaits outputs differently before the LP stage handles the combined material. All three paths respond to FREQUENCY together, so sweeping the knob moves everything simultaneously. Ochd LFO 2 on FREQUENCY creates a slow organic sweep; Wogglebug Stepped on the attenuated input adds irregular lurches at unpredictable intervals on top of that motion. Because LFO 2 and LFO 6 run at unrelated rates, frequency and resonance evolve independently and drift in and out of phase with each other over time.
 
-**Expert System Design:**
-- **Forbidden Planet as analog character engine:** All Phase 2 intelligence gains legendary Synthacon analog character
-- **Three-input sophistication:** Different Phase 2 sources processed through different filter characteristics
-- **Volume-retaining resonance:** Unique analog behavior enhances Phase 2 modulation without level loss
-- **Real-time analog performance:** Manual controls and CV modulation for live analog character expression
-- **Vintage-modern integration:** 1975 analog circuit enhanced by modern Phase 2 intelligence
-
-**Advanced Performance:**
-1. **Phase 2 initialization:** All intelligence sources establish their character
-2. **Multi-input processing:** Different sources through HP/BP/LP inputs for complex analog character
-3. **Real-time analog evolution:** Phase 2 sources drive legendary analog filter behavior
-4. **Performance analog control:** Manual resonance and frequency control for live expression
-5. **Analog transcendence:** Modern intelligence meets vintage analog character for impossible filter textures
-
-**Philosophical Achievement:**
-This represents the **ultimate analog-digital integration** - where organic breathing, controlled chaos, sophisticated synthesis, and mathematical precision all gain the legendary character of the 1975 Steiner-Parker Synthacon filter, creating impossible analog filter textures through the marriage of vintage analog circuit design and modern electronic intelligence under your creative direction.
+The attenuator controls how far the filter moves on each Wogglebug step. At low settings the steps add subtle tonal emphasis; at higher settings they become dramatic filter jumps layered over the organic sweep.
 
 ---
 
@@ -287,37 +223,30 @@ This represents the **ultimate analog-digital integration** - where organic brea
 5. **🎚️ Mix Processing:** Clean up muddy mixes with surgical frequency control
 6. **🎛️ Creative Effects:** Resonance sweeps for build-ups and breakdowns
 7. **🎤 Live Performance:** Real-time filtering with immediate hands-on control
-8. **🌀 Phase 2 Analog Character:** Transform sophisticated modulation into legendary analog filter textures
 
 ---
 
 ## Pairs Well With
 
-**Phase 2 Module Synergies (Analog Character Enhancement):**
-- **DivKid Ochd & Expander:** Ochd organic LFOs create breathing analog filter evolution and natural resonance movement
-- **Make Noise Wogglebug:** Wogglebug chaos drives unpredictable analog filter sweeps and chaotic resonance behavior
-- **Mutable Plaits:** Plaits dual outputs perfect for multi-input processing through HP/BP/LP inputs simultaneously
-- **4ms RCD v2:** RCD polyrhythmic triggers enable musical timing for resonance sweeps and filter performance
-- **Cre8audio Function Junction:** Function Junction processed envelopes perfect for analog filter dynamics
-- **Cross-Phase 2 Integration:** All Phase 2 modules gain legendary Synthacon analog character
+**Modulation Sources:**
+- **DivKid Ochd & Expander:** Eight independent LFOs allow simultaneous modulation of FREQUENCY CV, attenuated CV, and Full CV at different rates. Routing different LFOs to different parameters creates complex multi-rate filter motion without additional modules.
+- **Make Noise Wogglebug:** Stepped output through the attenuated CV input gives the filter irregular, unpredictable lurches; Smooth output provides continuous wandering sweeps. The combination of Wogglebug and Ochd into both CV inputs simultaneously creates layered modulation with very different characters on the same sweep.
+- **Make Noise Maths:** Maths-generated envelopes applied to Full CV create precise attack and decay filter shapes. Using Maths as a function generator with manual triggering allows live, performance-oriented filter control.
 
-**Phase 1 Module Integration (Core Analog Processing):**
-- **Make Noise Maths:** Maths envelopes perfect for classic analog filter envelope control and dynamics
-- **Mutable Rings:** Forbidden Planet processes Rings acoustic modeling for analog-enhanced physical modeling
-- **Disting mk4:** Use Disting utilities alongside Forbidden Planet for comprehensive analog signal processing
-- **Complete Phase 1 systems:** Forbidden Planet as analog character engine for synthesis networks
+**Synthesis Sources:**
+- **Mutable Instruments Plaits:** Plaits Main and Aux outputs carry different synthesis material from the same voice. Routing them into HP and BP simultaneously uses the two-signal capability of the three-input design directly.
+- **Mutable Instruments Rings:** Forbidden Planet HP input reshapes Rings acoustic modeling and removes the low-frequency resonances that can dominate modal synthesis. Running Rings into HP and a separate oscillator into LP creates a patch where two sources share one filter with different spectral characters.
+- **Expert Sleepers Disting mk4:** Disting running a quantizer algorithm provides pitch-tracked CV for self-oscillation sequences. The filter tracks V/Oct through the CV input for musical self-oscillation across the keyboard.
 
-**Essential Analog Filter Partners:**
-- **Synthesis Sources:** All oscillators and synthesis modules benefit from legendary Synthacon character
-- **Envelope Generators:** Classic analog filter envelope control for dynamic filtering
-- **LFOs:** Rhythmic and evolving analog filter movement
-- **VCAs/Mixers:** Control levels and blend different input processing
+**Rhythm and Timing:**
+- **4ms RCD v2:** Gate outputs from multiple RCD divisions trigger envelopes patched to the CV inputs, creating rhythmic filter sweeps that move at polyrhythmic rates relative to the main clock.
 
-**Advanced Analog Integration:**
-- **Multiple Forbidden Planets:** Different analog filter responses on different sources
-- **Drum Machines:** HP input perfect for drum processing and mix cleanup
-- **Performance Controllers:** Real-time analog filter control and input switching
-- **Effects Processors:** Enhance the unique analog character with reverb and delay
+**Processing:**
+- **VCAs and Mixers:** A mixer before the LP input allows blending multiple audio sources into a single path while HP and BP handle individual sources. Parallel processing, mixing Forbidden Planet output with dry signal, preserves low-frequency body that aggressive HP filtering removes.
+- **Reverb and Delay:** Self-oscillation and resonance feed into time-based effects in interesting ways. The aggressive resonance character of the Steiner-Parker topology creates sustained spatial textures in reverb that other filters rarely achieve.
+
+**Multiple Forbidden Planets:**
+- Running two in series, one for high-frequency shaping and one for low, uses the three-input architecture in each to build a flexible multi-band processing chain from two identical modules.
 
 ---
 
@@ -362,40 +291,7 @@ This represents the **ultimate analog-digital integration** - where organic brea
 - **Self-oscillation mode:** Remove input, use filter as sound source
 - **Multiple inputs:** Process different elements of your mix simultaneously
 
-## Advanced Learning Path
 
-**Recommended Study Progression:**
-1. **Start with Forbidden Planet fundamentals:** Master all three inputs and understand legendary analog filter character
-2. **Add organic analog evolution:** Integrate DivKid Ochd for breathing analog filter control (see Ochd guide)
-3. **Include chaos analog character:** Use Make Noise Wogglebug for chaotic analog filter behavior (see Wogglebug guide)
-4. **Add synthesis analog processing:** Apply Mutable Plaits for multi-input analog character enhancement (see Plaits guide)
-5. **Include performance analog timing:** Use 4ms RCD v2 for polyrhythmic analog filter expression (see RCD guide)
-6. **Complete the analog ecosystem:** Add Cre8audio Function Junction for processed analog filter dynamics (see Function Junction guide)
-
-**Cross-Module Learning Opportunities:**
-- **Forbidden Planet + Ochd:** Learn organic analog filter evolution through natural breathing modulation
-- **Forbidden Planet + Wogglebug:** Master chaotic analog character through unpredictable filter behavior
-- **Forbidden Planet + Plaits:** Understand multi-input analog processing of complex synthesis materials
-- **Forbidden Planet + RCD:** Explore polyrhythmic analog filter performance and timing control
-- **All Phase 2 + Forbidden Planet:** Build complete analog ecosystems where sophisticated intelligence gains vintage character
-
-**Skill Development Milestones:**
-- **Beginner:** Master individual inputs and basic analog filter concepts
-- **Intermediate:** Understand multi-input processing and complex analog behavior
-- **Advanced:** Create Phase 2 integration patches with sophisticated analog character enhancement
-- **Expert:** Design analog ecosystems where sophisticated intelligence gains legendary vintage filter character
-
-**Advanced Analog Filter Concepts:**
-- **Multi-Input Intelligence:** Understand how different inputs process different Phase 2 sources
-- **Phase 2 Analog Character:** Use sophisticated pattern generation to control legendary analog behavior
-- **Vintage-Modern Integration:** Combine 1975 analog circuit design with modern electronic intelligence
-- **Analog Performance Design:** Create patches where sophisticated intelligence drives live analog expression
-
-**Performance Applications:**
-- **Live Analog Control:** Real-time analog filter control and input switching for dynamic performance
-- **Generative Analog Systems:** Foundation for self-evolving analog character enhancement
-- **Vintage Analog Tool:** Experience legendary Synthacon character through hands-on Phase 2 integration
-- **Creative Analog Direction:** Guide sophisticated pattern generation toward impossible analog filter textures
 
 ---
 

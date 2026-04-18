@@ -24,10 +24,13 @@ hp: 6
 **What is MCO ALM021?** A compact 6HP digital oscillator featuring 10 morphing waveforms, variable pulse width segments (Alpha Juno style), sub oscillator output, and intentional early 90s digital character reminiscent of Ensoniq and Kawai synthesizers.
 
 **Key Specifications:**
-- **Width:** 6HP
-- **Depth:** 23mm
-- **Power:** 50mA @ +12V / 5mA @ -12V
-- **Architecture:** 16-bit/48kHz digital wavetable oscillator with 10 morphing waveforms, hard sync, PWM pulse segments, dedicated sub oscillator; CV control over wave selection, PWM duty cycle, and pulse segment arrangement
+
+| Spec | Value |
+|------|-------|
+| Width | 6HP |
+| Depth | 23mm |
+| Power | +50mA / -5mA |
+| Architecture | 16-bit/48kHz digital wavetable oscillator with 10 morphing waveforms, hard sync, PWM pulse segments, dedicated sub oscillator; CV control over wave selection, PWM duty cycle, and pulse segment arrangement |
 
 ### Your First Digital Voice
 1. **Connect power** - Ensure proper power cable orientation (red stripe to RED marking)
@@ -574,38 +577,12 @@ Waveform Exploration Guide:
 
 ## Advanced Learning Path
 
-**Recommended Study Progression:**
 1. **Start with wavetable fundamentals:** Master all 10 waveforms and understand digital vs analog character
 2. **Add PWM exploration:** Understand pulse width modulation and dual output coordination
 3. **Include sync techniques:** Master hard sync effects and harmonic generation
 4. **Add complex modulation:** Integrate multiple CV sources for coordinated parameter control
 5. **Include filtering integration:** Learn digital-analog hybrid synthesis techniques
 6. **Complete the performance system:** Integrate multi-track sequencing and real-time control
-
-**Cross-Module Learning Opportunities:**
-- **MCO + Polivoks VCF:** Digital synthesis with aggressive analog-style filtering for character blending
-- **MCO + Rings:** Wavetable synthesis with resonator processing for harmonic enhancement
-- **MCO + Maths:** Digital oscillator with complex envelope control and sync generation
-- **MCO + Hermod+:** Multi-track digital synthesis with independent parameter sequencing
-- **All Advanced + MCO:** Complete ecosystem enabling sophisticated digital synthesis within complex modular systems
-
-**Skill Development Milestones:**
-- **Beginner:** Wavetable exploration, basic frequency control, understanding digital character
-- **Intermediate:** PWM mastery, dual output coordination, basic sync techniques
-- **Advanced:** Complex modulation, sync sweep mastery, multi-output patch architecture
-- **Expert:** Performance system design, digital-analog integration, professional synthesis techniques
-
-**Advanced Digital Synthesis Concepts:**
-- **Wavetable Morphing Theory:** Understanding digital waveform interpolation and harmonic content
-- **PWM Digital Implementation:** Alpha Juno style pulse width modulation in digital domain
-- **Aliasing as Creative Tool:** Using intentional aliasing in upper octaves for texture
-- **Digital-Analog Hybrid Design:** Coordinating digital precision with analog processing warmth
-
-**Performance Applications:**
-- **Live Digital Synthesis:** Real-time wavetable morphing and PWM control during performance
-- **90s Digital Nostalgia:** Authentic early digital synthesizer character for retro productions
-- **Hybrid Synthesis Systems:** Professional digital voice synthesis combined with analog processing
-- **Educational Digital Synthesis:** Understanding digital oscillator fundamentals through hands-on exploration
 
 ---
 
