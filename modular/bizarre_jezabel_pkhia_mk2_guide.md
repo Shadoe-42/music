@@ -251,6 +251,18 @@ The multi-mode outputs reveal this: use modes independently when needed, use the
 
 ---
 
+## Historical Context
+
+Tom Oberheim introduced the SEM (Synthesizer Expander Module) in 1974 as a voice module for adding polyphony to existing instruments. The SEM's filter was a state variable design, a topology that had existed in electronic engineering for decades but had not yet appeared in a commercial synthesizer. Where the Moog transistor ladder filtered audio through a four-stage cascade and produced one output type, the state variable filter produced three simultaneously: low-pass, band-pass, and high-pass. Every note passed through the same filter circuit and emerged at all three outputs at once, with the cutoff and resonance controls affecting all three without interaction between them. The 2-pole slope (12dB/octave) was brighter and more open than the Moog ladder, with a resonance character that sat differently in a mix. This was structurally different from the Moog approach, not a refinement of it.
+
+The SEM was also significant for what surrounded the filter. Oberheim designed it as a complete voice module: two oscillators, the multi-mode filter, and a VCA in a single unit, intended to function as a coherent voice rather than a collection of interchangeable parts. The integrated filter-plus-VCA in one enclosure was a statement about how those components related to each other. Amplitude and timbre were not independent variables to be patched together at the user's discretion; they were coordinated elements of a single voice design. That integration philosophy fell out of favor as modular synthesis expanded, because separating filter and VCA offered more routing flexibility. The SEM voice module remained an influential example of intentional coordination even as its approach became the exception rather than the standard.
+
+Ivan Krasnov builds Bizarre Jezabel in Moscow as a one-person operation. The modules reflect a design sensibility that prioritizes analog character and structural integration. The PKHIA developed through multiple iterations, from the original pkhi through pkhia and into MK2 and MK3, as Krasnov refined what a stereo filter module could be when the VCA was treated as a genuine design element rather than an afterthought. The choice to place the VCAs before the filters is a specific architectural decision: the input signal is shaped dynamically before entering the filter, which means dynamics and timbre interact in the filter's nonlinearity rather than after it. The resulting behavior is different from patching a separate VCA after a separate filter.
+
+The PKHIA MK2 is a restatement of the SEM's integration argument in a stereo context. Most early synthesis was mono by design or practical necessity; stereo processing in modular systems emerged as a later consideration, typically managed through separate processing chains. Krasnov's approach treats stereo not as two parallel mono voices but as a single coordinated instrument, with linked or independent CV control allowing the two channels to track together or diverge. The multi-mode outputs, simultaneous low-pass, band-pass, and high-pass per channel, retain the core innovation of the state variable topology that Oberheim's 1974 module first brought to commercial synthesis.
+
+---
+
 ## Patches
 
 ### **Patch 1: Classic Stereo Filter + VCA Sweep**

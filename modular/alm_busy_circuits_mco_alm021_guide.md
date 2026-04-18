@@ -268,6 +268,18 @@ The hard sync capability teaches phase relationships; the most fundamental conce
 
 ---
 
+## Historical Context
+
+Wolfgang Palm developed wavetable synthesis at his Hamburg company, PPG (Palm Products GmbH), in the mid-1970s. The core idea was mathematically efficient: instead of generating a waveform through analog circuitry in real time, you could store a single cycle of any waveform as a table of digital values and scan through it at variable speeds to produce pitch. The PPG Wave 2.2, released in 1982, brought this technique to commercial instruments at a price that remained out of reach for most musicians. What it demonstrated was that digital oscillators could produce timbres that analog circuits could not replicate, not better or worse than analog, but differently characterized.
+
+The instrument that made digital wavetable synthesis accessible was the Ensoniq ESQ-1, released in 1985 at roughly $1,695, a fraction of what the PPG had cost. Ensoniq built the ESQ-1 around a custom chip called the 5503 Digital Oscillator Chip, designed by Robert Yannes, who had recently completed the MOS SID 6581 for Commodore. The same philosophy defined both designs: packing maximum synthesis capability into constrained silicon at a price working musicians could afford. The ESQ-1's 32 single-cycle waveforms ranged from analog-style sawtooth and square through bell, organ, and voice shapes; the SQ-80 in 1987 expanded the library to 75. Neither instrument attempted to hide its digital nature.
+
+The character that defines those instruments comes partly from what the circuits could not afford to do. At 16-bit resolution and modest sample rates, waveforms that reached into the upper octaves produced audible aliasing: the crystalline harshness that occurs when a digital system cannot represent a frequency accurately and folds it back into the audible spectrum. Engineers of the era treated this as a limitation to work around. A later generation of producers and module designers recognized it as a texture that analog circuits cannot produce at all. The Kawai K1, released in 1988, pushed further into affordable digital wavetable territory and reinforced the same sonic identity. Together, these instruments defined what "early digital character" would come to mean as a deliberate aesthetic choice rather than a technical compromise.
+
+Matthew Allum had built ALM Busy Circuits on the same affordability principle Ensoniq had applied in 1985. By the time ALM released the MCO (ALM021, their twenty-first design), the early digital aesthetic was no longer something to apologize for. The MCO's 10 morphing waveforms trace the same timbral vocabulary that defined the ESQ-1 and K1: bell shapes, organ configurations, voice approximations alongside the standard analog waveshapes. The module's 16-bit/48kHz architecture means the same aliasing that characterized those instruments is present at upper registers. This is not an oversight; it is a deliberate choice about what digital character means as a compositional resource, decades after the instruments that first defined it.
+
+---
+
 ## Patches
 
 ### **Patch 1: Basic - Wavetable Exploration and Digital Character Discovery**

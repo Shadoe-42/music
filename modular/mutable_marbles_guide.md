@@ -96,6 +96,16 @@ Using Marbles teaches you about your own musical preferences by showing you patt
 
 ---
 
+## Historical Context
+
+Iannis Xenakis coined the term "stochastic music" in the 1950s, drawing on the Greek word for "aimed-at." Where John Cage used chance operations to remove the composer's intentions from the work, Xenakis used probability distributions to model processes that have natural structure: the way individual particles in a gas behave randomly but produce predictable aggregate behavior, the way rain sounds irregular in detail but consistent in character. The distinction matters. Pure randomness produces sequences that feel arbitrary; probability-weighted randomness produces sequences that feel like they belong to a world with internal rules. Xenakis was arguing that mathematics could formalize the second kind and use it compositionally.
+
+The problem that followed composers into modular synthesis was practical. Random voltage generators produced values that were too statistically flat to be musically useful without significant patching overhead. Earlier modules had addressed part of this by giving performers control over probability distributions, but the question of repetition remained open. Human performers, even when improvising freely, naturally produce local repetition: a phrase slightly varied, a rhythm returned to, a pitch revisited. Pure random generators produce none of this unless explicitly patched to store and recall values, which typically required external sequencers and logic.
+
+Émilie Gillet founded Mutable Instruments in 2011, building a catalog of modules whose designs engaged compositional and philosophical questions as directly as technical ones. The open-source publication of all circuit schematics and firmware was not incidental; it reflected a conviction that instruments should be understood by the people who use them. Marbles, released in 2018, was Gillet's direct answer to the repetition problem. Its DEJA VU system works by maintaining a buffer of recently generated values and, at each decision point, probabilistically choosing between drawing a new value from the hardware random source or recycling a value from the buffer. The result is not a memorized pattern; it is a probability-weighted tendency toward recent material. At one extreme the output is genuinely random; at the other it is a locked loop; across the middle range it produces the kind of evolving-but-familiar sequences that human performers generate through habit and musical preference.
+
+Mutable Instruments closed in 2022. Gillet open-sourced all remaining designs before the company ended, and Marbles has since been cloned, ported to VCV Rack, and incorporated into other instruments. The DEJA VU architecture is now a reference point for how to make randomness compositionally useful rather than merely statistically present.
+
 ---
 
 ## Progressive Patch Examples
