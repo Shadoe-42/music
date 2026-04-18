@@ -252,6 +252,18 @@ BLM Simple ADSR v2.1 proves that **fundamental utilities need not be basic**. AD
 
 ---
 
+## Historical Context
+
+Every musical sound changes over time in a characteristic way. A piano note struck begins loudly, falls to a lower sustained level as the strings vibrate freely, then decays toward silence after the key is released. A violin note builds more gradually and holds at a relatively stable level for as long as the bow moves. A drum hit has nearly no rise time and decays rapidly. These time-varying amplitude shapes are not accidents of instrument mechanics; they are what makes each instrument sound like itself. Acousticians had described these shapes analytically before electronic instruments existed. The challenge in synthesizer design was not discovering the concept but finding a way to generate control voltages that reproduced the same time-varying behavior from an electronic circuit, applied to a sound that had none of those behaviors by default.
+
+In 1963, composer Herbert Deutsch met Robert Moog at a trade fair in Rochester, New York. Moog had been building theremin kits and was beginning to develop voltage-controlled synthesis modules. Deutsch's contribution was a direct musical observation: synthesizer notes that switch on at full level and switch off at zero sound like nothing in the acoustic world. He wanted a way to articulate notes, to shape their onset and ending. Moog built a prototype envelope module. The early design gave some control over how a note began and ended, but the parameter structure was not yet standardized and the naming was inconsistent across implementations.
+
+Vladimir Ussachevsky was a composer who had co-founded the Columbia-Princeton Electronic Music Center with Otto Luening in 1959, one of the earliest institutional homes for electronic music composition in the United States. In 1965, as head of the Center, Ussachevsky worked with Moog on refining the envelope module and proposed a specific multi-stage architecture: an initial rise time from silence to peak level, a decay from that peak to a held level, a sustained level maintained for as long as the note was active, and a final fall to silence after the note was released. Moog implemented this as four labeled parameters: T1, T2, ESUS, and T3. ARP Synthesizers simplified and renamed these in their instruments of the early 1970s to the four-letter form that became universal: Attack, Decay, Sustain, Release. That naming standardized across the entire industry and has remained on every synthesizer produced since.
+
+Blue Lantern Modules is a one-person operation based in Phoenix, Arizona, run by a designer known in the Eurorack community as Flavio. He began building modules as a personal hobby around 2002 and gradually formalized into a small business that assembles and distributes its modules in the United States. Blue Lantern is known for modules that range from experimental and unusual to straightforward utilities, produced in small quantities with a hands-on character that reflects the company's scale. The BLM Looping Simple ADSR v2.1 sits at the utility end of that range: a clean four-stage envelope implementation with practical extensions including loop modes for rhythmic modulation and CV control over output level. The ADSR is the oldest standardized concept in synthesizer design. That every patch still requires at least one of them is a measure of how precisely Ussachevsky described the problem in 1965.
+
+---
+
 ## Essential Parameters (The Envelope Controls)
 
 ### **1. Attack (Blue Knob) - The Rise Time Control**
