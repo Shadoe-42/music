@@ -10,7 +10,7 @@ use_cases: [evolving ambient texture, dark atmospheric layer, drone foundation]
 hp: 16
 ---
 
-# EarthQuaker Devices Afterneath - Guide
+# EarthQuaker Devices Afterneath
 
 **The Otherworldly Reverberation Machine - A Wizard in a Cave**
 
@@ -84,34 +84,34 @@ hp: 16
 
 ## Why This Instrument Excels
 
-### **The Philosophy:**
+**The Philosophy:**
 **Texture over functionality.** The Afterneath doesn't try to be a "clean" reverb or a "natural" spatial effect; it's designed to transform audio into otherworldly, warped, and ambient textures. The signature Drag parameter makes the internal reverb architecture visible and manipulable in real-time, turning reverb processing into a performance instrument.
 
-### **The Innovation:**
+**The Innovation:**
 - **Drag parameter:** Separates delay lines for stuttering, pitch-shifting, and warped textures impossible with conventional reverbs
 - **9 operational modes:** From smooth unquantized response to quantized scales that impose musical structure on reverb tails
 - **Comprehensive CV control:** Every parameter CV-controllable with dedicated inverting attenuators for complex modulation
 - **Reflect send/return loop:** External processing can shape the reverb feedback path in real-time
 - **Self-oscillation capability:** The reverb can become a pitched oscillator, expanding beyond traditional effects territory
 
-### **The Practical Benefits:**
+**The Practical Benefits:**
 - **Instant texture generation:** Even subtle Drag modulation transforms ordinary audio into extraordinary soundscapes
 - **Performance instrument:** Real-time CV control allows Afterneath to evolve and respond rather than sit static
 - **Educational transparency:** The Drag parameter teaches how reverb algorithms actually work; you can hear the mechanics
 - **Dual functionality:** Works as both traditional reverb processor AND sound design generator
 - **Integration flexibility:** External loop allows Afterneath to become part of larger processing chains
 
-### **Perfect For:**
+**Perfect For:**
 - **Ambient musicians:** The core use case; generating evolving, spacious textures
 - **Experimental musicians:** Drag modulation and self-oscillation create sounds outside conventional music
 - **Effects processors:** Essential for transforming raw audio into characterized sound
 - **Texture designers:** CV modulation creates evolution impossible with static settings
 - **Performance artists:** Real-time CV control enables expressive effect processing
 
-### **The Magic:**
+**The Magic:**
 Afterneath proves that **effects can be instruments.** The Drag parameter isn't just a tone control; it's a window into reverb design itself. When you turn Drag while audio plays, you're experiencing how delay separation creates texture. The 9 modes teach you that structure can emerge from mathematical relationships. The self-oscillation shows that boundaries between "effect" and "oscillator" are arbitrary.
 
-### **Historical Significance:**
+**Historical Significance:**
 The Afterneath module represents a successful pedal-to-Eurorack translation that doesn't just reproduce the original; it expands the concept. It demonstrated that guitar effects companies understood modular synthesis deeply enough to create tools that teach synthesis principles, not just copy pedal functions.
 
 
@@ -119,7 +119,7 @@ The Afterneath module represents a successful pedal-to-Eurorack translation that
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Basic - Essential Otherworldly Reverb**
 ```
@@ -330,14 +330,14 @@ The Afterneath module represents a successful pedal-to-Eurorack translation that
 
 ## Pairs Well With
 
-### **Modulation & CV Source Integration:**
+**Modulation & CV Source Integration:**
 - **Mutable Marbles:** Random CV for melodic Drag modulation in quantized modes
 - **Make Noise Maths:** Complex envelopes for Length and Diffuse control
 - **DivKid ochd & Expander:** Multiple LFOs for evolving parameter automation
 - **Erica Synths modules:** Audio sources and external processing in Reflect loop
 - **4ms Listen IO:** Professional I/O for external processing integration
 
-### **Perfect Partners:**
+**Perfect Partners:**
 - **VCAs:** For amplitude control of self-oscillating applications
 - **Filters:** In Reflect loop for spectral shaping of feedback
 - **CV Sources:** LFOs, envelopes, sequencers for parameter modulation
@@ -345,9 +345,9 @@ The Afterneath module represents a successful pedal-to-Eurorack translation that
 
 ---
 
-## Advanced Techniques
+## Advanced Learning Path
 
-### **Drag Parameter Mastery:**
+**Drag Parameter Mastery:**
 The Drag parameter is Afterneath's most unique control. Understanding its behavior at different settings unlocks the module's full potential.
 
 **Drag Response Zones:**
@@ -369,7 +369,7 @@ Drag behaves differently depending on operational mode:
 - **Modes 4-9 (Quantized):** Drag snaps between scale tones for musical quantization
 - **Mode choice changes Drag character:** Test Drag in all modes to understand mode-specific responses
 
-### **Self-Oscillation Calibration:**
+**Self-Oscillation Calibration:**
 When Afterneath self-oscillates, it becomes a sine wave oscillator tracking 1V/octave (in Mode 3).
 
 **Setting Up Self-Oscillation:**
@@ -391,7 +391,7 @@ When Afterneath self-oscillates, it becomes a sine wave oscillator tracking 1V/o
 - Blend self-oscillation with audio input by using very weak audio (high attenuation)
 - Use quantized modes (4-9) for musical scale-locked pitch generation
 
-### **Reflect Loop Integration:**
+**Reflect Loop Integration:**
 The Reflect Send/Return loop is where Afterneath becomes a system, not just an effect.
 
 **External Processing in Reflect Loop:**
@@ -410,7 +410,7 @@ The Reflect Send/Return loop is where Afterneath becomes a system, not just an e
 **Reflect Loop Philosophy:**
 The Reflect loop teaches that reverb is just another modular destination. External processing becomes part of the reverb algorithm itself, not applied after the fact.
 
-### **CV Modulation Architecture:**
+**CV Modulation Architecture:**
 Afterneath has 4 independent CV inputs. Using them together creates complex texture evolution.
 
 **Modulation Strategies:**
@@ -428,7 +428,7 @@ Afterneath has 4 independent CV inputs. Using them together creates complex text
 
 **Learning:** Different CV sources have different voltage standards. Always attenuate sequencer outputs to avoid excessive parameter jumping.
 
-### **Dampen Control (Spectral Shaping):**
+**Dampen Control (Spectral Shaping):**
 Dampen is a tone control on the reverb feedback, not just a color knob.
 
 **Dampen Settings:**
@@ -442,7 +442,7 @@ Drag warping is most obvious in bright settings (Dampen CCW). Dark settings (Dam
 **Dampen Modulation:**
 Apply slow LFO to Dampen for evolving spectral character. As reverb decays and gets darker, the texture evolution becomes more obvious.
 
-### **Diffuse Parameter (Reverb Smoothness):**
+**Diffuse Parameter (Reverb Smoothness):**
 Diffuse controls how quickly delay lines diffuse into the reverb field.
 
 **Diffuse Zones:**
@@ -453,12 +453,12 @@ Diffuse controls how quickly delay lines diffuse into the reverb field.
 **Diffuse + Drag Relationship:**
 Drag warping is more obvious in sharp settings (Diffuse CCW). Smooth settings hide Drag artifacts. Understanding this teaches signal processing interconnection.
 
-### **Mix and Dry Kill Controls:**
+**Mix and Dry Kill Controls:**
 - **Mix:** Wet/dry balance. High = mostly reverb, Low = mostly dry input
 - **Dry Kill switch:** When enabled, eliminates dry signal completely (100% wet)
 - **Send/Return use:** Patch into mixer's send input, set Mix fully CW (100% wet), disable Dry Kill
 
-### **Performance Techniques:**
+**Performance Techniques:**
 
 **Real-Time Control:**
 - Assign Drag CV to joystick/velocity for expressive, performance-based texture control
@@ -479,9 +479,9 @@ Drag warping is more obvious in sharp settings (Diffuse CCW). Smooth settings hi
 
 ---
 
-## Beginner "Gotchas" & Pro Tips
+## Common Mistakes
 
-### **⚠️ Common Mistakes:**
+### **Common Mistakes:**
 
 **"All I hear is 'washy' reverb, not the Drag effect everyone talks about!"**
 - **Why:** The Drag effect is subtle when Drag is in the 7-11 o'clock range. Many users expect dramatic transformation but Drag works gradually. Additionally, if you're using bright/treble-heavy audio, Drag effects can be masked. Low resonance on Dampen also reduces Drag prominence.
@@ -548,7 +548,7 @@ Drag warping is more obvious in sharp settings (Diffuse CCW). Smooth settings hi
 - **Solution:** (1) Use different LFO rates for each CV input; fast on one (2 Hz), slow on another (0.3 Hz), medium on a third (0.8 Hz) to create polyrhythmic evolution, (2) use higher modulation amplitudes on at least one parameter to create obvious change points, (3) use different modulation waveforms (triangle, saw, square) for different CV inputs, (4) combine LFOs with envelope followers to mix periodic and content-responsive modulation, (5) record audio and listen back; short-term listening often misses long-period variations.
 - **Teaching:** Texture evolution requires multiple timescales working together. This teaches complex system thinking where individual components create emergent behavior.
 
-### **🎵 Pro Tips:**
+### **Pro Tips:**
 
 **Drag Exploration Strategy:**
 Don't jump to modulation; first spend 10 minutes manually sweeping Drag knob through its entire range at different positions of other parameters. This teaches you where the "magic" happens (usually 1-2 o'clock).
@@ -576,4 +576,3 @@ Patch Reflect Send to a separate output jack to see what the feedback path conta
 
 ---
 
-**Bottom Line:** Afterneath isn't just a reverb - it's an **otherworldly texture generator** that transforms any audio into ambient, warped, and musical textures through its signature Drag parameter and 9 operational modes. From basic reverb to self-oscillating VCO to complex ambient processor, it brings unique character that's impossible to achieve with conventional reverbs. The Drag control alone makes it worth the 16HP, but the extensive CV control and external processing capabilities make it a **complete ambient sound design powerhouse**.

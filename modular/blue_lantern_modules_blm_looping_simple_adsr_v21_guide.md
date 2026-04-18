@@ -10,7 +10,7 @@ use_cases: [envelope shaping, modulation source, looping LFO-style envelope]
 hp: 7
 ---
 
-# Blue Lantern Modules BLM Looping Simple ADSR v2.1 - Guide
+# Blue Lantern Modules BLM Looping Simple ADSR v2.1
 
 **The Digital ADSR Envelope Generator with Looping Capabilities**
 
@@ -45,11 +45,11 @@ hp: 7
 
 ## Why This Instrument Excels
 
-### The Philosophy: Essential Envelope Utility for Universal Synthesis Control
+**The Philosophy: Essential Envelope Utility for Universal Synthesis Control**
 
 BLM Simple ADSR v2.1 represents **fundamental envelope generation** - the most essential control signal in synthesis. Understanding envelopes through this utility teaches principles that appear in every synthesizer, modulation source, and dynamic control throughout electronic music.
 
-### ADSR: Why This Architecture Won
+**ADSR: Why This Architecture Won**
 
 **What is an envelope?** A control voltage that changes over time, shaping how sounds evolve from start to finish. Every sound in nature has an envelope - the way a piano note strikes instantly then fades, how a violin sustains while bowing, how a cymbal crashes and rings.
 
@@ -68,7 +68,7 @@ BLM Simple ADSR v2.1 represents **fundamental envelope generation** - the most e
 
 **The interconnection:** When you understand why ADSR architecture succeeded, you understand how synthesis evolved. Every filter envelope, VCA envelope, modulation envelope in every synthesizer uses these same four stages. This isn't arbitrary - it's the architecture that best models musical performance.
 
-### The Four Stages: Universal Envelope Architecture
+**The Four Stages: Universal Envelope Architecture**
 
 **Attack (A):** How quickly sound goes from silence to peak
 - **Percussive sounds:** Very fast attack (drums, plucks, strikes)
@@ -99,7 +99,7 @@ BLM Simple ADSR v2.1 represents **fundamental envelope generation** - the most e
 
 Understanding ADSR in one context teaches you how envelopes work in ALL contexts.
 
-### RC Time Constants: How Analog Envelopes Actually Work
+**RC Time Constants: How Analog Envelopes Actually Work**
 
 **What creates envelope timing in analog circuits?** RC networks - resistors (R) and capacitors (C) working together:
 
@@ -118,7 +118,7 @@ Understanding ADSR in one context teaches you how envelopes work in ALL contexts
 
 **Astroid connection:** Twin-T drum circuit uses RC networks too - same principle, different application.
 
-### Digital vs Analog Envelope Implementation
+**Digital vs Analog Envelope Implementation**
 
 **BLM Simple ADSR is digital** - implemented in code, not capacitors:
 
@@ -139,7 +139,7 @@ Understanding ADSR in one context teaches you how envelopes work in ALL contexts
 
 **The teaching moment:** Digital and analog are different tools, not good vs bad. Digital envelopes (like BLM) offer reliability and features. Analog envelopes offer natural exponential curves and character. Both have value in synthesis.
 
-### Linear vs Exponential Curves: Perception vs Mathematics
+**Linear vs Exponential Curves: Perception vs Mathematics**
 
 **Why does BLM offer both curves?** Because human perception isn't linear.
 
@@ -164,7 +164,7 @@ Understanding ADSR in one context teaches you how envelopes work in ALL contexts
 - **Modulation depth:** Exponential modulation feels more musical
 - **Human perception:** Logarithmic/exponential throughout hearing and vision
 
-### Looping Modes: Rhythmic Envelope Applications
+**Looping Modes: Rhythmic Envelope Applications**
 
 **Why include loop modes?** Because envelopes aren't just for notes - they're modulation sources.
 
@@ -182,7 +182,7 @@ Understanding ADSR in one context teaches you how envelopes work in ALL contexts
 
 **The principle:** Envelopes are modulation sources. Loop modes transform ADSR from note-shaping into rhythmic modulation generation. This teaches you that control signals can serve multiple purposes - same module, different musical applications.
 
-### CV Level Control: Dynamic Expression
+**CV Level Control: Dynamic Expression**
 
 **Why controllable output level?** Because dynamics matter.
 
@@ -197,7 +197,7 @@ Understanding ADSR in one context teaches you how envelopes work in ALL contexts
 
 **The interconnection:** This is voltage-controlled amplitude (VCA principle) applied to the envelope itself. Understanding this teaches you that everything can be voltage-controlled - even the control voltages that control other things. Meta-modulation appears throughout advanced synthesis.
 
-### Why Utilities Teach Fundamental Principles
+**Why Utilities Teach Fundamental Principles**
 
 **Envelopes are utilities, not sound sources:**
 - **They don't make sound** - they shape existing signals
@@ -217,7 +217,7 @@ Understanding ADSR in one context teaches you how envelopes work in ALL contexts
 - **Modulation:** Envelopes as rhythmic sources
 - **Control voltage:** How CV shapes everything in synthesis
 
-### Design Philosophy: Reliable Essential Utility
+**Design Philosophy: Reliable Essential Utility**
 
 **BLM's approach:** Straightforward, dependable envelope generation without complexity:
 - **No menus:** All controls visible and accessible
@@ -228,7 +228,7 @@ Understanding ADSR in one context teaches you how envelopes work in ALL contexts
 
 **The innovation:** Not trying to be everything - being essential utility done well. 7HP, reliable operation, features that matter. This teaches you that specialized modules excelling at core function often prove more valuable than complex modules attempting everything.
 
-### The Technical Excellence:
+**The Technical Excellence:**
 
 - **Digital precision:** Repeatable, accurate envelope generation
 - **Dual curve options:** Linear and exponential for different musical contexts
@@ -238,7 +238,7 @@ Understanding ADSR in one context teaches you how envelopes work in ALL contexts
 - **THRU output:** Gate chaining for multiple envelope coordination
 - **Compact 7HP:** Essential utility in minimal space
 
-### Perfect For:
+**Perfect For:**
 
 - **Envelope beginners:** Learning fundamental ADSR operation
 - **System builders:** Reliable envelope generation for any patch
@@ -246,7 +246,7 @@ Understanding ADSR in one context teaches you how envelopes work in ALL contexts
 - **Modulation designers:** Loop modes for rhythmic envelope modulation
 - **Anyone needing envelopes:** Essential utility for universal synthesis control
 
-### The Magic:
+**The Magic:**
 
 BLM Simple ADSR v2.1 proves that **fundamental utilities need not be basic**. ADSR envelope generation is essential to all synthesis, and doing it reliably with useful features (curves, loops, CV level) makes it indispensable. When you understand envelopes through BLM, you understand dynamic control that applies to every synthesizer, every modulation context, every musical application. Envelopes aren't just one function - they're the foundation of how synthesis creates musical expression over time.
 
@@ -500,7 +500,7 @@ BLM Simple ADSR v2.1 proves that **fundamental utilities need not be basic**. AD
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Basic - Essential ADSR Operation with VCA Control**
 ```
@@ -633,33 +633,33 @@ Advanced Operation Modes:
 
 ## Pairs Well With
 
-### **Advanced Module Synergies (Envelope Coordination):**
+**Advanced Module Synergies (Envelope Coordination):**
 - **Erica Synths Quad VCA2:** Multiple VCAs for complex envelope-controlled amplitude relationships
 - **Make Noise Maths:** Complex envelope generation that complements Simple ADSR's straightforward operation
 - **DivKid Ochd & Expander:** LFO modulation of envelope parameters for evolving envelope characteristics
 - **Squarp Hermod+:** Precise gate sequencing and velocity CV for sophisticated envelope triggering
 - **Cross-Advanced Integration:** Simple ADSR provides reliable envelope generation within complex modulation ecosystems
 
-### **Perfect Partners for Beginners:**
+**Perfect Partners for Beginners:**
 - **Basic VCAs:** Essential for amplitude control using ADSR envelopes
 - **Simple oscillators:** Audio sources that benefit from envelope shaping
 - **Gate sources:** Sequencers, keyboards, or clock dividers for envelope triggering
 - **Mixers:** For combining multiple envelope-controlled signals
 - **Audio interfaces:** For monitoring envelope-shaped audio signals
 
-### **Advanced System Integration:**
+**Advanced System Integration:**
 - **Multiple ADSR modules:** Polyphonic envelope generation or complex envelope relationships
 - **Quantized CV sources:** For musical envelope parameter modulation
 - **Performance controllers:** Expression controls for real-time envelope level modulation
 - **Complex gate generators:** Euclidean and algorithmic gate patterns for loop mode operation
 
-### **Essential Utility Partnerships:**
+**Essential Utility Partnerships:**
 - **VCA modules:** Primary application for amplitude envelope control
 - **Filter modules:** Secondary application for timbral envelope control
 - **Mixer modules:** Combining multiple envelope-controlled signals
 - **Multiple modules:** Distributing single envelope to multiple destinations
 
-### **Professional Workflow Integration:**
+**Professional Workflow Integration:**
 - **Multi-voice systems:** Providing reliable envelope generation for polyphonic patches
 - **Performance setups:** Dynamic envelope control through CV level modulation
 - **Studio systems:** Consistent envelope generation for recording and production
@@ -669,33 +669,33 @@ Advanced Operation Modes:
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Start with basic ADSR operation:** Master fundamental envelope generation and VCA control
 2. **Add operational mode exploration:** Understand 1-shot vs loop modes for different musical contexts
 3. **Include CV level control:** Implement dynamic envelope scaling for performance applications
 4. **Add system integration:** Coordinate multiple envelopes and efficient signal distribution
 5. **Include professional techniques:** Complex envelope architecture in complete modular systems
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **Simple ADSR + VCA modules:** Fundamental amplitude control and signal shaping techniques
 - **Simple ADSR + Filter modules:** Timbral envelope control beyond amplitude applications
 - **Simple ADSR + Sequencers:** Gate pattern coordination and rhythmic envelope triggering
 - **Simple ADSR + Performance controllers:** Real-time envelope expression and dynamic control
 - **All Advanced + Simple ADSR:** Reliable envelope generation within sophisticated modulation ecosystems
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Basic ADSR operation, VCA control, understanding envelope stages
 - **Intermediate:** Operational mode selection, CV level control, multi-destination routing
 - **Advanced:** Complex envelope coordination, professional system integration
 - **Expert:** Dynamic envelope architecture design, performance-oriented envelope systems
 
-### **Advanced Envelope Concepts:**
+**Advanced Envelope Concepts:**
 - **Envelope Stage Theory:** Understanding Attack, Decay, Sustain, Release behavior and musical applications
 - **Curve Characteristic Impact:** Linear vs Exponential envelope shapes and their musical effects
 - **Loop Mode Applications:** Rhythmic modulation generation through envelope looping
 - **System Integration Principles:** Efficient envelope distribution and coordination in complex systems
 
-### **Performance Applications:**
+**Performance Applications:**
 - **Dynamic amplitude control:** Real-time envelope expression through CV level modulation
 - **Rhythmic modulation:** Loop modes for tempo-synchronized amplitude and timbral effects
 - **Multi-parameter envelope control:** Single envelope controlling multiple synthesis parameters
@@ -703,4 +703,3 @@ Advanced Operation Modes:
 
 ---
 
-**Bottom Line:** BLM Simple ADSR v2.1 isn't just an envelope generator - it's a **reliable envelope utility** that provides essential ADSR functionality with useful operational modes and CV control options. Every patch teaches something new about envelope generation fundamentals, from basic amplitude control to complex rhythmic modulation. As an **essential utility within Advanced ecosystems**, it provides dependable envelope generation that enables sophisticated amplitude and parameter control while maintaining the straightforward operation essential for efficient modular system workflow in 7HP of focused envelope utility.

@@ -11,7 +11,7 @@ hp: 3
 memory: none
 ---
 
-# Erica Synths Pico DSP - Guide
+# Erica Synths Pico DSP
 
 **Professional Effects Studio in 3HP**
 
@@ -25,9 +25,12 @@ memory: none
 **What is Pico DSP?** A complete stereo effects processor with 8 custom DSP algorithms in just 3HP. It's like having a professional effects rack that takes any mono signal and creates wide, spacious stereo textures with everything from delays to reverbs to granular processing.
 
 **Key Specifications:**
-- **Width:** 3 HP
-- **Depth:** 35 mm
-- **Power:** 82 mA @ +12V / 20 mA @ -12V / 0 mA @ +5V
+
+| Spec | Value |
+|------|-------|
+| Width | 3HP |
+| Depth | 35mm |
+| Power | +82mA / -20mA |
 
 ### Your First Stereo Effect (Stereo Delay)
 1. **Power up** - LED will show the current effect color
@@ -114,7 +117,7 @@ The Pico series, particularly the DSP, introduced the concept that effects shoul
 - **Character:** Grainy, textural delays with freezing capability
 - **Use cases:** Ambient textures, frozen soundscapes, experimental processing
 
-### **🟣 PURPLE - Reverb**
+### **PURPLE - Reverb**
 - **PAR1:** Reverb time (decay length)
 - **PAR2:** Tone (bright/dark character)
 - **Character:** Clean, spacious reverb algorithm
@@ -140,25 +143,25 @@ The Pico series, particularly the DSP, introduced the concept that effects shoul
 
 ---
 
-## Why Erica Synths Pico DSP Excels
+## Why This Instrument Excels
 
-### **The Philosophy:**
+**The Philosophy:**
 Professional studio effects shouldn't require rack-mount units and multiple cables. Pico DSP proves that high-quality DSP processing can fit in 3HP while maintaining the flexibility and creativity of modular synthesis.
 
-### **The Engineering:**
+**The Engineering:**
 - **8 custom DSP algorithms** designed specifically for Eurorack
 - **True stereo processing** with intelligent mono-to-stereo conversion
 - **Professional signal handling** with clipping protection
 - **CV integration** brings effects into the modular workflow
 
-### **The Practical Benefits:**
+**The Practical Benefits:**
 - **Space efficient:** Complete effects studio in 3HP
 - **Immediate results:** No programming or complex setup
 - **Performance ready:** Real-time control and effect switching
 - **Studio quality:** Professional algorithms in modular format
 - **Creative potential:** Effects become part of the patch, not just post-processing
 
-### **Perfect For:**
+**Perfect For:**
 - **Every rack:** Essential processing for any modular system
 - **Small cases:** Professional effects without space sacrifice
 - **Performers:** Reliable, hands-on effects control
@@ -322,7 +325,7 @@ Most Pico DSP beginner frustrations come from misunderstanding **three core conc
 
 ## Beginner Pro Tips
 
-### **🎵 General Strategy Tips:**
+### **General Strategy Tips:**
 
 **Effect Selection Strategy:**
 - **Learn the LED colors** - much faster than button counting
@@ -386,21 +389,21 @@ Most Pico DSP beginner frustrations come from misunderstanding **three core conc
 
 ---
 
-## Advanced Techniques
+## Advanced Learning Path
 
-### **CV Modulation Strategies:**
+**CV Modulation Strategies:**
 - **LFO → CV Input:** Animated parameter sweeps
 - **Envelope → CV Input:** Dynamic effect changes
 - **Sequencer → CV Input:** Rhythmic parameter changes
 - **Random → CV Input:** Unpredictable effect variations
 
-### **Freeze Mode (Granular Delay):**
+**Freeze Mode (Granular Delay):**
 - **PAR1 full clockwise** creates infinite feedback loop
 - **Captures current audio** and loops it indefinitely
 - **PAR2 controls loop length** when frozen
 - **Performance technique:** Freeze interesting moments, then manipulate
 
-### **Signal Chain Strategies:**
+**Signal Chain Strategies:**
 - **Early in chain:** Process oscillators before filters
 - **Late in chain:** Process final mix for polish
 - **Parallel processing:** Mix dry signal separately for blend control
@@ -410,7 +413,7 @@ Most Pico DSP beginner frustrations come from misunderstanding **three core conc
 
 ## Pairs Well With
 
-### **Multi-Function Module Synergies (Professional Effects Systems):**
+**Multi-Function Module Synergies (Professional Effects Systems):**
 - **DivKid Ochd & Expander:** Natural LFO modulation → Pico DSP for flowing effects parameter development
 - **Make Noise Wogglebug:** Chaos CV generation → Pico DSP for controlled unpredictable effects processing
 - **Squarp Hermod+:** Advanced sequencing + built-in quantization + live recording → Pico DSP for professional effects automation
@@ -418,13 +421,13 @@ Most Pico DSP beginner frustrations come from misunderstanding **three core conc
 - **Mordax Data:** Real-time FFT analysis + level monitoring → Pico DSP for visual effects processing feedback
 - **Cross-Multi-Function Integration:** Pico DSP serves as effects processor for complete multi-function studio workstations
 
-### **Essential Partners:**
+**Essential Partners:**
 - **Stereo Mixers:** Essential for hearing the full stereo processing
 - **VCAs:** Control send levels to the effect
 - **LFOs:** Animate effect parameters via CV input
 - **Envelope Generators:** Dynamic effect parameter control
 
-### **Advanced Combinations:**
+**Advanced Combinations:**
 - **Multiple Pico DSPs:** Chain different effects together
 - **Quantizers:** Make CV modulation musical (for pitch shift delay)
 - **Clock Dividers:** Sync delay times to musical subdivisions
@@ -434,7 +437,7 @@ Most Pico DSP beginner frustrations come from misunderstanding **three core conc
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Start with Pico DSP fundamentals:** Master 8-effect operation, stereo processing, and effects synthesis concepts
 2. **Add natural modulation:** Integrate DivKid Ochd for flowing effects parameter development with natural LFO evolution (see Ochd guide)
 3. **Include controlled chaos:** Use Make Noise Wogglebug for chaotic effects processing with controlled unpredictability (see Wogglebug guide)
@@ -442,26 +445,26 @@ Most Pico DSP beginner frustrations come from misunderstanding **three core conc
 5. **Include plugin processing:** Use Winterbloom MetaModule for sophisticated parameter control via plugins (see MetaModule guide)
 6. **Complete the workstation:** Add Mordax Data for real-time analysis and visual feedback of effects processing (see Data guide)
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **Pico DSP + Ochd:** Learn natural modulation of effects parameters for flowing stereo processing development
 - **Pico DSP + Wogglebug:** Master chaos-driven effects for controlled unpredictability in professional processing
 - **Pico DSP + Hermod+:** Understand advanced effects automation with multi-track sequencing and live recording
 - **Pico DSP + MetaModule:** Explore plugin-based effects parameter control with sophisticated modulation sources
 - **All Multi-Function + Pico DSP:** Build complete professional effects workstations where each module serves multiple roles simultaneously
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Use different effects algorithms and basic CV assignment for professional stereo processing
 - **Intermediate:** Master parameter interaction and effect switching for complex processing relationships
 - **Advanced:** Create multi-function integration patches with natural/chaos/plugin modulation of effects parameters
 - **Expert:** Design complete effects workstations where Pico DSP serves as professional processing core for multiple modulation types
 
-### **Advanced Effects Concepts:**
+**Advanced Effects Concepts:**
 - **8-Algorithm Mastery:** Understand how different processing types create unique stereo characteristics
 - **CV Integration Theory:** Master the relationship between modulation sources and professional effects parameters
 - **Dynamic Effects Processing:** Explore how modulation affects algorithm character, stereo width, and processing quality
 - **System Integration:** Design patches where Pico DSP processes multiple modulation types simultaneously with analysis feedback
 
-### **Performance Applications:**
+**Performance Applications:**
 - **Live Effects Control:** Real-time algorithm switching and parameter control for dynamic processing performance
 - **Generative Effects Systems:** Foundation for self-evolving processing systems with natural/chaos/plugin modulation
 - **Professional Processing:** Bridge between traditional effects and advanced multi-function modulation processing

@@ -12,7 +12,7 @@ memory: none
 screen: true
 ---
 
-# Disting mk4 - Guide
+# Disting mk4
 *The Swiss Army Knife of Eurorack*
 
 ---
@@ -126,29 +126,29 @@ Instead of buying dozens of modules, Disting mk4 gives you **one module that can
 
 ## Why This Instrument Excels
 
-### **The Philosophy:**
+**The Philosophy:**
 Disting mk4 proves that **one excellent module** can be more valuable than dozens of mediocre ones. Instead of buying a separate quantizer, delay, LFO, filter, and sample player, you get all of them in 4HP - and they're all excellent implementations.
 
-### **The Innovation:**
+**The Innovation:**
 - **80+ algorithms** covering every fundamental modular synthesis function
 - **Consistent interface** means learning one algorithm helps with all others
 - **SD card integration** extends functionality far beyond typical hardware limitations
 - **Continuous development** with regular firmware updates adding new algorithms
 
-### **The Practical Benefits:**
+**The Practical Benefits:**
 - **Space efficiency:** Entire studio functionality in 4HP
 - **Cost effectiveness:** One module replaces dozens of specialized modules
 - **Learning tool:** Explore modular synthesis concepts without buying everything
 - **Problem solver:** Always have the right tool for any synthesis challenge
 
-### **Perfect For:**
+**Perfect For:**
 - **Beginners:** Learn modular synthesis without breaking the bank
 - **Small system builders:** Maximum functionality in minimal space
 - **Experimenters:** Try every type of synthesis and processing
 - **Professionals:** Reliable, high-quality implementations of essential functions
 - **Anyone needing:** That one specific function they don't have a module for
 
-### **The Magic:**
+**The Magic:**
 Disting mk4 **democratizes modular synthesis** by making every function accessible to everyone. Whether you need a simple mixer or complex granular processing, it's all there, waiting to be discovered.
 
 ---
@@ -457,7 +457,7 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 
 ## Common Mistakes
 
-### **⚠️ Common Mistakes:**
+### **Common Mistakes:**
 
 **"I can't hear any difference when I turn the Z knob!"**
 - Check that you're using the right algorithm for your signal type
@@ -475,7 +475,7 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 - Preset 0 loads at startup and auto-saves when switching algorithms
 - **Solution:** Save your settings to Preset 0 if you want them at startup
 
-### **🎵 Pro Tips:**
+### **Pro Tips:**
 
 **Algorithm Learning Strategy:**
 - **Master one series first** - try all A-series (CV utilities) before moving on
@@ -505,35 +505,35 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 
 ---
 
-## Advanced Techniques
+## Advanced Learning Path
 
-### **Favorites System:**
+**Favorites System:**
 - **Create custom menu** of your 16 most-used algorithms (O1-P8)
 - **Text file on SD card** named 'favourites.txt' 
 - **Quick access** to personalized algorithm collection
 - **Example:** "b5 LFO", "a6 quantizer", "c5 resonator"
 
-### **Preset Management:**
+**Preset Management:**
 - **64 preset slots** store complete algorithm states
 - **Preset 0 special:** Loads at power-up, auto-saves on algorithm change
 - **Save workflow:** Menu → Save → choose slot → confirm
 - **Performance tip:** Use presets for complex algorithm configurations
 
-### **Knob Recorder Function:**
+**Knob Recorder Function:**
 - **Available on many algorithms** where Z doesn't have another function
 - **Hold Z while turning** to record knob movements (up to 14 seconds)
 - **Release Z** to loop playback of recorded movements
 - **Turn knob slightly** to regain manual control
 - **Perfect for:** Complex filter sweeps, rhythmic parameter changes
 
-### **SD Card Advanced Features:**
+**SD Card Advanced Features:**
 - **Playlist files** control sample/MIDI file order and settings
 - **Loop markers** in WAV files for complex sample playback
 - **Scale files** for microtonal quantization using Scala format
 - **Help files** can be customized or translated
 - **Firmware updates** via audio file playback
 
-### **MIDI Integration:**
+**MIDI Integration:**
 - **MIDI/CV algorithms** (G-7, G-8) for full MIDI integration
 - **MIDI input** affects quantizers, triggers envelopes
 - **MIDI output** from quantizers and step sequencers
@@ -556,7 +556,7 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 
 ## Pairs Well With
 
-### **Modulation & CV Source Integration:**
+**Modulation & CV Source Integration:**
 - **DivKid Ochd & Expander:** Use Disting quantizers to process Ochd organic LFOs into musical scales
 - **Make Noise Wogglebug:** Disting logic/CV processing algorithms perfect for taming Wogglebug chaos
 - **Mutable Marbles:** Use Disting as probability processor and pattern quantizer for Marbles algorithms
@@ -564,19 +564,19 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 - **Cre8audio Function Junction:** Disting envelope and LFO algorithms provide additional modulation processing
 - **Cross-System Integration:** Disting serves as utility hub processing all sophisticated modulation sources
 
-### **Core Synthesis Module Integration:**
+**Core Synthesis Module Integration:**
 - **Make Noise Maths:** Use Disting quantizers to process Maths CV outputs into musical sequences
 - **Mutable Plaits:** Audio processing algorithms perfect for Plaits synthesis models
 - **Mob of Emus:** Mathematical processing algorithms complement harmonic relationships
 - **Complete synthesis systems:** Disting as central utility processor for synthesis networks
 
-### **Essential Utility Partners:**
+**Essential Utility Partners:**
 - **SD Card (32GB SDHC recommended):** Unlocks sample playback, MIDI, wavetables, and custom scales
 - **Clock Sources:** Essential for rhythm-synced delays, LFOs, and sequencer algorithms
 - **CV Sources:** Multiple CV inputs benefit from having various modulation available
 - **Audio Sources:** Brings life to the extensive audio processing and analysis algorithms
 
-### **Advanced System Integration:**
+**Advanced System Integration:**
 - **Small Systems:** Single module providing dozens of essential functions
 - **Large Systems:** Fill gaps and provide specialized utility functions not available elsewhere
 - **Performance Rigs:** Quick algorithm changes for live flexibility and real-time function switching
@@ -586,7 +586,7 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Start with Disting fundamentals:** Master algorithm navigation and basic CV/audio processing
 2. **Add organic processing:** Use quantizer and CV utilities to process natural modulation sources like DivKid Ochd
 3. **Include chaos processing:** Apply logic and CV processing algorithms to controlled randomness from sources like Make Noise Wogglebug
@@ -594,26 +594,26 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 5. **Include polyrhythmic processing:** Apply clock and timing algorithms to complex rhythm generators like 4ms RCD v2
 6. **Complete the ecosystem:** Use as utility hub for comprehensive CV processing with modules like Function Junction
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **Disting + Organic Sources:** Learn to quantize natural modulation into musical scales and patterns
 - **Disting + Chaos Sources:** Master chaos processing through mathematical and logical operations
 - **Disting + Pattern Generators:** Understand algorithmic pattern processing and probability manipulation
 - **Disting + Clock Processors:** Explore clock processing and mathematical timing relationships
 - **Complete Integration:** Build ecosystems where Disting serves as central utility processor
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Master algorithm navigation and basic CV/audio processing functions
 - **Intermediate:** Understand algorithm categories and complex signal routing
 - **Advanced:** Create integration patches where Disting processes multiple modulation types
 - **Expert:** Design utility networks where Disting serves as central processor for entire ecosystems
 
-### **Advanced Utility Concepts:**
+**Advanced Utility Concepts:**
 - **Multi-Algorithm Workflows:** Chain multiple algorithms for complex processing
 - **Utility Hub Design:** Use Disting as central processor for modulation ecosystems
 - **System Problem Solving:** Apply specific algorithms to solve synthesis and modulation challenges
 - **Real-Time Processing:** Use algorithm switching for live performance and system reconfiguration
 
-### **Performance Applications:**
+**Performance Applications:**
 - **Live Utility Switching:** Real-time algorithm changes for dynamic system reconfiguration
 - **Generative Processing:** Foundation for self-evolving utility processing systems
 - **Hybrid Processing:** Bridge between different modulation types and synthesis approaches
@@ -621,7 +621,6 @@ Disting mk4 **democratizes modular synthesis** by making every function accessib
 
 ---
 
-**Bottom Line:** Disting mk4 isn't just a module - it's an entire modular synthesis education and toolkit in 4HP. Every patch teaches you something new, and there's always another algorithm to explore. As the **central utility processor of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, sophisticated algorithms, and mathematical processing into useful, musical utilities under your creative direction.
 
 ---
 

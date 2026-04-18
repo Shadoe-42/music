@@ -16,7 +16,7 @@ cv: none
 historical_context: false
 ---
 
-# 4ms Company Listen IO - Guide
+# 4ms Company Listen IO
 
 **Bidirectional Audio Interface for Modular Systems**
 

@@ -10,7 +10,7 @@ use_cases: [rhythmic percussion layer, sample playback, drum voice in small syst
 hp: 3
 ---
 
-# Erica Synths Pico DRUM2 - Guide
+# Erica Synths Pico DRUM2
 
 **The 8-Algorithm Drum Synthesizer in 3HP**
 
@@ -129,19 +129,19 @@ The Pico series, including DRUM2, introduced the concept of "algorithm-based syn
 
 ## Why This Instrument Excels
 
-### **The Philosophy: Algorithm-Based Drum Synthesis**
+**The Philosophy: Algorithm-Based Drum Synthesis**
 Pico DRUM2 represents a fundamental shift in modular drum design. Rather than creating drums through fixed signal paths (oscillator → filter → VCA → output), Pico DRUM2 gives you **8 completely different synthesis approaches in a single 3HP module**. Each algorithm solves the same problem: "make a percussion sound"; through a different technical method. This teaches you that percussion synthesis isn't about one "correct" approach, but about understanding which synthesis method serves the musical moment.
 
-### **The Magic: Sonic Density Without Compromise**
+**The Magic: Sonic Density Without Compromise**
 What makes Pico DRUM2 special isn't just algorithmic variety; it's that **each algorithm remains musically useful and playable**. The algorithms aren't novelties; they're complete drum synthesis designs that would have required entire rows of vintage modular equipment to replicate. FM-modulated drums (Pulse Drum), wavefolded percussion (Fold Drums), algorithmic snares (Space Snare), resonant metallic sounds (Slap); these aren't theoretical concepts, they're immediately musical options.
 
-### **The Architecture Insight: Why Each Parameter Matters**
+**The Architecture Insight: Why Each Parameter Matters**
 Every algorithm in Pico DRUM2 uses PARAM1 and PARAM2, but **the meaning of each parameter changes with the algorithm**. For Pulse Drum, PARAM1 controls oscillator tuning and PARAM2 controls FM decay. For Noise Crush, PARAM1 controls filter frequency and PARAM2 controls bitcrushing amount. This teaches a critical drum synthesis principle: **different synthesis methods have different control requirements**. There is no universal "pitch," "character," or "brightness"; there are only algorithm-specific parameters that mean something different depending on the synthesis approach you're using.
 
-### **The Interconnection: Signal Path Flexibility Through Algorithm Switching**
+**The Interconnection: Signal Path Flexibility Through Algorithm Switching**
 Combine Pico DRUM2's 8 algorithms with CV-controlled algorithm switching (via CV1 configuration), and you've created a **dynamic drum voice that changes synthesis method mid-performance**. This teaches why drum synths are rhythm brains in complex modular systems; they're not fixed voices, they're adaptable sonic tools that respond to your patch's logic. Understanding this principle reveals why drum modules are so powerful: they take your modulation sources (chaos, learning patterns, automation) and transform them into percussion that evolves.
 
-### **Perfect For:**
+**Perfect For:**
 - **Compact systems** - Complete drum synthesis without dedicating rows to oscillators, filters, VCAs
 - **Live performance** - CV algorithm switching creates dynamic percussion that responds to real-time control
 - **Educational discovery** - 8 different synthesis approaches teaches drum synthesis principles hands-on
@@ -513,7 +513,7 @@ Most Pico DRUM2 beginner frustrations come from misunderstanding **three core co
 
 ## Pairs Well With
 
-### **Advanced Module Synergies (Modulation & CV Sources):**
+**Advanced Module Synergies (Modulation & CV Sources):**
 - **DivKid Ochd & Expander:** Natural parameter automation creates evolving drum character - multiple LFO outputs enable complex multi-parameter drum modulation
 - **Make Noise Wogglebug:** Chaotic parameter control creates unpredictable but musical drum variations and algorithm switching
 - **Mutable Marbles:** Learning circuits provide adaptive rhythm patterns and algorithm selection that evolve with musical context
@@ -521,26 +521,26 @@ Most Pico DRUM2 beginner frustrations come from misunderstanding **three core co
 - **Cre8audio Function Junction:** CV processing for parameter voltage scaling, offsetting, and complex multi-source drum control
 - **Cross-Advanced Integration:** DRUM2 serves as rhythm brain transforming sophisticated modular CV generation into dynamic percussion synthesis
 
-### **Perfect Partners for Beginners:**
+**Perfect Partners for Beginners:**
 - **Simple clock sources:** Basic clock dividers, LFO-based clocks for straightforward drum programming
 - **Envelope generators:** Maths, Quadrax for additional percussion shaping and parameter control
 - **Basic sequencers:** Step sequencers with trigger outputs for rhythm programming
 - **VCA modules:** For amplitude control and percussion shaping after DRUM2 synthesis
 - **Filter modules:** Additional timbral shaping of drum synthesis outputs
 
-### **Advanced Rhythm Integration:**
+**Advanced Rhythm Integration:**
 - **Multiple DRUM2 modules:** Polyphonic drum systems with different algorithm assignments per module
 - **Complex trigger sources:** Euclidean sequencers, polyrhythm generators for sophisticated rhythm programming
 - **Pitch sequencers:** CV sequencers for melodic drum programming using 1V/oct tracking
 - **Performance controllers:** Manual trigger controllers, touch plates for live drum performance
 
-### **Essential Percussion Partners:**
+**Essential Percussion Partners:**
 - **Drum sequencers:** Dedicated rhythm sequencers benefit from DRUM2's algorithm variety and CV control
 - **Percussion processors:** Compressors, transient shapers for professional drum sound enhancement
 - **Rhythm utilities:** Clock multipliers, dividers, logic gates for complex rhythm generation
 - **Sample players:** Complementary sample-based percussion alongside DRUM2's synthesis
 
-### **Advanced System Integration:**
+**Advanced System Integration:**
 - **Performance systems:** Live rhythm control through CV automation and algorithm switching
 - **Generative systems:** Self-evolving rhythm behavior using chaos and learning circuits
 - **Hybrid percussion:** Complex coordination between synthetic and sample-based percussion
@@ -550,7 +550,7 @@ Most Pico DRUM2 beginner frustrations come from misunderstanding **three core co
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Start with algorithm fundamentals:** Master all 8 synthesis algorithms and their parameter functions
 2. **Add CV parameter control:** Explore CV automation of synthesis parameters and 1V/oct tuning
 3. **Include algorithm switching:** Use CV-controlled algorithm selection for dynamic drum voices
@@ -558,26 +558,26 @@ Most Pico DRUM2 beginner frustrations come from misunderstanding **three core co
 5. **Include adaptive patterns:** Add learning circuits for evolving rhythm and algorithm characteristics
 6. **Complete the rhythm ecosystem:** Integrate multiple rhythm sources for coordinated percussion synthesis
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **DRUM2 + Ochd:** Natural drum parameter automation through organic LFO modulation
 - **DRUM2 + Wogglebug:** Chaotic drum synthesis creating unpredictable but musical percussion variations
 - **DRUM2 + Marbles:** Adaptive rhythm patterns and algorithm selection that evolve with musical context
 - **DRUM2 + Hermod+:** Sequenced drum control with precise timing, CV automation, and melodic percussion
 - **All Advanced + DRUM2:** Complete ecosystem enabling sophisticated rhythm synthesis within complex modular systems
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Algorithm selection and exploration, basic parameter control, trigger programming
 - **Intermediate:** CV parameter automation, 1V/oct melodic programming, configuration mode mastery
 - **Advanced:** CV algorithm switching, complex modulation, multi-source parameter control
 - **Expert:** Complete rhythm ecosystem design with multi-module coordination and sophisticated rhythm brain operation
 
-### **Advanced Drum Synthesis Concepts:**
+**Advanced Drum Synthesis Concepts:**
 - **Algorithm Architecture:** Understanding different synthesis approaches within single module
 - **CV Assignment Theory:** Configuration mode usage for optimal CV routing and parameter control
 - **1V/oct Integration:** Using drum synthesizer as melodic percussion instrument
 - **Rhythm Brain Coordination:** Managing complex rhythm synthesis within integrated modular systems
 
-### **Performance Applications:**
+**Performance Applications:**
 - **Live Rhythm Control:** Real-time algorithm switching and parameter automation during performance
 - **Generative Rhythm Systems:** Self-evolving drum behavior using chaos and learning circuits
 - **Melodic Percussion:** Musical drum programming using 1V/oct tracking for harmonic relationships
@@ -585,4 +585,3 @@ Most Pico DRUM2 beginner frustrations come from misunderstanding **three core co
 
 ---
 
-**Bottom Line:** Pico DRUM2 isn't just a drum module - it's a **rhythm synthesis brain** that transforms trigger inputs into sophisticated percussion through 8 distinct algorithms, full CV parameter control, and algorithm switching capabilities. Every patch teaches something new about how drum synthesis really works in modular systems. As the **rhythm coordination brain of Advanced ecosystems**, it transforms organic modulation, controlled chaos, and pattern learning into unified percussion synthesis that provides professional drum sounds and creative percussion possibilities in just 3HP of unprecedented sonic density.

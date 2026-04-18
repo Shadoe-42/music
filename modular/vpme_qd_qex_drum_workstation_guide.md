@@ -14,7 +14,7 @@ screen: true
 historical_context: false
 ---
 
-# VPME.de QD + QEX Drum Workstation - Guide
+# VPME.de QD + QEX Drum Workstation
 
 **The Complete Professional Analog Drum Synthesis Workstation**
 
@@ -287,35 +287,34 @@ This system provides **professional drum production capabilities** in modular fo
 
 ---
 
-## Why VPME QD/QEX Drum Workstation Excels
+## Why This Instrument Excels
 
-### **The Philosophy:**
+**The Philosophy:**
 **Professional drum production in modular format.** The QD + QEX workstation proves that modular systems can offer the depth, flexibility, and professional capabilities of dedicated drum machines while integrating seamlessly with modular synthesis environments.
 
-### **The Innovation:**
+**The Innovation:**
 - **Complete drum studio:** Synthesis + samples + mixing + effects + spatial processing in 26HP
 - **Professional routing:** 4-channel output with advanced mixing modes and individual processing
 - **Advanced modulation:** 8 LFOs + envelope generators + 8 CV inputs for comprehensive automation
 - **Hidden depth:** Easter egg features and EXTRA parameters provide endless sound design possibilities
 
-### **The Professional Benefits:**
+**The Professional Benefits:**
 - **Studio integration:** Professional routing and mixing capabilities for serious production work
 - **Performance ready:** Preset system, spatial control, and real-time parameter automation
 - **Modular integration:** CV control over all parameters while maintaining standalone capabilities
 - **Future-proof:** Firmware updates continue to add features and capabilities
 
-### **Perfect For:**
+**Perfect For:**
 - **Electronic music producers:** Complete drum production capabilities in modular format
 - **Live performers:** Professional drum workstation with preset system and spatial control
 - **Studio engineers:** Advanced routing and processing capabilities for professional mixing
 - **Sound designers:** Deep synthesis capabilities + sample integration + hidden features
 
-### **The Magic:**
+**The Magic:**
 The QD + QEX workstation proves that **modular doesn't mean compromised**. This system offers professional drum production capabilities that rival dedicated drum machines while providing the flexibility and integration benefits of modular synthesis.
 
 ---
 
-**Bottom Line:** The QD + QEX workstation isn't just drum voices in a modular system - it's a **complete professional drum production studio** that transforms synthesis algorithms, sample libraries, and spatial processing into unified musical instruments. Every feature teaches you something new about how professional drum production really works. As a **complete drum workstation**, it bridges modular flexibility with professional studio capabilities.
 
 ---
 
@@ -323,7 +322,7 @@ The QD + QEX workstation proves that **modular doesn't mean compromised**. This 
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Basic Professional Drum Kit**
 ```
@@ -525,27 +524,27 @@ The QD + QEX workstation proves that **modular doesn't mean compromised**. This 
 
 ---
 
-## Advanced Techniques
+## Advanced Learning Path
 
-### **Spatial Drum Mixing**
+**Spatial Drum Mixing**
 - **4-channel positioning:** Use PAN/FADE to position drums in 3D space
 - **Dynamic spatial movement:** LFO modulation of FADE creates moving drums
 - **Stereo width control:** Different PAN settings create stereo imaging effects
 - **Professional routing:** Route different voices to different effects processors
 
-### **Advanced Modulation Strategies**
+**Advanced Modulation Strategies**
 - **8-LFO layering:** Layer multiple LFOs on single parameters for complex modulation
 - **Envelope + LFO combinations:** Combine internal envelopes with LFOs for sophisticated automation
 - **Spatial automation:** Automate FADE controls for dynamic drum movement
 - **Cross-modulation:** Use one voice's parameters to modulate another voice
 
-### **Performance Workflows**
+**Performance Workflows**
 - **Preset morphing:** Use CV to smoothly transition between drum kits during performance
 - **Dynamic routing:** Switch between CAR radio/PRE send/POST send modes for different song sections
 - **Real-time spatial control:** Perform spatial movements using FADE modulation
 - **Live parameter automation:** Use QEX envelopes for triggered parameter changes
 
-### **Professional Production Techniques**
+**Professional Production Techniques**
 - **Parallel processing:** Use PRE send mode to process voices through different effect chains
 - **Individual voice processing:** Route each voice through dedicated effects via individual outputs
 - **Stereo enhancement:** Use QEX outputs for stereo effects processing
@@ -574,7 +573,7 @@ The QD + QEX workstation proves that **modular doesn't mean compromised**. This 
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Professional Drum Enhancement):**
+**Phase 2 Module Synergies (Professional Drum Enhancement):**
 - **DivKid Ochd & Expander:** Coordinated 8-LFO organic modulation → QD+QEX for living spatial drum animation with natural breathing patterns
 - **Qubit Bloom:** Generative pattern sequencing + probability control → QD+QEX for evolving drum patterns with touch performance integration
 - **Squarp Hermod+:** Multi-function sequencer + quantizer + CV processor → QD+QEX for complete drum programming with musical tuning relationships
@@ -582,13 +581,13 @@ The QD + QEX workstation proves that **modular doesn't mean compromised**. This 
 - **4ms RCD v2:** Polyrhythmic clock division + complex timing → QD+QEX for mathematical rhythm layers within professional drum framework
 - **Cross-Phase 2 Integration:** QD+QEX serves as professional drum production core enhanced by organic breathing, generative evolution, and spatial processing
 
-### **Essential Performance Partners:**
+**Essential Performance Partners:**
 - **Touch interfaces (Cellz, Tetrapad):** Real-time expressive control over workstation parameters and spatial positioning
 - **Pattern generators (Euclidean Circles, Metropolix):** Mathematical and probability-based drum pattern generation
 - **Clock manipulation (Pamela's, Tempi):** Master timing and complex clock relationships for advanced polyrhythmic patterns
 - **Effects processors:** Professional effects chains for individual outputs and parallel processing workflows
 
-### **Advanced Professional Integration:**
+**Advanced Professional Integration:**
 - **Multi-function modules (MetaModule, Disting):** Plugin-based processing and algorithm-specific drum enhancement
 - **External mixers:** Professional mixing consoles for broadcast-quality 4-channel drum processing
 - **Modular effects systems:** Dedicated effects processors for each voice via individual outputs
@@ -598,7 +597,7 @@ The QD + QEX workstation proves that **modular doesn't mean compromised**. This 
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Master QD fundamentals:** Four voices, synthesis models, built-in mixing, and basic preset system
 2. **Understand QEX expansion:** 4-channel routing, PAN/FADE control, and professional mixing modes
 3. **Add organic breathing:** Integrate DivKid Ochd for coordinated LFO animation across all drum parameters (see Ochd guide)
@@ -606,20 +605,20 @@ The QD + QEX workstation proves that **modular doesn't mean compromised**. This 
 5. **Advanced multi-function integration:** Use Hermod+ for sequencing, quantization, and CV processing simultaneously (see Hermod+ guide)
 6. **Complete ecosystem mastery:** Combine Function Junction for refined CV processing within complete drum production system (see Function Junction guide)
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **QD+QEX + Ochd:** Learn organic drum animation through coordinated 8-LFO spatial modulation with professional workstation precision
 - **QD+QEX + Bloom:** Master generative drum programming through probability-based pattern evolution with touch performance control
 - **QD+QEX + Hermod+:** Understand multi-function drum sequencing through integrated pattern generation, quantization, and parameter automation
 - **QD+QEX + Function Junction:** Explore advanced CV processing for refined spatial control and professional drum parameter manipulation
 - **All Phase 2 + QD+QEX:** Build complete professional drum production systems with organic animation, generative patterns, and spatial processing
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Master 4-voice drum synthesis with spatial positioning and basic preset management
 - **Intermediate:** Integrate organic modulation for living drum animation and natural spatial movement
 - **Advanced:** Add generative pattern evolution and multi-function sequencing for complex drum programming
 - **Expert:** Complete ecosystem orchestration with touch performance integration and broadcast-quality spatial mixing
 
-### **Advanced Professional Concepts:**
+**Advanced Professional Concepts:**
 - **Complete Drum Production Studio:** Synthesis + sampling + mixing + effects + spatial processing in unified modular system
 - **Organic Spatial Animation:** Natural breathing patterns applied to 3D drum positioning for living spatial mixes
 - **Generative Drum Intelligence:** Probability-based pattern evolution that feels naturally musical rather than mechanically repetitive
@@ -628,9 +627,9 @@ The QD + QEX workstation proves that **modular doesn't mean compromised**. This 
 
 ---
 
-## Beginner "Gotchas" & Pro Tips
+## Common Mistakes
 
-### **⚠️ Common Mistakes:**
+### **Common Mistakes:**
 
 **"QEX doesn't work at all!"**
 - QD firmware must be v1.10+ for QEX functionality
@@ -644,7 +643,7 @@ The QD + QEX workstation proves that **modular doesn't mean compromised**. This 
 - File fragmentation causes playback issues and performance problems
 - **Solution:** Erase SD card completely, then copy all files in single operation
 
-### **🎵 Pro Tips:**
+### **Pro Tips:**
 
 **Professional Routing:**
 - **CAR radio mode:** Best for spatial positioning and 4-channel monitoring

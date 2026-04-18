@@ -11,7 +11,7 @@ hp: 6
 historical_context: false
 ---
 
-# Blue Lantern Astroid - Guide
+# Blue Lantern Astroid
 
 **The Classic Twin-T Drum Synthesizer with Accent Control**
 
@@ -25,12 +25,15 @@ historical_context: false
 **What is the Astroid?** A dedicated drum synthesis module using the classic "twin-T" circuit to generate sine wave percussion sounds. Features accent control for dynamic playing, boost circuit for square wave distortion, and covers the full spectrum of classic drum machine sounds from 808s to 909s to Gabber kicks.
 
 **Key Specifications:**
-- **Width:** 6HP
-- **Depth:** 35mm
-- **Power:** +12V: 50mA / -12V: 10mA
-- **Oscillator:** Twin-T analog sine wave generator
-- **Controls:** Tune, Sweep, Tone, Decay, Accent, Boost
-- **Switch:** 3-position decay range selector
+
+| Spec | Value |
+|------|-------|
+| Width | 6HP |
+| Depth | 35mm |
+| Power | +50mA / -10mA |
+| Oscillator | Twin-T analog sine wave generator |
+| Controls | Tune, Sweep, Tone, Decay, Accent, Boost |
+| Switch | 3-position decay range selector |
 
 ### Your First Classic Kick
 1. **Set initial positions** - Tune knob fully clockwise, Sweep knob at 12 o'clock
@@ -46,11 +49,11 @@ historical_context: false
 
 ## Why This Instrument Excels
 
-### The Philosophy: Pure Analog Drum Synthesis Through Proven Circuit Topology
+**The Philosophy: Pure Analog Drum Synthesis Through Proven Circuit Topology**
 
 Blue Lantern Astroid represents **fundamental analog drum synthesis** - not through sample playback or digital waveshaping, but through the same circuit topology that powered legendary drum machines from the late 1970s through today, Roland's CR-78 (1978) and TR-808 (1980) chief among them. Understanding the Astroid means understanding how analog circuits create percussion.
 
-### The Twin-T Oscillator: Frequency-Selective Feedback Creates Pure Sine Waves
+**The Twin-T Oscillator: Frequency-Selective Feedback Creates Pure Sine Waves**
 
 **What is a twin-T circuit?** Two T-shaped RC (resistor-capacitor) networks arranged to create frequency-selective positive and negative feedback. At one specific frequency, the negative feedback cancels out, allowing the circuit to oscillate. This creates an exceptionally pure sine wave - minimal distortion, clean fundamental frequency, stable tuning.
 
@@ -61,7 +64,7 @@ Blue Lantern Astroid represents **fundamental analog drum synthesis** - not thro
 
 **The interconnection:** When you understand how the twin-T creates sine waves through RC network interaction, you understand the principle behind analog filters (RC networks selecting frequencies), envelope generators (RC networks controlling time), and phase relationships throughout modular synthesis. The Astroid isn't just making kick drums - it's demonstrating core analog circuit behavior.
 
-### Sine Wave Percussion: Why Harmonic Purity Matters for Drums
+**Sine Wave Percussion: Why Harmonic Purity Matters for Drums**
 
 **Why sine waves for drums?** Counter-intuitive at first - drums are percussive, we expect sharp transients and rich harmonics. But the deepest, most powerful kick drums in electronic music history are fundamentally sine waves with carefully controlled envelopes.
 
@@ -78,7 +81,7 @@ Blue Lantern Astroid represents **fundamental analog drum synthesis** - not thro
 
 **The teaching moment:** Every time you boost the Astroid's output, transforming sine to square, you're hearing what happens when harmonics get added to pure fundamentals. The clean sine punch becomes harmonically rich aggression. Understanding this relationship - pure fundamental versus harmonic content - transfers to every synthesis context involving bass frequencies.
 
-### Amplitude Modulation and Vocal Character: The VOSIM Connection
+**Amplitude Modulation and Vocal Character: The VOSIM Connection**
 
 **Why does the Astroid create "vocal-like" character in certain settings?** Not through formant filtering or vocal samples - through amplitude modulation of the sine wave oscillator. When the twin-T oscillator's amplitude is modulated by the decay envelope, you get periodic variations in amplitude that the ear interprets as having vocal quality.
 
@@ -89,7 +92,7 @@ Blue Lantern Astroid represents **fundamental analog drum synthesis** - not thro
 
 **Why this matters:** The same amplitude modulation principle that makes the Astroid sound "woody" or vocal-like in certain decay settings is the foundation of an entire class of vocal synthesis. The connection between drum synthesis and vocal synthesis isn't coincidental - both rely on amplitude modulation of pure tones to create organic character.
 
-### Accent Circuits: Dynamic Expression Through Voltage
+**Accent Circuits: Dynamic Expression Through Voltage**
 
 **Why do classic drum machines have accent?** Because electronic music producers needed the same dynamic expression that acoustic drummers have naturally. Hit a drum harder, it sounds louder and brighter. In analog drum machines, accent circuits achieve this by increasing trigger voltage.
 
@@ -100,7 +103,7 @@ Blue Lantern Astroid represents **fundamental analog drum synthesis** - not thro
 
 **The broader principle:** Voltage as expression. Throughout modular synthesis, voltage intensity controls not just pitch (1V/octave) but also timbre, brightness, and character. The accent circuit teaches you how voltage level shapes sound beyond simple on/off triggering. This understanding transfers to velocity sensitivity, CV expression, and dynamic control throughout electronic music.
 
-### Boost Circuit: Sine to Square Transformation
+**Boost Circuit: Sine to Square Transformation**
 
 **Why include a boost circuit that adds distortion?** Because the transition from sine wave to square wave is the transition from pure fundamental to maximum harmonic content. The boost circuit is a teaching tool demonstrating waveshaping fundamentals.
 
@@ -114,7 +117,7 @@ Blue Lantern Astroid represents **fundamental analog drum synthesis** - not thro
 
 **Why this matters for Gabber and hardcore:** Those genres need aggressive, harmonically rich kicks that cut through dense, distorted productions. The boost circuit provides this by transforming the pure sub-bass sine into a harmonically saturated square. Understanding this transformation - and hearing it happen gradually with the boost knob - teaches waveshaping principles that apply across all synthesis contexts.
 
-### Three-Range Decay System: Time Constants and Musical Context
+**Three-Range Decay System: Time Constants and Musical Context**
 
 **Why three decay switch positions instead of continuous control?** Because drum sounds need to match musical context, and different genres require fundamentally different decay time ranges.
 
@@ -125,13 +128,13 @@ Blue Lantern Astroid represents **fundamental analog drum synthesis** - not thro
 
 **The interconnection:** Time constants control everything in analog synthesis - envelope speeds, filter responses, LFO rates. The Astroid's three-range approach teaches that time requirements change with musical context, and that circuit time constants must match musical needs.
 
-### Design Philosophy: One Thing Done Extremely Well
+**Design Philosophy: One Thing Done Extremely Well**
 
 **Why a module that only does kick drums?** Because specialization allows perfection. The Astroid implements twin-T oscillation, proper accent circuitry, and sine-to-square transformation in a focused package. No menu diving, no mode switching, no compromise.
 
 **The broader lesson:** In modular synthesis, modules that do one thing exceptionally well often prove more valuable than modules that do many things adequately. The Astroid doesn't try to be a complete drum machine - it's a kick drum voice that does classic analog kick synthesis perfectly.
 
-### The Innovation: Bringing Drum Machine Heritage to Modular
+**The Innovation: Bringing Drum Machine Heritage to Modular**
 
 **What makes Astroid special:** Most Eurorack drum modules either use digital samples or complex synthesis algorithms. Astroid brings authentic analog drum machine circuit topology to modular format. When you patch the Astroid, you're using the same circuit principles that powered the 808, 909, and countless other drum machines.
 
@@ -141,7 +144,7 @@ Blue Lantern Astroid represents **fundamental analog drum synthesis** - not thro
 - Boost circuit = harmonic generation through analog waveshaping
 - Three-range decay = appropriate timing for different musical contexts
 
-### Perfect For:
+**Perfect For:**
 
 - **Electronic music producers:** Authentic analog kick drums for house, techno, hip-hop, Gabber
 - **Synthesis students:** Learn twin-T circuits, RC time constants, amplitude modulation, waveshaping
@@ -149,7 +152,7 @@ Blue Lantern Astroid represents **fundamental analog drum synthesis** - not thro
 - **Analog purists:** Authentic circuit topology from drum machine history
 - **Anyone seeking classic sounds:** Direct access to legendary analog drum synthesis
 
-### The Magic:
+**The Magic:**
 
 The Astroid proves that **sometimes the classics are classics for a reason**. The twin-T oscillator has been the foundation of analog drum synthesis for nearly 50 years. Instead of reinventing or digitally emulating, the Astroid gives you the actual circuit, the actual principles, and the actual character. Every patch teaches you something about how analog drum machines work - not through samples or modeling, but through the real thing.
 
@@ -411,7 +414,7 @@ The Astroid proves that **sometimes the classics are classics for a reason**. Th
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Classic 808 Kick Drum**
 
@@ -723,30 +726,30 @@ Gabber emerged in Rotterdam in early 1990s, characterized by:
 
 Astroid's Boost circuit at maximum recreates this aesthetic authentically - you're using the same waveshaping principle that defined the genre.
 
-## Advanced Techniques
+## Advanced Learning Path
 
-### **Accent Circuit Optimization:**
+**Accent Circuit Optimization:**
 - **12 o'clock sweet spot:** Most musical accent response occurs around center position
 - **Clockwise diminishing returns:** Full clockwise actually reduces accent effect noticeability  
 - **Dual trigger timing:** Accent and regular triggers can be offset for swing and groove
 - **The principle:** Accent affects initial voltage, which changes both amplitude and envelope behavior - understanding voltage-as-expression teaches you modular dynamics
 - **Performance technique:** Use accent sparingly for maximum musical impact
 
-### **Boost Circuit Applications:**
+**Boost Circuit Applications:**
 - **Gentle saturation:** Just past 12 o'clock for vintage analog warmth
 - **Square wave transformation:** Full clockwise completely changes the drum character
 - **Harmonic content:** Boost adds upper harmonics for cutting through dense mixes
 - **The principle:** Progressive waveshaping from sine through increasing distortion to square - this is how wavefolders, distortion, and waveshapers work throughout synthesis
 - **Genre specific:** Clean for house/techno, boosted for industrial/Gabber
 
-### **Decay Switch Strategies:**
+**Decay Switch Strategies:**
 - **Left (Long):** 808-style tails, deep house applications, pitch drop effects
 - **Center (Medium):** Versatile setting for most electronic music styles
 - **Right (Short):** Rapid-fire Gabber, percussion elements, rhythmic accents
 - **Combo with Decay knob:** Switch sets range, knob fine-tunes within range
 - **The principle:** Different time constants for different musical contexts - understanding this helps you set appropriate envelope times in any synthesis situation
 
-### **Twin-T Circuit Characteristics:**
+**Twin-T Circuit Characteristics:**
 - **Pure sine wave:** Clean fundamental frequency perfect for sub-bass content
 - **Stable tuning:** Twin-T design maintains consistent frequency relationships
 - **Harmonic purity:** Minimal distortion until boost circuit engagement
@@ -789,32 +792,32 @@ Astroid's Boost circuit at maximum recreates this aesthetic authentically - you'
 
 ## Pairs Well With
 
-### **Advanced Module Synergies (Control & Sequencing):**
+**Advanced Module Synergies (Control & Sequencing):**
 - **Squarp Hermod+:** Multi-track sequencer provides comprehensive drum programming with accent patterns, pitch sequences, and performance recording capabilities
 - **4MS RCD v2:** Polyrhythmic clock division creates mathematical timing relationships for complex drum pattern subdivisions and fills
 - **DivKid Ochd & Expander:** Natural LFO evolution transforms static drum sounds into organic, breathing percussion with natural parameter evolution (requires external VCA/attenuator for Astroid)
 - **Cre8audio Function Junction:** Logic operations enhance trigger patterns and create sophisticated accent relationships and trigger processing
 - **Make Noise Maths:** Complex function generation provides envelope shaping and advanced modulation for drum parameter control (requires external VCA/attenuator for Astroid)
 
-### **Perfect Partners for Beginners:**
+**Perfect Partners for Beginners:**
 - **Step Sequencers:** Provide reliable trigger patterns for basic drum programming
 - **Clock Sources:** Essential for tempo-locked drum patterns and timing control
 - **Mixers:** Blend Astroid with other drum modules and percussion elements
 - **Effects Processors:** Reverb, delay, and distortion enhance drum character
 
-### **Advanced Drum Integration:**
+**Advanced Drum Integration:**
 - **Multiple Drum Modules:** Layer Astroid with other drum synthesizers for complex percussion
 - **Envelope Generators:** Shape dynamics and add complex envelope control via external VCAs
 - **Sample & Hold:** Create stepped parameter changes for rhythmic variation and pattern evolution (requires external VCA/attenuator for Astroid)
 - **Performance Mixers:** Real-time control over drum levels and processing for live performance
 
-### **Essential Drum Machine Partners:**
+**Essential Drum Machine Partners:**
 - **Erica Synths PICO DRUM2:** Complementary hi-hat and snare synthesis for complete drum machine
 - **Noise Engineering Basimilus Iteritas Alter:** Complex percussion synthesis for advanced drum textures
 - **Vpme QD:** Euclidean drum sequencing for sophisticated pattern generation and polyrhythmic control
 - **4MS Rotating Clock Divider:** Advanced polyrhythmic timing for complex drum pattern relationships
 
-### **Classic Analog Integration:**
+**Classic Analog Integration:**
 - **Analog Filters:** Process drum output for vintage analog character and frequency shaping
 - **Analog VCAs:** Control dynamics and add envelope shaping to drum sounds - essential for Astroid since it has no CV inputs
 - **Spring Reverb:** Add vintage analog ambiance to drum sounds for classic electronic character
@@ -824,7 +827,7 @@ Astroid's Boost circuit at maximum recreates this aesthetic authentically - you'
 
 ## Advanced Learning Path
 
-### **Understanding Astroid's Simplicity:**
+**Understanding Astroid's Simplicity:**
 
 The Astroid is intentionally simple - three jacks (trigger in, accent in, audio out) and six manual controls. This focused design means the module does one thing exceptionally well: classic analog kick drum synthesis using authentic twin-T circuit topology.
 
@@ -835,7 +838,7 @@ The Astroid is intentionally simple - three jacks (trigger in, accent in, audio 
 
 There are no "advanced Astroid techniques" requiring complex patches - the advancement comes from mastering these three approaches and understanding the principles they teach.
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 
 **1. Master the three core approaches** (Patches 1-3 in this guide):
 - Tune the twin-T oscillator across its frequency range
@@ -860,25 +863,25 @@ Once you've mastered Astroid itself, advancement comes through integration:
 - **Performance:** External VCAs for dynamics control, effects for character enhancement
 - **Complete drum systems:** Layer Astroid with complementary percussion modules (hi-hats, snares, percussion synthesis)
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **Astroid + Sequencers:** Learn drum programming, pattern creation, and accent arrangement
 - **Astroid + Clock Dividers:** Master polyrhythmic timing and mathematical rhythm relationships
 - **Astroid + Drum Modules:** Build complete drum machines combining different synthesis approaches
 - **Astroid + Effects:** Explore how reverb, delay, distortion, and filtering enhance analog kick drums
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Basic triggering, tuning across frequency ranges, understanding sine wave kick drums
 - **Intermediate:** Accent integration, decay/tempo coordination, boost circuit for genre-specific character
 - **Advanced:** Real-time performance techniques, integration with sequencing and timing modules
 - **Expert:** Complete drum system design, professional electronic music drum synthesis
 
-### **Advanced Analog Drum Concepts:**
+**Advanced Analog Drum Concepts:**
 - **Twin-T Circuit Theory:** Understanding RC networks, frequency-selective feedback, and how analog circuits create oscillation
 - **Amplitude Modulation:** How envelope shaping creates vocal character, connecting drum synthesis to VOSIM principles
 - **Waveshaping Fundamentals:** Sine-to-square transformation teaching harmonic generation through non-linear processing
 - **Time Constants:** RC networks determining envelope speeds, connecting to all analog timing in synthesis
 
-### **Performance Applications:**
+**Performance Applications:**
 - **Live Analog Drums:** Real-time Tune/Boost control for dynamic drum performance and character changes
 - **Polyrhythmic Systems:** Foundation for complex timing using mathematical clock relationships
 - **Educational Drum Tool:** Learn analog synthesis principles through hands-on drum circuit exploration
@@ -886,7 +889,6 @@ Once you've mastered Astroid itself, advancement comes through integration:
 
 ---
 
-**Bottom Line:** Astroid isn't just a drum module - it's a **twin-T analog drum processor** that transforms simple trigger pulses into classic analog drum synthesis through authentic vintage circuit topology. Every patch teaches you something new about how analog drum machines really work - from RC networks creating frequency-selective feedback, to amplitude modulation creating vocal character, to waveshaping adding harmonic content. As the **pure analog drum voice of Advanced ecosystems**, it transforms digital sequencing, polyrhythmic timing, and logic processing into authentic analog percussion that bridges vintage authenticity with modern modular control capabilities.
 
 ---
 

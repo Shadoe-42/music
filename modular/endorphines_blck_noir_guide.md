@@ -215,7 +215,7 @@ The processor hosts 16 effects in two banks of 8. The default bank is DARKWAVES,
 
 ---
 
-## Why the BLCK_NOIR Excels
+## Why This Instrument Excels
 
 The BLCK_NOIR occupies a specific position in the eurorack drum landscape: fully analog voice generation, 7 voices in 30HP, with deliberate frequency spectrum engineering and a global noise architecture that most drum modules do not attempt.
 

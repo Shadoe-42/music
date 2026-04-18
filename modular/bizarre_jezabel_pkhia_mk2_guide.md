@@ -10,7 +10,7 @@ use_cases: [stereo filtering, timbral shaping, frequency sculpting, dual-mono pr
 hp: 10
 ---
 
-# Bizarre Jezabel Pkhia MK2 - Guide
+# Bizarre Jezabel Pkhia MK2
 
 **The Analog Stereo Filter Sculptor**
 
@@ -112,9 +112,9 @@ hp: 10
 
 ---
 
-## Why This Module Excels
+## Why This Instrument Excels
 
-### **The Philosophy: Stereo Processing as Performance Tool**
+**The Philosophy: Stereo Processing as Performance Tool**
 
 Pkhia MK2 embodies **complete stereo signal control** - dual analog filters with pre-filter VCAs in 10HP. This isn't just space-saving; it's architectural thinking where filtering and amplitude control work as coordinated system rather than separate stages. The design recognizes that stereo isn't just "two channels" - it's a performance space where independent control of frequency and dynamics per channel creates width, movement, and three-dimensional sound.
 
@@ -126,7 +126,7 @@ Pkhia MK2 embodies **complete stereo signal control** - dual analog filters with
 
 **The fundamental principle:** Analog stereo processing benefits from integrated control where frequency shaping and amplitude control work together as designed system. Pkhia MK2 demonstrates that "filter + VCA" isn't two modules - it's one complete processor when components enhance each other through thoughtful coordination.
 
-### **The Innovation: Multi-Mode Outputs with Pre-Filter VCA Integration**
+**The Innovation: Multi-Mode Outputs with Pre-Filter VCA Integration**
 
 Most stereo filters give you one filter type with VCA elsewhere in your system. Pkhia MK2 provides **three simultaneous filter modes per channel** (LP/BP/HP) with **integrated VCA control** - fundamentally different approach:
 
@@ -152,7 +152,7 @@ Most stereo filters give you one filter type with VCA elsewhere in your system. 
 
 **Teaching moment:** This demonstrates **parallel processing architecture** - same signal through multiple processors simultaneously. Understanding Pkhia's multi-mode outputs teaches you how multi-band processing works throughout synthesis and mixing. Multi-mode isn't feature - it's fundamental processing architecture.
 
-### **The Practical Benefits: 10HP Complete Stereo Processor**
+**The Practical Benefits: 10HP Complete Stereo Processor**
 
 **As Stereo Filter + VCA:**
 - Complete stereo processing in minimal space
@@ -189,7 +189,7 @@ Most stereo filters give you one filter type with VCA elsewhere in your system. 
 - Small HP count relative to functionality
 - Hand-built European analog quality
 
-### **Perfect For:**
+**Perfect For:**
 
 **Stereo System Builders:**
 - Complete stereo filter+VCA solution in 10HP
@@ -226,7 +226,7 @@ Most stereo filters give you one filter type with VCA elsewhere in your system. 
 - Hand-assembled attention to circuit design
 - Analog warmth throughout signal path
 
-### **The Technical Excellence:**
+**The Technical Excellence:**
 
 - **Dual complete signal paths:** Filter + VCA per channel in 10HP
 - **Multi-mode outputs:** LP, BP, HP simultaneously available per channel (6 total outputs)
@@ -239,7 +239,7 @@ Most stereo filters give you one filter type with VCA elsewhere in your system. 
 - **Efficient power consumption:** 50mA @ +12V / 10mA @ -12V
 - **Shallow depth:** 20mm fits most cases easily
 
-### **The Magic:**
+**The Magic:**
 
 Pkhia MK2 proves that **integration beats separation when design is intentional**. Separate filter + separate VCA give you two tools. Integrated filter+VCA designed to enhance each other give you complete stereo processor. Multiple outputs don't just split signal - they create parallel processing architecture where one source becomes orchestrated frequency bands.
 
@@ -251,7 +251,7 @@ The multi-mode outputs reveal this: use modes independently when needed, use the
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Classic Stereo Filter + VCA Sweep**
 ```
@@ -720,7 +720,7 @@ When you master pre-filter VCA architecture, stereo width creation through proce
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Start with Pkhia fundamentals:** Master dual filter architecture, stereo processing, and boutique European analog character
 2. **Add expressive touch control:** Integrate Cre8audio Cellz for touch-responsive stereo filter performance (see Cellz guide)
 3. **Include musical sequencing:** Use Squarp Hermod+ for musical stereo filter sequences with quantization (see Hermod+ guide)
@@ -728,26 +728,26 @@ When you master pre-filter VCA architecture, stereo width creation through proce
 5. **Include performance interfaces:** Use 16n Faderbank or Tetrapad for multi-parameter performance control
 6. **Complete the ecosystem:** Add all multi-function modules for complete expressive filter performance workstation
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **Pkhia + Cellz:** Learn expressive stereo filtering through touch-responsive performance control
 - **Pkhia + Hermod+:** Master musical stereo filter sequencing with quantized frequency relationships
 - **Pkhia + Maths:** Understand mathematical enhancement of expressive filter control signals
 - **Pkhia + Performance Controllers:** Explore multi-parameter control for live stereo filter performance
 - **All Multi-Function + Pkhia:** Build complete expressive filter ecosystems with boutique European character
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Use Pkhia for basic stereo filtering and multi-mode processing techniques
 - **Intermediate:** Master expressive stereo filtering with touch-based performance control
 - **Advanced:** Create musical stereo filter sequences with quantized frequency relationships and mathematical enhancement
 - **Expert:** Design complete expressive filter systems where Pkhia serves as boutique analog core for performance ecosystems
 
-### **Advanced Expressive Filter Concepts:**
+**Advanced Expressive Filter Concepts:**
 - **Boutique European Character:** Understand analog warmth and musical filtering characteristics of European craftsmanship
 - **Expressive Touch Control:** Master touch-responsive stereo filter performance with real-time human expression
 - **Musical Filter Sequencing:** Explore quantized stereo filter sequences that follow musical scales and intervals
 - **Complete Performance Ecosystems:** Design systems where expressive control serves boutique analog stereo character
 
-### **Performance Applications:**
+**Performance Applications:**
 - **Live Expressive Control:** Real-time Pkhia stereo filter control for dynamic performance with touch and expression
 - **Musical Filter Performance:** Foundation for sequenced stereo filtering with musical processing and quantized control
 - **Boutique Analog Processing:** Bridge between digital control precision and European analog stereo character
@@ -770,7 +770,7 @@ When you master pre-filter VCA architecture, stereo width creation through proce
 
 ## Pairs Well With
 
-### **Multi-Function Module Synergies (Expressive Filter Systems):**
+**Multi-Function Module Synergies (Expressive Filter Systems):**
 - **Cre8audio Cellz:** Touch sequencer + performance interface for expressive stereo filter control
   - **Alternative (Budget):** Tetrapad (pressure-sensitive), QuNexus keyboard (expressive input)
   - **Alternative (Different character):** 16n Faderbank (multi-slider), Joystick (XY control)
@@ -796,7 +796,7 @@ When you master pre-filter VCA architecture, stereo width creation through proce
   - **Alternative (Different character):** 16n Faderbank (slider-based), Joystick (XY joystick)
   - **Alternative (Premium):** Linnstrument (expressive grid), Monome Arc (rotary encoders)
 
-### **Perfect Partners for Beginners:**
+**Perfect Partners for Beginners:**
 - **LFOs (Batumi, Ochd):** Essential for creating filter movement and stereo sweeps
   - **Budget:** 2HP LFO, Erica Synths Pico LFO
   - **Different character:** Xaoc Devices Batumi (complex), DivKid Ochd (advanced)
@@ -817,7 +817,7 @@ When you master pre-filter VCA architecture, stereo width creation through proce
   - **Different character:** Performance Mixer (summing), Intellijel Mixup (compact)
   - **Premium:** Mutable Instruments Veils (with VCA), Expert Sleepers Disting (multi-function)
 
-### **Next-Level Combinations:**
+**Next-Level Combinations:**
 - **Oscillators (any analog VCO):** Classic subtractive synthesis with boutique analog stereo filtering
   - **Budget:** Doepfer A-110-1, Erica Synths Pico OSC
   - **Different character:** Make Noise Richter Wogglebug, Mutable Instruments Braids (complex)
@@ -838,7 +838,7 @@ When you master pre-filter VCA architecture, stereo width creation through proce
   - **Different character:** Cre8audio Branches, Intellijel Triatt (with mult)
   - **Premium:** Expert Sleepers Disting (multi-function), Make Noise Maths (buffered mult)
 
-### **Advanced Stereo Integration:**
+**Advanced Stereo Integration:**
 - **Sequencers:** Automate stereo cutoff frequencies for rhythmic filter patterns
   - **Budget:** Beatstep, Cre8audio Grids
   - **Different character:** Bloom (fractal), Cre8audio Cellz (touch)
@@ -859,7 +859,7 @@ When you master pre-filter VCA architecture, stereo width creation through proce
   - **Different character:** Mutable Rings (resonator), Make Noise Erbe-Verb
   - **Premium:** Expert Sleepers Disting (multi-effect), Meris Ottostat
 
-### **Essential Performance Partners:**
+**Essential Performance Partners:**
 - **Touch interfaces (Cellz, Tetrapad):** Real-time expressive control of stereo filter parameters
   - **Budget:** QuNexus (keyboard), Tastiera (simple touch)
   - **Different character:** 16n Faderbank (sliders), Joystick (XY)
@@ -880,7 +880,7 @@ When you master pre-filter VCA architecture, stereo width creation through proce
   - **Different character:** AKAI MPK, Native Instruments Maschine
   - **Premium:** Elektron Analog Rytm (master), Squarp Hermod+ (MIDI in)
 
-### **Advanced System Integration:**
+**Advanced System Integration:**
 - **Complete expressive workstations:** Pkhia + multi-function modules create complete performance filter systems
   - **Budget approach:** Hermod+ + Cellz + Pkhia (entry-level expressive system)
   - **Different character:** Bloom + Tetrapad + Pkhia (fractal + pressure control)
@@ -903,7 +903,6 @@ When you master pre-filter VCA architecture, stereo width creation through proce
 
 ---
 
-**Bottom Line:** Pkhia MK2 isn't just a stereo filter - it's a **performance-oriented filter processor** that transforms touch control, musical sequencing, and CV modulation into warm European analog stereo character. Every patch teaches you something new about how responsive stereo filtering really works. As the **analog filter core of performance ecosystems**, it transforms multi-function control into unified stereo processing.
 
 ---
 

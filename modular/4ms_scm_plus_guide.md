@@ -12,7 +12,7 @@ transport: receive
 historical_context: false
 ---
 
-# 4ms SCM Plus - Guide
+# 4ms SCM Plus
 
 **The Swiss Army Knife of Clock Manipulation**
 
@@ -26,10 +26,13 @@ historical_context: false
 **What is SCM Plus?** A clock multiplier that takes one clock signal and creates 8 different subdivisions with the ability to add shuffle, slip, skip beats, and rotate patterns. It's like having a whole rhythm section in 12HP.
 
 **Key Specifications:**
-- **Width:** 12HP
-- **Depth:** 24mm (0.95")
-- **Power:** 52mA @ +12V / 15mA @ -12V
-- **Architecture:** Digital clock divider/multiplier with analog CV inputs; 8 division outputs (x1, x2, x8 static; S3, S4, S5, S6, S8 shuffleable); slip/shuffle/skip/rotate modulation engine
+
+| Spec | Value |
+|------|-------|
+| Width | 12HP |
+| Depth | 24mm |
+| Power | +52mA / -15mA |
+| Architecture | Digital clock divider/multiplier with analog CV inputs; 8 division outputs (x1, x2, x8 static; S3, S4, S5, S6, S8 shuffleable); slip/shuffle/skip/rotate modulation engine |
 
 ### Your First Multiplied Clock
 1. **Patch your sequencer/clock** → SCM Plus **Clock In**
@@ -178,12 +181,12 @@ historical_context: false
 
 ---
 
-## Why This Module Excels
+## Why This Instrument Excels
 
-### **The Philosophy:**
+**The Philosophy:**
 Most clock multipliers just divide mathematically. SCM Plus adds the "human" element; shuffle, rushing, skipping beats; that makes electronic music feel alive and groovy. But more importantly, it teaches fundamental principles about timing architecture that appear everywhere in synthesis, not just in rhythm.
 
-### **The Core Innovation:**
+**The Core Innovation:**
 
 **Clock Division as a Teaching Tool:** SCM Plus doesn't just divide clocks mathematically; it reveals how timing hierarchies work. Understanding that x1 (1:1 passthrough), x2 (double-speed), and x4 (quadruple) are mathematical ratios is the first step. The second step is recognizing that these same ratios appear everywhere:
 - **In oscillators:** A 3:2 frequency ratio is a perfect fifth musically (same math as 3-against-4 polyrhythms)
@@ -205,21 +208,21 @@ When you truly understand clock division through SCM Plus, you understand ratio-
 
 SCM Plus makes this explicit: without Resync, patterns drift and accumulate. Learning when and how to use it teaches you why song structures matter and how systems maintain coherence.
 
-### **The Practical Benefits:**
+**The Practical Benefits:**
 - **All-in-one timing solution:** 8 different subdivisions from one input, eliminating the need for multiple clock modules
 - **Musical intelligence:** Skip patterns and shuffle algorithms designed by ear (not random, not rigid, intentionally groovy)
 - **Performance ready:** Immediate control over groove and timing feel with knobs and CV inputs
 - **Expandable:** CV over everything means you can create evolving, generative timing patterns by modulating the groove engine
 - **System teaching:** Every feature reveals principles that transfer to other instruments
 
-### **Perfect For:**
+**Perfect For:**
 - **Electronic producers:** Add swing and groove to rigid sequences while learning why groove matters
 - **Live performers:** Real-time control over rhythmic feel transforming one sequencer into an expressive instrument
 - **System designers:** Understanding timing architecture and how to structure modular systems for coherent polyrhythmic complexity
 - **Experimental musicians:** Polyrhythmic and complex timing explorations grounded in mathematical principles
 - **Students of synthesis:** Learning how digital timing works by seeing it revealed through precision requirements
 
-### **The Interconnection:**
+**The Interconnection:**
 
 SCM Plus teaches you that synthesis is ratio-based thinking. Every division ratio you create (3:4, 5:4, etc.) demonstrates the same mathematical principle as pitch ratios in oscillators. When you learn to hear and compose with clock ratios, you develop an intuition that translates directly to harmonic relationships, frequency modulation, and filter design.
 
@@ -230,7 +233,7 @@ Moreover, understanding how groove works teaches you that the "magic" in electro
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Basic Drum Machine Groove**
 **Main Example:**
@@ -333,25 +336,25 @@ Moreover, understanding how groove works teaches you that the "magic" in electro
 
 ## Pairs Well With
 
-### **Perfect Modulation Sources:**
+**Perfect Modulation Sources:**
 - **DivKid Ochd:** Organic LFOs for natural slip/shuffle evolution - **Alternative:** Batumi, 2HP LFO
 - **Make Noise Wogglebug:** Controlled chaos for rhythmic variation - **Alternative:** Turing Machine, Radio Music  
 - **Mutable Marbles:** Musical randomness and probability - **Alternative:** Music Thing Turing Machine, Ornament & Crime
 - **Expert Sleepers Disting:** Multi-function utility including LFOs, S&H, logic - **Alternative:** Qu-Bit Nebulae, Mutable Kinks
 
-### **Essential Partners:**
+**Essential Partners:**
 - **Drum Modules:** Basimilus Iteritas, Plonk, sample players
 - **Logic Modules:** For combining clock signals (AND, OR gates)
 - **Sequencers:** Anything that accepts external clocking
 - **Envelope Generators:** For shaping the timing pulses
 
-### **Budget-Friendly Partners:**
+**Budget-Friendly Partners:**
 - **2HP modules:** LFO, RND, Logic for basic modulation and pattern control
 - **Doepfer A-100 series:** Basic utilities and logic modules at lower cost
 - **Erica Synths Pico series:** Compact, affordable utilities and modulation
 - **DIY options:** Befaco, Music Thing Modular kits for hands-on builders
 
-### **Premium Integration:**
+**Premium Integration:**
 - **Make Noise ecosystem:** Wogglebug, Maths for complex modulation sources
 - **Mutable Instruments:** Marbles, Stages for advanced pattern generation
 - **Expert Sleepers:** Disting for multi-function utility processing
@@ -360,7 +363,6 @@ Moreover, understanding how groove works teaches you that the "magic" in electro
 
 ---
 
-**Bottom Line:** SCM Plus isn't just a clock multiplier; it's a **rhythmic performance processor and teaching instrument** that transforms mechanical timing into musical timing through groove manipulation. Every feature reveals principles about timing architecture, system design, and ratio-based thinking that apply across all of synthesis. It's valuable as a tool, but its real power is as a conceptual gateway to understanding how interconnected timing-based thinking makes all synthesis work better.
 
 ---
 

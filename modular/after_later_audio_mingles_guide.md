@@ -11,7 +11,7 @@ hp: 12
 historical_context: false
 ---
 
-# After Later Audio Mingles - Guide
+# After Later Audio Mingles
 
 **Dual 3-Channel VC Panning Mixer with Integrated LFO**
 
@@ -25,9 +25,12 @@ historical_context: false
 **What is Mingles?** Two independent 3-channel mixers sharing a single panel. Each channel blends three audio sources, then pans the result across a stereo field using a built-in LFO. Channel 1 and Channel 2 pan in opposite directions simultaneously; when one moves right, the other moves left. Every channel has its own stereo output, and a combined MIX output sums everything together. Designed by Brian at Robots Are Red (RAR) and After Later Audio, Mingles also connects via pin headers into Barback or Bartender without consuming a mixer channel.
 
 **Key Specifications:**
-- **Width:** 12 HP
-- **Depth:** 30 mm
-- **Power:** 140 mA @ +12V / 120 mA @ -12V / 0 mA @ +5V
+
+| Spec | Value |
+|------|-------|
+| Width | 12HP |
+| Depth | 30mm |
+| Power | +140mA / -120mA |
 
 ### Your First Autopanning Patch
 

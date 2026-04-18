@@ -30,12 +30,15 @@ historical_context: false
 **What is Ground Control?** A performance-focused sequencer that breaks free from locked rhythmic grids. Unlike traditional step sequencers where all tracks must resolve at the same time, Ground Control lets each track run at its own speed, creating complex polymetric relationships while staying musically synchronized. It's built to think in real time; recording grooves on the fly, generating random variations instantly, and controlling external gear via CV, gate, MIDI, and USB.
 
 **Key Specifications:**
-- **Width:** 42 HP
-- **Depth:** 25 mm
-- **Power:** 420 mA @ +12V / 0 mA @ -12V / 0 mA @ +5V
-- **Tracks:** 1 drum track (8 triggers) + 3 monophonic melodic CV/Gate tracks + 1 assignable modulation track
-- **Patterns:** Up to 128 steps per pattern, 24 patterns per project, 24 projects
-- **Connectivity:** 3.5mm TRS MIDI (Type B), USB-MIDI Host/Device, Clock In/Out, 4x external CV inputs, modulation CV out, individual track reset inputs, drum trigger outputs (0-10V), melodic pitch CV (-5V to +5V, 1V/octave), gate outputs
+
+| Spec | Value |
+|------|-------|
+| Width | 42HP |
+| Depth | 25mm |
+| Power | +420mA / 0mA |
+| Tracks | 1 drum track (8 triggers) + 3 monophonic melodic CV/Gate tracks + 1 assignable modulation track |
+| Patterns | Up to 128 steps per pattern, 24 patterns per project, 24 projects |
+| Connectivity | 3.5mm TRS MIDI (Type B), USB-MIDI Host/Device, Clock In/Out, 4x external CV inputs, modulation CV out, individual track reset inputs, drum trigger outputs (0-10V), melodic pitch CV (-5V to +5V, 1V/octave), gate outputs |
 
 ---
 
@@ -500,7 +503,7 @@ Ground Control is architecturally agnostic. It works equally well as the master 
 
 ## Advanced Learning Path
 
-### Polyrhythmic Time-Base (Beyond Polymetry)
+**Polyrhythmic Time-Base (Beyond Polymetry)**
 
 Polymetry (different pattern *lengths*) is foundational. Polyrhythm (different time *signatures* per track) is the next layer.
 
@@ -510,7 +513,7 @@ Access via **TEMPO → A** (polyrhythmic time-base). The display shows two numbe
 
 **Practice:** Start with polymetry (different lengths, same time signature). Once comfortable, add polyrhythm (same length, different time signature). Combine both for maximum complexity.
 
-### CV Modulation Matrix Mastery
+**CV Modulation Matrix Mastery**
 
 The modulation matrix is Ground Control's most powerful and least understood feature. Each of the 4 CV inputs can control different destinations across all 4 tracks.
 
@@ -535,7 +538,7 @@ Each assignment restricts other CV inputs (you can't assign CV 2 to TRACK D shuf
 
 **Advanced technique:** Use *clocked* modulation sources (e.g., Maths ramps synced to Ground Control clock) so CV modulation *tracks* the sequencer's tempo. As BPM changes, modulation rates scale proportionally.
 
-### Pattern Chaining & Live Arrangement
+**Pattern Chaining & Live Arrangement**
 
 Pattern chains let you sequence patterns themselves, creating 'song' structure without dedicated song mode.
 
@@ -550,7 +553,7 @@ Pattern chains let you sequence patterns themselves, creating 'song' structure w
 
 **Advanced technique:** Use PATTERN LOCK to chain *all 4 tracks together*. When you create a chain on the drum track while patterns are locked, switching the drum pattern switches all 4 tracks simultaneously. This is the closest Ground Control gets to traditional "song mode."
 
-### Arpeggiator Latch & Super-Latch
+**Arpeggiator Latch & Super-Latch**
 
 The arpeggiator is the bridge between step sequencing and keyboard performance.
 
@@ -560,7 +563,7 @@ The arpeggiator is the bridge between step sequencing and keyboard performance.
 
 **Performance technique:** Super-latch turns the sequencer into a live instrument. You're not "playing" in the traditional sense; you're composing the arpeggio in real time while it's playing. Notes layer up. Notes drop out. The arpeggio evolves with your input.
 
-### Random Variation vs. Random Generation
+**Random Variation vs. Random Generation**
 
 **Random Generation (TEMPO + 1/32/1/16/1/8):** Clears the current pattern and creates entirely new content (euclidean, wide, or narrow algorithms). Destructive but generative.
 
@@ -568,7 +571,7 @@ The arpeggiator is the bridge between step sequencing and keyboard performance.
 
 **Strategy:** Use generation to bootstrap new ideas. Use variation to evolve them. Save variations you like (pattern B, C, D). Chain them to create progression (A → variation B → variation C → fresh generation D).
 
-### Scale Editing & Custom Tunings
+**Scale Editing & Custom Tunings**
 
 By default, melodic tracks use chromatic scale (all 12 notes available). Scales are filters: they highlight certain notes and constrain randomly-generated melodies to specific tonalities.
 
@@ -578,7 +581,7 @@ By default, melodic tracks use chromatic scale (all 12 notes available). Scales 
 
 **Microtonal thinking:** Ground Control's 1V/octave implementation allows for alternative tunings. Set your scale to equal temperament, just intonation, or non-Western tuning systems. Ground Control will output the correct voltages if you configure the scale accordingly.
 
-### Clock Division Philosophy
+**Clock Division Philosophy**
 
 Ground Control's clock system is generalist: it can sync to eurorack clock, MIDI clock, USB clock, or serve as the master clock for everything else.
 

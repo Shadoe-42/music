@@ -10,7 +10,7 @@ use_cases: [modulation source, random CV generator, stochastic modulation]
 hp: 3
 ---
 
-# Erica Synths Pico LFO/S&H - Guide
+# Erica Synths Pico LFO/S&H
 
 **Essential Modulation in 3HP**
 
@@ -105,23 +105,23 @@ The Pico LFO/S&H maintains pure analog signal paths, preserving the subtle chara
 
 ## Why This Instrument Excels
 
-### **The Philosophy:**
+**The Philosophy:**
 LFO and Sample & Hold are the most fundamental modulation sources in synthesis. Pico LFO/S&H provides both in pure analog form with the space efficiency that makes it accessible to every rack size.
 
-### **The Engineering:**
+**The Engineering:**
 - **Full analog circuitry:** No digital artifacts or aliasing
 - **AS1100CK2 IC:** Professional-grade S&H chip for stability and precision
 - **Overvoltage protection:** Safe operation even with hot signals
 - **Reverse power protection:** Won't damage if power is connected wrong
 
-### **The Practical Benefits:**
+**The Practical Benefits:**
 - **Space efficient:** Two essential functions in just 3HP
 - **Power efficient:** Only 13mA +12V, 10mA -12V
 - **Immediately useful:** Every patch can benefit from these functions
 - **No configuration:** Plug in and start modulating immediately
 - **Visual feedback:** LED makes timing relationships clear
 
-### **Perfect For:**
+**Perfect For:**
 - **Every rack:** These are fundamental synthesis building blocks
 - **Beginners:** Learn core modulation concepts with simple interface
 - **Small cases:** Maximum utility in minimum space
@@ -196,21 +196,21 @@ Mixer (Mixup, Performance Mixer) → Combined modulation output
 
 ---
 
-## Advanced Techniques
+## Advanced Learning Path
 
-### **LFO as Clock Source:**
+**LFO as Clock Source:**
 - **Square Output** → other modules' clock inputs
 - **Rate knob** becomes master tempo control
 - **LED** provides visual timing reference
 - **20Hz maximum** = very fast clock rates possible
 
-### **S&H Creative Applications:**
+**S&H Creative Applications:**
 - **Audio Rate Clocking:** Very fast S&H for bit-crushing effects
 - **Voltage Quantization:** Sample precise CV values for repeatable patterns
 - **Rhythm Generation:** Use S&H output to control gate lengths or trigger probability
 - **Cross-Modulation:** Sample one modulation source to control another
 
-### **Feedback Loops:**
+**Feedback Loops:**
 - **S&H Output** → **Attenuator** → **S&H CV Input** (self-generating patterns)
 - **Triangle + Square mixed** → **S&H CV Input** (complex sampling source)
 - **Multiple S&H modules** feeding each other (chaotic interactions)
@@ -241,7 +241,7 @@ Mixer (Mixup, Performance Mixer) → Combined modulation output
 
 ## Pairs Well With
 
-### **Pairs Well With (System Integration):**
+**Pairs Well With (System Integration):**
 - **Clock Processors:** RCD v2, Tempi, Pamela's NEW for precise timing relationships and polyrhythmic control
 - **Function Generators:** Maths, Quadrax, Contour for mathematical rate control and complex modulation shaping
 - **CV Processors:** Function Junction, Shades, 3x MIA for signal conditioning and modulation depth control
@@ -249,13 +249,13 @@ Mixer (Mixup, Performance Mixer) → Combined modulation output
 - **Noise Sources:** Pico Noise, Doepfer A-118-2, 2HP Rnd for random voltage generation and S&H input sources
 - **System Utilities:** Links, Doepfer A-180-9, 2HP Mult for signal distribution and buffered splitting
 
-### **Essential Partners:**
+**Essential Partners:**
 - **Noise Sources:** For random S&H sequences (Pico Noise, other random modules)
 - **Quantizers:** Make S&H random voltages musical
 - **VCAs:** Control the amount of modulation applied
 - **Filters:** Classic target for triangle wave modulation
 
-### **Advanced Combinations:**
+**Advanced Combinations:**
 - **Multiple LFO/S&H modules:** Layer different rates and patterns
 - **Clock Dividers:** Create related but different timing from square output
 - **Logic Gates:** Combine square outputs for complex rhythmic patterns
@@ -265,7 +265,7 @@ Mixer (Mixup, Performance Mixer) → Combined modulation output
 
 ## Common Mistakes
 
-### **🎵 Common Mistake Patterns:**
+### **Common Mistake Patterns:**
 
 **"My S&H isn't changing!"**
 - Need a clock signal to trigger sampling
@@ -279,7 +279,7 @@ Mixer (Mixup, Performance Mixer) → Combined modulation output
 - 0.4Hz-20Hz range might not cover your needs
 - **Solution:** Use clock dividers/multipliers on square output, or different LFO modules for extreme ranges
 
-### **🎵 Pro Tips:**
+### **Pro Tips:**
 
 **Rate Knob Sweet Spots:**
 - **7-9 o'clock:** Very slow, evolving textures (great for ambient)
@@ -304,13 +304,12 @@ Mixer (Mixup, Performance Mixer) → Combined modulation output
 ---
 
 
-**Bottom Line:** Pico LFO/S&H proves that the most important modules are often the simplest ones. LFO + Sample & Hold in 3HP covers fundamental analog modulation that every synthesist needs. As the **modulation core of performance ecosystems**, it transforms human expression and mathematical precision into unified analog modulation evolution.
 
 ---
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Start with Pico LFO/S&H fundamentals:** Master dual analog modulation, S&H concepts, and fundamental modulation theory
 2. **Add rhythmic relationships:** Integrate 4ms RCD v2 for polyrhythmic modulation with clock division/multiplication (see RCD guide)
 3. **Include mathematical processing:** Use Make Noise Maths for complex function-based modulation control (see Maths guide)
@@ -318,26 +317,26 @@ Mixer (Mixup, Performance Mixer) → Combined modulation output
 5. **Include expressive timing:** Use 2hp Brst for manual control and burst pattern timing (see Brst guide)
 6. **Complete the workstation:** Add Disting mk4 (algorithm processing) + Function Junction (CV mathematics) + RCD v2 (rhythmic timing) for complete algorithmic modulation control
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **Pico LFO/S&H + RCD:** Learn polyrhythmic modulation relationships through mathematical clock processing
 - **Pico LFO/S&H + Maths:** Master function-based modulation control with complex mathematical relationships
 - **Pico LFO/S&H + Scales:** Understand musical modulation through quantization and scale relationships
 - **Pico LFO/S&H + Brst:** Explore expressive timing control with manual triggers and burst patterns
 - **All Multi-Function + Pico LFO/S&H:** Build complete modulation performance systems where analog modulation responds to human expression
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Use LFO and S&H functions for basic analog modulation and voltage processing
 - **Intermediate:** Master clock relationships and mathematical modulation control through multi-function integration
 - **Advanced:** Create performance modulation patches with musical intelligence and expressive timing
 - **Expert:** Design complete modulation performance systems where Pico LFO/S&H serves as analog core for expressive control
 
-### **Advanced Modulation Concepts:**
+**Advanced Modulation Concepts:**
 - **Analog LFO Mastery:** Understand triangle vs square wave characteristics and their musical applications
 - **S&H Processing Theory:** Master sampling, holding, and stepped voltage generation concepts
 - **Clock Relationship Integration:** Explore how mathematical timing affects analog modulation character
 - **Performance Modulation:** Design systems where human expression controls fundamental analog modulation
 
-### **Performance Applications:**
+**Performance Applications:**
 - **Live Modulation Control:** Real-time LFO rate and S&H timing control for dynamic performance
 - **Generative Modulation Systems:** Foundation for self-evolving analog modulation with mathematical precision
 - **Expressive Analog Processing:** Bridge between human performance and fundamental analog modulation circuits

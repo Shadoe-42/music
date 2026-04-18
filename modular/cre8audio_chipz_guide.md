@@ -10,7 +10,7 @@ use_cases: [lead voice, chiptune synthesis, bass voice]
 hp: 12
 ---
 
-# Cre8audio Chipz - Guide
+# Cre8audio Chipz
 
 **The Lo-Fi Chiptune Powerhouse**
 
@@ -47,7 +47,7 @@ hp: 12
 
 ## Why This Instrument Excels
 
-### The Philosophy: Lo-Fi Digital Aesthetic as Musical Choice
+**The Philosophy: Lo-Fi Digital Aesthetic as Musical Choice**
 
 Chipz represents **intentional limitation as creative power**. In an era of pristine 24-bit/192kHz digital audio, Chipz deliberately embraces the crunchy, aliased, bit-crushed character of 1980s video game hardware. This isn't nostalgia - it's recognizing that constraints drive creativity and that "imperfect" sounds have musical value.
 
@@ -59,7 +59,7 @@ Chipz represents **intentional limitation as creative power**. In an era of pris
 
 **The fundamental principle:** Digital artifacts aren't flaws to fix - they're characteristics to embrace. Understanding this teaches you that synthesis isn't about technical perfection - it's about musical character and emotional impact. Lo-fi can be more expressive than hi-fi.
 
-### Chiptune History: The Sound Chips That Changed Music
+**Chiptune History: The Sound Chips That Changed Music**
 
 **What is chiptune?** Music created using the programmable sound generators (PSGs) from vintage computers and gaming consoles. These chips had severe limitations - usually 3-4 voices, simple waveforms, limited frequency resolution - but composers created incredible music within those constraints.
 
@@ -97,7 +97,7 @@ Chipz represents **intentional limitation as creative power**. In an era of pris
 
 **Chipz's connection:** Not emulating specific chip - capturing the PHILOSOPHY. Limited waveforms, digital character, intentional aliasing, lo-fi aesthetic. Modern implementation with vintage spirit.
 
-### Digital Oscillators vs Analog: Different Principles, Different Sounds
+**Digital Oscillators vs Analog: Different Principles, Different Sounds**
 
 **Why does Chipz sound "digital"?**
 
@@ -122,7 +122,7 @@ Chipz represents **intentional limitation as creative power**. In an era of pris
 
 **The teaching moment:** Understanding digital oscillator principles teaches you that analog and digital aren't "better/worse" - they're DIFFERENT. Digital has character (aliasing, quantization noise, stepped resolution) just like analog has character (warmth, drift, component variation). Both are valid musical tools.
 
-### Waveform Morphing: Continuous Transition Technology
+**Waveform Morphing: Continuous Transition Technology**
 
 **Why morphing instead of switching?**
 
@@ -156,7 +156,7 @@ Chipz represents **intentional limitation as creative power**. In an era of pris
 
 **The interconnection:** Waveform morphing appears throughout synthesis - wavetable oscillators, vector synthesis, granular resynthesis. Understanding smooth transition between waveforms teaches principle applicable to all timbral evolution systems.
 
-### PWM vs Filtering: Two Approaches to Timbral Control
+**PWM vs Filtering: Two Approaches to Timbral Control**
 
 **Why does Chip1 have FILTER while Chip2 has WIDTH?**
 
@@ -188,7 +188,7 @@ Chipz represents **intentional limitation as creative power**. In an era of pris
 
 **The principle:** Multiple paths to timbral variation. Filtering is voltage-controlled spectral shaping. PWM is voltage-controlled waveform morphing. Both change timbre, but through different mechanisms with different sonic results. Understanding both teaches you the variety of synthesis approaches.
 
-### The 4X LFO Output: Frequency Multiplication Utility
+**The 4X LFO Output: Frequency Multiplication Utility**
 
 **Why include 4X output alongside normal LFO?**
 
@@ -222,7 +222,7 @@ Chipz represents **intentional limitation as creative power**. In an era of pris
 
 Understanding frequency relationships teaches you that musical time operates at multiple scales simultaneously - rhythm, melody, timbre are all frequency relationships at different speeds.
 
-### Lo-Fi Aesthetic: Embracing Digital Artifacts as Musical Character
+**Lo-Fi Aesthetic: Embracing Digital Artifacts as Musical Character**
 
 **Why does "worse" sound "better"?**
 
@@ -258,7 +258,7 @@ Understanding frequency relationships teaches you that musical time operates at 
 
 **The teaching moment:** Audio quality isn't absolute. "Good" depends on musical context. Lo-fi digital has character impossible to achieve with pristine audio. Understanding this teaches you that technical specifications don't determine musical value - emotional impact and aesthetic appropriateness do.
 
-### Why Utilities Teach Sound Design Principles
+**Why Utilities Teach Sound Design Principles**
 
 **Chiptune oscillators are utilities, not just nostalgia:**
 - **They don't just make retro sounds** - they teach digital synthesis principles
@@ -278,7 +278,7 @@ Understanding frequency relationships teaches you that musical time operates at 
 - **Lo-fi aesthetics:** Digital artifacts as intentional musical character
 - **Historical context:** How gaming shaped electronic music culture
 
-### Design Philosophy: Constraint as Creative Power
+**Design Philosophy: Constraint as Creative Power**
 
 **Chipz's approach:** Embrace limitations as features:
 - **Limited waveforms:** Five morphing waves, not unlimited wavetables
@@ -292,7 +292,7 @@ Understanding frequency relationships teaches you that musical time operates at 
 
 **Chiptune philosophy updated:** Vintage game hardware had severe technical limitations that composers turned into creative advantages. Chipz brings that same philosophy to modular - embrace the crunch, work within constraints, find creativity through limitation rather than infinite possibility.
 
-### The Technical Excellence:
+**The Technical Excellence:**
 
 - **Dual digital oscillators:** Independent chiptune voices with different timbral controls
 - **Morphing waveforms:** Continuous transition through 5 waveforms per oscillator
@@ -302,7 +302,7 @@ Understanding frequency relationships teaches you that musical time operates at 
 - **Lo-fi character:** Intentional aliasing and digital artifacts
 - **Compact 12HP:** Three oscillators worth of functionality in small footprint
 
-### Perfect For:
+**Perfect For:**
 
 - **Chiptune musicians:** Authentic lo-fi gaming character for retro productions
 - **Electronic producers:** Aggressive digital leads and basses
@@ -311,7 +311,7 @@ Understanding frequency relationships teaches you that musical time operates at 
 - **Budget builders:** Affordable multi-oscillator solution
 - **Anyone wanting digital character:** Lo-fi aesthetic in modular format
 
-### The Magic:
+**The Magic:**
 
 Chipz proves that **technical limitation is musical liberation**. Vintage game composers created masterpieces with 3-4 voices and simple waveforms because constraints forced creativity. Chipz brings that same philosophy to modular synthesis - limited waveforms, intentional lo-fi character, focused design. When you understand chiptune through Chipz, you understand that synthesis isn't about having every possible feature - it's about having the RIGHT features and using them creatively. This applies to every musical tool from vintage game consoles to modern synthesizers.
 
@@ -548,7 +548,7 @@ Chipz proves that **technical limitation is musical liberation**. Vintage game c
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Basic - Classic Chiptune Lead**
 ```
@@ -640,32 +640,32 @@ Chipz proves that **technical limitation is musical liberation**. Vintage game c
 
 ## Pairs Well With
 
-### **Perfect Partners for Beginners:**
+**Perfect Partners for Beginners:**
 - **Cellz (Cre8audio):** Perfect companion - touch controller designed specifically for Chipz control in NiftyBundle
 - **VCAs (2HP VCA, Intellijel uVCA):** Essential for controlling those hot output levels and amplitude shaping
 - **Quantizers (Intellijel Scales, 2HP Tune):** Compensate for tuning drift, ensure musical results despite tracking issues
 - **Mixer (Intellijel Unity, Happy Nerding 3x MIA):** Blend the two oscillators and control levels before final output
 - **Clock Divider (4MS RCD):** Feed the LFO reset input for rhythmic modulation synchronized to tempo
 
-### **Next-Level Combinations:**
+**Next-Level Combinations:**
 - **External filters (Intellijel Morgasmatron, Doepfer SEM):** Add filtering options beyond Chip1's basic LPF for complex timbral sculpting
 - **Sample & Hold (Doepfer A-148):** Use LFO outputs to create stepped random modulation of pitch or timbre
 - **Reverb/Delay (Happy Nerding FX Aid XL):** Add space and depth to the dry lo-fi sounds
 - **Bit-crushers (Bastl Cinnamon):** Double down on the digital aesthetic with additional lo-fi processing
 
-### **Advanced Chiptune Integration:**
+**Advanced Chiptune Integration:**
 - **Sequencers (Squarp Hermod+, Intellijel Metropolix):** Multi-track chiptune composition with musical intelligence and quantization
 - **Effects processors (Expert Sleepers Disting mk4):** Algorithmic processing enhances chiptune with modern digital aesthetics
 - **Modulation sources (Make Noise Maths, DivKid Ochd):** Complex modulation for evolving chiptune textures
 - **Performance controllers (Cre8audio Cellz):** Touch interface for expressive real-time chiptune performance
 
-### **Essential Signal Management:**
+**Essential Signal Management:**
 - **Attenuators (Happy Nerding 3x MIA, 2HP Trim):** Tame hot Chipz outputs for proper gain staging
 - **Compact utilities (Erica Synths Pico series):** Manage signals efficiently in space-constrained systems
 - **Output modules (Intellijel Outs):** Professional output stage with proper level control for hot sources
 - **Monitoring (Mordax Data):** Visual feedback helps manage levels and tune Chipz despite drift
 
-### **Advanced System Integration:**
+**Advanced System Integration:**
 - **Complete chiptune workstations:** Chipz + multi-function modules create professional retro-modern performance systems
 - **Algorithmic retro processing:** Digital algorithms enhance chiptune character while preserving authentic lo-fi aesthetic
 - **Professional signal management:** Compact utilities handle hot outputs for studio-quality chiptune production
@@ -675,7 +675,7 @@ Chipz proves that **technical limitation is musical liberation**. Vintage game c
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Start with Chipz fundamentals:** Master dual oscillator control, waveform morphing, and lo-fi gaming character
 2. **Add musical sequencing:** Integrate Squarp Hermod+ for professional composition with quantization (see Hermod+ guide)
 3. **Include signal management:** Add proper attenuation and gain staging for hot outputs
@@ -683,26 +683,26 @@ Chipz proves that **technical limitation is musical liberation**. Vintage game c
 5. **Include performance control:** Use Cre8audio Cellz for expressive touch-based chiptune performance
 6. **Build complete systems:** Integrate Chipz with multi-function modules for professional chiptune workflows
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **Chipz + Cellz:** Natural pairing for NiftyBundle - touch control plus chiptune generation
 - **Chipz + Sequencers:** Learn musical composition through quantized sequencing and chiptune aesthetics
 - **Chipz + Filters:** Understand filtering beyond basic low-pass through external filter modules
 - **Chipz + Effects:** Explore how modern processing enhances lo-fi character without destroying it
 - **Chipz + Complete Systems:** Build retro-modern ecosystems with gaming sound at the core
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Use Chipz for basic chiptune generation and waveform morphing techniques
 - **Intermediate:** Master dual oscillator techniques, proper gain staging, and musical sequencing
 - **Advanced:** Create retro-modern hybrid systems with external processing and performance control
 - **Expert:** Design complete chiptune performance systems with professional signal management
 
-### **Advanced Chiptune Concepts:**
+**Advanced Chiptune Concepts:**
 - **Lo-Fi Gaming Character:** Understand digital aesthetic and intentional artifacts of classic console sound
 - **Digital Oscillator Principles:** Master aliasing, quantization, and bit-crushing as musical features
 - **Waveform Morphing Technology:** Explore continuous timbral transition through limited palette
 - **PWM vs Filtering:** Compare two different approaches to timbral variation and their sonic results
 
-### **Performance Applications:**
+**Performance Applications:**
 - **Live Chiptune Performance:** Real-time Chipz control with touch interfaces and musical sequencing
 - **Retro-Modern Composition:** Foundation for music that bridges classic gaming with modern production
 - **Lo-Fi Production:** Understanding intentional digital artifacts as aesthetic choice in synthesis
@@ -710,7 +710,6 @@ Chipz proves that **technical limitation is musical liberation**. Vintage game c
 
 ---
 
-**Bottom Line:** Chipz isn't just a gaming oscillator - it's a **lo-fi philosophy in modular form** that teaches you digital synthesis principles through authentic chiptune character. Every patch teaches you something new about how intentional limitation drives creativity. As a **digital utility teaching lo-fi aesthetics**, it proves that technical "flaws" like aliasing and bit-crushing are musical features when used intentionally. Understanding Chipz means understanding that synthesis isn't about perfection - it's about character, creativity within constraints, and finding beauty in digital artifacts.
 
 ---
 

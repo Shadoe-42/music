@@ -10,7 +10,7 @@ use_cases: [lead voice, bass voice, stable pitch reference]
 hp: 6
 ---
 
-# ALM Busy Circuits MCO ALM021 - Guide
+# ALM Busy Circuits MCO ALM021
 
 **The Compact Digital Wavetable Oscillator with Early 90s Character**
 
@@ -219,12 +219,12 @@ hp: 6
 
 ---
 
-## Why This Module Excels
+## Why This Instrument Excels
 
-### **The Philosophy:**
+**The Philosophy:**
 Most digital oscillators try to emulate analog character. MCO celebrates authentic early 90s digital character instead (harmonic precision, intentional aliasing, mathematical purity), making a virtue of what analog apologizes for.
 
-### **The Core Innovation:**
+**The Core Innovation:**
 
 **Wavetable Morphing as Teaching Tool:** MCO's 10-waveform architecture teaches something crucial about oscillators: they're all collections of harmonics at different amplitudes. The journey through MCO's waveforms (noise → tri → saw → sine → bell → organ → '4 oct' → organ → voice → pulse) is a journey through harmonic complexity. You're not just selecting different sounds; you're exploring how oscillators work:
 - **Noise:** All frequencies at equal amplitude (no harmonic structure)
@@ -243,7 +243,7 @@ When you understand MCO's waveforms through morphing, you understand harmonic co
 - **Filter resonance:** Peaks occur at phase relationships between feedback and input
 - **Interference patterns:** Beating and chorus effects come from phase misalignment
 
-### **The Practical Benefits:**
+**The Practical Benefits:**
 - **Authentic digital character:** Early 90s sound that defined a generation of music
 - **Compact (6HP):** Wavetable synthesis without taking half your rack
 - **Multi-output architecture:** Three independently useful outputs (Main/Pulse/Sub)
@@ -251,14 +251,14 @@ When you understand MCO's waveforms through morphing, you understand harmonic co
 - **System-friendly:** 16-bit/48kHz digital quality that works well with analog modules
 - **Teaching instrument:** Every feature reveals synthesis principles that transfer across instruments
 
-### **Perfect For:**
+**Perfect For:**
 - **Digital character specialists:** Producers who want authentic early 90s sound for specific contexts
 - **Hybrid system designers:** Understanding how to blend digital precision with analog warmth
 - **Oscillator students:** Learning wavetable morphing, PWM architecture, and hard sync through hands-on exploration
 - **Specialist composers:** Using digital character as intentional texture, not settling for it when analog is unavailable
 - **System thinkers:** Understanding modular architecture through MCO's deliberate output separation
 
-### **The Interconnection:**
+**The Interconnection:**
 
 MCO teaches oscillator fundamentals through wavetable morphing. When you understand that every waveform is a collection of harmonics at different amplitudes, you understand filters (which select those harmonics), oscillator ratios (which create harmonic relationships), and timbre itself (which is harmonic distribution).
 
@@ -268,7 +268,7 @@ The hard sync capability teaches phase relationships; the most fundamental conce
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Basic - Wavetable Exploration and Digital Character Discovery**
 ```
@@ -525,7 +525,7 @@ Waveform Exploration Guide:
 
 ## Pairs Well With
 
-### **Advanced Module Synergies (Digital Character Enhancement):**
+**Advanced Module Synergies (Digital Character Enhancement):**
 - **Erica Synths Black Polivoks VCF:** Aggressive analog-style filtering tames digital character while adding warmth and saturation
 - **Mutable Rings:** Resonator processing enhances harmonic content and transforms digital precision into organic textures
 - **Make Noise Maths:** Complex envelopes provide sync sources and coordinate multi-parameter modulation for expressive digital synthesis
@@ -533,26 +533,26 @@ Waveform Exploration Guide:
 - **Squarp Hermod+:** Multi-track sequencing provides independent control over melody, waveform selection, and PWM parameters
 - **Cross-Phase 2 Integration:** MCO serves as digital synthesis brain transforming sophisticated modular CV generation into complex wavetable synthesis
 
-### **Perfect Partners for Beginners:**
+**Perfect Partners for Beginners:**
 - **Basic filters:** Low-pass filters help tame digital character and reduce aliasing in upper octaves
 - **Simple sequencers:** Step sequencers with CV outputs for melody and basic parameter control
 - **VCA modules:** Essential for shaping digital oscillator output and preventing digital harshness
 - **Basic mixers:** For combining main, pulse, and sub outputs into unified voice
 - **Clock sources:** For sync input and rhythmic PWM modulation
 
-### **Advanced Digital Integration:**
+**Advanced Digital Integration:**
 - **Multiple MCO modules:** Polyphonic digital synthesis with different waveform assignments per voice
 - **Complex sync sources:** Other digital oscillators for harmonic sync relationships
 - **Wavetable sequencing:** CV sequencers dedicated to wavetable morphing automation
 - **Digital effects:** Reverbs, delays, and modulation effects that complement digital character
 
-### **Essential Digital Synthesis Partners:**
+**Essential Digital Synthesis Partners:**
 - **Analog filters:** Essential for warming digital character and reducing aliasing artifacts
 - **Resonator modules:** Harmonic enhancement and organic texture generation from digital sources
 - **Distortion/saturation:** Adding analog-style warmth and character to clean digital signals
 - **Performance controllers:** Real-time control over wave morphing and PWM parameters
 
-### **Advanced System Integration:**
+**Advanced System Integration:**
 - **Performance systems:** Live digital synthesis control through coordinated CV automation
 - **Hybrid synthesis:** Complex coordination between digital precision and analog processing
 - **Generative systems:** Self-evolving digital synthesis behavior using pattern learning circuits
@@ -562,7 +562,7 @@ Waveform Exploration Guide:
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Start with wavetable fundamentals:** Master all 10 waveforms and understand digital vs analog character
 2. **Add PWM exploration:** Understand pulse width modulation and dual output coordination
 3. **Include sync techniques:** Master hard sync effects and harmonic generation
@@ -570,26 +570,26 @@ Waveform Exploration Guide:
 5. **Include filtering integration:** Learn digital-analog hybrid synthesis techniques
 6. **Complete the performance system:** Integrate multi-track sequencing and real-time control
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **MCO + Polivoks VCF:** Digital synthesis with aggressive analog-style filtering for character blending
 - **MCO + Rings:** Wavetable synthesis with resonator processing for harmonic enhancement
 - **MCO + Maths:** Digital oscillator with complex envelope control and sync generation
 - **MCO + Hermod+:** Multi-track digital synthesis with independent parameter sequencing
 - **All Advanced + MCO:** Complete ecosystem enabling sophisticated digital synthesis within complex modular systems
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Wavetable exploration, basic frequency control, understanding digital character
 - **Intermediate:** PWM mastery, dual output coordination, basic sync techniques
 - **Advanced:** Complex modulation, sync sweep mastery, multi-output patch architecture
 - **Expert:** Performance system design, digital-analog integration, professional synthesis techniques
 
-### **Advanced Digital Synthesis Concepts:**
+**Advanced Digital Synthesis Concepts:**
 - **Wavetable Morphing Theory:** Understanding digital waveform interpolation and harmonic content
 - **PWM Digital Implementation:** Alpha Juno style pulse width modulation in digital domain
 - **Aliasing as Creative Tool:** Using intentional aliasing in upper octaves for texture
 - **Digital-Analog Hybrid Design:** Coordinating digital precision with analog processing warmth
 
-### **Performance Applications:**
+**Performance Applications:**
 - **Live Digital Synthesis:** Real-time wavetable morphing and PWM control during performance
 - **90s Digital Nostalgia:** Authentic early digital synthesizer character for retro productions
 - **Hybrid Synthesis Systems:** Professional digital voice synthesis combined with analog processing
@@ -597,4 +597,3 @@ Waveform Exploration Guide:
 
 ---
 
-**Bottom Line:** MCO ALM021 isn't just a digital oscillator - it's a **compact wavetable synthesis brain** that brings authentic early 90s digital character to modular systems through 10 morphing waveforms, Alpha Juno style PWM, and multi-output architecture. Every patch teaches something new about how digital synthesis really works, from basic wavetable scanning to complex multi-parameter modulation. As the **digital synthesis coordinator of Phase 2 ecosystems**, it transforms analog modulation sources into sophisticated wavetable synthesis that provides both nostalgic digital character and modern synthesis capabilities in just 6HP of intentionally crunchy sonic excellence.

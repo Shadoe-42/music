@@ -27,14 +27,17 @@ historical_context: false
 **What is Kali?** Unlike traditional effects that process audio independently of modulation, Kali binds everything to a central delay timebase. The delay time becomes the master clock. Every LFO rate, every parameter modulation, everything synchronizes to this timebase. Send audio through. Adjust delay time. Watch the entire effect landscape reorganize around that delay timing. This is time-domain thinking: treating delay not as an effect parameter, but as the architectural foundation for everything else.
 
 **Key Specifications:**
-- **Width:** ⚠️ NOT DOCUMENTED (verify against physical module or dsp.coffee directly)
-- **Depth:** 29 mm (skiff-friendly)
-- **Power:** 200 mA @ +12V / 75 mA @ -12V / 0 mA @ +5V
-- **Audio I/O:** ⚠️ CONNECTOR TYPE NOT DOCUMENTED (verify: 3.5mm stereo in/out or RCA?)
-- **Audio Quality:** 24-bit in/out, 48 kHz sample rate, 32-bit floating-point processing
-- **CV Outputs:** 6 bipolar outputs (approximately -6.25V to +6.25V), 2 clock outputs, 12-bit resolution
-- **FX Modes:** Basic (delay), Parvati (chorus/granular), Kali (distortion), External Feedback
-- **LFO Modes:** 16+ synchronized waveforms (Sine, Triangle, Saw, Ramp, Square, S+H, Track+Hold, Random Reset, Random Shape, Audio Rate, Envelope Follower, and others)
+
+| Spec | Value |
+|------|-------|
+| Width | ⚠️ NOT DOCUMENTED (verify against physical module or dsp.coffee directly) |
+| Depth | 29mm (skiff-friendly) |
+| Power | +200mA / -75mA |
+| Audio I/O | ⚠️ CONNECTOR TYPE NOT DOCUMENTED (verify: 3.5mm stereo in/out or RCA?) |
+| Audio Quality | 24-bit in/out, 48 kHz sample rate, 32-bit floating-point processing |
+| CV Outputs | 6 bipolar outputs (approximately -6.25V to +6.25V), 2 clock outputs, 12-bit resolution |
+| FX Modes | Basic (delay), Parvati (chorus/granular), Kali (distortion), External Feedback |
+| LFO Modes | 16+ synchronized waveforms (Sine, Triangle, Saw, Ramp, Square, S+H, Track+Hold, Random Reset, Random Shape, Audio Rate, Envelope Follower, and others) |
 
 ---
 
@@ -462,7 +465,7 @@ Kali is self-contained: it processes audio, generates synchronized CV modulation
 
 ## Advanced Learning Path
 
-### Time-Domain Thinking vs. Frequency-Domain Thinking
+**Time-Domain Thinking vs. Frequency-Domain Thinking**
 
 Kali operates in time-domain: it reorganizes audio material temporally (delay repeats, granular slicing, feedback loops). This is distinct from frequency-domain processing (filters, EQ) which reshape harmonic content. Understanding this distinction is crucial.
 
@@ -472,7 +475,7 @@ Kali operates in time-domain: it reorganizes audio material temporally (delay re
 
 **Practice:** Send a simple sine tone into Kali. Adjust delay time and feedback. The sine tone remains a sine tone (frequency unchanged). It just repeats. Now send the same sine tone through a filter: the sine tone becomes duller or brighter (frequency reshaped). This is the conceptual difference. Kali is time-domain. Filters are frequency-domain. Most sophisticated sound design uses both.
 
-### Feedback as Musical Parameter
+**Feedback as Musical Parameter**
 
 In traditional effects terminology, feedback is "undesirable" (uncontrolled buildup). In Kali, feedback is compositional. High feedback (70-80%) creates self-sustaining loops. Modulating feedback creates dynamic regeneration. This is feedback as an instrument.
 
@@ -485,7 +488,7 @@ In traditional effects terminology, feedback is "undesirable" (uncontrolled buil
 
 This teaches that feedback is not "mistake"; it is architecture.
 
-### Polymetric Modulation
+**Polymetric Modulation**
 
 Kali allows multiple LFOs to run at different rates relative to the base delay timebase. These create polymetric modulation: multiple periodicities affecting different parameters simultaneously.
 
@@ -498,13 +501,13 @@ These are now polymetric: three independent rhythms, all synchronized to a commo
 
 **Practice:** Create this three-LFO patch. Listen for: Slow cutoff/tone changes (0.5x). Moderate feedback breathing (1x). Fast delay time modulation (2x). The combination creates complex, evolving sound.
 
-### Granular Processing in Parvati Mode
+**Granular Processing in Parvati Mode**
 
 Parvati mode uses granular processing: audio is sliced into short grains (determined by L/R Time settings), then grains are played back at different rates or times. Grain size, grain rate, grain scatter, and amplitude envelope determine character.
 
 ⚠️ PARVATI MODE PARAMETERS NOT FULLY DOCUMENTED. Testing with hardware will reveal: What does META 1 control? What does META 2 control? How do grain parameters change sound? Document findings for version 2 of this guide.
 
-### External Feedback Mode (Undocumented)
+**External Feedback Mode (Undocumented)**
 
 ⚠️ EXTERNAL FEEDBACK MODE MECHANISM NOT DOCUMENTED. Likely: Allows external audio to feed back into the delay processor, creating feedback loops where external sources drive the regeneration, not just Kali's internal signal. Testing with hardware will clarify. This mode is powerful for creating interdependent patches where multiple modules create feedback chains together.
 

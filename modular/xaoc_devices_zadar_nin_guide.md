@@ -249,7 +249,7 @@ NIN is a 3HP expander that mounts directly adjacent to Zadar and connects to the
 
 ---
 
-## Why Zadar Excels
+## Why This Instrument Excels
 
 Most envelope generators give you four parameters (attack, decay, sustain, release) and a linear or exponential response curve. Zadar gives you any curve drawn from hundreds of pre-defined vector shapes, independent duration scaling, and output polarity control -- per channel, four channels simultaneously, each capable of looping or single-shot behavior. The conceptual distance from an ADSR to Zadar is larger than it first appears.
 

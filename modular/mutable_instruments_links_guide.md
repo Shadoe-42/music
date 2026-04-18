@@ -11,7 +11,7 @@ hp: 4
 historical_context: false
 ---
 
-# Mutable Instruments Links - Guide
+# Mutable Instruments Links
 
 ![Mutable Instruments Links](https://github.com/Shadoe-42/music/raw/main/modular/images/mutable_instruments/links/front_panel.jpg)
 *Essential three-section utility module: 1:3 buffered multiple, 2:2 precision adder/mixer, and 3:1 mixer/averager for professional signal routing and CV mathematics*
@@ -109,7 +109,7 @@ historical_context: false
 
 ---
 
-## Why Links Excels
+## Why This Instrument Excels
 
 Links is a passive (or active, depending on the section) utility that handles signal distribution and combining -- two operations that every patched system needs repeatedly and that dedicated modules rarely handle as compactly.
 
@@ -139,7 +139,7 @@ A common oversight is using Links as either a distributor or a mixer, but not bo
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Basic - Essential Signal Distribution and Mixing**
 ```
@@ -355,32 +355,32 @@ Professional System Integration:
 
 ## Pairs Well With
 
-### **Essential Module Synergies (Signal Routing Coordination):**
+**Essential Module Synergies (Signal Routing Coordination):**
 - **Make Noise Maths:** Complex CV sources that benefit from Links' mathematical processing
 - **DivKid Ochd & Expander:** Multiple LFO outputs requiring distribution and mixing
 - **Squarp Hermod+:** Sequencer outputs needing transposition and distribution
 - **Mutable Instruments Stages:** Envelope signals requiring distribution to multiple destinations
 - **Cross-Module Integration:** Essential signal routing enabling complex modular system coordination
 
-### **Perfect Partners for Signal Processing:**
+**Perfect Partners for Signal Processing:**
 - **CV sources:** Sequencers, keyboards, LFOs requiring distribution or mathematical processing
 - **Audio sources:** Multiple oscillators, voices, or external sources needing mixing
 - **Modulation destinations:** VCOs, filters, VCAs requiring coordinated CV control
 - **System infrastructure:** Clock sources, performance controllers, expression devices
 
-### **Advanced Module Integration:**
+**Advanced Module Integration:**
 - **Multiple Links modules:** Expanded routing capabilities for large modular systems
 - **Precision CV sources:** High-quality sequencers and controllers for mathematical operations
 - **Professional audio chain:** Studio-quality signal path with proper gain structure
 - **Performance interfaces:** Real-time control integration for live performance
 
-### **Essential Utility Partnerships:**
+**Essential Utility Partnerships:**
 - **VCAs:** Amplitude control of signals distributed by Links
 - **Mixers:** Final mixing stages fed by Links submix outputs
 - **CV processors:** Additional signal processing for Links-distributed signals
 - **Audio effects:** Processing chains fed by Links-mixed audio
 
-### **Professional Workflow Integration:**
+**Professional Workflow Integration:**
 - **Studio systems:** Professional signal routing and mathematical processing
 - **Performance setups:** Real-time transposition and signal distribution
 - **Educational applications:** Teaching CV mathematics and signal flow concepts
@@ -390,7 +390,7 @@ Professional System Integration:
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Start with basic routing:** Master each section individually and understand LED indicators
 2. **Add mathematical operations:** Learn CV addition for transposition and musical applications
 3. **Include mixing concepts:** Understand averaging, gain structure, and clipping prevention
@@ -398,26 +398,26 @@ Professional System Integration:
 5. **Include performance techniques:** Real-time control and expression through CV mathematics
 6. **Complete professional applications:** Advanced system design and workflow optimization
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **Links + Sequencers:** CV transposition and performance expression techniques
 - **Links + LFO modules:** Modulation distribution and averaging for complex control
 - **Links + Audio sources:** Professional mixing and signal routing applications
 - **Links + Performance controllers:** Real-time musical expression through CV mathematics
 - **All modules + Links:** Essential signal routing infrastructure enabling complex modular system coordination
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Basic signal distribution, simple mixing, LED monitoring
 - **Intermediate:** CV mathematics, transposition techniques, modulation design
 - **Advanced:** System integration, professional routing, performance applications
 - **Expert:** Complex system design, mathematical precision, workflow optimization
 
-### **Advanced Signal Processing Concepts:**
+**Advanced Signal Processing Concepts:**
 - **Mathematical Precision:** Understanding exact CV addition for musical applications
 - **Signal Integrity:** Buffering benefits and professional signal routing
 - **Gain Structure:** Proper level management and clipping prevention
 - **System Architecture:** Links as essential infrastructure in modular systems
 
-### **Performance Applications:**
+**Performance Applications:**
 - **Real-time transposition:** Live musical performance through CV mathematics
 - **Complex modulation:** Sophisticated control signal design through averaging
 - **Professional routing:** Studio-quality signal distribution and processing
@@ -425,4 +425,3 @@ Professional System Integration:
 
 ---
 
-**Bottom Line:** Links isn't just a utility module - it's **essential system infrastructure** that provides mathematical precision, professional signal routing, and workflow optimization in a compact format. Every patch teaches something new about signal processing, from basic distribution to complex CV mathematics. As **fundamental infrastructure within modular ecosystems**, it enables sophisticated signal routing, mathematical precision, and professional workflow optimization while maintaining the mathematical accuracy essential for advanced musical techniques in the most efficient format possible.

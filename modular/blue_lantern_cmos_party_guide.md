@@ -11,7 +11,7 @@ hp: 4
 historical_context: false
 ---
 
-# Blue Lantern CMOS Party - Guide
+# Blue Lantern CMOS Party
 
 **The Complete Boolean Logic Processor for Clock and Audio Rate Processing**
 
@@ -25,13 +25,16 @@ historical_context: false
 **What is the CMOS Party?** A comprehensive boolean logic module providing all five standard logic operations (AND, NAND, NOR, XOR, OR) plus inverted outputs, using reliable CD4000 CMOS logic ICs. Perfect for clock manipulation, trigger pattern generation, and audio rate logic processing with extremely low latency.
 
 **Key Specifications:**
-- **Width:** 4HP
-- **Depth:** 25mm
-- **Power:** +12V: 20mA / -12V: 5mA
-- **Logic Operations:** AND, NAND, NOR, XOR, OR + Inversions
-- **ICs:** CD4000 series CMOS logic chips
-- **Response Time:** Nanosecond propagation (zero perceptible latency)
-- **Frequency Range:** DC to audio rate (20Hz-20kHz+)
+
+| Spec | Value |
+|------|-------|
+| Width | 4HP |
+| Depth | 25mm |
+| Power | +20mA / -5mA |
+| Logic Operations | AND, NAND, NOR, XOR, OR + Inversions |
+| ICs | CD4000 series CMOS logic chips |
+| Response Time | Nanosecond propagation (zero perceptible latency) |
+| Frequency Range | DC to audio rate (20Hz-20kHz+) |
 
 ### Your First Logic Clock Pattern
 1. **Connect clock sources** - Patch main clock to INPUT A, divided clock to INPUT B
@@ -46,11 +49,11 @@ historical_context: false
 
 ## Why This Instrument Excels
 
-### The Philosophy: Pure Boolean Logic as Musical Foundation
+**The Philosophy: Pure Boolean Logic as Musical Foundation**
 
 CMOS Party represents **fundamental digital logic education** in the most direct form possible. This isn't about making sounds - it's about teaching how digital decisions work at the most basic level, which is foundational to understanding all electronic music technology.
 
-### Boolean Logic: The Foundation of All Digital Systems
+**Boolean Logic: The Foundation of All Digital Systems**
 
 **What is boolean logic?** A system of true/false decision making invented by mathematician George Boole in the 1840s, later becoming the foundation of all digital electronics, computers, and electronic music. Every sequencer, every digital synthesizer, every computer running your DAW - all built on these five operations.
 
@@ -70,7 +73,7 @@ CMOS Party represents **fundamental digital logic education** in the most direct
 
 **The interconnection:** When you understand boolean logic through patching CMOS Party, you understand how every digital device in your studio makes decisions. Sequencer programming, modulation routing, conditional effects - all boolean logic. This utility teaches the principle that underlies ALL digital music technology.
 
-### Truth Tables: The Universal Language of Digital Logic
+**Truth Tables: The Universal Language of Digital Logic**
 
 **What is a truth table?** A complete map of what a logic operation does for every possible input combination. For two inputs (A and B), there are four possible states:
 
@@ -91,7 +94,7 @@ A | B | AND | OR | XOR | NAND | NOR
 
 **The teaching moment:** Learning to think in truth tables teaches you how to think about digital decisions. When your sequencer isn't firing triggers correctly, truth table thinking reveals why. When conditional modulation isn't working, truth tables show what's happening. This fundamental skill transfers to everything digital in music.
 
-### CD4000 CMOS: The Digital Foundation
+**CD4000 CMOS: The Digital Foundation**
 
 **What is CMOS?** Complementary Metal-Oxide-Semiconductor - a transistor technology developed in the 1960s that became the foundation of digital electronics. The CD4000 series (released 1968) was the first mass-produced CMOS logic chip family.
 
@@ -109,7 +112,7 @@ A | B | AND | OR | XOR | NAND | NOR
 
 **The interconnection:** CD4000 chips aren't just in CMOS Party - they're in countless music devices. Understanding their behavior helps you understand timing, logic levels, and digital processing throughout your studio. When you know why a CD4000 AND gate behaves a certain way, you understand why sequencers and drum machines make the timing decisions they do.
 
-### Logic Operations Creating Musical Relationships
+**Logic Operations Creating Musical Relationships**
 
 **Why boolean logic is inherently musical:**
 
@@ -128,7 +131,7 @@ When you patch different clock divisions into CMOS Party inputs, the logic opera
 
 **The principle:** Mathematical timing + boolean logic = predictable but complex musical patterns. This is how drum machines, sequencers, and pattern generators work internally. CMOS Party lets you patch these relationships externally, teaching you the principles.
 
-### Audio Rate Logic: Digital Synthesis Fundamentals
+**Audio Rate Logic: Digital Synthesis Fundamentals**
 
 **Why logic operations work at audio rate:**
 
@@ -146,7 +149,7 @@ Early digital synthesis (1970s-80s) used logic operations for sound generation:
 
 **Why this matters:** Modern digital synthesis still uses these principles, just hidden in code. CMOS Party makes the principles explicit and patchable. When you understand audio rate logic, you understand the foundation of digital sound generation.
 
-### Utilities Teach Fundamental Principles
+**Utilities Teach Fundamental Principles**
 
 **Why CMOS Party teaches more than sound sources:**
 
@@ -161,7 +164,7 @@ Sound sources demonstrate specific implementations. Utilities reveal universal p
 
 **The pattern:** Simple modules teaching fundamental concepts provide more transferable knowledge than complex modules teaching specific implementations. CMOS Party is pure principle - no sound generation, no specific application - just boolean logic in its clearest form.
 
-### Design Philosophy: Educational Simplicity
+**Design Philosophy: Educational Simplicity**
 
 **"I remember my first logic module"** - Blue Lantern designed CMOS Party as an accessible entry point to digital logic. No menus, no modes, no hidden functions. Just inputs, outputs, and pure boolean operations.
 
@@ -173,7 +176,7 @@ Sound sources demonstrate specific implementations. Utilities reveal universal p
 
 **The innovation:** Making fundamental digital concepts approachable without oversimplification. CMOS Party doesn't hide complexity - it reveals simplicity within what seems complex.
 
-### The Technical Excellence:
+**The Technical Excellence:**
 
 - **Complete logic coverage:** All standard boolean operations plus inversions
 - **CD4000 reliability:** Proven technology from digital electronics foundation
@@ -181,7 +184,7 @@ Sound sources demonstrate specific implementations. Utilities reveal universal p
 - **Dual-domain operation:** Clock rate to audio rate seamlessly
 - **Compact implementation:** Complete boolean processor in 4HP
 
-### Perfect For:
+**Perfect For:**
 
 - **Logic beginners:** Designed explicitly as "first logic module"
 - **Digital synthesis explorers:** Audio rate logic for harmonic generation
@@ -189,7 +192,7 @@ Sound sources demonstrate specific implementations. Utilities reveal universal p
 - **Educators:** Teaches digital principles through hands-on patching
 - **Anyone wanting to understand digital music:** Foundation of all electronic music technology
 
-### The Magic:
+**The Magic:**
 
 CMOS Party proves that **the most fundamental digital concepts can be immediately musical**. Boolean logic isn't abstract computer science - it's the principle behind every trigger decision, every pattern combination, every digital music system. When you patch CMOS Party, you're not just making patterns - you're learning how digital music actually works at the most fundamental level.
 
@@ -262,7 +265,7 @@ CMOS Party proves that **the most fundamental digital concepts can be immediatel
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Basic Logic Clock Exploration**
 
@@ -1089,27 +1092,27 @@ Understanding which frequency combinations create musical vs experimental result
 
 ---
 
-## Advanced Techniques
+## Advanced Learning Path
 
-### **Logic Combination Strategies:**
+**Logic Combination Strategies:**
 - **Multiple output usage:** Use several logic outputs simultaneously for polyrhythmic complexity
 - **Feedback patching:** Route logic outputs back through external modules to inputs for recursive logic
 - **Logic cascading:** Chain multiple CMOS Party modules for complex boolean algebra operations
 - **Audio rate applications:** Explore harmonic relationships created by audio rate logic processing
 
-### **Timing and Phase Relationships:**
+**Timing and Phase Relationships:**
 - **Clock offset timing:** Slightly delay one input relative to the other for swing and groove effects
 - **Division relationships:** Use different clock divisions on inputs A and B for mathematical pattern intersections
 - **Probability integration:** Feed random/probability sources into logic inputs for evolving pattern behavior
 - **Manual gate control:** Use manual gates on inputs to understand logic behavior before automating
 
-### **CD4000 CMOS Characteristics:**
+**CD4000 CMOS Characteristics:**
 - **No latency processing:** Instant response enables real-time performance and audio rate processing
 - **Logic level compatibility:** Works with standard Eurorack gate/trigger levels (0V/+5V)
 - **Audio rate capability:** Reliable operation from DC to audio frequencies for synthesis applications
 - **Power efficiency:** CMOS technology provides stable operation with minimal power consumption
 
-### **Pattern Generation Applications:**
+**Pattern Generation Applications:**
 - **Euclidean enhancement:** Process Euclidean patterns through logic for mathematical complexity
 - **Polyrhythm creation:** Combine different tempo clocks through logic for polyrhythmic relationships
 - **Fill generation:** Use NAND/NOR outputs to trigger fills and variations in main patterns
@@ -1382,31 +1385,31 @@ Understanding which frequency combinations create musical vs experimental result
 
 ## Pairs Well With
 
-### **Essential Logic Partners:**
+**Essential Logic Partners:**
 - **Clock Sources:** Provide timing references for logic operations and pattern generation
 - **Step Sequencers:** Logic outputs create multiple related clock sources for complex sequence programming
 - **Probability Modules:** Random sources fed through logic create evolving pattern behavior and controlled chaos
 - **Clock Dividers:** Provide mathematical timing relationships for logic input sources
 
-### **Advanced Pattern Integration:**
+**Advanced Pattern Integration:**
 - **Euclidean Sequencers:** Mathematical patterns enhanced by boolean logic for complex polyrhythmic relationships
 - **Turing Machine:** Binary pattern sources perfect for logic processing and pattern evolution
 - **Marbles:** Probability-based patterns processed through logic for sophisticated pattern generation
 - **Wogglebug:** Chaotic sources tamed and organized through logical operations
 
-### **Audio Rate Applications:**
+**Audio Rate Applications:**
 - **Square Wave Oscillators:** Audio rate sources for harmonic logic processing and digital synthesis
 - **Ring Modulators:** Compare logic-based ring modulation with traditional analog ring modulation
 - **Digital Filters:** Logic-controlled filtering for dynamic harmonic manipulation and processing
 - **Granular Processors:** Logic outputs control granular parameters for evolving textural processing
 
-### **System Utility Applications:**
+**System Utility Applications:**
 - **Multiple Logic Modules:** Chain several CMOS Party modules for advanced boolean algebra operations
 - **Sequential Switches:** Route logic outputs to different destinations for pattern variation and complexity
 - **Sample & Hold:** Capture logic states for creating stepped control voltages and quantized modulation
 - **Performance Mixers:** Real-time control over logic output levels and routing for expressive logic manipulation
 
-### **Recording and Production:**
+**Recording and Production:**
 - **DAW Integration:** Logic outputs provide mathematically related timing for multi-track recording
 - **Pattern Libraries:** Document logic combinations for reproducible pattern generation and composition
 - **Automation Control:** Logic outputs control DAW automation for dynamic arrangement evolution
@@ -1414,7 +1417,6 @@ Understanding which frequency combinations create musical vs experimental result
 
 ---
 
-**Bottom Line:** CMOS Party isn't just a logic module - it's a **complete boolean processor** that transforms simple trigger and audio signals into complex pattern relationships through pure digital logic operations. Every patch teaches you something fundamental about how digital logic creates musical relationships. As the **logic brain of modular systems**, it transforms timing patterns, audio signals, and trigger sequences into mathematically related but musically interesting variations that bridge digital theory with practical musical applications.
 
 ---
 

@@ -213,12 +213,12 @@ hp: 16
 
 ---
 
-## Why This Module Excels
+## Why This Instrument Excels
 
-### **The Philosophy:**
+**The Philosophy:**
 Most envelope generators treat envelopes as isolated tools. The 1003 treats envelopes as coordination infrastructure; the fundamental timing backbone of voice architecture.
 
-### **The Core Innovation:**
+**The Core Innovation:**
 
 **Dual Synchronization as Teaching Tool:** The 1003's most important feature is its coordinated dual envelope architecture. A single gate trigger controls both envelopes simultaneously, but each evolves independently. This teaches fundamental synthesis thinking: coordinated timing. Everywhere in synthesis, you need multiple time-based behaviors controlled by the same trigger source:
 - **Amplitude and filter:** Must start together but evolve differently
@@ -240,21 +240,21 @@ Understanding ADSR teaches you that all time-based behavior in synthesis is fund
 
 **Bipolar Architecture as Complete Signal Toolset:** The 1003 provides positive and negative outputs, teaching that modulation isn't unidirectional. Inverted envelopes create inverted effects. Understanding bipolar modulation teaches phase relationships, which are fundamental to all synthesis. Phase determines whether signals reinforce or cancel, add or subtract, harmonize or clash.
 
-### **The Practical Benefits:**
+**The Practical Benefits:**
 - **Professional voice architecture:** Single gate for coordinated dual modulation is the standard for professional synthesizer design
 - **Timing coordination:** Both envelopes locked together but independent; exactly what professional voice design requires
 - **System efficiency:** Two complete envelope generators in 16HP is compact for professional voice control
 - **Flexible architecture:** Positive/negative outputs, retriggering options, independent timing for each envelope
 - **Teaching instrument:** Every feature reveals fundamental synthesis principles
 
-### **Perfect For:**
+**Perfect For:**
 - **Voice architects:** Understanding dual envelope coordination for professional synthesizer design
 - **System builders:** Using envelopes as timing backbone for complex modular systems
 - **Synthesis students:** Learning ADSR fundamentals and voice architecture through hands-on use
 - **Performance synthesis:** Real-time envelope coordination for expressive voice control
 - **Utility specialists:** Understanding how envelopes coordinate everything from amplitude to effects
 
-### **The Interconnection:**
+**The Interconnection:**
 
 The 1003 teaches that synthesis is fundamentally about timing coordination. Every synthesizer needs envelope generators because every sound needs amplitude shaping. The 1003 reveals this by requiring explicit coordination of multiple time-based behaviors.
 
@@ -373,7 +373,7 @@ Finally, understanding dual synchronized envelopes teaches you about coordinated
 
 ## Pairs Well With
 
-### **Perfect Envelope Partners:**
+**Perfect Envelope Partners:**
 - **Doepfer A-140-2:** Dual ADSR for expanded envelope count
   - **Alternative (Budget):** 2HP ADSR, Intellijel Dual ADSR
   - **Alternative (Different character):** Make Noise Maths (complex envelopes), Befaco Rampage (dual function)
@@ -394,7 +394,7 @@ Finally, understanding dual synchronized envelopes teaches you about coordinated
   - **Alternative (Different character):** Erica Synths Black Quad EG (different circuit), Frap Tools 321
   - **Alternative (Premium):** Expert Sleepers Disting (ultimate utility), Make Noise Maths (complex shaping)
 
-### **Essential Integration:**
+**Essential Integration:**
 - **VCA Modules:** Doepfer A-132-3, Intellijel uVCA, Make Noise QPAS
   - **Budget:** 2HP VCA, Erica Synths Pico VCA
   - **Premium:** Intellijel Quad VCA, Expert Sleepers Veils
@@ -411,13 +411,13 @@ Finally, understanding dual synchronized envelopes teaches you about coordinated
   - **Budget:** 2HP FX modules, Erica Synths Pico FX
   - **Premium:** Mutable Rings, Expert Sleepers Disting
 
-### **Budget-Friendly Partners:**
+**Budget-Friendly Partners:**
 - **2HP modules:** ADSR, VCA, LPG for compact envelope/VCA combinations
 - **Doepfer A-100 series:** A-140, A-141-2, A-131 for basic envelope and VCA functions
 - **Erica Synths Pico series:** Black ADSR, Black VCA for space-efficient solutions
 - **DIY options:** Befaco ADSR, Music Thing Modular EGs for hands-on builders
 
-### **Premium Integration:**
+**Premium Integration:**
 - **Make Noise ecosystem:** Maths, Function, Contour for complex envelope processing
 - **Mutable Instruments:** Stages, Veils for advanced modulation and mixing
 - **Expert Sleepers:** Disting mk4 for multi-function envelope and utility processing
@@ -425,4 +425,3 @@ Finally, understanding dual synchronized envelopes teaches you about coordinated
 
 ---
 
-**Bottom Line:** The Behringer Dual Envelope Generator 1003 is a **coordinated dual ADSR utility** that provides synchronized but independent envelope control from a single gate source. Perfect for professional voice architecture, complex modulation routing, and system-wide envelope coordination. The simultaneous triggering of both envelopes with independent timing characteristics makes it ideal for amplitude/filter coordination, cross-parameter modulation, and sophisticated CV distribution in modular synthesis systems.

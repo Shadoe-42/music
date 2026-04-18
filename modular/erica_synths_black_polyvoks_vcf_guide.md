@@ -114,24 +114,24 @@ hp: 12
 
 ---
 
-## Why Erica Synths Black Polyvoks VCF Excels
+## Why This Instrument Excels
 
-### **The Heritage:**
+**The Heritage:**
 The Polyvoks VCF isn't just another filter - it's a piece of synthesizer history. The original Formanta Polyvoks was a Soviet-era synthesizer that created sounds impossible to achieve with Western designs, and this filter was its heart.
 
-### **The Authenticity:**
+**The Authenticity:**
 - **Original Russian ICs:** Using actual K140UD12 chips for authentic character
 - **Circuit accuracy:** Faithful reproduction of the original design
 - **Enhanced for modular:** All the character, but adapted for contemporary use
 - **No compromises:** High-end Black series build quality
 
-### **The Sound:**
+**The Sound:**
 - **Aggressive character:** More punchy and in-your-face than typical filters
 - **Unique resonance:** Distinctive peaks and self-oscillation behavior
 - **Deep bass response:** Particularly strong low-frequency performance
 - **Cutting leads:** Ability to slice through dense mixes
 
-### **Perfect For:**
+**Perfect For:**
 - **Acid house producers:** This IS the acid filter sound
 - **Electronic musicians:** Classic synthesizer heritage in modular format
 - **Sound designers:** Unique character not available in other filters
@@ -143,7 +143,7 @@ The Polyvoks VCF isn't just another filter - it's a piece of synthesizer history
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Classic Acid Bassline**
 - **Sawtooth oscillator** → Audio In
@@ -424,21 +424,21 @@ The Polyvoks VCF isn't just another filter - it's a piece of synthesizer history
 
 ---
 
-## Advanced Techniques
+## Advanced Learning Path
 
-### **Driving the Filter:**
+**Driving the Filter:**
 - **Input Level as timbre control:** Higher levels = more saturation and grit
 - **Sweet spots:** 10-11 o'clock for clean, 2-4 o'clock for driven character
 - **Clipping the input:** Intentional overdrive for harsh, aggressive textures
 - **Different input sources:** Try drums, noise, or complex waveforms
 
-### **CV Modulation Strategies:**
+**CV Modulation Strategies:**
 - **Envelope → CV1:** Classic filter envelope for dynamic brightness
 - **LFO → CV1:** Rhythmic filter sweeps and wobbles  
 - **Sequencer → CV2:** Filter follows melodic patterns
 - **Mixed modulation:** Combine different CV sources for complex movement
 
-### **Mode Switching Techniques:**
+**Mode Switching Techniques:**
 - **Performance switching:** Real-time mode changes for textural variation
 - **Different resonance per mode:** LP and BP have different resonant characteristics
 - **Bandpass filtering:** Creates hollow, vocal-like textures
@@ -470,7 +470,7 @@ The Polyvoks VCF isn't just another filter - it's a piece of synthesizer history
 
 ## Pairs Well With
 
-### **Multi-Function Module Synergies (Acid Synthesis Systems):**
+**Multi-Function Module Synergies (Acid Synthesis Systems):**
 - **Cre8audio Function Junction:** Mathematical CV processing + scaling → Polyvoks for precise acid filter control with mathematical conditioning
 - **Qubit Bloom:** Generative probability patterns → Polyvoks for evolutionary acid sequences with self-evolving filter characteristics
 - **Disting mk4:** Switchable algorithms (Quantizer, LFO, S&H) → Polyvoks for algorithm-controlled acid synthesis with mathematical precision
@@ -478,25 +478,25 @@ The Polyvoks VCF isn't just another filter - it's a piece of synthesizer history
 - **Make Noise Maths:** Function generation + mathematical processing → Polyvoks for complex acid filter relationships
 - **Cross-Multi-Function Integration:** Polyvoks serves as legendary acid filter core for complete synthesis ecosystems
 
-### **Essential Partners:**
+**Essential Partners:**
 - **Envelope Generators:** For classic filter envelope modulation and dynamic brightness control
 - **LFOs:** Rhythmic filter sweeps and wobbles for acid movement
 - **VCAs:** Control signal levels going into the filter for performance dynamics
 - **Oscillators:** Especially sawtooth and square waves for classic acid waveforms
 
-### **Advanced Acid Integration:**
+**Advanced Acid Integration:**
 - **Multiple filters:** Chain Polyvoks with other filter types for complex acid processing
 - **Clock dividers:** Rhythmic filter modulation patterns for polyrhythmic acid sequences
 - **Sample & Hold:** Stepped filter cutoff sequences for algorithmic acid control
 - **Quantizers:** Musical filter tracking when using as oscillator for melodic acid synthesis
 
-### **Essential Acid Partners:**
+**Essential Acid Partners:**
 - **TB-303 style sequencers:** For authentic acid house sequence control and pattern generation
 - **Analog oscillators:** Classic sawtooth waves for authentic acid synthesis character
 - **Envelope generators:** Snappy envelopes for classic acid filter sweeps and dynamics
 - **Performance controllers:** Real-time acid filter control for live acid house performance
 
-### **Advanced System Integration:**
+**Advanced System Integration:**
 - **Complete acid workstations:** Polyvoks + multi-function modules create complete acid synthesis systems
 - **Generative acid systems:** Probability-based modules create evolving acid patterns through Polyvoks
 - **Mathematical acid precision:** Algorithm modules provide exact mathematical control of legendary acid character
@@ -504,9 +504,9 @@ The Polyvoks VCF isn't just another filter - it's a piece of synthesizer history
 
 ---
 
-## Beginner "Gotchas" & Pro Tips
+## Common Mistakes
 
-### **⚠️ Common Mistakes & Learning Opportunities:**
+### **Common Mistakes & Learning Opportunities:**
 
 **"My filter sounds too clean/boring!"**
 **Problem:** Input Level is too low, so the filter is operating in its linear region without character
@@ -635,7 +635,7 @@ Reality: Analog circuits drift, interact unpredictably, and create variation. Th
 
 ---
 
-### **🎵 Pro Tips:**
+### **Pro Tips:**
 
 **Input Level Sweet Spots:**
 - **9-11 o'clock:** Clean, smooth filtering
@@ -660,7 +660,7 @@ Reality: Analog circuits drift, interact unpredictably, and create variation. Th
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Start with Polyvoks fundamentals:** Master cutoff control, resonance behavior, and legendary Russian acid filter character
 2. **Add generative evolution:** Integrate Qubit Bloom for probability-based acid filter evolution (see Bloom guide)
 3. **Include mathematical precision:** Use Disting mk4 for algorithmic acid filter control (see Disting guide)
@@ -668,26 +668,26 @@ Reality: Analog circuits drift, interact unpredictably, and create variation. Th
 5. **Include polyrhythmic timing:** Use 4ms RCD v2 for complex acid filter timing relationships (see RCD guide)
 6. **Complete the ecosystem:** Add all multi-function modules for complete acid synthesis workstation
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **Polyvoks + Bloom:** Learn generative acid synthesis through probability-based filter evolution
 - **Polyvoks + Disting:** Master algorithmic acid control with switchable algorithm processing
 - **Polyvoks + Function Junction:** Understand mathematical acid processing through CV conditioning
 - **Polyvoks + RCD:** Explore polyrhythmic acid relationships through mathematical timing
 - **All Multi-Function + Polyvoks:** Build complete acid synthesis ecosystems with legendary Russian character
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Use Polyvoks for classic acid filter sweeps and self-oscillation techniques
 - **Intermediate:** Master generative acid processing with probability-based filter evolution
 - **Advanced:** Create algorithmic acid patches with mathematical precision and CV conditioning
 - **Expert:** Design complete acid synthesis systems where Polyvoks serves as legendary filter core for mathematical ecosystems
 
-### **Advanced Acid Synthesis Concepts:**
+**Advanced Acid Synthesis Concepts:**
 - **Legendary Filter Character:** Understand authentic Russian K140UD12 chip character and acid house heritage
 - **Generative Acid Evolution:** Master probability-based acid sequences that evolve through Polyvoks character
 - **Mathematical Acid Control:** Explore algorithmic precision applied to classic analog acid filter processing
 - **Complete Acid Ecosystems:** Design systems where mathematical processing serves legendary analog acid character
 
-### **Performance Applications:**
+**Performance Applications:**
 - **Live Acid Control:** Real-time Polyvoks cutoff and resonance control for dynamic acid house performance
 - **Generative Acid Systems:** Foundation for self-evolving acid synthesis with mathematical precision and legendary character
 - **Mathematical Acid Processing:** Bridge between algorithmic precision and authentic analog Russian filter character
@@ -695,7 +695,6 @@ Reality: Analog circuits drift, interact unpredictably, and create variation. Th
 
 ---
 
-**Bottom Line:** The Black Polyvoks VCF V2 isn't just a filter - it's a **legendary acid synthesis processor** that transforms mathematical precision, generative evolution, and algorithmic control into authentic Russian acid house character. Every patch teaches you something new about how legendary acid synthesis really works. As the **acid filter core of complete synthesis ecosystems**, it transforms multi-function modulation into unified legendary acid evolution.
 
 ---
 

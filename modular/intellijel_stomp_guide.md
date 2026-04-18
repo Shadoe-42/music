@@ -11,7 +11,7 @@ hp: 6
 historical_context: false
 ---
 
-# Intellijel Stomp - Guide
+# Intellijel Stomp
 
 **The Eurorack-to-Pedal Bridge with Expression Control**
 
@@ -118,7 +118,7 @@ historical_context: false
 
 ---
 
-## Why Intellijel Stomp Excels
+## Why This Instrument Excels
 
 Guitar pedals and Eurorack modular systems exist in different electrical worlds: pedals expect high-impedance instrument signals or balanced line levels, modular runs unbalanced at Eurorack levels, and expression pedals communicate via a 0-3.3V unipolar voltage range that has no natural equivalent in a standard modular patch. Most attempts to bridge these worlds involve compromises: signal loss, impedance mismatches, ground loops, or a pile of passive adapters that solve one problem while creating two others. Stomp is built from the ground up to solve all of it in 6HP.
 
@@ -130,7 +130,7 @@ The practical consequence is that an existing pedal collection stops being a sep
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Basic Modular-to-Pedal Processing**
 ```
@@ -276,26 +276,26 @@ The practical consequence is that an existing pedal collection stops being a sep
 
 ## Pairs Well With
 
-### **Advanced Module Synergies (Modulation & CV Sources):**
+**Advanced Module Synergies (Modulation & CV Sources):**
 - **DivKid Ochd & Expander:** Coordinated LFO automation for natural expression pedal timing - slow LFO rates create musical tape speed variations
 - **Make Noise Wogglebug:** Chaos-controlled expression automation creates unpredictable but musical pedal parameter evolution - smooth and stepped outputs provide different automation characters
 - **Mutable Marbles:** Learning circuits provide adaptive expression pedal automation that evolves with musical context
 - **Squarp Hermod+:** Sequenced expression control with quantization enables precise, programmed pedal automation sequences - CV tracks can automate multiple pedal parameters simultaneously
 - **Cre8audio Function Junction:** CV processing for expression voltage scaling, offsetting, and complex multi-source expression control - essential for multi-pedal automation ecosystems
 
-### **Advanced Integration Concepts:**
+**Advanced Integration Concepts:**
 - **Expression Pedal Automation:** Use Stomp's internal LFO or external CV sources to automate expression-capable pedals (Strymon, Boss, Walrus Audio)
 - **Chaos Expression Mathematics:** Integrate Wogglebug chaos outputs for unpredictable but musical pedal parameter evolution
 - **Complete Expression Ecosystems:** Combine Hermod+ sequencing, MetaModule synthesis, Function Junction CV processing, and multiple expression-capable pedals for comprehensive automated effect chains
 - **Multi-Pedal Coordination:** Use Function Junction to scale and offset multiple CV sources for coordinated expression control across pedal chains
 
-### **Perfect Partners for Beginners:**
+**Perfect Partners for Beginners:**
 - **Mutable Plaits:** Rich synthesis source that benefits from pedal processing character
 - **Make Noise Maths:** Provides envelopes and LFOs for basic expression pedal automation
 - **Intellijel Quadrax:** Four independent envelopes create discrete expression pedal automation
 - **Any expression-capable pedal:** Strymon, Boss, Walrus Audio, and other manufacturers with expression inputs
 
-### **Advanced Expression Control Integration:**
+**Advanced Expression Control Integration:**
 - **Multiple expression pedals:** Chain multiple expression-capable pedals for complex automated effect scenarios
 - **Re-amping workflows:** Use Stomp as professional re-amping interface for studio applications
 - **Hybrid performance systems:** Combine modular synthesis generation with pedal processing for live performance
@@ -304,7 +304,7 @@ The practical consequence is that an existing pedal collection stops being a sep
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Start with Stomp fundamentals:** Understanding impedance matching, level conversion, and send/return concepts
 2. **Add expression automation:** Integrate internal LFO for basic pedal parameter automation
 3. **Include external CV control:** Use Ochd or other CV sources for sophisticated expression automation
@@ -312,17 +312,16 @@ The practical consequence is that an existing pedal collection stops being a sep
 5. **Include multi-function sequencing:** Add Hermod+ for programmed expression sequences
 6. **Complete the ecosystem:** Integrate Function Junction for advanced CV processing and multi-pedal control
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **Stomp + Ochd:** Natural timing automation for musical expression pedal control
 - **Stomp + Wogglebug:** Mathematical chaos applied to expression pedal automation
 - **Stomp + Hermod+:** Sequenced expression automation with quantization and programming capabilities
 - **Advanced ecosystem integration:** Complete system enabling sophisticated pedal automation within modular systems
 
-### **Advanced Expression Control Concepts:**
+**Advanced Expression Control Concepts:**
 - **Impedance Theory:** Understanding high-Z vs low-Z, instrument vs line levels, and proper signal matching
 - **Expression Voltage Standards:** 0-3.3V unipolar signals, TRS wiring, and pedal compatibility considerations
 - **CV Signal Processing:** Bipolar-to-unipolar conversion, scaling, offsetting, and multi-source coordination
 
 ---
 
-**Bottom Line:** Stomp handles the technical barriers between modular and pedal worlds - impedance matching, level conversion, and expression automation - so you can focus on the creative connections between your sound sources and effects. It's an essential bridge that gets out of the way and lets your musical ideas flow between different gear ecosystems.

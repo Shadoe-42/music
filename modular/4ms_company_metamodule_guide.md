@@ -15,7 +15,7 @@ hybrid: true
 historical_context: false
 ---
 
-# 4ms Company MetaModule - Guide
+# 4ms Company MetaModule
 
 **The Virtual Patch Player - Complete Modular System in 26HP**
 
@@ -105,7 +105,7 @@ historical_context: false
 
 ---
 
-## Why MetaModule Excels
+## Why This Instrument Excels
 
 MetaModule is the answer to a specific question: what if the flexibility of VCV Rack -- hundreds of virtual modules, unlimited patching, no hardware cost per module -- could be accessed through a physical Eurorack interface that integrates with real CV and audio? The answer involves trade-offs worth understanding.
 
@@ -135,7 +135,7 @@ A virtual filter running inside MetaModule is not identical to a hardware filter
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Basic - Load and Play Existing Patches**
 ```
@@ -367,7 +367,7 @@ Complete Hybrid System Architecture:
 
 ## Pairs Well With
 
-### **Advanced Module Synergies (Modular System Brain Integration):**
+**Advanced Module Synergies (Modular System Brain Integration):**
 - **Make Noise Maths:** Provides complex CV sources for virtual parameter control and receives virtual CV outputs for hardware modulation
 - **Mutable Marbles:** Adaptive pattern generation feeds virtual sequencers while virtual CV can control Marbles parameters
 - **Squarp Hermod+:** Hardware sequencer coordination with virtual synthesis and synchronized MIDI/CV data exchange
@@ -375,26 +375,26 @@ Complete Hybrid System Architecture:
 - **Erica Synths modules:** Hardware audio sources processed through virtual effects chains with coordinated parameter control
 - **Cross-Module Integration:** MetaModule serves as modular system brain transforming hardware CV into virtual synthesis while outputting virtual processing back to hardware
 
-### **Perfect Partners for Beginners:**
+**Perfect Partners for Beginners:**
 - **Audio interface modules:** For connecting MetaModule outputs to external audio systems
 - **Basic CV sources:** Simple LFOs and envelopes for virtual parameter control
 - **MIDI keyboard/controller:** For polyphonic virtual patch performance
 - **USB hub:** For managing multiple USB devices when using USB drives and controllers
 - **Audio mixer:** For blending MetaModule outputs with other system audio
 
-### **Advanced Virtual Integration:**
+**Advanced Virtual Integration:**
 - **Complex CV sources:** Chaotic and generative modules for organic virtual parameter control
 - **Precision sequencers:** For coordinated hardware/virtual timing and complex pattern generation
 - **Audio processors:** Hardware modules that can process MetaModule virtual outputs
 - **Performance controllers:** Touch interfaces and expression controllers for real-time virtual parameter control
 
-### **Essential System Support:**
+**Essential System Support:**
 - **Power management:** Adequate +12V current capacity for MetaModule's 290mA requirement
 - **Case space planning:** 26HP width consideration in system layout design
 - **Cable management:** Organization of multiple I/O connections in complex hybrid systems
 - **Storage solutions:** USB drives and microSD cards for patch libraries and plugin collections
 
-### **Advanced System Integration:**
+**Advanced System Integration:**
 - **MetaAIO Expander:** Additional I/O for expanded virtual-to-hardware interfacing
 - **WiFi Expander:** Wireless patch transfer from VCV Rack for streamlined workflow
 - **Multiple MetaModules:** Polyphonic virtual synthesis or specialized processing assignments
@@ -404,7 +404,7 @@ Complete Hybrid System Architecture:
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Start with basic operation:** Master patch loading, basic navigation, and physical interface control
 2. **Add VCV Rack fundamentals:** Learn basic patch creation and virtual-to-physical mapping concepts
 3. **Include multi-module patches:** Understand complex virtual routing and knob set organization
@@ -412,26 +412,26 @@ Complete Hybrid System Architecture:
 5. **Include performance techniques:** Develop real-time control and live performance workflows
 6. **Complete the system brain:** Integrate as central processing hub in complex modular ecosystems
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **MetaModule + Maths:** Hardware CV sources controlling virtual synthesis parameters
 - **MetaModule + Marbles:** Adaptive hardware patterns feeding virtual sequencers and synthesis
 - **MetaModule + Hermod+:** Coordinated hardware/virtual sequencing and synchronized data exchange
 - **MetaModule + Hardware voices:** Virtual effects processing of hardware audio sources
 - **Advanced Integration + MetaModule:** Complete ecosystem enabling sophisticated virtual processing within complex modular systems
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Basic patch playback, simple knob control, understanding virtual-physical interface
 - **Intermediate:** VCV Rack patch creation, basic mapping, simple multi-module patches
 - **Advanced:** Complex virtual patches, knob set organization, MIDI/CV integration
 - **Expert:** Hybrid system design, performance architecture, professional workflow integration
 
-### **Advanced Virtual Synthesis Concepts:**
+**Advanced Virtual Synthesis Concepts:**
 - **Virtual-Physical Interface Design:** Understanding mapping strategies for optimal hardware control
 - **Knob Set Architecture:** Organizing complex parameter control for performance applications
 - **Hybrid Signal Flow:** Coordinating hardware and virtual processing for enhanced capabilities
 - **System Brain Theory:** Using MetaModule as central coordinator in complex modular ecosystems
 
-### **Performance Applications:**
+**Performance Applications:**
 - **Live Virtual Synthesis:** Real-time control over complex virtual patches using physical interface
 - **Hybrid Performance Systems:** Coordinating hardware and virtual elements in live performance
 - **Studio Integration:** Professional virtual processing within hardware-based studio workflows
@@ -439,4 +439,3 @@ Complete Hybrid System Architecture:
 
 ---
 
-**Bottom Line:** MetaModule isn't just a virtual patch player - it's a **complete modular system brain** that brings the infinite possibilities of VCV Rack's 800+ virtual modules to hardware through a sophisticated physical interface. Every patch teaches something new about virtual synthesis, from basic parameter mapping to complex hybrid system integration. As the **virtual processing coordinator of complex modular ecosystems**, it transforms hardware CV and audio into sophisticated virtual synthesis while providing processed audio and CV back to hardware, creating professional hybrid modular systems that combine the best of virtual flexibility and hardware immediacy in 26HP of unlimited sonic potential.

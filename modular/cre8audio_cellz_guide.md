@@ -10,7 +10,7 @@ use_cases: [gate and trigger source, performance touch control, pitch CV source]
 hp: 8
 ---
 
-# Cre8audio Cellz - Guide
+# Cre8audio Cellz
 
 **The Touch-Sensitive CV Playground**
 
@@ -46,7 +46,7 @@ hp: 8
 
 ## Why This Instrument Excels
 
-### The Philosophy: Human Touch as Control Voltage Source
+**The Philosophy: Human Touch as Control Voltage Source**
 
 Cellz represents **the human body as part of the synthesis circuit**. Your finger touching a pad completes an electrical circuit, instantly converting physical gesture into control voltage. This isn't a sensor watching from outside - it's direct electrical contact making you part of the modular system.
 
@@ -58,7 +58,7 @@ Cellz represents **the human body as part of the synthesis circuit**. Your finge
 
 **The fundamental principle:** Touch isn't automation - it's extension of human expression into voltage control. Understanding this teaches you that interfaces aren't just convenience - they're how humans connect with synthesis at the most fundamental electrical level.
 
-### Capacitive Touch Technology: How Your Body Creates CV
+**Capacitive Touch Technology: How Your Body Creates CV**
 
 **What is capacitive sensing?** Your body conducts electricity. When your finger approaches a metal pad, it changes the electrical field around that pad. Cellz measures this field change and converts it to control voltage.
 
@@ -82,7 +82,7 @@ Cellz represents **the human body as part of the synthesis circuit**. Your finge
 
 Learning how capacitive touch works teaches you how ALL human interfaces convert gesture to control voltage. The principle applies everywhere from ribbon controllers to theremin antennas.
 
-### Historical Context: Controllers in Synthesis Evolution
+**Historical Context: Controllers in Synthesis Evolution**
 
 **Touch-based control isn't new - it's fundamental:**
 
@@ -109,7 +109,7 @@ Learning how capacitive touch works teaches you how ALL human interfaces convert
 
 **Cellz's position:** Combines Buchla touch philosophy with modern programmability. You get gestural immediacy with custom layouts - best of both worlds. Understanding this history teaches you that touch vs keyboard isn't just preference - it's different philosophies about human-synthesis interaction.
 
-### CV Generation from Touch: The Fundamental Translation
+**CV Generation from Touch: The Fundamental Translation**
 
 **How does a touch become a voltage?**
 
@@ -133,7 +133,7 @@ Learning how capacitive touch works teaches you how ALL human interfaces convert
 
 **Astroid connection:** Think about how Astroid's touch pins work - same capacitive principle, different application. Both teach you that human touch is an electrical event that creates voltage.
 
-### Dual Output Architecture: Parallel CV Streams
+**Dual Output Architecture: Parallel CV Streams**
 
 **Why two independent CV outputs from one touch?**
 
@@ -160,7 +160,7 @@ Learning how capacitive touch works teaches you how ALL human interfaces convert
 
 Understanding dual outputs teaches you that parallel processing and coupled parameters are fundamental synthesis concepts, not just Cellz features.
 
-### Grid Programming: Spatial Organization of Voltage
+**Grid Programming: Spatial Organization of Voltage**
 
 **Why a 4×4 grid instead of linear layout?**
 
@@ -187,7 +187,7 @@ Understanding dual outputs teaches you that parallel processing and coupled para
 
 **The teaching moment:** Grid organization teaches you that spatial relationships matter. When you arrange pads in musical relationships (rows = chords, columns = inversions), your hand learns the music spatially. This is how humans learned instruments for millennia - spatial muscle memory plus sound.
 
-### The Human-Machine Interface: Immediacy and Expression
+**The Human-Machine Interface: Immediacy and Expression**
 
 **What makes touch different from knobs and buttons?**
 
@@ -212,7 +212,7 @@ Understanding dual outputs teaches you that parallel processing and coupled para
 
 **The interconnection:** Understanding interface latency teaches you why some controllers feel "better" than others - it's physics and perception, not just build quality. This applies to every musical interface from keyboards to pedals to motion sensors.
 
-### Why Utilities Teach Interface Design Principles
+**Why Utilities Teach Interface Design Principles**
 
 **Touch controllers are utilities, not sound sources:**
 - **They don't make sound** - they generate control voltages
@@ -232,7 +232,7 @@ Understanding dual outputs teaches you that parallel processing and coupled para
 - **Dual output architecture:** Parallel control stream design
 - **Interface latency:** Why some controllers feel more responsive
 
-### Design Philosophy: Programmable Gestural Expression
+**Design Philosophy: Programmable Gestural Expression**
 
 **Cellz's approach:** Maximum customization, minimum complexity:
 - **No menus:** All programming through physical interface (TUNE buttons + knobs + pads)
@@ -246,7 +246,7 @@ Understanding dual outputs teaches you that parallel processing and coupled para
 
 **Buchla philosophy updated:** Don Buchla's original touch controllers were about gestural control vs keyboard tradition. Cellz extends that philosophy with modern programmability - you get gesture immediacy plus custom relationships. Every user creates their own instrument from the same hardware.
 
-### The Technical Excellence:
+**The Technical Excellence:**
 
 - **Capacitive touch pads:** Direct electrical contact, minimal latency
 - **Dual independent outputs:** Two CV streams from single gesture
@@ -258,7 +258,7 @@ Understanding dual outputs teaches you that parallel processing and coupled para
 - **Arpeggiator mode:** Multi-touch creates automatic pattern cycling
 - **Compact 4HP:** Essential expression interface in minimal space
 
-### Perfect For:
+**Perfect For:**
 
 - **Interface beginners:** Learning how gesture becomes voltage
 - **Performance users:** Expressive control with custom layouts
@@ -266,7 +266,7 @@ Understanding dual outputs teaches you that parallel processing and coupled para
 - **System builders:** Universal CV source for any parameter
 - **Anyone needing expression:** Immediate gestural control in modular context
 
-### The Magic:
+**The Magic:**
 
 Cellz proves that **interface design is instrument design**. How you organize voltage relationships spatially determines what's musically possible. Traditional keyboards dictate musical relationships through their layout (chromatic scale, fixed intervals). Cellz lets you design the relationships - organize by hand reach, by musical function, by modulation amount. When you understand interface design through Cellz, you understand that the interface IS the instrument - how you interact shapes what you can create. This applies to every musical tool from pianos to modular synthesizers.
 
@@ -498,7 +498,7 @@ Cellz proves that **interface design is instrument design**. How you organize vo
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Basic - Touch-Controlled Synthesizer**
 ```
@@ -591,31 +591,31 @@ Cellz proves that **interface design is instrument design**. How you organize vo
 
 ## Pairs Well With
 
-### **Perfect Partners for Beginners:**
+**Perfect Partners for Beginners:**
 - **Chipz (Cre8audio):** Natural pairing - Cellz controls Chipz perfectly for NiftyBundle setup
 - **Quantizers (2HP Tune, Intellijel Scales):** Essential for musical pitch control - converts raw CV to musical intervals
 - **VCAs (2HP VCA, Intellijel uVCA):** Use GATE outputs to control dynamics
 - **Clock Dividers:** Create interesting 2D sequencing patterns with divided clocks for grid navigation
 
-### **Next-Level Combinations:**
+**Next-Level Combinations:**
 - **Multiple Oscillators:** Use OUT1/OUT2 to control two voices simultaneously for parallel melodic lines
 - **Complex Filters:** Touch-control multiple filter parameters (cutoff, resonance) for timbral performance
 - **Sample & Hold:** Use GATE outputs to trigger sample & hold for stepped modulation rhythms
 - **LFOs with reset:** Use GATE to sync LFO cycles to your touches for rhythmic modulation
 
-### **Advanced Touch Integration:**
+**Advanced Touch Integration:**
 - **Hermod+ (Squarp):** Record Cellz performances into advanced sequencer for editing and playback
 - **Marbles (Mutable):** Use Cellz as "bias" control for random voltages - touch guides randomness
 - **Morphagene:** Touch-control sample positions and splice points for expressive sampling
 - **Complex modulars:** Use as expressive controller for any CV-controllable parameter in large systems
 
-### **Essential Performance Partners:**
+**Essential Performance Partners:**
 - **Analysis modules (Mordax Data, Ornaments & Crime by Tunefish/After Later Audio/Plum Audio):** Real-time monitoring and feedback for improved touch performance accuracy
 - **Chaos generators (Make Noise Wogglebug, Music Thing Modular Turing Machine):** Organic evolution patterns that enhance human touch expression
 - **Recording systems (Expert Sleepers ES-9, Expert Sleepers FH-2):** Capture and analyze touch performances for detailed study and refinement
 - **Performance mixers:** Blend touch outputs with visual feedback for live performance systems
 
-### **Advanced System Integration:**
+**Advanced System Integration:**
 - **Complete performance workstations:** Cellz + multi-function modules create professional touch performance systems
 - **Data-enhanced interfaces:** Analysis feedback improves touch accuracy and musical precision through visual confirmation
 - **Organic performance evolution:** Chaos generators create natural evolution while preserving human expression priority
@@ -625,7 +625,7 @@ Cellz proves that **interface design is instrument design**. How you organize vo
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Start with Cellz fundamentals:** Master touch programming, dual outputs, and expressive human control interface basics
 2. **Add musical quantization:** Integrate quantizers for proper musical intervals and scale control (see quantizer guides)
 3. **Include 2D sequencing:** Use both sequencing inputs for complex grid navigation and rhythmic patterns
@@ -633,26 +633,26 @@ Cellz proves that **interface design is instrument design**. How you organize vo
 5. **Include advanced patches:** Experiment with modulation applications beyond pitch control
 6. **Build complete systems:** Integrate Cellz with multi-function modules for professional performance workflows
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **Cellz + Quantizers:** Learn musical interval programming through proper pitch quantization and scale control
 - **Cellz + 2D Sequencers:** Master grid addressing and spatial sequence organization through clock relationships
 - **Cellz + Chaos Generators:** Understand hybrid human/organic control through chaos-enhanced touch performance
 - **Cellz + Analysis Modules:** Explore performance monitoring through real-time CV visualization and feedback
 - **Cellz + Complete Systems:** Build expressive performance ecosystems with human touch at the center
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Use Cellz for basic touch control, dual-parameter programming, and simple musical applications
 - **Intermediate:** Master 2D sequencing, modulation control, and touch override during automatic playback
 - **Advanced:** Create complex parameter coupling, multi-output routing, and integrated performance systems
 - **Expert:** Design complete expressive performance systems where Cellz serves as human expression core
 
-### **Advanced Touch Interface Concepts:**
+**Advanced Touch Interface Concepts:**
 - **Capacitive Sensing Principles:** Deep understanding of how touch becomes voltage through electrical field changes
 - **Programmable Mapping Design:** Master arbitrary voltage relationships and custom interface layouts
 - **2D Grid Organization:** Understand spatial programming and how layout affects musical performance
 - **Human-Machine Interface Theory:** Learn latency, gesture design, and ergonomic controller principles
 
-### **Performance Applications:**
+**Performance Applications:**
 - **Live Touch Performance:** Real-time Cellz control with performance monitoring and visual feedback integration
 - **Custom Instrument Design:** Create personal performance interfaces through programmable voltage mapping
 - **Expressive Control Systems:** Build interfaces where human touch remains primary expression method
@@ -660,7 +660,6 @@ Cellz proves that **interface design is instrument design**. How you organize vo
 
 ---
 
-**Bottom Line:** Cellz isn't just a touch controller - it's a **programmable interface design tool** that teaches you how gesture becomes voltage through capacitive sensing and programmable mapping. Every patch teaches you something new about how human touch interfaces work at the electrical level. As a **universal CV source with touch interface**, it transforms human gesture into any control voltage you need while teaching fundamental principles of interface design that apply to all synthesis controllers from keyboards to ribbon controllers to MPE devices.
 
 ---
 

@@ -270,7 +270,7 @@ When a clock signal is patched into the CLOCK IN jack, the manual trigger button
 
 ---
 
-## Why the Queen of Pentacles Excels
+## Why This Instrument Excels
 
 The Queen of Pentacles occupies the space between a fully analog drum synthesizer and a sampler-based drum machine, and its particular blend of the two is the source of most of its distinctive behavior.
 

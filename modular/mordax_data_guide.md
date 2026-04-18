@@ -92,12 +92,12 @@ Data uses a screen-based digital interface (rotary encoder + softkeys), which is
 
 ---
 
-## Why Mordax Data Excels
+## Why This Instrument Excels
 
-### **The Philosophy:**
+**The Philosophy:**
 Mordax Data represents **visual understanding of electronic music** - transforming invisible electrical signals into comprehensible visual information. It proves that **seeing is understanding**, making the abstract world of voltage and frequency tangible and educational.
 
-### **The Utility Philosophy:**
+**The Utility Philosophy:**
 Data's design philosophy is radical: **analysis and measurement as creative tools**. Unlike creative modules that generate sound, Data generates *understanding*. This distinction is crucial. Most synthesizers teach you to manipulate sound; Data teaches you to *see* sound - to understand the invisible relationships that make synthesis work. Mastery comes from understanding, not just technique. Data accelerates this mastery by removing the guesswork from electronics.
 
 **This means:**
@@ -106,21 +106,21 @@ Data's design philosophy is radical: **analysis and measurement as creative tool
 - Using Data transforms experimentation from "did that sound different?" to "here's exactly what changed and why"
 - It teaches principles (filter behavior, harmonic relationships, timing precision) that transfer across all synthesis, not just this module
 
-### **The Innovation:**
+**The Innovation:**
 - **Six complete analysis tools** in one module - oscilloscope, spectrum analyzer, tuner, generator, voltmeter, clock
 - **Real-time visual feedback** makes learning modular synthesis intuitive and immediate
 - **Professional-grade measurement** with studio-quality precision and accuracy
 - **Educational design** where every function teaches you something about your system
 - **Dual functionality** - analysis and generation in one comprehensive package
 
-### **The Practical Benefits:**
+**The Practical Benefits:**
 - **X-ray vision for your system:** See exactly what every module is actually doing
 - **Perfect tuning and timing:** Achieve musical accuracy impossible with just your ears
 - **Troubleshooting mastery:** Spot problems immediately through visual analysis
 - **Learning acceleration:** Understand synthesis concepts through direct visual feedback
 - **Professional results:** Studio-grade analysis and measurement capabilities
 
-### **Perfect For:**
+**Perfect For:**
 - **Anyone learning modular synthesis:** Visual feedback accelerates understanding
 - **Electronic musicians:** Perfect tuning and timing for professional results
 - **Sound designers:** Analyze complex harmonic interactions and spectral content
@@ -128,10 +128,10 @@ Data's design philosophy is radical: **analysis and measurement as creative tool
 - **Educators:** Teach synthesis concepts through immediate visual demonstration
 - **Advanced module enthusiasts:** Understand how organic, chaos, and pattern generation actually work
 
-### **The Magic:**
+**The Magic:**
 Data **democratizes professional analysis** - giving everyone access to studio-grade measurement and visualization tools. Whether you're learning your first patch or designing complex systems, Data reveals the invisible world of electronic music.
 
-### **Advanced Integration Power:**
+**Advanced Integration Power:**
 As the **analysis engine of Advanced ecosystems**, Data reveals the true behavior of organic breathing, controlled chaos, sophisticated pattern generation, and mathematical processing. **You see exactly how electronic intelligence actually works.**
 
 
@@ -139,7 +139,7 @@ As the **analysis engine of Advanced ecosystems**, Data reveals the true behavio
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: First Oscilloscope View**
 ```
@@ -297,7 +297,7 @@ Data's value comes from **revealing your system to you** - measurement and analy
 
 ---
 
-## Beginner "Gotchas"
+## Common Mistakes
 
 ### **"Data shows me something, but I don't know what to do about it"**
 - **The misunderstanding:** Data *reveals* problems, it doesn't fix them. Users expect analysis to automatically solve issues.
@@ -359,7 +359,7 @@ Data is complex because it does six complete things, not because it's poorly des
 
 Data's true value emerges when combined with other modules - not as a compatibility checklist, but as **the analysis companion that reveals how your system actually works**. Here's how Data becomes the bridge between modules and understanding:
 
-### **Data as the Analysis Engine for Advanced Ecosystems**
+**Data as the Analysis Engine for Advanced Ecosystems**
 
 **Understanding Organic & Algorithmic Behavior:**
 When you combine Data with Advanced modules, it reveals the actual behavior of sophisticated pattern generation:
@@ -372,7 +372,7 @@ When you combine Data with Advanced modules, it reveals the actual behavior of s
 
 **The Result:** You don't just use these modules together: Data reveals exactly HOW they work together. This is interconnection made visible.
 
-### **Revealing Fundamental Synthesis Relationships**
+**Revealing Fundamental Synthesis Relationships**
 
 **Core Synthesis Understanding:**
 Data shows how foundational modules create synthesis principles:
@@ -381,14 +381,14 @@ Data shows how foundational modules create synthesis principles:
 - **Mutable Plaits:** Data SPEC analyzes harmonic character of different synthesis models. Understand which techniques create which harmonic content, why certain synthesis approaches sound specific ways.
 - **All Oscillators:** Data TUNE ensures perfect frequency relationships, reveals pitch accuracy and interval characteristics. Every oscillator teaches pitch control principles.
 
-### **Universal Analysis Partners: Foundation Measurement**
+**Universal Analysis Partners: Foundation Measurement**
 
 **Professional Measurement Across Your System:**
 - **Complex Modules (Filters, Effects, Processors):** Data shows exactly how processing affects signals. Troubleshoot unexpected behavior, understand signal flow mathematically.
 - **Clock Sources & Timing:** Data CLOCK verifies timing precision and polyrhythmic relationships across all tempo-dependent modules.
 - **Sequencers & Pattern Generators:** Data TUNE/SPEC reveals if pattern generation maintains musical accuracy and harmonic integrity.
 
-### **System-Level Integration: Professional Mastery**
+**System-Level Integration: Professional Mastery**
 
 **Going Deeper:**
 - **Multiple Data Modules:** Studio-level monitoring - deploy Data at different points to reveal system behavior at multiple scales
@@ -403,7 +403,7 @@ Data shows how foundational modules create synthesis principles:
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Start with Data fundamentals:** Master all six programs and understand visual signal analysis
 2. **Add organic analysis:** Use Data to analyze DivKid Ochd organic modulation characteristics (see Ochd guide)
 3. **Include chaos analysis:** Apply Data to visualize Make Noise Wogglebug chaos generation (see Wogglebug guide)
@@ -411,26 +411,26 @@ Data shows how foundational modules create synthesis principles:
 5. **Include timing analysis:** Apply Data to 4ms RCD v2 polyrhythmic analysis (see RCD guide)
 6. **Complete the analysis:** Use Data as central analysis hub for Cre8audio Function Junction (see Function Junction guide)
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **Data + Ochd:** Learn to visualize organic modulation characteristics and timing relationships
 - **Data + Wogglebug:** Master chaos analysis through real-time waveform and voltage monitoring
 - **Data + Marbles:** Understand pattern generation through musical interval and harmonic analysis
 - **Data + RCD:** Explore polyrhythmic precision through timing and phase relationship analysis
 - **All Advanced + Data:** Build complete analysis systems where Data reveals behavior of entire ecosystems
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Master individual programs and basic signal analysis
 - **Intermediate:** Understand complex analysis and comparative monitoring
 - **Advanced:** Create Advanced analysis patches revealing sophisticated pattern generation behavior
 - **Expert:** Design analysis systems where Data serves as central intelligence for understanding complete ecosystems
 
-### **Advanced Analysis Concepts:**
+**Advanced Analysis Concepts:**
 - **Multi-Modal Analysis:** Use different programs to analyze same signals from multiple perspectives
 - **Advanced Ecosystem Intelligence:** Understand how sophisticated pattern generation actually works through visual feedback
 - **System Understanding:** Use Data to reveal timing, harmonic, and voltage relationships in complex systems
 - **Educational Analysis:** Learn synthesis concepts through direct visual demonstration
 
-### **Performance Applications:**
+**Performance Applications:**
 - **Live Analysis:** Real-time visual feedback for performance optimization
 - **Generative Analysis:** Foundation for understanding self-evolving systems
 - **Educational Tool:** Visual demonstration of synthesis concepts and Advanced ecosystem intelligence
@@ -438,7 +438,6 @@ Data shows how foundational modules create synthesis principles:
 
 ---
 
-**Bottom Line:** Mordax Data isn't just an analysis module - it's a **window into the invisible world of electronic music**. Every patch teaches you something new about synthesis, and Advanced ecosystem integration reveals how sophisticated pattern generation actually works. As the **analysis engine of Advanced ecosystems**, it transforms invisible electronic intelligence into visual understanding under your creative direction.
 
 ---
 

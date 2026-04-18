@@ -10,7 +10,7 @@ use_cases: [generative melodic sequence, stochastic modulation, self-evolving pa
 transport: receive
 ---
 
-# Music Thing Modular Turing Machine V2 Ecosystem - Guide
+# Music Thing Modular Turing Machine V2 Ecosystem
 
 **The Musical Chaos Generator and Expander System**
 
@@ -129,18 +129,18 @@ This system bridges the gap between rigid sequences (boring) and pure randomness
 
 ---
 
-## Why Turing Machine Ecosystem Excels
+## Why This Instrument Excels
 
-### **The Philosophy:**
+**The Philosophy:**
 **Musical randomness over pure chaos.** The Turing Machine ecosystem doesn't create random noise - it creates **controlled randomness that serves musicality**. It's chaos with a musical brain that understands repetition, development, and surprise.
 
-### **The Innovation:**
+**The Innovation:**
 - **Binary shift register:** Simple concept that creates complex, musical patterns
 - **Probability control:** The key to balancing repetition with evolution
 - **Complete ecosystem:** Brain + CV + Gates + Audio processing in coordinated system
 - **Musical timing:** 1V/octave tracking and quantization make chaos instantly musical
 
-### **The Magic:**
+**The Magic:**
 The Turing Machine ecosystem proves that **chaos can be musical** when properly controlled. The binary shift register with probability control creates patterns that feel both **familiar and surprising**, **repetitive and evolving** - the perfect balance for musical chaos.
 
 
@@ -148,7 +148,7 @@ The Turing Machine ecosystem proves that **chaos can be musical** when properly 
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Chaotic Melody Generator**
 ```
@@ -184,9 +184,9 @@ The Turing Machine ecosystem proves that **chaos can be musical** when properly 
 
 ---
 
-## Advanced Techniques
+## Advanced Learning Path
 
-### **Probability Sweet Spots:**
+**Probability Sweet Spots:**
 - **Hard left (locked):** Capture and repeat interesting patterns indefinitely
 - **10-11 o'clock:** Slow, organic evolution - patterns morph gradually
 - **12-1 o'clock:** Musical balance - enough change to stay interesting, enough repetition to stay musical
@@ -231,16 +231,16 @@ The Turing Machine ecosystem proves that **chaos can be musical** when properly 
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
+**Phase 2 Module Synergies (Modulation & CV Sources):**
 - **Squarp Hermod+:** Musical sequencing framework provides structure while chaos adds evolution and surprise within musical context
 - **Qubit Bloom:** Generative pattern evolution guides chaos probability and timing for organic, non-linear chaos development
 - **Cre8audio Function Junction:** Logic operations create complex relationships between chaos parameters and pattern enhancement
 
 ---
 
-## Beginner "Gotchas" & Pro Tips
+## Common Mistakes
 
-### **⚠️ Common Mistakes:**
+### **Common Mistakes:**
 
 **"My patterns are too random and not musical!"**
 - Probability setting too high, or not using quantization on Volts
@@ -250,7 +250,7 @@ The Turing Machine ecosystem proves that **chaos can be musical** when properly 
 - Probability set too low (locked position) or very short pattern length
 - **Solution:** Increase probability gradually and try longer pattern lengths (8-12 bits)
 
-### **🎵 Pro Tips:**
+### **Pro Tips:**
 
 **Musical Chaos Sweet Spots:**
 - **Melodic use:** Length 6-8, Probability 11-1 o'clock, Volts quantized
@@ -261,7 +261,6 @@ The Turing Machine ecosystem proves that **chaos can be musical** when properly 
 
 ---
 
-**Bottom Line:** The Turing Machine ecosystem isn't just a random generator - it's a **musical chaos processor** that transforms simple binary patterns into complex musical evolution through probability control and expander processing. Every patch teaches you something new about how controlled randomness really works in music. As the **musical chaos brain of Phase 2 ecosystems**, it transforms musical frameworks, generative patterns, and logic processing into unified controlled randomness that serves composition.
 
 ---
 

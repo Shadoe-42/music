@@ -10,7 +10,7 @@ use_cases: [envelope shaping, audio mixing and routing, CV scaling and utility]
 hp: 3
 ---
 
-# Erica Synths Pico VCA2 - Guide
+# Erica Synths Pico VCA2
 
 **The Compact Dual Linear VCA with Bias Control**
 
@@ -108,24 +108,24 @@ The AS3330 represents professional-grade VCA design; developed for studio and br
 
 ## Why This Instrument Excels
 
-### **The Philosophy**
+**The Philosophy**
 Amplitude control is the invisible architecture of synthesis. Every note, modulation, and effect passes through VCAs; they're gatekeepers determining what reaches the listener. Pico VCA2 provides professional-grade linear VCA performance (the AS3330 chip is industry standard) in 3HP, making dual VCAs accessible to every system size.
 
-### **The Engineering**
+**The Engineering**
 - **AS3330 VCA chip:** Professional broadcast/studio standard for low distortion and predictable response
 - **Dual linear response:** Proportional amplitude control ideal for mixing and CV processing
 - **Intelligent normalling:** Reduces cable count while maintaining patch flexibility
 - **BIAS control:** Essential tool for CV ranging and tremolo effects
 - **DC coupling:** Audio and CV amplitude control in a single module
 
-### **The Practical Benefits**
+**The Practical Benefits**
 - **Space efficient:** Two VCAs in 3HP, with bias control included
 - **Professional performance:** AS3330 standard delivers transparent VCA character
 - **Workflow optimization:** Normalling reduces patching complexity without sacrificing flexibility
 - **Linear response:** Predictable amplitude control for precision mixing and CV processing
 - **Thermal stable:** Operates reliably across temperature ranges and voltage fluctuations
 
-### **Perfect For**
+**Perfect For**
 - **Every system:** VCAs are fundamental; every patch benefits from amplitude control
 - **Mixing:** Two independent channels for precise audio level balancing
 - **Modulation control:** CV processing and depth scaling for complex patches
@@ -323,18 +323,18 @@ Professional System Integration:
 
 ---
 
-## Advanced Techniques
+## Advanced Learning Path
 
-### **VCA as Audio Mixer**
+**VCA as Audio Mixer**
 Beyond modulation, dual VCAs enable precise audio mixing. Patch two audio sources into IN1 and IN2 separately (breaking normalling), then use CV1 and CV2 to balance their levels in real-time. Linear response makes level changes proportional and predictable; critical for mixing tasks where exponential VCAs introduce unpredictable behavior.
 
-### **CV Processing and Scaling**
+**CV Processing and Scaling**
 VCAs aren't just for audio. Use VCA1 to scale the amplitude of modulation sources; control LFO depth via an envelope, or regulate the output of random modules to prevent runaway voltage swings. BIAS control becomes a precision tool for constraining CV ranges to exactly what target modules need.
 
-### **Bias Control Mastery**
+**Bias Control Mastery**
 The BIAS knob isn't just for tremolo. Use it to shift CV ranges: -5V/+5V becoming 0V/+10V for modules expecting unipolar control. Or invert perceived control direction by setting BIAS negative. This single knob transforms the character of modulation across your entire patch.
 
-### **Normalling as Workflow Tool**
+**Normalling as Workflow Tool**
 Intelligent patching with normalling: Leave inputs unpatched for automatic signal doubling, break normalling only where you need independent control. This minimizes cable clutter while preserving modulation relationships. The inverse approach; patching everywhere; often creates unnecessary complexity.
 
 ---
@@ -407,33 +407,33 @@ Intelligent patching with normalling: Leave inputs unpatched for automatic signa
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (VCA Coordination):**
+**Phase 2 Module Synergies (VCA Coordination):**
 - **Blue Lantern ADSR:** Envelope control for standard VCA applications
 - **DivKid Ochd & Expander:** Multiple LFOs for tremolo and modulation depth control
 - **Make Noise Maths:** Complex CV generation for advanced VCA control applications
 - **Erica Synths modules:** Audio sources that benefit from precise amplitude control
 - **Cross-Phase 2 Integration:** Essential amplitude control enabling sophisticated dynamics in complex systems
 
-### **Perfect Partners for VCA Applications:**
+**Perfect Partners for VCA Applications:**
 - **Envelope generators:** Primary control sources for musical amplitude shaping
 - **LFO modules:** Tremolo effects and periodic amplitude modulation
 - **Audio sources:** Oscillators and external audio requiring amplitude control
 - **Mixers:** VCA outputs feeding mixing stages for level balancing
 - **Performance controllers:** Manual expression control for real-time dynamics
 
-### **Advanced System Integration:**
+**Advanced System Integration:**
 - **Multiple Pico VCA2s:** Expanded VCA count for complex mixing and routing
 - **Filter modules:** Audio processing chain with VCA level control
 - **CV processors:** Additional CV scaling and amplitude control applications
 - **Audio interfaces:** Professional I/O with VCA level matching
 
-### **Essential Utility Partnerships:**
+**Essential Utility Partnerships:**
 - **Multiple modules:** Signal distribution and level matching
 - **CV sources:** Voltage control for amplitude automation
 - **Audio processors:** Level control before and after processing stages
 - **Performance interfaces:** Manual control integration in automated systems
 
-### **Professional Workflow Integration:**
+**Professional Workflow Integration:**
 - **Mixing systems:** Multiple VCA channels for audio level balancing
 - **Automation systems:** CV-controlled amplitude automation in complex patches
 - **Performance setups:** Real-time expression control through amplitude manipulation
@@ -478,4 +478,3 @@ Intelligent patching with normalling: Leave inputs unpatched for automatic signa
 
 ---
 
-**Bottom Line:** Pico VCA2 isn't just a compact VCA - it's a **professional amplitude control solution** that provides dual linear VCAs with bias control and intelligent normalling in just 3HP. Every patch teaches something new about amplitude control, from basic envelope shaping to complex CV processing. As an **essential utility within every modular system**, it enables sophisticated dynamics and signal routing while maintaining the professional performance standards essential for both studio and performance applications in the most space-efficient format possible.

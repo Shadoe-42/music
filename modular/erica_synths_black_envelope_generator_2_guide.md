@@ -11,7 +11,7 @@ hp: 8
 historical_context: false
 ---
 
-# Erica Synths Black Envelope Generator 2 - Guide
+# Erica Synths Black Envelope Generator 2
 
 ![Erica Synths Black Envelope Generator 2](https://github.com/Shadoe-42/music/raw/main/modular/images/erica_synths/black_eg2/front_panel.jpg)  
 *Erica Synths Black Envelope Generator 2 - Front panel showing controls and jacks*
@@ -45,24 +45,24 @@ historical_context: false
 
 ## Why This Instrument Excels
 
-### **The Practical Problem It Solves:**
+**The Practical Problem It Solves:**
 Most trigger-only sequencers can't generate full ADSR envelopes - they only output triggers (short pulses). The Black EG2 solves this by converting triggers into gates of adjustable length, enabling full ADSR envelope generation from any trigger source.
 
-### **The Innovation:**
+**The Innovation:**
 - **Internal gate generator:** Converts trigger inputs into gate signals (0-3.7 seconds adjustable)
 - **Retriggering capability:** Envelope can restart during active gate for complex rhythmic patterns
 - **LOOP mode:** Continuously cycles full ADSR rather than just Attack-Decay
 - **Flexible timing:** Gate length modulation via CV for dynamic envelope control
 - **Simple operation:** Works with any trigger source without requiring gate sequencers
 
-### **The Practical Benefits:**
+**The Practical Benefits:**
 - **Trigger compatibility:** Transforms trigger-only sequencers into full ADSR sources
 - **Flexible timing control:** Gate length adjustable from milliseconds to seconds
 - **Sophisticated patterns:** Retriggering enables complex rhythmic envelope behaviors
 - **System efficiency:** One module solves the trigger-to-ADSR problem across systems
 - **CV automation:** Gate length responds to external modulation for dynamic timing
 
-### **Perfect For:**
+**Perfect For:**
 - **Trigger-based systems:** Converting simple trigger patterns to envelope control
 - **Complex timing patterns:** Retriggering and variable gate length for rhythmic envelopes
 - **Modular sequencers:** Any sequencer lacking native gate generation capabilities
@@ -133,7 +133,7 @@ Most trigger-only sequencers can't generate full ADSR envelopes - they only outp
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
 ### **Patch 1: Basic - Internal Gate ADSR Generation**
 ```
@@ -306,7 +306,7 @@ Most trigger-only sequencers can't generate full ADSR envelopes - they only outp
 
 ## Common Mistakes & Pro Tips
 
-### **⚠️ Common Mistakes:**
+### **Common Mistakes:**
 
 **"The internal gate generator isn't doing anything - I'm not getting ADSR!"**
 - **Why:** The GATE ON switch must be enabled. Without it switched ON, the internal gate generator is disabled and the module only responds to external GATE input
@@ -343,7 +343,7 @@ Most trigger-only sequencers can't generate full ADSR envelopes - they only outp
 - **Solution:** (1) Verify S knob is set high enough (try 3-4 o'clock for full output), (2) check destination module's CV input level expectations, (3) use a multimeter to verify the actual output voltage (should be 0-10V), (4) compare to a known envelope generator at the same settings to verify behavior
 - **Key understanding:** EG2 outputs standard 0-10V envelope - perception of "weak" usually indicates sustain setting or destination expectations
 
-### **🎵 Pro Tips:**
+### **Pro Tips:**
 
 **Gate Length Starting Point:**
 Begin with G. LENGTH at 12 o'clock (moderate) as your baseline. Adjust up for longer sustain time, down for percussive quick envelopes.
@@ -370,26 +370,26 @@ Always set G. LENGTH first, then patch the module, then test. If you change G. L
 • **Cre8audio Function Junction:** CV processing for envelope parameter scaling, offsetting, and complex multi-source envelope control
 • **Cross-System Integration:** EG2 serves as envelope brain transforming sophisticated modular CV generation into dynamic envelope control
 
-### **Perfect Partners for Beginners:**
+**Perfect Partners for Beginners:**
 • **VCA modules:** Intellijel Quad VCA, Mutable Veils for amplitude control applications
 • **Filter modules:** Any filter with CV input benefits from EG2's envelope control
 • **Oscillator pitch:** Plaits, Rings, or any oscillator for envelope-controlled pitch sweeps
 • **Trigger sources:** Simple clock dividers, basic sequencers, or manual trigger buttons
 • **Multiple outputs:** Use EG2 output for simultaneous control of multiple parameters
 
-### **Advanced Envelope Integration:**
+**Advanced Envelope Integration:**
 • **Multiple envelope generators:** Quadrax, Maths, or other envelope generators for coordinated multi-stage envelope processing
 • **Complex VCAs:** Optomix, LxD for more sophisticated amplitude control applications
 • **Waveshaping:** Fold processors benefit from envelope-controlled waveshaping intensity
 • **Effects processing:** Envelope control over effect parameters creates dynamic processing
 
-### **Essential Envelope Partners:**
+**Essential Envelope Partners:**
 • **Precision timing:** Modules requiring exact envelope timing benefit from EG2's internal gate precision
 • **Retriggering applications:** Drum modules, percussion generators that need complex retriggering patterns
 • **Gate length sensitive:** Modules that respond differently to various gate lengths
 • **CV processing:** Attenuators, offsets, and mixers for envelope signal conditioning
 
-### **Advanced System Integration:**
+**Advanced System Integration:**
 • **Performance systems:** Live envelope control through CV sources and manual adjustment
 • **Generative systems:** Self-evolving envelope behavior using chaos and learning circuits
 • **Hybrid envelope processing:** Complex coordination between multiple envelope sources
@@ -399,7 +399,7 @@ Always set G. LENGTH first, then patch the module, then test. If you change G. L
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
+**Recommended Study Progression:**
 1. **Start with EG2 fundamentals:** Master internal gate operation and basic ADSR envelope generation
 2. **Add retriggering techniques:** Explore complex trigger patterns and envelope restart behavior
 3. **Include CV gate length control:** Use external CV sources for dynamic envelope timing
@@ -407,26 +407,26 @@ Always set G. LENGTH first, then patch the module, then test. If you change G. L
 5. **Include adaptive patterns:** Add learning circuits for evolving envelope characteristics
 6. **Complete the envelope ecosystem:** Integrate multiple envelope sources for coordinated envelope processing
 
-### **Cross-Module Learning Opportunities:**
+**Cross-Module Learning Opportunities:**
 - **EG2 + Ochd:** Natural envelope timing automation through organic LFO gate length control
 - **EG2 + Wogglebug:** Chaotic envelope timing creating unpredictable but musical envelope behavior
 - **EG2 + Marbles:** Adaptive envelope patterns that evolve with musical context and trigger input
 - **EG2 + Hermod+:** Sequenced envelope control with precise timing and pattern programming
 - **All Advanced Modules + EG2:** Complete ecosystem enabling sophisticated envelope control within complex modular systems
 
-### **Skill Development Milestones:**
+**Skill Development Milestones:**
 - **Beginner:** Internal gate operation, basic ADSR envelope shaping, loop vs single modes
 - **Intermediate:** Retriggering techniques, CV modulation of envelope parameters, complex timing control
 - **Advanced:** Multi-source envelope control, chaos integration, adaptive envelope behavior
 - **Expert:** Complete envelope ecosystem design with multi-module coordination and sophisticated envelope brain operation
 
-### **Advanced Envelope Concepts:**
+**Advanced Envelope Concepts:**
 - **Internal Gate Theory:** Understanding how trigger-to-gate conversion enables full ADSR operation
 - **Retriggering Behavior:** How envelope restart during active periods creates complex rhythmic patterns
 - **CV Envelope Control:** Dynamic modulation of envelope timing for evolving musical textures
 - **Envelope Coordination:** Managing multiple envelope sources within integrated modular systems
 
-### **Performance Applications:**
+**Performance Applications:**
 - **Live Envelope Control:** Real-time envelope shaping during performance through CV automation
 - **Generative Envelope Systems:** Self-evolving envelope behavior using chaos and learning circuits
 - **Complex Envelope Processing:** Sophisticated envelope coordination for advanced musical applications
@@ -434,4 +434,3 @@ Always set G. LENGTH first, then patch the module, then test. If you change G. L
 
 ---
 
-**Bottom Line:** EG2 isn't just an envelope generator - it's an **envelope brain** that transforms simple triggers into sophisticated ADSR control through internal gate generation, retriggering capability, and CV-controlled timing. Every patch teaches something new about how envelope generation really works in modular systems. As the **envelope coordination brain of advanced modular ecosystems**, it transforms organic modulation, controlled chaos, and pattern learning into unified envelope control that responds dynamically to complex modular environments.

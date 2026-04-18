@@ -10,7 +10,7 @@ use_cases: [audio mixing and routing, CV-controlled voice mixing, signal summing
 hp: 10
 ---
 
-# After Later Audio Cloaks - Guide
+# After Later Audio Cloaks
 
 **The Quad VCA and Voltage-Controlled Mixer**
 
@@ -24,13 +24,16 @@ hp: 10
 **What is Cloaks?** Four voltage-controlled amplifiers in 10HP. Each channel takes an audio or CV signal, a control voltage, and produces an amplified output. The channels cascade left to right; plug nothing into outputs 1, 2, and 3 and everything sums to output 4 automatically. Cloaks is a faithful reproduction of the Mutable Instruments Veils 2020 by After Later Audio, built to identical specifications.
 
 **Key Specifications:**
-- **Width:** 10 HP
-- **Depth:** 25 mm
-- **Power:** 50 mA @ +12V / 50 mA @ -12V / 0 mA @ +5V
-- **Inputs:** DC-coupled, accepts audio and CV
-- **Input impedance:** 100k all inputs
-- **Gain scale:** +5V CV = gain of 1 (0dB) in both linear and exponential mode
-- **Offset range:** 0V to +8V positive offset
+
+| Spec | Value |
+|------|-------|
+| Width | 10HP |
+| Depth | 25mm |
+| Power | +50mA / -50mA |
+| Inputs | DC-coupled, accepts audio and CV |
+| Input impedance | 100k all inputs |
+| Gain scale | +5V CV = gain of 1 (0dB) in both linear and exponential mode |
+| Offset range | 0V to +8V positive offset |
 
 ### Your First VCA Patch
 1. **Patch a sound source** into IN on channel 1 (signal input jack)
