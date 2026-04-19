@@ -16,7 +16,7 @@ historical_context: true
 
 **The Controlled Uncertainty Source**
 
-![Make Noise Wogglebug](https://github.com/Shadoe-42/music/raw/main/modular/images/make_noise/wogglebug/front_panel.jpg)
+![Make Noise Wogglebug](https://github.com/Shadoe-42/music/raw/main/modular/images/make_noise/wogglebug/front_panel.jpg)  
 *Make Noise Wogglebug: Speed/Chaos, Ego/Id, Woggle controls, Disturb button, three CV outputs, three audio outputs*
 
 ---
