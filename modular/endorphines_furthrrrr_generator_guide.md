@@ -18,6 +18,8 @@ cv: full
 
 # Endorphin.es Furthrrrr Generator
 
+![Endorphin.es Furthrrrr Generator](https://github.com/Shadoe-42/music/raw/main/modular/images/endorphines_furthrrrr_generator/front_panel.jpg)
+
 *Dual analog complex oscillator with through-zero FM capability, three-dimensional waveshaping, and a unified Mood Index modulation bus, built on West Coast synthesis principles.*
 
 ---

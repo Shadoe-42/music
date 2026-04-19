@@ -257,6 +257,19 @@ No "Phase 2" terminology anywhere. Use "advanced" where a stage descriptor is ne
 
 ---
 
+## Front Panel Image
+
+Every guide includes a front panel image immediately after the title and tagline, before the Historical Context section.
+
+**Format:**
+```
+![Manufacturer Module Name](https://github.com/Shadoe-42/music/raw/main/modular/images/[module_slug]/front_panel.jpg)
+```
+
+The module slug follows the same naming convention as the guide filename: lowercase, underscores, manufacturer name first. For example, `endorphines_furthrrrr_generator` for the Endorphin.es Furthrrrr Generator guide.
+
+---
+
 ## Compliance
 
 Run `python3 tooling/audit_guides.py` from the Music directory to verify YAML compliance. All controlled vocabulary fields must use only the defined terms from `yaml_spec_v2.md`.
