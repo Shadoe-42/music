@@ -9,11 +9,11 @@ Generated: 2026-04-19
 | Metric | Count |
 |--------|-------|
 | Guides scanned | 69 |
-| Guides with issues | 10 |
-| Guides clean | 59 |
-| Total issues | 12 |
+| Guides with issues | 9 |
+| Guides clean | 60 |
+| Total issues | 11 |
 | ❌ Errors (fix now) | 0 |
-| ⚠️  Warnings (fix when touching) | 12 |
+| ⚠️  Warnings (fix when touching) | 11 |
 | 📌 Deferred (tracked, low priority) | 0 |
 
 ---
@@ -35,7 +35,6 @@ Generated: 2026-04-19
 | `noise_engineering_numeric_repetitor_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `noise_engineering_ruina_versio_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `qubit_bloom_v1_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-| `rossum_electro_music_mob_of_emus_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `squarp_hermod_plus_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `turing_machine_ecosystem_guide.md` | — | ⚠️  warning | Missing front panel image link |
 | `vpme_qd_qex_drum_workstation_guide.md` | — | ⚠️  warning | Missing front panel image link |
@@ -58,9 +57,6 @@ Generated: 2026-04-19
 **`qubit_bloom_v1_guide.md`** — 1 warning
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
-**`rossum_electro_music_mob_of_emus_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
 **`squarp_hermod_plus_guide.md`** — 1 warning
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
@@ -80,7 +76,7 @@ Generated: 2026-04-19
 
 ---
 
-## Clean Guides (59)
+## Clean Guides (60)
 
 No issues detected:
 
@@ -137,6 +133,7 @@ No issues detected:
 - `noise_engineering_loquelic_iteritas_guide.md`
 - `patching_panda_moon_phase_guide.md`
 - `patching_panda_punch_v3_guide.md`
+- `rossum_electro_music_mob_of_emus_guide.md`
 - `soma_lyra8_fx_guide.md`
 - `tiptop_audio_forbidden_planet_guide.md`
 - `tiptop_audio_miso_guide.md`
