@@ -5,8 +5,8 @@ primary_role: SOURCE
 secondary_roles: [SHAPER]
 historical_context: true
 form_factor: eurorack
-functions: [vco, waveshaper]
-behavior_tags: [harmonic, metallic, aggressive, evolving, inharmonic, complex, west-coast]
+functions: [complex-oscillator, wavefolder]
+behavior_tags: [harmonic, metallic, harsh, evolving, inharmonic, nonlinear, self-modulating]
 use_cases: [west coast synthesis, FM sound design, harmonic exploration, complex timbres]
 hp: 30
 memory: none
