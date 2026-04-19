@@ -285,42 +285,74 @@ This represents the **ultimate advanced sequencing integration** - where organic
 
 ---
 
-## Beginner "Gotchas"
+## Common Mistakes
 
-### **Mode Confusion - The Four-Button System**
-- **Only one mode active at a time** - check which mode button is lit
-- **STEP mode = programming**, **TRACKS mode = performance**, **EFFECTS mode = sound design**, **SEQ mode = arrangement**
-- **Different mode, different encoder function** - same knob does different things
-- **Start in STEP mode** for programming, switch to TRACKS for performance
-- **Mode buttons are your navigation** - learn to switch fluidly between them
+### "I can see the step I want to edit but turning the encoder is not doing anything"
 
-### **Track vs Pattern vs Sequence Hierarchy**
-- **Track:** One voice/instrument (like Track 1 = bass line)
-- **Pattern:** Variation of a track (Track 1 can have 16 different bass patterns)
-- **Sequence:** Collection of all track patterns playing together (like verse/chorus)
-- **Project:** Complete song with multiple sequences
-- **Think:** Track = instrument, Pattern = verse/chorus variation, Sequence = song section
+Hermod+ has four operating modes, each controlled by dedicated buttons: STEP, EFFECTS, TRACKS, and SEQ. The encoder does a different thing in each mode. In STEP mode, the encoder adjusts the pitch of the selected step. In TRACKS mode, it adjusts track-level parameters. In EFFECTS mode, it adjusts the focused effect's parameters. In SEQ mode, it navigates and manages sequence chains. If you are turning the encoder and nothing is responding as expected, you are in the wrong mode for the operation you are trying to perform.
 
-### **CV/Gate Track Configuration**
-- **Default:** Tracks 1-8 output CV/Gate for Eurorack
-- **Can be reconfigured:** Add velocity, aftertouch, or make polyphonic
-- **Voice grouping:** Multiple CV outputs can be combined for poly
-- **MIDI tracks (9-16)** don't have CV outputs - they're MIDI only
-- **Check track type** before patching - CV tracks have physical outputs
+Confirm the lit mode button before adjusting anything. Programming notes requires STEP mode. The mode buttons are the primary navigation system; fluency with mode switching is the foundational skill for working efficiently with Hermod+.
 
-### **Recording vs Programming Confusion**
-- **Two ways to get notes in:** Live recording or step programming
-- **Recording:** Play live (keyboard/CV) while sequencer records
-- **Programming:** Use STEP mode to manually place notes
-- **Recording requires input source** - keyboard, CV, or MIDI controller
-- **Programming uses built-in editor** - no external controller needed
+### "I recorded a performance but the timing sounds shifted or off"
 
-### **Effects Apply Per Track**
-- **Each track has independent effects** - Track 1 ratchet doesn't affect Track 2
-- **Up to 8 effects per track** - can stack multiple effects
-- **Effects work on both CV and MIDI tracks** - but behave differently
-- **Effect order matters** - arpeggiator before ratchet = different result
-- **Start with one effect** - understand each before stacking
+Hermod+ records at 96 pulses per quarter note, which is high resolution, but the recording requires an accurate external clock. If your clock source has jitter, instability, or irregular pulse widths, the recorded timing will reflect that instability at high resolution. Clock issues that are inaudible during playback become visible and sometimes audible when examined in the step editor.
+
+Use a stable clock source: either from Hermod+ itself when it functions as clock master, or from a clock module with a clean output. If using a DAW or MIDI clock source, verify that the USB or MIDI connection is not introducing latency. Once a stable clock relationship is established, 96PPQ recording captures performances accurately.
+
+### "Track 9 does not have any CV outputs even though I programmed it"
+
+Hermod+ provides eight CV/Gate output pairs on tracks 1 through 8. Tracks 9 through 16 are MIDI tracks: they transmit data over the MIDI output and USB, and have no corresponding CV jacks on the module's physical outputs. Programming a melody on Track 9 and expecting to find a voltage at a physical output will produce nothing: the information exists and is transmitting, but only over MIDI.
+
+If you need more than eight CV/Gate tracks, the Squarp xp32 expander adds additional CV outputs. For hybrid Eurorack and MIDI setups, keep synthesis voices that need CV on tracks 1 through 8 and route MIDI instruments to tracks 9 through 16.
+
+### "I cannot figure out why there are two different sections called patterns and sequences"
+
+Hermod+ uses a three-level hierarchy for musical organization. A track is one voice or instrument. A pattern is one variation of what that voice plays, and each track stores up to 16 independent patterns. A sequence is a snapshot of which pattern is active on each track simultaneously: it represents a complete system state, like a verse or a chorus. Sequences can be chained together in up to 64 steps to define a complete song structure.
+
+The relationship that clarifies this: patterns are the raw material stored per track, and sequences are the director that chooses which patterns play at the same time across all tracks. When you switch sequences during a performance, every track jumps to the pattern assigned to that sequence simultaneously.
+
+### "I added a ratchet effect but now all my other tracks sound wrong"
+
+Effects in Hermod+ are per-track: each track has an independent effects chain of up to eight slots. An effect applied to Track 1 does not affect Track 2. The confusion arises when effects are added to a track and the interaction between multiple stacked effects on the same track produces unexpected results. Ratchet before an arpeggiator produces a different result than arpeggiator before ratchet, because the signal processed by the second effect is different depending on what the first did.
+
+Add one effect at a time and listen to the result before adding a second. Confirm which track is selected before entering the effects view: it is easy to add an effect to the wrong track when navigating quickly. The effects chain order within a single track is adjustable; if stacking multiple effects, experiment with the ordering to find the combination that produces the intended result.
+
+---
+
+## Advanced Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Hermod+ fundamentals:** Master all four modes and understand advanced sequencing coordination
+2. **Add organic sequence evolution:** Integrate DivKid Ochd for breathing sequence modulation and organic performance (see Ochd guide)
+3. **Include chaos sequence variation:** Use Make Noise Wogglebug for chaotic sequence enhancement and unpredictable performance (see Wogglebug guide)
+4. **Add pattern sequence control:** Apply Mutable Marbles for sophisticated algorithmic composition capabilities (see Marbles guide)
+5. **Include mathematical sequence precision:** Use 4ms RCD v2 for polyrhythmic timing coordination and mathematical arrangement (see RCD guide)
+6. **Complete the sequencing ecosystem:** Add Cre8audio Function Junction for processed sequence dynamics and performance control (see Function Junction guide)
+
+### **Cross-Module Learning Opportunities:**
+- **Hermod+ + Ochd:** Learn organic sequence evolution through natural breathing modulation and performance control
+- **Hermod+ + Wogglebug:** Master chaotic sequence variation through unpredictable pattern enhancement
+- **Hermod+ + Marbles:** Understand sophisticated algorithmic composition through pattern coordination
+- **Hermod+ + RCD:** Explore polyrhythmic sequence precision through mathematical timing arrangement
+- **All Phase 2 + Hermod+:** Build complete sequencing ecosystems where sophisticated pattern generation gains musical direction
+
+### **Skill Development Milestones:**
+- **Beginner:** Master individual modes and basic sequencing concepts
+- **Intermediate:** Understand multi-track coordination and complex arrangement techniques
+- **Advanced:** Create Phase 2 integration systems with sophisticated sequencing capabilities
+- **Expert:** Design complete musical ecosystems where sophisticated pattern generation gains comprehensive direction
+
+### **Advanced Sequencing Concepts:**
+- **Multi-Track Coordination:** Understand how 16 tracks coordinate different Phase 2 module types
+- **Phase 2 Sequence Control:** Use sophisticated pattern generation to control comprehensive musical arrangement
+- **Advanced Performance:** Live direction and arrangement of sophisticated electronic pattern generation systems
+- **Musical Direction Design:** Create compositions where sophisticated pattern generation serves comprehensive musical vision
+
+### **Performance Applications:**
+- **Live Performance Direction:** Real-time coordination and performance of sophisticated pattern generation systems
+- **Generative Composition Systems:** Foundation for self-evolving musical arrangements with advanced direction
+- **Educational Sequencing Tool:** Learn comprehensive arrangement through hands-on Phase 2 integration
+- **Creative Musical Direction:** Guide sophisticated pattern generation toward complete musical transcendence
 
 ---
 
@@ -368,40 +400,6 @@ This represents the **ultimate advanced sequencing integration** - where organic
 
 ---
 
-## Advanced Learning Path
-
-### **Recommended Study Progression:**
-1. **Start with Hermod+ fundamentals:** Master all four modes and understand advanced sequencing coordination
-2. **Add organic sequence evolution:** Integrate DivKid Ochd for breathing sequence modulation and organic performance (see Ochd guide)
-3. **Include chaos sequence variation:** Use Make Noise Wogglebug for chaotic sequence enhancement and unpredictable performance (see Wogglebug guide)
-4. **Add pattern sequence control:** Apply Mutable Marbles for sophisticated algorithmic composition capabilities (see Marbles guide)
-5. **Include mathematical sequence precision:** Use 4ms RCD v2 for polyrhythmic timing coordination and mathematical arrangement (see RCD guide)
-6. **Complete the sequencing ecosystem:** Add Cre8audio Function Junction for processed sequence dynamics and performance control (see Function Junction guide)
-
-### **Cross-Module Learning Opportunities:**
-- **Hermod+ + Ochd:** Learn organic sequence evolution through natural breathing modulation and performance control
-- **Hermod+ + Wogglebug:** Master chaotic sequence variation through unpredictable pattern enhancement
-- **Hermod+ + Marbles:** Understand sophisticated algorithmic composition through pattern coordination
-- **Hermod+ + RCD:** Explore polyrhythmic sequence precision through mathematical timing arrangement
-- **All Phase 2 + Hermod+:** Build complete sequencing ecosystems where sophisticated pattern generation gains musical direction
-
-### **Skill Development Milestones:**
-- **Beginner:** Master individual modes and basic sequencing concepts
-- **Intermediate:** Understand multi-track coordination and complex arrangement techniques
-- **Advanced:** Create Phase 2 integration systems with sophisticated sequencing capabilities
-- **Expert:** Design complete musical ecosystems where sophisticated pattern generation gains comprehensive direction
-
-### **Advanced Sequencing Concepts:**
-- **Multi-Track Coordination:** Understand how 16 tracks coordinate different Phase 2 module types
-- **Phase 2 Sequence Control:** Use sophisticated pattern generation to control comprehensive musical arrangement
-- **Advanced Performance:** Live direction and arrangement of sophisticated electronic pattern generation systems
-- **Musical Direction Design:** Create compositions where sophisticated pattern generation serves comprehensive musical vision
-
-### **Performance Applications:**
-- **Live Performance Direction:** Real-time coordination and performance of sophisticated pattern generation systems
-- **Generative Composition Systems:** Foundation for self-evolving musical arrangements with advanced direction
-- **Educational Sequencing Tool:** Learn comprehensive arrangement through hands-on Phase 2 integration
-- **Creative Musical Direction:** Guide sophisticated pattern generation toward complete musical transcendence
 
 ---
 

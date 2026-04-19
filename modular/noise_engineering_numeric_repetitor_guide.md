@@ -18,7 +18,6 @@ historical_context: false
 
 **The Mathematical Rhythm Generator**
 
-historical_context: false
 ---
 
 ## Quick Start: Get Your First Prime Rhythm in 5 Minutes
@@ -35,7 +34,6 @@ historical_context: false
 
 **Congratulations!** You've just created polyrhythmic patterns using mathematical principles!
 
-historical_context: false
 ---
 
 ## Essential Parameters (The Mathematical Controls)
@@ -86,7 +84,6 @@ historical_context: false
 - **Real-time control:** Change patterns and variations during performance
 - **Modulation friendly:** All parameters respond well to slow CV changes
 
-historical_context: false
 ---
 
 ## Why the Numeric Repetitor Excels
@@ -101,7 +98,6 @@ Most rhythm generators ask you to program patterns -- set which steps are active
 
 **X/Y switch doubles the available pattern vocabulary.** The X/Y switch toggles between two complete sets of patterns derived from the current PRIME setting. Each set has different arithmetic relationships applied. Adding this toggle to a live performance effectively gives two distinct groove settings accessible from a single switch press, with no parameter adjustment required.
 
-historical_context: false
 ---
 
 ## Beginner Patch Ideas
@@ -324,47 +320,77 @@ This represents **advanced mathematical consciousness in rhythm** - where organi
 **🧮 **Educational Tool:** Learn polyrhythms through mathematical relationships**
 **⏰ **Clock Processing:** Transform simple clocks into complex rhythmic patterns**
 
-historical_context: false
 ---
 
-## Beginner "Gotchas"
+## Common Mistakes
 
-### **It's Not a Traditional Step Sequencer**
-- **No step programming:** You can't manually program beats like TR-808
-- **Mathematical generation:** Patterns come from algorithms, not step entry
-- **32 preset patterns:** You choose from pre-calculated prime rhythms
-- **Variation through math:** Product outputs use multiplication, not manual editing
-- **Different mindset:** Think "pattern selection" not "beat programming"
+### "My drum patterns keep drifting out of time with the rest of my system"
 
-### **Requires External Clock**
-- **No internal clock:** Must have external beat source to function
-- **Clock dependent:** No clock input = no output
-- **Clock division/multiplication:** Works with any reasonable clock speed
-- **Sync important:** Use MEASURE input to stay locked with other modules
-- **Rising edge sensitive:** Timing comes from clock transitions
+Numeric Repetitor calculates gate patterns from the prime rhythms and outputs them relative to the incoming clock, but it has no awareness of where it stands in the larger rhythmic cycle unless you tell it. Without a signal on the MEASURE input, the module starts its pattern from wherever it powered on or last reset, which may not align with your bar structure. In a live set or a complex patch, this drift becomes audible as patterns that are rhythmically correct but metrically displaced.
 
-### **Product Knobs Are Time Offsets, Not Pattern Editors**
-- **Common confusion:** Product knobs don't select different patterns
-- **Time offset control:** They shift the mathematical variation in time
-- **Related to Prime:** All Products are variations of the selected Prime
-- **Subtle changes:** Small knob movements often more musical than large ones
-- **Interactive:** Product patterns change when you change Prime pattern
+Connect a reset pulse to the MEASURE input at the start of each measure or bar. Most clock modules and sequencers output a dedicated end-of-cycle or bar-start signal: patch that to MEASURE and Numeric Repetitor will lock its internal pattern counter to your system's metric grid.
 
-### **CV Input Behavior**
-- **7V range:** Full CV range needed to access all 16 patterns
-- **Stepping:** CV changes create jumps between patterns, not smooth transitions
-- **Quantized input:** CV gets converted to pattern numbers (no in-between)
-- **Modulation speed:** Slow CV changes more musical than fast ones
-- **Pattern jumping:** Fast CV can create rhythmic chaos (sometimes desired!)
+### "I turned the Product knob but the pattern barely changed"
 
-### **X/Y Switch Doubles Your Patterns**
-- **Two complete sets:** X and Y each have 16 different prime rhythms
-- **Different characters:** X and Y sets have different rhythmic feels
-- **Easy to forget:** Check which set you're using when pattern doesn't sound right
-- **No CV control:** Switch position must be changed manually
-- **Performance limitation:** Can't sequence between X and Y sets
+The PRODUCT knobs control time offset, not pattern selection. Each PRODUCT output is a mathematically related variation of the current PRIME pattern, and the knob shifts when that variation occurs relative to the prime, not which variation plays. Small knob movements produce subtle polyrhythmic displacement; extreme movements shift the product further out of phase with the prime. The result is always a variation of the same prime: you cannot use a PRODUCT knob to access one of the other 31 prime patterns.
 
-historical_context: false
+If you want a genuinely different pattern, change the PRIME knob or flip the X/Y switch. If you want variation on the current prime, the PRODUCT knobs are doing exactly what they are designed to do.
+
+### "The CV input is jumping unpredictably between completely different patterns"
+
+The PRIME CV input spans 0 to 7 volts to access all 16 patterns in the active bank. Because pattern selection is quantized (each pattern occupies a discrete voltage step), CV that changes faster than the ear can track produces rapid-fire pattern switching rather than smooth modulation. A 1Hz LFO swinging full range will cycle through multiple patterns per second.
+
+Use slow CV: a long-period LFO, a manually adjusted sequencer, or attenuated random voltage. The most musical results come from CV that selects a new pattern every few bars rather than every few beats.
+
+### "I explored everything in the first five minutes and it sounded repetitive"
+
+Numeric Repetitor contains 32 prime patterns: 16 on the X bank and 16 on the Y bank. A common mistake is staying in one bank. The X/Y switch changes the entire rhythmic character of the module: X and Y banks have different mathematical relationships and produce patterns that feel distinct from each other. This effectively doubles the available vocabulary and is a primary performance tool.
+
+Flip the X/Y switch while a pattern is running and listen to the difference. Then combine X-bank patterns with Y-bank patterns across different PRODUCT outputs by switching while noting the position you were in.
+
+### "The pattern sounds boring when I listen to only the Prime output"
+
+The Prime output alone is a single rhythmic pattern. The power of Numeric Repetitor is in the relationship between PRIME and multiple PRODUCT outputs heard simultaneously. Three Product outputs playing variations derived from the same prime create a polyrhythmic structure where the patterns are not independent: they share mathematical ancestry and therefore have natural resolution points.
+
+Patch all four outputs (PRIME plus PRODUCTS 1, 2, and 3) to different percussion voices or sound sources simultaneously. Adjust the PRODUCT knobs to establish timing offsets that produce the rhythmic density you want. The full polyrhythmic texture is the point of the module, not the individual patterns in isolation.
+
+---
+
+## Advanced Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Numeric fundamentals:** Master prime pattern selection, product variation control, and mathematical rhythm concepts
+2. **Add organic breathing:** Integrate DivKid Ochd for natural mathematical rhythm evolution (see Ochd guide)
+3. **Include controlled chaos:** Use Make Noise Wogglebug for chaotic mathematical rhythm processing (see Wogglebug guide)
+4. **Add AI intelligence:** Apply Mutable Marbles for learning modulation of mathematical rhythm parameters (see Marbles guide)
+5. **Include polyrhythmic division:** Use 4ms RCD v2 for complex mathematical timing relationships (see RCD guide)
+6. **Complete the ecosystem:** Add Cre8audio Function Junction for comprehensive mathematical modulation processing (see Function Junction guide)
+
+### **Cross-Module Learning Opportunities:**
+- **Numeric + Ochd:** Learn organic modulation of mathematical rhythm parameters for breathing algorithmic patterns
+- **Numeric + Wogglebug:** Master chaos-driven mathematical rhythm for controlled unpredictability in algorithmic systems
+- **Numeric + Marbles:** Understand AI-driven mathematical rhythm with learning polyrhythmic relationships
+- **Numeric + RCD:** Explore polyrhythmic mathematical timing relationships and complex algorithmic division
+- **All Advanced + Numeric:** Build complete mathematical ecosystems with multiple intelligence types processing algorithmic rhythms
+
+### **Skill Development Milestones:**
+- **Beginner:** Use individual prime patterns for basic mathematical rhythm generation
+- **Intermediate:** Master product variation control and CV modulation for complex mathematical relationships
+- **Advanced:** Create Advanced integration patches with organic/chaos/AI modulation of mathematical rhythm parameters
+- **Expert:** Design complete mathematical ecosystems where Numeric serves as rhythmic brain for multiple Advanced intelligence types
+
+### **Advanced Mathematical Concepts:**
+- **Prime Number Theory:** Understand how mathematical patterns create musical rhythms
+- **Binary Multiplication:** Master how product variations relate mathematically to prime patterns
+- **Algorithmic Rhythm:** Explore how mathematical computation creates complex polyrhythmic relationships
+- **System Integration:** Design patches where Numeric processes multiple intelligence types simultaneously
+
+### **Performance Applications:**
+- **Live Mathematical Control:** Real-time pattern selection and mathematical variation control
+- **Generative Mathematical Systems:** Foundation for self-evolving algorithmic rhythm systems
+- **Hybrid Intelligence:** Bridge between organic, chaos, AI, and mathematical rhythm processing
+- **Educational Tool:** Learn algorithmic composition and mathematical music theory concepts
+
 ---
 
 ## Next Steps
@@ -378,7 +404,6 @@ historical_context: false
 
 **Remember:** You don't need to understand the math - just listen and explore the relationships!
 
-historical_context: false
 ---
 
 ## Pairs Well With
@@ -440,50 +465,13 @@ historical_context: false
 - **Prime number theory:** Musical applications of mathematical concepts
 - **Algorithmic composition:** Learn non-traditional approaches to rhythm
 
-historical_context: false
 ---
 
-## Advanced Learning Path
 
-### **Recommended Study Progression:**
-1. **Start with Numeric fundamentals:** Master prime pattern selection, product variation control, and mathematical rhythm concepts
-2. **Add organic breathing:** Integrate DivKid Ochd for natural mathematical rhythm evolution (see Ochd guide)
-3. **Include controlled chaos:** Use Make Noise Wogglebug for chaotic mathematical rhythm processing (see Wogglebug guide)
-4. **Add AI intelligence:** Apply Mutable Marbles for learning modulation of mathematical rhythm parameters (see Marbles guide)
-5. **Include polyrhythmic division:** Use 4ms RCD v2 for complex mathematical timing relationships (see RCD guide)
-6. **Complete the ecosystem:** Add Cre8audio Function Junction for comprehensive mathematical modulation processing (see Function Junction guide)
-
-### **Cross-Module Learning Opportunities:**
-- **Numeric + Ochd:** Learn organic modulation of mathematical rhythm parameters for breathing algorithmic patterns
-- **Numeric + Wogglebug:** Master chaos-driven mathematical rhythm for controlled unpredictability in algorithmic systems
-- **Numeric + Marbles:** Understand AI-driven mathematical rhythm with learning polyrhythmic relationships
-- **Numeric + RCD:** Explore polyrhythmic mathematical timing relationships and complex algorithmic division
-- **All Advanced + Numeric:** Build complete mathematical ecosystems with multiple intelligence types processing algorithmic rhythms
-
-### **Skill Development Milestones:**
-- **Beginner:** Use individual prime patterns for basic mathematical rhythm generation
-- **Intermediate:** Master product variation control and CV modulation for complex mathematical relationships
-- **Advanced:** Create Advanced integration patches with organic/chaos/AI modulation of mathematical rhythm parameters
-- **Expert:** Design complete mathematical ecosystems where Numeric serves as rhythmic brain for multiple Advanced intelligence types
-
-### **Advanced Mathematical Concepts:**
-- **Prime Number Theory:** Understand how mathematical patterns create musical rhythms
-- **Binary Multiplication:** Master how product variations relate mathematically to prime patterns
-- **Algorithmic Rhythm:** Explore how mathematical computation creates complex polyrhythmic relationships
-- **System Integration:** Design patches where Numeric processes multiple intelligence types simultaneously
-
-### **Performance Applications:**
-- **Live Mathematical Control:** Real-time pattern selection and mathematical variation control
-- **Generative Mathematical Systems:** Foundation for self-evolving algorithmic rhythm systems
-- **Hybrid Intelligence:** Bridge between organic, chaos, AI, and mathematical rhythm processing
-- **Educational Tool:** Learn algorithmic composition and mathematical music theory concepts
-
-historical_context: false
 ---
 
 **Bottom Line:** Numeric Repetitor isn't just a rhythm generator - it's a **mathematical rhythm processor** that transforms simple modulation into complex polyrhythmic relationships through prime number algorithms. Every patch teaches you something new about how algorithmic rhythm generation really works. As the **rhythmic brain of Advanced ecosystems**, it transforms organic breathing, controlled chaos, and artificial intelligence into unified mathematical polyrhythmic evolution.
 
-historical_context: false
 ---
 
 *Numeric Repetitor makes complex polyrhythms accessible through mathematical elegance - trust your ears over your understanding of the math!*

@@ -363,42 +363,75 @@ Winterbloom operated for five years. Flowers has been explicit that it was never
 
 ---
 
-## Beginner "Gotchas"
+## Common Mistakes
 
-### **Mode Button Behavior**
-- **Tap to change modes:** Quick press cycles through the three modes
-- **Hold for tweak overlay:** Long press accesses additional parameters
-- **LED feedback:** Color shows mode, animations show state changes
-- **Mode affects everything:** Each mode completely changes how the oscillators interact
-- **Don't forget tweak mode:** Hold MODE + turn knobs for fine adjustments
+### "I cannot hear any difference when I turn the waveform mix knobs"
 
-### **Waveform Mix Controls Are Tiny**
-- **Small trimpots:** Individual waveform levels use small knobs, not large ones
-- **Easy to miss:** Beginners often overlook these crucial mixing controls
-- **Full CCW = off:** Each waveform mix starts at zero
-- **Combined output:** Mixed output is sum of all three waveforms
-- **Start simple:** Begin with just RAMP mix up, add PULSE and SUB gradually
+Castor & Pollux II has two types of knobs: large performance knobs for pitch and crossfade, and small trimpot-style knobs for waveform mixing. The waveform mix knobs, which set the individual levels of RAMP, PULSE, and SUB for each oscillator, are small and physically easy to overlook. Each waveform mix starts at zero: if no waveform mix is turned up, the oscillator produces no output. A freshly patched Castor & Pollux with no waveform levels set will be completely silent despite working perfectly.
 
-### **Expander Separation (Version II)**
-- **Main module simplified:** Individual waveform outputs moved to separate expander
-- **Expander included:** 2HP module comes with Castor & Pollux II
-- **Ribbon cable connection:** Small cable connects main module to expander
-- **Optional use:** You don't need the expander for basic operation
-- **V1 vs V2:** Version I had all outputs on main panel, Version II uses expander
+Turn up at least the RAMP mix knob on Castor before checking anything else. The small trimpots are labeled on the panel; once located, one or two careful turns will confirm they are working. After that, add PULSE and SUB incrementally to build the desired timbre.
 
-### **Web Editor Necessity**
-- **Advanced features require web editor:** Some functions only accessible via browser
-- **USB cable needed:** Micro USB connection to computer required
-- **No mobile app:** Browser-based editor works on computers, not phones
-- **Calibration important:** Factory calibration may need adjustment for your system
-- **Open source advantage:** Community contributions add features over time
+### "I held down the MODE button and now things are behaving differently than I expected"
 
-### **Non-Linear Pitch Response**
-- **Virtual notch:** Pitch knobs are less sensitive in middle range
-- **Helps tuning:** Easier to hit musical intervals like octaves and fifths
-- **Can confuse:** Knob sensitivity changes across range
-- **Follow mode only:** Non-linear response only when tracking CV input
-- **Configurable:** Can be adjusted via web editor if desired
+The MODE button has two distinct behaviors depending on how you press it. A quick tap cycles through the three main modes: Chorus (blue LED), LFO FM (green LED), and Hard Sync (pink LED). A long press activates the tweak overlay: a set of deeper parameters within the current mode, accessed by holding MODE while turning a knob. Accidental long presses change parameters that are not visible on the panel without the web editor, which can produce unexpected tuning or behavior changes that persist after you release the button.
+
+If the module is behaving unexpectedly after a MODE press, open the web editor to check whether any tweak parameters were accidentally adjusted. For everyday operation, practice a deliberate quick tap rather than pressing and holding.
+
+### "The oscillator is not tracking pitch accurately across the keyboard range"
+
+Castor & Pollux II uses DCO technology with digital pitch control, but factory calibration may not be perfectly matched to a given system's voltage reference. Pitch tracking accuracy across multiple octaves depends on the calibration state of the module. An uncalibrated or slightly drifted module will track well in a narrow range around the calibration point and become increasingly inaccurate toward the extremes of the keyboard range.
+
+Connect the module to a computer via micro-USB and open the web editor. Run the calibration procedure using a reference pitch from a tuner or the web editor's own calibration mode. Calibration takes approximately five minutes and significantly improves tracking accuracy across the full range. This is a normal part of setting up any precision oscillator, not a sign of hardware issues.
+
+### "Hard Sync mode sounds like nothing is syncing"
+
+Hard Sync mode requires Castor and Pollux to have a pitch relationship where the sync effect is audible. If both oscillators are tuned to the same pitch, sync produces minimal audible effect because the cycle boundaries are already aligned. The sync sound (the classic metallic overtone series) emerges when Pollux is tuned to a higher frequency than Castor: Castor's cycle resets Pollux mid-waveform, producing harmonic content determined by the interval between them.
+
+In Hard Sync mode, tune Pollux up relative to Castor. The most immediate approach is to use the tweak overlay (hold MODE in Hard Sync mode) to fine-tune Pollux's pitch offset, or apply CV to the Pollux PITCH CV input while leaving Castor's pitch stable. The interval between the oscillators directly determines the character of the sync: small intervals produce subtle tonal shifts while large intervals produce the aggressive, classic sync sound.
+
+### "The chorus effect is subtle but I expected something dramatic"
+
+Chorus mode applies the built-in chorus to Pollux and then blends Pollux with Castor through the CROSSFADE output. The amount of chorus character in the final output depends on how much Pollux is present in the blend. With CROSSFADE fully counterclockwise (only Castor audible), the chorus has no effect on the output because Pollux is not present. With CROSSFADE at center, the chorus character is at half strength; with CROSSFADE fully clockwise, only the chorused Pollux is present.
+
+Rotate CROSSFADE toward the center or further clockwise to bring in the chorused Pollux signal. Additionally, detuning Pollux slightly before engaging Chorus mode adds beating between the two oscillators that interacts with the chorus sweep, producing the thicker, more movement-rich character associated with the original Juno-106.
+
+---
+
+## Advanced Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Castor & Pollux fundamentals:** Master vintage DCO synthesis, web editor, and mode switching
+2. **Add organic vintage breathing:** Integrate DivKid Ochd for natural Juno character evolution (see Ochd guide)
+3. **Include chaotic vintage textures:** Use Make Noise Wogglebug for controlled uncertainty in vintage synthesis (see Wogglebug guide)
+4. **Add algorithmic vintage intelligence:** Apply Mutable Marbles for sophisticated pattern-based vintage control (see Marbles guide)
+5. **Include polyrhythmic vintage timing:** Use 4ms RCD v2 for mathematical vintage character switching (see RCD guide)
+6. **Complete the vintage ecosystem:** Add Cre8audio Function Junction for processed vintage modulation (see Function Junction guide)
+
+### **Cross-Module Learning Opportunities:**
+- **Castor & Pollux + Ochd:** Learn organic vintage evolution through breathing Juno parameters
+- **Castor & Pollux + Wogglebug:** Master chaotic vintage textures with controlled uncertainty
+- **Castor & Pollux + Marbles:** Understand sophisticated algorithmic control of vintage synthesis
+- **Castor & Pollux + RCD:** Explore polyrhythmic vintage character switching with mathematical precision
+- **All Phase 2 + Castor & Pollux:** Build complete vintage ecosystems under intelligent guidance
+
+### **Skill Development Milestones:**
+- **Beginner:** Master basic Juno synthesis, web editor, and mode switching
+- **Intermediate:** Understand multi-mode vintage systems and CV modulation
+- **Advanced:** Create Phase 2 integration patches with sophisticated vintage processing
+- **Expert:** Design vintage ecosystems where you guide intelligent vintage systems
+
+### **Advanced Vintage Concepts:**
+- **Vintage Character Preservation:** Understand how authentic DCO behavior creates musical character
+- **Multi-Parameter Vintage Modulation:** Use multiple intelligence types to control different vintage aspects
+- **Organic Vintage Control:** Apply natural breathing to vintage parameter evolution
+- **System-Level Vintage Design:** Create patches where multiple modules enhance vintage character together
+
+### **Performance Applications:**
+- **Live Vintage Performance:** Real-time vintage character manipulation for live vintage expression
+- **Generative Vintage Systems:** Foundation for self-evolving vintage compositions
+- **Hybrid Vintage Processing:** Bridge between organic, chaotic, algorithmic, and mathematical vintage control
+- **Creative Vintage Direction:** Guide sophisticated systems toward vintage musical expression
+
 
 ---
 
@@ -445,41 +478,6 @@ Winterbloom operated for five years. Flowers has been explicit that it was never
 - **Web Editor Integration:** Deep customization for personalized vintage character
 
 ---
-
-## Advanced Learning Path
-
-### **Recommended Study Progression:**
-1. **Start with Castor & Pollux fundamentals:** Master vintage DCO synthesis, web editor, and mode switching
-2. **Add organic vintage breathing:** Integrate DivKid Ochd for natural Juno character evolution (see Ochd guide)
-3. **Include chaotic vintage textures:** Use Make Noise Wogglebug for controlled uncertainty in vintage synthesis (see Wogglebug guide)
-4. **Add algorithmic vintage intelligence:** Apply Mutable Marbles for sophisticated pattern-based vintage control (see Marbles guide)
-5. **Include polyrhythmic vintage timing:** Use 4ms RCD v2 for mathematical vintage character switching (see RCD guide)
-6. **Complete the vintage ecosystem:** Add Cre8audio Function Junction for processed vintage modulation (see Function Junction guide)
-
-### **Cross-Module Learning Opportunities:**
-- **Castor & Pollux + Ochd:** Learn organic vintage evolution through breathing Juno parameters
-- **Castor & Pollux + Wogglebug:** Master chaotic vintage textures with controlled uncertainty
-- **Castor & Pollux + Marbles:** Understand sophisticated algorithmic control of vintage synthesis
-- **Castor & Pollux + RCD:** Explore polyrhythmic vintage character switching with mathematical precision
-- **All Phase 2 + Castor & Pollux:** Build complete vintage ecosystems under intelligent guidance
-
-### **Skill Development Milestones:**
-- **Beginner:** Master basic Juno synthesis, web editor, and mode switching
-- **Intermediate:** Understand multi-mode vintage systems and CV modulation
-- **Advanced:** Create Phase 2 integration patches with sophisticated vintage processing
-- **Expert:** Design vintage ecosystems where you guide intelligent vintage systems
-
-### **Advanced Vintage Concepts:**
-- **Vintage Character Preservation:** Understand how authentic DCO behavior creates musical character
-- **Multi-Parameter Vintage Modulation:** Use multiple intelligence types to control different vintage aspects
-- **Organic Vintage Control:** Apply natural breathing to vintage parameter evolution
-- **System-Level Vintage Design:** Create patches where multiple modules enhance vintage character together
-
-### **Performance Applications:**
-- **Live Vintage Performance:** Real-time vintage character manipulation for live vintage expression
-- **Generative Vintage Systems:** Foundation for self-evolving vintage compositions
-- **Hybrid Vintage Processing:** Bridge between organic, chaotic, algorithmic, and mathematical vintage control
-- **Creative Vintage Direction:** Guide sophisticated systems toward vintage musical expression
 
 
 ---

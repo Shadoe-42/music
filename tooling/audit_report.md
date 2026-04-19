@@ -9,66 +9,24 @@ Generated: 2026-04-19
 | Metric | Count |
 |--------|-------|
 | Guides scanned | 69 |
-| Guides with issues | 8 |
-| Guides clean | 61 |
-| Total issues | 8 |
+| Guides with issues | 0 |
+| Guides clean | 69 |
+| Total issues | 0 |
 | ❌ Errors (fix now) | 0 |
-| ⚠️  Warnings (fix when touching) | 8 |
+| ⚠️  Warnings (fix when touching) | 0 |
 | 📌 Deferred (tracked, low priority) | 0 |
 
 ---
 
 ## Issues by Category
 
-### YAML Frontmatter
-
-| File | Line | Severity | Issue |
-|------|------|----------|-------|
-| `cre8audio_chipz_cellz_niftycase_bundle_guide.md` | — | ⚠️  warning | Missing `hp` field |
-| `turing_machine_ecosystem_guide.md` | — | ⚠️  warning | Missing `hp` field |
-| `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | — | ⚠️  warning | Missing `hp` field |
-
-### Missing or Misplaced Sections
-
-| File | Line | Severity | Issue |
-|------|------|----------|-------|
-| `noise_engineering_numeric_repetitor_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-| `noise_engineering_ruina_versio_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-| `qubit_bloom_v1_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-| `squarp_hermod_plus_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-| `winterbloom_castor_pollux_ii_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-
 ---
 
 ## Per-Guide Detail
 
-**`cre8audio_chipz_cellz_niftycase_bundle_guide.md`** — 1 warning
-  - ⚠️ `yaml_hp` — Missing `hp` field
-
-**`noise_engineering_numeric_repetitor_guide.md`** — 1 warning
-  - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
-
-**`noise_engineering_ruina_versio_guide.md`** — 1 warning
-  - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
-
-**`qubit_bloom_v1_guide.md`** — 1 warning
-  - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
-
-**`squarp_hermod_plus_guide.md`** — 1 warning
-  - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
-
-**`turing_machine_ecosystem_guide.md`** — 1 warning
-  - ⚠️ `yaml_hp` — Missing `hp` field
-
-**`vpme_qd_qex_euclidean_circles_ecosystem_guide.md`** — 1 warning
-  - ⚠️ `yaml_hp` — Missing `hp` field
-
-**`winterbloom_castor_pollux_ii_guide.md`** — 1 warning
-  - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
-
 ---
 
-## Clean Guides (61)
+## Clean Guides (69)
 
 No issues detected:
 
@@ -87,6 +45,7 @@ No issues detected:
 - `blue_lantern_cmos_party_guide.md`
 - `blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md`
 - `cre8audio_cellz_guide.md`
+- `cre8audio_chipz_cellz_niftycase_bundle_guide.md`
 - `cre8audio_chipz_guide.md`
 - `cre8audio_function_junction_guide.md`
 - `divkid_ochd_and_expander_guide.md`
@@ -123,13 +82,20 @@ No issues detected:
 - `mutable_plaits_guide.md`
 - `mutable_rings_guide.md`
 - `noise_engineering_loquelic_iteritas_guide.md`
+- `noise_engineering_numeric_repetitor_guide.md`
+- `noise_engineering_ruina_versio_guide.md`
 - `patching_panda_moon_phase_guide.md`
 - `patching_panda_punch_v3_guide.md`
+- `qubit_bloom_v1_guide.md`
 - `rossum_electro_music_mob_of_emus_guide.md`
 - `soma_lyra8_fx_guide.md`
+- `squarp_hermod_plus_guide.md`
 - `tiptop_audio_forbidden_planet_guide.md`
 - `tiptop_audio_miso_guide.md`
+- `turing_machine_ecosystem_guide.md`
 - `vostok_instruments_ceres_guide.md`
 - `vpme_qd_qex_drum_workstation_guide.md`
+- `vpme_qd_qex_euclidean_circles_ecosystem_guide.md`
+- `winterbloom_castor_pollux_ii_guide.md`
 - `xaoc_devices_belgrad_guide.md`
 - `xaoc_devices_zadar_nin_guide.md`

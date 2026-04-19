@@ -8,6 +8,7 @@ functions: [sequencer, random-source]
 behavior_tags: [stochastic, evolving, generative, chaotic, performance-oriented]
 use_cases: [generative melodic sequence, stochastic modulation, self-evolving patch element, probability-based variation]
 transport: receive
+hp: 16
 ---
 
 # Music Thing Modular Turing Machine V2 Ecosystem

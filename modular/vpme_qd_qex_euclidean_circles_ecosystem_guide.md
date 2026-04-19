@@ -5,6 +5,7 @@ primary_role: CONTROLLER
 secondary_roles: [SOURCE]
 form_factor: eurorack
 functions: [euclidean-generator, clock-divider]
+hp: 16
 behavior_tags: [stable, percussive, generative, linear]
 use_cases: [euclidean rhythm source, polyrhythmic pattern generator, rhythmic gate patterns]
 ---

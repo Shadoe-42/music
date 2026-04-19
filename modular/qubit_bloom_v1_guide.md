@@ -334,40 +334,74 @@ This represents **complete generative fractal mastery** - where mathematical fun
 
 ---
 
-## Beginner "Gotchas"
+## Common Mistakes
 
-### **Channel Selection Confusion**
-- **Two independent channels** with separate sequences and controls
-- **Press CHANNEL button** to switch between Channel A and Channel B
-- **All encoders affect the selected channel** - check which LED is lit!
-- **Each channel remembers its own:** length, notes, gates, branch/path positions
-- **Pro tip:** Start with just Channel A until you understand the concept
+### "I changed the BRANCH knob and everything paused for a second"
 
-### **Branch vs Path Misunderstanding**
-- **BRANCH** creates the variations (different versions of your sequence)
-- **PATH** determines how you navigate through the variations
-- **Same branch, different path** = different way through the same variation set
-- **Different branch, same path** = completely different variations
-- **Think of it:** Branch = which tree you're in, Path = which route you take
+Bloom uses a fractal tree algorithm to generate sequence variations. When you move the BRANCH knob, the module recalculates the entire tree: all potential variations are computed before playback continues. This calculation takes a brief but audible moment, particularly with longer sequences or higher complexity settings. The pause and LED flicker are not a malfunction; they are the module doing the mathematical work that makes the fractal approach possible.
 
-### **Fractal Generation is CPU Intensive**
-- **Turning BRANCH knob** regenerates entire fractal tree - expect brief pauses
-- **LEDs may flicker** during generation - this is normal
-- **Complex sequences take longer** to generate than simple ones
-- **Be patient** - the algorithm is doing complex mathematical work
+If this pause is disruptive in a performance context, treat BRANCH changes as compositional choices rather than real-time expressive controls. For live variation, assign CV to the BRANCH input and automate it: slow CV changes cause the tree to recalculate gradually rather than jumping to a distant branch position in one movement. Alternatively, use PATH for variation while leaving BRANCH stable; PATH changes how playback traverses the existing tree without triggering a full recalculation.
 
-### **Pattern Save/Load Workflow**
-- **Must hold SHIFT** for all pattern operations
-- **SHIFT + turn encoder** = select pattern slot
-- **SHIFT + click** = load (instant)
-- **SHIFT + hold 3 seconds** = save (wait for confirmation)
-- **Easy to accidentally load** when you meant to save - be deliberate!
+### "My branches wander too far from the original sequence"
 
-### **Scale Quantization Behavior**
-- **Scales apply to note entry** and mutation, not existing notes
-- **Changing scale doesn't transpose** existing sequences
-- **Unquantized mode** allows free voltage control
-- **Limited scale selection** in V1 - mostly standard Western scales
+BRANCHES controls how far from the trunk the playback position reaches: high values access distant branches that share less musical relationship with the seed. A common pattern is to program a sequence, turn BRANCHES toward maximum, and find the resulting variations unrecognizable. The fractal algorithm's distant branches are related by mathematics but may not be obviously related by ear.
+
+Keep BRANCHES in the lower portion of its range until you understand the specific seed sequence you have programmed. Values in the first third of the range produce variations that are clearly recognizable as relatives of the trunk. Increase BRANCHES gradually from there and identify where the sweet spot is between variation and coherence for that particular sequence.
+
+### "I changed the scale but my existing notes did not transpose"
+
+Scale selection in Bloom V1 affects note quantization during entry and during MUTATION, not the pitches already stored in the sequence. Notes entered under one scale retain their stored values when you change scales: there is no retroactive transposition. This is particularly noticeable when MUTATION is involved: mutated notes will conform to the new scale while unmutated stored notes may not.
+
+If you want to change the musical key or scale of an existing sequence, re-enter the notes under the new scale setting. Consider the scale as a constraint on new note generation rather than a property of the stored sequence.
+
+### "Channel B is playing the same sequence as Channel A"
+
+Bloom has two independent channels, each with its own sequence stored in memory. A common workflow issue is programming a sequence on Channel A, switching to Channel B to program a second sequence, and discovering that Channel B has its own separate trunk requiring independent programming. Alternatively, players sometimes program what they intend as Channel B content but forget to switch channels before entering notes, writing over Channel A instead.
+
+Confirm the active channel before entering any notes by checking which channel LED is lit. Channel A and Channel B share the same fractal tree architecture, which means setting them to different BRANCH values produces two simultaneously evolving but harmonically related sequences.
+
+### "MUTATION is adding notes that are not in the scale I selected"
+
+MUTATION introduces controlled random variation into the sequence. In V1, the quantization behavior is not perfectly consistent across all MUTATION amounts: at higher values, notes can land outside the intended scale depending on how the random selection resolves against the available voltage steps.
+
+Keep MUTATION below 50% for most applications. At 25 to 40%, you get recognizable variation without the boundary behaviors that appear at extreme settings. A downstream quantizer module will enforce scale compliance on anything that Bloom outputs, which is the most reliable solution to this behavior in V1.
+
+---
+
+## Advanced Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Bloom fundamentals:** Master fractal sequencing, branch/path navigation, and understand fractal sequence generation algorithms
+2. **Add organic fractal breathing:** Integrate DivKid Ochd for natural fractal evolution (see Ochd integration reference)
+3. **Include mathematical functions:** Add Make Noise Maths for function-enhanced fractal control (see Maths integration reference)
+4. **Add polyrhythmic timing:** Include 4ms RCD for complex fractal timing relationships (see RCD integration reference)
+5. **Include logic processing:** Add Function Junction for musical decision making in fractal generation (see Function Junction reference)
+6. **Complete the ecosystem:** Combine all elements for complete generative fractal sequencing workstation
+
+### **Cross-Module Learning Opportunities:**
+- **Bloom + Ochd:** Organic fractal evolution - learn how natural LFO breathing transforms mathematical fractals into living musical sequences
+- **Bloom + Maths:** Mathematical fractal generation - understand how function generators enhance fractal algorithms with complex mathematical relationships
+- **Bloom + RCD:** Polyrhythmic fractal timing - master multiple clock divisions for complex fractal sequence timing relationships
+- **Bloom + Function Junction:** Logic fractal processing - discover how logic operations create musical decision making for fractal generation algorithms
+- **All Phase 2 + Bloom:** Complete generative ecosystem - integrate organic breathing, mathematical functions, polyrhythmic timing, and logic for fractal mastery
+
+### **Skill Development Milestones:**
+- **Beginner:** Basic fractal sequencing mastery - understand branch/path navigation, mutation control, and fractal sequence generation
+- **Intermediate:** Organic fractal integration - use natural modulation sources to create breathing, evolving fractal sequences
+- **Advanced:** Mathematical fractal generation - balance function generators with fractal algorithms for sophisticated sequence evolution
+- **Expert:** Complete ecosystem design - orchestrate multi-layer generative fractal systems with mathematical enhancement and logic control
+
+### **Advanced Generative Concepts:**
+- **Fractal sequence mathematics:** How mathematical functions enhance fractal algorithms to create sophisticated musical sequence evolution
+- **Polyrhythmic fractal timing:** Using multiple clock divisions to create complex timing relationships for fractal sequence exploration
+- **Logic-enhanced generation:** Mathematical decision making and pattern control for performance-oriented fractal sequence systems
+- **Cross-system fractal integration:** How Bloom serves as generative fractal brain for complete modular synthesis ecosystems
+
+### **Performance Applications:**
+- **Live Fractal Control:** Real-time manipulation of branch, path, and mutation for dynamic fractal sequence performance
+- **Generative Fractal Systems:** Self-evolving mathematical sequences using function generators and logic for sophisticated fractal evolution
+- **Hybrid Generative Systems:** Integration with traditional sequencers while providing fractal sequence enhancement and variation
+- **Educational Tool:** Learning advanced generative concepts through hands-on experimentation with fractal sequence generation
 
 ---
 
@@ -420,40 +454,6 @@ This represents **complete generative fractal mastery** - where mathematical fun
 
 ---
 
-## Advanced Learning Path
-
-### **Recommended Study Progression:**
-1. **Start with Bloom fundamentals:** Master fractal sequencing, branch/path navigation, and understand fractal sequence generation algorithms
-2. **Add organic fractal breathing:** Integrate DivKid Ochd for natural fractal evolution (see Ochd integration reference)
-3. **Include mathematical functions:** Add Make Noise Maths for function-enhanced fractal control (see Maths integration reference)
-4. **Add polyrhythmic timing:** Include 4ms RCD for complex fractal timing relationships (see RCD integration reference)
-5. **Include logic processing:** Add Function Junction for musical decision making in fractal generation (see Function Junction reference)
-6. **Complete the ecosystem:** Combine all elements for complete generative fractal sequencing workstation
-
-### **Cross-Module Learning Opportunities:**
-- **Bloom + Ochd:** Organic fractal evolution - learn how natural LFO breathing transforms mathematical fractals into living musical sequences
-- **Bloom + Maths:** Mathematical fractal generation - understand how function generators enhance fractal algorithms with complex mathematical relationships
-- **Bloom + RCD:** Polyrhythmic fractal timing - master multiple clock divisions for complex fractal sequence timing relationships
-- **Bloom + Function Junction:** Logic fractal processing - discover how logic operations create musical decision making for fractal generation algorithms
-- **All Phase 2 + Bloom:** Complete generative ecosystem - integrate organic breathing, mathematical functions, polyrhythmic timing, and logic for fractal mastery
-
-### **Skill Development Milestones:**
-- **Beginner:** Basic fractal sequencing mastery - understand branch/path navigation, mutation control, and fractal sequence generation
-- **Intermediate:** Organic fractal integration - use natural modulation sources to create breathing, evolving fractal sequences
-- **Advanced:** Mathematical fractal generation - balance function generators with fractal algorithms for sophisticated sequence evolution
-- **Expert:** Complete ecosystem design - orchestrate multi-layer generative fractal systems with mathematical enhancement and logic control
-
-### **Advanced Generative Concepts:**
-- **Fractal sequence mathematics:** How mathematical functions enhance fractal algorithms to create sophisticated musical sequence evolution
-- **Polyrhythmic fractal timing:** Using multiple clock divisions to create complex timing relationships for fractal sequence exploration
-- **Logic-enhanced generation:** Mathematical decision making and pattern control for performance-oriented fractal sequence systems
-- **Cross-system fractal integration:** How Bloom serves as generative fractal brain for complete modular synthesis ecosystems
-
-### **Performance Applications:**
-- **Live Fractal Control:** Real-time manipulation of branch, path, and mutation for dynamic fractal sequence performance
-- **Generative Fractal Systems:** Self-evolving mathematical sequences using function generators and logic for sophisticated fractal evolution
-- **Hybrid Generative Systems:** Integration with traditional sequencers while providing fractal sequence enhancement and variation
-- **Educational Tool:** Learning advanced generative concepts through hands-on experimentation with fractal sequence generation
 
 ---
 

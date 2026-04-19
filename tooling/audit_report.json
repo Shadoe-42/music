@@ -2,11 +2,11 @@
   "generated": "2026-04-19",
   "summary": {
     "total_guides": 69,
-    "guides_with_issues": 8,
-    "guides_clean": 61,
-    "total_issues": 8,
+    "guides_with_issues": 0,
+    "guides_clean": 69,
+    "total_issues": 0,
     "error_count": 0,
-    "warning_count": 8,
+    "warning_count": 0,
     "deferred_count": 0
   },
   "guides": {
@@ -131,19 +131,12 @@
       "issues": []
     },
     "cre8audio_chipz_cellz_niftycase_bundle_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "yaml_hp",
-          "category": "YAML Frontmatter",
-          "severity": "warning",
-          "detail": "Missing `hp` field"
-        }
-      ]
+      "issues": []
     },
     "cre8audio_chipz_guide.md": {
       "clean": true,
@@ -434,34 +427,20 @@
       "issues": []
     },
     "noise_engineering_numeric_repetitor_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_common_mistakes",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Common Mistakes` section"
-        }
-      ]
+      "issues": []
     },
     "noise_engineering_ruina_versio_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_common_mistakes",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Common Mistakes` section"
-        }
-      ]
+      "issues": []
     },
     "patching_panda_moon_phase_guide.md": {
       "clean": true,
@@ -480,19 +459,12 @@
       "issues": []
     },
     "qubit_bloom_v1_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_common_mistakes",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Common Mistakes` section"
-        }
-      ]
+      "issues": []
     },
     "rossum_electro_music_mob_of_emus_guide.md": {
       "clean": true,
@@ -511,19 +483,12 @@
       "issues": []
     },
     "squarp_hermod_plus_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_common_mistakes",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Common Mistakes` section"
-        }
-      ]
+      "issues": []
     },
     "tiptop_audio_forbidden_planet_guide.md": {
       "clean": true,
@@ -542,19 +507,12 @@
       "issues": []
     },
     "turing_machine_ecosystem_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "yaml_hp",
-          "category": "YAML Frontmatter",
-          "severity": "warning",
-          "detail": "Missing `hp` field"
-        }
-      ]
+      "issues": []
     },
     "vostok_instruments_ceres_guide.md": {
       "clean": true,
@@ -573,34 +531,20 @@
       "issues": []
     },
     "vpme_qd_qex_euclidean_circles_ecosystem_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "yaml_hp",
-          "category": "YAML Frontmatter",
-          "severity": "warning",
-          "detail": "Missing `hp` field"
-        }
-      ]
+      "issues": []
     },
     "winterbloom_castor_pollux_ii_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_common_mistakes",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Common Mistakes` section"
-        }
-      ]
+      "issues": []
     },
     "xaoc_devices_belgrad_guide.md": {
       "clean": true,
@@ -619,66 +563,5 @@
       "issues": []
     }
   },
-  "by_check": {
-    "yaml_hp": [
-      {
-        "file": "cre8audio_chipz_cellz_niftycase_bundle_guide.md",
-        "check_id": "yaml_hp",
-        "category": "YAML Frontmatter",
-        "severity": "warning",
-        "detail": "Missing `hp` field"
-      },
-      {
-        "file": "turing_machine_ecosystem_guide.md",
-        "check_id": "yaml_hp",
-        "category": "YAML Frontmatter",
-        "severity": "warning",
-        "detail": "Missing `hp` field"
-      },
-      {
-        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
-        "check_id": "yaml_hp",
-        "category": "YAML Frontmatter",
-        "severity": "warning",
-        "detail": "Missing `hp` field"
-      }
-    ],
-    "section_common_mistakes": [
-      {
-        "file": "noise_engineering_numeric_repetitor_guide.md",
-        "check_id": "section_common_mistakes",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Common Mistakes` section"
-      },
-      {
-        "file": "noise_engineering_ruina_versio_guide.md",
-        "check_id": "section_common_mistakes",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Common Mistakes` section"
-      },
-      {
-        "file": "qubit_bloom_v1_guide.md",
-        "check_id": "section_common_mistakes",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Common Mistakes` section"
-      },
-      {
-        "file": "squarp_hermod_plus_guide.md",
-        "check_id": "section_common_mistakes",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Common Mistakes` section"
-      },
-      {
-        "file": "winterbloom_castor_pollux_ii_guide.md",
-        "check_id": "section_common_mistakes",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Common Mistakes` section"
-      }
-    ]
-  }
+  "by_check": {}
 }

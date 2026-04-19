@@ -18,7 +18,6 @@ historical_context: false
 
 **The Stereo Destruction Engine**
 
-historical_context: false
 ---
 
 ## Quick Start: Get Your First Destroyed Sound in 5 Minutes
@@ -35,7 +34,6 @@ historical_context: false
 
 **Congratulations!** You've just experienced the "gentlest" side of Ruina Versio - it only gets more destructive from here!
 
-historical_context: false
 ---
 
 ## Essential Parameters (The Destruction Arsenal)
@@ -90,7 +88,6 @@ historical_context: false
 - **Essential for:** Controlling intensity of destruction
 - **Parallel processing:** Allows blending clean and destroyed signals
 
-historical_context: false
 ---
 
 ## Advanced Controls (The Routing & Filtering System)
@@ -116,7 +113,6 @@ historical_context: false
 - **Use sparingly:** This is intentionally over-the-top
 - **Performance tool:** Great for dramatic effect moments
 
-historical_context: false
 ---
 
 ## Why Ruina Versio Excels
@@ -131,7 +127,6 @@ Ruina Versio is not a gentle processor. The name -- Latin for "ruin" and "versio
 
 **The Versio platform means alternative firmware is available.** Ruina Versio runs on Noise Engineering's Versio hardware platform, which is shared by other modules (Imitor Versio, Melotus Versio, Desmodus Versio, and others). Alternative firmware images can be loaded via audio update, changing Ruina Versio into a reverb, delay, or granular processor. The hardware itself is neutral; the character is determined by firmware. Users who want multiple effect types from one module slot can reflash as needed.
 
-historical_context: false
 ---
 
 ## Beginner Patch Ideas
@@ -362,47 +357,77 @@ This represents **advanced destruction consciousness** - where organic breathing
 **🔊 **Mix Bus Saturation:** Subtle multiband processing for mix cohesion**
 **🎭 **Performance Tool:** Real-time destruction control for live sets**
 
-historical_context: false
 ---
 
-## Beginner "Gotchas"
+## Common Mistakes
 
-### **It's Extremely Loud and Aggressive**
-- **128dB SMOOSH:** This is not a subtle effect - use with extreme caution
-- **Hot output levels:** May need attenuation after Ruina Versio
-- **Hearing protection:** Seriously, this module can be dangerously loud
-- **Start gentle:** Begin with low BLEND amounts and small distortion settings
-- **It's supposed to be extreme:** Embrace the chaos, but protect your ears
+### "I pressed SMOOSH and now my signal is completely destroyed and unusable"
 
-### **Routing Modes Change Everything**
-- **Same settings, different sounds:** UND/X/OVR completely change the character
-- **No "right" mode:** Each routing serves different musical purposes
-- **Experiment systematically:** Try the same patch in all three modes
-- **OVR mode is intense:** Double wavefolding makes everything more extreme
-- **Document your settings:** Complex interactions make it hard to recreate sounds
+SMOOSH applies 128dB of gain to the input signal, which instantly saturates everything in the signal path. Without proper gain staging upstream and attenuation or limiting downstream, this level of gain will push your audio interface, mixer, or speakers into hard clipping. SMOOSH is not a casual effect: it is a surgical tool for dramatic moments and requires the rest of your signal chain to be prepared for the output level it produces.
 
-### **Multiple Distortion Types Interact**
-- **Not independent:** FOLD, DRIVE, DOOM, and 8VIZE all affect each other
-- **Complex interactions:** Small changes can create dramatic results  
-- **Order matters:** Different routing modes change the processing order
-- **Can be overwhelming:** Start with one distortion type, add others gradually
-- **Sweet spots exist:** Not every extreme setting is useful
+Use SMOOSH with a VCA downstream set to attenuate the output, and keep BLEND at a moderate setting to control how much of the processed signal reaches your output. When triggering SMOOSH via the gate input, ensure the rest of your chain is set up before the gate fires. SMOOSH used intentionally and rhythmically, triggered by a kick drum or a measure-length gate, produces powerful results; SMOOSH used casually destroys your gain structure.
 
-### **CENTER Knob Dual Function**
-- **Always affects multiband processing:** Controls frequency bands
-- **TRK mode adds notch control:** Same knob now controls two different things
-- **Can be confusing:** Be aware of which notch filter mode you're in
-- **Interaction complexity:** CENTER becomes very powerful in TRK mode
-- **Context dependent:** Knob behavior changes based on switch position
+### "I know what settings I used but the patch sounds completely different now"
 
-### **Versio Platform Confusion**
-- **Firmware swapping:** USB connection allows different effects
-- **Hardware is generic:** Same hardware, different firmware = different modules
-- **This is Ruina firmware:** Other firmwares completely change functionality
-- **Update availability:** New firmwares released regularly
-- **Open source:** You can even write your own firmware
+Changing the UND/X/OVR routing switch changes the entire internal signal path. UND, X, and OVR route the audio through different combinations of the processing stages: OVR adds a second wavefolding stage that UND does not include. The same FOLD, DRIVE, DOOM, and 8VIZE knob positions produce genuinely different sounds in each routing mode because the signals encounter different processing orders and combinations.
 
-historical_context: false
+Document routing mode alongside all other settings. When recreating a patch, confirm the routing switch position before touching any knobs. When exploring, move the routing switch deliberately through each position and listen to what changes before adjusting knobs. Treating the routing modes as different sonic characters rather than an intensity scale reveals three distinct distortion voices in one module.
+
+### "I am turning CENTER but it is affecting something I did not expect"
+
+CENTER has two behaviors depending on the notch filter switch position. In OFF or ON modes, CENTER controls the frequency emphasis of the multiband saturator: rotating it shifts which frequency band receives the most saturation. In TRK mode, CENTER simultaneously controls both the multiband center frequency and the notch filter cutoff frequency. A single knob now governs two separate aspects of the signal: the saturation character changes and a notch appears and moves at the same time.
+
+If CENTER is producing unexpected filtering behavior, check the notch filter switch. If you are in TRK mode and only want the multiband effect, switch to OFF or ON. If you are in TRK mode and want the combined behavior, use CENTER as a unified timbral control understanding that both effects track together.
+
+### "All the distortion algorithms at once just sounds like noise"
+
+FOLD, DRIVE, DOOM, and 8VIZE are four independent distortion algorithms that interact. Heavy settings on multiple algorithms simultaneously produces compound distortion where each stage's harmonics become the next stage's input. The result is often a dense wall of upper-frequency harmonic content that loses any musical relationship to the original signal. This is not a flaw: it is the extreme limit of the module. The musical content lives in partial settings and specific combinations.
+
+Start with a single algorithm at a time. FOLD alone is the most harmonic and predictable. DOOM alone adds sub-octave content. DRIVE adds multiband saturation. 8VIZE is the most unpredictable. Combine them incrementally: FOLD plus DOOM produces a specific relationship between harmonics and sub that is well-documented. Use BLEND to control the ratio of processed to dry signal throughout.
+
+### "My signal sounds thin after passing through Ruina Versio"
+
+Ruina Versio at conservative settings can thin a signal rather than enrich it if BLEND is set too low. Distortion adds harmonics, but it also changes the dynamic structure of the signal. A clean, rich pad run through Ruina at extreme settings with very low BLEND may arrive at the output sounding thinner than the dry signal, because the small amount of heavily processed signal adds harsh upper harmonics without the fullness of the original.
+
+Use BLEND as the primary intensity control. Start fully clockwise (fully wet) and reduce blend toward 12 o'clock to find the point where the processed character adds something without replacing the fundamental character of the source. For gentle harmonic enhancement, low FOLD settings with BLEND around 25% is a reliable starting point.
+
+---
+
+## Advanced Learning Path
+
+### **Recommended Study Progression:**
+1. **Start with Ruina fundamentals:** Master individual destruction algorithms, routing modes, and stereo destruction concepts
+2. **Add organic breathing:** Integrate DivKid Ochd for natural destruction parameter evolution (see Ochd guide)
+3. **Include controlled chaos:** Use Make Noise Wogglebug for chaotic destruction processing (see Wogglebug guide)
+4. **Add pattern learning:** Apply Mutable Marbles for adaptive modulation of destruction parameters (see Marbles guide)
+5. **Include polyrhythmic triggers:** Use 4ms RCD v2 for complex destruction triggering relationships (see RCD guide)
+6. **Complete the ecosystem:** Add Cre8audio Function Junction for comprehensive destruction modulation processing (see Function Junction guide)
+
+### **Cross-Module Learning Opportunities:**
+- **Ruina + Ochd:** Learn organic modulation of destruction parameters for breathing stereo chaos
+- **Ruina + Wogglebug:** Master chaos-driven destruction for controlled unpredictability in stereo processing
+- **Ruina + Marbles:** Understand pattern-driven destruction with adaptive stereo relationships
+- **Ruina + RCD:** Explore polyrhythmic destruction triggering and complex algorithmic chaos
+- **All Advanced + Ruina:** Build complete destruction ecosystems with multiple modulation types processing stereo chaos
+
+### **Skill Development Milestones:**
+- **Beginner:** Use individual destruction algorithms for basic stereo destruction processing
+- **Intermediate:** Master routing modes and CV modulation for complex destruction relationships
+- **Advanced:** Create Advanced integration patches with organic/chaos/pattern modulation of destruction parameters
+- **Expert:** Design complete destruction ecosystems where Ruina serves as stereo processor for multiple Advanced modulation types
+
+### **Advanced Destruction Concepts:**
+- **Multi-Algorithm Processing:** Understand how different destruction algorithms interact and combine
+- **Stereo Field Manipulation:** Master phase and width control for immersive destruction processing
+- **Dynamic Destruction:** Explore how modulation affects destruction character and intensity
+- **System Integration:** Design patches where Ruina processes multiple modulation types simultaneously
+
+### **Performance Applications:**
+- **Live Destruction Control:** Real-time routing and parameter control for dynamic stereo destruction
+- **Generative Destruction Systems:** Foundation for self-evolving stereo chaos systems
+- **Hybrid Modulation:** Bridge between organic, chaos, pattern, and destruction processing
+- **Educational Tool:** Learn stereo destruction processing and advanced distortion concepts
+
 ---
 
 ## Next Steps
@@ -416,7 +441,6 @@ historical_context: false
 
 **Remember:** Ruina Versio rewards experimentation but can be overwhelming. Start gentle and work up to the extreme settings!
 
-historical_context: false
 ---
 
 ## Pairs Well With
@@ -473,50 +497,13 @@ historical_context: false
 - **Rhythmic destruction:** Sequence different routing modes for rhythmic effects
 - **Stereo processing:** Use different settings on L vs R inputs for wide effects
 
-historical_context: false
 ---
 
-## Advanced Learning Path
 
-### **Recommended Study Progression:**
-1. **Start with Ruina fundamentals:** Master individual destruction algorithms, routing modes, and stereo destruction concepts
-2. **Add organic breathing:** Integrate DivKid Ochd for natural destruction parameter evolution (see Ochd guide)
-3. **Include controlled chaos:** Use Make Noise Wogglebug for chaotic destruction processing (see Wogglebug guide)
-4. **Add pattern learning:** Apply Mutable Marbles for adaptive modulation of destruction parameters (see Marbles guide)
-5. **Include polyrhythmic triggers:** Use 4ms RCD v2 for complex destruction triggering relationships (see RCD guide)
-6. **Complete the ecosystem:** Add Cre8audio Function Junction for comprehensive destruction modulation processing (see Function Junction guide)
-
-### **Cross-Module Learning Opportunities:**
-- **Ruina + Ochd:** Learn organic modulation of destruction parameters for breathing stereo chaos
-- **Ruina + Wogglebug:** Master chaos-driven destruction for controlled unpredictability in stereo processing
-- **Ruina + Marbles:** Understand pattern-driven destruction with adaptive stereo relationships
-- **Ruina + RCD:** Explore polyrhythmic destruction triggering and complex algorithmic chaos
-- **All Advanced + Ruina:** Build complete destruction ecosystems with multiple modulation types processing stereo chaos
-
-### **Skill Development Milestones:**
-- **Beginner:** Use individual destruction algorithms for basic stereo destruction processing
-- **Intermediate:** Master routing modes and CV modulation for complex destruction relationships
-- **Advanced:** Create Advanced integration patches with organic/chaos/pattern modulation of destruction parameters
-- **Expert:** Design complete destruction ecosystems where Ruina serves as stereo processor for multiple Advanced modulation types
-
-### **Advanced Destruction Concepts:**
-- **Multi-Algorithm Processing:** Understand how different destruction algorithms interact and combine
-- **Stereo Field Manipulation:** Master phase and width control for immersive destruction processing
-- **Dynamic Destruction:** Explore how modulation affects destruction character and intensity
-- **System Integration:** Design patches where Ruina processes multiple modulation types simultaneously
-
-### **Performance Applications:**
-- **Live Destruction Control:** Real-time routing and parameter control for dynamic stereo destruction
-- **Generative Destruction Systems:** Foundation for self-evolving stereo chaos systems
-- **Hybrid Modulation:** Bridge between organic, chaos, pattern, and destruction processing
-- **Educational Tool:** Learn stereo destruction processing and advanced distortion concepts
-
-historical_context: false
 ---
 
 **Bottom Line:** Ruina Versio isn't just a distortion module - it's a **stereo destruction processor** that transforms simple audio into complex chaos through multiple destruction algorithms. Every patch teaches you something new about how stereo destruction processing really works. As the **destruction brain of Advanced ecosystems**, it transforms organic breathing, controlled chaos, and pattern learning into unified stereo destruction evolution.
 
-historical_context: false
 ---
 
 *Ruina Versio is designed for sonic destruction - embrace the chaos, but always protect your hearing and your speakers!*
