@@ -235,6 +235,8 @@ The default preset is recalled automatically on power-up. Zadar does not auto-sa
 
 ## NIN Expander
 
+![Xaoc Devices NIN Expander](https://github.com/Shadoe-42/music/raw/main/modular/images/xaoc/zadar/nin_exp_panel.jpg)
+
 NIN is a 3HP expander that mounts directly adjacent to Zadar and connects to the expansion header on Zadar's PCB rear via a ribbon cable. It draws all power through Zadar: NIN has no power connector and must never be plugged into the bus board.
 
 **Installation warning:** The expansion header and the power connector on Zadar's PCB rear are separate connectors in different locations. Confusing them and connecting NIN to a powered bus board will damage the module and void the warranty. Pre-2019 Zadar units require a firmware update to revision 2.0 before NIN will function.

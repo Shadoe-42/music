@@ -263,10 +263,18 @@ Every guide includes a front panel image immediately after the title and tagline
 
 **Format:**
 ```
-![Manufacturer Module Name](https://github.com/Shadoe-42/music/raw/main/modular/images/[module_slug]/front_panel.jpg)
+![Manufacturer Module Name](https://github.com/Shadoe-42/music/raw/main/modular/images/[manufacturer]/[module_name]/front_panel.jpg)
 ```
 
-The module slug follows the same naming convention as the guide filename: lowercase, underscores, manufacturer name first. For example, `endorphines_furthrrrr_generator` for the Endorphin.es Furthrrrr Generator guide.
+The path structure is `images/{manufacturer}/{module_name}/`. Both segments use lowercase with underscores. For example, `images/endorphines/furthrrrr_generator/` for the Endorphin.es Furthrrrr Generator.
+
+**Filename conventions:**
+- Standard panel image: `front_panel.jpg`
+- Named expander panel: `{expander_name}_exp_panel.jpg` (e.g., `nin_exp_panel.jpg`, `aio_exp_panel.jpg`)
+- Unnamed expander panel: `exp_panel.jpg`
+- Expander images live in the parent module's directory, not a separate directory, because the guide is the organizing unit
+
+**Directory structure:** One directory per guide. If a guide covers a module and its named expander(s), all images for both live in the same directory under the parent module's name.
 
 ---
 
