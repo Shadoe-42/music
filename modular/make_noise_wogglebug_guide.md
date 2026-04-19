@@ -8,126 +8,22 @@ functions: [random-source, noise-source]
 behavior_tags: [stochastic, evolving, noisy, chaotic, generative]
 use_cases: [stochastic modulation, random CV generator, chaotic texture source]
 hp: 10
+transport: receive
+historical_context: true
 ---
 
-# Make Noise Wogglebug - Beginner's Guide
+# Make Noise Wogglebug
+
+**The Controlled Uncertainty Source**
 
 ![Make Noise Wogglebug](https://github.com/Shadoe-42/music/raw/main/modular/images/make_noise/wogglebug/front_panel.jpg)
-*Source of musical uncertainty with Speed/Chaos control, Ego/Id balance, Woggle control, and Disturb button - generates stepped/smooth random CVs plus three chaos audio oscillators*
-
-*Controlled Chaos Generator - Source of Musical Uncertainty*
-
----
-
-## Key Specifications
-
-| Specification | Value |
-|---|---|
-| **Module Width** | 10 HP |
-| **Depth** | 24 mm |
-| **Current Draw (+12V)** | 50 mA |
-| **Current Draw (-12V)** | 40 mA |
-| **Current Draw (5V)** | 0 mA |
-
----
-
-## Quick Start: Get Your First Sound in 5 Minutes
-
-**What is Wogglebug?** A "Source of Uncertainty" that generates stepped and smooth random voltages, giving your system controlled unpredictability. Based on the legendary Buchla 265, it's **controlled chaos** that makes static sequences come alive with unpredictable, musical movement. Think of it as your synthesizer's "ID" - the unconscious element that adds life to electronic music.
-
-### Your First Taste of Chaos (Basic Random CV)
-1. **Turn Speed/Chaos knob** to 12 o'clock position
-2. **Turn Ego/Id Balance** to 3 o'clock (full randomness)
-3. **Watch the blue System Clock LED** blink - this shows the sample rate
-4. **Patch Stepped Output** → your oscillator's 1V/Oct input
-5. **Patch Smooth Output** → your filter cutoff CV input
-6. **Play with Speed/Chaos knob** - notice how it changes both speed AND character!
-
-### Discover the Audio Chaos (Wogglebug as Sound Source)
-1. **Patch Smooth VCO Output** → your mixer (it's a "shark's fin" wave oscillator)
-2. **Patch Ring-Mod Output** → another mixer channel
-3. **Turn up the volume** - you're hearing the Wogglebug's "uncertain beating heart"
-4. **Adjust Speed/Chaos** - watch how the audio changes character completely
-5. **This is additive synthesis** controlled by chaos circuits - unlike anything else!
-
----
-
-## Why Make Noise Wogglebug Excels
-
-### **The Philosophy:**
-Wogglebug represents **controlled chaos as a musical instrument** - not random noise, but sophisticated unpredictability that responds to musical context. Based on the legendary Buchla 265, it brings the West Coast philosophy of "controlled voltage, controlled chaos" to Eurorack. **In advanced ecosystems, it becomes the uncertainty engine that adds life and unpredictability to sophisticated musical systems.**
-
-### **Perfect For:**
-- **Experimental musicians** seeking controlled unpredictability in their music
-- **Electronic producers** wanting to break out of rigid, mechanical sequences
-- **Sound designers** needing sophisticated random voltage generation
-- **Performance artists** requiring real-time chaos control and intervention
-- **Advanced system builders** creating sophisticated controlled chaos ecosystems
-
-### **The Controlled Chaos Experience:**
-Using Wogglebug teaches you about **uncertainty as a musical parameter** rather than just randomness. The Ego/Id balance shows how consciousness and unconscious elements interact in music, while the advanced integration reveals how chaos can be guided by intelligence without losing its essential unpredictability. **You learn to conduct chaos rather than just create it.**
-
----
-
-## Design Philosophy: Why Wogglebug Exists
-
-### **The West Coast Philosophy: Voltage Controls Everything**
-
-Wogglebug emerges from a foundational principle of West Coast synthesis: **everything in music is voltage**. Pitch, timbre, timing, dynamics, uncertainty; all are electrical signals that can be modulated, combined, and transformed. But here's the deeper insight: if everything is voltage, then *controlling voltage is controlling music*. This isn't just about having CV inputs; it's about recognizing that the universe of musical possibility exists in the space of voltage relationships.
-
-Most musicians think of randomness as chaotic noise; a defect. West Coast synthesis flips this: randomness is a *musical material*, like a texture or timbre. Controlled uncertainty becomes an instrument. Wogglebug embodies this philosophy: it's not a random number generator apologizing for being imprecise. It's a source of musical uncertainty, deliberately designed to create unpredictable relationships that keep electronic music sounding alive.
-
-### **From Buchla to Eurorack: Historical Lineage**
-
-Wogglebug is directly descended from the Buchla 265, a random voltage generator that shaped West Coast synthesis. The Buchla philosophy never made it to Eurorack in its pure form; until Make Noise and Wiard brought it back. The original Wiard Wogglebug was analog, chaotic, unpredictable in the best way. When Make Noise licensed the design, they didn't "improve" it by adding digital precision. They preserved its essential character: **controlled chaos that teaches through behavior, not through perfection**.
-
-This lineage matters because it reveals the pedagogical intent. Wogglebug isn't trying to be the most accurate random source. It's trying to teach that **randomness with character is more musical than perfect noise**. Understanding this teaches you something about synthesis design itself: precision isn't always the goal. Character is.
-
-### **The Ego/Id Framework: Psychology Meets Circuitry**
-
-Why is the control named "Ego/Id" instead of "Spread" or "Range"? Because Make Noise is teaching through metaphor.
-
-In psychology, the Ego is your conscious control; your rational self. The Id is your unconscious drives; your impulsive nature. The balance between them creates personality. Wogglebug translates this into circuit behavior:
-
-- **Full Ego (CCW):** Random values cluster together. Controlled, predictable, safe.
-- **Full Id (CW):** Random values spread across entire range. Wild, unpredictable, chaotic.
-- **Balanced:** Personality emerges from the tension between control and chaos.
-
-**Why this matters:** This naming teaches that circuitry has personality, not just function. The Ego/Id balance isn't just a technical parameter; it's teaching you to think about the *character* of your modulation, not just its quantity. When you understand this, you start recognizing personality in every module: some feel precise and mathematical, others feel organic and breathing, still others feel chaotic and wild. Understanding Wogglebug's Ego/Id teaches you to hear *character* throughout synthesis.
-
-### **Uncertainty as a Musical Parameter**
-
-Most synthesis treats certainty as the goal: precise pitch, predictable envelopes, stable oscillators. Wogglebug inverts this: **uncertainty itself becomes the musical material**. Not as an error to tolerate, but as an intentional voice in the patch.
-
-Consider what happens when you use Wogglebug's Burst output as a gate:
-- You don't know when the next gate arrives
-- You don't know how long it lasts
-- This creates timing uncertainty that prevents mechanical repetition
-- The result sounds alive in a way that metronomically perfect timing cannot
-
-This teaches a fundamental principle: **life in electronic music comes from controlled unpredictability**. Machines create perfect repetition. Interesting music creates tension between order and chaos. Wogglebug is explicitly designed to be the chaos side of that equation.
-
-Understood this way, Wogglebug teaches that uncertainty isn't a limitation; it's a compositional tool. Every patch that uses Wogglebug is making a deliberate choice to embrace controlled chaos. This changes how you think about all randomness in synthesis: not as something to minimize, but as something to cultivate.
-
-### **Interconnection Through Controlled Uncertainty**
-
-Wogglebug's real power emerges not in isolation but in patches where uncertainty propagates through multiple modules. When Marbles learns from Wogglebug's stepped output, when Function Junction shapes Wogglebug's burst gates, when quantizers turn stepped chaos into melody; that's when you understand interconnection.
-
-Each module transforms the uncertainty in a different way:
-- **Quantizers** impose musical order on chaos (turning random voltage into pitches)
-- **Envelope generators** give chaos a musical shape (turning random gates into dynamic contours)
-- **Marbles** find patterns in chaos (learning algorithms that adapt to randomness)
-- **Filters** smooth chaos into curves (turning stepped randomness into smooth modulation)
-
-This teaches that synthesis isn't about individual modules doing things in isolation. It's about **how uncertainty flows through interconnected systems, getting transformed at each point**. Wogglebug generates the raw material (controlled uncertainty). The patch architecture determines what that uncertainty becomes.
-
-Understanding this reveals why the Interconnection Principle matters: nothing exists in isolation. Everything is part of a system. Wogglebug proves this because its full power only emerges when other modules participate.
+*Make Noise Wogglebug: Speed/Chaos, Ego/Id, Woggle controls, Disturb button, three CV outputs, three audio outputs*
 
 ---
 
 ## Historical Context
 
-The Wogglebug's direct ancestor is the Buchla 265 Source of Uncertainty, a random voltage module that appeared in the Series 200 Electric Music Box beginning around 1970–71. Don Buchla (1937–2016) had first built an instrument for the San Francisco Tape Music Center in 1963 at the request of composers Ramon Sender and Morton Subotnick, who wanted a voltage-controlled instrument suited to the experimental music they were making. That first instrument became the Buchla 100 Series. The 200 Series expanded on it with more sophisticated modules, and the 265 formalized Buchla's approach to randomness: three functional sections providing continuously fluctuating random voltages (smooth, with rate and spread control), quantized stored random voltages (stepped, sample-and-hold), and a noise source. The design was explicit that these were not error sources to minimize but compositional materials to cultivate. Random voltage in the Buchla system was routed, shaped, and calibrated like pitch or amplitude: an instrument, not an artifact.
+The Wogglebug's direct ancestor is the Buchla 265 Source of Uncertainty, a random voltage module that appeared in the Series 200 Electric Music Box beginning around 1970-71. Don Buchla (1937-2016) had first built an instrument for the San Francisco Tape Music Center in 1963 at the request of composers Ramon Sender and Morton Subotnick, who wanted a voltage-controlled instrument suited to the experimental music they were making. That first instrument became the Buchla 100 Series. The 200 Series expanded on it with more sophisticated modules, and the 265 formalized Buchla's approach to randomness: three functional sections providing continuously fluctuating random voltages (smooth, with rate and spread control), quantized stored random voltages (stepped, sample-and-hold), and a noise source. The design was explicit that these were not error sources to minimize but compositional materials to cultivate. Random voltage in the Buchla system was routed, shaped, and calibrated like pitch or amplitude: an instrument, not an artifact.
 
 The San Francisco Tape Music Center where Buchla worked was embedded in the experimental music milieu that John Cage had helped establish in the 1950s. Cage's chance operations, using I Ching hexagrams to determine pitches, durations, and dynamics in works like "Music of Changes" (1951), had already reframed indeterminacy as a valid compositional strategy rather than a failure of control. Subotnick and Oliveros, both associated with the Center, carried that thinking into live electronic performance and composition. Buchla's 265 translated the philosophical position into hardware: voltage randomness was a musical parameter with its own identity, not a problem to be solved.
 
@@ -137,416 +33,367 @@ Make Noise, founded by Tony Rolando in Asheville, North Carolina, licensed the W
 
 ---
 
-## Essential Parameters (The Big 4)
+## Quick Start: First Randomness in 5 Minutes
 
-### **1. Speed/Chaos Control (The Paradox Knob)**
-- **What it does:** Controls both clock rate AND character simultaneously
-- **Range:** 1 minute per cycle up to 40Hz (200Hz with +8V CV)
-- **CCW (9-11 o'clock):** Slow + smooth, musical randomness
-- **12-2 o'clock:** Medium speed + some jitter, good for rhythmic work
-- **CW (3+ o'clock):** Fast + chaotic, digital noise territory
-- **Key insight:** This isn't just speed - it fundamentally changes the chaos character!
+1. **Set Speed/Chaos** to 12 o'clock
+2. **Set Ego/Id** to 3 o'clock (toward full randomness)
+3. **Patch Stepped Output** → oscillator 1V/Oct input
+4. **Patch Smooth Output** → filter cutoff CV input
+5. **Let the internal clock run.** Watch the system clock LED blink
+6. **Pitch and filter now move independently** from different random voltages
 
-### **2. Ego/Id Balance (Consciousness vs. Unconscious)**
-- **What it does:** Controls how "clustered" vs. "spread out" random values are
-- **Full CCW:** Values cluster together (more predictable, less random)
-- **Full CW:** Full spread across entire range (maximum chaos)
-- **With Ego Input:** Balances external control vs. internal randomness
-- **Psychology:** "Ego" = your conscious control, "Id" = unconscious chaos
+**Add the Disturb button:**
 
-### **3. Woggle Control (The Unique Element)**
-- **What it does:** Sets how fast Woggle CV "chases" the Stepped/Smooth voltages
-- **CCW:** Woggle responds quickly to changes
-- **CW:** Woggle responds slowly, creating unique decay shapes
-- **Unique feature:** Creates "stepped voltages with decaying sinusoids" - exists nowhere else!
-- **Musical result:** Pitch slides that are stepped but smooth, filter sweeps with organic character
+1. **Press Disturb once:** observe a new random value appearing immediately
+2. **Hold Disturb down:** the random values freeze at the current position
+3. **Tap Disturb rhythmically:** inject a human timing element into the random process
 
-### **4. Disturb Button (Manual Chaos Control)**
-- **What it does:** Manual trigger for Sample & Hold circuit
-- **Press momentarily:** Forces new random value immediately
-- **Hold down:** Pauses randomness at current value
-- **Performance use:** Real-time intervention in the chaos
-- **Emergency function:** "Wake up" a Wogglebug that seems stuck in a pattern
+**Hear the audio outputs:**
+
+1. **Patch Smooth VCO** → a mixer channel
+2. **Patch Ring-Mod** → a second mixer channel
+3. **Adjust Speed/Chaos:** watch how both the CV behavior and audio character change together
 
 ---
 
-## Understanding the Wogglebug Ecosystem
+## Key Specifications
 
-### **The Three CV Personalities:**
-- **Stepped Output:** Classic sample & hold - discrete random voltages (0-10V). This stepped behavior teaches the same principle that **quantizers** use throughout synthesis: representing continuous values as discrete steps.
-- **Smooth Output:** Lagged version of Stepped - creates smooth curves between values (0-10V). This smooth modulation curve is the fundamental principle behind **envelope generators and filter sweeps** everywhere in synthesis.
-- **Woggle CV:** The signature Wogglebug invention - stepped with sinusoidal transitions (0-10V). This sinusoidal curve teaches about **different modulation shapes** (linear, exponential, sinusoidal) that appear in advanced synthesis throughout the modular world.
+| Spec | Value |
+|------|-------|
+| Width | 10HP |
+| Depth | 24mm |
+| Power | +50mA / -40mA / 0mA |
+| CV outputs | Stepped, Smooth, Woggle (0-10V) |
+| Audio outputs | Smooth VCO, Woggle VCO, Ring-Mod (10Vpp) |
+| Additional outputs | Clock Out, Burst Out |
+| Clock range | ~1 cycle/minute to ~40Hz internal; ~200Hz with +8V CV |
 
-### **The Audio Voices of Chaos:**
-- **Smooth VCO:** "Shark's fin" waveform controlled by all CV circuits (10Vpp audio)
-- **Woggle VCO:** Square wave following the Woggle CV (10Vpp audio)
-- **Ring-Mod Output:** Digital ring modulation of both VCOs + Influence input
+---
 
-### **Clock & Trigger Outputs:**
-- **Clock Output:** Square wave from internal generator, continues even with external clock
-- **Burst Output:** Random gates synchronized to clock - another flavor of uncertainty
+## Essential Parameters
 
-### **Input Philosophy:**
-- **Ego Input:** "Direct injection to the uncertain, beating heart" - biases all randomness
-- **Influence Input:** CV or audio signal input that modulates frequency of both Smooth and Woggle VCOs, inputs to the Ring-Mod circuit, and level shifts the Woggle CV signal (responds 0V to 10V)
-- **External Clock:** Overrides internal clock while keeping other functions independent
-- **Speed/Chaos CV:** Normalled to +8V, extends range to ~200Hz when patched
+**Speed/Chaos** controls two things simultaneously: the rate at which the internal clock runs and the character of the randomness it generates. Turned counterclockwise, the module runs slowly and produces smooth, wandering random values. Turned clockwise, it runs faster but also becomes more jittery and erratic, approaching audio rate at the extreme end. This is not a tempo knob with a separate character control; the two are coupled. The Speed/Chaos CV input is internally normalled to +8V, which extends the range to approximately 200Hz when a cable is inserted and another voltage source overrides that normalling.
+
+**Ego/Id** controls the probability distribution of the random values: how clustered or spread out they are across the output range. Fully counterclockwise (maximum Ego), values cluster together and the randomness is relatively predictable, staying near a central tendency. Fully clockwise (maximum Id), values spread across the full 0-10V range with maximum unpredictability. The Ego CV input allows this distribution to be modulated externally. Subtle voltages work more effectively here than full-swing signals; the input shifts probability distribution, not simple amplitude.
+
+**Woggle** controls the rate at which the Woggle CV output tracks changes in the underlying random voltage. The Woggle output does not jump cleanly between values like Stepped does, nor does it lag smoothly like Smooth does; instead it follows each new value with a decaying sinusoidal transition, briefly oscillating before settling. The Woggle knob controls how fast that oscillation decays: counterclockwise for a fast settling time, clockwise for a slow one that makes the sinusoidal character pronounced. The result is a stepped-but-organic CV that produces pitch slides and filter sweeps with a distinctive character that neither Stepped nor Smooth can replicate.
+
+**Disturb** functions as both a panel button and a panel jack. Pressing the button manually triggers a new sample from the S&H circuit, forcing a new random value regardless of where the internal clock is in its cycle. Patching a gate or trigger source to the Disturb jack provides the same function under CV control. Holding the button down freezes the current random value until released. This makes Disturb a real-time intervention point: any gate source (a percussion trigger, a sequencer pulse, a logic output) can interrupt the internal random process and force a new value at a specific moment.
+
+---
+
+## Wogglebug Output Reference
+
+| Output | Type | Range | Character |
+|--------|------|-------|-----------|
+| Stepped | CV | 0-10V | Discrete jumps; classic sample-and-hold behavior |
+| Smooth | CV | 0-10V | Lagged version of Stepped; smooth curves between values |
+| Woggle CV | CV | 0-10V | Stepped with sinusoidal decay at each transition |
+| Smooth VCO | Audio | 10Vpp | Shark's-fin waveform; frequency tracks all CV circuits |
+| Woggle VCO | Audio | 10Vpp | Square wave following Woggle CV |
+| Ring-Mod | Audio | 10Vpp | Ring modulation of both VCOs plus Influence input |
+| Clock Out | Gate | 0-10V | Square wave from internal clock; continues with external clock |
+| Burst Out | Gate | 0-10V | Random gates synchronized to the internal clock |
+
+---
+
+## Why This Instrument Excels
+
+The Wogglebug provides three fundamentally different CV shapes from one random process, and that distinction matters more than just having "more outputs." Stepped is classic sample-and-hold: discrete jumps to new values at each clock tick. Smooth is the same underlying process lagged through a filter: it curves between values instead of jumping. Woggle is neither; it follows each new target value with a decaying sinusoidal oscillation, briefly ringing before it settles. These three outputs represent three different mathematical approaches to describing change over time. Patch all three to different destinations and each one produces a distinct musical result from the same source: the pitch jumps, the filter sweeps, and a third parameter (perhaps the resonance or an LFO rate) oscillates briefly each time the value shifts.
+
+Speed/Chaos couples rate and character in a way that most modulation sources keep separate. An LFO that runs faster does not change its waveform shape. The Wogglebug's random character does shift as the clock rate changes: slow settings produce smooth, wandering behavior, while fast settings introduce jitter and erratic qualities that are qualitatively different from the same randomness at a slower rate. The practical result is that one knob handles both timing and character simultaneously. Turned slowly for ambient work, it breathes. Turned to audio rate, it becomes a different kind of modulation source entirely.
+
+The three audio outputs (Smooth VCO, Woggle VCO, and Ring-Mod) are not independent oscillators running alongside the random circuit. They run at rates determined by the same clock that governs the CV outputs, which means the audio and CV behavior are aspects of the same process. Patch the Ring-Mod output to an audio mixer and the Stepped CV to a filter simultaneously: the filter cutoff is jumping at the same rate as the audio character is changing, because they share a source. This coherence is what makes Wogglebug useful as a complete voice rather than a modulation source that happens to have audio outputs on the side.
+
+Disturb and Ego turn the module into something that can be integrated into a broader patch rather than running autonomously. Disturb accepts gates and triggers from any source, making it possible for a sequencer downbeat, a percussion trigger, or a logic gate to force a new random value at a specific musical moment. Ego accepts CV to modulate the probability distribution of the randomness itself, so a slow LFO can gradually shift the Wogglebug from clustered, predictable behavior to full-spread chaos and back. Neither input changes what the module fundamentally is; both make it responsive to the rest of the patch rather than isolated from it.
 
 ---
 
 ## Progressive Patch Examples
 
-### **Patch 1: First Steps - Basic Chaos Control**
-```
-┌─────────────┐    ┌──────────────┐    ┌─────────────┐
-│ Make Noise  │───▶│  Oscillator  │───▶│   Filter    │
-│ Wogglebug   │    │              │    │             │
-│             │    │ 1V/Oct   ◀──┼────┼─ Stepped    │
-│ Stepped ────┼───▶│              │    │ Output      │
-│ Output      │    │ Audio Out ───┼───▶│             │
-│             │    │              │    │ Cutoff  ◀──┼─── [From Smooth]
-│ Smooth  ────┼────┼──────────────┼───▶│             │
-│ Output      │    │              │    │ Audio Out ──┼─── Final Output
-│             │    │ Speed/Chaos: │    │             │
-│ Speed/Chaos │    │ 12 o'clock   │    │ Ego/Id: 3   │
-│ Knob        │    │              │    │ o'clock     │
-└─────────────┘    └──────────────┘    └─────────────┘
-```
+### Patch 1: Beginner - Basic Random CV
 
-| Connection | Cable Type | Purpose | Learning Objective |
-|------------|------------|---------|-------------------|
-| Stepped → Oscillator 1V/Oct | [C] | **Random pitch control** | **Experience discrete chaos** - stepping between values teaches the same principle that quantizers use to impose musical order |
-| Smooth → Filter Cutoff | [C] | **Continuous filter sweeps** | **Learn smooth randomness** - smooth curves between values teach about modulation curves that appear in all envelope generators and filters |
-
-**Settings:** Speed/Chaos: 12 o'clock, Ego/Id: 3 o'clock (full chaos)
-**Result:** Oscillator jumps randomly between pitches while filter sweeps smoothly
-
-### **Patch 2: Intermediate - Phase 2 Chaos Processing**
 ```
-┌─────────────┐    ┌──────────────┐    ┌─────────────┐
-│   DivKid    │───▶│ Make Noise   │───▶│ Mutable     │
-│    Ochd     │    │ Wogglebug    │    │ Marbles     │
-│ Trigger 2 ──┼───▶│ Disturb   ◀──┼────┼─            │
-│             │    │              │    │ External    │
-│ LFO 5   ────┼───▶│ Ego Input ◀──┼────┼─ Clock   ◀──┼─── [From Clock Out]
-│             │    │              │    │             │
-│ Rate CV ────┼───▶│ Speed/Chaos  │    │ Spread CV◀──┼─── [From Stepped]
-│ Feedback    │    │ CV Input  ◀──┼────┼─            │
-│             │    │              │    │ DEJA VU  ◀──┼─── [From Smooth]
-│ System  ────┼───▶│ Clock Out ───┼───▶│ CV Input    │
-│ Learning    │    │ Stepped  ────┼───▶│             │
-│             │    │ Smooth   ────┼───▶│ Musical     │
-│ Feedback◀───┼────┼─ Woggle   ───┼───▶│ Output  ────┼─── Processed
-└─────────────┘    └──────────────┘    └─────────────┘   Chaos
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│ Make Noise      │    │   Oscillator     │    │   Filter        │
+│ Wogglebug       │    │                  │    │                 │
+│                 │    │                  │    │                 │
+│ Stepped ○───────┼────┼─▶ 1V/Oct         │    │                 │
+│                 │    │                  │    │                 │
+│ Smooth ○────────┼────┼──────────────────┼────┼─▶ Cutoff CV     │
+│                 │    │                  │    │                 │
+│                 │    │ Audio Out ○──────┼────┼─▶ Audio In      │
+│                 │    │                  │    │                 │
+│                 │    │                  │    │ Audio Out ○─────┼─── Output
+└─────────────────┘    └──────────────────┘    └─────────────────┘
 ```
 
-**Advanced Integration:** Ochd provides organic timing → Wogglebug adds chaos → Marbles learns patterns
-**Result:** Organic timing becomes musical chaos becomes intelligent patterns
+| Connection | Signal | Purpose |
+|------------|--------|---------|
+| Stepped → 1V/Oct | [C] | Random pitch: discrete jumps between voltages |
+| Smooth → Filter Cutoff | [C] | Random filter sweep: smooth curves between values |
+| Oscillator Audio → Filter In | [A] | Signal path through pitch-randomized oscillator |
 
-### **Patch 3: Advanced - Chaos Audio Synthesis**
+**Module settings:**
+- Speed/Chaos: 12 o'clock (moderate rate)
+- Ego/Id: 3 o'clock (toward full spread)
+- Woggle: leave unpatched for this patch
+- Disturb: leave unpatched for now
+
+**Learning objectives:**
+- Hear the difference between Stepped and Smooth from the same source: the pitch jumps while the filter sweeps, and both are driven by the same random process at the same rate
+- Press Disturb manually during the patch to hear how it forces an immediate new random value outside the internal clock rhythm
+- Hold Disturb down to freeze both the pitch and filter position simultaneously
+- Turn Ego/Id fully counterclockwise: the pitch and filter movement becomes more clustered and predictable. Turn it clockwise: the values spread across the full range
+
+**Enhancement:** Patch Woggle CV to a second oscillator's 1V/Oct. Now you have two oscillators moving to random pitches, but one jumps cleanly (Stepped) and one oscillates briefly before settling at each new pitch (Woggle). The difference between them is audible as a pitch character difference even though both come from the same underlying random voltage.
+
+---
+
+### Patch 2: Intermediate - Clocked Chaos with Disturb Control
+
 ```
-┌─────────────┐    ┌──────────────┐    ┌─────────────┐
-│ Make Noise  │───▶│ Audio Mixer  │───▶│ Cre8audio   │
-│ Wogglebug   │    │              │    │ Function    │
-│             │    │ Input 1  ◀───┼────┼─ Smooth VCO │
-│ Smooth VCO ─┼───▶│              │    │ Junction    │
-│             │    │ Input 2  ◀───┼────┼─ Woggle VCO │
-│ Woggle VCO ─┼───▶│              │    │             │
-│             │    │ Input 3  ◀───┼────┼─ Ring-Mod   │
-│ Ring-Mod ───┼───▶│              │    │ F MOD CV◀───┼─── [From Stepped]
-│             │    │ Mix Out  ────┼───▶│             │
-│ Stepped ────┼────┼──────────────┼───▶│ ADSR Gate◀──┼─── [From Burst]
-│ Output      │    │              │    │             │
-│             │    │ Influence ◀───┼────┼─ MIX Out ───┼─── Processed
-│ Burst   ────┼────┼─ Input        │    │             │   Chaos Audio
-└─────────────┘    └──────────────┘    └─────────────┘
-```
-
-| Module Chain | Signal Flow | Purpose | Phase 2 Integration |
-|-------------|-------------|---------|--------------------|
-| **Wogglebug Audio Outputs → Mixer** | Three chaos voices | **Multi-source chaos synthesis** | **Complete audio chaos generation** |
-| **Wogglebug Stepped → Function MOD** | Chaos CV processing | **Envelope modulation** | **Chaos controls modulation shape** |
-| **Wogglebug Burst → Function ADSR** | Random timing | **Chaotic envelope triggering** | **Uncertainty in timing structure** |
-| **Function Junction processing** | Modulation shaping | **Musical chaos translation** | **Chaos becomes musical expression** |
-
-**Module Settings:**
-- **Wogglebug Speed/Chaos:** 1 o'clock (active but musical chaos)
-- **Wogglebug Ego/Id:** 2 o'clock (balanced chaos/control)
-- **Function Junction:** Process chaos CVs into musical envelopes
-- **Audio Mixer:** Balance three chaos sources for complex timbres
-
-**Learning Objectives:**
-- **Chaos as audio source:** Wogglebug generates complete audio synthesis - three different waveforms (shark fin, square, ring-mod) teach how different oscillator types emerge from different circuits
-- **Multi-source chaos:** Three different chaos voices create complex timbres - teaches that mixing independent modulation sources creates emergent behavior found in all synthesis
-- **Chaos processing:** Function Junction shapes chaos into musical expression - reveals how envelopes aren't just for amplitude; they're universal shapers for ANY modulation
-- **Advanced audio synthesis:** Controlled uncertainty becomes musical audio - demonstrates that randomness isn't an error to correct; it's a musical material to shape intentionally
-
-**Advanced Techniques:**
-- **Chaos audio mixing:** Three different chaos characters blended
-- **Random envelope control:** Burst output creates unpredictable dynamics
-- **Influence feedback:** Ring-mod influenced by its own processed output
-- **Chaos modulation matrix:** Stepped CV controls processing of chaos audio
-
-**Visual Feedback:**
-- **Multiple audio sources:** Hear shark's fin, square wave, and ring-mod chaos
-- **Random triggering:** Burst LED shows unpredictable envelope timing
-- **Chaos character:** Speed/Chaos knob dramatically changes all audio sources
-- **Result:** Complete synthesizer voice powered entirely by controlled chaos
-
-### **Patch 4: Expert - Complete Advanced Chaos Ecosystem**
-```
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│   DivKid    │ │ Make Noise  │ │ 4ms RCD v2  │ │ Mutable     │
-│    Ochd     │ │ Wogglebug   │ │ (Phase 2)   │ │ Marbles     │
-│ (Organic)   │ │ (Chaos)     │ │             │ │ (Algorithms)│
-│             │ │             │ │ Out 1 ○─────┼─┼─t1 Clock   │
-│ LFO 2 ○─────┼─┼─Stepped ○   │ │             │ │             │
-│       ║     │ │        ║    │ │ Out 3 ○─────┼─┼─X1 Reset   │
-│ Trigger 1○──┼─┼─Disturb     │ │             │ │             │
-│             │ │             │ │ Clock In◀───┼─┼─t2 Output  │
-└─────────────┘ └─────────────┘ │             │ └───────║─────┘
-        ║                ║      └─────────────┘ │        ║
-        ║                ║                              ║
-        ▼                ▼                              ║
-┌────────────────────────────────────────────────────────────────────────║─────┐
-│                          Make Noise Wogglebug                         ║     │
-│                        (Chaos Command Center)                        ║     │
-│                                                                       ▼     │
-│ Ego Input     ◀─ Organic LFO Control of Chaos Character              │
-│ Disturb       ◀─ Organic Trigger Disruption                          │
-│ Speed/Chaos   ◀─ Mathematical Clock Division Rate                   │
-│ External Clock◀─ Algorithmic Timing Control                          │
-│                                                                            │
-│ All Phase 2 Intelligence Types Control Chaos Generation:              │
-│ • Organic timing disrupts chaos patterns                             │
-│ • Mathematical structures provide chaos framework                     │
-│ • Algorithmic intelligence learns from chaos output                   │
-│                                                                            │
-│ Stepped/Smooth/Woggle ○────────────────────────────────────────┼─── Complete
-└────────────────────────────────────────────────────────────────────────────────┘   Phase 2
-                              ║                                 Chaos
-                         Audio║                              Intelligence
-                         (Red)║
-                              ▼
-                    ┌─────────────────────┐
-                    │   Complete Musical  │
-                    │     Intelligence    │
-                    │                     │
-                    │ Organic + Chaos +   │
-                    │ Mathematical +      │
-                    │ Algorithmic =       │
-                    │ Controlled Chaos    │
-                    │                     │
-                    │ System Output ○─────┼─── Evolving Chaos
-                    └─────────────────────┘       Intelligence
+┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
+│  Sequencer      │    │ Make Noise       │    │   Quantizer     │
+│                 │    │ Wogglebug        │    │                 │
+│ Clock Out ○─────┼────┼─▶ External Clock │    │                 │
+│                 │    │                  │    │                 │
+│ Gate Out ○──────┼────┼─▶ Disturb        │    │                 │
+│                 │    │                  │    │                 │
+│                 │    │ Stepped ○────────┼────┼─▶ CV In         │
+│                 │    │                  │    │                 │
+│ Slow LFO ○──────┼────┼─▶ Ego Input      │    │ CV Out ○────────┼─── 1V/Oct
+│                 │    │                  │    │                 │
+│                 │    │ Clock Out ○──────┼────┼─── Side-chain   │
+└─────────────────┘    └──────────────────┘    └─────────────────┘
 ```
 
-**Complete Advanced Chaos Integration:**
+| Connection | Signal | Purpose |
+|------------|--------|---------|
+| Sequencer Clock → External Clock | [G] | Lock Wogglebug sample rate to sequencer tempo |
+| Sequencer Gate → Disturb | [G] | Sequence-triggered forced random values |
+| Stepped → Quantizer CV In | [C] | Quantized random pitch in musical scale |
+| Slow LFO → Ego Input | [C] | Gradual drift between clustered and spread randomness |
+| Quantizer CV Out → 1V/Oct | [C] | Pitch output constrained to musical intervals |
 
-| Intelligence Layer | Function | Wogglebug Control | Musical Evolution |
-|-------------------|----------|-------------------|-------------------|
-| **Organic (Ochd)** | Natural breathing | **Disturb/Ego timing** | **Breathing chaos character** |
-| **Mathematical (RCD)** | Precise timing relationships | **Clock/Speed control** | **Mathematical chaos structure** |
-| **Algorithmic (Marbles)** | Sophisticated pattern generation | **All parameters controlled** | **Intelligent chaos evolution** |
-| **Chaos (Wogglebug)** | Controlled uncertainty | **Central chaos generation** | **Musical uncertainty expression** |
+**Module settings:**
+- Speed/Chaos: 12 o'clock (internal clock still runs; external clock overrides sample rate)
+- Ego/Id: 12 o'clock (slow LFO will sweep this)
+- Disturb: patched to sequencer gate; forces new values on sequencer beats
+- External Clock: patched to sequencer clock output
 
-**Expert System Design:**
-- **Wogglebug as chaos brain:** All Phase 2 intelligence types control chaos characteristics
-- **Multi-layer uncertainty:** Organic breathing, mathematical structure, algorithmic intelligence
-- **User-guided chaos:** You direct sophisticated systems toward musical uncertainty
-- **Emergent chaos complexity:** Simple inputs create sophisticated controlled chaos
-- **Complete chaos ecosystem:** Every intelligence type controls different aspects of uncertainty
+**Learning objectives:**
+- External Clock synchronizes the sample-and-hold rate to the sequencer without stopping the internal oscillators; Clock Out continues even with external clock patched
+- The sequencer gate into Disturb creates a second random-value event on each beat, adding a forced change on top of the clock-divided timing
+- The quantizer imposes musical order on the random voltage; the pitch output stays in key even as the underlying voltage changes unpredictably
+- The slow LFO on Ego drifts the module between predictable (clustered) and unpredictable (spread) behavior over a longer timescale than the individual clock events
 
-**Advanced Performance:**
-1. **Organic foundation:** Ochd establishes natural breathing in chaos timing
-2. **Mathematical structure:** RCD provides precise framework for chaos generation
-3. **Algorithmic sophistication:** Marbles provides intelligent chaos pattern control
-4. **Chaos transcendence:** All intelligence types merge into pure controlled uncertainty
+**Enhancement:** Add Smooth CV to filter cutoff simultaneously. Now pitch (via quantizer) and filter both respond to the random process, but pitch is constrained to musical intervals while the filter sweeps continuously. The quantizer organizes one dimension of the randomness while leaving another free.
 
-**Philosophical Achievement:**
-This represents the **ultimate controlled chaos ecosystem** - where organic breathing, mathematical precision, and sophisticated algorithmic pattern generation all control every aspect of chaos generation, creating music that embraces uncertainty while maintaining musical intelligence under your creative direction.
+---
+
+### Patch 3: Expert - Chaos Audio Synthesis
+
+The three audio outputs (Smooth VCO, Woggle VCO, and Ring-Mod) run at rates set by the same clock that drives the CV outputs. This patch uses all three as an audio voice, with the CV outputs modulating processing parameters so the audio character and the modulation character evolve together.
+
+```
+┌─────────────────────┐         ┌──────────────────────┐
+│  Make Noise         │         │  Audio Mixer         │
+│  Wogglebug          │         │                      │
+│                     │         │                      │
+│ Smooth VCO ○────────┼─────────┼─▶ Ch 1               │
+│                     │         │                      │
+│ Woggle VCO ○────────┼─────────┼─▶ Ch 2               │
+│                     │         │                      │
+│ Ring-Mod ○──────────┼─────────┼─▶ Ch 3               │
+│                     │         │                      │
+│ Stepped ○───────────┼─────────┼─▶ Ch 1 Level CV      │
+│                     │         │                      │
+│ Smooth ○────────────┼─────────┼──────────────────────┼─── Filter Cutoff
+│                     │         │                      │
+│ Burst ○─────────────┼─────────┼─▶ Gate Out           │
+│                     │         │                      │
+│                     │         │ Mix Out ○────────────┼─▶ Influence In
+└─────────────────────┘         └──────────────────────┘
+```
+
+| Connection | Signal | Result |
+|------------|--------|--------|
+| Smooth VCO → Ch 1 | [A] | Shark's-fin chaos oscillator; rate locked to random clock |
+| Woggle VCO → Ch 2 | [A] | Square-wave chaos oscillator following Woggle CV |
+| Ring-Mod → Ch 3 | [A] | Ring modulation of both VCOs; the most complex of the three |
+| Stepped → Ch 1 Level CV | [C] | Random amplitude variation on the Smooth VCO channel |
+| Smooth → Filter Cutoff (downstream) | [C] | CV modulation tracks audio character |
+| Burst → Gate | [G] | Random gates for envelope triggering at random intervals |
+| Mix Out → Influence In | [A] | Feedback: processed mix remodulates Woggle VCO frequency |
+
+**Module settings:**
+- Speed/Chaos: 1 o'clock (moderately fast for audio-rate interest)
+- Ego/Id: 2 o'clock (slight spread, not maximum chaos)
+- Woggle: 11 o'clock (moderate sinusoidal decay speed)
+- Influence: mixer output fed back creates a feedback loop through the ring modulator
+
+**Learning objectives:**
+- All three audio outputs come from the same internal process, but their waveforms differ: the Smooth VCO produces a curved shark's-fin shape, the Woggle VCO produces a square wave, and the Ring-Mod produces their ring-modulated product
+- The Stepped CV modulating Ch 1 level creates amplitude variation that is rhythmically related to the pitch variation, since both come from the same clock
+- Feeding the mixer output back into Influence creates a feedback relationship: the ring modulator output affects the Woggle VCO frequency, which changes the ring modulator output
+- The Burst output provides unpredictable gate timing for any envelope in the downstream signal path
+
+---
+
+### Patch 4: Advanced - Multi-Module Chaos Source
+
+Wogglebug serves as the primary random voltage source for a network of other modules. Marbles uses Wogglebug's Clock Out as its timing reference, so both modules operate from the same underlying clock. Wogglebug's Stepped and Smooth outputs feed Marbles' spread and DEJA VU inputs, feeding its probability engine from the same chaos source that generates the base CV. Function Junction receives Woggle CV for modulation shaping and Burst for gate timing.
+
+```
+┌─────────────────────┐         ┌──────────────────────┐
+│  Make Noise         │         │  Mutable Instruments │
+│  Wogglebug          │         │  Marbles             │
+│                     │         │                      │
+│ Clock Out ○─────────┼─────────┼─▶ External Clock     │
+│                     │         │                      │
+│ Stepped ○───────────┼─────────┼─▶ Spread CV          │
+│                     │         │                      │
+│ Smooth ○────────────┼─────────┼─▶ DEJA VU CV         │
+│                     │         │                      │
+│                     │         │ X Out ○──────────────┼─── 1V/Oct
+│                     │         │                      │
+│                     │         │ t1 Out ○─────────────┼─▶ Disturb In
+└─────────────────────┘         └──────────────────────┘
+
+┌─────────────────────┐
+│ Cre8audio           │
+│ Function Junction   │
+│                     │
+│ Ch1 In ◀────────────┼─── Woggle CV (from Wogglebug)
+│                     │
+│ Gate In ◀───────────┼─── Burst Out (from Wogglebug)
+│                     │
+│ Ch1 Out ○───────────┼─── Filter Cutoff or LFO Rate
+└─────────────────────┘
+```
+
+| Connection | Signal | Result |
+|------------|--------|--------|
+| Wogglebug Clock → Marbles Ext Clock | [G] | Both modules share the same timing source |
+| Stepped → Marbles Spread | [C] | Random voltage controls Marbles' pitch spread range |
+| Smooth → Marbles DEJA VU | [C] | Random voltage shifts Marbles' repetition tendency |
+| Marbles t1 → Wogglebug Disturb | [G] | Marbles probabilistic gates force new random values |
+| Woggle CV → Function Junction Ch1 | [C] | Sinusoidal-decay CV fed into envelope processing |
+| Burst → Function Junction Gate | [G] | Random gates trigger envelope shaping |
+
+**Module settings:**
+- Wogglebug Speed/Chaos: 11 o'clock (moderate speed, stable enough for Marbles to track)
+- Ego/Id: 2 o'clock (some spread but not maximum)
+- Marbles: STEPS at 10 o'clock, DEJA VU at 12 o'clock (Wogglebug Smooth will push this)
+- Function Junction: process Woggle CV into modulation shapes for filter or rate control
+
+**Learning objectives:**
+- Wogglebug and Marbles share a clock, so their outputs have a rhythmic relationship even though the pitch and gate outputs are independently random
+- Marbles t1 feeding Disturb creates a feedback path: Marbles' probabilistic gate timing forces new random values in Wogglebug, which then affects the spread and DEJA VU inputs that modulate Marbles' behavior
+- The Woggle CV into Function Junction demonstrates how the sinusoidal-decay character passes through envelope processing differently than Stepped or Smooth would
+- Three different downstream musical functions (pitch via Marbles, modulation via Function Junction, gate timing via Burst) all derive from one Wogglebug
 
 ---
 
 ## Common Use Cases
 
-1. **🎲 Random Sequencing:** Stepped output for unpredictable melody generation
-2. **🌊 Organic Modulation:** Smooth output for natural filter and parameter movement
-3. **🎵 Audio Synthesis:** Three built-in oscillators for chaos-driven sound generation
-4. **⏰ Clock Chaos:** Clock output for non-mechanical timing in patches
-5. **🎭 Performance Control:** Disturb button for real-time chaos intervention
-6. **🔄 Sample & Hold:** Stepped output as sophisticated random voltage source
-7. **🎆 Trigger Generation:** Burst output for random rhythmic elements
-8. **🧠 System Uncertainty:** Add controlled chaos to any modular system
+**Random pitch sequences:** Stepped output into a quantizer produces melodic phrases that stay in scale while moving unpredictably between intervals. The clock rate sets the sequence density; Ego/Id sets how wide the pitch range spreads.
+
+**Organic filter modulation:** Smooth output into filter cutoff produces sweeps that feel alive without being mechanical. Because the Smooth output curves between values rather than jumping, it avoids the stepped quality that makes many random voltage sources feel unmusical when applied to filter cutoff.
+
+**Chaos audio synthesis:** The three audio outputs used as a voice: Smooth VCO and Woggle VCO mixed for timbre, Ring-Mod added for harmonic complexity, all three changing character together as Speed/Chaos changes.
+
+**Random gate timing:** Burst output into an envelope generator creates events at unpredictable intervals. The density of bursts tracks the internal clock rate: faster Speed/Chaos produces denser burst activity.
+
+**Performance intervention:** The Disturb button as a real-time tool during performance: pressing it forces pattern changes at will, holding it freezes the current state. Patching Disturb to a foot controller or performance CV source extends this to hands-free control.
+
+**Woggle as pitch glide:** Woggle CV into an oscillator's 1V/Oct produces pitch changes that briefly oscillate before settling. At slow Woggle settings with a slow internal clock, each new pitch arrives with an audible overshoot and decay, a distinctive character that cannot be replicated with a standard portamento or pitch glide.
 
 ---
 
-## Beginner "Gotchas" & Pro Tips
+## Common Mistakes
 
-### **⚠️ Common Mistakes:**
+### "The randomness sounds chaotic and unmusical"
 
-**"The chaos is too chaotic!"**
-- Wogglebug can create extreme randomness that doesn't sound musical
-- **Solution:** Use Ego/Id Balance to tame the chaos, or patch Ego Input for external control
-- **Phase 2 Solution:** Use Marbles or Ochd to provide musical guidance to chaos generation
+Random voltage without constraint produces unpredictable results that may not respect musical expectations. Ego/Id at full clockwise gives maximum spread: pitches jump across the entire output range with no tendency toward any center. This is accurate to what the control does, but it may be too much spread for melodic use.
 
-**"Nothing's happening at slow speeds!"**
-- At very slow speeds, changes can take minutes to occur
-- **Solution:** Start around 12 o'clock and adjust from there
-- **Visual aid:** Watch the System Clock LED to see actual rate
-
-**"The audio outputs are too quiet/loud!"**
-- Audio outputs are 10Vpp - much hotter than typical oscillator levels
-- **Solution:** Use attenuators or mixer gain staging to control levels
-- **Pro tip:** Excellent for overdriving filters and effects
-
-**"My Woggle CV doesn't seem different than Smooth output"**
-- Woggle CV appears to behave identically to Smooth output in many patches
-- **Why:** Woggle's unique feature is **sinusoidal decay between steps** - smooth curves between discrete values. But at very fast clock speeds or when listening to pitch changes, the sinusoidal character is hard to hear. Users expect it to sound "different" dramatically, but the difference is subtle until you understand what to listen for.
-- **Solutions:**
-  - Use Woggle CV for **pitch modulation** where the smooth stepping is obvious - you hear stepped pitch with smooth glides between steps
-  - Patch Woggle CV to **filter cutoff** (slow), where smooth exponential curves create organic sweeps
-  - Compare side-by-side: patch Stepped → oscillator pitch and Woggle → filter cutoff simultaneously, then you hear the difference
-  - Slow down Speed/Chaos knob (9-10 o'clock) so steps take longer, making sinusoidal decay audible
-- **Teaching Point:** This reveals that Wogglebug's innovation isn't just "another output" - it's teaching about **curve types in CV modulation**. Linear, exponential, sinusoidal - these are fundamentally different musical behaviors. Understanding Woggle teaches you that how voltage changes is just as important as what voltage value you're using.
-
-**"When I patch the Ego Input, almost nothing changes"**
-- Patching a control voltage to Ego Input produces minimal audible effect
-- **Why:** Ego Input requires **significant attenuation** to sculpt the chaos character effectively. Users expect the knob position (12 o'clock = neutral) to work like other modules, but Ego Input is subtle - it shifts the *probability distribution* of random values, not the obvious speed/range. A slow LFO at full volume often overwhelms rather than sculpts. You need careful scaling and attenuation.
-- **Solutions:**
-  - Use an **attenuverter** (Maths, Dual Attenuation, etc.) to reduce the Ego Input signal to 10-25% of its original strength
-  - Start with slow modulation (LFO at 0.1-0.5Hz) rather than audio-rate signals
-  - Use **smaller voltage ranges** (±2V instead of ±5V) when patching to Ego Input
-  - Try with Stepped output into a quantizer to hear the character change as distribution shifts
-- **Teaching Point:** This teaches about **signal scaling and integration** - how subtle CV control works differently than "more signal = more effect." Understanding attenuation and careful voltage management is fundamental to modular thinking. The Ego Input reveals that not all CV inputs want full-strength signals.
-
-### **Pattern Recognition: Root Causes of Most Wogglebug Frustration**
-
-Most Wogglebug frustrations come from **4 core misunderstandings**:
-
-**1. Confusing "chaos character" with speed or quantity**
-- Wogglebug teaches that randomness has personality, not just magnitude. Speed/Chaos and Ego/Id don't just change "more" or "less" random - they fundamentally change the *personality* of the randomness. Slow + full Ego/Id = smooth wandering through voltage space. Fast + low Ego/Id = jittery, clustered patterns. The same Wogglebug can sound completely different based on character, not just amount.
-- **Learning Moment:** Understanding this teaches you that all modulation sources have character, not just quantity. This principle applies across all synthesis. Every LFO has personality. Every random source sounds different. Recognizing character teaches you to listen deeper, not just "more or less."
-
-**2. Forgetting that output types teach CV design itself**
-- Stepped, Smooth, and Woggle aren't just "three ways to get random." They're three different mathematical approaches to representing change in voltage. Stepped = raw discrete values. Smooth = simple lagging (first-order lowpass). Woggle = sinusoidal decay between values. Learning when to use each one teaches you fundamental CV design principles that apply to filters, envelopes, and all voltage shaping.
-- **Learning Moment:** Understanding the three outputs reveals that "curve types" matter in synthesis. How a voltage transitions from point A to point B is as important as the actual voltage values. This principle appears in every filter design, every envelope generator, every modulation curve. Wogglebug teaches it explicitly.
-
-**3. Treating Wogglebug as a voltage source rather than a timing device**
-- Wogglebug's power emerges when you understand it controls *when things happen*, not just *what* values happen. Clock Output, Burst output, and Disturb button all teach that uncertainty can be applied to timing. Random gates trigger random envelopes. Random timing disrupts mechanical sequences. The module becomes a timing controller for the entire patch.
-- **Learning Moment:** This teaches that chaos doesn't just modify parameters - it can disrupt structure itself. Timing uncertainty is as musically powerful as voltage uncertainty. This principle appears in every module with timing control: sequencers, gates, clocks. Wogglebug makes it explicit: uncertainty in timing IS a musical tool.
-
-**4. Using Wogglebug in isolation instead of as a patch component**
-- Wogglebug alone is just random values. With other modules (quantizers turning stepped chaos into melody, envelope generators shaping burst gates, Marbles learning from its patterns), it becomes part of a system where controlled chaos generates actual music. The module is designed to be integrated, not standalone.
-- **Learning Moment:** This teaches the interconnection principle - Wogglebug's real power emerges in patches where uncertainty propagates through multiple modules. Understanding this changes how you think about all modules - they're patch components, not isolated effects. No module is self-contained. All power comes from how modules relate.
-
-### **🎵 Pro Tips:**
-
-**Ego Input Magic:**
-- Patch slow LFO to Ego Input for evolving chaos character
-- Use envelope generator for chaos that responds to note events
-- Try stepped voltages for sudden chaos personality changes
-- **Phase 2 Integration:** Use Ochd LFOs for organic chaos character evolution
-
-**Disturb Performance Techniques:**
-- **Tap quickly:** Create stuttering effects in sequences
-- **Hold down:** Freeze chaos at interesting values
-- **Rhythmic pressing:** Add human timing to chaos generation
-- **Phase 2 Timing:** Use Ochd triggers for organic Disturb timing
-
-**Audio Rate Chaos:**
-- Push Speed/Chaos fully clockwise for audio-rate modulation
-- Patch Smooth Output to oscillator FM for controlled noise textures
-- Use audio-rate chaos for unique granular synthesis effects
-- **Phase 2 Audio:** Combine with Arbhar for chaos-driven granular processing
-
-**Phase 2 Chaos Matrix:**
-- **Ochd LFOs 1-4** → Fast chaos character modulation
-- **Ochd LFOs 5-8** → Slow chaos evolution (Ego Input)
-- **Ochd Triggers** → Organic Disturb timing for natural chaos disruption
-- **Marbles X outputs** → Intelligent chaos parameter control
-- **RCD divisions** → Mathematical chaos timing structure
-- **Function Junction** → Envelope shaping of chaos outputs
-
-**Advanced Phase 2 Workflows:**
-- **Start with Ochd** as organic foundation for chaos timing
-- **Add Wogglebug** for controlled uncertainty in organic timing
-- **Include Marbles** for intelligent learning from chaotic patterns
-- **Use RCD v2** for mathematical framework of chaos timing
-- **Apply Function Junction** for envelope shaping and chaos processing
+Turn Ego/Id counterclockwise to cluster the values toward a center. Patch Smooth to filter rather than Stepped to pitch: the curved transitions of Smooth feel more organic and less abrupt than discrete jumps. Add a quantizer on Stepped to constrain pitch to a scale. Use the External Clock input to lock the sample rate to your master tempo; freerunning Wogglebug at a rate unrelated to the song tempo adds another layer of rhythmic conflict that can compound the chaos.
 
 ---
 
-## Pairs Well With
+### "Nothing is changing at slow Speed/Chaos settings"
 
-### **Advanced Module Synergies (Modulation & CV Sources):**
-- **DivKid Ochd & Expander:** Ochd LFOs → Wogglebug Ego/Speed for organic chaos character evolution
-- **Mutable Marbles:** Marbles X/Y outputs → Wogglebug parameters for intelligent chaos control
-- **4ms RCD v2:** RCD divisions → Wogglebug Clock for mathematical chaos timing structure
-- **Cre8audio Function Junction:** Wogglebug outputs → Function Junction for chaos envelope processing
-- **Cross-Advanced Integration:** All advanced modules can control and be controlled by chaos generation
+At very slow settings, changes can take tens of seconds to occur. The system clock LED gives visual confirmation of the actual rate; watch it rather than listening for change. At settings below 9 o'clock, the time between samples may be longer than your attention span while monitoring.
 
-### **Phase 1 Module Integration (Core Synthesis):**
-- **Make Noise Maths:** Wogglebug chaos → Maths for complex envelope and function processing
-- **Mutable Plaits:** Wogglebug CVs perfect for Model CV, Timbre, and Trigger modulation
-- **Mob of Emus:** Wogglebug Stepped/Smooth → harmonic control for chaos-driven mathematical patterns
-- **Disting mk4:** Use as quantizer for Wogglebug outputs, or probability gate for chaos triggers
-- **Complete Phase 1 systems:** Wogglebug as chaos injection into traditional synthesis chains
+Start around 11 o'clock and adjust from there. If the rate seems right visually but the audio is not changing, verify that the Stepped or Smooth outputs are actually patched to a destination that responds to slow CV: a VCA rather than a filter, for instance, may need larger voltage swings than the Ego/Id setting is providing.
 
-### **Essential Chaos Partners:**
-- **Quantizers (Scales, uScale):** Turn stepped chaos into musical pitch sequences
-- **Sample & Hold (Kinks, SMTH):** Further process chaos voltages for complex stepped modulation
-- **VCAs/Mixers:** Blend chaos outputs with other modulation sources for balanced uncertainty
-- **Clock Dividers/Multipliers:** Structure chaos timing for musical relationships
+---
 
-### **Advanced Chaos Applications:**
-- **Multiple Wogglebug units:** Layer different chaos characters for complex uncertainty
-- **Granular Processors (Arbhar):** Chaos-driven granular parameter control for time-based uncertainty
-- **Complex Oscillators:** Wogglebug audio outputs as FM/sync sources for chaotic timbres
-- **Performance Systems:** Real-time chaos control for live uncertainty and unpredictability
+### "My Woggle CV sounds the same as the Smooth output"
+
+At fast clock rates or when monitoring quickly, the sinusoidal decay that distinguishes Woggle from Smooth is easy to miss. The difference is most audible when patched to pitch at a slow clock rate: each new pitch arrives with a brief oscillation before settling, producing a stepped-but-gliding effect. At fast rates, the oscillation is too rapid to hear as a discrete event.
+
+To hear the difference: slow Speed/Chaos to 9-10 o'clock, patch Stepped to one oscillator's 1V/Oct and Woggle to a second oscillator's 1V/Oct simultaneously, then listen to how the two pitches change. Stepped jumps cleanly; Woggle oscillates before settling. Adjust the Woggle knob to control how fast it settles. At extreme clockwise settings, the oscillation is slow enough to be clearly audible as a pitch wobble at each new value.
+
+---
+
+### "Patching the Ego Input produces almost no effect"
+
+The Ego Input shifts the probability distribution of random values, not the amplitude range. This means the change it produces is statistical rather than immediately dramatic: the distribution of values shifts toward clustering or spreading over time, not instantly. A single new sample may not show any clear change; the effect accumulates over multiple samples.
+
+Use attenuated signals for Ego: a slow LFO at 20-30% of its original amplitude is more effective than a full-swing signal. Full-swing input can push the distribution to an extreme and hold it there, removing the useful range of variation. A 0-2V signal sweeping into Ego produces a more musically useful drift between clustering and spreading than a 0-10V signal that moves through the entire control range rapidly. Patch Stepped into a quantizer to pitch while slowly sweeping Ego: the pitch range graduallywidening or narrowing as the distribution shifts is the clearest way to hear what Ego is doing.
+
+---
+
+### "The audio outputs are overloading my mixer"
+
+The audio outputs are 10Vpp, roughly twice the amplitude of a typical Eurorack oscillator. They will clip any input that expects standard ±5V audio levels without attenuation. Use a mixer channel with attenuation, or patch through a VCA or attenuator before the mixer.
+
+The high level is also deliberately useful for overdriving filters: feeding a Wogglebug audio output directly into a filter input at high levels produces saturation and harmonic content that is a feature, not a problem. Treat the output level as a parameter to set intentionally rather than a defect to correct.
+
+---
+
+### "The Disturb input does not seem to trigger"
+
+The Disturb jack requires a gate or trigger signal that rises above approximately 2.5V. Low-level signals, audio, or CV below that threshold will not reliably trigger it. Use a gate or trigger from a sequencer, clock, or envelope output that reaches 5V or higher.
+
+If patching Disturb to a trigger source that works at the correct voltage and still seeing no response, verify the connection is to the Disturb jack and not the Ego jack; the two are adjacent on the panel and easy to misidentify.
 
 ---
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
-1. **Start with Wogglebug fundamentals:** Master chaos generation, audio outputs, and basic uncertainty control
-2. **Add organic guidance:** Integrate DivKid Ochd for natural chaos character evolution (see Ochd guide)
-3. **Include probabilistic intelligence: Use Mutable Marbles for sophisticated chaos control (see Marbles guide)**
-4. **Add mathematical structure:** Apply 4ms RCD v2 for precise chaos timing framework (see RCD guide)
-5. **Include modulation processing:** Use Cre8audio Function Junction for chaos envelope shaping (see Function Junction guide)
-6. **Complete the ecosystem:** Integrate all advanced modules for unified controlled chaos systems
+1. **Begin with Stepped and Smooth into separate destinations.** Run the two CV outputs to pitch and filter simultaneously and spend time with Ego/Id across its full range. The foundational Wogglebug skill is understanding how these two outputs differ from each other and what Ego/Id does to both of them. Rotation around the clock rate and distribution controls, listening carefully at each position, builds the intuition that makes later patches work.
 
-### **Cross-Module Learning Opportunities:**
-- **Wogglebug + Ochd:** Learn organic chaos character control through breathing modulation
-- **Wogglebug + Marbles:** Master sophisticated chaos control with probabilistic parameter manipulation
-- **Wogglebug + RCD:** Understand mathematical chaos timing and polyrhythmic uncertainty
-- **Wogglebug + Function Junction:** Explore chaos envelope processing and modulation shaping
-- **All Advanced + Wogglebug:** Build complete controlled chaos ecosystems with musical intelligence
+2. **Add Woggle CV to a third destination and learn what distinguishes it.** Pitch modulation at a slow clock rate is the clearest demonstration. Once the sinusoidal decay is audible at a slow rate, increase Speed/Chaos and listen for where the decay becomes too fast to hear as a discrete event. This calibrates the Speed/Chaos range where Woggle's character is most useful.
 
-### **Skill Development Milestones:**
-- **Beginner:** Master basic chaos generation and understand controlled uncertainty
-- **Intermediate:** Learn chaos character control and audio synthesis capabilities
-- **Advanced:** Create advanced integration patches with sophisticated chaos processing
-- **Expert:** Design controlled chaos ecosystems that maintain musical intelligence
+3. **Patch an external clock source and note the difference.** When the External Clock jack receives a signal, the sample rate locks to that clock, but the internal oscillators continue running. Clock Out remains active. Understanding this distinction, that external clock controls when samples are taken rather than stopping the internal process, clarifies what the module's different subsystems do independently.
 
-### **Advanced Integration Concepts:**
-- **Controlled Uncertainty:** Balance chaos with musical intelligence for expressive unpredictability
-- **Multi-Source Chaos Control:** Use multiple intelligence types to guide chaos characteristics
-- **Chaos as Musical Element:** Understand uncertainty as fundamental musical expression
-- **System-Level Chaos Design:** Create patches where chaos enhances rather than disrupts musicality
+4. **Explore Disturb as a performance tool before patching it.** Use the manual button during a simple pitch-plus-filter patch and develop a feel for how it interrupts the clock rhythm. Then patch a gate source to the Disturb jack and compare: the gate source forces new values at its own timing, overlaid on the internal clock's rhythm. Both the internal clock and the Disturb input are sampling the random circuit, producing two independent streams of random events from one source.
 
-### **Performance Applications:**
-- **Live Chaos Control:** Real-time manipulation of controlled uncertainty for dynamic performance
-- **Generative Chaos Systems:** Foundation for self-evolving compositions with intelligent unpredictability
-- **Hybrid Uncertainty:** Bridge between human control and chaotic unpredictability
-- **Creative Chaos Direction:** Guide sophisticated chaos systems toward musical expression
+5. **Use the audio outputs as a voice and compare them to the CV behavior.** The audio and CV outputs come from the same process and change character together as Speed/Chaos changes. Hear this connection directly by monitoring audio while watching or patching the CV outputs. The coherence between the audio voice and the CV behavior is what makes Wogglebug useful as a unified chaos source rather than as a CV module that happens to have audio outputs.
+
+6. **Integrate with a quantizer for melodic randomness.** Stepped into a quantizer into a pitch destination is the standard musical use of sample-and-hold randomness. After understanding the basic version, explore how Ego/Id affects the melodic output through the quantizer: at clustered settings, the melody stays near a central pitch; at spread settings, it ranges across the full scale. The quantizer constrains the randomness to a key without eliminating the variation.
+
+7. **Route Burst to an envelope generator and listen to the rhythmic result.** Burst produces gates at the internal clock rate but not on every tick; the density varies with clock rate and internal state. Using Burst for envelope triggering produces events at unpredictable intervals, a complement to the CV randomness that extends uncertainty into timing rather than only into parameter values.
 
 ---
 
-**Bottom Line:** Wogglebug isn't just a random voltage generator - it's a **sophisticated uncertainty engine** that brings controlled chaos to any musical system. From basic sample & hold duties to complex audio synthesis, it provides the unpredictability that makes electronic music feel alive. **As the chaos processor in advanced networks, it transforms rigid intelligence into expressive musical uncertainty.**
+## Pairs Well With
+
+**Quantizers:** A pitch quantizer on Stepped output is the standard tool for turning random voltage into melodic content that stays in scale. The quantizer imposes musical order on the chaos without eliminating the variation. This pairing appears throughout Eurorack and is the foundational application of sample-and-hold randomness.
+
+**Mutable Instruments Marbles:** Marbles has its own random CV and gate generation, and it can take Wogglebug's Clock Out as an external timing reference. The two modules complement each other: Wogglebug generates raw chaos; Marbles applies probability weighting and DEJA VU repetition tendency to its own outputs using Wogglebug's CV as a modulation source. Running them from a shared clock lets both modules operate in rhythmic relationship.
+
+**DivKid Ochd:** Ochd's eight LFO outputs provide slow, organic modulation sources for Ego and Speed. Patching a slow Ochd LFO to Ego gradually drifts the Wogglebug's distribution between clustered and spread behavior over timescales longer than the individual random events. Patching a second Ochd LFO to Speed/Chaos similarly shifts rate and character over time, so the module's overall behavior changes slowly while its short-term randomness continues.
+
+**Cre8audio Function Junction:** Woggle CV and Burst output both benefit from Function Junction processing. Woggle CV fed into an envelope-follower or attenuator chain produces shaped modulation from the sinusoidal-decay character. Burst output triggering a Function Junction ADSR gate creates shaped envelopes at random timing intervals. Either use case extends the Wogglebug's CV outputs into processed modulation shapes.
+
+**4ms RCD v2:** RCD divisions can clock the Wogglebug via External Clock or trigger Disturb from specific division outputs. Clocking Wogglebug from RCD Out 3 or Out 5 synchronizes sample timing to non-binary rhythmic divisions, creating random values that arrive at a rhythmically structured rather than free-running rate.
+
+**Filters:** Smooth output into filter cutoff is the most common single-destination patch for Wogglebug. The curved transitions of Smooth feel natural on a filter and avoid the stepped quality that can make random CV sources sound mechanical. The audio outputs are also high enough in level to overdrive filter inputs intentionally, adding saturation and harmonic content as a separate use case.
 
 ---
 
-*Visit [Make Noise](https://www.makenoisemusic.com/modules/wogglebug) for complete documentation and historical background. Special thanks to Grant Richter for the original Wiard Wogglebug design that inspired this legendary module.*
-
+*Visit [makenoisemusic.com](https://www.makenoisemusic.com/modules/wogglebug) for full documentation. Original Wiard Wogglebug design by Grant Richter.*
