@@ -3,518 +3,234 @@ title: Mutable Instruments Rings
 manufacturer: Mutable Instruments
 primary_role: SOURCE
 secondary_roles: [SHAPER]
+historical_context: true
 form_factor: eurorack
 functions: [resonator, physical-model]
 behavior_tags: [harmonic, sustained, metallic, evolving, performance-oriented]
 use_cases: [harmonic pad, evolving ambient texture, chord voice, drone foundation]
 hp: 14
+memory: none
+transport: none
+screen: false
+hybrid: false
+cv: full
 ---
 
-# Mutable Instruments Rings - Beginner's Guide
+# Mutable Instruments Rings
 
 ![Mutable Instruments Rings](https://github.com/Shadoe-42/music/raw/main/modular/images/mutable_instruments/rings/front_panel.jpg)
-*Physical modeling powerhouse with three acoustic resonator algorithms - Modal, Sympathetic, and String models for authentic instrument simulation*
 
-**The Physical Modeling Powerhouse**
-
----
-
-## Quick Start: Get Your First Resonant Sound in 5 Minutes
-
-**What is Rings?** Think of it as a magic box that turns any sound (or even just a voltage) into beautiful, resonant tones - like striking a bell, plucking a string, or bowing a violin. It doesn't make sound by itself; instead, it takes whatever you feed it and makes it sing with the voice of real physical objects.
-
-### Your First Plucked String
-1. **Connect keyboard/sequencer** → **V/OCT input** (bottom)
-2. **Connect Rings ODD output** → **your mixer/audio interface**
-3. **Press left button** until you see 1 voice (single LED)
-4. **Press right button** for green LED (modal resonator)
-5. **Play some notes** - Rings creates its own "pluck" sounds automatically!
-
-**Congratulations!** You've just played a virtual string instrument that responds to your melodies with beautiful, decaying resonances!
+*Three-algorithm physical modeling resonator with polyphonic voice management and dual harmonic outputs: modal, sympathetic strings, and nonlinear string physics in 14HP*
 
 ---
 
-## Essential Parameters (The Big 6)
+## Historical Context
 
-### **1. Resonator Type Button (Right) + LED Colors**
-- **Green LED = Modal Resonator** - bells, chimes, metallic sounds, classic physical modeling
-- **Orange LED = Sympathetic Strings** - sitar-like sympathetic resonances, rich harmonics
-- **Red LED = String Model** - guitar/violin-like string sounds with nonlinearities
-- **Musical impact:** Each mode sounds completely different - explore them all!
+The central problem physical modeling synthesis addresses is not timbre but behavior. An electronic oscillator can approximate the harmonic spectrum of a bell or a plucked string at a given instant, but it cannot replicate the way those harmonics evolve over time under the physical constraints of mass, tension, and material damping. Acoustic instruments do not produce static spectra; they produce dynamic systems where each partial decays at its own rate, where striking harder changes the relationship between modes, where the position of the excitation point shifts the timbral emphasis. Kevin Karplus and Alex Strong described a computationally minimal model of this behavior in 1983: a delay line with a single low-pass filter in the feedback path, initialized with white noise, produces a convincing approximation of a plucked string because the delay time sets the pitch and the filter models the faster decay of upper harmonics. The Karplus-Strong algorithm was not a curiosity; it was the beginning of a synthesis discipline.
 
-### **2. Polyphony Button (Left) + Voice Count**
-- **1 Voice = Monophonic** - one note at a time, all 64 filters for maximum quality
-- **2 Voices = Duophonic** - two overlapping notes, like fingerpicking
-- **4 Voices = Quadraphonic** - chord strumming, multiple decaying notes
-- **Trade-off:** More voices = less resolution per voice, but more musical complexity
+Julius O. Smith III at Stanford's Center for Computer Research in Music and Acoustics extended this approach through the 1980s and 1990s into waveguide synthesis: a more general framework that models acoustic resonators by simulating the traveling pressure waves within them, accounting for the physics of reflection, transmission, and loss at the boundaries of the resonating object. Smith's work produced models of bowed strings, wind instruments, and percussion bodies with a fidelity that could not be achieved through additive or subtractive methods. Parallel to waveguide research, modal synthesis developed as a distinct approach: rather than simulating wave propagation, modal synthesis models the resonant mode structure of an object directly, computing how each resonant frequency is excited and how it decays. Jean-Marie Adrien's work on modal synthesis in the late 1980s established the mathematical foundation that underlies the modal resonator in Rings. These two lineages, waveguide and modal, are not interchangeable; they produce physically distinct behaviors and produce different sonic results even when tuned to the same fundamental frequency.
 
-### **3. FREQUENCY Knob**
-- **What it does:** Sets the fundamental pitch/tuning of the resonator
-- **Behavior:** Quantized to semitones when V/OCT input is patched
-- **Range:** 5 full octaves of precise tuning
-- **Sweet spot:** Tune to match your musical material
+Commercial physical modeling synthesis arrived in the mid-1990s. Yamaha released the VL1 in 1994, the first commercially available physical modeling synthesizer, implementing waveguide models of acoustic instruments. The VL1 was exceptional and expensive, initially limited to two voices. Korg introduced physical modeling in the Prophecy in 1995 at a lower price point, reaching more musicians. Neither instrument fully displaced other synthesis methods, but they established that physical modeling belonged in the toolkit alongside FM, wavetable, and analog subtractive synthesis. The sounds they produced, particularly the intimate response of string and wind models to performance dynamics, had no equivalent from any other synthesis approach.
 
-### **4. STRUCTURE Knob** 
-- **What it does:** Changes the harmonic relationships - the "material" of the object
-- **Modal mode:** Metal → wood → string materials by changing partial relationships
-- **String modes:** Detuning, nonlinearity, and string intervals
-- **Magic knob:** This transforms the entire character of the sound
-
-### **5. BRIGHTNESS Knob**
-- **What it does:** Controls spectral content from dark to bright
-- **Left side:** Low-pass filtering, darker, warmer sounds
-- **Right side:** Opens up harmonics, adds brilliance and edge
-- **Musical use:** Like tone controls on a guitar amp
-
-### **6. DAMPING Knob**
-- **What it does:** Controls how long resonances last (decay time)
-- **Range:** From 100ms (short plucks) to 10 seconds (infinite sustain)
-- **Musical impact:** Short = percussive, Long = sustained drones
-- **Key to character:** This knob defines whether sounds are attacks or sustains
-
+Mutable Instruments Rings was released in 2015, bringing three physical modeling paradigms into Eurorack form in 14HP. Émilie Gillet implemented the modal resonator based on the Adrien lineage, a sympathetic strings algorithm modeling the resonance coupling between multiple strings tuned in harmonic relationships, and a string model with nonlinear behavior incorporating the kind of saturation and irregularity present in real bowed and plucked string instruments. The module accepts external audio at its IN input, allowing any sound to become the excitation material for the resonator, and separates the odd and even harmonics of the resonating body to two discrete outputs. Rings is one of three modules in the Mutable Instruments catalog that implement physical modeling, alongside Elements, which provides a complete physical modeling voice chain; Rings focuses specifically on the resonant body, designed to be driven by the rest of a modular system and to integrate into existing patches as a timbral transformation stage as readily as it operates as a standalone voice.
 
 ---
 
-## Why Mutable Instruments Rings Excels
+## Quick Start
 
-### **The Philosophy:**
-Rings represents **acoustic reality through electronic means** - not just sound synthesis, but authentic simulation of real physical instruments. It bridges the gap between electronic music and acoustic instruments, proving that modular synthesis can create sounds indistinguishable from real bells, strings, and resonant objects.
+Rings is a physical modeling resonator. It simulates the resonant behavior of acoustic objects: bells, strings, and resonating bodies. It can generate sound entirely on its own when triggered, or it can process external audio by treating that audio as the excitation that drives the resonator. The three algorithm modes and four polyphony levels are all accessible from the front panel with two buttons.
 
-### **The Innovation:**
-- **Three distinct physical modeling algorithms** each simulating different acoustic phenomena
-- **Polyphonic voice management** that mimics real instrument behavior
-- **Dual outputs with harmonic separation** for spatial acoustic imaging
-- **Audio processing mode** transforms any sound into acoustic instruments
-- **Built-in decay envelopes** eliminate need for external envelope generators
-
-### **The Practical Benefits:**
-- **Space efficiency:** Three complete acoustic instruments in 14HP
-- **Learning tool:** Experience acoustic instrument physics hands-on
-- **Creative catalyst:** Transform electronic sounds into acoustic reality
-- **Complete voice:** Built-in envelopes and polyphony eliminate external processing needs
-- **Immediate results:** Every setting sounds musical and acoustic
-
-### **Perfect For:**
-- **Electronic producers** wanting to add acoustic realism to electronic music
-- **Sound designers** needing authentic acoustic instrument simulation
-- **Ambient musicians** creating realistic acoustic spaces and environments
-- **Experimental artists** exploring the boundary between electronic and acoustic
-- **Small system builders** needing maximum acoustic variety in minimal space
-- **Acoustic instrument players** wanting electronic versions of familiar instruments
-
-### **The Magic:**
-Rings **democratizes acoustic instrument access** - you don't need to learn violin technique, bell casting, or guitar construction. Just turn knobs and **every acoustic instrument becomes immediately playable**. It's like having a complete acoustic instrument collection that responds to electronic control.
-
-### **Advanced Integration Power:**
-As the **acoustic reality engine of Advanced ecosystems**, Rings transforms organic breathing, controlled chaos, Advanced pattern generation, and mathematical processing into authentic acoustic instrument behavior. **You conduct electronic intelligence toward acoustic musical expression.**
-
+1. Connect a sequencer or keyboard V/OCT output to the Rings V/OCT input.
+2. Connect a gate or trigger to the Rings STRUM input.
+3. Connect Rings ODD output to a mixer or audio interface.
+4. Press play or play a note. You should hear a decaying, pitched resonance with no external audio source required: the module uses an internal noise burst as its exciter when IN is unpatched.
+5. Press the right button to change the resonator algorithm: the LED indicates green (modal), orange (sympathetic strings), or red (string model).
+6. Turn DAMPING to adjust the decay time from short percussive plucks to sustained, ringing tones.
+7. Turn STRUCTURE to change the harmonic character of the resonating body.
 
 ---
 
----
+## Key Specifications
 
-## Progressive Patch Examples
-
-### **Patch 1: First Steps - Basic Physical Modeling**
-```
-                    ┌─────────────────────┐
-                    │   Mutable Rings     │
-                    │                     │
-     1V/Oct CV ─────┼─▶ V/OCT Input       │
-                    │                     │
-     Gate/Trig ─────┼─▶ STRUM Input       │
-                    │                     │
-                    │ FREQUENCY: 12 o'clk │
-                    │ STRUCTURE: 12 o'clk │
-                    │ BRIGHTNESS:2 o'clk  │
-                    │ DAMPING:  10 o'clk  │
-                    │ POSITION:  1 o'clk  │
-                    │                     │
-                    │ Resonator Mode:     │
-                    │ Green LED (Modal)   │
-                    │                     │
-                    │ ODD Output ○───────┼─── [A]
-                    │                     │
-                    │ EVEN Output ○──────┼─── [A]
-                    └─────────────────────┘
-                             ║       ║
-                        Audio║  Audio║
-                        (Red)║ (Red) ║
-                             ▼       ▼
-                    ┌─────────────────────┐
-                    │    Stereo Mixer     │
-                    │                     │
-                    │ Left Input      ◀──┼─── ODD Harmonics
-                    │                     │
-                    │ Right Input     ◀──┼─── EVEN Harmonics
-                    │                     │
-                    │ Stereo Output ○───┼─── Physical Modeling
-                    └─────────────────────┘
-```
-
-| Connection | Cable Type | Purpose | Learning Objective |
-|------------|------------|---------|-------------------|
-| 1V/Oct CV → V/OCT Input | [C] | **Harmonic pitch tracking** | **Learn physical modeling fundamentals** |
-| Gate/Trigger → STRUM Input | [G] | **Trigger resonant bursts** | **Experience acoustic triggering** |
-| ODD Output → Left Mix | [A] | **Odd harmonics** | **Understand harmonic separation** |
-| EVEN Output → Right Mix | [A] | **Even harmonics** | **Stereo harmonic imaging** |
-
-**Module Settings:**
-- **Rings Mode:** Green LED (Modal resonator)
-- **Voices:** 1 voice for maximum resolution
-- **DAMPING:** 10 o'clock (musical decay time)
-- **BRIGHTNESS:** 2 o'clock (bright, present sound)
-
-**Learning Objectives:**
-- Understand physical modeling vs. traditional synthesis
-- Experience acoustic instrument simulation
-- Learn harmonic separation between ODD/EVEN outputs
-- Discover natural decay envelopes in physical modeling
-
-**Visual Feedback:**
-- **Green LED:** Shows Modal resonator mode
-- **Single voice LED:** Maximum quality physical modeling
-- **Parameter LEDs:** Show real-time CV modulation
-- **Result:** Beautiful bell-like tones with natural acoustic behavior
-```
-[Sequencer] ──1V/OCT──→ [Rings V/OCT]
-[Rings ODD] ──→ [Reverb] ──→ [Audio Out]
-```
-**Setup:** Green LED (modal), 1 voice, DAMPING around 2 o'clock for musical decay
-**Visual:** Single green LED shows modal mode, notes trigger automatically
-**Controls:** STRUCTURE changes materials, BRIGHTNESS for tone, POSITION for character
-**Sound:** Beautiful, bell-like melodic sequences with natural decay
-
-### **Patch 2: Intermediate - Advanced Organic Evolution with Ochd**
-```
-   ┌─────────────────────┐      ┌─────────────────────┐
-   │   DivKid Ochd      │      │   Mutable Rings     │
-   │    (Advanced)      │      │                     │
-   │                    │      │                     │
-   │ LFO 2 ○────────────┼──────┼─▶ STRUCTURE CV      │
-   │       ║            │      │                     │
-   │ LFO 4 ○────────────┼──────┼─▶ BRIGHTNESS CV     │
-   │       ║            │      │                     │
-   │ LFO 6 ○────────────┼──────┼─▶ DAMPING CV        │
-   │       ║            │      │                     │
-   │ LFO 8 ○────────────┼──────┼─▶ POSITION CV       │
-   │       ║            │      │                     │
-   │       ║            │      │ Polyphonic Mode:    │
-   │       ║            │      │ 4-voice chords      │
-   │       ║            │      │                     │
-   │       ║            │      │ ODD Output ○───────┼─── [A]
-   │       ║            │      │                     │
-   │       ║            │      │ EVEN Output ○──────┼─── [A]
-   └───────║────────────┘      └─────────────────────┘
-           ║                           ║       ║
-   [C]║                      Audio║  Audio║
-           ▼                      (Red)║ (Red) ║
-   ┌─────────────┐                    ▼       ▼
-   │ Sequencer/    │           ┌─────────────────────┐
-   │ Clock Source  │           │   Spatial Effects   │
-   │               │           │                     │
-   │ STRUM Trigs○─┼──────────┼─ Left Input      ◀──┼─── ODD
-   │               │           │                     │
-   └─────────────┘           │ Right Input     ◀──┼─── EVEN
-                               │                     │
-                               │ Processed Out ○───┼─── Organic Physical
-                               └─────────────────────┘     Modeling
-```
-
-| Advanced Integration | Rings Parameter | Purpose | Organic Result |
-|-------------------|-----------------|---------|----------------|
-| **Ochd LFO 2 → Structure CV** | Physical modeling structure | **Evolving resonator character** | **Breathing acoustic spaces** |
-| **Ochd LFO 4 → Brightness CV** | Harmonic content | **Organic timbral evolution** | **Natural spectral movement** |
-| **Ochd LFO 6 → Damping CV** | Resonance decay | **Living sustain behavior** | **Breathing resonance** |
-| **Ochd LFO 8 → Position CV** | Excitation point | **Organic playing technique** | **Natural performance variation** |
-
-**Module Settings:**
-- **Rings:** Polyphonic mode for rich harmonic content
-- **Ochd Rate:** 1 o'clock for slow, organic parameter evolution
-- **All LFOs:** Different phases creating complex organic interactions
-- **Spatial processing:** Separate ODD/EVEN outputs for stereo imaging
-
-**Learning Objectives:**
-- **Advanced organic integration:** Ochd's breathing modulation applied to physical modeling
-- **Multi-parameter organic control:** Multiple aspects of physical modeling evolving together
-- **Acoustic space simulation:** Physical modeling creating realistic acoustic environments
-- **Stereo physical modeling:** Using dual outputs for spatial acoustic simulation
-
-### **Patch 3: Advanced - Audio Processing Hub with Chaos**
-```
-   ┌─────────────────────┐      ┌─────────────────────┐
-   │ Make Noise        │      │   Mutable Rings     │
-   │ Wogglebug         │      │  (Audio Processor)  │
-   │ (Chaos)           │      │                     │
-   │                   │      │                     │
-   │ Smooth VCO ○──────┼──────┼─▶ IN (Audio Input)   │
-   │            ║      │      │                     │
-   │ Stepped CV ○──────┼──────┼─▶ STRUCTURE CV       │
-   │            ║      │      │                     │
-   │ Smooth CV  ○──────┼──────┼─▶ BRIGHTNESS CV      │
-   │            ║      │      │                     │
-   │ Burst Gate ○──────┼──────┼─▶ STRUM Input        │
-   │            ║      │      │                     │
-   └───────────║──────┘      │ Resonator Mode:     │
-          Audio║                 │ Red LED (String)    │
-         (Red) ║                 │                     │
-               ▼                 │ ODD Output ○──────┼─── [A]
-       ┌─────────────┐         │                     │
-       │ Audio Source  │         │ EVEN Output ○─────┼─── [A]
-       │ (Drums, Voice,│         └─────────────────────┘
-       │  Noise, etc.) │                      ║       ║
-       │               │                 Audio║  Audio║
-       │ Audio Out ○───┼────────────────────(Red)║ (Red)║
-       └─────────────┘                           ▼       ▼
-                                     ┌─────────────────────┐
-                                     │   Spatial Effects   │
-                                     │                     │
-                                     │ Left Input      ◀──┼─── String Harmonics
-                                     │                     │
-                                     │ Right Input     ◀──┼─── Phase Shifted
-                                     │                     │
-                                     │ Processed Out ○─┼─── Chaotic Physical
-                                     └─────────────────────┘     Modeling
-```
-
-| Chaos Processing | Rings Function | Purpose | Advanced Technique |
-|------------------|----------------|---------|--------------------|
-| **Wogglebug VCO → Audio Input** | Audio processing | **Chaos becomes resonant material** | **Pure chaos transformed into acoustic instruments** |
-| **Stepped CV → Structure** | Physical modeling character | **Chaotic structural changes** | **Randomized acoustic materials** |
-| **Smooth CV → Brightness** | Harmonic content | **Chaotic spectral evolution** | **Uncertain timbral movement** |
-| **Burst → Strum** | Trigger excitation | **Random acoustic strikes** | **Unpredictable acoustic performance** |
-
-**Module Settings:**
-- **Rings:** Red LED (String model) for complex nonlinear behavior
-- **Wogglebug:** Medium chaos rate for musical randomness
-- **Audio processing mode:** Chaos audio becomes resonant string material
-- **Dual output processing:** Separate harmonic components for spatial chaos
-
-**Learning Objectives:**
-- **Audio processing mastery:** Transform any sound into physical modeling material
-- **Chaos as acoustic material:** Controlled uncertainty becomes instrument simulation
-- **Complex resonator control:** Multiple chaos sources control acoustic behavior
-- **Stereo acoustic processing:** Use harmonic separation for spatial audio design
-
-**Advanced Techniques:**
-- **Feedback routing:** Route Rings outputs back to Wogglebug for complex interactions
-- **Dynamic acoustic materials:** Structure CV changes acoustic material in real-time
-- **Chaotic performance:** Burst triggers simulate unpredictable playing techniques
-- **Spatial acoustic modeling:** Dual outputs create stereo acoustic instrument simulation
-
-### **Patch 4: Expert - Complete Advanced Physical Modeling Ecosystem**
-```
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│   DivKid    │ │ Make Noise  │ │ Mutable     │ │ 4ms RCD v2  │
-│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │ (Phase 2)   │
-│ (Organic)   │ │ (Chaos)     │ │ (Patterns)  │ │             │
-│             │ │             │ │             │ │ Div 1 ○─────┼─┼─Poly Clock  │
-│ LFO 1 ○─────┼─┼─Smooth ○    │ │ X1 Out ○───┼─┼─             │
-│       ║     │ │        ║    │ │       ║     │ │ Div 3 ○─────┼─┼─Mono Clock  │
-│ LFO 3 ○─────┼─┼─Stepped ○   │ │ X2 Out ○───┼─┼─             │
-│       ║     │ │        ║    │ │       ║     │ │ Div 5 ○─────┼─┼─Trigger     │
-│ LFO 7 ○─────┼─┼─Woggle ○    │ │ t1 Out ○───┼─┼─             │
-│       ║     │ │        ║    │ │       ║     │ │             │
-└───────║─────┘ └────────║────┘ └───────║─────┘ └─────────────┘
-        ║                ║              ║
-        ▼                ▼              ▼
-┌──────────────────────────────────────────────────────────────────────────────┐
-│                              Mutable Rings                              │
-│                        (Physical Modeling Hub)                        │
-│                                                                        │
-│ STRUCTURE CV     ◀─ Organic + Chaos + Pattern Material Control         │
-│ BRIGHTNESS CV    ◀─ Spectral Evolution via Multi-Source Modulation      │
-│ DAMPING CV       ◀─ Decay Time Control for Acoustic Realism             │
-│ POSITION CV      ◀─ Playing Technique Simulation                         │
-│ STRUM Input      ◀─ Polyrhythmic Triggering via Mathematical Timing      │
-│ V/OCT Input      ◀─ Pattern-Based Harmonic Control                       │
-│                                                                        │
-│ Three Resonator Models Available:                                      │
-│ • Modal (Green): Bell/chime simulation                                │
-│ • Sympathetic (Orange): Sitar-like resonances                        │
-│ • String (Red): Guitar/violin simulation                             │
-│                                                                        │
-│ Polyphonic Voices: 1/2/4 voice modes for complexity vs. quality       │
-│                                                                        │
-│ ODD Output ○─────────────────────────────────────────────────┼─── Complete
-│                                                                        │
-│ EVEN Output ○────────────────────────────────────────────────┼─── Phase 2
-└──────────────────────────────────────────────────────────────────────────────┘   Physical
-                              ║                                 Modeling
-                         Acoustic║
-                         Models║
-                              ▼
-                    ┌─────────────────────┐
-                    │   Complete Musical  │
-                    │     Ecosystem       │
-                    │                     │
-                    │ Organic + Chaos +   │
-                    │ Patterns + Math =   │
-                    │ Living Instruments  │
-                    │                     │
-                    │ System Output ○─────┼─── Acoustic Reality
-                    └─────────────────────┘       from Electronics
-```
-
-**Complete Advanced Physical Modeling Integration:**
-
-| Intelligence Layer | Function | Rings Control | Musical Result |
-|-------------------|----------|---------------|----------------|
-| **Organic (Ochd)** | Natural breathing | **Structure/Brightness modulation** | **Breathing acoustic instruments** |
-| **Chaos (Wogglebug)** | Controlled uncertainty | **Position/Damping modulation** | **Unpredictable playing techniques** |
-| **Pattern (Marbles)** | Sophisticated sequences | **V/OCT + trigger control** | **Musical phrase generation** |
-| **Mathematical (RCD)** | Polyrhythmic timing | **STRUM polyrhythmic triggers** | **Complex acoustic rhythms** |
-| **Physical (Rings)** | Acoustic simulation | **Complete instrument modeling** | **Realistic acoustic instruments** |
-
-**Expert System Design:**
-- **Rings as acoustic reality engine:** All Advanced pattern generation becomes realistic instruments
-- **Multi-source acoustic control:** Every aspect of instrument behavior under sophisticated control
-- **User-guided acoustic performance:** You direct sophisticated pattern generation toward acoustic realism
-- **Emergent acoustic complexity:** Simple electronic sources become complex acoustic instruments
-- **Complete acoustic ecosystem:** Every control type creates different aspects of acoustic reality
-
-**Advanced Performance:**
-1. **Organic foundation:** Ochd establishes natural breathing in acoustic behavior
-2. **Mathematical structure:** RCD provides polyrhythmic acoustic triggering
-3. **Pattern sophistication:** Marbles provides musical phrase control
-4. **Chaos expression:** Wogglebug adds unpredictable playing technique variation
-5. **Acoustic transcendence:** All electronic intelligence becomes acoustic instrument reality
-
-```
-**Result:** Complex self-modulating textures with stereo output
+| Spec | Value |
+|------|-------|
+| Width | 14 HP |
+| Depth | 24 mm ⚠️ |
+| Power | 75 mA +12V ⚠️ / 25 mA -12V ⚠️ / 0 mA +5V |
 
 ---
 
-## Common Use Cases
+## Essential Parameters
 
-1. **🎵 Melodic Resonator:** Transform sequences into bell-like, stringed, or metallic melodies
-2. **🎸 String Simulator:** Polyphonic chord strumming and fingerpicked patterns
-3. **🔊 Audio Processor:** Turn any sound into harmonic, resonant versions
-4. **🏴 Drone Generator:** Create rich, evolving textures from simple inputs
-5. **🥁 Percussion Processor:** Make drum hits ring with pitched resonances
-6. **🎹 Complete Voice:** No need for external envelopes - built-in decay envelopes
-7. **🎛️ Modulation Target:** All parameters respond beautifully to CV control
-8. **🌌 Ambient Engine:** Physical modeling creates realistic acoustic spaces and environments
+The right button selects the resonator algorithm, cycling through three modes indicated by LED color. Green is the modal resonator, modeling the resonant mode structure of objects such as bells, metal bars, and tuned plates. Orange is the sympathetic strings model, simulating the coupled resonance of multiple strings that ring in response to a played note through harmonic relationships. Red is the string model, incorporating nonlinear physics including the saturation and irregularity of real bowed and plucked string vibration. Each algorithm exposes different acoustic behavior through the same set of controls. Switching algorithms mid-patch produces immediate and substantial timbral changes.
+
+The left button sets the number of simultaneous voices: one, two, or four, indicated by the number of lit LEDs in the left indicator group. In one-voice mode, all computational resources are allocated to a single voice, producing the highest fidelity per note. In four-voice mode, computational resources are divided, reducing fidelity per voice but enabling harmonic layering as multiple notes accumulate and decay together. Rings polyphony is not keyboard polyphony; it does not respond to multiple simultaneous V/OCT sources. Instead, each new STRUM trigger allocates one of the available voices to the incoming pitch, and prior voices continue to decay. Four-voice mode with melodic triggering creates the kind of overlapping resonance characteristic of a struck chime or fingerpicked guitar.
+
+FREQUENCY sets the base tuning of the resonator independently of V/OCT input. Without V/OCT patched, it sweeps the pitch continuously across roughly five octaves. With V/OCT patched, FREQUENCY becomes a quantized transpose control in semitone steps, shifting the entire V/OCT range up or down. The V/OCT input tracks 1V/octave standard.
+
+STRUCTURE controls the harmonic relationship between the resonant modes of the active algorithm. In the modal resonator, it shifts the partial spacings from values consistent with metallic and bell-like timbres toward more string-like and inharmonic configurations. In the sympathetic strings model, it controls the intervals between the sympathetic strings relative to the played note. In the string model, it adjusts the physical properties of the string including nonlinear tension and damping. A CV input with an attenuverter allows voltage control of STRUCTURE; slowly modulating STRUCTURE with an LFO transforms the perceived material of the resonating body over time.
+
+BRIGHTNESS controls the spectral content of the sound, operating as a high-frequency emphasis control that affects how much upper harmonic content the resonator sustains. At low settings the output is darker and warmer, with upper partials decaying faster. At high settings more upper harmonic content is preserved throughout the decay. A CV input allows BRIGHTNESS to be modulated; an envelope with a fast attack and slow decay applied to BRIGHTNESS creates the characteristic timbral arc of a real struck bell, bright at the attack and darkening through the sustain.
+
+DAMPING controls the decay time of the resonance, ranging from very short percussive plucks to sustained tones of ten seconds or more. DAMPING interacts with the algorithm: in the modal resonator, high DAMPING produces bell-like sustain; in the string model, high DAMPING produces bowed-string sustain with different upper harmonic behavior. A CV input enables dynamic control. Modulating DAMPING in real time changes the character of notes already sounding.
+
+POSITION controls the point on the resonating body where the excitation energy is applied. In acoustic instruments, striking or plucking at different positions along the string or plate emphasizes different harmonics: plucking at the midpoint of a guitar string produces a full tone; plucking close to the bridge produces a thin, bright tone. POSITION in Rings models this behavior. The difference between a noon POSITION and a fully clockwise POSITION can be dramatic in the modal algorithm.
+
+The STRUM input receives gate or trigger signals to excite the resonator. With no external audio at IN, a STRUM event uses an internal noise burst as the exciter. With audio present at IN, STRUM controls when that audio is coupled into the resonator. The ODD output carries the odd-numbered harmonics of the resonating body; the EVEN output carries the even-numbered harmonics. These are not copies of each other and are not a stereo pair, although routing them to separate channels in a stereo mix creates genuine stereo imaging derived from the harmonic structure of the model.
+
+The IN input accepts external audio as the excitation material for the resonator. Any audio fed here replaces the internal noise burst exciter. The module processes the incoming audio through the active physical model, applying the resonant coloration of the selected algorithm to the input material. Drums, voice, another oscillator, or noise all produce distinctly different results because the physical model responds to the spectral content of its excitation.
 
 ---
 
-## Beginner "Gotchas" & Pro Tips
+## Why This Instrument Excels
 
-### **⚠️ Common Mistakes:**
+Physical modeling synthesis does not approximate acoustic timbres; it simulates acoustic physics. The harmonic relationships in a bell are not arbitrary: they arise from the geometry and material of the resonating object, and a modal resonator that accurately models those relationships produces the characteristic inharmonic overtone series that makes a bell sound like a bell and not like an additive synthesis approximation. Rings implements this correctly in all three of its algorithms. The result is that even without reverb or processing, notes from Rings decay with the natural modal distribution of a real resonating body: upper harmonics disappearing first, the fundamental sustaining longest, the precise decay envelope of each partial determined by the physics of the model and not by a manually drawn envelope shape.
 
-**"It's Not An Oscillator"**
-- **Rings doesn't generate sound** - it processes or responds to input
-- **No input = internal exciter** - it creates its own "pluck" or "strike" when triggered
-- **Think "instrument" not "oscillator"** - you're striking/plucking/bowing a virtual object
-- **Different from traditional synthesis** - this is physical modeling, not subtractive
+The three algorithms are not variations on a theme; they are acoustically distinct physical models with different underlying mathematics. The modal resonator computes the resonant mode structure of an object directly. The sympathetic strings model simulates the harmonic coupling that occurs when multiple strings share a resonant body and ring in response to each other's excitation. The string model includes nonlinear physical effects, saturation, and the particular behavior of a string's vibration at different excitation intensities. These distinctions are audible and significant: a patch built around the modal algorithm sounds like metal and glass; the same patch with the sympathetic strings algorithm sounds like a sitar or a multi-string acoustic instrument; the string model in the same patch sounds like a bowed or plucked instrument with perceptible physical irregularity. Three algorithms means three genuinely different classes of acoustic sound from one module.
 
-**"Three Completely Different Models"**
-- **Green ≠ Orange ≠ Red** - each LED color is essentially a different instrument
-- **Same knob, different function** - STRUCTURE means different things in each mode
-- **Don't expect consistency** - embrace the unique character of each model
-- **Modal (green) most versatile** - good starting point for beginners
+The IN input architecture is a fundamental design decision that makes Rings more than an acoustic voice. Any audio patched to IN becomes the excitation for the physical model: the resonator does not care what that audio is. A percussive hit driven into the modal resonator produces a ringing metallic tone. A noise burst produces a gentler pluck. Another oscillator produces a tone filtered through the resonant modes of the model. The physical model acts as a timbral stage that imposes acoustic coherence on whatever audio passes through it, and the result sounds natural in a way that is difficult to replicate through filtering alone, because the decay behavior across partials is physically determined rather than manually shaped.
 
-**"Polyphony is About Overlapping Decay"**
-- **Not traditional polyphony** - no multiple CV inputs or keyboard splitting
-- **Voices overlap and decay together** - like real string instruments
-- **4-voice = lower quality per voice** - trade resolution for complexity
-- **STRUM input manages voice allocation** - controls which voice gets the new note
+The ODD/EVEN output separation is not a convenience feature. The modal resonator distributes energy across its resonant modes, and those modes do not all occupy the same physical space in the acoustic model: odd-numbered modes and even-numbered modes have different amplitude and decay relationships. Separating them to different outputs allows them to be processed independently: different reverb tails, different panning positions, different filtering. Routing ODD hard left and EVEN hard right through identical reverbs produces a stereo image that has internal coherence because the two channels carry harmonically related but physically distinct components of the same resonating event. This kind of stereo width sounds organic rather than artificial precisely because it arises from the physics of the model.
 
-### **🎵 Pro Tips:**
+---
 
-**Two Outputs with Different Content:**
-- **ODD and EVEN are not stereo** - they carry different harmonic components
-- **Modal mode:** Odd/even numbered harmonics split between outputs
-- **String modes:** Phase-shifted components create stereo-like effects
-- **Mono operation:** Only plug ODD output for summed signal
-- **Stereo magic:** Both outputs to separate channels creates width and movement
+## Patches
 
-**External Audio Input Changes Everything:**
-- **IN input transforms the module** - becomes an audio processor instead of instrument
-- **Any audio works** - percussion, voice, noise, other instruments
-- **Continuous vs percussive** - different input types create different behaviors
-- **Volume matters** - modular levels expected (loud signals for best results)
+### Patch 1: Modal Resonator Voice
 
-**Model Exploration Strategy:**
-- **Master one mode at a time** - start with Modal (green), learn its sweet spots
-- **Experiment with external inputs** - try processing different audio sources
-- **Explore polyphonic modes** - understand how voice overlap creates musical textures
-- **Use both outputs** - stereo processing opens up spatial possibilities
-- **Add CV modulation** - slow parameter changes create evolving, organic sounds
+This patch uses the modal resonator as a complete melodic voice, demonstrating the self-contained note generation capability of Rings without external audio.
+
+```
+[Sequencer]──V/OCT──[C]──▶ RINGS V/OCT
+[Sequencer]──GATE───[G]──▶ RINGS STRUM
+                           RINGS ODD ──[A]──▶ [Mixer Left]
+                           RINGS EVEN──[A]──▶ [Mixer Right]
+```
+
+**Setup:** Connect the sequencer V/OCT to Rings V/OCT and the sequencer gate to Rings STRUM. Connect ODD and EVEN to two mixer channels panned apart. No external audio at IN.
+
+**Controls:** Select modal algorithm (green LED) and one voice. Set DAMPING to about 2 o'clock for a sustaining bell-like decay. Set BRIGHTNESS to about 2 o'clock. Set STRUCTURE to about 10 o'clock for a metallic bell character. Play the sequence and listen to the two outputs separately and combined. Adjust POSITION from noon toward fully clockwise to hear how the tone thins near the bridge position.
+
+**Result:** A melodic bell or chime voice with a natural modal decay. The ODD and EVEN outputs panned apart produce stereo width from the harmonic structure of the model, not from any added processing. Adding reverb to the stereo mix extends the decay and places the instrument in an acoustic space.
+
+---
+
+### Patch 2: Audio Input Processing
+
+This patch routes an external oscillator through Rings as an excitation source, transforming the oscillator's tone through the resonator's physics.
+
+```
+[Plaits OUT]──────────[A]──▶ RINGS IN
+[Clock/Trig]──────────[G]──▶ RINGS STRUM
+[Sequencer]──V/OCT───[C]──▶ RINGS V/OCT
+                             RINGS ODD ──[A]──▶ [Mixer]
+```
+
+**Setup:** Connect Mutable Instruments Plaits OUT or any oscillator output to Rings IN. Connect a clock or trigger to Rings STRUM. Connect a V/OCT source to Rings V/OCT.
+
+**Controls:** Select the modal algorithm (green LED), one voice. Set DAMPING at noon. Adjust STRUCTURE and BRIGHTNESS while the sequence plays. The Rings resonator now imposes its harmonic mode structure on the Plaits audio: the output has the spectral character of Plaits but filtered through the decay physics of the modal resonator. Try switching to the string algorithm (red LED) and then the sympathetic strings algorithm (orange LED) to hear how the same input audio produces different acoustic colorations.
+
+**Result:** The input oscillator's harmonic content is distributed across the resonant modes of the active algorithm. Notes with harmonics that align with the resonator's mode structure are reinforced; others are suppressed. The combination of the two modules' harmonic content produces tones that neither module produces alone.
+
+---
+
+### Patch 3: Polyphonic Sympathetic Strings
+
+This patch explores four-voice polyphony in the sympathetic strings algorithm to create layered chord textures where multiple note decays accumulate.
+
+```
+[Sequencer]──V/OCT──[C]──▶ RINGS V/OCT
+[Clock]──────────── [G]──▶ RINGS STRUM
+[Slow LFO]──────────[C]──▶ RINGS STRUCTURE CV (via attenuverter)
+                           RINGS ODD ──[A]──▶ [Reverb] ──[A]──▶ [Mixer]
+                           RINGS EVEN──[A]──▶ [Reverb] ──[A]──▶ [Mixer]
+```
+
+**Setup:** Connect a melody sequencer V/OCT to Rings V/OCT, a clock to STRUM, and a slow LFO to STRUCTURE CV with the attenuverter at a low setting. Route both outputs through separate reverb inputs.
+
+**Controls:** Select sympathetic strings algorithm (orange LED) and four voices. Set DAMPING to about 3 o'clock for long, overlapping decays. Set STRUCTURE near noon and let the LFO slowly sweep it. As the clock triggers new notes, previous voices continue decaying while new ones start, creating an accumulating harmonic texture. The slow STRUCTURE modulation gradually shifts the interval relationships between the sympathetic strings, producing a gentle evolution in the chord color.
+
+**Result:** A slowly evolving harmonic pad where the polyphony creates natural layering of sympathetic resonances. The combination of clock-driven new notes and LFO-swept STRUCTURE produces a texture that sounds composed but generative: it has internal coherence from the physical model's interval relationships and ongoing change from the modulation.
+
+---
+
+### Patch 4: Generative Resonant Voice with Marbles
+
+This patch uses Mutable Instruments Marbles to drive Rings as a generative melodic instrument, with envelope control over BRIGHTNESS for natural timbral arc.
+
+```
+MARBLES X1 ──────────[C]──▶ RINGS V/OCT
+MARBLES t1 ──────────[G]──▶ RINGS STRUM
+[Envelope] ──────────[C]──▶ RINGS BRIGHTNESS CV (via attenuverter)
+[LFO slow]───────────[C]──▶ RINGS DAMPING CV (via attenuverter)
+                            RINGS ODD ──[A]──▶ [Reverb/Delay] ──[A]──▶ [Mixer]
+                            RINGS EVEN──[A]──▶ [Mixer]
+```
+
+**Setup:** Connect Marbles X1 to Rings V/OCT, Marbles t1 to Rings STRUM. Connect an envelope generator output (triggered by Marbles t1) to BRIGHTNESS CV and a slow LFO to DAMPING CV. Route ODD through a reverb or delay and EVEN directly to a mixer channel.
+
+**Controls:** Select modal algorithm (green LED), one or two voices. Set the envelope generator for a fast attack and medium decay. The BRIGHTNESS CV will open and darken with each note, producing the timbral arc of a real struck bell: bright at the moment of excitation and darkening through the sustain. The slow LFO on DAMPING gradually lengthens and shortens the overall decay across the phrase. Adjust Marbles' DEJA VU to shape the degree of melodic repetition.
+
+**Result:** A generative bell-like melodic voice with physically accurate timbral evolution per note. The envelope-driven BRIGHTNESS produces the characteristic brightness attack and warm sustain of a real metallic instrument without any filter envelope in the signal path: it arises from the physical model's response to excitation intensity, modeled through CV.
+
+---
+
+## Common Mistakes
+
+### "Rings is not making any sound when I patch nothing to IN"
+
+Rings does not require external audio. When the IN input is unpatched, Rings uses an internal noise burst as its exciter every time STRUM receives a trigger or gate. The internal exciter produces the correct impulse for each algorithm. Most users discover the module's self-contained sound generation within seconds of patching V/OCT and STRUM alone. External audio at IN is an additional capability, not a prerequisite.
+
+### "My ODD and EVEN outputs sound identical"
+
+They carry different harmonic content, not copies of the same signal. ODD carries the odd-numbered resonant modes of the active algorithm; EVEN carries the even-numbered modes. In the modal resonator, these modes have different frequencies, different amplitude ratios, and different decay rates: they are related but genuinely distinct. The difference is most apparent when the outputs are compared in isolation on separate mixer channels with no additional processing. If they sound similar in context, it is likely because both are feeding the same reverb or being summed in mono before monitoring.
+
+### "My FREQUENCY knob stopped sweeping pitch after I patched V/OCT"
+
+This is correct behavior. Once a V/OCT source is connected, FREQUENCY shifts to a semitone-quantized transpose mode and no longer sweeps continuously. It adjusts the pitch offset in semitone steps. To restore continuous pitch sweep, remove the V/OCT cable. To transpose the V/OCT range, use FREQUENCY; each step of the knob is one semitone.
+
+### "Four-voice mode sounds muddier than one-voice mode"
+
+It is. Four voices divides the available computational precision among four simultaneous resonators, and each individual voice has less resolution than in one-voice mode. The tradeoff is intentional: four-voice mode produces natural harmonic layering where multiple notes accumulate and decay simultaneously, which is musically useful for chord textures but requires accepting lower fidelity per voice. For single-note melodic lines where the full decay quality of the physical model is important, one-voice mode is the correct choice.
+
+### "Patching audio to IN changes the behavior completely and I cannot figure out what it is doing"
+
+IN changes Rings from an instrument that generates its own excitation into a resonator that processes the excitation provided. Whatever is patched to IN becomes the material that drives the physical model. The resonator then applies its modal structure and decay physics to that material: its pitches are reinforced, its attack transients are colored by the resonant modes. If the input audio has strong harmonics that fall near the resonator's mode frequencies, they are amplified; others are attenuated. The result often sounds unlike either the input audio or the resonator alone. Treating this as a feature rather than a complication opens significant sound design territory.
 
 ---
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
-1. **Start with Rings fundamentals:** Master all three resonator models and polyphonic voice management
-2. **Add organic evolution:** Integrate DivKid Ochd for breathing acoustic parameter control (see Ochd guide)
-3. **Include controlled chaos:** Use Make Noise Wogglebug for chaotic acoustic parameter evolution (see Wogglebug guide)
-4. **Add pattern sophistication:** Apply Mutable Marbles for sophisticated acoustic pattern control (see Marbles guide)
-5. **Include polyrhythmic triggering:** Use 4ms RCD v2 for mathematical acoustic timing (see RCD guide)
-6. **Complete the ecosystem:** Add Cre8audio Function Junction for processed acoustic modulation (see Function Junction guide)
+1. Spend dedicated time with each of the three algorithms in isolation. Use the same V/OCT sequence and STRUM pattern for each, changing only the algorithm. Document what STRUCTURE controls in each case and where the most musically useful STRUCTURE positions are per algorithm. This builds the working knowledge necessary to make algorithm selection intentional rather than exploratory.
 
-### **Cross-Module Learning Opportunities:**
-- **Rings + Ochd:** Learn organic acoustic parameter control across all three physical modeling algorithms
-- **Rings + Wogglebug:** Master chaotic modulation of acoustic parameters for controlled uncertainty
-- **Rings + Marbles:** Master sophisticated pattern-based control of acoustic instruments
-- **Rings + RCD:** Explore polyrhythmic acoustic triggering with mathematical precision
-- **All Advanced + Rings:** Build complete acoustic ecosystems with multiple pattern generation types under your guidance
+2. Explore the polyphony modes systematically. Use a clock triggering STRUM at a steady rate while a melody sequencer drives V/OCT, and cycle through one, two, and four voices. Observe how the number of voices changes the harmonic density and decay overlap of the phrase. Note the fidelity difference between one-voice and four-voice modes. Understand when the decay layering of four voices adds to the music and when the reduced fidelity per voice detracts from it.
 
-### **Skill Development Milestones:**
-- **Beginner:** Master individual resonator models and basic acoustic parameter control
-- **Intermediate:** Understand polyphonic voice management and CV control of acoustic parameters
-- **Advanced:** Create Advanced integration patches with sophisticated acoustic pattern generation
-- **Expert:** Design acoustic ecosystems where you guide sophisticated pattern generation toward realistic instruments
+3. Process a range of audio types through IN. Start with a simple sine wave from an oscillator, then a complex wavetable voice, then a drum hit, then noise, then a voice or field recording. Compare how each input type interacts with the modal algorithm versus the string algorithm. The physical model imposes its resonant structure on whatever is fed in, but different input materials produce radically different results because the mode reinforcement depends on the input's spectral content.
 
-### **Advanced Physical Modeling Concepts:**
-- **Multi-Modal Acoustic Simulation:** Understand how three different physical modeling algorithms respond to modulation
-- **Pattern-Based Acoustic Control:** Use sophisticated pattern generation to guide acoustic instrument behavior
-- **User-Directed Acoustic Evolution:** Guide sophisticated systems toward acoustic realism
-- **System Integration:** Design patches where you control multiple pattern generation types for acoustic simulation
+4. Explore the interaction between POSITION and the algorithm choice. In the modal resonator, POSITION strongly affects which modes are emphasized: the midpoint position reinforces low modes while the bridge position emphasizes higher modes. In the string model, POSITION has a similar but acoustically different character. Build a patch where an LFO slowly sweeps POSITION while notes sustain, and observe the timbral evolution this produces.
 
-### **Performance Applications:**
-- **Live Acoustic Control:** Real-time acoustic parameter control and model switching
-- **Generative Acoustic Systems:** Foundation for self-evolving acoustic compositions under your creative guidance
-- **Hybrid Acoustic Processing:** Bridge between electronic and acoustic music creation
-- **Creative Acoustic Direction:** Guide sophisticated pattern generation systems toward acoustic musical expression
+5. Use BRIGHTNESS CV with an envelope to simulate the timbral arc of a real struck instrument: fast attack on the envelope opens BRIGHTNESS to full at the moment of excitation, then the slow decay returns it to a darker, warmer sustained tone. This mimics the physical reality of metallic instruments and produces a perceptually more convincing resonating body sound than a static BRIGHTNESS setting.
 
+6. Patch ODD and EVEN through separate processing chains before mixing to stereo. Try different reverb types on each output, different delay times, or a subtle pitch shift on one channel. The harmonic separation means the two processing chains are working on harmonically complementary material, and their interaction in the final mix has an internal coherence that arbitrary stereo spread lacks.
 
----
+7. Combine Rings with Mutable Instruments Plaits as an excitation source. Route Plaits OUT to Rings IN and use Plaits' synthesis models as the material that drives the resonator. The FM models, wavetable models, and speech models each produce different spectral content that the physical model distributes across its resonant modes differently. This combination treats two complete synthesis architectures as a single layered instrument.
 
-**Bottom Line:** Rings isn't just a resonator - it's an **acoustic instrument laboratory** that brings the sound and behavior of real physical instruments to modular synthesis. Every patch teaches you something new about acoustic instrument physics and musical expression. As the **acoustic reality engine of Advanced ecosystems**, it transforms electronic pattern generation into living, breathing acoustic instruments under your creative direction.**
+8. In four-voice mode with the sympathetic strings algorithm, use a slow sequence with long DAMPING and modulate STRUCTURE with a gentle LFO. As voices accumulate and decay, the slow STRUCTURE change shifts the harmonic relationship between the sympathetic strings in all active voices simultaneously. The result is a chordal texture whose internal harmonic relationships evolve gradually without any change in the notes themselves. This technique requires patience to hear fully, as the evolution happens over the timescale of many note events rather than within a single note.
 
 ---
 
 ## Pairs Well With
 
-### **Advanced Module Synergies (Modulation & CV Sources):**
-- **DivKid Ochd & Expander:** Ochd LFOs → Rings Structure/Brightness/Damping for organic acoustic evolution
-- **Make Noise Wogglebug:** Wogglebug chaos CVs → Rings parameters for controlled uncertainty in acoustic simulation
-- **Mutable Marbles:** Marbles X/t outputs → Rings V/OCT/STRUM for sophisticated pattern-based acoustic control
-- **4ms RCD v2:** RCD divisions → Rings STRUM for polyrhythmic acoustic triggering
-- **Cre8audio Function Junction:** Function Junction outputs → Rings Position/Damping for processed acoustic modulation
-- **Cross-Advanced Integration:** All Advanced modules can control every aspect of physical modeling under your creative direction
+**Mutable Instruments Plaits** is the most direct synthesis partner for Rings in the Mutable Instruments catalog. Plaits' OUT can drive Rings' IN as an excitation source, and the two modules share design vocabulary: both are open-source Mutable Instruments designs with CV attenuverters, both produce dual outputs, and both scale from simple single-patch use to deeply modulated performance instruments. The FM and wavetable models from Plaits produce spectral content that interacts particularly richly with the modal resonator, because their harmonic content aligns with the modal algorithm's mode frequencies in musically coherent ways. The percussion models from Plaits driven into Rings IN produce transient-excited resonances with combined timbral character.
 
-### **Phase 1 Module Integration (Core Synthesis):**
-- **Make Noise Maths:** Maths envelopes perfect for Rings Brightness/Damping control and acoustic dynamics
-- **Mutable Plaits:** Plaits audio outputs → Rings IN for processed physical modeling synthesis
-- **Mob of Emus:** Harmonic series pairs perfectly with Rings modal resonator models for mathematical acoustic harmony
-- **Disting mk4:** Use as audio processor/analyzer for Rings outputs or complex CV generation
-- **Complete Phase 1 systems:** Rings as acoustic reality engine for electronic synthesis networks
+**Make Noise Maths** provides envelope generation and function generation for Rings' CV inputs in one module with enough flexibility to drive BRIGHTNESS, DAMPING, and STRUCTURE simultaneously. Maths' end-of-rise and end-of-cycle outputs can drive Rings STRUM independently of an external clock, creating self-clocking patch configurations where the resonator triggers itself. The logarithmic curve shapes available from Maths produce physically plausible BRIGHTNESS envelopes for the bell attack and decay arc. A single Maths and Rings constitute a complete, dynamically shaped resonant voice without any additional modules.
 
-### **Essential Physical Modeling Partners:**
-- **Audio Sources:** Any audio → Rings IN transforms sounds into acoustic instruments
-- **Reverb/Delay Processors:** Physical modeling + spatial effects = complete acoustic environments
-- **VCAs/Mixers:** Balance between ODD/EVEN outputs for stereo acoustic imaging
-- **External Filters:** Parallel processing of Rings outputs for complex acoustic textures
+**Mutable Instruments Marbles** controls both V/OCT and STRUM from the same randomness source, producing melodic patterns with rhythmic articulation that shares a common underlying probability distribution. When Marbles' DEJA VU is set toward repetition, the Rings voice produces recognizable melodic material with occasional variation; when DEJA VU is set toward exploration, the material evolves continuously. The shared design philosophy and CV scaling between these two Mutable Instruments modules means their interaction produces results that are more musically coherent than pairing with a generic random source.
 
-### **Advanced Acoustic Integration:**
-- **Multiple Rings:** Layer different resonator models for complex polyphonic acoustic textures
-- **Contact Microphones:** Real acoustic excitation for authentic physical modeling
-- **Performance Controllers:** Real-time acoustic parameter control and model switching
-- **Analysis Tools:** Visualize resonator behavior and understand physical modeling mathematics
+**Intellijel Quadrax** provides four simultaneous envelope channels, each independently configurable, which addresses the multiple-CV-input architecture of Rings directly. With Quadrax' Qx expander, all four Rings CV inputs (STRUCTURE, BRIGHTNESS, DAMPING, POSITION) can be driven by independent envelopes with different shapes and times, each triggered from the same gate source. This produces a note event where every timbral dimension has its own independent trajectory: BRIGHTNESS arcing open and closed, STRUCTURE shifting material at the sustain peak, POSITION sweeping through the decay. The result is a note behavior that approaches the complexity of a real acoustic instrument's multi-dimensional physical response.
+
+**4ms Company Listen IO** sends Rings' output into guitar amplifiers and recording chains. The resonant, decaying character of Rings is well-suited to amplifier character: the slow onset of long decays reveals amplifier harmonics and speaker response in ways that a hard-attack synthesis voice does not. Routing Rings ODD and EVEN to separate channels of a stereo amplifier setup, or through the Intellijel Stomp into a guitar amplifier and microphone combination, adds the acoustic space and physical resonance of a real speaker cabinet to an already physically-modeled instrument voice. The combination records in a way that makes modular synthesis indistinguishable from a mic'd acoustic instrument.
 
 ---
 
-*Need the full technical manual? Find it at mutable-instruments.net/modules/rings*
+*Official documentation and firmware source: [Mutable Instruments Rings](https://mutable-instruments.net/modules/rings)*
