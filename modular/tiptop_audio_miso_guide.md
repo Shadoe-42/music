@@ -15,6 +15,8 @@ historical_context: false
 
 **The CV Laboratory and Signal Sculptor**
 
+![Tiptop Audio MISO](https://github.com/Shadoe-42/music/raw/main/modular/images/tiptop_audio/miso/front_panel_black.jpg)
+
 ## Quick Start: Get Your First Mixed Signal in 5 Minutes
 
 **What is Miso?** Think of it as a Swiss Army knife for CV and audio signals. The name stands for Mix, Invert, Scale, and Offset - the four core functions that make this module incredibly versatile. It's essentially four attenuverters with offset controls, grouped into two sections (1+2 and A+B), topped with a voltage-controlled crossfader. It's the kind of utility module that seems simple but becomes indispensable once you understand its power.
