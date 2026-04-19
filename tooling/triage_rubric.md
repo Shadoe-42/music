@@ -10,14 +10,15 @@
 
 Every guide must contain the following sections in this order:
 
-1. Quick Start
-2. Why This Instrument Excels
-3. Historical Context (or `historical_context: false` in YAML frontmatter)
+1. Historical Context (or `historical_context: false` in YAML frontmatter)
+2. Quick Start
+3. Key Specifications (dedicated section, not embedded in Quick Start)
 4. Essential Parameters
-5. Patches
-6. Common Mistakes
-7. Advanced Learning Path
-8. Pairs Well With
+5. Why This Instrument Excels
+6. Patches
+7. Common Mistakes
+8. Advanced Learning Path
+9. Pairs Well With
 
 **Present:** Heading exists and contains substantive content.
 **In position:** Appears in the sequence above relative to other anchor sections. Intervening non-anchor content is acceptable.
@@ -41,6 +42,8 @@ Issues present are cosmetic only, drawn from this list:
 - "Bottom Line:" closing paragraph
 - Emoji in any heading
 - Key Specs in bullet format instead of `| Spec | Value |` table
+- Key Specs embedded inside Quick Start instead of as a dedicated section
+- Key Specs missing ⚠️ flags on unverified Depth or Power values
 - Contractions throughout
 
 Tier 1 guides are fixed programmatically via batch scripts with light human review. No content needs to be written or rewritten.
@@ -86,6 +89,26 @@ Tier 3 guides are faster to rebuild from scratch than to repair. Before rebuildi
 **"Phase 2 framing" isolated to one patch, otherwise clean:** Tier 1. Flag the patch for manual review; treat the rest of the guide as batchable.
 
 **Confirmed Tier 3 guides:** Do not re-triage. Mark as confirmed and proceed to rebuild scheduling.
+
+---
+
+## Unverified Specification Flags
+
+Key Specifications tables use ⚠️ to mark values that have not been verified against hardware or an official manufacturer source.
+
+**Flagged:** Depth and Power values from unconfirmed sources (memory, third-party listings, values carried forward without verification).
+
+**Not flagged:** Width (HP) is generally reliable from multiple sources and does not require flagging.
+
+**Format:**
+```
+| Depth | 25 mm ⚠️ |
+| Power | 120 mA +12V ⚠️ / 5 mA -12V ⚠️ / 0 mA +5V |
+```
+
+**Clearance:** Remove the ⚠️ flag only after personal hardware verification or confirmation against the official manufacturer manual or Modular Grid. Document the source in the commit message. Do not clear flags by inference or cross-referencing other guides.
+
+A guide with unflagged but unverified Depth or Power specs is a Tier 1 issue. A guide with ⚠️ flags present and intact is compliant; the flags exist to track verification status, not to indicate a problem with the guide.
 
 ---
 
