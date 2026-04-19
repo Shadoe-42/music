@@ -107,7 +107,7 @@ Listen IO's value comes from a specific architectural insight: professional modu
 
 Listen IO addresses this directly through two independent conversion stages in a single 6HP module. The top stage converts external signals upward to modular levels through active amplification. The bottom stage converts modular signals downward to line levels through passive attenuation. These stages are asymmetric by design: amplification and attenuation serve different purposes and require different circuit approaches. Understanding why one stage boosts and the other only reduces is one of the core lessons the module teaches through regular use.
 
-The dual LED bar graphs make this normally invisible process visible. Gain staging — managing signal levels through every stage of a signal path to maximize headroom and minimize noise — is abstract as a concept and immediate as a practice when you can see what the Gain knob does to signal level in real time. The absence of a red LED on the output section communicates something important about the asymmetry between the two stages: you can only clip on the way in, not on the way out, because the stages do fundamentally different things.
+The dual LED bar graphs make this normally invisible process visible. Gain staging (managing signal levels through every stage of a signal path to maximize headroom and minimize noise) is abstract as a concept and immediate as a practice when you can see what the Gain knob does to signal level in real time. The absence of a red LED on the output section communicates something important about the asymmetry between the two stages: you can only clip on the way in, not on the way out, because the stages do fundamentally different things.
 
 The expansion headers extend this infrastructure thinking further. The INS and OUTS headers expose the same signals as the panel jacks in a format that accepts adaptor modules with different physical connector types. This separates the core function (signal conversion, level management, monitoring) from the physical connectivity format. A studio with quarter-inch equipment, a live rig with XLR, and an educational setup with banana jacks all connect to the same conversion infrastructure through different adaptor modules. The core module does not change; the interface to different environments does.
 
@@ -175,7 +175,7 @@ External Instrument Integration Workflow:
 
 **Alternative Options:**
 - **Budget:** Use a passive DI box before Listen IO for better impedance matching on guitar; route the converted signal to Erica Synths Pico VCA2 as a minimal processing destination
-- **Different character:** Add the Intellijel Stomp between guitar and Listen IO for proper high-impedance buffering — the Stomp and Listen IO together form the complete guitar-to-modular solution
+- **Different character:** Add the Intellijel Stomp between guitar and Listen IO for proper high-impedance buffering; the Stomp and Listen IO together form the complete guitar-to-modular solution
 - **Premium:** Route the converted signal through Tiptop Audio MISO for precision attenuversion and signal distribution before further modular processing
 
 **Experimentation Ideas:**
@@ -276,7 +276,7 @@ Advanced I/O Configuration:
 
 **Alternative Options:**
 - **Budget:** Behringer UMC22 audio interface in place of a premium interface; remove the external effects loop and work with modular effects only to reduce conversion stages
-- **Different character:** Use the 4ms MetaModule as the external processor — route modular signal into the MetaModule for plugin-quality processing, return it to the patch, then out through Listen IO
+- **Different character:** Use the 4ms MetaModule as the external processor: route modular signal into the MetaModule for plugin-quality processing, return it to the patch, then out through Listen IO
 - **Premium:** Expert Sleepers ES-8 for multi-channel DC-coupled I/O alongside Listen IO; ES-8 handles DAW integration while Listen IO handles headphone monitoring and instrument inputs simultaneously
 
 **Experimentation Ideas:**
@@ -378,7 +378,7 @@ Professional Studio Integration:
 
 **Alternative Options:**
 - **Budget:** Focusrite Scarlett 4i4 audio interface providing multiple input channels; consolidate external source mixing before Listen IO rather than after to simplify signal flow
-- **Different character:** Replace the external effects loop with Erica Synths Pico DSP inside modular — this eliminates one conversion stage and keeps processing within the Eurorack domain
+- **Different character:** Replace the external effects loop with Erica Synths Pico DSP inside modular; this eliminates one conversion stage and keeps processing within the Eurorack domain
 - **Premium:** Expert Sleepers ES-8 and ES-3 for complete multi-channel bidirectional I/O; Listen IO remains for headphone monitoring and instrument inputs while ES-8 handles DAW integration at full modular resolution
 
 **Experimentation Ideas:**
@@ -678,15 +678,15 @@ The LED bar graphs, the separate gain and attenuation stages, the dual independe
 
 ## Pairs Well With
 
-**Intellijel Stomp** — Handles the high-impedance buffering that Listen IO's general-purpose inputs don't specifically provide for electric guitar. Together they form a complete guitar-to-modular integration: Stomp handles the pickup impedance, Listen IO handles the level conversion and monitoring.
+**Intellijel Stomp** handles the high-impedance buffering that Listen IO's general-purpose inputs do not specifically provide for electric guitar. Together they form a complete guitar-to-modular integration: Stomp handles the pickup impedance, Listen IO handles the level conversion and monitoring.
 
-**Any envelope follower (Maths works as one in a pinch)** — Route an external instrument through Listen IO's top section, then tap the Mod Out into an envelope follower. External dynamics from a guitar performance or drum machine become real-time CV, coupling a live player's expression directly to modular behavior.
+**Any envelope follower (Maths works as one in a pinch)** extends Listen IO's Mod Out into real-time CV generation. Route an external instrument through the top section, then tap the Mod Out into an envelope follower; external dynamics from a guitar performance or drum machine become CV that couples a live player's expression directly to modular behavior.
 
-**Frap Tools 411 or Intellijel Mixup** — A pre-conversion stereo mixer for combining multiple external sources into a clean stereo pair before Listen IO's inputs. Handles the mixing in the line-level domain, where the source signals actually live, rather than asking the Gain stage to reconcile mismatched levels.
+**Frap Tools 411 or Intellijel Mixup** provides a pre-conversion stereo mixer for combining multiple external sources into a clean stereo pair before Listen IO's inputs. Mixing happens in the line-level domain, where the source signals actually live, rather than asking the Gain stage to reconcile mismatched levels.
 
-**Erica Synths Pico DSP or any onboard effects module** — Route Listen IO's Mod Out into modular effects processing before returning the signal to the output stage. The combination produces sonic territory that neither domain reaches alone: a guitar through a Eurorack reverb or granular processor, monitored and recorded at line level through the same module.
+**Erica Synths Pico DSP or any onboard effects module** extends Listen IO's signal path into modular effects territory. Route the Mod Out into reverb or granular processing before returning the signal to the output stage; the combination produces sonic territory that neither domain reaches alone: a guitar through a Eurorack processor, monitored and recorded at line level through the same module.
 
-**4ms MetaModule** — Plugin-quality processing inside the Eurorack case. Listen IO provides the I/O infrastructure framing the workflow: instrument in, MetaModule processes with DAW-quality algorithms, output monitored and recorded through the bottom section.
+**4ms MetaModule** brings plugin-quality processing inside the Eurorack case. Listen IO provides the I/O infrastructure: instrument in, MetaModule processes with DAW-quality algorithms, output monitored and recorded through the bottom section.
 
 ---
 
@@ -694,7 +694,7 @@ The LED bar graphs, the separate gain and attenuation stages, the dual independe
 
 The input section accepts virtually any external audio source that operates without phantom power: electric guitars, bass guitars, keyboards, synthesizers, drum machines, grooveboxes, portable recorders, phones, and most dynamic microphones. The scope covers the overwhelming majority of instruments and devices found in production and performance environments. The meaningful exclusion is phantom-powered condenser microphones, which require a dedicated preamp with 48V supply. For everything else, the Gain knob and LED bar graph provide the tools to bring those sources into the modular domain at appropriate operating levels.
 
-The output section converts modular signals downward to levels appropriate for studio monitors, audio interfaces, mixing consoles, and headphones — simultaneously if needed. The dual headphone outputs mean two people can monitor the same system for collaborative work, teaching, or diagnostic checking from different stereo orientations. The OUTS expansion header feeds the same signals to additional destinations without affecting the panel jacks, enabling a recording interface and a monitor amplifier to receive the modular mix concurrently without any additional routing.
+The output section converts modular signals downward to levels appropriate for studio monitors, audio interfaces, mixing consoles, and headphones, simultaneously if needed. The dual headphone outputs mean two people can monitor the same system for collaborative work, teaching, or diagnostic checking from different stereo orientations. The OUTS expansion header feeds the same signals to additional destinations without affecting the panel jacks, enabling a recording interface and a monitor amplifier to receive the modular mix concurrently without any additional routing.
 
 The bottom section's send and return capability creates a functional outboard gear loop in 6HP. A hardware compressor, vintage EQ, or rack reverb can sit between modular output and the return path, processing the signal before it reaches monitoring or recording destinations. Paired with the Intellijel Stomp upstream for high-impedance guitar buffering, Listen IO handles the complete guitar-to-modular workflow: instrument level in, modular level out for processing, effects loop available, stereo headphone monitoring included.
 
@@ -702,10 +702,10 @@ The bottom section's send and return capability creates a functional outboard ge
 
 ## Advanced Learning Path
 
-Start with a single external source and headphone monitoring as the entire patch. The goal is to develop gain staging instincts through the LED bar graphs before adding any complexity. Work with different sources — a keyboard, a phone playing a reference track, a guitar — and notice how different sources require different Gain positions to reach the same target range on the LEDs.
+Start with a single external source and headphone monitoring as the entire patch. The goal is to develop gain staging instincts through the LED bar graphs before adding any complexity. Work with different sources (a keyboard, a phone playing a reference track, a guitar) and notice how different sources require different Gain positions to reach the same target range on the LEDs.
 
 Once gain staging is reliable, focus deliberately on the output stage. Understand through use that Level is attenuation only, that maximum position is unity gain, and that quiet modular signals must be fixed upstream. Build the habit of constructing patches where the signal arriving at Listen IO is already at a healthy level, with Level used for monitoring preference rather than signal recovery.
 
-When both sections feel natural, begin using them simultaneously in the same patch. Route external material through the top section, process it in modular, return the processed result through the bottom section while the original source also feeds through. The module reveals its architectural character when both directions are active — it is infrastructure, not an instrument, and infrastructure is most clearly understood when it is load-bearing.
+When both sections feel natural, begin using them simultaneously in the same patch. Route external material through the top section, process it in modular, return the processed result through the bottom section while the original source also feeds through. The module reveals its architectural character when both directions are active: it is infrastructure, not an instrument, and infrastructure is most clearly understood when it is load-bearing.
 
 The 4ms Listen Up adaptor module, when available, is worth exploring at this stage. The header-based signal access it provides demonstrates the infrastructure thinking that runs through the module's design: the same conversion and monitoring functions, available through different physical formats without modifying the core module. This is the principle that separates systems built to grow from collections built around single configurations.

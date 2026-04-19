@@ -26,13 +26,13 @@ screen: true
 
 ## Quick Start: Get Your First Rhythm in 5 Minutes
 
-1. **Connect clock** — Patch any gate or clock source to the C (Clock) input
-2. **Connect outputs** — Patch the D (Gate outputs) to drum trigger inputs or envelope generators
-3. **Select channel 1** — Press the Yellow channel button (first press enters edit page 1)
-4. **Set Length** — Scroll the outer ring to set total steps (8 or 16 are good starting points)
-5. **Set Beats** — Scroll the inner ring to set how many beats fire (try 3 in 8, or 5 in 16)
+1. **Connect clock:** Patch any gate or clock source to the C (Clock) input
+2. **Connect outputs:** Patch the D (Gate outputs) to drum trigger inputs or envelope generators
+3. **Select channel 1:** Press the Yellow channel button (first press enters edit page 1)
+4. **Set Length:** Scroll the outer ring to set total steps (8 or 16 are good starting points)
+5. **Set Beats:** Scroll the inner ring to set how many beats fire (try 3 in 8, or 5 in 16)
 
-The lx-euclid immediately outputs the Euclidean pattern. Add channels 2 through 4 for polyrhythmic layering — each channel runs the same clock but with independent Length, Beats, Rotation, and Probability settings.
+The lx-euclid immediately outputs the Euclidean pattern. Add channels 2 through 4 for polyrhythmic layering; each channel runs the same clock but with independent Length, Beats, Rotation, and Probability settings.
 
 ---
 
@@ -71,7 +71,7 @@ The lx-euclid is a 4-channel trigger sequencer. Each channel produces a gate sig
 
 **Tap button:** On the main page with the internal clock source selected, tapping this button sets the tempo by rhythm. Press it multiple times and the lx-euclid averages the intervals to calculate BPM. Holding the Tap button and releasing it resets all channels to their first step simultaneously. When a preset is armed in "internal reset" recall mode, releasing the Tap button also triggers the preset recall.
 
-**Channel selection buttons (4):** Four buttons below the display, color-coded left to right: Channel 1 (Yellow), Channel 2 (Red), Channel 3 (Blue), Channel 4 (Turquoise). Pressing a channel button enters that channel's edit page. These buttons are also the primary navigation tool for moving between channels while in edit mode.
+**Channel selection buttons (4):** Four buttons below the display, color-coded left to right: Channel 1 yellow, Channel 2 red, Channel 3 blue, Channel 4 turquoise. Pressing a channel button enters that channel's edit page. These buttons are also the primary navigation tool for moving between channels while in edit mode.
 
 **Config button:** From the main page, pressing Config enters the module configuration menu (presets, macros, clock source, touch sensitivity). While editing a channel, pressing Config enters that channel's configuration page (algorithm, clock divider, gate time, CV assignments, burst division). Since firmware V1.14.1, a long press on Config from the main page jumps directly to the preset page.
 

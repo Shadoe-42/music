@@ -65,10 +65,10 @@ This system bridges **mathematical precision with musical expression**. EC2 gene
 
 **QD (Quad Drum Voice) - The Analog Brain**
 #### **1. FOUR DRUM VOICES**
-- **Voice 1 (Blue):** Typically kick drums - full range analog synthesis
-- **Voice 2 (Red):** Typically snare - wide range of percussion synthesis
-- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis
-- **Voice 4 (Green):** Typically percussion - flexible synthesis for any drum sound
+- **Voice 1:** Typically kick drums - full range analog synthesis
+- **Voice 2:** Typically snare - wide range of percussion synthesis
+- **Voice 3:** Typically hi-hats - metallic and noise synthesis
+- **Voice 4:** Typically percussion - flexible synthesis for any drum sound
 - **Independent synthesis:** Each voice is a complete drum synthesizer
 - **22 digital models:** From classic 808/909 to unique experimental drums
 

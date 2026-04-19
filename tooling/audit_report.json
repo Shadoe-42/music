@@ -2,106 +2,21 @@
   "generated": "2026-04-19",
   "summary": {
     "total_guides": 69,
-    "guides_with_issues": 18,
-    "guides_clean": 51,
-    "total_issues": 51,
+    "guides_with_issues": 13,
+    "guides_clean": 56,
+    "total_issues": 16,
     "error_count": 0,
-    "warning_count": 50,
+    "warning_count": 15,
     "deferred_count": 1
   },
   "guides": {
     "4ms_company_listen_io_guide.md": {
-      "clean": false,
-      "issue_count": 12,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 12,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"The dual LED bar graphs make this normally invisible process visible. Gain staging — manag\"",
-          "line": 110
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"- **Different character:** Add the Intellijel Stomp between guitar and Listen IO for prope\"",
-          "line": 178
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"- **Different character:** Use the 4ms MetaModule as the external processor — route modula\"",
-          "line": 279
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"- **Different character:** Replace the external effects loop with Erica Synths Pico DSP in\"",
-          "line": 381
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"**Intellijel Stomp** — Handles the high-impedance buffering that Listen IO's general-purpo\"",
-          "line": 681
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"**Any envelope follower (Maths works as one in a pinch)** — Route an external instrument t\"",
-          "line": 683
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"**Frap Tools 411 or Intellijel Mixup** — A pre-conversion stereo mixer for combining multi\"",
-          "line": 685
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"**Erica Synths Pico DSP or any onboard effects module** — Route Listen IO's Mod Out into m\"",
-          "line": 687
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"**4ms MetaModule** — Plugin-quality processing inside the Eurorack case. Listen IO provide\"",
-          "line": 689
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"The output section converts modular signals downward to levels appropriate for studio moni\"",
-          "line": 697
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"Start with a single external source and headphone monitoring as the entire patch. The goal\"",
-          "line": 705
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"When both sections feel natural, begin using them simultaneously in the same patch. Route \"",
-          "line": 709
-        }
-      ]
+      "issues": []
     },
     "4ms_company_metamodule_guide.md": {
       "clean": true,
@@ -160,62 +75,12 @@
       "issues": []
     },
     "atovproject_lx-euclid_guide.md": {
-      "clean": false,
-      "issue_count": 7,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 7,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"1. **Connect clock** — Patch any gate or clock source to the C (Clock) input\"",
-          "line": 29
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"2. **Connect outputs** — Patch the D (Gate outputs) to drum trigger inputs or envelope gen\"",
-          "line": 30
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"3. **Select channel 1** — Press the Yellow channel button (first press enters edit page 1)\"",
-          "line": 31
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"4. **Set Length** — Scroll the outer ring to set total steps (8 or 16 are good starting po\"",
-          "line": 32
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"5. **Set Beats** — Scroll the inner ring to set how many beats fire (try 3 in 8, or 5 in 1\"",
-          "line": 33
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"The lx-euclid immediately outputs the Euclidean pattern. Add channels 2 through 4 for poly\"",
-          "line": 35
-        },
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"**Channel selection buttons (4):** Four buttons below the display, color-coded left to rig\"",
-          "line": 74
-        }
-      ]
+      "issues": []
     },
     "behringer_dual_envelope_generator_1003_utility_guide.md": {
       "clean": true,
@@ -226,27 +91,12 @@
       "issues": []
     },
     "bizarre_jezabel_pkhia_mk2_guide.md": {
-      "clean": false,
-      "issue_count": 2,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 2,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"- **Dual-mono:** Each channel operates independently — different filter settings, separate\"",
-          "line": 98
-        },
-        {
-          "check_id": "em_dash",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Em dash in prose: \"- **Stereo:** Channels operate as a unified stereo instrument — use this when processing a\"",
-          "line": 99
-        }
-      ]
+      "issues": []
     },
     "blue_lantern_astroid_guide.md": {
       "clean": true,
@@ -432,20 +282,12 @@
       "issues": []
     },
     "erica_synths_pico_dsp_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjustin\"",
-          "line": 300
-        }
-      ]
+      "issues": []
     },
     "erica_synths_pico_lfo_sh_guide.md": {
       "clean": true,
@@ -464,34 +306,12 @@
       "issues": []
     },
     "erica_synths_pico_voice_guide.md": {
-      "clean": false,
-      "issue_count": 3,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 3,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"- **Algorithm:** Chords (Yellow)\"",
-          "line": 172
-        },
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"- **Algorithm:** Bassline (Blue)\"",
-          "line": 185
-        },
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"- **Algorithm:** Wavetable (Green)\"",
-          "line": 198
-        }
-      ]
+      "issues": []
     },
     "expert_sleepers_disting_mk4_guide.md": {
       "clean": true,
@@ -689,9 +509,9 @@
     },
     "qubit_bloom_v1_guide.md": {
       "clean": false,
-      "issue_count": 3,
+      "issue_count": 1,
       "error_count": 0,
-      "warning_count": 3,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
         {
@@ -699,20 +519,6 @@
           "category": "Missing or Misplaced Sections",
           "severity": "warning",
           "detail": "Missing `## Common Mistakes` section"
-        },
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"3. **Press CHANNEL button** until Channel A LED (blue) lights up\"",
-          "line": 32
-        },
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"- **Press CHANNEL button** to switch between A (blue) and B (green)\"",
-          "line": 341
         }
       ]
     },
@@ -801,9 +607,9 @@
     },
     "vpme_qd_qex_drum_workstation_guide.md": {
       "clean": false,
-      "issue_count": 5,
+      "issue_count": 1,
       "error_count": 0,
-      "warning_count": 5,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
         {
@@ -811,42 +617,14 @@
           "category": "Missing or Misplaced Sections",
           "severity": "warning",
           "detail": "Missing front panel image link"
-        },
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis\"",
-          "line": 73
-        },
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"- **Voice 2 (Red):** Typically snares - wide percussion synthesis range\"",
-          "line": 74
-        },
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
-          "line": 75
-        },
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis\"",
-          "line": 76
         }
       ]
     },
     "vpme_qd_qex_euclidean_circles_ecosystem_guide.md": {
       "clean": false,
-      "issue_count": 6,
+      "issue_count": 2,
       "error_count": 0,
-      "warning_count": 6,
+      "warning_count": 2,
       "deferred_count": 0,
       "issues": [
         {
@@ -860,34 +638,6 @@
           "category": "Missing or Misplaced Sections",
           "severity": "warning",
           "detail": "Missing front panel image link"
-        },
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"- **Voice 1 (Blue):** Typically kick drums - full range analog synthesis\"",
-          "line": 68
-        },
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"- **Voice 2 (Red):** Typically snare - wide range of percussion synthesis\"",
-          "line": 69
-        },
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
-          "line": 70
-        },
-        {
-          "check_id": "color_labels",
-          "category": "Format Issues",
-          "severity": "warning",
-          "detail": "Old color label: \"- **Voice 4 (Green):** Typically percussion - flexible synthesis for any drum sound\"",
-          "line": 71
         }
       ]
     },
@@ -924,290 +674,6 @@
     }
   },
   "by_check": {
-    "em_dash": [
-      {
-        "file": "4ms_company_listen_io_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"The dual LED bar graphs make this normally invisible process visible. Gain staging — manag\"",
-        "line": 110
-      },
-      {
-        "file": "4ms_company_listen_io_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"- **Different character:** Add the Intellijel Stomp between guitar and Listen IO for prope\"",
-        "line": 178
-      },
-      {
-        "file": "4ms_company_listen_io_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"- **Different character:** Use the 4ms MetaModule as the external processor — route modula\"",
-        "line": 279
-      },
-      {
-        "file": "4ms_company_listen_io_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"- **Different character:** Replace the external effects loop with Erica Synths Pico DSP in\"",
-        "line": 381
-      },
-      {
-        "file": "4ms_company_listen_io_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"**Intellijel Stomp** — Handles the high-impedance buffering that Listen IO's general-purpo\"",
-        "line": 681
-      },
-      {
-        "file": "4ms_company_listen_io_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"**Any envelope follower (Maths works as one in a pinch)** — Route an external instrument t\"",
-        "line": 683
-      },
-      {
-        "file": "4ms_company_listen_io_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"**Frap Tools 411 or Intellijel Mixup** — A pre-conversion stereo mixer for combining multi\"",
-        "line": 685
-      },
-      {
-        "file": "4ms_company_listen_io_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"**Erica Synths Pico DSP or any onboard effects module** — Route Listen IO's Mod Out into m\"",
-        "line": 687
-      },
-      {
-        "file": "4ms_company_listen_io_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"**4ms MetaModule** — Plugin-quality processing inside the Eurorack case. Listen IO provide\"",
-        "line": 689
-      },
-      {
-        "file": "4ms_company_listen_io_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"The output section converts modular signals downward to levels appropriate for studio moni\"",
-        "line": 697
-      },
-      {
-        "file": "4ms_company_listen_io_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"Start with a single external source and headphone monitoring as the entire patch. The goal\"",
-        "line": 705
-      },
-      {
-        "file": "4ms_company_listen_io_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"When both sections feel natural, begin using them simultaneously in the same patch. Route \"",
-        "line": 709
-      },
-      {
-        "file": "atovproject_lx-euclid_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"1. **Connect clock** — Patch any gate or clock source to the C (Clock) input\"",
-        "line": 29
-      },
-      {
-        "file": "atovproject_lx-euclid_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"2. **Connect outputs** — Patch the D (Gate outputs) to drum trigger inputs or envelope gen\"",
-        "line": 30
-      },
-      {
-        "file": "atovproject_lx-euclid_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"3. **Select channel 1** — Press the Yellow channel button (first press enters edit page 1)\"",
-        "line": 31
-      },
-      {
-        "file": "atovproject_lx-euclid_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"4. **Set Length** — Scroll the outer ring to set total steps (8 or 16 are good starting po\"",
-        "line": 32
-      },
-      {
-        "file": "atovproject_lx-euclid_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"5. **Set Beats** — Scroll the inner ring to set how many beats fire (try 3 in 8, or 5 in 1\"",
-        "line": 33
-      },
-      {
-        "file": "atovproject_lx-euclid_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"The lx-euclid immediately outputs the Euclidean pattern. Add channels 2 through 4 for poly\"",
-        "line": 35
-      },
-      {
-        "file": "bizarre_jezabel_pkhia_mk2_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"- **Dual-mono:** Each channel operates independently — different filter settings, separate\"",
-        "line": 98
-      },
-      {
-        "file": "bizarre_jezabel_pkhia_mk2_guide.md",
-        "check_id": "em_dash",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Em dash in prose: \"- **Stereo:** Channels operate as a unified stereo instrument — use this when processing a\"",
-        "line": 99
-      }
-    ],
-    "color_labels": [
-      {
-        "file": "atovproject_lx-euclid_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"**Channel selection buttons (4):** Four buttons below the display, color-coded left to rig\"",
-        "line": 74
-      },
-      {
-        "file": "erica_synths_pico_dsp_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjustin\"",
-        "line": 300
-      },
-      {
-        "file": "erica_synths_pico_voice_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"- **Algorithm:** Chords (Yellow)\"",
-        "line": 172
-      },
-      {
-        "file": "erica_synths_pico_voice_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"- **Algorithm:** Bassline (Blue)\"",
-        "line": 185
-      },
-      {
-        "file": "erica_synths_pico_voice_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"- **Algorithm:** Wavetable (Green)\"",
-        "line": 198
-      },
-      {
-        "file": "qubit_bloom_v1_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"3. **Press CHANNEL button** until Channel A LED (blue) lights up\"",
-        "line": 32
-      },
-      {
-        "file": "qubit_bloom_v1_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"- **Press CHANNEL button** to switch between A (blue) and B (green)\"",
-        "line": 341
-      },
-      {
-        "file": "vpme_qd_qex_drum_workstation_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis\"",
-        "line": 73
-      },
-      {
-        "file": "vpme_qd_qex_drum_workstation_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"- **Voice 2 (Red):** Typically snares - wide percussion synthesis range\"",
-        "line": 74
-      },
-      {
-        "file": "vpme_qd_qex_drum_workstation_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
-        "line": 75
-      },
-      {
-        "file": "vpme_qd_qex_drum_workstation_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis\"",
-        "line": 76
-      },
-      {
-        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"- **Voice 1 (Blue):** Typically kick drums - full range analog synthesis\"",
-        "line": 68
-      },
-      {
-        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"- **Voice 2 (Red):** Typically snare - wide range of percussion synthesis\"",
-        "line": 69
-      },
-      {
-        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
-        "line": 70
-      },
-      {
-        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
-        "detail": "Old color label: \"- **Voice 4 (Green):** Typically percussion - flexible synthesis for any drum sound\"",
-        "line": 71
-      }
-    ],
     "yaml_hp": [
       {
         "file": "cre8audio_chipz_cellz_niftycase_bundle_guide.md",

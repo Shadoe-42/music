@@ -169,7 +169,7 @@ Erica Synths challenged themselves: "Can we make ANY superior functionality synt
 ## Creative Patch Applications
 
 ### **Patch 1: Chord Progression Player**
-- **Algorithm:** Chords (Yellow)
+- **Algorithm:** Chords
 - **Your sequencer** → 1V/Oct input
 - **PAR1 at different positions** for different chord types
 - **LFO** → CV Input (assigned to PAR1 for changing chord types)
@@ -182,7 +182,7 @@ Erica Synths challenged themselves: "Can we make ANY superior functionality synt
 - **Premium:** Intellijel Quadrax for complex chord modulation with multiple simultaneous processes
 
 ### **Patch 2: Acid Bassline**
-- **Algorithm:** Bassline (Blue)
+- **Algorithm:** Bassline
 - **Bass sequence** → 1V/Oct input
 - **PAR1 around 2 o'clock** (resonance sweet spot)
 - **Envelope or LFO** → CV Input (assigned to PAR1 for filter sweeps)
@@ -195,7 +195,7 @@ Erica Synths challenged themselves: "Can we make ANY superior functionality synt
 - **Premium:** Intellijel Quadrax with envelope shaping for sophisticated acid processing
 
 ### **Patch 3: Evolving Pad**
-- **Algorithm:** Wavetable (Green)
+- **Algorithm:** Wavetable
 - **Slow chord sequence** → 1V/Oct input
 - **PAR2 fully clockwise** (sustained without gates)
 - **Slow LFO** → CV Input (assigned to PAR1 for wave surfing)

@@ -70,10 +70,10 @@ This system provides **professional drum production capabilities** in modular fo
 ### **QD Core System - The Synthesis Engine**
 
 #### **1. FOUR DRUM VOICES**
-- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis
-- **Voice 2 (Red):** Typically snares - wide percussion synthesis range
-- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis
-- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis
+- **Voice 1:** Typically kick drums - full frequency range synthesis
+- **Voice 2:** Typically snares - wide percussion synthesis range
+- **Voice 3:** Typically hi-hats - metallic and noise synthesis
+- **Voice 4:** Flexible percussion - any drum sound synthesis
 - **Independent control:** Each voice has dedicated PITCH, DECAY, and MOD controls
 - **CV control:** All parameters voltage controllable via 4 CV inputs + 4 QEX CV inputs
 

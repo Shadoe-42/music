@@ -29,7 +29,7 @@ historical_context: false
 ### Your First Growing Sequence
 1. **Connect clock** → **CLOCK input** (or use internal tempo with RATE knob)
 2. **Connect Channel A outputs** → **CV to oscillator V/OCT**, **GATE to envelope**
-3. **Press CHANNEL button** until Channel A LED (blue) lights up
+3. **Press CHANNEL button** until the Channel A LED lights up
 4. **Turn LENGTH encoder** to set 8 steps
 5. **Enter some notes** by turning NOTE encoder while pressing step buttons
 6. **Turn BRANCH knob slowly** and watch your sequence evolve!
@@ -338,7 +338,7 @@ This represents **complete generative fractal mastery** - where mathematical fun
 
 ### **Channel Selection Confusion**
 - **Two independent channels** with separate sequences and controls
-- **Press CHANNEL button** to switch between A (blue) and B (green)
+- **Press CHANNEL button** to switch between Channel A and Channel B
 - **All encoders affect the selected channel** - check which LED is lit!
 - **Each channel remembers its own:** length, notes, gates, branch/path positions
 - **Pro tip:** Start with just Channel A until you understand the concept

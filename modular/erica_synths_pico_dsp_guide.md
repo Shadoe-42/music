@@ -297,7 +297,7 @@ Multiple LFOs modulating PAR1, PAR2, DRY/WET simultaneously for flowing effects
 **What You're Learning:** CV isn't binary; it's about voltage ranges and scaling. Understanding how CV works teaches you that modulation requires careful attention to signal levels. This principle extends to every CV-controlled module in your system.
 
 ### **"My signal got frozen and won't change"**
-**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjusting parameters does nothing
+**Problem:** Granular Delay is stuck repeating the same audio forever, and adjusting parameters does nothing
 
 **Why It Happens:** You've activated freeze mode by turning PAR1 (feedback) all the way clockwise. In freeze mode, the DSP captures current audio and loops it infinitely. Most users don't realize this is a feature, they think the module is broken. PAR1 full CW = infinite feedback = frozen moment.
 
