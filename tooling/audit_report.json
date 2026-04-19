@@ -2,12 +2,12 @@
   "generated": "2026-04-19",
   "summary": {
     "total_guides": 69,
-    "guides_with_issues": 13,
-    "guides_clean": 56,
-    "total_issues": 16,
+    "guides_with_issues": 10,
+    "guides_clean": 59,
+    "total_issues": 12,
     "error_count": 0,
-    "warning_count": 15,
-    "deferred_count": 1
+    "warning_count": 12,
+    "deferred_count": 0
   },
   "guides": {
     "4ms_company_listen_io_guide.md": {
@@ -370,26 +370,12 @@
       "issues": []
     },
     "make_noise_pressure_points_guide.md": {
-      "clean": false,
-      "issue_count": 2,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
-      "deferred_count": 1,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        },
-        {
-          "check_id": "why_section_old_wording",
-          "category": "Deferred Items",
-          "severity": "deferred",
-          "detail": "Gen-1 'Rocks' wording: \"Why Pressure Points Rocks\" — rename to `## Why [Module] Excels`",
-          "line": 348
-        }
-      ]
+      "warning_count": 0,
+      "deferred_count": 0,
+      "issues": []
     },
     "make_noise_wogglebug_guide.md": {
       "clean": true,
@@ -424,34 +410,20 @@
       "issues": []
     },
     "mutable_plaits_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "mutable_rings_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "noise_engineering_loquelic_iteritas_guide.md": {
       "clean": true,
@@ -697,46 +669,6 @@
         "detail": "Missing `hp` field"
       }
     ],
-    "section_historical_context": [
-      {
-        "file": "make_noise_pressure_points_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "mutable_plaits_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "mutable_rings_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "rossum_electro_music_mob_of_emus_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      }
-    ],
-    "why_section_old_wording": [
-      {
-        "file": "make_noise_pressure_points_guide.md",
-        "check_id": "why_section_old_wording",
-        "category": "Deferred Items",
-        "severity": "deferred",
-        "detail": "Gen-1 'Rocks' wording: \"Why Pressure Points Rocks\" — rename to `## Why [Module] Excels`",
-        "line": 348
-      }
-    ],
     "section_common_mistakes": [
       {
         "file": "noise_engineering_numeric_repetitor_guide.md",
@@ -772,6 +704,15 @@
         "category": "Missing or Misplaced Sections",
         "severity": "warning",
         "detail": "Missing `## Common Mistakes` section"
+      }
+    ],
+    "section_historical_context": [
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
       }
     ],
     "front_panel_image": [

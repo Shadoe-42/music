@@ -9,12 +9,12 @@ Generated: 2026-04-19
 | Metric | Count |
 |--------|-------|
 | Guides scanned | 69 |
-| Guides with issues | 13 |
-| Guides clean | 56 |
-| Total issues | 16 |
+| Guides with issues | 10 |
+| Guides clean | 59 |
+| Total issues | 12 |
 | ❌ Errors (fix now) | 0 |
-| ⚠️  Warnings (fix when touching) | 15 |
-| 📌 Deferred (tracked, low priority) | 1 |
+| ⚠️  Warnings (fix when touching) | 12 |
+| 📌 Deferred (tracked, low priority) | 0 |
 
 ---
 
@@ -32,9 +32,6 @@ Generated: 2026-04-19
 
 | File | Line | Severity | Issue |
 |------|------|----------|-------|
-| `make_noise_pressure_points_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `mutable_plaits_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `mutable_rings_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `noise_engineering_numeric_repetitor_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `noise_engineering_ruina_versio_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `qubit_bloom_v1_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
@@ -45,28 +42,12 @@ Generated: 2026-04-19
 | `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | — | ⚠️  warning | Missing front panel image link |
 | `winterbloom_castor_pollux_ii_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 
-### Deferred Items
-
-| File | Line | Severity | Issue |
-|------|------|----------|-------|
-| `make_noise_pressure_points_guide.md` | 348 | 📌 deferred | Gen-1 'Rocks' wording: "Why Pressure Points Rocks" — rename to `## Why [Module] Excels` |
-
 ---
 
 ## Per-Guide Detail
 
 **`cre8audio_chipz_cellz_niftycase_bundle_guide.md`** — 1 warning
   - ⚠️ `yaml_hp` — Missing `hp` field
-
-**`make_noise_pressure_points_guide.md`** — 1 warning, 1 deferred
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-  - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why Pressure Points Rocks" — rename to `## Why [Module] Excels` *(line 348)*
-
-**`mutable_plaits_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`mutable_rings_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
 **`noise_engineering_numeric_repetitor_guide.md`** — 1 warning
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
@@ -99,7 +80,7 @@ Generated: 2026-04-19
 
 ---
 
-## Clean Guides (56)
+## Clean Guides (59)
 
 No issues detected:
 
@@ -146,10 +127,13 @@ No issues detected:
 - `intellijel_mixup_guide.md`
 - `intellijel_stomp_guide.md`
 - `make_noise_maths_guide.md`
+- `make_noise_pressure_points_guide.md`
 - `make_noise_wogglebug_guide.md`
 - `mordax_data_guide.md`
 - `mutable_instruments_links_guide.md`
 - `mutable_marbles_guide.md`
+- `mutable_plaits_guide.md`
+- `mutable_rings_guide.md`
 - `noise_engineering_loquelic_iteritas_guide.md`
 - `patching_panda_moon_phase_guide.md`
 - `patching_panda_punch_v3_guide.md`
