@@ -9,11 +9,11 @@ Generated: 2026-04-19
 | Metric | Count |
 |--------|-------|
 | Guides scanned | 69 |
-| Guides with issues | 9 |
-| Guides clean | 60 |
-| Total issues | 11 |
+| Guides with issues | 8 |
+| Guides clean | 61 |
+| Total issues | 8 |
 | ❌ Errors (fix now) | 0 |
-| ⚠️  Warnings (fix when touching) | 11 |
+| ⚠️  Warnings (fix when touching) | 8 |
 | 📌 Deferred (tracked, low priority) | 0 |
 
 ---
@@ -36,9 +36,6 @@ Generated: 2026-04-19
 | `noise_engineering_ruina_versio_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `qubit_bloom_v1_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `squarp_hermod_plus_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-| `turing_machine_ecosystem_guide.md` | — | ⚠️  warning | Missing front panel image link |
-| `vpme_qd_qex_drum_workstation_guide.md` | — | ⚠️  warning | Missing front panel image link |
-| `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | — | ⚠️  warning | Missing front panel image link |
 | `winterbloom_castor_pollux_ii_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 
 ---
@@ -60,23 +57,18 @@ Generated: 2026-04-19
 **`squarp_hermod_plus_guide.md`** — 1 warning
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
-**`turing_machine_ecosystem_guide.md`** — 2 warnings
+**`turing_machine_ecosystem_guide.md`** — 1 warning
   - ⚠️ `yaml_hp` — Missing `hp` field
-  - ⚠️ `front_panel_image` — Missing front panel image link
 
-**`vpme_qd_qex_drum_workstation_guide.md`** — 1 warning
-  - ⚠️ `front_panel_image` — Missing front panel image link
-
-**`vpme_qd_qex_euclidean_circles_ecosystem_guide.md`** — 2 warnings
+**`vpme_qd_qex_euclidean_circles_ecosystem_guide.md`** — 1 warning
   - ⚠️ `yaml_hp` — Missing `hp` field
-  - ⚠️ `front_panel_image` — Missing front panel image link
 
 **`winterbloom_castor_pollux_ii_guide.md`** — 1 warning
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
 ---
 
-## Clean Guides (60)
+## Clean Guides (61)
 
 No issues detected:
 
@@ -138,5 +130,6 @@ No issues detected:
 - `tiptop_audio_forbidden_planet_guide.md`
 - `tiptop_audio_miso_guide.md`
 - `vostok_instruments_ceres_guide.md`
+- `vpme_qd_qex_drum_workstation_guide.md`
 - `xaoc_devices_belgrad_guide.md`
 - `xaoc_devices_zadar_nin_guide.md`

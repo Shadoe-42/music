@@ -2,11 +2,11 @@
   "generated": "2026-04-19",
   "summary": {
     "total_guides": 69,
-    "guides_with_issues": 9,
-    "guides_clean": 60,
-    "total_issues": 11,
+    "guides_with_issues": 8,
+    "guides_clean": 61,
+    "total_issues": 8,
     "error_count": 0,
-    "warning_count": 11,
+    "warning_count": 8,
     "deferred_count": 0
   },
   "guides": {
@@ -543,9 +543,9 @@
     },
     "turing_machine_ecosystem_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
-      "warning_count": 2,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
         {
@@ -553,12 +553,6 @@
           "category": "YAML Frontmatter",
           "severity": "warning",
           "detail": "Missing `hp` field"
-        },
-        {
-          "check_id": "front_panel_image",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing front panel image link"
         }
       ]
     },
@@ -571,6 +565,14 @@
       "issues": []
     },
     "vpme_qd_qex_drum_workstation_guide.md": {
+      "clean": true,
+      "issue_count": 0,
+      "error_count": 0,
+      "warning_count": 0,
+      "deferred_count": 0,
+      "issues": []
+    },
+    "vpme_qd_qex_euclidean_circles_ecosystem_guide.md": {
       "clean": false,
       "issue_count": 1,
       "error_count": 0,
@@ -578,31 +580,10 @@
       "deferred_count": 0,
       "issues": [
         {
-          "check_id": "front_panel_image",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing front panel image link"
-        }
-      ]
-    },
-    "vpme_qd_qex_euclidean_circles_ecosystem_guide.md": {
-      "clean": false,
-      "issue_count": 2,
-      "error_count": 0,
-      "warning_count": 2,
-      "deferred_count": 0,
-      "issues": [
-        {
           "check_id": "yaml_hp",
           "category": "YAML Frontmatter",
           "severity": "warning",
           "detail": "Missing `hp` field"
-        },
-        {
-          "check_id": "front_panel_image",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing front panel image link"
         }
       ]
     },
@@ -697,29 +678,6 @@
         "category": "Missing or Misplaced Sections",
         "severity": "warning",
         "detail": "Missing `## Common Mistakes` section"
-      }
-    ],
-    "front_panel_image": [
-      {
-        "file": "turing_machine_ecosystem_guide.md",
-        "check_id": "front_panel_image",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing front panel image link"
-      },
-      {
-        "file": "vpme_qd_qex_drum_workstation_guide.md",
-        "check_id": "front_panel_image",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing front panel image link"
-      },
-      {
-        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
-        "check_id": "front_panel_image",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing front panel image link"
       }
     ]
   }
