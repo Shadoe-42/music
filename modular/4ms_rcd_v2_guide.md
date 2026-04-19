@@ -107,7 +107,7 @@ The jumper settings (accessible via internal jumpers or the front-panel Breakout
 
 ## RCD Breakout Expander
 
-![RCD Breakout Expander](https://github.com/Shadoe-42/music/raw/main/modular/images/4ms/rcd_v2/expander.jpg)  
+![RCD Breakout Expander](https://github.com/Shadoe-42/music/raw/main/modular/images/4ms/rcd_v2/breakout_exp_panel.jpg)  
 *RCD Breakout: 4HP expander with panel-access switches for all internal jumper settings*
 
 The RCD Breakout (4HP) connects to the RCD v2 via ribbon cable and surfaces all internal jumper settings as front-panel toggle switches. Changes that previously required removing the module from the rack and moving physical jumpers by hand become instant panel decisions during a session.

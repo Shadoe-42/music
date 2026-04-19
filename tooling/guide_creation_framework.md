@@ -270,11 +270,16 @@ The path structure is `images/{manufacturer}/{module_name}/`. Both segments use 
 
 **Filename conventions:**
 - Standard panel image: `front_panel.jpg`
-- Named expander panel: `{expander_name}_exp_panel.jpg` (e.g., `nin_exp_panel.jpg`, `aio_exp_panel.jpg`)
+- Named expander panel: `{expander_name}_exp_panel.jpg` (e.g., `nin_exp_panel.jpg`, `aio_exp_panel.jpg`, `breakout_exp_panel.jpg`)
 - Unnamed expander panel: `exp_panel.jpg`
+- Color variant panels: `front_panel_{color}.jpg` (e.g., `front_panel_black.jpg`, `front_panel_silver.jpg`, `front_panel_white.jpg`)
+  - Keep all variants owned; if only one variant is in possession, use what is available
+  - The guide's front panel image link defaults to the black or dark panel variant
 - Expander images live in the parent module's directory, not a separate directory, because the guide is the organizing unit
 
 **Directory structure:** One directory per guide. If a guide covers a module and its named expander(s), all images for both live in the same directory under the parent module's name.
+
+**Module version distinctions:** When a manufacturer releases meaningfully different hardware versions, use `{module}_v{n}` directory naming (e.g., `bloom_v1`, `bloom_v2`). Use version suffixes only when the versions are distinct enough to warrant separate guides or separate image sets. Minor revisions that share a guide do not need separate directories.
 
 ---
 
