@@ -60,8 +60,8 @@ Mutable Instruments closed in 2022. Gillet open-sourced all remaining designs be
 | Spec | Value |
 |------|-------|
 | Width | 18HP |
-| Depth | ⚠️ ~25mm |
-| Power | ⚠️ +120mA / -5mA |
+| Depth | 25mm |
+| Power | +120mA / -5mA |
 | Gate outputs | t1, t2, t3 |
 | CV outputs | X1, X2, X3 (quantizable), Y (smooth random) |
 | Clock | Internal (RATE knob) or external (CLOCK input) |
