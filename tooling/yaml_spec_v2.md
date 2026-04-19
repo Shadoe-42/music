@@ -216,6 +216,8 @@ A list of 3-8 tags per guide describing how the device sounds and behaves.
 Use only terms from this list. Choose the most accurate and discriminating tags;
 do not apply every tag that could technically fit.
 
+**Scope boundary:** behavior_tags describe tonal and temporal character — what the device sounds like and how it behaves over time. Synthesis tradition language (west coast, east coast, Buchla-style, Moog-style) belongs in `use_cases`, not here. Those terms describe lineage and intent, not sonic character directly.
+
 ### Stability
 
 | Tag | Meaning |
