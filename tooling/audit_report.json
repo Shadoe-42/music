@@ -1,12 +1,12 @@
 {
-  "generated": "2026-04-17",
+  "generated": "2026-04-19",
   "summary": {
-    "total_guides": 68,
-    "guides_with_issues": 31,
-    "guides_clean": 37,
-    "total_issues": 60,
+    "total_guides": 69,
+    "guides_with_issues": 18,
+    "guides_clean": 51,
+    "total_issues": 48,
     "error_count": 0,
-    "warning_count": 59,
+    "warning_count": 47,
     "deferred_count": 1
   },
   "guides": {
@@ -144,36 +144,88 @@
       "issues": []
     },
     "alm_busy_circuits_mco_alm021_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "alm_busy_circuits_pamelas_pro_workout_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
+      "deferred_count": 0,
+      "issues": []
+    },
+    "atovproject_lx-euclid_guide.md": {
+      "clean": false,
+      "issue_count": 7,
+      "error_count": 0,
+      "warning_count": 7,
       "deferred_count": 0,
       "issues": [
         {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
+          "check_id": "em_dash",
+          "category": "Format Issues",
           "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
+          "detail": "Em dash in prose: \"1. **Connect clock** — Patch any gate or clock source to the C (Clock) input\"",
+          "line": 29
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"2. **Connect outputs** — Patch the D (Gate outputs) to drum trigger inputs or envelope gen\"",
+          "line": 30
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"3. **Select channel 1** — Press the Yellow channel button (first press enters edit page 1)\"",
+          "line": 31
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"4. **Set Length** — Scroll the outer ring to set total steps (8 or 16 are good starting po\"",
+          "line": 32
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"5. **Set Beats** — Scroll the inner ring to set how many beats fire (try 3 in 8, or 5 in 1\"",
+          "line": 33
+        },
+        {
+          "check_id": "em_dash",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Em dash in prose: \"The lx-euclid immediately outputs the Euclidean pattern. Add channels 2 through 4 for poly\"",
+          "line": 35
+        },
+        {
+          "check_id": "color_labels",
+          "category": "Format Issues",
+          "severity": "warning",
+          "detail": "Old color label: \"**Channel selection buttons (4):** Four buttons below the display, color-coded left to rig\"",
+          "line": 74
         }
       ]
     },
-    "atovproject_lx-euclid_guide.md": {
+    "behringer_dual_envelope_generator_1003_utility_guide.md": {
+      "clean": true,
+      "issue_count": 0,
+      "error_count": 0,
+      "warning_count": 0,
+      "deferred_count": 0,
+      "issues": []
+    },
+    "bizarre_jezabel_pkhia_mk2_guide.md": {
       "clean": false,
       "issue_count": 2,
       "error_count": 0,
@@ -181,64 +233,28 @@
       "deferred_count": 0,
       "issues": [
         {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        },
-        {
-          "check_id": "color_labels",
+          "check_id": "em_dash",
           "category": "Format Issues",
           "severity": "warning",
-          "detail": "Old color label: \"**Channel selection buttons (4):** Four buttons below the display, color-coded left to rig\"",
-          "line": 62
-        }
-      ]
-    },
-    "behringer_dual_envelope_generator_1003_utility_guide.md": {
-      "clean": false,
-      "issue_count": 1,
-      "error_count": 0,
-      "warning_count": 1,
-      "deferred_count": 0,
-      "issues": [
+          "detail": "Em dash in prose: \"- **Dual-mono:** Each channel operates independently — different filter settings, separate\"",
+          "line": 98
+        },
         {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
+          "check_id": "em_dash",
+          "category": "Format Issues",
           "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
-    },
-    "bizarre_jezabel_pkhia_mk2_guide.md": {
-      "clean": false,
-      "issue_count": 1,
-      "error_count": 0,
-      "warning_count": 1,
-      "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
+          "detail": "Em dash in prose: \"- **Stereo:** Channels operate as a unified stereo instrument — use this when processing a\"",
+          "line": 99
         }
       ]
     },
     "blue_lantern_astroid_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "blue_lantern_cmos_party_guide.md": {
       "clean": true,
@@ -249,19 +265,12 @@
       "issues": []
     },
     "blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "cre8audio_cellz_guide.md": {
       "clean": true,
@@ -287,19 +296,12 @@
       ]
     },
     "cre8audio_chipz_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "cre8audio_function_junction_guide.md": {
       "clean": true,
@@ -350,6 +352,14 @@
       "issues": []
     },
     "endorphines_blck_noir_guide.md": {
+      "clean": true,
+      "issue_count": 0,
+      "error_count": 0,
+      "warning_count": 0,
+      "deferred_count": 0,
+      "issues": []
+    },
+    "endorphines_furthrrrr_generator_guide.md": {
       "clean": true,
       "issue_count": 0,
       "error_count": 0,
@@ -433,7 +443,7 @@
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Old color label: \"**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjustin\"",
-          "line": 297
+          "line": 300
         }
       ]
     },
@@ -562,34 +572,20 @@
       ]
     },
     "make_noise_wogglebug_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "mordax_data_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_common_mistakes",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Common Mistakes` section"
-        }
-      ]
+      "issues": []
     },
     "mutable_instruments_links_guide.md": {
       "clean": true,
@@ -600,31 +596,12 @@
       "issues": []
     },
     "mutable_marbles_guide.md": {
-      "clean": false,
-      "issue_count": 3,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 3,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        },
-        {
-          "check_id": "section_common_mistakes",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Common Mistakes` section"
-        },
-        {
-          "check_id": "section_pairs_well",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Pairs Well With` section"
-        }
-      ]
+      "issues": []
     },
     "mutable_plaits_guide.md": {
       "clean": false,
@@ -657,19 +634,12 @@
       ]
     },
     "noise_engineering_loquelic_iteritas_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_common_mistakes",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Common Mistakes` section"
-        }
-      ]
+      "issues": []
     },
     "noise_engineering_numeric_repetitor_guide.md": {
       "clean": false,
@@ -762,19 +732,12 @@
       ]
     },
     "soma_lyra8_fx_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "squarp_hermod_plus_guide.md": {
       "clean": false,
@@ -792,40 +755,26 @@
       ]
     },
     "tiptop_audio_forbidden_planet_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        }
-      ]
+      "issues": []
     },
     "tiptop_audio_miso_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_common_mistakes",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Common Mistakes` section"
-        }
-      ]
+      "issues": []
     },
     "turing_machine_ecosystem_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
-      "warning_count": 2,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
         {
@@ -833,12 +782,6 @@
           "category": "YAML Frontmatter",
           "severity": "warning",
           "detail": "Missing `hp` field"
-        },
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
         }
       ]
     },
@@ -862,36 +805,36 @@
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Old color label: \"- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis\"",
-          "line": 74
+          "line": 73
         },
         {
           "check_id": "color_labels",
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Old color label: \"- **Voice 2 (Red):** Typically snares - wide percussion synthesis range\"",
-          "line": 75
+          "line": 74
         },
         {
           "check_id": "color_labels",
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
-          "line": 76
+          "line": 75
         },
         {
           "check_id": "color_labels",
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Old color label: \"- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis\"",
-          "line": 77
+          "line": 76
         }
       ]
     },
     "vpme_qd_qex_euclidean_circles_ecosystem_guide.md": {
       "clean": false,
-      "issue_count": 6,
+      "issue_count": 5,
       "error_count": 0,
-      "warning_count": 6,
+      "warning_count": 5,
       "deferred_count": 0,
       "issues": [
         {
@@ -901,54 +844,42 @@
           "detail": "Missing `hp` field"
         },
         {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        },
-        {
           "check_id": "color_labels",
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Old color label: \"- **Voice 1 (Blue):** Typically kick drums - full range analog synthesis\"",
-          "line": 69
+          "line": 68
         },
         {
           "check_id": "color_labels",
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Old color label: \"- **Voice 2 (Red):** Typically snare - wide range of percussion synthesis\"",
-          "line": 70
+          "line": 69
         },
         {
           "check_id": "color_labels",
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
-          "line": 71
+          "line": 70
         },
         {
           "check_id": "color_labels",
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Old color label: \"- **Voice 4 (Green):** Typically percussion - flexible synthesis for any drum sound\"",
-          "line": 72
+          "line": 71
         }
       ]
     },
     "winterbloom_castor_pollux_ii_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
-      "warning_count": 2,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
-        {
-          "check_id": "section_historical_context",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Historical Context` section"
-        },
         {
           "check_id": "section_common_mistakes",
           "category": "Missing or Misplaced Sections",
@@ -1071,141 +1002,70 @@
         "severity": "warning",
         "detail": "Em dash in prose: \"When both sections feel natural, begin using them simultaneously in the same patch. Route \"",
         "line": 709
-      }
-    ],
-    "section_historical_context": [
-      {
-        "file": "alm_busy_circuits_mco_alm021_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "alm_busy_circuits_pamelas_pro_workout_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
       },
       {
         "file": "atovproject_lx-euclid_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
+        "check_id": "em_dash",
+        "category": "Format Issues",
         "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
+        "detail": "Em dash in prose: \"1. **Connect clock** — Patch any gate or clock source to the C (Clock) input\"",
+        "line": 29
       },
       {
-        "file": "behringer_dual_envelope_generator_1003_utility_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
+        "file": "atovproject_lx-euclid_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
         "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
+        "detail": "Em dash in prose: \"2. **Connect outputs** — Patch the D (Gate outputs) to drum trigger inputs or envelope gen\"",
+        "line": 30
+      },
+      {
+        "file": "atovproject_lx-euclid_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"3. **Select channel 1** — Press the Yellow channel button (first press enters edit page 1)\"",
+        "line": 31
+      },
+      {
+        "file": "atovproject_lx-euclid_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"4. **Set Length** — Scroll the outer ring to set total steps (8 or 16 are good starting po\"",
+        "line": 32
+      },
+      {
+        "file": "atovproject_lx-euclid_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"5. **Set Beats** — Scroll the inner ring to set how many beats fire (try 3 in 8, or 5 in 1\"",
+        "line": 33
+      },
+      {
+        "file": "atovproject_lx-euclid_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Em dash in prose: \"The lx-euclid immediately outputs the Euclidean pattern. Add channels 2 through 4 for poly\"",
+        "line": 35
       },
       {
         "file": "bizarre_jezabel_pkhia_mk2_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
+        "check_id": "em_dash",
+        "category": "Format Issues",
         "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
+        "detail": "Em dash in prose: \"- **Dual-mono:** Each channel operates independently — different filter settings, separate\"",
+        "line": 98
       },
       {
-        "file": "blue_lantern_astroid_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
+        "file": "bizarre_jezabel_pkhia_mk2_guide.md",
+        "check_id": "em_dash",
+        "category": "Format Issues",
         "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "cre8audio_chipz_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "make_noise_pressure_points_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "make_noise_wogglebug_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "mutable_marbles_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "mutable_plaits_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "mutable_rings_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "rossum_electro_music_mob_of_emus_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "soma_lyra8_fx_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "tiptop_audio_forbidden_planet_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "turing_machine_ecosystem_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
-      },
-      {
-        "file": "winterbloom_castor_pollux_ii_guide.md",
-        "check_id": "section_historical_context",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Historical Context` section"
+        "detail": "Em dash in prose: \"- **Stereo:** Channels operate as a unified stereo instrument — use this when processing a\"",
+        "line": 99
       }
     ],
     "color_labels": [
@@ -1215,7 +1075,7 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Old color label: \"**Channel selection buttons (4):** Four buttons below the display, color-coded left to rig\"",
-        "line": 62
+        "line": 74
       },
       {
         "file": "erica_synths_pico_dsp_guide.md",
@@ -1223,7 +1083,7 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Old color label: \"**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjustin\"",
-        "line": 297
+        "line": 300
       },
       {
         "file": "erica_synths_pico_voice_guide.md",
@@ -1271,7 +1131,7 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Old color label: \"- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis\"",
-        "line": 74
+        "line": 73
       },
       {
         "file": "vpme_qd_qex_drum_workstation_guide.md",
@@ -1279,6 +1139,14 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Old color label: \"- **Voice 2 (Red):** Typically snares - wide percussion synthesis range\"",
+        "line": 74
+      },
+      {
+        "file": "vpme_qd_qex_drum_workstation_guide.md",
+        "check_id": "color_labels",
+        "category": "Format Issues",
+        "severity": "warning",
+        "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
         "line": 75
       },
       {
@@ -1286,16 +1154,8 @@
         "check_id": "color_labels",
         "category": "Format Issues",
         "severity": "warning",
-        "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
-        "line": 76
-      },
-      {
-        "file": "vpme_qd_qex_drum_workstation_guide.md",
-        "check_id": "color_labels",
-        "category": "Format Issues",
-        "severity": "warning",
         "detail": "Old color label: \"- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis\"",
-        "line": 77
+        "line": 76
       },
       {
         "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
@@ -1303,7 +1163,7 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Old color label: \"- **Voice 1 (Blue):** Typically kick drums - full range analog synthesis\"",
-        "line": 69
+        "line": 68
       },
       {
         "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
@@ -1311,7 +1171,7 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Old color label: \"- **Voice 2 (Red):** Typically snare - wide range of percussion synthesis\"",
-        "line": 70
+        "line": 69
       },
       {
         "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
@@ -1319,7 +1179,7 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Old color label: \"- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis\"",
-        "line": 71
+        "line": 70
       },
       {
         "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
@@ -1327,7 +1187,7 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Old color label: \"- **Voice 4 (Green):** Typically percussion - flexible synthesis for any drum sound\"",
-        "line": 72
+        "line": 71
       }
     ],
     "yaml_hp": [
@@ -1353,6 +1213,36 @@
         "detail": "Missing `hp` field"
       }
     ],
+    "section_historical_context": [
+      {
+        "file": "make_noise_pressure_points_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "mutable_plaits_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "mutable_rings_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      },
+      {
+        "file": "rossum_electro_music_mob_of_emus_guide.md",
+        "check_id": "section_historical_context",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing `## Historical Context` section"
+      }
+    ],
     "why_section_old_wording": [
       {
         "file": "make_noise_pressure_points_guide.md",
@@ -1364,27 +1254,6 @@
       }
     ],
     "section_common_mistakes": [
-      {
-        "file": "mordax_data_guide.md",
-        "check_id": "section_common_mistakes",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Common Mistakes` section"
-      },
-      {
-        "file": "mutable_marbles_guide.md",
-        "check_id": "section_common_mistakes",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Common Mistakes` section"
-      },
-      {
-        "file": "noise_engineering_loquelic_iteritas_guide.md",
-        "check_id": "section_common_mistakes",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Common Mistakes` section"
-      },
       {
         "file": "noise_engineering_numeric_repetitor_guide.md",
         "check_id": "section_common_mistakes",
@@ -1414,27 +1283,11 @@
         "detail": "Missing `## Common Mistakes` section"
       },
       {
-        "file": "tiptop_audio_miso_guide.md",
-        "check_id": "section_common_mistakes",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Common Mistakes` section"
-      },
-      {
         "file": "winterbloom_castor_pollux_ii_guide.md",
         "check_id": "section_common_mistakes",
         "category": "Missing or Misplaced Sections",
         "severity": "warning",
         "detail": "Missing `## Common Mistakes` section"
-      }
-    ],
-    "section_pairs_well": [
-      {
-        "file": "mutable_marbles_guide.md",
-        "check_id": "section_pairs_well",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Pairs Well With` section"
       }
     ]
   }

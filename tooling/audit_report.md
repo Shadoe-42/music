@@ -1,6 +1,6 @@
 # Guide Audit Report
 
-Generated: 2026-04-17
+Generated: 2026-04-19
 
 ---
 
@@ -8,12 +8,12 @@ Generated: 2026-04-17
 
 | Metric | Count |
 |--------|-------|
-| Guides scanned | 68 |
-| Guides with issues | 31 |
-| Guides clean | 37 |
-| Total issues | 60 |
+| Guides scanned | 69 |
+| Guides with issues | 18 |
+| Guides clean | 51 |
+| Total issues | 48 |
 | ❌ Errors (fix now) | 0 |
-| ⚠️  Warnings (fix when touching) | 59 |
+| ⚠️  Warnings (fix when touching) | 47 |
 | 📌 Deferred (tracked, low priority) | 1 |
 
 ---
@@ -32,34 +32,14 @@ Generated: 2026-04-17
 
 | File | Line | Severity | Issue |
 |------|------|----------|-------|
-| `alm_busy_circuits_mco_alm021_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `alm_busy_circuits_pamelas_pro_workout_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `atovproject_lx-euclid_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `behringer_dual_envelope_generator_1003_utility_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `bizarre_jezabel_pkhia_mk2_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `blue_lantern_astroid_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `cre8audio_chipz_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `make_noise_pressure_points_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `make_noise_wogglebug_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `mordax_data_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-| `mutable_marbles_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `mutable_marbles_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-| `mutable_marbles_guide.md` | — | ⚠️  warning | Missing `## Pairs Well With` section |
 | `mutable_plaits_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `mutable_rings_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `noise_engineering_loquelic_iteritas_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `noise_engineering_numeric_repetitor_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `noise_engineering_ruina_versio_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `qubit_bloom_v1_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `rossum_electro_music_mob_of_emus_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `soma_lyra8_fx_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `squarp_hermod_plus_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-| `tiptop_audio_forbidden_planet_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `tiptop_audio_miso_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
-| `turing_machine_ecosystem_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
-| `winterbloom_castor_pollux_ii_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `winterbloom_castor_pollux_ii_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 
 ### Format Issues
@@ -78,21 +58,29 @@ Generated: 2026-04-17
 | `4ms_company_listen_io_guide.md` | 697 | ⚠️  warning | Em dash in prose: "The output section converts modular signals downward to levels appropriate for studio moni" |
 | `4ms_company_listen_io_guide.md` | 705 | ⚠️  warning | Em dash in prose: "Start with a single external source and headphone monitoring as the entire patch. The goal" |
 | `4ms_company_listen_io_guide.md` | 709 | ⚠️  warning | Em dash in prose: "When both sections feel natural, begin using them simultaneously in the same patch. Route " |
-| `atovproject_lx-euclid_guide.md` | 62 | ⚠️  warning | Old color label: "**Channel selection buttons (4):** Four buttons below the display, color-coded left to rig" |
-| `erica_synths_pico_dsp_guide.md` | 297 | ⚠️  warning | Old color label: "**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjustin" |
+| `atovproject_lx-euclid_guide.md` | 29 | ⚠️  warning | Em dash in prose: "1. **Connect clock** — Patch any gate or clock source to the C (Clock) input" |
+| `atovproject_lx-euclid_guide.md` | 30 | ⚠️  warning | Em dash in prose: "2. **Connect outputs** — Patch the D (Gate outputs) to drum trigger inputs or envelope gen" |
+| `atovproject_lx-euclid_guide.md` | 31 | ⚠️  warning | Em dash in prose: "3. **Select channel 1** — Press the Yellow channel button (first press enters edit page 1)" |
+| `atovproject_lx-euclid_guide.md` | 32 | ⚠️  warning | Em dash in prose: "4. **Set Length** — Scroll the outer ring to set total steps (8 or 16 are good starting po" |
+| `atovproject_lx-euclid_guide.md` | 33 | ⚠️  warning | Em dash in prose: "5. **Set Beats** — Scroll the inner ring to set how many beats fire (try 3 in 8, or 5 in 1" |
+| `atovproject_lx-euclid_guide.md` | 35 | ⚠️  warning | Em dash in prose: "The lx-euclid immediately outputs the Euclidean pattern. Add channels 2 through 4 for poly" |
+| `atovproject_lx-euclid_guide.md` | 74 | ⚠️  warning | Old color label: "**Channel selection buttons (4):** Four buttons below the display, color-coded left to rig" |
+| `bizarre_jezabel_pkhia_mk2_guide.md` | 98 | ⚠️  warning | Em dash in prose: "- **Dual-mono:** Each channel operates independently — different filter settings, separate" |
+| `bizarre_jezabel_pkhia_mk2_guide.md` | 99 | ⚠️  warning | Em dash in prose: "- **Stereo:** Channels operate as a unified stereo instrument — use this when processing a" |
+| `erica_synths_pico_dsp_guide.md` | 300 | ⚠️  warning | Old color label: "**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjustin" |
 | `erica_synths_pico_voice_guide.md` | 172 | ⚠️  warning | Old color label: "- **Algorithm:** Chords (Yellow)" |
 | `erica_synths_pico_voice_guide.md` | 185 | ⚠️  warning | Old color label: "- **Algorithm:** Bassline (Blue)" |
 | `erica_synths_pico_voice_guide.md` | 198 | ⚠️  warning | Old color label: "- **Algorithm:** Wavetable (Green)" |
 | `qubit_bloom_v1_guide.md` | 30 | ⚠️  warning | Old color label: "3. **Press CHANNEL button** until Channel A LED (blue) lights up" |
 | `qubit_bloom_v1_guide.md` | 339 | ⚠️  warning | Old color label: "- **Press CHANNEL button** to switch between A (blue) and B (green)" |
-| `vpme_qd_qex_drum_workstation_guide.md` | 74 | ⚠️  warning | Old color label: "- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis" |
-| `vpme_qd_qex_drum_workstation_guide.md` | 75 | ⚠️  warning | Old color label: "- **Voice 2 (Red):** Typically snares - wide percussion synthesis range" |
-| `vpme_qd_qex_drum_workstation_guide.md` | 76 | ⚠️  warning | Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" |
-| `vpme_qd_qex_drum_workstation_guide.md` | 77 | ⚠️  warning | Old color label: "- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis" |
-| `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | 69 | ⚠️  warning | Old color label: "- **Voice 1 (Blue):** Typically kick drums - full range analog synthesis" |
-| `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | 70 | ⚠️  warning | Old color label: "- **Voice 2 (Red):** Typically snare - wide range of percussion synthesis" |
-| `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | 71 | ⚠️  warning | Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" |
-| `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | 72 | ⚠️  warning | Old color label: "- **Voice 4 (Green):** Typically percussion - flexible synthesis for any drum sound" |
+| `vpme_qd_qex_drum_workstation_guide.md` | 73 | ⚠️  warning | Old color label: "- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis" |
+| `vpme_qd_qex_drum_workstation_guide.md` | 74 | ⚠️  warning | Old color label: "- **Voice 2 (Red):** Typically snares - wide percussion synthesis range" |
+| `vpme_qd_qex_drum_workstation_guide.md` | 75 | ⚠️  warning | Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" |
+| `vpme_qd_qex_drum_workstation_guide.md` | 76 | ⚠️  warning | Old color label: "- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis" |
+| `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | 68 | ⚠️  warning | Old color label: "- **Voice 1 (Blue):** Typically kick drums - full range analog synthesis" |
+| `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | 69 | ⚠️  warning | Old color label: "- **Voice 2 (Red):** Typically snare - wide range of percussion synthesis" |
+| `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | 70 | ⚠️  warning | Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" |
+| `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | 71 | ⚠️  warning | Old color label: "- **Voice 4 (Green):** Typically percussion - flexible synthesis for any drum sound" |
 
 ### Deferred Items
 
@@ -118,36 +106,24 @@ Generated: 2026-04-17
   - ⚠️ `em_dash` — Em dash in prose: "Start with a single external source and headphone monitoring as the entire patch. The goal" *(line 705)*
   - ⚠️ `em_dash` — Em dash in prose: "When both sections feel natural, begin using them simultaneously in the same patch. Route " *(line 709)*
 
-**`alm_busy_circuits_mco_alm021_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
+**`atovproject_lx-euclid_guide.md`** — 7 warnings
+  - ⚠️ `em_dash` — Em dash in prose: "1. **Connect clock** — Patch any gate or clock source to the C (Clock) input" *(line 29)*
+  - ⚠️ `em_dash` — Em dash in prose: "2. **Connect outputs** — Patch the D (Gate outputs) to drum trigger inputs or envelope gen" *(line 30)*
+  - ⚠️ `em_dash` — Em dash in prose: "3. **Select channel 1** — Press the Yellow channel button (first press enters edit page 1)" *(line 31)*
+  - ⚠️ `em_dash` — Em dash in prose: "4. **Set Length** — Scroll the outer ring to set total steps (8 or 16 are good starting po" *(line 32)*
+  - ⚠️ `em_dash` — Em dash in prose: "5. **Set Beats** — Scroll the inner ring to set how many beats fire (try 3 in 8, or 5 in 1" *(line 33)*
+  - ⚠️ `em_dash` — Em dash in prose: "The lx-euclid immediately outputs the Euclidean pattern. Add channels 2 through 4 for poly" *(line 35)*
+  - ⚠️ `color_labels` — Old color label: "**Channel selection buttons (4):** Four buttons below the display, color-coded left to rig" *(line 74)*
 
-**`alm_busy_circuits_pamelas_pro_workout_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`atovproject_lx-euclid_guide.md`** — 2 warnings
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-  - ⚠️ `color_labels` — Old color label: "**Channel selection buttons (4):** Four buttons below the display, color-coded left to rig" *(line 62)*
-
-**`behringer_dual_envelope_generator_1003_utility_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`bizarre_jezabel_pkhia_mk2_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`blue_lantern_astroid_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
+**`bizarre_jezabel_pkhia_mk2_guide.md`** — 2 warnings
+  - ⚠️ `em_dash` — Em dash in prose: "- **Dual-mono:** Each channel operates independently — different filter settings, separate" *(line 98)*
+  - ⚠️ `em_dash` — Em dash in prose: "- **Stereo:** Channels operate as a unified stereo instrument — use this when processing a" *(line 99)*
 
 **`cre8audio_chipz_cellz_niftycase_bundle_guide.md`** — 1 warning
   - ⚠️ `yaml_hp` — Missing `hp` field
 
-**`cre8audio_chipz_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
 **`erica_synths_pico_dsp_guide.md`** — 1 warning
-  - ⚠️ `color_labels` — Old color label: "**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjustin" *(line 297)*
+  - ⚠️ `color_labels` — Old color label: "**Problem:** Granular Delay (Blue) is stuck repeating the same audio forever, and adjustin" *(line 300)*
 
 **`erica_synths_pico_voice_guide.md`** — 3 warnings
   - ⚠️ `color_labels` — Old color label: "- **Algorithm:** Chords (Yellow)" *(line 172)*
@@ -158,25 +134,11 @@ Generated: 2026-04-17
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
   - 📌 `why_section_old_wording` — Gen-1 'Rocks' wording: "Why Pressure Points Rocks" — rename to `## Why [Module] Excels` *(line 348)*
 
-**`make_noise_wogglebug_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`mordax_data_guide.md`** — 1 warning
-  - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
-
-**`mutable_marbles_guide.md`** — 3 warnings
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-  - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
-  - ⚠️ `section_pairs_well` — Missing `## Pairs Well With` section
-
 **`mutable_plaits_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
 **`mutable_rings_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`noise_engineering_loquelic_iteritas_guide.md`** — 1 warning
-  - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
 **`noise_engineering_numeric_repetitor_guide.md`** — 1 warning
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
@@ -192,43 +154,31 @@ Generated: 2026-04-17
 **`rossum_electro_music_mob_of_emus_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
-**`soma_lyra8_fx_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
 **`squarp_hermod_plus_guide.md`** — 1 warning
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
-**`tiptop_audio_forbidden_planet_guide.md`** — 1 warning
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-
-**`tiptop_audio_miso_guide.md`** — 1 warning
-  - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
-
-**`turing_machine_ecosystem_guide.md`** — 2 warnings
+**`turing_machine_ecosystem_guide.md`** — 1 warning
   - ⚠️ `yaml_hp` — Missing `hp` field
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
 
 **`vpme_qd_qex_drum_workstation_guide.md`** — 4 warnings
-  - ⚠️ `color_labels` — Old color label: "- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis" *(line 74)*
-  - ⚠️ `color_labels` — Old color label: "- **Voice 2 (Red):** Typically snares - wide percussion synthesis range" *(line 75)*
-  - ⚠️ `color_labels` — Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" *(line 76)*
-  - ⚠️ `color_labels` — Old color label: "- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis" *(line 77)*
+  - ⚠️ `color_labels` — Old color label: "- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis" *(line 73)*
+  - ⚠️ `color_labels` — Old color label: "- **Voice 2 (Red):** Typically snares - wide percussion synthesis range" *(line 74)*
+  - ⚠️ `color_labels` — Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" *(line 75)*
+  - ⚠️ `color_labels` — Old color label: "- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis" *(line 76)*
 
-**`vpme_qd_qex_euclidean_circles_ecosystem_guide.md`** — 6 warnings
+**`vpme_qd_qex_euclidean_circles_ecosystem_guide.md`** — 5 warnings
   - ⚠️ `yaml_hp` — Missing `hp` field
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
-  - ⚠️ `color_labels` — Old color label: "- **Voice 1 (Blue):** Typically kick drums - full range analog synthesis" *(line 69)*
-  - ⚠️ `color_labels` — Old color label: "- **Voice 2 (Red):** Typically snare - wide range of percussion synthesis" *(line 70)*
-  - ⚠️ `color_labels` — Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" *(line 71)*
-  - ⚠️ `color_labels` — Old color label: "- **Voice 4 (Green):** Typically percussion - flexible synthesis for any drum sound" *(line 72)*
+  - ⚠️ `color_labels` — Old color label: "- **Voice 1 (Blue):** Typically kick drums - full range analog synthesis" *(line 68)*
+  - ⚠️ `color_labels` — Old color label: "- **Voice 2 (Red):** Typically snare - wide range of percussion synthesis" *(line 69)*
+  - ⚠️ `color_labels` — Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" *(line 70)*
+  - ⚠️ `color_labels` — Old color label: "- **Voice 4 (Green):** Typically percussion - flexible synthesis for any drum sound" *(line 71)*
 
-**`winterbloom_castor_pollux_ii_guide.md`** — 2 warnings
-  - ⚠️ `section_historical_context` — Missing `## Historical Context` section
+**`winterbloom_castor_pollux_ii_guide.md`** — 1 warning
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
 ---
 
-## Clean Guides (37)
+## Clean Guides (51)
 
 No issues detected:
 
@@ -237,8 +187,14 @@ No issues detected:
 - `4ms_scm_plus_guide.md`
 - `after_later_audio_cloaks_guide.md`
 - `after_later_audio_mingles_guide.md`
+- `alm_busy_circuits_mco_alm021_guide.md`
+- `alm_busy_circuits_pamelas_pro_workout_guide.md`
+- `behringer_dual_envelope_generator_1003_utility_guide.md`
+- `blue_lantern_astroid_guide.md`
 - `blue_lantern_cmos_party_guide.md`
+- `blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md`
 - `cre8audio_cellz_guide.md`
+- `cre8audio_chipz_guide.md`
 - `cre8audio_function_junction_guide.md`
 - `divkid_ochd_and_expander_guide.md`
 - `doepfer_a124_wasp_se_guide.md`
@@ -246,6 +202,7 @@ No issues detected:
 - `dspcoffee_kali_guide.md`
 - `earthquaker_devices_afterneath_guide.md`
 - `endorphines_blck_noir_guide.md`
+- `endorphines_furthrrrr_generator_guide.md`
 - `endorphines_ghost_guide.md`
 - `endorphines_ground_control_guide.md`
 - `endorphines_queen_of_pentacles_guide.md`
@@ -263,9 +220,16 @@ No issues detected:
 - `intellijel_mixup_guide.md`
 - `intellijel_stomp_guide.md`
 - `make_noise_maths_guide.md`
+- `make_noise_wogglebug_guide.md`
+- `mordax_data_guide.md`
 - `mutable_instruments_links_guide.md`
+- `mutable_marbles_guide.md`
+- `noise_engineering_loquelic_iteritas_guide.md`
 - `patching_panda_moon_phase_guide.md`
 - `patching_panda_punch_v3_guide.md`
+- `soma_lyra8_fx_guide.md`
+- `tiptop_audio_forbidden_planet_guide.md`
+- `tiptop_audio_miso_guide.md`
 - `vostok_instruments_ceres_guide.md`
 - `xaoc_devices_belgrad_guide.md`
 - `xaoc_devices_zadar_nin_guide.md`
