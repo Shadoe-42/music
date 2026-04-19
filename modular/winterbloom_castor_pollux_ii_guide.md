@@ -16,6 +16,8 @@ hybrid: true
 
 **The Modern Juno Twins**
 
+![Winterbloom Castor & Pollux II](https://github.com/Shadoe-42/music/raw/main/modular/images/winterbloom/castor_pollux_ii/front_panel.jpg)
+
 ---
 
 ## Quick Start: Get Your First Juno-Style Sound in 5 Minutes

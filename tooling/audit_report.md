@@ -11,9 +11,9 @@ Generated: 2026-04-19
 | Guides scanned | 69 |
 | Guides with issues | 18 |
 | Guides clean | 51 |
-| Total issues | 48 |
+| Total issues | 51 |
 | ❌ Errors (fix now) | 0 |
-| ⚠️  Warnings (fix when touching) | 47 |
+| ⚠️  Warnings (fix when touching) | 50 |
 | 📌 Deferred (tracked, low priority) | 1 |
 
 ---
@@ -40,6 +40,9 @@ Generated: 2026-04-19
 | `qubit_bloom_v1_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 | `rossum_electro_music_mob_of_emus_guide.md` | — | ⚠️  warning | Missing `## Historical Context` section |
 | `squarp_hermod_plus_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
+| `turing_machine_ecosystem_guide.md` | — | ⚠️  warning | Missing front panel image link |
+| `vpme_qd_qex_drum_workstation_guide.md` | — | ⚠️  warning | Missing front panel image link |
+| `vpme_qd_qex_euclidean_circles_ecosystem_guide.md` | — | ⚠️  warning | Missing front panel image link |
 | `winterbloom_castor_pollux_ii_guide.md` | — | ⚠️  warning | Missing `## Common Mistakes` section |
 
 ### Format Issues
@@ -71,8 +74,8 @@ Generated: 2026-04-19
 | `erica_synths_pico_voice_guide.md` | 172 | ⚠️  warning | Old color label: "- **Algorithm:** Chords (Yellow)" |
 | `erica_synths_pico_voice_guide.md` | 185 | ⚠️  warning | Old color label: "- **Algorithm:** Bassline (Blue)" |
 | `erica_synths_pico_voice_guide.md` | 198 | ⚠️  warning | Old color label: "- **Algorithm:** Wavetable (Green)" |
-| `qubit_bloom_v1_guide.md` | 30 | ⚠️  warning | Old color label: "3. **Press CHANNEL button** until Channel A LED (blue) lights up" |
-| `qubit_bloom_v1_guide.md` | 339 | ⚠️  warning | Old color label: "- **Press CHANNEL button** to switch between A (blue) and B (green)" |
+| `qubit_bloom_v1_guide.md` | 32 | ⚠️  warning | Old color label: "3. **Press CHANNEL button** until Channel A LED (blue) lights up" |
+| `qubit_bloom_v1_guide.md` | 341 | ⚠️  warning | Old color label: "- **Press CHANNEL button** to switch between A (blue) and B (green)" |
 | `vpme_qd_qex_drum_workstation_guide.md` | 73 | ⚠️  warning | Old color label: "- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis" |
 | `vpme_qd_qex_drum_workstation_guide.md` | 74 | ⚠️  warning | Old color label: "- **Voice 2 (Red):** Typically snares - wide percussion synthesis range" |
 | `vpme_qd_qex_drum_workstation_guide.md` | 75 | ⚠️  warning | Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" |
@@ -148,8 +151,8 @@ Generated: 2026-04-19
 
 **`qubit_bloom_v1_guide.md`** — 3 warnings
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
-  - ⚠️ `color_labels` — Old color label: "3. **Press CHANNEL button** until Channel A LED (blue) lights up" *(line 30)*
-  - ⚠️ `color_labels` — Old color label: "- **Press CHANNEL button** to switch between A (blue) and B (green)" *(line 339)*
+  - ⚠️ `color_labels` — Old color label: "3. **Press CHANNEL button** until Channel A LED (blue) lights up" *(line 32)*
+  - ⚠️ `color_labels` — Old color label: "- **Press CHANNEL button** to switch between A (blue) and B (green)" *(line 341)*
 
 **`rossum_electro_music_mob_of_emus_guide.md`** — 1 warning
   - ⚠️ `section_historical_context` — Missing `## Historical Context` section
@@ -157,17 +160,20 @@ Generated: 2026-04-19
 **`squarp_hermod_plus_guide.md`** — 1 warning
   - ⚠️ `section_common_mistakes` — Missing `## Common Mistakes` section
 
-**`turing_machine_ecosystem_guide.md`** — 1 warning
+**`turing_machine_ecosystem_guide.md`** — 2 warnings
   - ⚠️ `yaml_hp` — Missing `hp` field
+  - ⚠️ `front_panel_image` — Missing front panel image link
 
-**`vpme_qd_qex_drum_workstation_guide.md`** — 4 warnings
+**`vpme_qd_qex_drum_workstation_guide.md`** — 5 warnings
+  - ⚠️ `front_panel_image` — Missing front panel image link
   - ⚠️ `color_labels` — Old color label: "- **Voice 1 (Blue):** Typically kick drums - full frequency range synthesis" *(line 73)*
   - ⚠️ `color_labels` — Old color label: "- **Voice 2 (Red):** Typically snares - wide percussion synthesis range" *(line 74)*
   - ⚠️ `color_labels` — Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" *(line 75)*
   - ⚠️ `color_labels` — Old color label: "- **Voice 4 (Green):** Flexible percussion - any drum sound synthesis" *(line 76)*
 
-**`vpme_qd_qex_euclidean_circles_ecosystem_guide.md`** — 5 warnings
+**`vpme_qd_qex_euclidean_circles_ecosystem_guide.md`** — 6 warnings
   - ⚠️ `yaml_hp` — Missing `hp` field
+  - ⚠️ `front_panel_image` — Missing front panel image link
   - ⚠️ `color_labels` — Old color label: "- **Voice 1 (Blue):** Typically kick drums - full range analog synthesis" *(line 68)*
   - ⚠️ `color_labels` — Old color label: "- **Voice 2 (Red):** Typically snare - wide range of percussion synthesis" *(line 69)*
   - ⚠️ `color_labels` — Old color label: "- **Voice 3 (Yellow):** Typically hi-hats - metallic and noise synthesis" *(line 70)*

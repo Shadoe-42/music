@@ -15,8 +15,7 @@ historical_context: false
 
 **The Ultimate VCA-Decay Module for Dynamic Percussion**
 
-historical_context: false
----
+![Patching Panda Punch V3](https://github.com/Shadoe-42/music/raw/main/modular/images/patching_panda/punch_v3/front_panel.jpg)
 
 ## Quick Start: Get Your First Sound in 5 Minutes
 
@@ -37,9 +36,6 @@ historical_context: false
 3. **Use same audio source** and trigger
 4. **Notice** how the dynamics change with velocity!
 5. **Turn CURVE** knob - changes from smooth to aggressive response
-
-historical_context: false
----
 
 ## Essential Parameters (The Big 6)
 

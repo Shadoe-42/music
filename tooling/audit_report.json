@@ -4,9 +4,9 @@
     "total_guides": 69,
     "guides_with_issues": 18,
     "guides_clean": 51,
-    "total_issues": 48,
+    "total_issues": 51,
     "error_count": 0,
-    "warning_count": 47,
+    "warning_count": 50,
     "deferred_count": 1
   },
   "guides": {
@@ -705,14 +705,14 @@
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Old color label: \"3. **Press CHANNEL button** until Channel A LED (blue) lights up\"",
-          "line": 30
+          "line": 32
         },
         {
           "check_id": "color_labels",
           "category": "Format Issues",
           "severity": "warning",
           "detail": "Old color label: \"- **Press CHANNEL button** to switch between A (blue) and B (green)\"",
-          "line": 339
+          "line": 341
         }
       ]
     },
@@ -772,9 +772,9 @@
     },
     "turing_machine_ecosystem_guide.md": {
       "clean": false,
-      "issue_count": 1,
+      "issue_count": 2,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 2,
       "deferred_count": 0,
       "issues": [
         {
@@ -782,6 +782,12 @@
           "category": "YAML Frontmatter",
           "severity": "warning",
           "detail": "Missing `hp` field"
+        },
+        {
+          "check_id": "front_panel_image",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing front panel image link"
         }
       ]
     },
@@ -795,11 +801,17 @@
     },
     "vpme_qd_qex_drum_workstation_guide.md": {
       "clean": false,
-      "issue_count": 4,
+      "issue_count": 5,
       "error_count": 0,
-      "warning_count": 4,
+      "warning_count": 5,
       "deferred_count": 0,
       "issues": [
+        {
+          "check_id": "front_panel_image",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing front panel image link"
+        },
         {
           "check_id": "color_labels",
           "category": "Format Issues",
@@ -832,9 +844,9 @@
     },
     "vpme_qd_qex_euclidean_circles_ecosystem_guide.md": {
       "clean": false,
-      "issue_count": 5,
+      "issue_count": 6,
       "error_count": 0,
-      "warning_count": 5,
+      "warning_count": 6,
       "deferred_count": 0,
       "issues": [
         {
@@ -842,6 +854,12 @@
           "category": "YAML Frontmatter",
           "severity": "warning",
           "detail": "Missing `hp` field"
+        },
+        {
+          "check_id": "front_panel_image",
+          "category": "Missing or Misplaced Sections",
+          "severity": "warning",
+          "detail": "Missing front panel image link"
         },
         {
           "check_id": "color_labels",
@@ -1115,7 +1133,7 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Old color label: \"3. **Press CHANNEL button** until Channel A LED (blue) lights up\"",
-        "line": 30
+        "line": 32
       },
       {
         "file": "qubit_bloom_v1_guide.md",
@@ -1123,7 +1141,7 @@
         "category": "Format Issues",
         "severity": "warning",
         "detail": "Old color label: \"- **Press CHANNEL button** to switch between A (blue) and B (green)\"",
-        "line": 339
+        "line": 341
       },
       {
         "file": "vpme_qd_qex_drum_workstation_guide.md",
@@ -1288,6 +1306,29 @@
         "category": "Missing or Misplaced Sections",
         "severity": "warning",
         "detail": "Missing `## Common Mistakes` section"
+      }
+    ],
+    "front_panel_image": [
+      {
+        "file": "turing_machine_ecosystem_guide.md",
+        "check_id": "front_panel_image",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing front panel image link"
+      },
+      {
+        "file": "vpme_qd_qex_drum_workstation_guide.md",
+        "check_id": "front_panel_image",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing front panel image link"
+      },
+      {
+        "file": "vpme_qd_qex_euclidean_circles_ecosystem_guide.md",
+        "check_id": "front_panel_image",
+        "category": "Missing or Misplaced Sections",
+        "severity": "warning",
+        "detail": "Missing front panel image link"
       }
     ]
   }

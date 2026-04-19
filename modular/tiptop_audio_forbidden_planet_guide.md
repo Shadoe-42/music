@@ -14,6 +14,8 @@ hp: 8
 
 **The Steiner-Parker Synthacon Filter Reborn**
 
+![Tiptop Audio Forbidden Planet](https://github.com/Shadoe-42/music/raw/main/modular/images/tiptop_audio/forbidden_planet/front_panel.jpg)
+
 ---
 
 ## Quick Start: Get Your First Sound in 5 Minutes

@@ -18,6 +18,8 @@ historical_context: false
 
 **The Modular System Brain**
 
+![Squarp Hermod+](https://github.com/Shadoe-42/music/raw/main/modular/images/squarp/hermod_plus/front_panel.jpg)
+
 ---
 
 ## Quick Start: Get Your First Sequence in 5 Minutes

@@ -18,6 +18,8 @@ historical_context: false
 
 **The Fractal Sequencing Garden**
 
+![Qu-Bit Bloom V1](https://github.com/Shadoe-42/music/raw/main/modular/images/qubit/bloom_v1/front_panel.jpg)
+
 ---
 
 ## Quick Start: Get Your First Evolving Sequence in 5 Minutes

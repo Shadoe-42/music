@@ -14,6 +14,8 @@ hp: 20
 
 **The Mysterious Organismic Effects Processor**
 
+![Soma Lyra-8 FX](https://github.com/Shadoe-42/music/raw/main/modular/images/soma/lyra8_fx/front_panel.jpg)
+
 ---
 
 ## Quick Start: Get Your First Sound in 5 Minutes

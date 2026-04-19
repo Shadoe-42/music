@@ -437,6 +437,22 @@ def check_bullet_setup_sections(fp, content, lines, fm):
     return issues
 
 
+def check_front_panel_image(fp, content, lines, fm):
+    """
+    Every guide must include a front panel image link using the standard
+    GitHub raw URL. Flag if no image reference is found in the guide body.
+    Skips frontmatter and fenced code blocks.
+    """
+    if not has_frontmatter(content):
+        return []
+    img_re = re.compile(r"!\[.*?\]\(.*?\)")
+    for _lineno, line in prose_lines(lines):
+        if img_re.search(line):
+            return []
+    return [Issue("front_panel_image", CAT_SECTIONS, WARNING,
+                  "Missing front panel image link")]
+
+
 def check_image_url_format(fp, content, lines, fm):
     """
     Image links should use the standard GitHub raw URL:
@@ -662,6 +678,7 @@ CHECKS = [
     # Section order
     check_why_excels_before_patches,
     # Format issues
+    check_front_panel_image,
     check_em_dashes,
     check_emoji_labels,
     check_color_labels,
