@@ -12,6 +12,8 @@ transport: receive
 
 # Music Thing Modular Turing Machine V2 Ecosystem
 
+![Music Thing Modular Turing Machine](https://github.com/Shadoe-42/music/raw/main/modular/images/musicthing_modular/turing_machine/front_panel.jpg)
+
 **The Musical Chaos Generator and Expander System**
 
 ---

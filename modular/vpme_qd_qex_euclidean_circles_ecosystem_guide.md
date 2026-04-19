@@ -11,6 +11,8 @@ use_cases: [euclidean rhythm source, polyrhythmic pattern generator, rhythmic ga
 
 # VPME.de QD + QEX + Euclidean Circles V2
 
+![VPME QD QEX Euclidean Circles V2](https://github.com/Shadoe-42/music/raw/main/modular/images/vpme.de/euclidian_circles_v2/front_panel.jpg)
+
 **The Analog Drum Synthesis + Mathematical Rhythm Ecosystem**
 
 ---

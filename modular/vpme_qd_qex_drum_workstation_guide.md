@@ -16,6 +16,8 @@ historical_context: false
 
 # VPME.de QD + QEX Drum Workstation
 
+![VPME QD QEX Drum Workstation](https://github.com/Shadoe-42/music/raw/main/modular/images/vpme.de/qd_qex/front_panel.jpg)
+
 **The Complete Professional Analog Drum Synthesis Workstation**
 
 ---
