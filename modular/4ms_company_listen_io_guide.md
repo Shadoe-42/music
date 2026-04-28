@@ -163,7 +163,7 @@ External Instrument Integration Workflow:
 **Technical Focus:** Signal level conversion, visual monitoring, and proper gain staging
 **Learning Objectives:**
 - **Signal level conversion:** Understanding the difference between instrument level (~100mV), line level (~1V), and modular level (~10V) and why those standards exist
-- **Gain staging through visual feedback:** Reading the LED bar graphs to recognize optimal signal levels by sight — a skill that transfers to every mixing console and interface
+- **Gain staging through visual feedback:** Reading the LED bar graphs to recognize optimal signal levels by sight, a skill that transfers to every mixing console and interface
 - **Bidirectional signal flow:** Managing both the inbound conversion and the outbound conversion with equal care
 - **Complete signal path thinking:** Understanding that visual monitoring confirms one stage is working, not that the signal has reached its destination
 
