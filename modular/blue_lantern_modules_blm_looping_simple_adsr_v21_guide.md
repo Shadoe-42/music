@@ -36,10 +36,10 @@ hp: 7
 | CV Inputs | Gate, Level CV |
 
 ### Your First Envelope
-1. **Connect gate source** - Patch sequencer or keyboard gate to green GATE input
-2. **Set ADSR parameters** - Adjust blue knobs: Attack, Decay, Sustain, Release
+1. **Connect gate source** - Patch sequencer or keyboard gate to GATE input
+2. **Set ADSR parameters** - Adjust the Attack, Decay, Sustain, and Release knobs
 3. **Select mode** - Set left switch to LIN or XPO, right switch to 1 SHOT
-4. **Connect envelope output** - Patch orange OUT to VCA CV input
+4. **Connect envelope output** - Patch OUT to VCA CV input
 5. **Connect audio through VCA** - Audio source → VCA audio input → VCA output → speakers
 
 **Important:** This module generates CV envelopes, not audio. Always use with a VCA for amplitude control.
@@ -269,49 +269,49 @@ Blue Lantern Modules is a one-person operation based in Phoenix, Arizona, run by
 
 ## Essential Parameters (The Envelope Controls)
 
-### **1. Attack (Blue Knob) - The Rise Time Control**
+### **1. Attack - The Rise Time Control**
 - **What it does:** Controls how quickly envelope rises from 0V to peak level
 - **Character:** Longer attack = slower fade-in, shorter attack = immediate onset
 - **Range:** Adjustable timing range via Time knob (see below)
 - **Musical use:** Slow attacks for pads/strings, fast attacks for percussion/plucks
 - **Pro tip:** Very short attacks still have slight rise time - true instantaneous attack requires hardware limitations
 
-### **2. Decay (Blue Knob) - The Initial Fall Control**
+### **2. Decay - The Initial Fall Control**
 - **What it does:** Controls how quickly envelope falls from peak level to sustain level
 - **Character:** Sets the "bite" or initial character of the envelope
 - **Interaction:** Works with sustain level to create envelope shape
 - **Musical use:** Short decay for punchy sounds, long decay for evolving timbres
 - **Pro tip:** Decay time affects perceived attack characteristics even with identical attack settings
 
-### **3. Sustain (Blue Knob) - The Hold Level Control**
+### **3. Sustain - The Hold Level Control**
 - **What it does:** Sets the level where envelope remains while gate is held high
 - **Character:** Level control, not time - envelope stays at this level until gate goes low
 - **Range:** 0V (no sustain) to full envelope level (no decay)
 - **Musical use:** High sustain for pads, low sustain for percussive envelopes
 - **Pro tip:** Sustain at 0V creates AD envelope behavior (no sustain phase)
 
-### **4. Release (Blue Knob) - The Final Fall Control**
+### **4. Release - The Final Fall Control**
 - **What it does:** Controls how quickly envelope falls from sustain level to 0V when gate ends
 - **Character:** Determines tail behavior and natural decay of sounds
 - **Timing:** Independent of other envelope stages
 - **Musical use:** Short release for staccato, long release for natural instrument simulation
 - **Pro tip:** Release continues even if new gate arrives before completion (retriggering behavior)
 
-### **5. Time (Blue Knob) - The Global Timing Scaler**
+### **5. Time - The Global Timing Scaler**
 - **What it does:** Adjusts overall timing range of all envelope stages simultaneously
 - **Character:** Multiplier for Attack, Decay, and Release times (not sustain level)
 - **Range:** Allows same knob positions to create very fast or very slow envelopes
 - **Workflow:** Set envelope shape with ADSR knobs, then adjust overall speed with Time
 - **Pro tip:** Essential for adapting same envelope shape to different musical contexts (fast drums vs slow pads)
 
-### **6. Level (Violet Knob) - The Output Amplitude Control**
+### **6. Level - The Output Amplitude Control**
 - **What it does:** Controls maximum output level of envelope (0-10V range scalable)
 - **Character:** Scales entire envelope amplitude without changing shape
-- **CV controllable:** Via violet CV input with attenuator knob below
+- **CV controllable:** Via CV input with attenuator knob below
 - **Applications:** Volume automation, envelope scaling, dynamic expression
 - **Pro tip:** Reduces full 0-10V range to 0-5V or other ranges as needed for different modules
 
-### **7. CV Level Control (Violet CV Input + Attenuator)**
+### **7. CV Level Control (CV Input + Attenuator)**
 - **What it does:** CV control over envelope output level with variable amount
 - **Character:** Attenuator knob controls how much CV affects output level
 - **Signal range:** Accepts standard CV levels, scaled by attenuator
@@ -328,14 +328,14 @@ Blue Lantern Modules is a one-person operation based in Phoenix, Arizona, run by
   - **Loop:** Envelope loops continuously, ignoring gate input
 - **Pro tip:** Exponential curves sound more natural for most musical applications
 
-### **9. Gate Input/Thru (Green Jacks) - The Trigger Interface**
+### **9. Gate Input/Thru - The Trigger Interface**
 - **What it does:** Gate input triggers envelope, Thru provides buffered gate output
 - **Signal compatibility:** 0-5V, ±5V signals work (triangle, sine, ramp, saw waves accepted)
 - **Thru output:** Buffered copy of gate input for chaining to other modules
 - **Triggering:** Rising edge starts envelope, falling edge begins release phase
 - **Pro tip:** Thru output allows single gate source to trigger multiple envelope modules
 
-### **10. Envelope Outputs (Orange Jacks) - The CV Signal Outputs**
+### **10. Envelope Outputs - The CV Signal Outputs**
 - **What it does:** Provides 0-10V envelope CV signal (scalable via Level knob)
 - **Multiple outputs:** Parallel outputs for mult-free patching to multiple destinations
 - **Signal type:** Smooth CV envelope suitable for VCA control, filter modulation, etc.
