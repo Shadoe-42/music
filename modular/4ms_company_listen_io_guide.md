@@ -34,8 +34,8 @@ historical_context: false
 | Spec | Value |
 |------|-------|
 | Width | 6HP |
-| Depth | ⚠️ Verify against official documentation |
-| Power | ⚠️ Verify against official documentation |
+| Depth | 24mm |
+| Power | +12V: 62mA / -12V: 55mA / +5V: 0mA |
 | Input gain range | Up to +30dB (~30x voltage gain) |
 | Mod Out level | Up to 22Vpp |
 | Level control | -∞ to 0dB (attenuation only, no boost) |
