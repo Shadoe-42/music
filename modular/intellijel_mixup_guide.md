@@ -11,282 +11,217 @@ hp: 6
 historical_context: false
 ---
 
-# Intellijel Mixup - Guide
+# Intellijel MixUp
 
-**The Chainable Stereo Audio Utility Mixer**
- 
-![Intellijel Mixup](https://github.com/Shadoe-42/music/raw/main/modular/images/intellijel/mixup/front_panel.jpg)  
-*6HP stereo audio mixer with expandable inputs, mute controls, and chainable back panel connectors for larger mixing systems*
+**Four-Channel Stereo Mixer with Chained Expansion**
 
----
-
-## Quick Start: Get Your First Stereo Mix in 5 Minutes
-
-**What is Mixup?** A versatile 6HP stereo mixer that combines multiple audio sources with independent level controls and mute switches. It can be chained with other Mixup modules to create larger mixing systems for complex modular patches.
-
-### Your First Stereo Mix Setup
-1. **Connect audio sources** - Patch your voices into IN 1, IN 2, and IN 3L/3R inputs
-2. **Set input levels** - Use LEVEL 1, LEVEL 2, and LEVEL 3 knobs to balance your mix
-3. **Use mute controls** - MUTE 1, MUTE 2, and MUTE 3 switches for performance control
-4. **Take your mix** - Final stereo mix appears at MIX L and MIX R outputs
-5. **Monitor levels** - Watch the CLIP LED to avoid overloading the mix bus
-
-**Congratulations!** You've just created a professional stereo mix with independent channel control!
+![Intellijel MixUp](https://github.com/Shadoe-42/music/raw/main/modular/images/intellijel/mixup/front_panel.jpg)
+*6HP stereo mixer: three controlled channels plus one unity-gain stereo input, chainable via back-panel headers*
 
 ---
 
-## Essential Parameters (The Mix Controls)
+## Quick Start
 
-### **1. LEVEL 1 Knob - Input 1 Volume Control**
-- **What it does:** Controls the volume of IN 1 (mono input) sent to both MIX L and MIX R outputs
-- **Character:** Logarithmic audio taper for smooth volume control across entire range
-- **Signal routing:** IN 1 appears at both left and right mix outputs (mono to stereo)
-- **Input impedance:** Optimized for modular audio sources
-- **Pro tip:** Start with moderate levels to leave headroom for additional sources
+**What is MixUp?** A four-channel stereo mixer in 6HP. Channels 1 and 2 accept mono signals with independent level knobs and mute switches. Channel 3 accepts a stereo pair with a shared level knob and mute switch. Channel 4 accepts a stereo pair at fixed unity gain with no panel controls. All four channels sum to the stereo MIX L and MIX R outputs at the bottom of the panel. Multiple MixUp units can be linked via back-panel headers to expand the input count without taking additional front-panel connections.
 
-### **2. LEVEL 2 Knob - Input 2 Volume Control**
-- **What it does:** Controls the volume of IN 2 (mono input) sent to both MIX L and MIX R outputs
-- **Character:** Same logarithmic audio taper as LEVEL 1 for consistent feel
-- **Signal routing:** IN 2 appears at both left and right mix outputs (mono to stereo)
-- **Purpose:** Independent level control for second mono source
-- **Pro tip:** Use for secondary voices or modulation sources that need separate level control
+### First Mix
 
-### **3. LEVEL 3 Knob - Input 3 Stereo Volume Control**
-- **What it does:** Controls the volume of both IN 3L and IN 3R simultaneously
-- **Character:** Shared control for stereo pair with logarithmic audio taper
-- **Signal routing:** IN 3L → MIX L, IN 3R → MIX R (true stereo)
-- **Mono usage:** If only IN 3L connected, signal appears at both MIX L and MIX R
-- **Pro tip:** Perfect for stereo sources like reverb returns or stereo oscillators
-
-### **4. MUTE 1 Switch - Input 1 On/Off Control**
-- **What it does:** Completely removes IN 1 from both MIX outputs when engaged (down position)
-- **Character:** Hard mute with no audio bleed-through
-- **Usage:** Performance control for bringing voices in and out of mix
-- **AC-coupled design:** Minimizes pops when muting/unmuting audio signals
-- **Pro tip:** Essential for live performance and dynamic mix changes
-
-### **5. MUTE 2 Switch - Input 2 On/Off Control**
-- **What it does:** Completely removes IN 2 from both MIX outputs when engaged (down position)
-- **Character:** Same hard mute behavior as MUTE 1
-- **Purpose:** Independent performance control for second mono input
-- **Operation:** Up = signal passes, Down = signal muted
-- **Pro tip:** Combine with MUTE 1 for call-and-response performance techniques
-
-### **6. MUTE 3 Switch - Input 3 Stereo On/Off Control**
-- **What it does:** Simultaneously mutes both IN 3L and IN 3R when engaged (down position)
-- **Character:** Shared mute control for stereo pair
-- **Purpose:** Performance control for stereo sources
-- **Behavior:** Affects both channels of stereo input simultaneously
-- **Pro tip:** Great for dropping stereo effects or textural elements during performance
-
-### **7. IN 4L/4R - Unity Gain Auxiliary Inputs**
-- **What they do:** Direct stereo inputs to mix bus with no level or mute control
-- **Character:** Unity gain (no amplification or attenuation)
-- **Signal routing:** IN 4L → MIX L, IN 4R → MIX R, no front panel controls
-- **Mono usage:** If only IN 4L connected, signal appears at both MIX L and MIX R
-- **Pro tip:** Use for sources that need consistent level or quick patch additions
-
-### **8. CLIP LED - Mix Level Indicator**
-- **What it does:** Lights when the sum of all inputs causes MIX L or MIX R to clip
-- **Character:** Indicates overload of internal mix bus before outputs
-- **Sources monitored:** All front panel inputs plus any CHAIN-IN signals
-- **Prevention:** Reduce LEVEL knobs when LED lights to maintain clean output
-- **Pro tip:** Some LED activity is acceptable, but constant lighting indicates excessive levels
+1. Connect a voice to CH1 IN and bring CH1 LEVEL to about noon
+2. Connect a second voice to CH2 IN and bring CH2 LEVEL to about noon
+3. Connect stereo outputs from a reverb or effects module to CH3 IN L and CH3 IN R
+4. Take MIX L and MIX R to your audio interface or output module
+5. Use the three mute switches to bring voices in and out while the patch runs
 
 ---
 
-## Why MixUp Excels
+## Key Specifications
 
-MixUp solves the problem that every Eurorack system eventually faces: multiple audio voices need to be combined into a single stereo output, and the options for doing so with adequate level control and minimal signal degradation at reasonable HP cost are fewer than they should be.
-
-**Stereo from the start.** MixUp treats each of its four input channels as a mono source panned to a stereo field, with individual pan control per channel. The two output busses (main L/R mix and the auxiliary output) are both stereo. Many small mixers in Eurorack offer mono-sum outputs or require patching two separate mono channels together to approximate stereo. MixUp produces genuine stereo from four independent mono sources without additional hardware.
-
-**The auxiliary output enables parallel processing or headphone monitoring without splitting the signal.** The auxiliary bus receives the pre-fader signal from any channel assigned to it. This allows a voice to go simultaneously to the main mix and to a parallel effects chain, or allows the main mix to go to modular outputs while the auxiliary feeds headphones or a recording interface. Both use cases require zero additional buffering or splitting.
-
-**In a 1U format.** MixUp fits into Intellijel's 1U tile row (the same row as power supply tiles, MIDI tiles, and other 1U utilities). A 3U mixer in Eurorack typically costs between 10HP and 20HP of primary rack space. MixUp uses none of that primary space. For systems where 3U rack space is at a premium and a 1U tile row is available, MixUp is one of the most efficient ways to resolve the mixing problem.
+| Spec | Value |
+|------|-------|
+| Width | 6HP |
+| Depth | ⚠️ Verify against official documentation |
+| Power | ⚠️ Verify against official documentation |
+| Channel 1 | Mono input, attenuator, mute switch |
+| Channel 2 | Mono input, attenuator, mute switch |
+| Channel 3 | Stereo input, shared attenuator, shared mute switch |
+| Channel 4 | Stereo input, fixed unity gain, no panel controls |
+| Outputs | MIX L and MIX R (red jacks, stereo sum of all channels) |
+| Expansion | Back-panel chain headers for linking multiple MixUp units |
+| Clip indicator | LED monitors mix bus overload |
 
 ---
 
-## Why MixUp Has Limitations
+## Essential Parameters
 
-MixUp is a final-stage stereo mixer, not a modular routing hub. It has no CV control over levels, no submix bussing for groups of voices, and no insert points for per-channel effects. If your mixing needs grow to include any of those features, a different mixer becomes appropriate. MixUp does what it does with minimal complexity; that simplicity is its value and its constraint simultaneously.
+**Channels 1 and 2** each accept a mono signal. The LEVEL knob controls the amount of that channel contributed to both MIX L and MIX R simultaneously, panning the mono source to center in the stereo field. The MUTE switch removes the channel from the mix entirely when engaged. The mute circuit is AC-coupled to minimize pops when toggling during a live patch.
+
+**Channel 3** accepts a stereo pair via two jacks (IN 3L and IN 3R). A single shared LEVEL knob controls both the left and right signals together; raising or lowering the knob affects both sides equally. A single shared MUTE switch silences both sides together. If only IN 3L is connected, the signal appears on both MIX L and MIX R outputs. Channel 3 is the intended destination for stereo effects returns, stereo oscillators, and any source where maintaining a left/right relationship matters.
+
+**Channel 4** accepts a stereo pair at fixed unity gain. There are no knobs or switches for Channel 4 on the front panel; whatever is patched in passes directly to the mix at full level. This makes Channel 4 appropriate for signals that are already at the correct level and do not need manual adjustment, such as a submix from another module or a reference signal. Because there is no attenuation, CH4 contributes fully to the mix bus from the moment a cable is inserted.
+
+**The CLIP LED** monitors the mix bus and lights when the combined output of all channels exceeds the clean output range. It responds to all channels simultaneously, including any signal arriving from a chained unit. When it lights, the sum of active inputs is too hot; the correct response is to reduce one or more LEVEL knobs rather than to reduce the level downstream of MixUp.
+
+**Back-panel chain headers** allow two or more MixUp units to be linked so that the output of one feeds directly into the input of the next without using front-panel jacks. The first unit in the chain contributes its mix internally to the second unit's bus. The final unit in the chain provides the combined output at its MIX L and MIX R jacks. This architecture allows a six- or nine-channel mixing system to be built from multiple 6HP units while each unit retains full individual level and mute control over its own channels.
+
+---
+
+## Why This Excels
+
+MixUp addresses the mixing problem that appears in every Eurorack system once the voice count exceeds two or three: multiple sources need to reach a single stereo output, and the options for doing so with adequate individual level control at low HP cost are limited. A dedicated stereo mixer at 6HP with four channels and per-channel mute switches is genuinely compact. The alternatives either sacrifice individual control (passive mixers, simple summers) or consume significantly more rack space.
+
+The four-channel layout covers the most common mixing scenario in a single module: two mono voices, one stereo effects return, and one overflow input for a submix or a utility signal. That structure matches the actual signal flow of most patches closely enough that MixUp fits without compromise in arrangements where a dedicated mixer has a clear role.
+
+The chain architecture is the feature that extends MixUp's value beyond its panel. Because chained units sum internally through back-panel connectors, expanding from four to eight channels adds only 6HP and does not require any front-panel routing changes. Each unit in a chain retains complete individual control over its own channels. In a system where rack space is a constraint and mixing needs grow with the system, the ability to add one more 6HP unit and immediately have four more controlled inputs is meaningfully different from buying a new, larger mixer every time the channel count grows.
+
+---
+
+## Patches
+
+### Patch 1: Three-Voice Stereo Mix
+
+This patch establishes the basic MixUp workflow: two mono voices and one stereo effects return combined into a single stereo output for monitoring or recording.
+
+```
+[Oscillator + Filter] ──▶ CH1 IN
+[Second Voice] ────────▶ CH2 IN
+[Reverb L] ────────────▶ CH3 IN L
+[Reverb R] ────────────▶ CH3 IN R
+                          MIX L ──▶ [Listen IO or Output]
+                          MIX R ──▶ [Listen IO or Output]
+```
+
+**Setup:** Connect a complete synthesizer voice (oscillator through filter and VCA) to CH1 IN. Connect a second independent voice to CH2 IN. Route the left and right outputs of a reverb module to CH3 IN L and CH3 IN R. Connect MIX L and MIX R to a monitoring or recording destination.
+
+**Controls:** Set CH1 LEVEL and CH2 LEVEL to around noon. Set CH3 LEVEL lower, around 9 o'clock, so the reverb return supports rather than dominates the mix. Watch the CLIP LED; if it illuminates consistently, reduce one or more levels before the transients are clipping. Use the three mute switches to toggle voices in and out while the patch runs. The mute switches are the primary performance controls on this module.
+
+**Result:** A clean stereo mix of two melodic voices with a shared reverb space. The stereo reverb return on CH3 maintains left/right imaging; the two mono voices sit in the center of the field. This is the foundational configuration for any patch that needs to reach an audio interface or speaker system.
+
+---
+
+### Patch 2: Mute-Switch Performance Control
+
+This patch uses the three mute switches as rhythmic performance controls, building and stripping a drum-and-bass arrangement in real time.
+
+```
+[Kick/Bass Drum] ──▶ CH1 IN       [CH1 MUTE switch = performance control]
+[Melodic Voice] ───▶ CH2 IN       [CH2 MUTE switch = performance control]
+[Drum Submix L] ───▶ CH3 IN L     [CH3 MUTE switch = performance control]
+[Drum Submix R] ───▶ CH3 IN R
+                     MIX L/R ──▶ [Output]
+```
+
+**Setup:** Assign the kick or bass to CH1, a melodic lead to CH2, and a stereo drum submix to CH3. Set levels so each channel sounds balanced when all are unmuted. The CLIP LED should be off or only occasionally lighting with all three channels active.
+
+**Controls:** Practice switching channels in and out as performance gestures. Muting CH3 removes the drum bed and leaves only the kick and melody, an immediate density reduction. Muting CH1 and CH3 together isolates the lead voice for a breakdown. Reintroducing channels by flipping mutes back up is as rhythmically significant as any sequenced event. The AC-coupled mute design keeps transitions click-free, so mute events can happen on any beat subdivision without introducing noise.
+
+**Result:** A live performance technique built entirely around the hardware switching on the module. The three independent mutes give six binary combinations of active voices, which is enough structure to build a full arrangement from intro through verse through breakdown and back without touching any other module.
+
+---
+
+### Patch 3: Chained Six-Channel Mix
+
+This patch links two MixUp units via back-panel headers to combine six channels into a single stereo output, with each unit retaining independent control over its own channels.
+
+```
+MixUp A:                          MixUp B:
+[Voice 1] ──▶ CH1 IN              [Voice 4] ──▶ CH1 IN
+[Voice 2] ──▶ CH2 IN              [Voice 5] ──▶ CH2 IN
+[Stereo FX] ─▶ CH3 IN L/R         [Drums L/R] ─▶ CH3 IN L/R
+[CHAIN-OUT] ──────────────────────▶ [CHAIN-IN]
+                                   MIX L ──▶ [Output]
+                                   MIX R ──▶ [Output]
+```
+
+**Setup:** Connect the two MixUp units with a link cable between the back-panel CHAIN-OUT header on MixUp A and the CHAIN-IN header on MixUp B. MixUp A's front-panel MIX outputs are not used in this configuration; MixUp B's MIX L and MIX R carry the combined output of all six channels.
+
+**Controls:** All six LEVEL knobs and six MUTE switches across both units remain fully functional. Setting levels and muting channels on MixUp A affects only those channels in the combined output; the same is true for MixUp B. The CLIP LED on MixUp B monitors the full six-channel sum. Balance the overall mix by managing levels on both units independently. If the LED is frequently lighting, reduce levels across the board on both units rather than only on the output unit.
+
+**Result:** A six-channel stereo mix in 12HP with complete individual control over each channel. The chain architecture produces a transparent signal path with no degradation from the additional unit. This configuration is the most common reason to own two MixUp modules.
+
+---
+
+### Patch 4: Drum Submix into a Larger Mix
+
+This patch uses CH4's unity-gain input to receive a pre-leveled drum submix from a second mixer, keeping the drum mix balanced internally while treating the whole drum section as a single input to MixUp.
+
+```
+[Kick] ──▶ [Submixer CH1]
+[Snare] ─▶ [Submixer CH2]    Submixer MIX L ──▶ MixUp CH4 IN L
+[Hat] ───▶ [Submixer CH3]    Submixer MIX R ──▶ MixUp CH4 IN R
+[Perc] ──▶ [Submixer CH4]
+
+[Voice 1] ──────────────────▶ MixUp CH1 IN
+[Voice 2] ──────────────────▶ MixUp CH2 IN
+[Stereo Reverb] ────────────▶ MixUp CH3 IN L/R
+                               MixUp MIX L/R ──▶ [Output]
+```
+
+**Setup:** Balance the drum mix on the submixer so the kick, snare, hat, and percussion are well-proportioned relative to each other. Route that balanced stereo output to MixUp CH4 IN L and CH4 IN R. Use CH1 and CH2 for melodic voices and CH3 for reverb.
+
+**Controls:** The drum level within the drum mix is set at the submixer and does not change when you adjust MixUp. Because CH4 has no level control on MixUp, the only way to change how loud the drums are in the final mix is to return to the submixer. This is intentional: it enforces a discipline where the internal drum balance is set and locked at the submixer, and the final output mix adjusts the other three channels relative to a fixed drum level. Use CH1, CH2, and CH3 levels to balance the melodic material against the drums.
+
+**Result:** A clean four-group mix (two mono voices, one stereo reverb, one full drum section) where the drum balance is fixed and the remaining elements are adjusted around it. The CH4 unity-gain design makes this workflow natural: patch the drums in at the correct level once, then work on everything else.
 
 ---
 
 ## Common Mistakes
 
-**1. Expecting the AUX bus to be an independent mix.**
-The auxiliary output reflects pre-fader signal from channels assigned to it, not an independently leveled submix. If a channel's level knob is at unity, the AUX output receives the full signal regardless of the main output level for that channel. If you need an independently leveled submix for an effects send, assign channels to AUX and adjust the AUX send level separately. Treating AUX as a post-fader send produces unexpected level relationships.
+### "My mix is clipping even though each voice sounds fine individually"
 
-**2. Clipping the output by running hot levels on all four channels simultaneously.**
-MixUp's headroom is limited by Eurorack signal levels. Four channels each running at full output -- particularly from voices with strong transients like drum modules -- can sum to a level that exceeds the output stage's clean range. Watch the clip indicator. Reduce individual channel levels rather than trying to compensate with downstream attenuation; catching the clip at the source produces cleaner audio than trying to reduce a clipped signal later.
+Clipping on a summing bus is caused by addition, not by any single input being too loud. Four channels each contributing a moderate signal can sum to a total that exceeds the clean output range, even if no individual channel would clip alone. The CLIP LED monitors the bus total. The fix is to reduce LEVEL knobs across multiple channels rather than searching for one culprit; in a four-channel mix, bringing all four levels down by the same small amount is usually the fastest path to a clean output.
 
-**3. Patching the AUX output expecting it to carry the full stereo mix.**
-The AUX bus only carries channels explicitly assigned to it. If you plug a channel into AUX and expect to hear your full mix, you will only hear those specific channels. Assign all four channels to AUX if you want the full mix there, or use the main L/R outputs for the primary mix and AUX only for channels you want to process separately.
-
-**4. Overlooking MixUp because it lives in a 1U row.**
-Users without 1U cases never see MixUp as an option. Users with 1U rows sometimes overlook it because the 1U row tends to be treated as infrastructure (power, I/O, MIDI) rather than signal processing. MixUp belongs in the mixing infrastructure category alongside those other tiles, and is often the most efficient solution available for its form factor.
+**Fix:** Reduce LEVEL knobs proportionally across all active channels until the CLIP LED stops lighting consistently.
 
 ---
 
-## Beginner Patch Ideas
+### "Channel 4 is too loud and I cannot turn it down"
 
-### **Patch 1: Basic Stereo Mix Setup**
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│ Voice 1 (Mono)  │    │ Intellijel      │    │ Audio Output    │
-│ (Oscillator)    │    │ Mixup           │    │ Destination     │
-│                 │    │                 │    │                 │
-│ Audio Out ○─────┼────┼─▶ IN 1         │    │                 │
-└─────────────────┘    │                 │    │                 │
-                       │ LEVEL 1: 2      │    │                 │
-┌─────────────────┐    │ MUTE 1: Up      │    │                 │
-│ Voice 2 (Mono)  │    │                 │    │                 │
-│ (Filter)        │    │ IN 2 ◀──────────┼────┼─ Audio In       │
-│                 │    │                 │    │                 │
-│ Audio Out ○─────┼────┼─▶ IN 2         │    │                 │
-└─────────────────┘    │                 │    │                 │
-                       │ LEVEL 2: 3      │    │                 │
-┌─────────────────┐    │ MUTE 2: Up      │    │                 │
-│ Stereo Source   │    │                 │    │                 │
-│ (Reverb)        │    │ IN 3L ◀─────────┼────┼─ L Out          │
-│                 │    │                 │    │                 │
-│ L Out ○─────────┼────┼─▶ IN 3L        │    │ MIX L ○─────────┼────┼─ To Interface  │
-│                 │    │                 │    │                 │    │                 │
-│ R Out ○─────────┼────┼─▶ IN 3R        │    │ MIX R ○─────────┼────┼─ To Interface  │
-└─────────────────┘    │                 │    │                 │    │                 │
-                       │ LEVEL 3: 2      │    │                 │    │                 │
-                       │ MUTE 3: Up      │    │                 │    │                 │
-                       │                 │    │                 │    │                 │
-                       │ CLIP LED: Off   │    │                 │    │                 │
-                       └─────────────────┘    └─────────────────┘    │                 │
-```
+Channel 4 has no level knob or mute switch. It passes whatever is patched into it at unity gain directly to the mix bus. If the signal going into CH4 is too hot relative to the other channels, the level adjustment must happen upstream before MixUp. Use a VCA, an attenuator, or the output level control on the source module to set CH4's contribution before patching it in. There is no panel control on MixUp that addresses CH4 gain.
 
-**Setup:** Basic three-source stereo mixing with independent level control
-**Controls:** LEVEL knobs balance sources, MUTE switches for performance control
-**Result:** Clean stereo mix with individual source control and level monitoring
-**Performance:** Real-time muting and level adjustment for dynamic mixing
-**Applications:** Basic voice mixing, simple performance patches, submix creation
-
-**Main Example:** Mutable Plaits + Make Noise QPAS + Intellijel Rainmaker → Mixup (classic voice + filter + reverb chain)
-**Alternative Options:**
-- **Budget:** Simple oscillator + basic filter + FX Aid Pro for affordable mixing setup
-- **Different character:** Buchla complex oscillator + Morgasmatron + Magneto for West Coast mixing approach
-- **Premium:** Make Noise DPO + Optomix + Strymon Magneto for high-end modular mixing chain
-
-### **Patch 2: Advanced - Expandable Mixer Chain System**
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│ Mixup #1        │    │ Mixup #2        │    │ Audio Interface │    │ Final Output    │
-│ (Primary)       │    │ (Expansion)     │    │ or Mixer        │    │ Destination     │
-│                 │    │                 │    │                 │    │                 │
-│ Voice 1 → IN 1  │    │ Voice 4 → IN 1  │    │ Input L ◀───────┼────┼─ Final L        │
-│                 │    │                 │    │                 │    │                 │
-│ Voice 2 → IN 2  │    │ Voice 5 → IN 2  │    │ Input R ◀───────┼────┼─ Final R        │
-│                 │    │                 │    │                 │    │                 │
-│ Stereo FX→IN 3L/R│    │ Drums → IN 3L/R │    │                 │    │                 │
-│                 │    │                 │    │                 │    │                 │
-│ CHAIN-OUT ○─────┼────┼─▶ CHAIN-IN      │    │                 │    │                 │
-│                 │    │                 │    │                 │    │                 │
-│ [No direct out] │    │ MIX L ○─────────┼────┼─▶ Line Input    │    │                 │
-│                 │    │                 │    │                 │    │                 │
-│ [Feeds Mixup #2]│    │ MIX R ○─────────┼────┼─▶ Line Input    │    │                 │
-└─────────────────┘    │                 │    │                 │    │                 │
-                       │ Combined Signal │    │                 │    │                 │
-┌─────────────────┐    │ = All 6 voices  │    │                 │    │                 │
-│ Performance     │    │ + Both FX       │    │                 │    │                 │
-│ Control         │    │ + Individual    │    │                 │    │                 │
-│                 │    │   Level/Mute    │    │                 │    │                 │
-│ MUTE 1-3 ◀──────┼────┼─ Real-time Mix  │    │                 │    │                 │
-│ LEVEL 1-3 ◀─────┼────┼─ Control        │    │                 │    │                 │
-└─────────────────┘    └─────────────────┘    └─────────────────┘    └─────────────────┘
-```
-
-**Module Integration:**
-| Integration | Signal Flow | Purpose | Advanced Synergy |
-|-------------|-------------|---------|------------------|
-| **Mixup #1 → Mixup #2** | CHAIN-OUT → CHAIN-IN | **Serial expansion** | **Transparent signal flow** |
-| **Individual Sources** | Voices → separate inputs | **Independent control** | **Performance flexibility** |
-| **Combined Output** | All sources → final mix | **Unified output** | **Professional signal management** |
-| **Live Control** | Mute/Level controls | **Real-time mixing** | **Performance-ready operation** |
-
-**Setup Instructions:**
-- **Mixup #1:** Primary voices and stereo effects with individual level control
-- **Mixup #2:** Additional voices and drum sources for expanded mixing
-- **Chain Connection:** 3-pin link cable from Mixup #1 CHAIN-OUT to Mixup #2 CHAIN-IN
-- **Final Output:** Mixup #2 provides combined mix of all six voices plus effects
-- **Performance Control:** All individual mute and level controls remain functional
-
-**Advanced Mixing System:**
-- **Expandable inputs:** Up to 6 independent mono sources plus 2 stereo sources
-- **Independent control:** Each input maintains individual level and mute control
-- **Clean signal path:** Audio-grade components throughout chain for professional quality
-- **Performance ready:** Real-time mixing control for live performance applications
-- **Studio integration:** Professional output suitable for recording or further processing
-
-**Learning Objectives:**
-- **Signal routing:** Understanding chainable mixer architecture and signal flow
-- **System expansion:** Building larger mixing systems from modular components
-- **Performance mixing:** Real-time control techniques for dynamic mixing
-- **Professional audio:** Clean signal management and studio integration practices
-
-**Main Example:** Two Mixup modules chained for 6-voice mixing system (standard expansion approach)
-**Alternative Options:**
-- **Budget:** Single Mixup + Doepfer A-138s Stereo Mixer for basic 6-channel expansion
-- **Different character:** Happy Nerding 3xMIA + WMD/SSF Toolbox for matrix mixing approach
-- **Premium:** Multiple Intellijel Stereo Mix 1U modules in 7U case for integrated mixing system
+**Fix:** Attenuate the signal before it reaches CH4 IN, either at the source module or with an inline attenuator.
 
 ---
 
-## Pairs Well With
+### "I cannot mute my Channel 4 source for a breakdown"
 
-### **Essential Studio Partners:**
-- **Audio Interfaces:** Focusrite, RME, Universal Audio interfaces receive clean Eurorack-level signals from Mixup outputs
-- **Studio Monitors:** Genelec, Yamaha, KRK monitors work well with Mixup's unbalanced 3.5mm outputs
-- **External Mixers:** Analog mixing consoles receive Eurorack-level signals for further processing
-- **Patch Bays:** Professional patch bays enable flexible routing with Mixup as central mixing hub
+Because CH4 has no mute switch, the only way to silence it during a performance is to physically remove the patch cable. Planning performance breaks requires either keeping CH4 for sources that stay present throughout the piece, or routing that source to CH1, CH2, or CH3 instead so a mute switch is available. CH4 is best used for signals you want consistently present at a fixed level (a continuous drone, a locked drum submix, a persistent pad) rather than for voices you intend to bring in and out.
 
-### **Advanced Module Integration:**
-- **Complete Ecosystems:** Mixup serves as final output stage for complex Advanced patches combining organic modulation, chaos, and pattern generation
-- **Multi-Voice Systems:** Essential for routing individual voices (Plaits, QD+QEX, Loquelic) to separate channels while maintaining complete mix
-- **Performance Systems:** Enables live performance of Advanced ecosystems with professional audio standards
-- **Recording Integration:** Professional capture of sophisticated modular content for studio production
+**Fix:** Use CH1, CH2, or CH3 for any source you need to mute during performance; reserve CH4 for always-on elements.
 
-### **Advanced System Integration:**
-- **Monitor Controllers:** Professional monitor controllers receive clean signals for advanced monitoring workflows
-- **Effect Processing:** External processors receive individual channels for separate treatment
-- **Mix Bus Processing:** Analog mix bus compressors and EQs work with Mixup's Eurorack-level outputs
-- **Recording Integration:** Clean unbalanced signals suitable for modular recording workflows
+---
+
+### "Chaining two MixUps but only getting audio from one of them"
+
+The chain connection requires a specific cable between the back-panel CHAIN-OUT header on the upstream unit and the CHAIN-IN header on the downstream unit. The front-panel MIX outputs on the upstream unit do not feed the downstream unit; the chain runs through the back panel only. If the cable is not seated correctly on both headers, or if the headers are connected in the wrong direction, the upstream unit's audio does not reach the downstream unit's output. The downstream unit's MIX L and MIX R jacks carry the combined output.
+
+**Fix:** Confirm the chain cable is connecting CHAIN-OUT on unit A to CHAIN-IN on unit B, and take the final output from unit B's MIX L and MIX R jacks.
 
 ---
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
-1. **Start with basic mixing:** Learn proper audio mixing and signal flow management
-2. **Add multi-channel routing:** Understand separate voice outputs and routing techniques
-3. **Include system expansion:** Connect multiple Mixup modules for larger systems
-4. **Advanced signal flow:** Master complex routing for Advanced ecosystem mixing
-5. **Performance application:** Apply learned concepts to live performance scenarios
+1. Work through the four LEVEL knob positions systematically on a single-voice patch before mixing multiple sources. Connect one oscillator to CH1 and sweep LEVEL 1 from fully counterclockwise to fully clockwise while listening. Notice that the knob taper is logarithmic: the first half of the rotation covers most of the usable gain range, and the upper half adds relatively little additional volume. This is intentional audio taper behavior designed to match how humans perceive loudness. Understanding the taper prevents setting all levels near maximum and then running out of headroom when more voices are added.
 
-### **Cross-Module Learning Opportunities:**
-- **Mix Management:** Learn to route complex Advanced patches through expandable mixing systems
-- **System Integration:** Understand how modular mixing fits into larger audio workflows
-- **Audio Standards:** Apply audio engineering principles to modular systems
-- **Signal Flow Techniques:** Develop proper signal routing habits for modular synthesis
+2. Practice mute switch timing as a musical skill. Set up a three-voice patch with a repeating sequence and practice toggling the three mute switches in time with the sequence. Try muting on beat 1, on the off-beat, across bar lines, and in combinations. The switches have tactile feedback; with practice, simultaneous two-switch mutes become reliable. Mute switch precision is a learnable technique that has direct application in live performance, and MixUp is a good module to develop it on because the three switches are physically close together.
 
-### **Advanced Concepts:**
-- **Signal Routing Theory:** Understanding chainable mixer architecture and expansion capabilities
-- **Level Management:** Proper gain staging from modular sources through mixing systems
-- **Signal Integrity:** Maintaining audio quality through complex modular routing scenarios
-- **System Architecture:** How Mixup fits into larger modular mixing and routing systems
+3. Investigate gain staging discipline across a full signal chain. Patch an oscillator through a VCA and into CH1, and set the VCA to approximately unity gain. Set CH1 LEVEL at noon. Monitor the output at MIX L. Now reduce the VCA level to minimum and watch the signal disappear upstream. Now raise CH1 LEVEL to maximum. Note that the signal does not reappear; maximum LEVEL on MixUp cannot recover a signal that has been attenuated before the input. This demonstrates that MixUp is a mixing stage, not a gain recovery stage; correct levels must arrive at the inputs.
 
-### **Performance Applications:**
-- **Live Mixing:** Real-time control techniques for dynamic modular performances
-- **System Expansion:** Building larger mixing systems for complex modular setups
-- **Signal Management:** Clean routing for detailed sound design work
-- **Recording Integration:** Integrating modular mixing with recording workflows
+4. Build a patch that uses CH4 deliberately. Route a drone oscillator or a pad module to CH4 IN L and CH4 IN R. Set the output level of that source module so the drone sits at a useful level in the mix. Now patch melodic material into CH1 and CH2 and set levels relative to the drone. Observe that the drone does not change level regardless of what you do to CH1 and CH2; it is an anchor. Build a complete patch around a fixed-level foundation and notice how having one immovable reference point changes how you set the other channels.
+
+5. Use the CLIP LED as a real-time gain staging diagnostic rather than a warning to ignore. In a mixing session, deliberately drive all four channels hot enough to light the LED consistently. Listen to what clipping sounds like on the mix bus: it is a specific kind of harmonic distortion, not silence. Then reduce levels until the LED only flashes occasionally on transient peaks. Learn the sonic difference between occasional transient clipping (often acceptable) and consistent clipping (audible distortion). The LED communicates the mix bus state in real time; treating it as a diagnostic rather than an alarm produces better results.
 
 ---
 
-**Bottom Line:** Mixup isn't just a simple mixer - it's a **modular mixing foundation** that combines multiple audio sources with independent control and expandable architecture through chainable connections. Every patch teaches something new about audio mixing principles and signal flow management. As the **mixing brain of Advanced ecosystems**, it ensures that sophisticated modular content is properly balanced and routed with professional-quality audio integrity and performance flexibility.
+## Pairs Well With
+
+**4ms Company Listen IO** is the most direct downstream partner for MixUp. MixUp sums multiple modular voices to stereo; Listen IO converts that stereo modular signal to headphone and line levels for monitoring and recording. The two modules together cover the full path from multiple voice sources to a recording interface or studio monitors. MIX L and MIX R from MixUp patch directly to the two Listen IO Mod In jacks, and the Listen IO Level knob controls the final output volume without touching any MixUp settings.
+
+**Endorphin.es Ghost** and similar stereo reverb/delay modules make natural Channel 3 sources. Ghost produces a stereo wet signal; CH3's stereo input with shared level control is exactly the right destination for an effects return. Setting CH3 LEVEL lower than CH1 and CH2 keeps the reverb in support rather than dominance, and the CH3 MUTE switch allows the reverb return to be cut during dry sections. Any stereo effect module (reverb, delay, chorus, shimmer) fits this workflow.
+
+**Erica Synths Black Quad VCA2** upstream of MixUp handles per-voice amplitude shaping before signals reach the mixer. MixUp's LEVEL knobs set the static balance between voices; the Quad VCA2 handles dynamic amplitude control from envelopes and LFOs per voice. Using a VCA before the mixer rather than relying on the mixer's level knob for dynamic control is correct gain staging: VCAs shape the voice, mixers combine voices. The two modules together cover both functions cleanly.
+
+**A second MixUp** via back-panel chain is the intended expansion path. Two units in a chain give six independently controlled channels in 12HP. The chain connection is transparent and does not degrade signal quality. For a system with five or six voices, two MixUps is often the most HP-efficient mixing solution available, and the chain architecture means both units remain fully functional with independent level and mute control over all channels.
+
+---
+
+*Intellijel MixUp documentation: [Intellijel](https://intellijel.com)*
