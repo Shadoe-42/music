@@ -15,7 +15,7 @@ historical_context: false
 
 **Four-Channel Stereo Mixer with Chained Expansion**
 
-![Intellijel MixUp](https://github.com/Shadoe-42/music/raw/main/modular/images/intellijel/mixup/front_panel.jpg)
+![Intellijel MixUp](https://github.com/Shadoe-42/music/raw/main/modular/images/intellijel/mixup/front_panel.jpg)  
 *6HP stereo mixer: three controlled channels plus one unity-gain stereo input, chainable via back-panel headers*
 
 ---
