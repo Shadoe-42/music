@@ -11,7 +11,7 @@ hp: 8
 historical_context: false
 ---
 
-# Noise Engineering Numeric Repetitor - Beginner's Guide
+# Noise Engineering Numeric Repetitor
 
 ![Noise Engineering Numeric Repetitor](https://github.com/Shadoe-42/music/raw/main/modular/images/noise_engineering/numeric_repetitor/front_panel.jpg)
 *Mathematical rhythm generator using prime number theory and binary arithmetic to create complex polyrhythmic patterns from 32 curated rhythms*
@@ -100,225 +100,84 @@ Most rhythm generators ask you to program patterns -- set which steps are active
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
-### **Patch 1: Basic Polyrhythmic Drums**
-```
-[Master Clock] ──→ [Numeric Repetitor BEAT]
-[Prime out] ──→ [Kick Drum]
-[Product 1 out] ──→ [Snare Drum]  
-[Product 2 out] ──→ [Hi-hat]
-```
-**Setup:** Choose prime pattern, adjust Product knobs for different variations
-**Result:** Three-part drum pattern with mathematical relationships
-**Performance:** Change prime pattern for instant rhythm variations
-**Tip:** Start with small Product knob movements for subtle variations
+### Patch 1: Basic Polyrhythmic Drums
 
-### **Patch 2: Sequenced Pattern Changes**
-```
-[Master Clock] ──→ [Numeric Repetitor BEAT]
-[Slow CV sequencer] ──→ [PRIME CV input]
-[Prime out] ──→ [Bass drum trigger]
-[Product outputs] ──→ [Various percussion]
-```
-**Setup:** Sequence slowly through different prime patterns
-**Result:** Automatic rhythm evolution through mathematical patterns
-**Timing:** Use very slow sequencer (1/16 or 1/32 speed) for gradual changes
-**Creative:** Try random CV for unpredictable but musical rhythm changes
+This patch establishes the fundamental Numeric Repetitor function: a clock enters, and four mathematically related trigger streams emerge.
 
-### **Patch 3: Techno Groove Generator**
 ```
-[Fast Clock] ──→ [Numeric Repetitor BEAT]
-[Prime] ──→ [Kick Drum]
-[Product 1] ──→ [Closed Hi-hat] (small offset)
-[Product 2] ──→ [Open Hi-hat] (medium offset)
-[Product 3] ──→ [Snare] (larger offset)
-```
-**Setup:** Fast 16th note clock, subtle Product adjustments
-**Result:** Complex techno-style drum patterns
-**Performance:** Adjust Product knobs in real-time for groove variations
-**Sync:** Use MEASURE input to stay locked with other sequencers
-
-### **Patch 4: Intermediate - Advanced Organic Mathematical Rhythms**
-```
-   ┌─────────────────────┐      ┌─────────────────────────┐
-   │   DivKid Ochd      │      │  Noise Engineering      │
-│    (Advanced)     │      │  Numeric Repetitor      │
-   │                    │      │    (Mathematical)       │
-   │                    │      │                         │
-   │ LFO 2 ○────────────┼──────┼─▶ PRIME CV Input        │
-   │       ║            │      │                         │
-   │ LFO 4 ○────────────┼──────┼─▶ PRODUCT 1 CV          │
-   │       ║            │      │                         │
-   │ LFO 6 ○────────────┼──────┼─▶ PRODUCT 2 CV          │
-   │       ║            │      │                         │
-   └───────║────────────┘      │ PRIME Out ○─────────────┼─── Gate (Yellow)
-           ║                   │                         │
-   CV (Blue)║                  │ PRODUCT 1 Out ○─────────┼─── Gate (Yellow)
-           ║                   │                         │
-           ▼                   │ PRODUCT 2 Out ○─────────┼─── Gate (Yellow)
-   ┌─────────────┐             │                         │
-   │   Master    │             │ PRODUCT 3 Out ○─────────┼─── Gate (Yellow)
-   │   Clock     │─────────────┼─▶ BEAT Input             │
-   │             │             └─────────────────────────┘
-   └─────────────┘                      ║      ║    ║    ║
-                                 Gates  ║      ║    ║    ║
-                               (Yellow) ║      ║    ║    ║
-                                        ▼      ▼    ▼    ▼
-                               ┌─────────────────────────────────┐
-                               │   Organic Mathematical Drums    │
-                               │                                 │
-                               │ Kick   ◀─ Prime (stable core)  │
-                               │ Snare  ◀─ Product 1 (organic)  │
-                               │ Hi-Hat ◀─ Product 2 (organic)  │
-                               │ Perc   ◀─ Product 3 (fixed)    │
-                               │                                 │
-                               │ Living Mathematics ○────────────┼─── Breathing Polyrhythms
-                               └─────────────────────────────────┘
+[Master Clock] ──BEAT──▶ NUMERIC REPETITOR
+                          PRIME Out ──▶ [Kick Drum]
+                          PRODUCT 1 Out ──▶ [Snare]
+                          PRODUCT 2 Out ──▶ [Hi-Hat]
+                          PRODUCT 3 Out ──▶ [Perc]
 ```
 
-| Module Integration | Signal Flow | Purpose | Advanced Synergy |
-|-------------------|-------------|---------|------------------|
-| **Ochd LFO 2 → Prime CV** | Organic pattern selection | **Breathing prime rhythms** | **Natural rhythm evolution** |
-| **Ochd LFO 4 → Product 1 CV** | Organic variation control | **Living pattern variations** | **Organic mathematical drift** |
-| **Ochd LFO 6 → Product 2 CV** | Organic timing offset | **Natural timing shifts** | **Breathing polyrhythmic relationships** |
-| **Mathematical Processing** | Numeric computation | **Organic + Mathematical hybrid** | **Natural mathematical music** |
+**Setup:** Connect a master clock to BEAT. Route PRIME Out to a kick drum, PRODUCT 1 to a snare, PRODUCT 2 to a hi-hat, and PRODUCT 3 to a secondary percussion voice. Select prime pattern X1 from the display. Leave all Product knobs at noon initially.
 
-**Module Settings:**
-- **Ochd Rate:** 12 o'clock for musical organic breathing
-- **Numeric Prime:** Responds organically to slow LFO modulation
-- **Product 1 & 2:** Organic CV creates living variations of mathematical patterns
-- **Product 3:** Unmodulated for stable rhythmic anchor
+**Controls:** Listen to all four outputs together. Slowly rotate PRODUCT 1 clockwise while the pattern plays and observe how the offset relationship between the snare trigger and the kick trigger changes. Return to noon and repeat with PRODUCT 2 and PRODUCT 3. Then switch to pattern X2 and listen to how the entire rhythmic structure shifts while the Product offsets maintain their relative behavior. Work through several X patterns to begin building familiarity with the pattern library.
 
-**Learning Objectives:**
-- **Organic + Mathematical integration:** Natural breathing applied to algorithmic rhythm generation
-- **Living polyrhythms:** Mathematical patterns that breathe with organic life
-- **Evolving complexity:** Simple organic modulation creates complex rhythmic evolution
-- **System breathing:** Entire mathematical drum system breathes as unified organism
+**Result:** Four percussion voices with mathematically derived timing relationships. The PRIME output provides the stable rhythmic foundation; PRODUCT outputs derive from it with controllable offset and variation. Changing the prime pattern instantly reshapes the whole drum figure while preserving the internal logic between the voices.
 
-### **Patch 5: Advanced - Chaos Mathematics in Algorithmic Rhythm**
+---
+
+### Patch 2: Sequenced Pattern Changes
+
+This patch uses slow CV at the PRIME input to cycle through patterns automatically, producing rhythm evolution without manual intervention.
+
 ```
-   ┌─────────────────────┐      ┌─────────────────────────┐
-   │   Make Noise       │      │  Noise Engineering      │
-   │   Wogglebug        │      │  Numeric Repetitor      │
-│    (Advanced)      │      │   (Mathematical)       │
-   │                    │      │                         │
-   │ Stepped CV ○───────┼──────┼─▶ PRIME CV Input        │
-   │       ║            │      │                         │
-   │ Smooth CV ○────────┼──────┼─▶ PRODUCT 1 CV          │
-   │       ║            │      │                         │
-   │ Woggle CV ○────────┼──────┼─▶ PRODUCT 2 CV          │
-   │       ║            │      │                         │
-   │ Burst CV ○─────────┼──────┼─▶ PRODUCT 3 CV          │
-   └───────║────────────┘      │                         │
-           ║                   │ PRIME Out ○─────────────┼─── Gate (Yellow)
-   CV (Blue)║                  │                         │
-           ║                   │ All PRODUCT Outs ○─────────┼─── Gates (Yellow)
-           ▼                   └─────────────────────────┘
-   ┌─────────────┐                    ║         ║
-   │   Master    │           ┌───────────────────────────────┐
-   │   Clock     │───────────┼─ Chaos Mathematical         │
-   │             │           │      Rhythms               │
-   └─────────────┘           │                               │
-                           │ Prime: Chaotic Pattern Jumps  │
-                           │ Product 1: Smooth Chaos       │
-                           │ Product 2: Woggle Variations  │
-                           │ Product 3: Burst Modulation   │
-                           │                               │
-                           │ Controlled Chaos ○───────────┼─── Mathematical Unpredictability
-                           └───────────────────────────────┘
+[Slow Sequencer] ──CV──▶ PRIME CV Input
+[Master Clock] ──BEAT──▶ NUMERIC REPETITOR
+                          All outputs ──▶ [Percussion voices]
 ```
 
-| Chaos + Mathematical Chain | Function | Purpose | Advanced Integration |
-|---------------------------|----------|---------|---------------------|
-| **Wogglebug Stepped → Prime CV** | Quantized chaos selection | **Chaotic pattern jumping** | **Chaos learns mathematical rhythms** |
-| **Wogglebug Smooth → Product 1** | Analog chaos variation | **Smooth mathematical drift** | **Chaotic timing evolution** |
-| **Wogglebug Woggle → Product 2** | Pure chaos modulation | **Unpredictable variations** | **Chaos-driven mathematical relationships** |
-| **Wogglebug Burst → Product 3** | Chaos burst control | **Sudden mathematical changes** | **Controlled mathematical explosions** |
+**Setup:** Connect a 4-step or 8-step sequencer to the PRIME CV input. Set the sequencer speed to roughly 1/16 or 1/32 of the master clock so pattern changes occur every two to four bars rather than every beat. Run all four outputs to percussion modules.
 
-**Module Settings:**
-- **Wogglebug:** All outputs active, Rate for musical chaos timing
-- **Numeric Prime:** Responds to chaotic pattern selection
-- **All Products:** Chaos-driven for maximum mathematical unpredictability
-- **Result:** Mathematical rhythms with controlled but unpredictable variations
+**Controls:** Set the sequencer to advance through 4 to 6 different voltage levels and let the patch run. The prime pattern selection shifts automatically at each sequencer step, transforming the drum figure at regular musical intervals. The Product knob offsets remain constant throughout, so each new pattern inherits the same rhythmic character you dialed in with the knobs. Try setting the sequencer to random step order for a less predictable version of the same idea.
 
-**Learning Objectives:**
-- **Chaos + Mathematical fusion:** Controlled unpredictability in algorithmic rhythm systems
-- **Mathematical chaos theory:** Understanding how chaos affects algorithmic processes
-- **Unpredictable yet musical:** Chaos keeps mathematical patterns from becoming static
-- **Controlled randomness:** Mathematical processing keeps chaos musical and structured
+**Result:** Self-evolving drum patterns that change on a musical schedule. The pattern shifts feel composed because the Product offsets give every new prime pattern a consistent internal voice, even as the pattern itself changes.
 
-### **Patch 6: Expert - Complete Advanced Mathematical Ecosystem**
+---
+
+### Patch 3: Techno Groove with MEASURE Sync
+
+This patch configures Numeric Repetitor as a tight 16th-note groove source with bar-level reset to keep the pattern locked to song structure under live use.
+
 ```
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
-│   DivKid    │ │ Make Noise  │ │ Mutable     │ │ Noise Engineering│
-│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │ Numeric Repetitor│
-│ (Organic)   │ │ (Chaos)     │ │ (AI)        │ │ (Mathematical)   │
-│             │ │             │ │             │ │                 │
-│ LFO 1 ○─────┼─┼─Stepped ○   │ │ X1 Out ○────┼─┼─PRIME CV Input │
-│       ║     │ │        ║    │ │       ║     │ │       ║         │
-│ LFO 3 ○─────┼─┼─Smooth ○    │ │ X2 Out ○────┼─┼─PRODUCT 1 CV   │
-│       ║     │ │        ║    │ │       ║     │ │       ║         │
-│ LFO 7 ○─────┼─┼─Woggle ○    │ │ t1 Out ○────┼─┼─BEAT Input     │
-│       ║     │ │        ║    │ │       ║     │ │       ║         │
-└───────║─────┘ └────────║────┘ │ Y Out  ○────┼─┼─PRODUCT 2 CV   │
-        ║                ║      │       ║     │ │       ║         │
-        ║                ║      │ DEJA VU     │ │ PRIME Out ○────┼─Gate
-        ║                ║      │ CV ◀────────┼─┼─All Products   │ │       ║         │
-        ║                ║      │ (Learning)  │ │ Out ○───────┼─Gates
-        ║                ║      └─────────────┘ └─────────────────┘
-        ▼                ▼             ║               ║
-┌──────────────────────────────────────────────────────────────────┐
-│                  Complete Mathematical Ecosystem                   │
-│                                                                     │
-│ Organic Breathing + Controlled Chaos + AI Learning + Mathematics   │
-│                                                                     │
-│ Organic LFOs → Natural rhythm breathing and pattern evolution     │
-│ Chaos CVs    → Controlled unpredictability in mathematical rhythms│
-│ AI X/Y/t     → Learning rhythm patterns and intelligent timing   │
-│ Mathematics  → Prime number processing of all intelligence types  │
-│ Feedback     → AI learns from mathematical rhythm relationships   │
-│                                                                     │
-│ System Evolution: Organic → Chaos → AI → Mathematics            │
-│                                                                     │
-│ Pure Mathematical Evolution ○──────────────────────────┼─── Evolving Algorithmic Output
-└──────────────────────────────────────────────────────────────────┘
+[16th Clock] ──BEAT──▶ NUMERIC REPETITOR
+[1-bar Clock] ──MEASURE──▶ NUMERIC REPETITOR
+               PRIME Out ──▶ [Kick]
+               PRODUCT 1 Out ──▶ [Closed Hi-Hat]
+               PRODUCT 2 Out ──▶ [Open Hi-Hat]
+               PRODUCT 3 Out ──▶ [Snare]
 ```
 
-**Complete System Integration:**
+**Setup:** Run a 16th-note clock to BEAT and a 1-bar pulse to MEASURE. Connect the four outputs to kick, closed hi-hat, open hi-hat, and snare respectively. Select a pattern from the X bank.
 
-| Layer | Function | Numeric Role | Musical Result |
-|-------|----------|-------------|----------------|
-| **Organic (Ochd)** | Natural breathing | **Organic pattern breathing** | **Living mathematical rhythms** |
-| **Chaos (Wogglebug)** | Controlled uncertainty | **Chaos rhythm processing** | **Unpredictable but structured** |
-| **AI (Marbles)** | Learning patterns | **AI-driven mathematical control** | **Learning polyrhythmic relationships** |
-| **Mathematical (Numeric)** | Algorithmic processing | **System rhythm brain** | **Advanced mathematical music** |
+**Controls:** With everything running, adjust PRODUCT 1 slightly clockwise for an off-beat hi-hat feel. Move PRODUCT 3 to find the snare position that creates the groove you want. The MEASURE input resets the pattern count on each bar, so anything you adjust with the Product knobs or pattern selector locks immediately back into bar-level alignment. During breaks, pull a Product knob fully counterclockwise to silence that voice; reintroduce it by returning the knob to the previous position.
 
-**Expert System Design:**
-- **Four-layer processing:** Organic breathing, controlled chaos, AI learning, mathematical computation
-- **Numeric as rhythm processor:** All modulation types processed through prime number mathematics
-- **Learning integration:** Marbles learns from mathematical rhythm output through feedback
-- **Emergent behavior:** System evolves increasingly sophisticated polyrhythmic relationships
-- **Musical evolution:** Organic → Chaos → AI → Mathematics = Pure algorithmic music evolution
+**Result:** A locked, adjustable groove pattern that survives live performance interaction without drifting out of phase with the arrangement. The MEASURE input is the discipline mechanism; without it, any CV modulation or knob adjustment can compound into phase drift across bars.
 
-**Advanced Performance:**
-1. **Initialization:** Each module establishes its character and patterns
-2. **Cross-modulation:** All intelligence types begin affecting mathematical rhythm processing
-3. **Learning phase:** Marbles learns from prime number mathematical relationships
-4. **System evolution:** Entire ecosystem becomes increasingly musical and sophisticated
-5. **Mathematical transcendence:** Pure algorithmic music emerges from multi-layer intelligence
+---
 
-**Philosophical Achievement:**
-This represents **advanced mathematical consciousness in rhythm** - where organic breathing, controlled chaos, and artificial intelligence all become mathematical rhythm processing, computed through prime number algorithms into pure evolved algorithmic music.
+### Patch 4: Generative Rhythm with Wogglebug
 
-**🥁 **Drum Programming:** Multiple related percussion patterns from one source**
-**🎵 **Polyrhythmic Sequences:** Complex timing relationships made simple**
-**⚡ **Techno Production:** Algorithmic rhythm generation for electronic music**
-**🎭 **Live Performance:** Real-time rhythm manipulation with mathematical precision**
-**🔄 **Pattern Variation:** Instant access to 32 different rhythmic foundations**
-**🎛️ **Trigger Source:** Drive sample & hold, envelopes, or other modules**
-**🧮 **Educational Tool:** Learn polyrhythms through mathematical relationships**
-**⏰ **Clock Processing:** Transform simple clocks into complex rhythmic patterns**
+This patch uses Make Noise Wogglebug to supply semi-random CV to PRIME selection and a PRODUCT input, producing a drum pattern that never fully repeats while remaining internally coherent.
+
+```
+[Wogglebug STEPPED] ──CV──▶ PRIME CV Input
+[Wogglebug WOGGLE] ──via attenuator──▶ PRODUCT 2 CV
+[Master Clock] ──BEAT──▶ NUMERIC REPETITOR
+[1-bar Clock] ──MEASURE──▶ NUMERIC REPETITOR
+               All outputs ──▶ [Percussion voices]
+```
+
+**Setup:** Connect Wogglebug's Stepped output to PRIME CV and its Woggle output through an attenuator (set low initially) to PRODUCT 2 CV. Bring a steady 16th clock to BEAT and a 1-bar pulse to MEASURE.
+
+**Controls:** Set the Wogglebug Rate to a slow position so prime pattern changes occur at a musical rate rather than erratically. The stepped random CV advances through different prime patterns, each one a coherent groove in itself. The Woggle CV on PRODUCT 2 adds a secondary layer of slight offset variation on the open hi-hat voice. Increase the attenuator level to widen the variation range on that voice; reduce it to keep the Woggle influence subtle. The MEASURE sync keeps everything anchored to bar boundaries even as the pattern content shifts.
+
+**Result:** A drum pattern that never fully repeats but maintains mathematical internal consistency between all four voices. Each prime pattern the Wogglebug selects is a complete, logical groove; the randomness operates at the pattern selection level rather than the individual trigger level, which preserves musical coherence across the variation.
 
 ---
 
@@ -358,120 +217,30 @@ Patch all four outputs (PRIME plus PRODUCTS 1, 2, and 3) to different percussion
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
-1. **Start with Numeric fundamentals:** Master prime pattern selection, product variation control, and mathematical rhythm concepts
-2. **Add organic breathing:** Integrate DivKid Ochd for natural mathematical rhythm evolution (see Ochd guide)
-3. **Include controlled chaos:** Use Make Noise Wogglebug for chaotic mathematical rhythm processing (see Wogglebug guide)
-4. **Add AI intelligence:** Apply Mutable Marbles for learning modulation of mathematical rhythm parameters (see Marbles guide)
-5. **Include polyrhythmic division:** Use 4ms RCD v2 for complex mathematical timing relationships (see RCD guide)
-6. **Complete the ecosystem:** Add Cre8audio Function Junction for comprehensive mathematical modulation processing (see Function Junction guide)
+1. Spend dedicated time with every prime pattern in isolation. The X and Y banks each contain 16 patterns. Use a three-output drum kit and work through all 32 patterns at identical Product knob positions. Notice which patterns are sparse and which are dense, which are syncopated and which land on downbeats. Build a working internal map of the pattern library before adding any modulation. Pattern selection is only useful as a performance or compositional tool if you know what you are selecting between.
 
-### **Cross-Module Learning Opportunities:**
-- **Numeric + Ochd:** Learn organic modulation of mathematical rhythm parameters for breathing algorithmic patterns
-- **Numeric + Wogglebug:** Master chaos-driven mathematical rhythm for controlled unpredictability in algorithmic systems
-- **Numeric + Marbles:** Understand AI-driven mathematical rhythm with learning polyrhythmic relationships
-- **Numeric + RCD:** Explore polyrhythmic mathematical timing relationships and complex algorithmic division
-- **All Advanced + Numeric:** Build complete mathematical ecosystems with multiple intelligence types processing algorithmic rhythms
+2. Understand Product knob behavior through systematic range sweeping. With one pattern playing and all four outputs routed to audible destinations, turn PRODUCT 1 slowly from fully counterclockwise to fully clockwise. Listen to the relationship between the PRIME output and PRODUCT 1 output across the full range. Repeat for PRODUCT 2 and PRODUCT 3. Each Product responds differently to the same knob position within any given prime pattern, because the offset is derived from the pattern mathematics, not independently of it. This dependency is the key to deliberate Product use rather than random knob turning.
 
-### **Skill Development Milestones:**
-- **Beginner:** Use individual prime patterns for basic mathematical rhythm generation
-- **Intermediate:** Master product variation control and CV modulation for complex mathematical relationships
-- **Advanced:** Create Advanced integration patches with organic/chaos/AI modulation of mathematical rhythm parameters
-- **Expert:** Design complete mathematical ecosystems where Numeric serves as rhythmic brain for multiple Advanced intelligence types
+3. Use the MEASURE input as a compositional discipline tool in every multi-module patch. Wire a 1-bar or 4-bar reset pulse to MEASURE whenever you are performing or recording. This keeps pattern counting locked to song structure even when CV modulation or live adjustments shift the pattern mid-bar. Generative patches without this anchor tend to drift out of phase with the arrangement, and that drift is only interesting if you chose it deliberately rather than discovered it by accident.
 
-### **Advanced Mathematical Concepts:**
-- **Prime Number Theory:** Understand how mathematical patterns create musical rhythms
-- **Binary Multiplication:** Master how product variations relate mathematically to prime patterns
-- **Algorithmic Rhythm:** Explore how mathematical computation creates complex polyrhythmic relationships
-- **System Integration:** Design patches where Numeric processes multiple intelligence types simultaneously
+4. Explore cross-bank pattern pairing by building a patch where you can switch between an X pattern and a Y pattern in real time without adjusting any Product settings. Notice how the same Product offset values produce different rhythmic results with a different prime number underlying them. The X bank and Y bank have distinct mathematical characters that respond differently to the same knob positions, giving you two contrasting rhythmic personalities from a single set of offset settings.
 
-### **Performance Applications:**
-- **Live Mathematical Control:** Real-time pattern selection and mathematical variation control
-- **Generative Mathematical Systems:** Foundation for self-evolving algorithmic rhythm systems
-- **Hybrid Intelligence:** Bridge between organic, chaos, AI, and mathematical rhythm processing
-- **Educational Tool:** Learn algorithmic composition and mathematical music theory concepts
+5. Use individual PRODUCT outputs as real-time performance controls. In a live drum patch, assign one PRODUCT output to a secondary voice rather than the kick or snare. During a build or breakdown, pull that PRODUCT knob fully counterclockwise to silence that voice without stopping the pattern. Reintroduce it by returning the knob. This technique uses the offset mechanics as a mute control, allowing gradual drum builds and strip-downs using the module's native performance affordances rather than an external mixer.
 
----
-
-## Next Steps
-
-1. **Explore all 32 prime patterns** - spend time with each X and Y pattern
-2. **Practice Product knob control** - learn subtle vs dramatic offset effects
-3. **Experiment with different clock speeds** - same patterns, different feels
-4. **Try CV modulation** - sequence through patterns for evolving rhythms
-5. **Study the mathematical relationships** - notice how Products relate to Prime
-6. **Integrate with other modules** - use as trigger source for complex patches
-
-**Remember:** You don't need to understand the math - just listen and explore the relationships!
+6. Route a single PRIME output to multiple destinations simultaneously via a passive multiple or stackcable. Connect PRIME Out to both a kick drum trigger and an envelope generator that controls a filter cutoff. When the kick fires, the filter snaps open; the rhythmic relationship between the filter movement and the kick hit is mathematically locked because they share the same trigger source. This technique builds perceptual coherence across different synthesis layers from a single mathematical event, and it scales to any number of destinations.
 
 ---
 
 ## Pairs Well With
 
-### **Advanced Module Synergies (Modulation & CV Sources):**
-- **DivKid Ochd & Expander:** Ochd LFOs → Numeric CV inputs for organic mathematical rhythm evolution
-- **Make Noise Wogglebug:** Wogglebug chaos CVs → Numeric parameters for controlled chaos mathematics
-- **Mutable Marbles:** Marbles X/Y outputs → Numeric modulation for AI-driven mathematical rhythm control
-- **4ms RCD v2:** RCD divisions → Numeric BEAT input for polyrhythmic mathematical timing
-- **Cre8audio Function Junction:** Function + Numeric = complete mathematical ecosystem with organic/chaos/AI modulation
-- **Cross-Advanced Integration:** Numeric processes all Advanced modulation sources into unified mathematical rhythmic relationships
+**DivKid Ochd** provides continuous, unquantized LFO signals into Numeric Repetitor's CV inputs, creating gradual pattern drift rather than abrupt jumps. A very slow Ochd LFO sweeping the PRIME CV input causes pattern changes to happen gradually as the voltage crosses pattern thresholds, producing a rhythm that evolves across several minutes rather than snapping between discrete states. Faster Ochd rates applied to PRODUCT CV inputs add subtle offset variation to individual voices without disrupting the overall prime pattern. With eight independent LFOs available, every CV input on the Numeric Repetitor can carry simultaneous unrelated modulation.
 
-### **Perfect Partners for Beginners:**
-- **Clock sources (Horologic Solum, Pamela's):** Essential foundation for mathematical rhythm generation
-- **Drum modules (BIA, sample players):** Natural targets for mathematical gate outputs
-- **Sample & Hold modules:** Use mathematical gates to trigger melodic content with algorithmic timing
-- **Logic modules (Boolean Gates):** Combine and process mathematical patterns for increased complexity
+**Make Noise Wogglebug** is the most direct source of unpredictable-but-musical CV for prime pattern selection. The Stepped output produces quantized random voltages at clock-relative intervals; routing this to the PRIME CV input gives you pattern changes that happen rhythmically and land on different values each time. The Smooth output, applied to a PRODUCT CV input through an attenuator, adds continuous offset drift on one voice without erratic jumping. The Burst output can gate the MEASURE input for occasional forced resets, producing pattern-locking events at random intervals within an otherwise open arrangement.
 
-### **Advanced Mathematical Integration:**
-- **Multiple Numeric Repetitors:** Layer different mathematical patterns for complex polyrhythmic ecosystems
-- **Euclidean sequencers:** Combine mathematical and geometric rhythm approaches
-- **Probability gates (Branches):** Add random elements to mathematical patterns
-- **CV sequencers (Mimetic Digitalis):** Sequence through Prime patterns systematically for composed rhythm evolution
+**4ms RCD v2** turns a single clock into multiple clock divisions that can each serve as a BEAT input at different densities. Routing 8th notes to BEAT produces one rhythmic character; switching to 16ths doubles the density. With an RCD supplying selectable divisions, the same prime pattern produces distinctly different groove feels at different clock rates, and the switch between them is a single cable change or CV-controlled selection during performance.
 
-### **Essential Mathematical Partners:**
-- **Gamut Repetitor:** Combine algorithmic rhythm with algorithmic melody for complete mathematical composition
-- **Complex clock generators:** Feed sophisticated timing into mathematical rhythm processing
-- **Modulation sources (Lapsus Os):** Real-time control of multiple mathematical parameters
-- **MIDI-CV converters:** Use DAW clocks and sequences with mathematical rhythm generation
-
-### **Advanced System Integration:**
-- **Make Noise Maths:** Maths processes Numeric outputs for mathematical rhythm relationships
-- **Quantizers:** Process mathematical gates into melodic triggers for harmonic mathematical relationships
-- **Logic modules:** Combine mathematical outputs with Boolean operations for complex rhythmic relationships
-- **Phase 1 modules:** Numeric integrates perfectly with Plaits, Maths, and other core synthesis modules
-
-### **Genre Applications:**
-- **Techno/Electronic:** Perfect for algorithmic beat generation
-- **Experimental music:** Mathematical relationships create unique polyrhythms
-- **Ambient/Drone:** Sparse patterns with long MEASURE cycles
-- **Academic/Educational:** Teaching polyrhythms through mathematical concepts
-
-### **Pro Tips:**
-- **Start with one Product output:** Add complexity gradually
-- **Use MEASURE input religiously:** Keeps everything in sync with your system
-- **Small Product adjustments:** Often more musical than extreme settings
-- **Document your settings:** Mathematical patterns can be hard to recreate
-- **Combine with traditional sequencing:** Mathematical + manual = powerful hybrid
-
-### **Creative Experiments:**
-- **Audio-rate clocking:** Mathematical patterns become complex timbres
-- **Feedback patches:** Use Product outputs to modulate Prime selection
-- **Cross-modulation:** Multiple Numeric Repetitors modulating each other
-- **Pattern morphing:** Slowly sequence through Prime patterns for evolution
-
-### **Educational Value:**
-- **Polyrhythm comprehension:** Hear mathematical relationships
-- **Binary arithmetic:** Understand how digital patterns work
-- **Prime number theory:** Musical applications of mathematical concepts
-- **Algorithmic composition:** Learn non-traditional approaches to rhythm
+**Mutable Instruments Marbles** applies pattern intelligence to prime selection. Marbles' X outputs produce musically coherent random voltages that follow internal harmonic relationships over time. When this drives the PRIME CV input, pattern selection follows a subtle musical logic rather than stepping randomly across the full range. Marbles' t outputs can supplement or replace the master clock with rhythmically varied timing pulses, adding a second layer of generative behavior to the already mathematical rhythm structure.
 
 ---
 
-
----
-
-**Bottom Line:** Numeric Repetitor isn't just a rhythm generator - it's a **mathematical rhythm processor** that transforms simple modulation into complex polyrhythmic relationships through prime number algorithms. Every patch teaches you something new about how algorithmic rhythm generation really works. As the **rhythmic brain of Advanced ecosystems**, it transforms organic breathing, controlled chaos, and artificial intelligence into unified mathematical polyrhythmic evolution.
-
----
-
-*Numeric Repetitor makes complex polyrhythms accessible through mathematical elegance - trust your ears over your understanding of the math!*
+*Numeric Repetitor manual and algorithm documentation: [Noise Engineering](https://noiseengineering.us)*

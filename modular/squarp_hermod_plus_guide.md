@@ -14,7 +14,7 @@ screen: true
 historical_context: false
 ---
 
-# Squarp Hermod+ - Beginner's Guide
+# Squarp Hermod+
 
 **The Modular System Brain**
 
@@ -86,202 +86,90 @@ historical_context: false
 
 ## Why Squarp Hermod+ Excels
 
-### **The Philosophy:**
-Squarp Hermod+ represents **comprehensive advanced sequencing** - serving as the central nervous system that coordinates sophisticated pattern generation across entire musical ecosystems. It proves that advanced sequencing can enhance and direct electronic pattern generation rather than constraining it.
+Hermod+ solves the integration problem that becomes urgent as a modular system grows beyond a few voices. A larger system produces more CV signals, more gate streams, more MIDI devices, and more timing relationships than any single brain can coordinate through manual patching alone. Hermod+ is designed specifically for this coordination role: it holds 16 independent tracks, handles both CV and MIDI on the same timeline, records at 96 pulses per quarter note, and provides an effects chain that processes recorded content in real time. Each of these capabilities addresses a specific coordination failure mode in a mature patch.
 
-### **The Innovation:**
-- **16-track hybrid architecture** with 8 CV/Gate and 8 MIDI tracks for complete system integration
-- **96PPQ recording resolution** captures every nuance of sophisticated pattern generation without loss
-- **Real-time effects processing** enhances recorded Phase 2 intelligence with additional complexity
-- **Four-mode operation system** provides comprehensive sequencing, performance, and arrangement control
-- **Pattern/sequence hierarchy** enables sophisticated song-level arrangement of intelligent systems
+The 96PPQ recording resolution matters because it is finer than any grid that would be set by hand in a step sequencer. When a performer plays notes in real time, the subtle timing offsets that make a phrase feel human rather than mechanical are captured rather than quantized away. Most hardware sequencers record at 24 or 48PPQ, which snaps rhythmic gestures to coarser subdivisions. At 96PPQ, Hermod+ records the actual timing of each note event and plays it back with the same precision. Quantizing after recording is always available; capturing the performance at full resolution and deciding later how much grid correction to apply is qualitatively different from being forced to quantize at the moment of recording.
 
-### **The Practical Benefits:**
-- **Central nervous system:** Coordinates entire studios from modular to MIDI to computer integration
-- **Pattern preservation:** 96PPQ recording maintains character of sophisticated pattern generation
-- **Performance direction:** Live control and arrangement of complex electronic pattern generation systems
-- **Format bridging:** Seamless integration between CV, MIDI, and computer domains
-- **Composition architecture:** Complete song-level arrangement capabilities for sophisticated musical systems
+The four-mode architecture distributes different tasks across different interfaces. STEP mode is for note programming on a grid. TRACKS mode is for managing multiple tracks and their relationships simultaneously. EFFECTS mode is for applying real-time transformation to recorded content. SEQ mode is for chaining patterns into song-level arrangements. Navigating between these modes cleanly during a live performance is a learnable skill, and when it is mastered, Hermod+ becomes a complete performance instrument rather than just a sequencer.
 
-### **Perfect For:**
-- **Electronic composers:** Complete sequencing brain for sophisticated musical arrangements
-- **Live performers:** Real-time control and performance direction of complex electronic systems
-- **Studio producers:** Central coordination hub for hybrid modular/MIDI/computer workflows
-- **System integrators:** Bridge between different musical domains and technologies
-- **Phase 2 enthusiasts:** Central sequencing hub for coordinating sophisticated pattern generation
-- **Anyone seeking musical direction:** Transform electronic pattern generation into comprehensive musical compositions
-
-### **The Magic:**
-Hermod+ **democratizes professional sequencing capabilities** - giving everyone access to studio-grade sequencing capabilities that can coordinate and enhance the most sophisticated pattern generation systems.
-
-### **Phase 2 Integration Power:**
-As the **advanced sequencing hub of Phase 2 ecosystems**, Hermod+ coordinates organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision into comprehensive musical direction. **You conduct electronic pattern generation toward complete musical transcendence.**
-
+The MIDI track capability removes the boundary between Eurorack and external hardware synthesizers. A sequencer that handles only CV cannot sequence a keyboard synthesizer or a drum machine; a MIDI-only sequencer cannot drive Eurorack voices. Hermod+ operates across both domains from a single timeline, which means a studio setup with both modular and external MIDI gear can be coordinated from a single module with a single transport control, a single clock source, and a single arrangement structure.
 
 ---
 
----
+## Patches
 
-## Beginner Patch Ideas
+### Patch 1: Basic Eurorack Sequence
 
-### **Patch 1: Basic Eurorack Sequence**
-```
-[Hermod+ Track 1 CV] ──→ [Oscillator V/OCT]
-[Hermod+ Track 1 GATE] ──→ [Envelope Generator GATE]
-[Envelope out] ──→ [VCA CV input]
-[Oscillator] ──→ [VCA Audio input]
-```
-**Mode:** STEP mode to program, TRACKS mode to play
-**Setup:** Program 8-16 step melody, use grid buttons + encoder
-**Visual:** Track 1 LED shows activity, grid shows current step
-**Result:** Classic sequenced synthesizer voice with full control
+This patch uses Hermod+ as the primary sequencer in a standard synthesizer voice configuration, establishing the core STEP mode workflow.
 
-### **Patch 2: Polyrhythmic Multi-Track**
 ```
-[Hermod+ Track 1] ──→ [Bass Oscillator] (16 steps)
-[Hermod+ Track 2] ──→ [Lead Oscillator] (12 steps)
-[Hermod+ Track 3] ──→ [Drum Module] (8 steps)
-[External Clock] ──→ [Hermod+ Clock input]
-```
-**Mode:** Use TRACKS mode to manage multiple tracks
-**Setup:** Different track lengths create evolving polyrhythms
-**Visual:** Multiple track LEDs show independent activity patterns
-**Result:** Complex interlocking rhythms that phase in and out
-
-### **Patch 3: MIDI + CV Hybrid System**
-```
-[Hermod+ MIDI Track 9] ──→ [External MIDI Synth]
-[Hermod+ CV Track 1] ──→ [Eurorack Oscillator]
-[USB] ──→ [Computer/DAW synchronization]
-```
-**Mode:** STEP mode programs both MIDI and CV simultaneously
-**Setup:** Sequence external gear alongside modular - perfect hybrid setup
-**Visual:** Different colored LEDs distinguish MIDI vs CV tracks
-**Result:** Unified control of entire studio from one brain
-
-### **Patch 4: Effects Processing Showcase**
-```
-[Hermod+ Track 1 CV] ──→ [Oscillator V/OCT]
-[Hermod+ Track 1 GATE] ──→ [LPG GATE input]
-Enable: [Ratchet + Swing + Random effects]
-```
-**Mode:** EFFECTS mode to add real-time processing
-**Setup:** Simple 4-note pattern transformed by stacked effects
-**Visual:** Effects LEDs show active processing
-**Result:** Simple sequence becomes complex, groovy, and unpredictable
-
-### **Patch 5: Expert - Complete Phase 2 Advanced Sequencing Hub**
-```
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│   DivKid    │ │ Make Noise  │ │ Mutable     │ │ 4ms RCD v2  │
-│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │ (Phase 2)   │
-│ (Organic)   │ │ (Chaos)     │ │ (Patterns)  │ │             │
-│             │ │             │ │             │ │ Clock Out ○──┼─┼─Master Clock │
-│ LFO 1 ○─────┼─┼─Stepped ○   │ │ X1 Out ○───┼─┼─             │
-│       ║     │ │        ║    │ │       ║     │ │ Div 2 ○─────┼─┼─Polyrhythm  │
-│ LFO 5 ○─────┼─┼─Smooth ○    │ │ X2 Out ○───┼─┼─             │
-│       ║     │ │        ║    │ │       ║     │ │ Div 3 ○─────┼─┼─Timing      │
-└───────║─────┘ └────────║────┘ └───────║─────┘ └─────────────┘
-        ║                ║              ║              ║
-        ▼                ▼              ▼              ▼
-┌──────────────────────────────────────────────────────────────────────────────┐
-│                            Squarp                             │
-│                          Hermod+                            │
-│                (Phase 2 Advanced Sequencing Hub)              │
-│                                                                        │
-│ Phase 2 Source Integration & Advanced Sequencing:                      │
-│                                                                        │
-│ CLOCK IN ◀──────────────── RCD Clock Out (master timing synchronization)     │
-│ CV IN 1 ◀───────────────── Ochd LFO1 (organic pitch modulation input)       │
-│ CV IN 2 ◀───────────────── Wogglebug Stepped (chaos sequence variations)    │
-│ CV IN 3 ◀───────────────── Marbles X1 (pattern-based sequence control)      │
-│ CV IN 4 ◀───────────────── Ochd LFO5 (organic gate length modulation)       │
-│                                                                        │
-│ Advanced Phase 2 Sequencing Features:                                 │
-│                                                                        │
-│ 96PPQ Recording Resolution:                                            │
-│ • Record all Phase 2 sources with perfect timing precision             │
-│ • Capture organic breathing, chaos events, pattern evolution           │
-│ • No quantization loss of Phase 2 module character                      │
-│                                                                        │
-│ Real-Time Effects Processing:                                          │
-│ • Apply ratchet/swing/random effects to Phase 2 recorded material      │
-│ • Euclidean rhythms enhance mathematical pattern generation             │
-│ • LFO effects add additional organic modulation layers                  │
-│                                                                        │
-│ 16-Track Ecosystem Management:                                         │
-│ • 8 CV/Gate tracks for Phase 2 Eurorack ecosystem control             │
-│ • 8 MIDI tracks for external gear integration                          │
-│ • Pattern per track (16 patterns each) for sophisticated arrangements   │
-│ • Live performance control of complete Phase 2 systems                 │
-│                                                                        │
-│ Sequence Chain Architecture:                                           │
-│ • 64 sequences for complete Phase 2 compositions                       │
-│ • Song-level arrangement of sophisticated pattern evolution             │
-│ • Performance switching between Phase 2 ecosystem states               │
-│                                                                        │
-│ Track Outputs (CV/Gate to Phase 2 Ecosystem):                         │
-│ TRACK 1-8 CV/GATE ○─────────────────────────────────┼─── Complete
-│ MIDI OUT 9-16 ○─────────────────────────────────────┼─── Phase 2
-└──────────────────────────────────────────────────────────────────────────────┘   Advanced
-                              ║                                 Sequencing
-                     Advanced║
-                      Sequencing║
-                            Hub║
-                              ▼
-                    ┌─────────────────────┐
-                    │    Sophisticated   │
-                    │     Sequencing     │
-                    │                     │
-                    │ Organic + Chaos +   │
-                    │ Patterns + Math =   │
-                    │ Advanced            │
-                    │ Musical Direction   │
-                    │                     │
-                    │ System Output ○─────┼─── Comprehensive
-                    └─────────────────────┘       Phase 2 Direction
+HERMOD+ Track 1 CV ──▶ [Oscillator V/OCT]
+HERMOD+ Track 1 GATE ──▶ [Envelope GATE In]
+[Envelope Out] ──▶ [VCA CV In]
+[Oscillator Out] ──▶ [VCA Audio In]
+[VCA Out] ──▶ [Mixer]
 ```
 
-**Complete Phase 2 Advanced Sequencing Integration:**
+**Setup:** Enter STEP mode by pressing the mode button until the STEP LED is lit. Use the 16 grid buttons to enter notes for Track 1. The encoder selects pitch for each step; the grid buttons select which steps are active. Program an 8 to 16 step sequence. Connect Track 1 CV to an oscillator's V/OCT input and Track 1 GATE to an envelope generator.
 
-| Phase 2 Module | Function | Hermod+ Control | Sequencing Result |
-|-------------------|----------|-----------------|-------------------|
-| **Organic (Ochd)** | Natural breathing | **CV input modulation + 96PPQ recording** | **Breathing sequence evolution** |
-| **Chaos (Wogglebug)** | Controlled uncertainty | **CV input + real-time effects processing** | **Chaotic sequence variations** |
-| **Pattern (Marbles)** | Sophisticated sequences | **CV input + pattern recording + effects** | **Sophisticated sequence control** |
-| **Mathematical (RCD)** | Polyrhythmic timing | **Master clock + polyrhythmic synchronization** | **Mathematical sequence precision** |
-| **Advanced Sequencing** | 16-track coordination | **Multi-track effects + pattern management** | **Comprehensive musical direction** |
+**Controls:** Press the play button to start the sequence. The current step illuminates on the grid as the sequence advances. Switch to TRACKS mode to see all tracks simultaneously; Track 1 shows its progress as a moving indicator across the LED row. Adjust individual step pitches by returning to STEP mode and pressing the step to edit. Try different track lengths by setting the endpoint step; a 12-step sequence against a 16-step pattern elsewhere creates polyrhythmic relationships.
 
-**Expert System Design:**
-- **Hermod+ as advanced sequencing hub:** All Phase 2 sources recorded and coordinated with perfect timing
-- **96PPQ precision recording:** Captures every nuance of Phase 2 module behavior without quantization loss
-- **Real-time effects processing:** Ratchet, swing, euclidean, and LFO effects enhance Phase 2 material
-- **Multi-track ecosystem control:** 16 tracks manage complete Phase 2 ecosystems with pattern sophistication
-- **Performance control:** Live control and arrangement of sophisticated pattern generation systems
-
-**Advanced Performance:**
-1. **Phase 2 source recording:** All Phase 2 sources recorded with 96PPQ precision
-2. **Real-time effects enhancement:** Apply sequencer effects to enhance Phase 2 material
-3. **Multi-track ecosystem management:** Coordinate complete Phase 2 systems across 16 tracks
-4. **Live performance direction:** Pattern switching and track control for dynamic Phase 2 performance
-5. **Advanced sequencing:** Sophisticated sequencing direction of electronic pattern generation systems
-
-**Philosophical Achievement:**
-This represents the **ultimate advanced sequencing integration** - where organic breathing, controlled chaos, sophisticated pattern generation, and mathematical precision are all coordinated through advanced sequencing capabilities, creating comprehensive musical direction of Phase 2 ecosystems under your creative control.
+**Result:** A precisely sequenced synthesizer voice with full control over every step's pitch and gate state. Hermod+ stores the sequence in memory, so it survives power cycling and can be recalled reliably in live performance. The LED grid gives a visual representation of both the sequence content and the current playback position.
 
 ---
 
-## Common Use Cases
+### Patch 2: Polyrhythmic Multi-Track
 
-1. **🧠 System Brain:** Central sequencer controlling entire modular system
-2. **🎹 MIDI Hub:** Sequence external synths, drum machines, and software
-3. **💻 DAW Integration:** USB connectivity for computer synchronization
-4. **🎵 Live Performance:** Pattern switching, track muting, real-time control
-5. **📻 Song Composition:** 64-sequence chains for complete song structures
-6. **🎛️ CV Looper:** Record and loop control voltage performances
-7. **⚡ Clock Master:** Rock-solid timing for entire studio synchronization
-8. **🔄 Format Bridge:** Seamlessly convert between MIDI and CV domains
-9. **🌀 Phase 2 Sequencing Hub:** Central sequencing brain for sophisticated pattern generation systems
+This patch uses three tracks at different lengths to create interlocking polyrhythmic relationships between bass, lead, and percussion voices.
+
+```
+HERMOD+ Track 1 CV+GATE ──▶ [Bass Oscillator + Envelope]  (16 steps)
+HERMOD+ Track 2 CV+GATE ──▶ [Lead Oscillator + Envelope]  (12 steps)
+HERMOD+ Track 3 GATE ──────▶ [Drum Module Trigger]        (8 steps)
+[External Clock] ──────────▶ HERMOD+ Clock Input
+```
+
+**Setup:** In STEP mode, program Track 1 as a 16-step bass line and Track 2 as a 12-step melody. Program Track 3 as an 8-step gate pattern for percussion. Connect an external clock to the Clock input for stable synchronization with other modules.
+
+**Controls:** With all three tracks running at their respective lengths, the sequences phase against each other in a 48-step cycle (the LCM of 8, 12, and 16) before all three realign simultaneously. Switch to TRACKS mode to monitor all three tracks at once; the independent LED rows show each track's current position against its sequence length. The moment all three tracks return to step 1 simultaneously is an anchor point for arrangement transitions. Adjust individual track lengths using the sequence length parameter to change the polyrhythmic cycle length.
+
+**Result:** A multi-voice patch where rhythmic complexity emerges from different sequence lengths rather than from programming each rhythmic relationship explicitly. The arrangement structure is defined by the mathematical relationship between the three lengths, and it evolves continuously across the full cycle without any live intervention.
+
+---
+
+### Patch 3: MIDI and CV Hybrid
+
+This patch runs an external MIDI synthesizer and Eurorack voices simultaneously from Hermod+, demonstrating its function as a unified performance brain across two signal domains.
+
+```
+HERMOD+ Track 9 MIDI Out ──▶ [External MIDI Synthesizer]
+HERMOD+ Track 1 CV+GATE ──▶ [Eurorack Voice 1]
+HERMOD+ Track 2 CV+GATE ──▶ [Eurorack Voice 2]
+[USB] ──────────────────────▶ [Computer/DAW] (sync and MIDI out)
+```
+
+**Setup:** In STEP mode, program Track 9 as a MIDI track; this track outputs MIDI note data on Channel 1 by default, assignable via the menu. Program Track 1 and Track 2 as CV tracks for Eurorack voices. Connect the MIDI output to an external synthesizer's MIDI input and USB to a computer if DAW sync is desired.
+
+**Controls:** All tracks play simultaneously from a single play command. The MIDI track sends note and gate information to the external synthesizer with the same step precision as the CV tracks; pitch resolution over MIDI is 127 semitones across the keyboard range. Use TRACKS mode to monitor all tracks at once. The USB connection allows the computer DAW to receive MIDI clock from Hermod+ or supply it to Hermod+; set the clock direction in the system menu based on which device is the master.
+
+**Result:** A unified performance environment where external MIDI gear and Eurorack voices are sequenced and time-synchronized from a single module. Song arrangements that use both a hardware synthesizer and a modular system can be built, stored, and performed from Hermod+ without switching between a separate MIDI sequencer and a modular sequencer.
+
+---
+
+### Patch 4: Effects Processing Showcase
+
+This patch applies Hermod+'s onboard effects to a simple base sequence, demonstrating how the effects chain transforms static programming into dynamic, varied output.
+
+```
+HERMOD+ Track 1 CV+GATE ──▶ [Oscillator + Envelope + VCA]
+[Effects: Ratchet + Swing + Random active on Track 1]
+```
+
+**Setup:** Program a simple 4-note repeating sequence on Track 1. Enter EFFECTS mode and add the following to Track 1 in order: Quantize, then Ratchet at a low probability setting, then Swing at about 25 percent. Connect Track 1 CV and GATE to a complete synthesizer voice.
+
+**Controls:** Listen to the base sequence first with all effects bypassed, then enable them one at a time. Quantize snaps any pitch CVs recorded with imprecision to the nearest semitone. Ratchet adds subdivided trigger bursts at the set probability, turning single steps into rolls and fills at random. Swing delays every other step by the set percentage, moving from metronomic to shuffled feel. The effects chain processes in order from top to bottom; changing the chain order produces different results from the same settings. Add a Random Pitch effect after Quantize to introduce occasional note variations that stay in the quantized key.
+
+**Result:** A simple 4-note sequence that sounds complex and alive because the effects layer transforms it differently on each pass. The same programming produces different results each cycle, removing the static quality of a fixed sequence while keeping the pitch and rhythmic structure as the frame.
 
 ---
 
@@ -321,90 +209,30 @@ Add one effect at a time and listen to the result before adding a second. Confir
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
-1. **Start with Hermod+ fundamentals:** Master all four modes and understand advanced sequencing coordination
-2. **Add organic sequence evolution:** Integrate DivKid Ochd for breathing sequence modulation and organic performance (see Ochd guide)
-3. **Include chaos sequence variation:** Use Make Noise Wogglebug for chaotic sequence enhancement and unpredictable performance (see Wogglebug guide)
-4. **Add pattern sequence control:** Apply Mutable Marbles for sophisticated algorithmic composition capabilities (see Marbles guide)
-5. **Include mathematical sequence precision:** Use 4ms RCD v2 for polyrhythmic timing coordination and mathematical arrangement (see RCD guide)
-6. **Complete the sequencing ecosystem:** Add Cre8audio Function Junction for processed sequence dynamics and performance control (see Function Junction guide)
+1. Work through each of the four modes in dedicated sessions before combining them in performance patches. Spend time only in STEP mode building sequences of different lengths and programming note data; then spend time only in TRACKS mode managing multiple tracks and understanding the relationship between track LEDs and sequence content; then explore EFFECTS mode in isolation, adding and reordering individual effects on a simple test sequence; then investigate SEQ mode for pattern and song arrangement. Understanding what each mode does without the distraction of the others prevents confusion later when switching modes quickly during live performance.
 
-### **Cross-Module Learning Opportunities:**
-- **Hermod+ + Ochd:** Learn organic sequence evolution through natural breathing modulation and performance control
-- **Hermod+ + Wogglebug:** Master chaotic sequence variation through unpredictable pattern enhancement
-- **Hermod+ + Marbles:** Understand sophisticated algorithmic composition through pattern coordination
-- **Hermod+ + RCD:** Explore polyrhythmic sequence precision through mathematical timing arrangement
-- **All Phase 2 + Hermod+:** Build complete sequencing ecosystems where sophisticated pattern generation gains musical direction
+2. Explore all track configuration types available per track. A track can operate as mono CV, poly CV, velocity, modulation, or MIDI depending on configuration. Set up Track 1 as mono and listen to it, then reconfigure it as a velocity track and connect velocity to a VCA alongside a CV track. Connect Track 3 as a MIDI track and listen to it driving an external synth. Understanding which track type to assign based on the destination signal is the core skill for building hybrid Eurorack/MIDI patches, and it requires hands-on time with each type rather than reading about them abstractly.
 
-### **Skill Development Milestones:**
-- **Beginner:** Master individual modes and basic sequencing concepts
-- **Intermediate:** Understand multi-track coordination and complex arrangement techniques
-- **Advanced:** Create Phase 2 integration systems with sophisticated sequencing capabilities
-- **Expert:** Design complete musical ecosystems where sophisticated pattern generation gains comprehensive direction
+3. Investigate the effects chain order systematically. Hermod+ processes effects in the order they appear in the chain, top to bottom. A Quantize effect placed before a Transpose effect quantizes the raw sequence and then transposes the quantized result. Placed after Transpose, it quantizes the already-transposed material. Program the same two effects in both orders on the same sequence and listen to the difference. This principle extends to any pair of effects in the chain; the chain order is the composition of the individual effect functions, and reordering produces genuinely different musical results.
 
-### **Advanced Sequencing Concepts:**
-- **Multi-Track Coordination:** Understand how 16 tracks coordinate different Phase 2 module types
-- **Phase 2 Sequence Control:** Use sophisticated pattern generation to control comprehensive musical arrangement
-- **Advanced Performance:** Live direction and arrangement of sophisticated electronic pattern generation systems
-- **Musical Direction Design:** Create compositions where sophisticated pattern generation serves comprehensive musical vision
+4. Understand the Pattern, Sequence, and Track hierarchy through deliberate structure building. Tracks contain individual sequences of notes and gates. Patterns are groups of tracks playing simultaneously. Sequences (in SEQ mode) chain patterns in order for song arrangement. Build a two-pattern arrangement with Pattern A as an intro section and Pattern B as the main theme. Program SEQ mode to play A once then loop B. This workflow is the basis of any arranged live performance from Hermod+; mastering the hierarchy removes the ceiling on set complexity.
 
-### **Performance Applications:**
-- **Live Performance Direction:** Real-time coordination and performance of sophisticated pattern generation systems
-- **Generative Composition Systems:** Foundation for self-evolving musical arrangements with advanced direction
-- **Educational Sequencing Tool:** Learn comprehensive arrangement through hands-on Phase 2 integration
-- **Creative Musical Direction:** Guide sophisticated pattern generation toward complete musical transcendence
+5. Explore the 96 PPQ recording resolution for capturing live performances. Set Hermod+ to record mode on a track and play notes in real time from a keyboard or CV keyboard while the clock runs. Hermod+ captures the timing of note events at 96 pulses per quarter note, which is finer timing resolution than most MIDI sequencers. After recording, play back the track and listen to how closely it matches the original performance feel. This is qualitatively different from step programming: the performance nuances of timing variation are preserved rather than quantized to the grid. Understand when quantizing after recording improves the result and when it removes something important.
 
----
-
-## Next Steps
-
-1. **Master the four modes** - understand when to use STEP vs TRACKS vs EFFECTS vs SEQ
-2. **Explore track configurations** - try mono, poly, velocity, and modulation setups
-3. **Experiment with effects** - start with quantize and ratchet, then explore combinations
-4. **Build song structures** - use patterns and sequences for complete compositions
-5. **Integrate external gear** - connect MIDI devices and use USB for DAW sync
-6. **Learn advanced recording** - capture live performances with 96PPQ precision
-
-**Remember:** Hermod+ is deep - it can replace multiple modules and be the brain of your entire setup. Start simple and gradually explore its vast capabilities!
+6. Build a complete patch that uses MIDI out and CV out simultaneously and perform with it live. Connect a keyboard to Hermod+ via MIDI in, connect Track 9 MIDI out to an external synthesizer, and connect Track 1 and Track 2 CV/GATE to Eurorack voices. Record a live performance from the keyboard on Track 1, then use the recorded CV to drive Track 9 as MIDI simultaneously. The experience of performing into the module and hearing the result across multiple signal domains simultaneously is the fastest path to understanding Hermod+ as a complete studio brain rather than just a sequencer.
 
 ---
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Advanced Sequencing Coordination):**
-- **DivKid Ochd & Expander:** Ochd organic LFOs provide natural breathing modulation inputs and organic sequence evolution
-- **Make Noise Wogglebug:** Wogglebug chaos creates unpredictable sequence variations and chaotic performance control
-- **Mutable Marbles:** Marbles patterns provide sophisticated sequence control and algorithmic composition capabilities
-- **4ms RCD v2:** RCD polyrhythmic timing provides master clock synchronization and mathematical sequence precision
-- **Cre8audio Function Junction:** Function Junction processed modulation perfect for dynamic sequence control
-- **Cross-Phase 2 Integration:** All Phase 2 modules coordinated through advanced sequencing capabilities
+**DivKid Ochd** provides continuously running LFOs for modulating Hermod+ effects parameters and Track CV inputs. Slow Ochd LFOs connected to Hermod+ CV inputs (for mod wheel or velocity tracks) create organic variation on recorded performances without requiring re-programming. Faster Ochd rates on effects parameters such as Swing amount or Ratchet probability produce evolving groove character across the performance. Because Ochd runs independently of Hermod+'s clock domain, the LFO phase relationship to the sequence changes gradually over time, creating long-period modulation cycles that add life to looped arrangements.
 
-### **Phase 1 Module Integration (Core Sequencing Control):**
-- **Make Noise Maths:** Maths envelopes perfect for sequence dynamics and performance control
-- **Mutable Plaits:** Plaits synthesis voices controlled by Hermod+ sequencing capabilities
-- **Disting mk4:** Use Disting utilities alongside Hermod+ for comprehensive system coordination
-- **Complete Phase 1 systems:** Hermod+ as central sequencing hub for synthesis networks
+**Make Noise Maths** supplies envelope shapes for dynamic control of voices triggered by Hermod+ gates. A Maths end-of-rise output connected back to Hermod+'s clock or reset input can create self-advancing behavior for specific patches. More practically, Maths function outputs driving VCA CV inputs alongside Hermod+ gate signals give each voice an independently shaped amplitude envelope, replacing a dedicated envelope module for simple voices. Maths' ability to operate as both an envelope and a simple LFO makes it flexible enough to handle multiple Hermod+ voices simultaneously.
 
-### **Essential Sequencing Partners:**
-- **MIDI Keyboard Controllers:** Live input for recording Phase 2 performances with 96PPQ precision
-- **Clock Sources:** External clocks for sophisticated timing coordination with Phase 2 systems
-- **Multiple Synthesis Voices:** Take advantage of 8 independent CV/Gate tracks for complex arrangements
-- **USB Controllers:** Advanced control surfaces for comprehensive Phase 2 ecosystem management
+**Endorphin.es Ground Control** belongs to the same Endorphin.es ecosystem context and provides physical performance control over Hermod+-driven patches. Ground Control's trigger pads and CV outputs can feed into Hermod+ for live recording, manual pattern advance, or direct triggering of effects. In a performance context where Hermod+ holds the arrangement and Ground Control provides the expressive interface, the two modules together cover both the compositional and the performance-gesture dimensions of a complete live set.
 
-### **Advanced Sequencing Integration:**
-- **Squarp xp32 Expander:** 32 additional CV outputs for massive Phase 2 ecosystem control
-- **Computer/DAW Integration:** USB connectivity for complete studio coordination with Phase 2 systems
-- **Multiple Hermod+ units:** Chain together for comprehensive multi-ecosystem sequencing control
-- **External MIDI Gear:** Integrate synthesizers and drum machines with Phase 2 Eurorack ecosystems
-
+**Mutable Instruments Marbles** feeds generative CV and gate material into Hermod+ recording inputs, allowing the module to capture probabilistic sequences and then play them back deterministically. Record a Marbles t1 gate stream and X1 CV stream into Hermod+ at 96PPQ; the result is a fixed sequence that sounds generative because its source was genuinely random. Adjust Marbles' DEJA VU during recording to control how much repetition the captured sequence contains, then use Hermod+ to loop, transpose, and arrange the recorded material as a composed piece.
 
 ---
 
-
----
-
-**Bottom Line:** Squarp Hermod+ isn't just a sequencer - it's a **comprehensive advanced coordination system** that serves as the central nervous system for sophisticated musical ecosystems. Every mode teaches you something new about musical direction and arrangement, and Phase 2 integration reveals how advanced sequencing can coordinate and enhance the most sophisticated pattern generation systems. As the **advanced sequencing hub of Phase 2 ecosystems**, it transforms electronic pattern generation into complete musical transcendence under your creative direction.
-
----
-
-*Need the full technical manual? Visit squarp.net/hermodplus/manual/ for complete documentation*
+*Hermod+ manual: [Squarp Instruments](https://squarp.net)*

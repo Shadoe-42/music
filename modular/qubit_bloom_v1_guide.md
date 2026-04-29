@@ -14,7 +14,7 @@ screen: true
 historical_context: false
 ---
 
-# Qu-Bit Bloom V1 - Beginner's Guide
+# Qu-Bit Bloom V1
 
 **The Fractal Sequencing Garden**
 
@@ -94,243 +94,82 @@ Most sequencers ask you to program notes explicitly -- place a pitch on step 1, 
 
 ---
 
-## Beginner Patch Ideas
+## Patches
 
-### **Patch 1: Simple Evolving Melody**
-```
-[Bloom CHANNEL A CV] ──→ [Oscillator V/OCT]
-[Bloom CHANNEL A GATE] ──→ [Envelope GATE input]
-[External Clock] ──→ [Bloom CLOCK input]
-```
-**Setup:** Program 8-note sequence, turn BRANCH slowly during playback
-**Visual:** Blue LEDs show Channel A activity, colors change with branches
-**Result:** Your melody evolves continuously while staying musically related
-**Controls:** PATH changes how variations connect, MUTATION adds controlled chaos
+### Patch 1: Simple Evolving Melody
 
-### **Patch 2: Dual Channel Polyrhythm**
-```
-[Bloom CHANNEL A] ──→ [Oscillator 1] (Length: 8 steps)
-[Bloom CHANNEL B] ──→ [Oscillator 2] (Length: 5 steps)
-[Master Clock] ──→ [Bloom CLOCK input]
-```
-**Setup:** Different lengths create polyrhythms, different branches = evolving counterpoint
-**Visual:** Blue and green LEDs show independent channel activity
-**Result:** Complex polyrhythmic sequences that phase in and out
-**Pro tip:** Use same root note but different octaves for harmonic interest
+This patch uses Bloom's single-channel output to generate a melodic sequence that evolves continuously through the module's branching algorithm.
 
-### **Patch 3: Rhythmic Branch Control**
 ```
-[Bloom CHANNEL A GATE] ──→ [Drum Module TRIG]
-[Slow LFO] ──→ [Bloom BRANCH CV input]
-[External Clock] ──→ [Bloom CLOCK input]
-```
-**Setup:** Use only gates for drum patterns, automate branch exploration
-**Visual:** Watch LED colors cycle as LFO explores different branches
-**Result:** Drum patterns that automatically evolve and return to familiar territory
-**Variation:** Use random CV for more chaotic branch exploration
-
-### **Patch 5: Intermediate - Phase 2 Organic Sequence Evolution**
-```
-┌─────────────┐ ┌─────────────────┐
-│  DivKid     │ │    Qu-Bit      │
-│    Ochd     │ │    Bloom v1    │
-│ (Organic    │ │ (Fractal Seq)  │
-│  LFO Sys)   │ │                │
-│             │ │                │
-│ LFO 1   ○──┼─┼─Branch CV      │
-│       ║     │ │       ║        │
-│ LFO 4   ○──┼─┼─Path CV       │
-│       ║     │ │       ║        │
-│ LFO 8   ○──┼─┼─Mutation CV   │
-│       ║     │ │                │
-│ Natural     │ │ CH A CV    ○──┼─── Organic Sequences [C]
-│ Breathing   │ │ CH A Gate  ○──┼─── Living Gates [G]
-│ Organic     │ │ CH B CV    ○──┼─── Evolving Harmony [C]
-│ Evolution   │ │ CH B Gate  ○──┼─── Natural Rhythm [G]
-└─────────────┘ └─────────────────┘
-        ║               ║
-        ▼               ▼
-┌────────────────────────────────────────────┐
-│     Organic Fractal Evolution System       │
-│                                            │
-│ Natural LFO Breathing + Fractal Generation │
-│                                            │
-│ Ochd → Natural organic branch evolution    │
-│ Bloom → Fractal sequence generation core   │
-│                                            │
-│ Living Sequence Evolution (16HP total)    │
-│                                            │
-│ Organic Fractal Sequences ○──────┼─── Output │
-└────────────────────────────────────────────┘
+[Clock] ──CLOCK──▶ BLOOM V1
+[Sequencer 8 steps] ──V/OCT──▶ [Oscillator V/OCT]
+BLOOM CH A CV ──────────────▶ [Oscillator V/OCT]
+BLOOM CH A GATE ────────────▶ [Envelope GATE]
 ```
 
-**Organic Sequence Evolution Integration:**
+**Setup:** Program an 8-note sequence into Bloom using the onboard encoder. Connect CH A CV output to an oscillator's V/OCT input and CH A GATE to an envelope generator. Connect the envelope output to a VCA. Set BRANCH at noon and PATH at noon.
 
-| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
-|-------------------|-------------|---------|------------------|
-| **Ochd LFO 1 → Bloom Branch** | Organic CV | **Natural branch exploration** | **Creates breathing branch evolution that explores fractal space naturally** |
-| **Ochd LFO 4 → Bloom Path** | Organic CV | **Organic path navigation** | **Smoothly navigates through fractal sequences with natural timing** |
-| **Ochd LFO 8 → Bloom Mutation** | Organic CV | **Natural variation breathing** | **Adds organic mutation that breathes life into fractal sequences** |
-| **Bloom CH A&B → Outputs** | Sequence/gates | **Evolved fractal outputs** | **Fractal sequences enhanced by natural organic evolution patterns** |
+**Controls:** Start the clock and listen to the base sequence. Slowly turn BRANCH clockwise from noon. As the branch value increases, the algorithm begins introducing variations on the sequence: some notes shift to adjacent positions within the fractal tree, while others remain anchored. At moderate BRANCH settings the melody remains recognizable with occasional departures; at high settings the departures become the norm and the original sequence is more of a seed than a literal content. Adjust PATH to change how the algorithm navigates through variation space; different PATH positions emphasize different types of departures from the base pattern.
 
-**Learning Objectives:**
-- **Organic fractal principles:** How natural LFO breathing transforms mathematical fractals into living musical sequences
-- **Multi-parameter organic control:** Using multiple Ochd outputs for coordinated fractal space exploration
-- **Sequence evolution:** Understanding how organic modulation creates natural progression through fractal sequence variations
-- **Living generative systems:** Creating fractal sequencers that breathe and evolve naturally over extended time periods
-
-**Alternative Organic Sources:**
-- **Instead of Ochd:** Try **Batumi** for more geometric organic fractal exploration, or **Quadrax** for discrete organic fractal steps
-- **Budget alternatives:** **2HP LFO** provides basic organic modulation for branch/path control
-- **Different character:** **Maths** gives mathematical organic relationships that complement Bloom's fractal algorithms
-
-### **Patch 6: Advanced - Chaos Fractal Mathematics**
-```
-┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
-│ Make Noise  │ │    4ms      │ │    Qu-Bit      │
-│    Maths    │ │   RCD v2    │ │    Bloom v1     │
-│(Functions)  │ │(Clock Div)  │ │ (Fractal Seq)   │
-│             │ │             │ │                 │
-│ Ch1 Out ○──┼─┼─Div1 In    │ │ Branch CV  ◀───┼── Mathematical CV
-│       ║     │ │       ○────┼─┼─Path CV        │
-│ Ch2 Out ○──┼─┼─Div2 In    │ │       ║         │
-│       ║     │ │       ○────┼─┼─Clock Input    │
-│ Ch3 Out ○──┼─┼─Div3 In    │ │                 │
-│       ║     │ │       ○────┼─┼─Mutation CV    │
-│ Ch4 Out ○──┼─┼─Div4 In    │ │                 │
-│       ║     │ │ 8x Out ○──┼─┼─External Clock  │
-│ Mathematical│ │ Polyrhythm  │ │ CH A CV    ○──┼─── Math Sequences [C]
-│ Functions   │ │ Generation  │ │ CH A Gate  ○──┼─── Fractal Gates [G]
-│ Complex     │ │ Multiple    │ │ CH B CV    ○──┼─── Harmonic Math [C]
-│ Processing  │ │ Clock Rates │ │ CH B Gate  ○──┼─── Rhythm Division [G]
-└─────────────┘ └─────────────┘ └─────────────────┘
-        ║               ║               ║
-        ▼               ▼               ▼
-┌────────────────────────────────────────────────────────────────┐
-│           Mathematical Fractal Generation System                │
-│                                                                │
-│ Function Generation + Clock Division + Fractal Sequencing     │
-│                                                                │
-│ Maths → Mathematical function generation + complex CV          │
-│ RCD → Polyrhythmic clock division + multiple timing rates     │
-│ Bloom → Fractal sequence generation + mathematical evolution   │
-│                                                                │
-│ Mathematical Fractal Workstation (28HP total)                │
-│                                                                │
-│ Complex Mathematical Sequences ○─────────────┼─── Output       │
-└────────────────────────────────────────────────────────────────┘
-```
-
-**Mathematical Fractal Integration:**
-
-| Module Integration | Signal Flow | Purpose | Mathematical Synergy |
-|-------------------|-------------|---------|----------------------|
-| **Maths Ch1 → RCD Div1** | Function CV | **Mathematical clock processing** | **Complex functions create sophisticated polyrhythmic relationships** |
-| **Maths Ch2 → RCD Div2** | Function CV | **Multi-rate processing** | **Function generation enhances clock division with mathematical curves** |
-| **RCD Multiple Outs → Bloom** | Clock divisions | **Polyrhythmic fractal control** | **Multiple clock rates create complex timing for fractal exploration** |
-| **Maths Ch3/4 → Bloom Control** | Mathematical CV | **Function-controlled fractals** | **Mathematical functions guide fractal sequence generation algorithms** |
-
-**Learning Objectives:**
-- **Mathematical fractal generation:** How function generators enhance fractal sequence algorithms with complex mathematical relationships
-- **Polyrhythmic fractal timing:** Using multiple clock divisions to create complex fractal sequence timing relationships
-- **Function-enhanced sequencing:** Understanding how mathematical functions guide fractal sequence evolution
-- **Complex generative systems:** Creating fractal sequencers that respond to sophisticated mathematical control
-
-**Alternative Mathematical Sources:**
-- **Instead of Maths:** Try **Befaco Rampage** for dual mathematical functions, or **Frap Tools 321** for precise mathematical control
-- **Clock alternatives:** **Pamela's New Workout** for algorithmic clock generation, or **Tempi** for clock manipulation
-- **Different approach:** **Turing Machine** for mathematical chaos combined with fractal generation
-
-### **Patch 7: Expert - Complete Generative Ecosystem**
-```
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
-│ Make Noise  │ │    4ms      │ │  Cre8audio  │ │    Qu-Bit      │
-│    Maths    │ │   RCD v2    │ │ Function    │ │    Bloom v1     │
-│(Functions)  │ │(Clock Div)  │ │ Junction    │ │ (Fractal Seq)   │
-│             │ │             │ │(Logic Ops)  │ │                 │
-│ Ch1 Out ○──┼─┼─Div1 In    │ │ Input A ◀──┼─┼─Branch CV       │
-│       ║     │ │       ○────┼─┼─Input B    │ │       ║         │
-│ Ch2 Out ○──┼─┼─Div2 In    │ │       ○────┼─┼─Path CV        │
-│       ║     │ │       ○────┼─┼─Input C    │ │       ║         │
-│ Ch3 Out ○──┼─┼─Div3 In    │ │ AND Out ○──┼─┼─Mutation CV    │
-│       ║     │ │       ○────┼─┼─Input D    │ │       ║         │
-│ Ch4 Out ○──┼─┼─Div4 In    │ │ OR Out  ○──┼─┼─Clock Input    │
-│       ║     │ │ 8x Out ○──┼─┼─Clock Ref  │ │       ║         │
-│ Mathematical│ │ Pattern ○──┼─┼─Pattern    │ │ CH A CV    ○──┼─── Complete Sequences [C]
-│ Functions   │ │ Reset  ○──┼─┼─Reset      │ │ CH A Gate  ○──┼─── Logic Gates [G]
-│ Complex     │ │ Polyrhythm  │ │ Logic      │ │ CH B CV    ○──┼─── Harmonic Evolution [C]
-│ Processing  │ │ Generation  │ │ Processing  │ │ CH B Gate  ○──┼─── Pattern Control [G]
-└─────────────┘ └─────────────┘ └─────────────┘ └─────────────────┘
-        ║               ║               ║               ║
-        ▼               ▼               ▼               ▼
-┌────────────────────────────────────────────────────────────────────┐
-│           Complete Generative Fractal Ecosystem                       │
-│                                                                        │
-│ Mathematical Functions + Clock Division + Logic Ops + Fractal Gen     │
-│                                                                        │
-│ Maths       → Mathematical function generation + complex processing    │
-│ RCD         → Polyrhythmic clock division + pattern generation        │
-│ Function Jct→ Logic operations + pattern control processing           │
-│ Bloom       → Fractal sequence generation + evolutionary core         │
-│                                                                        │
-│ Complete Generative Sequencing Workstation (40HP total)              │
-│                                                                        │
-│ Mathematical Fractal Evolution ○───────────────┼─── Complete Output   │
-└────────────────────────────────────────────────────────────────────┘
-```
-
-**Complete Generative Integration:**
-
-| Layer | Function | Bloom Role | Musical Result |
-|-------|----------|------------|----------------|
-| **Mathematical (Maths)** | Function generation | **Function-enhanced fractal control** | **Mathematical functions guide sophisticated fractal sequence evolution** |
-| **Rhythmic (RCD)** | Polyrhythmic division | **Multi-rate fractal timing** | **Multiple clock rates create complex timing relationships for fractal exploration** |
-| **Logic (Function Junction)** | Pattern control | **Logic-enhanced fractal decisions** | **Logic operations provide musical decision making for fractal sequence generation** |
-| **Generative (Bloom)** | Fractal sequencing | **Complete generative sequence brain** | **Advanced fractal generation with multi-layer mathematical enhancement** |
-
-**Complete System Design:**
-- **Maths as function engine:** Mathematical function generation provides complex CV for sophisticated fractal control and evolution
-- **RCD as rhythm processor:** Polyrhythmic clock division creates multiple timing rates for complex fractal sequence timing relationships
-- **Function Junction as logic brain:** Logic operations provide musical decision making and pattern control for fractal generation algorithms
-- **Bloom as generative core:** Fractal sequence generation enhanced by mathematical functions, polyrhythms, and logic for complete generative control
-- **Total ecosystem:** 40HP complete generative sequencing workstation combining mathematics, rhythm, logic, and fractal generation
-
-**Performance Applications:**
-1. **Mathematical fractal evolution:** Maths creates complex functions → RCD adds polyrhythmic timing → Function Junction adds logic → Bloom generates fractal sequences
-2. **Polyrhythmic fractal systems:** Multiple clock rates provide complex timing while logic operations create musical fractal decision making
-3. **Logic-enhanced generation:** Logic operations provide pattern control while mathematical functions guide fractal sequence evolution
-4. **Complete generative workstation:** Generate, evolve, control, and perform fractal sequences in single integrated generative system
-5. **Advanced fractal mastery:** Complete ecosystem creates generative fractal sequencing with mathematical enhancement and logic control
-
-**Why This Complete Ecosystem Works:**
-- **Leverages multi-function capabilities:** Each module serves multiple generative roles simultaneously for maximum fractal power
-- **Math + Rhythm + Logic:** Three different approaches enhance fractal generation with mathematical sophistication and musical control
-- **Fractal-centric design:** All control serves fractal sequence generation rather than competing with it
-- **Performance flexibility:** Logic operations allow real-time pattern control while functions provide mathematical fractal evolution
-- **Combinable with other guides:** Different approach from other guide ecosystems allows simultaneous generative system usage
-
-**Expert Generative Performance:**
-1. **Initialization:** Configure Maths functions, set RCD divisions, prepare Function Junction logic operations
-2. **Mathematical foundation:** Maths provides function generation → RCD adds polyrhythmic timing → Function Junction adds logic control
-3. **Logic fractal control:** Logic operations create pattern control while mathematical functions guide fractal sequence evolution algorithms
-4. **Generative performance:** Complete system generates sophisticated fractal sequences with mathematical enhancement and logic control
-5. **Fractal mastery:** Integrated ecosystem creates generative fractal sequencing with mathematical sophistication and performance control
-
-**Philosophical Achievement:**
-This represents **complete generative fractal mastery** - where mathematical function generation, polyrhythmic timing, and logic operations all serve fractal sequence algorithms, creating a complete workstation that bridges mathematical sophistication with musical fractal generation and performance control.
+**Result:** A single-voice melody that retains the harmonic logic of the original sequence while continuously evolving away from and returning to it. The algorithm produces variation that feels composed rather than random because it derives from the branch structure of the original sequence.
 
 ---
 
-## Common Use Cases
+### Patch 2: Dual Channel Polyrhythm
 
-**🌱 **Melodic Evolution:** Transform simple melodies into complex evolving sequences**
-**🥁 **Rhythmic Variation:** Create drum patterns that grow and change organically**
-**🎹 **Live Performance:** Real-time sequence manipulation with Branch and Path controls**
-**🌊 **Ambient Textures:** Slow evolution with high mutation for organic soundscapes**
-**🎵 **Compositional Tool:** Generate variations on musical ideas for inspiration**
-**🔄 **Polyrhythmic Sequences:** Two channels with different lengths create complex patterns**
-**📚 **Pattern Bank:** Store 8 complete sequence variations for recall**
-**⏰ **Tempo Flexibility:** Internal clock or external sync with smooth transitions**
+This patch uses both Bloom channels at different sequence lengths to create evolving polyrhythmic counterpoint between two voices.
+
+```
+[Clock] ──CLOCK──▶ BLOOM V1
+BLOOM CH A CV ──▶ [Oscillator 1 V/OCT]   (8-step sequence)
+BLOOM CH A GATE ──▶ [Envelope 1 GATE]
+BLOOM CH B CV ──▶ [Oscillator 2 V/OCT]   (5-step sequence)
+BLOOM CH B GATE ──▶ [Envelope 2 GATE]
+```
+
+**Setup:** Program an 8-step sequence on CH A and a 5-step sequence on CH B. Tune the two oscillators a perfect fourth or fifth apart for harmonic relationship. Set both channels to the same BRANCH position initially; adjust PATH slightly differently per channel if available.
+
+**Controls:** Run the clock and listen to the polyrhythmic interaction between the 8-step and 5-step sequences phasing in and out of alignment. The two channels run from the same clock but their different lengths create beat cycle lengths of 40 steps (8 × 5) before both realign. Increase BRANCH on both channels equally to introduce synchronized variation across the two voices. Try programming the two sequences to share a common root note or key center so their harmonic relationship remains coherent even as the variations diverge.
+
+**Result:** A two-voice polyrhythmic texture where both voices evolve simultaneously through related variations. The shared clock and BRANCH setting keeps the two voices evolving in a coordinated manner, while the different lengths ensure they are always at different points in their respective sequences.
+
+---
+
+### Patch 3: Gate-Only Drum Pattern Evolution
+
+This patch uses only the GATE outputs of both channels for percussive triggering with a slow LFO on the BRANCH input to produce drum patterns that evolve automatically.
+
+```
+[Clock] ──CLOCK──▶ BLOOM V1
+[Slow LFO] ──CV──▶ BRANCH CV Input
+BLOOM CH A GATE ──▶ [Kick / Primary Drum]
+BLOOM CH B GATE ──▶ [Snare / Secondary Drum]
+```
+
+**Setup:** Set CH A to an 8-step pattern with kick-appropriate gate placement. Set CH B to a 5-step or 7-step pattern for the secondary percussion voice. Connect a slow LFO (one cycle per 8 to 16 bars) to the BRANCH CV input. Ignore the CV outputs of both channels for this patch.
+
+**Controls:** As the LFO slowly sweeps the BRANCH value, the gate patterns evolve: some triggers appear, others disappear, and the rhythmic relationship between the two channels shifts. The LFO rate determines how quickly the pattern transforms; slower rates create the impression of a composed arrangement that changes gradually, while faster rates produce a pattern that seems to be exploring its own variation space. Try switching the LFO from a sine wave to a random stepped signal for less predictable pattern evolution.
+
+**Result:** A self-evolving two-voice drum pattern that changes continuously without any manual intervention. The underlying branch structure ensures that even as the patterns change, they retain an internal logic, as variations are derived from the seed sequence rather than generated randomly.
+
+---
+
+### Patch 4: Generative Melodic Voice with Marbles
+
+This patch uses Mutable Instruments Marbles to provide both timing and branch selection input to Bloom, creating a generative system where two modules share probabilistic control.
+
+```
+MARBLES t1 ──────────────▶ BLOOM CLOCK
+MARBLES X1 ──via attenuator──▶ BLOOM BRANCH CV
+BLOOM CH A CV ──────────▶ [Oscillator V/OCT]
+BLOOM CH A GATE ────────▶ [Envelope GATE]
+```
+
+**Setup:** Connect Marbles t1 to Bloom's CLOCK input. Connect Marbles X1 through an attenuator (set to modest level) to the BRANCH CV input. Route CH A CV and GATE to an oscillator and envelope respectively. Set Bloom's BRANCH at noon and MUTATION at a low setting.
+
+**Controls:** Marbles t1 provides rhythmically varied timing pulses rather than a steady metronome clock, which means Bloom's sequence timing is irregular in a musical way. The X1 voltage simultaneously varies the branch selection, so the pattern variation correlates with the timing variation. Adjust Marbles' DEJA VU toward repetition to anchor the melodic material to recognizable phrases; move it toward exploration to increase both timing and pitch variety. Adjust the attenuator on the BRANCH CV to control how much of the Marbles voltage range translates into branch variation.
+
+**Result:** A melodic voice that changes in both timing and content according to Marbles' internal probability model. Because Marbles produces musically coherent variation rather than pure randomness, the result feels guided rather than stochastic, as though a musician is making deliberate choices about when and how to vary the phrase.
 
 ---
 
@@ -370,95 +209,30 @@ Keep MUTATION below 50% for most applications. At 25 to 40%, you get recognizabl
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
-1. **Start with Bloom fundamentals:** Master fractal sequencing, branch/path navigation, and understand fractal sequence generation algorithms
-2. **Add organic fractal breathing:** Integrate DivKid Ochd for natural fractal evolution (see Ochd integration reference)
-3. **Include mathematical functions:** Add Make Noise Maths for function-enhanced fractal control (see Maths integration reference)
-4. **Add polyrhythmic timing:** Include 4ms RCD for complex fractal timing relationships (see RCD integration reference)
-5. **Include logic processing:** Add Function Junction for musical decision making in fractal generation (see Function Junction reference)
-6. **Complete the ecosystem:** Combine all elements for complete generative fractal sequencing workstation
+1. Work through the full BRANCH range methodically on a single programmed sequence before adding any modulation. Start with BRANCH fully counterclockwise and listen to the base sequence unmodified. Advance BRANCH slowly in small increments, pausing at each position to hear what the current branch selection sounds like. Note where the sequence first begins to vary, which notes are most stable, and which positions in the sequence are most affected by branching. Building this knowledge of your specific sequence's branch behavior is necessary before using BRANCH as a performance or modulation target.
 
-### **Cross-Module Learning Opportunities:**
-- **Bloom + Ochd:** Organic fractal evolution - learn how natural LFO breathing transforms mathematical fractals into living musical sequences
-- **Bloom + Maths:** Mathematical fractal generation - understand how function generators enhance fractal algorithms with complex mathematical relationships
-- **Bloom + RCD:** Polyrhythmic fractal timing - master multiple clock divisions for complex fractal sequence timing relationships
-- **Bloom + Function Junction:** Logic fractal processing - discover how logic operations create musical decision making for fractal generation algorithms
-- **All Phase 2 + Bloom:** Complete generative ecosystem - integrate organic breathing, mathematical functions, polyrhythmic timing, and logic for fractal mastery
+2. Investigate the BRANCH and PATH interaction. BRANCH determines how far along the fractal tree the algorithm reaches; PATH determines the direction of travel through that tree. With BRANCH set to a moderate fixed value, sweep PATH from fully counterclockwise to fully clockwise slowly and listen to how the variations change character. Different PATH positions emphasize different types of melodic departures from the seed. This two-dimensional space is the core of Bloom's expressivity and repays extended exploration on every new sequence you program.
 
-### **Skill Development Milestones:**
-- **Beginner:** Basic fractal sequencing mastery - understand branch/path navigation, mutation control, and fractal sequence generation
-- **Intermediate:** Organic fractal integration - use natural modulation sources to create breathing, evolving fractal sequences
-- **Advanced:** Mathematical fractal generation - balance function generators with fractal algorithms for sophisticated sequence evolution
-- **Expert:** Complete ecosystem design - orchestrate multi-layer generative fractal systems with mathematical enhancement and logic control
+3. Understand how scale locking affects BRANCH behavior. When a scale is active, note variations are constrained to the selected scale degrees. With scale locking off, branch departures can land on chromatic notes outside the seed sequence's key. Program the same sequence with scale locking on and off, set BRANCH to the same moderate position, and compare the character of the variations. Scale locking produces variations that feel harmonically related to the original; without it, chromatic departures create more dissonant, adventurous departures. Neither is always correct; the choice depends on the harmonic context of the patch.
 
-### **Advanced Generative Concepts:**
-- **Fractal sequence mathematics:** How mathematical functions enhance fractal algorithms to create sophisticated musical sequence evolution
-- **Polyrhythmic fractal timing:** Using multiple clock divisions to create complex timing relationships for fractal sequence exploration
-- **Logic-enhanced generation:** Mathematical decision making and pattern control for performance-oriented fractal sequence systems
-- **Cross-system fractal integration:** How Bloom serves as generative fractal brain for complete modular synthesis ecosystems
+4. Explore the channel A and channel B relationship when running the same sequence on both channels at different BRANCH settings. With both channels playing the same 8-step sequence but CH A at BRANCH 3 o'clock and CH B at BRANCH 9 o'clock, you hear two different degrees of variation on the same underlying material simultaneously. The more heavily varied channel provides a countermelody to the less varied one. Adjusting BRANCH on one channel while the other holds steady produces the perceptual effect of one voice becoming more or less exploratory relative to its partner.
 
-### **Performance Applications:**
-- **Live Fractal Control:** Real-time manipulation of branch, path, and mutation for dynamic fractal sequence performance
-- **Generative Fractal Systems:** Self-evolving mathematical sequences using function generators and logic for sophisticated fractal evolution
-- **Hybrid Generative Systems:** Integration with traditional sequencers while providing fractal sequence enhancement and variation
-- **Educational Tool:** Learning advanced generative concepts through hands-on experimentation with fractal sequence generation
+5. Program sequences that exploit the fractal branching rather than fighting it. Long, stepwise sequences with many adjacent semitones provide many closely related branches and produce smooth, continuously varying melodies. Sequences with large interval leaps produce more dramatic branch variations because adjacent branch positions are farther apart harmonically. Neither approach is better; the choice determines whether Bloom produces gentle evolution or more abrupt transformation. Understanding this relationship allows you to choose sequence design based on the kind of variation you want rather than accepting whatever the algorithm produces.
 
----
-
-## Next Steps
-
-1. **Master trunk programming first** - learn to input notes and gates confidently
-2. **Explore branches methodically** - try different branch positions with same sequence
-3. **Understand path behavior** - see how path changes the journey through variations
-4. **Experiment with mutation** - find your sweet spot between order and chaos
-5. **Try dual channels** - create polyrhythms and harmonic relationships
-6. **Practice pattern management** - build a library of interesting base sequences
-
-**Remember:** Bloom rewards musical input - boring sequences create boring variations, but interesting trunks bloom into magnificent trees!
+6. Use the BRANCH CV input with an envelope rather than only with a slow LFO. Triggering a short envelope into BRANCH CV on each note gate produces a rhythmically synchronized branch push: at the moment of each note, the branch value momentarily jumps before returning to the base setting. If the envelope is fast, the variation event is brief and the sequence snaps back to the base branch after each note. If the envelope is slow with a long release, successive notes accumulate branch distance before decaying back. This per-note branch envelope technique produces variation that is rhythmically coherent because it is triggered by the sequence's own gate output.
 
 ---
 
 ## Pairs Well With
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
-- **DivKid Ochd & Expander:** Natural organic modulation for branch, path, and mutation creates breathing fractal sequences that evolve naturally over time like living musical organisms
-- **Make Noise Maths:** Mathematical function generation provides complex CV for sophisticated fractal control and creates mathematical relationships that enhance fractal algorithms
-- **4ms RCD v2:** Polyrhythmic clock division creates multiple timing rates for complex fractal sequence timing relationships and polyrhythmic fractal exploration
-- **Cre8audio Function Junction:** Logic operations + pattern control processing creates musical decision making for fractal generation algorithms and logic-enhanced sequence evolution
-- **Mutable Marbles:** Musical randomness + bias control → Bloom for probability-enhanced fractal control with adaptive sequence learning circuits
-- **Cross-Phase 2 Integration:** Bloom serves as generative fractal sequencing core where mathematical functions, polyrhythmic timing, and logic operations all enhance fractal sequence generation for complete generative ecosystems
+**Mutable Instruments Marbles** addresses Bloom's two primary CV inputs from a single module: the t outputs supply clock and timing variation while the X outputs supply BRANCH and PATH modulation. Because Marbles produces internally correlated outputs rather than independent random voltages, the timing and variation control fed to Bloom share an underlying probabilistic relationship. The combined system produces generative material that feels guided by musical intention rather than statistical noise. Marbles' DEJA VU parameter offers global control over how repetitive or exploratory the shared output is, which translates directly into how much Bloom varies from its seed sequence.
 
-### **Perfect Partners for Beginners:**
-- **Quantizers (Scales, Quantermain):** Ensure musical results even with high mutation
-- **Clock Dividers (4ms SCM, Pamela's):** Create complex timing relationships between channels
-- **Envelope Generators (Maths, Function):** Shape the gates into proper musical envelopes
-- **VCAs (Veils, 2HP VCA):** Control dynamics and create expressive sequences
+**4ms RCD v2** provides multiple clock divisions from a single master clock, which allows Bloom's CLOCK input to be fed different rates during a performance. At a 16th-note clock rate, the sequence advances quickly and sounds melodic; at an 8th-note or quarter-note rate, the same sequence becomes slower and more legato, with BRANCH variations unfolding over longer timeframes. Switching Bloom's clock input between RCD divisions is a direct timbre-and-feel change that requires no reprogramming of the sequence.
 
-### **Next-Level Combinations:**
-- **Marbles:** Random CV to automate branch/path exploration for generative patches
-- **Ornament & Crime:** Advanced quantization and scale options V1 lacks
-- **Pressure Points:** Touch control of branch positions for expressive performance
-- **Clock multipliers:** Use different clock rates per channel for complex polyrhythms
+**Make Noise Maths** supplies function generation for BRANCH CV modulation with precise control over attack and decay shapes. A Maths channel configured as a fast attack, long decay envelope triggered by Bloom's own gate output creates a self-modulating system: each note event pushes BRANCH momentarily toward higher variation and then returns to the base setting at the rate of the decay. Longer Maths decay times accumulate variation across multiple notes; shorter times produce per-note branch excursions that reset quickly. The logarithmic and linear curve options in Maths change the feel of the branch push and return.
 
-### **Advanced Generative Integration:**
-- **Mathematical function sources (Maths, Rampage):** Complex CV for sophisticated fractal control and mathematical fractal relationships
-- **Polyrhythmic clock sources (RCD, Pamela's):** Multiple timing rates for complex fractal sequence timing and polyrhythmic exploration
-- **Logic processing modules (Function Junction, Burst):** Musical decision making for fractal generation algorithms and pattern control
-- **Cross-system fractal integration:** Bloom integrates with all synthesis systems while providing generative fractal sequencing core
-
-### **Advanced System Integration:**
-- **Complete generative workstations:** Bloom + multi-function modules create professional fractal sequence generation systems
-- **Mathematical fractal enhancement:** Function generators create sophisticated control while preserving musical fractal development
-- **Logic-enhanced generation:** Pattern control provides musical decision making for performance-oriented fractal systems
-- **Cross-system integration:** Bloom integrates with all synthesis systems while providing generative fractal sequencing core
+**Noise Engineering Numeric Repetitor** creates a rhythmically related trigger layer that complements Bloom's melodic output. With Bloom providing the melodic sequence and Numeric Repetitor providing mathematically derived percussion triggers from the same master clock, both modules are operating from shared timing sources with different generative logic. Patching one of Numeric Repetitor's PRODUCT outputs into Bloom's BRANCH CV input creates a cross-module feedback where drum hits influence melodic variation, linking rhythmic and harmonic evolution into a single system.
 
 ---
 
-
----
-
-**Bottom Line:** Bloom v1 isn't just a fractal sequencer - it's a **generative fractal sequencing brain** that transforms mathematical algorithms into living musical evolution through branch exploration and mutation algorithms. Every patch teaches you something new about how fractal sequence generation really works. As the **generative sequencing core of Phase 2 ecosystems**, it transforms mathematical functions, polyrhythmic timing, and logic operations into unified fractal sequence evolution that grows like a living musical organism.
-
----
-
-*Need the full technical manual? Visit qubitelectronix.com for complete documentation*
+*Bloom manual: [Qu-Bit Electronix](https://www.qubitelectronix.com)*

@@ -29,12 +29,9 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 
 # Confirmed Tier 3 from prior session review — skip re-triage, mark directly
-CONFIRMED_TIER_3 = {
-    "rossum_electro_music_mob_of_emus_guide.md",
-    "mutable_rings_guide.md",
-    "mutable_plaits_guide.md",
-    "make_noise_pressure_points_guide.md",
-}
+# NOTE: Cleared 2026-04-28 — all four previously confirmed guides have been
+# fully rebuilt to current spec. Let the script evaluate them fresh.
+CONFIRMED_TIER_3 = {}
 
 NON_GUIDE_FILES = {
     "README.md",
