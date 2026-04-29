@@ -84,7 +84,7 @@ historical_context: false
 
 ---
 
-## Why Squarp Hermod+ Excels
+## Why This Excels
 
 Hermod+ solves the integration problem that becomes urgent as a modular system grows beyond a few voices. A larger system produces more CV signals, more gate streams, more MIDI devices, and more timing relationships than any single brain can coordinate through manual patching alone. Hermod+ is designed specifically for this coordination role: it holds 16 independent tracks, handles both CV and MIDI on the same timeline, records at 96 pulses per quarter note, and provides an effects chain that processes recorded content in real time. Each of these capabilities addresses a specific coordination failure mode in a mature patch.
 
