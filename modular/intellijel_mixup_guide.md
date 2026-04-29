@@ -39,8 +39,8 @@ historical_context: false
 | Spec | Value |
 |------|-------|
 | Width | 6HP |
-| Depth | ⚠️ Verify against official documentation |
-| Power | ⚠️ Verify against official documentation |
+| Depth | 29mm |
+| Power | 15mA +12V, 16mA -12V, 0mA 5V |
 | Channel 1 | Mono input, attenuator, mute switch |
 | Channel 2 | Mono input, attenuator, mute switch |
 | Channel 3 | Stereo input, shared attenuator, shared mute switch |

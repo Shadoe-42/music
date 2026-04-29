@@ -7,7 +7,7 @@ form_factor: eurorack
 functions: [complex-oscillator]
 behavior_tags: [harmonic, warm, nonlinear, evolving, performance-oriented]
 use_cases: [lead voice, complex harmonic texture, bass voice, chord voice]
-hp: 20
+hp: 26
 ---
 
 # Instruo Cs-L
@@ -49,9 +49,9 @@ The WAVEFOLD fader transforms the sine wave into progressively richer harmonic c
 
 | Parameter | Value |
 |-----------|-------|
-| Width | 20HP |
-| Depth | ⚠️ verify before ordering |
-| Power | ⚠️ verify before ordering |
+| Width | 26HP |
+| Depth | 42mm |
+| Power | 200mA +12V, 80mA -12V, 0mA 5V |
 | OSC A core | Sawtooth |
 | OSC B core | Triangle |
 | Outputs | OSC A FINAL, OSC B FINAL, Multiply Out |
@@ -236,7 +236,7 @@ Complex oscillators with simultaneous FM, wavefolding, and active INDEX routings
 
 **Cre8audio Function Junction** provides the envelope and function generator capabilities that bring dynamic harmonic evolution to a Cs-L patch. Routing a Function Junction output to a WAVEFOLD CV input means every note trigger can sweep through a range of harmonic densities automatically, from clean sine through complex harmonics at peak and back down through decay. The logarithmic and exponential curve options translate directly into different fold character changes over time.
 
-**Winterbloom Castor and Pollux II** contributes slow, independent LFO modulation well suited to continuously shifting the Cs-L's wavefold and symmetry parameters over long time scales. In LFO mode with its two channels running at slightly different rates, C&P II produces gentle beating between two modulation streams. Routing these to OSC A and OSC B WAVEFOLD CV inputs respectively creates a continuously evolving harmonic texture where neither oscillator sits still; the fold depths drift in and out of phase with each other over the course of a long patch.
+**Steady State Fate Steady State Gate Stereo Field** is the natural downstream destination for the Cs-L in a West Coast voice: a stereo low-pass gate that provides the pluck-style dynamics the Buchla tradition pairs with complex oscillators. Patching a Cs-L FINAL output into the SSGSF's EXCITE input produces a short conditioned pluck on each trigger, with the FREQ and DECAY sliders working together to set how quickly the filter opens and how long it stays open. The SSGSF's TIMBRE FOLD mode adds a second stage of wavefolding downstream of the Cs-L's own wavefolders, and the two stages interact differently depending on where each is set; the Cs-L generates harmonics at the source and the SSGSF reshapes them further. The FIELD control places the processed mono signal in the stereo field using psychoacoustic positioning without requiring a second oscillator or a dedicated panner, which makes the Cs-L's single output occupy a defined position in a mix rather than sitting dead center by default.
 
 ---
 
