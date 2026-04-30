@@ -10,649 +10,215 @@ use_cases: [timbral movement and shaping, dirty filter character, lead voice whe
 hp: 8
 ---
 
-# Doepfer A-124 Wasp SE - Guide
+# Doepfer A-124 Wasp SE
 
-**The Aggressive Ladder Filter Beast**
+**CMOS Filter with Self-Oscillation**
+
+![Doepfer A124 Wasp SE](https://github.com/Shadoe-42/music/raw/main/modular/images/doepfer/a_124_wasp_se/front_panel.jpg)  
+*Doepfer A-124 Wasp SE: recreation of the Electronic Dream Plant Wasp filter circuit, 8HP*
 
 ---
 
 ## Historical Context
 
-**The Electronic Dream Plant Legacy:** The Doepfer A-124 Wasp SE recreates the legendary filter circuit from the Electronic Dream Plant Wasp synthesizer - a British monophonic analog synthesizer that defined aggressive electronic music in the early 1980s. The Wasp's distinctive ladder filter became synonymous with biting acid basslines and screaming leads that cut through dense mixes.
+Chris Huggett and Nick Eastwood founded Electronic Dream Plant in England in the mid-1970s and released the EDP Wasp synthesizer in 1978 at a retail price of approximately £199. That price point was considerably lower than competing instruments of the era, and the cost reduction came from an unconventional design choice: where analog synthesizers of the time used precision components (Curtis or SSM filter chips, or discrete transistor ladder circuits), the Wasp used CMOS digital logic chips, specifically 4007 series inverters, operated at the edge of their linear region to function as voltage-controlled filter elements. The filter was not a ladder filter. It was a CMOS filter, and the distinction matters because everything distinctive about its sound comes directly from that topology.
 
-**Aggressive Design Philosophy:** Unlike filters designed for smooth, musical response, the Wasp filter was intentionally aggressive - featuring dramatic self-oscillation, input-level sensitivity, and a characteristic "bite" that made sounds jump out of speakers. This aggressive character made it essential in acid house, industrial music, and aggressive electronic genres.
+CMOS inverters are not precision linear devices. They clip asymmetrically, they saturate at relatively low voltage levels, and their behavior changes nonlinearly with input signal level. Running them in a filter application produces a circuit that colors audio in ways that precision linear components are specifically designed to avoid: odd-order harmonics from asymmetric clipping, saturation that adds grit and density at higher input levels, and self-oscillation with an irregular character that sits between a pure sine and something rougher. The Wasp's sonic identity was not designed in; it emerged from the imprecision of components doing something they were not engineered to do. This is a meaningful distinction from distortion circuits or analog saturation stages that are deliberately designed to add harmonic content. The Wasp filter adds character as a byproduct of its architecture.
 
-**Cultural Impact:** The Wasp filter's wild self-oscillation and aggressive resonance became the foundation for countless acid house tracks and aggressive electronic music. Its ability to transform simple waveforms into screaming, biting textures influenced entire genres and established the template for "character over politeness" in filter design.
+Chris Huggett went on to co-design the OSCar synthesizer (1983) for the Oxford Synthesiser Company, another British instrument that became highly regarded. The Wasp itself was affordable enough that it reached musicians who could not access more expensive instruments, and the filter's character became part of a particular strand of British electronic music production across the late 1970s and 1980s.
 
----
-
-## Quick Start: Get Your First Aggressive Filter Sweep in 5 Minutes
-
-![Doepfer A124 Wasp SE](https://github.com/Shadoe-42/music/raw/main/modular/images/doepfer/a_124_wasp_se/front_panel.jpg)  
-*Doepfer A124 Wasp SE - Front panel showing aggressive filter controls with Cutoff, Resonance, and CV inputs*
-
-**What is Wasp SE?** A recreation of the legendary Wasp filter from the Electronic Dream Plant Wasp synthesizer - famous for its aggressive, biting character and wild self-oscillation. Unlike gentle filters, the Wasp SE is designed to bite, scream, and add serious attitude to your sounds.
-
-**Key Specifications:**
-- **Width:** 8HP
-- **Depth:** 30mm
-- **Power:** +12V: 30mA, -12V: 10mA, +5V: 0mA
-- **Architecture:** Aggressive ladder filter circuit with self-oscillation capability
-- **Cutoff Range:** 20Hz to 20kHz (full audio spectrum)
-- **Output:** Bipolar ±5V, tracks 1V/octave for self-oscillation
-- **Character:** Deliberately aggressive, emphasizing bite and character over transparency
-
-### Your First Wasp Bite
-1. **Connect Audio Input** → patch an oscillator or audio source to the Wasp SE audio input
-2. **Connect Audio Output** → patch Wasp SE output to your VCA or mixer
-3. **Turn Cutoff to 12 o'clock** - start with medium frequency
-4. **Slowly turn Resonance clockwise** - hear the filter get more aggressive and eventually self-oscillate
-5. **Sweep Cutoff while Resonance is high** - experience the classic Wasp filter scream!
-
-**Congratulations!** You've just tasted the aggressive character that made the Wasp filter legendary!
+Doepfer Musikelektronik, the German company responsible for establishing the Eurorack format in 1995, produced the A-124 as a faithful circuit recreation of the EDP Wasp filter topology. Dieter Doepfer's approach to the Eurorack format was rooted in affordability and accessibility, the same design philosophy that produced the original Wasp, and the A-124 preserves the CMOS nonlinearity of the original circuit rather than substituting a cleaner or more conventional filter design. The module sounds like the original because it uses the same fundamental circuit approach.
 
 ---
 
-## Essential Parameters (The Aggression Controls)
+## Quick Start
 
-### **1. CUTOFF FREQUENCY**
-- **What it does:** Sets the filter's cutoff frequency (where frequencies start getting attenuated)
-- **Range:** 20Hz to 20kHz - full audio spectrum coverage
-- **Character:** Smooth sweep from dark/muffled to bright/open
-- **CV controllable:** Yes - 1V/octave standard for musical filter tracking
-- **Pro tip:** The Wasp SE tracks pitch excellently, making it perfect for filter melodies
+**What is the Wasp SE?** A recreation of the EDP Wasp's CMOS filter circuit: nonlinear, dirty-sounding, and capable of self-oscillation at high resonance. It does not aim for transparency; it adds character to whatever passes through it.
 
-### **2. RESONANCE (Q)**
-- **What it does:** Controls how much the filter emphasizes frequencies around the cutoff
-- **Range:** From gentle emphasis to wild self-oscillation
-- **Character:** The Wasp's signature aggressive bite comes from high resonance settings
-- **Sweet spots:**
-  - **Low (7-9 o'clock):** Gentle filtering, maintains musicality
-  - **Medium (10-1 o'clock):** Classic filter emphasis without self-oscillation  
-  - **High (2-5 o'clock):** Aggressive character and self-oscillation
-- **CV controllable:** Yes - perfect for dynamic resonance sweeps
-- **Pro tip:** Unlike some filters, the Wasp maintains its aggressive character even at moderate resonance
+### Your First Wasp Sound
 
-### **3. DRIVE/INPUT LEVEL**
-- **What it does:** Controls how hard you're driving the filter circuit
-- **Character:** Higher drive adds saturation and makes the filter more aggressive
-- **Musical use:** Use moderate drive for warmth, high drive for distortion and bite
-- **CV controllable:** Yes - for dynamic drive modulation
-- **Pro tip:** The Wasp SE responds dramatically to input level changes
-
-### **4. CV INPUTS**
-- **Cutoff CV:** 1V/octave tracking plus additional CV inputs for modulation
-- **Resonance CV:** Dynamic resonance control for filter sweeps
-- **Drive CV:** Real-time drive modulation
-- **Multiple inputs:** Sum multiple CV sources for complex modulation
-
-### **5. SELF-OSCILLATION**
-- **What it does:** At high resonance, the filter becomes an oscillator
-- **Character:** Pure sine wave oscillation that tracks 1V/octave
-- **Musical use:** Use as an additional oscillator or for aggressive filter effects
-- **Performance tip:** The self-oscillation can be "played" via cutoff CV like a VCO
+1. Connect an oscillator or audio source to the audio input
+2. Connect the audio output to a VCA or mixer
+3. Set Cutoff to noon
+4. Slowly advance Resonance clockwise; the filter becomes more aggressive and eventually self-oscillates
+5. Sweep Cutoff while Resonance is high to hear the classic Wasp character
 
 ---
 
-## Understanding Wasp Filter Character
+## Key Specifications
 
-### **What Makes Wasp SE Special:**
-The Wasp filter isn't trying to be smooth or polite - it's designed to add **character, aggression, and bite** to your sounds. Where other filters aim for transparency, the Wasp SE aims for **personality**.
-
-### **The Wasp Philosophy:**
-- **Aggressive by design:** Even moderate settings add character and bite
-- **Self-oscillation as feature:** Wild, screaming self-oscillation is part of the appeal
-- **Input sensitivity:** Responds dramatically to input level and drive changes
-- **Musical tracking:** 1V/octave tracking makes it useful as both filter and oscillator
-
-### **Classic Wasp Applications:**
-- **Aggressive bass lines:** The bite that cuts through dense mixes
-- **Lead synthesis:** Screaming, aggressive lead tones
-- **Percussion processing:** Adding snap and attack to drums
-- **Self-oscillating melodies:** Using the filter as a sine wave oscillator
-- **Sound design:** Creating aggressive, biting textures
-
-### **Why This Matters:**
-The Wasp SE brings the character of classic British synth design into the modular world - sounds that defined aggressive electronic music, acid house, and industrial genres.
-
+| Parameter | Value |
+|-----------|-------|
+| Width | 8HP |
+| Depth | 30mm |
+| Power | 30mA +12V, 10mA -12V, 0mA 5V |
+| Filter topology | CMOS inverter-based (not ladder) |
+| Cutoff range | 20Hz to 20kHz |
+| Self-oscillation | Yes; tracks 1V/octave for melodic use |
+| CV inputs | Cutoff CV (two inputs with attenuators); Resonance CV |
+| Audio output | Approximately ±5V |
 
 ---
 
-## Why This Instrument Excels
+## Essential Parameters
 
-### **The Philosophy:**
-**Aggressive character over polite filtering.** The Wasp SE doesn't try to be transparent or gentle - it celebrates the **bite, aggression, and character** that made the original Wasp filter legendary in aggressive electronic music.
+The Cutoff knob sets the frequency at which the filter begins attenuating audio. Below the cutoff, frequencies pass through with minimal attenuation; above it, frequencies are progressively reduced. The full range covers the audible spectrum from 20Hz to 20kHz. The CMOS topology means the filter is not neutral at any setting: even with cutoff fully open, the circuit imparts a subtle color on the signal rather than passing it transparently.
 
-### **The Innovation:**
-- **Legendary circuit recreation:** Faithful reproduction of the classic Electronic Dream Plant Wasp filter
-- **Aggressive by design:** Every setting adds character and bite to your sounds
-- **Musical self-oscillation:** 1V/octave tracking makes self-oscillation useful as an oscillator
-- **Dynamic response:** Reacts dramatically to input levels and drive settings
+Resonance controls the amount of emphasis applied to frequencies near the cutoff point. At low settings, the filter adds a mild presence peak around the cutoff. As resonance increases, the peak becomes more pronounced and the filter character becomes increasingly aggressive. At high resonance settings, the filter enters self-oscillation: it begins generating its own tone at the cutoff frequency without any input audio needed. This self-oscillating tone tracks pitch via the 1V/octave input, making the filter usable as a sine-wave oscillator. The self-oscillation character of the Wasp is not a clean sine; the CMOS topology gives it a slight roughness that distinguishes it from oscillator-based sine generation.
 
-### **The Practical Benefits:**
-- **Instant character:** Even subtle settings add personality and aggression
-- **Dual functionality:** Works as both aggressive filter and sine wave oscillator
-- **Musical tracking:** Self-oscillation tracks pitch accurately for melodic use
-- **Performance-oriented:** Responds dramatically to real-time control
+The Level control sets how hard the audio signal drives the filter input. Because the CMOS inverters saturate at relatively low voltages, input level is not a passive gain control; it directly shapes how the filter clips and saturates. At low input levels, the filter applies relatively clean (by Wasp standards) frequency shaping. As the input level increases, the CMOS clipping becomes more prominent, adding harmonic content and grit that compounds with the filter's existing character. Hot signals drive the CMOS chips into saturation earlier in the signal path, producing a denser, more distorted texture. This input-level sensitivity is a deliberate feature of the original circuit and an important performance variable.
 
-### **Perfect For:**
-- **Electronic music producers:** Essential for acid, techno, and aggressive electronic styles
-- **Bass synthesists:** The bite that cuts through dense mixes
-- **Lead synthesists:** Screaming, aggressive lead tones
-- **Sound designers:** Adding character and aggression to any audio source
-- **Performance players:** Dramatic response to real-time control
-
-### **The Magic:**
-Wasp SE proves that **character trumps politeness** in filter design. The intentional aggression, dramatic response, and wild self-oscillation create sounds that grab attention and add serious attitude to your music.
-
-### **Historical Significance:**
-This module preserves the sound of the legendary **Electronic Dream Plant Wasp synthesizer** - an instrument that defined aggressive electronic music, acid house, and industrial sounds throughout the 1980s and beyond.
-
+The two Cutoff CV inputs each have their own attenuator knob. Both sum into the cutoff frequency, so multiple modulation sources can be applied simultaneously at individually set amounts. The Resonance CV input accepts external voltage to modulate resonance amount dynamically.
 
 ---
 
----
+## Why Wasp SE Excels
 
-## Beginner Patch Ideas
+The central argument for the Wasp SE is its topology. Most filters in Eurorack are designed to be transparent at neutral settings and to add controlled, predictable character when pushed. The Wasp SE does not have a neutral setting. The CMOS inverter circuit colors the signal at every point in the control range, which means there is no "clean" version of the Wasp sound and no need to push it into extremes to get character. A moderate cutoff with moderate resonance and moderate drive produces an immediately identifiable texture. The Wasp SE earns its place in a system not as a general-purpose filter that can do everything, but as a character filter with a specific sonic identity that is available at all times and not just at extremes.
 
-### **Patch 1: Classic Aggressive Bass**
-```
-┌─────────────┐    ┌──────────────┐    ┌─────────────┐
-│ Oscillator  │───▶│ Wasp SE A-124│───▶│     VCA     │
-│ (Sawtooth)  │    │  Audio In    │    │   Audio In  │
-└─────────────┘    │              │    └─────────────┘
-                   │ Cutoff: 10   │           │
-┌─────────────┐    │ o'clock      │           ▼
-│ Envelope    │───▶│              │    ┌─────────────┐
-│ Generator   │    │ Cutoff CV    │───▶│   Output    │
-└─────────────┘    │              │    │             │
-                   │ Resonance:   │    └─────────────┘
-                   │ 1 o'clock    │
-                   └──────────────┘
-```
+Self-oscillation on the Wasp SE is a usable sound source, not a byproduct to be avoided. At high resonance with no audio input, the filter generates a tone at the cutoff frequency that responds to 1V/octave pitch voltage, which allows it to function as a second voice or a doubling oscillator with a different timbral character than a conventional VCO. The self-oscillating tone has the CMOS roughness of the filter topology: it is not a pure sine but something between a sine and a slightly saturated waveform. For melodic lines that benefit from that texture, including acid basslines, filter-lead material, and simple one-note sequences, the self-oscillating Wasp is a practical sound source independent of any oscillator module.
 
-| Connection | Cable Type | Purpose | Learning Objective |
-|------------|------------|---------|-------------------|
-| Oscillator → Wasp Audio In | [A] | **Rich harmonics for aggressive filtering** | **Experience ladder filter aggression** |
-| Envelope → Wasp Cutoff CV | [C] | **Classic filter modulation** | **Learn filter sweep dynamics** |
-| Wasp Out → VCA Audio In | [A] | **Filtered aggressive bass output** | **Understand Wasp character impact** |
+The input level sensitivity creates a performance variable that most filters do not offer in the same direct form. Because the CMOS chips saturate at relatively low voltages, driving the input harder does not simply make the output louder; it changes the degree of saturation and therefore the harmonic content and character of the filtered signal. This makes the Level control a timbral shaping tool as much as a gain control. Patching a VCA before the Wasp input and controlling that VCA with an envelope or LFO produces dynamic timbral evolution through input-level modulation rather than through cutoff or resonance movement. The three modulation axes (cutoff, resonance, and input level) are meaningfully different in character from each other, which means the Wasp SE responds to complex modulation in ways that produce genuinely varied sonic results rather than multiple versions of the same filter sweep.
 
-**Module Settings:**
-- **Oscillator:** Sawtooth wave for rich harmonics
-- **Wasp Cutoff:** 10 o'clock starting position
-- **Wasp Resonance:** 1 o'clock for moderate aggression
-- **Envelope:** Fast attack, medium decay, sustain, medium release
-- **Result:** Classic aggressive bass with Wasp bite
-
-**Alternative Module Options:**
-- **Budget:** **Doepfer A-121 VCF** (classic 2-pole), **2HP VCF** (compact)
-- **Different character:** **Make Noise Moogladder** (Moog filter), **Intellijel Morgasmatron** (stereo filter)
-- **Premium:** **Mordax Beads** (spectral filtering), **Expert Sleepers Disting mk4** (multi-algorithm)
-
-### **Patch 2: Self-Oscillating Filter Lead**
-```
-┌─────────────┐    ┌──────────────┐    ┌─────────────┐
-│ Sequencer   │───▶│ Wasp SE A-124│───▶│   Effects   │
-│ 1V/Oct CV   │    │ Cutoff CV    │    │ Processing  │
-└─────────────┘    │              │    └─────────────┘
-                   │ Resonance:   │           │
-┌─────────────┐    │ 4 o'clock    │           ▼
-│     LFO     │───▶│ (Self-Osc)   │    ┌─────────────┐
-│ (Slow Rate) │    │              │───▶│   Output    │
-└─────────────┘    │ Resonance CV │    │             │
-                   │              │    └─────────────┘
-                   │ No Audio In  │
-                   └──────────────┘
-```
-
-| Connection | Cable Type | Purpose | Learning Objective |
-|------------|------------|---------|-------------------|
-| Sequencer → Wasp Cutoff CV | [C] | **Melodic self-oscillation control** | **Experience filter as oscillator** |
-| LFO → Wasp Resonance CV | [C] | **Dynamic aggression modulation** | **Learn resonance sweep dynamics** |
-| Wasp Out → Effects | [A] | **Pure sine wave self-oscillation** | **Understand self-oscillation musicality** |
-
-**Module Settings:**
-- **Wasp Resonance:** 4 o'clock for strong self-oscillation
-- **No audio input:** Filter acts as sine wave oscillator
-- **Sequencer:** Melodic CV sequence for filter "melody"
-- **LFO:** Slow rate for resonance sweeps
-- **Result:** Melodic sine wave lead with dynamic aggression
-
-**Alternative Module Options:**
-- **Budget:** **Doepfer A-111-2 VCO** (basic VCO), **2HP OSC** (compact oscillation)
-- **Different character:** **Make Noise STO** (complex analog), **Intellijel Rubicon** (complex waveforms)
-- **Premium:** **Mutable Plaits** (varied synthesis), **Expert Sleepers Disting mk4** (multi-algorithm)
-
-### **Patch 3: Aggressive Drum Processing**
-```
-┌─────────────┐    ┌──────────────┐    ┌─────────────┐
-│ Drum Source │───▶│ Wasp SE A-124│───▶│ Drum Output │
-│ (Kick/Snare)│    │  Audio In    │    │             │
-└─────────────┘    │              │    └─────────────┘
-                   │ Cutoff: 2    │
-┌─────────────┐    │ o'clock      │
-│ Trigger     │───▶│              │
-│ (Drum Gate) │    │ Cutoff CV    │
-└─────────────┘    │              │
-                   │ Resonance:   │
-                   │ 2 o'clock    │
-                   │              │
-                   │ Drive: High  │
-                   └──────────────┘
-```
-
-| Connection | Cable Type | Purpose | Learning Objective |
-|------------|------------|---------|-------------------|
-| Drum Source → Wasp Audio In | [A] | **Drum signal processing** | **Experience aggressive filter character** |
-| Trigger → Wasp Cutoff CV | [G] | **Gate-controlled filter sweep** | **Learn trigger-based modulation** |
-| Wasp Out → Drum Output | [A] | **Aggressive processed drums** | **Understand filter aggression impact** |
-
-**Module Settings:**
-- **Wasp Cutoff:** 2 o'clock for bright starting point
-- **Wasp Resonance:** 2 o'clock for aggressive character
-- **Drive:** High for saturation and punch
-- **Result:** Drums with serious bite, snap, and aggression
-
-**Alternative Module Options:**
-- **Budget:** **Doepfer A-121 VCF** (classic filter), **2HP VCF** (compact filtering)
-- **Different character:** **Make Noise Moogladder** (Moog character), **Intellijel Morgasmatron** (stereo filtering)
-- **Premium:** **Mordax Beads** (spectral processing), **Expert Sleepers Disting mk4** (multi-algorithm)
-
-### **Patch 4: Data-Driven Filter Analysis**
-```
-┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
-│ Oscillator  │ │   Mordax    │ │ Wasp SE A-124   │
-│ (Complex)   │ │    Data     │ │  (Aggressive    │
-│             │ │(Analysis)   │ │   Filter)       │
-│             │ │             │ │                 │
-│ Audio Out ○─┼─┼─Input A     │ │                 │
-│       ║     │ │       ○─────┼─┼─Audio In        │
-│ Copy to ────┼─┼─Input B     │ │       ║         │
-│ Wasp    ║   │ │ RMS Out ○───┼─┼─Cutoff CV      │
-│         ║   │ │       ║     │ │       ║         │
-│ Envelope○───┼─┼─Input C     │ │ Drive CV ◀──────┼── From Envelope
-│       ║     │ │ Peak Out○───┼─┼─Resonance CV   │
-│ Complex     │ │ Visual      │ │       ║         │
-│ Audio       │ │ Analysis    │ │                 │
-│ Source      │ │ Real-Time   │ │ Cutoff: Manual  │
-│             │ │ Monitoring  │ │ Control         │
-│             │ │             │ │                 │
-│             │ │             │ │ Audio Out ○─────┼─── Data-Driven Filter (Red)
-│             │ │             │ │ Visual Analysis │
-└─────────────┘ └─────────────┘ └─────────────────┘
-        ║               ║               ║
-        ▼               ▼               ▼
-┌────────────────────────────────────────────────────────────┐
-│         Data-Driven Aggressive Filter System              │
-│                                                            │
-│ Audio Analysis + Visual Monitoring + Filter Processing    │
-│                                                            │
-│ Oscillator → Complex audio source for analysis            │
-│ Data → Real-time audio analysis + visual feedback         │
-│ Wasp → Aggressive filter processing + character           │
-│                                                            │
-│ Analytical Filter Workstation (36HP total)               │
-│                                                            │
-│ Data-Enhanced Aggressive Filtering ○───────┼─── Output     │
-└────────────────────────────────────────────────────────────┘
-```
-
-**Data-Driven Filter Analysis Integration:**
-
-| Module Integration | Signal Flow | Purpose | Advanced Synergy |
-| **Oscillator → Data Input A** | Complex audio | **Real-time analysis** | **Data provides visual feedback of audio content before filtering** |
-| **Data RMS → Wasp Cutoff** | Analysis CV | **Content-responsive filtering** | **RMS level automatically adjusts filter cutoff based on audio intensity** |
-| **Data Peak → Wasp Resonance** | Peak detection | **Dynamic aggression** | **Peak detection drives filter aggression based on audio transients** |
-| **Wasp Aggressive Processing** | Filtered audio | **Character-enhanced output** | **Wasp adds aggressive character to content-analyzed audio** |
-
-**Learning Objectives:**
-- **Data-driven filtering:** How audio analysis can inform and control filter behavior automatically
-- **Visual filter feedback:** Understanding filter effects through real-time oscilloscope analysis
-- **Content-responsive processing:** Creating filters that respond intelligently to audio content
-- **Analytical sound design:** Using measurement tools to enhance creative filter processing
-
-**Alternative Analysis Sources:**
-- **Instead of Data:** Try **basic oscilloscope** for visual feedback, or **envelope follower** for simpler content response
-- **Budget approach:** **Simple envelope follower** can provide basic content-responsive filtering
-- **Different analysis:** **Frequency analyzer** for spectral-based filter control
-
-### **Patch 5: Probabilistic Filter Evolution**
-```
-┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
-│ Oscillator  │ │   Mutable   │ │ Wasp SE A-124   │
-│ (Audio Src) │ │   Marbles   │ │  (Aggressive    │
-│             │ │(Probability) │ │   Filter)       │
-│             │ │             │ │                 │
-│ Audio Out ○─┼─┼─────────────┼─┼─Audio In        │
-│       ║     │ │ X1 Out  ○───┼─┼─Cutoff CV      │
-│ Rich        │ │       ║     │ │       ║         │
-│ Harmonics   │ │ X2 Out  ○───┼─┼─Resonance CV   │
-│ for         │ │       ║     │ │       ║         │
-│ Filtering   │ │ X3 Out  ○───┼─┼─Drive CV       │
-│             │ │       ║     │ │                 │
-│             │ │ t1 Gate ○───┼─┼─Gate Input     │
-│             │ │ Probability │ │ (Optional)      │
-│             │ │ Pattern     │ │                 │
-│             │ │ Generator   │ │ Rate: Manual    │
-│             │ │             │ │ Bias: Manual    │
-│             │ │             │ │                 │
-│             │ │             │ │ Audio Out ○─────┼─── Probabilistic Filter (Red)
-│             │ │             │ │ Evolving        │
-│             │ │             │ │ Character       │
-└─────────────┘ └─────────────┘ └─────────────────┘
-        ║               ║               ║
-        ▼               ▼               ▼
-┌────────────────────────────────────────────────────────────┐
-│       Probabilistic Aggressive Filter System              │
-│                                                            │
-│ Probability Patterns + Learning Circuits + Filter Character│
-│                                                            │
-│ Oscillator → Rich harmonic source for probability filtering│
-│ Marbles → Probability-based pattern generation + learning  │
-│ Wasp → Aggressive filter character + probability control   │
-│                                                            │
-│ Probabilistic Filter Workstation (32HP total)            │
-│                                                            │
-│ Probability-Enhanced Aggressive Filtering ○───┼─── Output   │
-└────────────────────────────────────────────────────────────┘
-```
-
-**Probabilistic Filter Evolution Integration:**
-
-| Module Integration | Signal Flow | Purpose | Advanced Synergy |
-| **Marbles X1 → Wasp Cutoff** | Probability CV | **Evolving filter frequency** | **Probability patterns create naturally evolving filter cutoff changes** |
-| **Marbles X2 → Wasp Resonance** | Probability CV | **Dynamic aggression** | **Correlated probability controls filter aggression with musical relationships** |
-| **Marbles X3 → Wasp Drive** | Probability CV | **Evolving saturation** | **Probability-based drive changes create dynamic filter character evolution** |
-| **Wasp Aggressive Character** | Filtered output | **Probability-enhanced filtering** | **Aggressive filter character enhanced by evolving probability-based control** |
-
-**Learning Objectives:**
-- **Probabilistic filtering:** How probability-based patterns create naturally evolving filter behavior
-- **Correlated filter control:** Understanding relationships between cutoff, resonance, and drive modulation
-- **Learning filter circuits:** Using Marbles' learning capabilities for intelligent filter evolution
-- **Musical probability:** Creating filter patterns that evolve musically over time
-
-**Alternative Probability Sources:**
-- **Instead of Marbles:** Try **Turing Machine** for binary probability patterns, or **Wogglebug** for chaotic probability
-- **Budget alternatives:** **2HP Rnd** for basic random filter modulation
-- **Different approach:** **Pamela's New Workout** for algorithmic probability patterns
-
-### **Patch 6: Complete Multi-Function Aggressive Filter Ecosystem**
-```
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
-│ Oscillator  │ │   Mutable   │ │  Cre8audio  │ │ Wasp SE A-124   │
-│ (Audio Src) │ │   Marbles   │ │ Function    │ │  (Aggressive    │
-│             │ │(Probability) │ │ Junction    │ │   Filter)       │
-│             │ │             │ │(Processing) │ │                 │
-│ Audio Out ○─┼─┼─────────────┼─┼─Input A     │ │                 │
-│       ║     │ │ X1 Out  ○───┼─┼─Input B     │ │ Audio In ◀──────┼── From Audio Source
-│ Rich        │ │       ║     │ │       ○─────┼─┼─Cutoff CV      │
-│ Harmonics   │ │ X2 Out  ○───┼─┼─Input C     │ │       ║         │
-│ for         │ │       ║     │ │ OR Out  ○───┼─┼─Resonance CV   │
-│ Aggressive  │ │ X3 Out  ○───┼─┼─Input D     │ │       ║         │
-│ Filtering   │ │       ║     │ │ AND Out ○───┼─┼─Drive CV       │
-│             │ │ t1 Gate ○───┼─┼─Gate Input  │ │                 │
-│             │ │ Probability │ │ XOR Out ○───┼─┼─Resonance CV2  │
-│             │ │ Learning    │ │ Logic       │ │ (Additional)    │
-│             │ │ Patterns    │ │ Enhanced    │ │                 │
-│             │ │             │ │ Processing  │ │ Rate: Auto      │
-│             │ │             │ │             │ │ Bias: Evolving  │
-│             │ │             │ │             │ │                 │
-│             │ │             │ │             │ │ Audio Out ○─────┼─── Complete Aggressive (Red)
-│             │ │             │ │             │ │ Multi-Function  │
-│             │ │             │ │             │ │ Filter Evolution│
-└─────────────┘ └─────────────┘ └─────────────┘ └─────────────────┘
-        ║               ║               ║               ║
-        ▼               ▼               ▼               ▼
-┌────────────────────────────────────────────────────────────────────┐
-│      Complete Multi-Function Aggressive Filter Ecosystem           │
-│                                                                    │
-│ Probability Patterns + Logic Processing + Aggressive Filtering     │
-│                                                                    │
-│ Oscillator  → Rich harmonic audio source for complex filtering     │
-│ Marbles     → Probability patterns + learning circuits + evolution │
-│ Function Jct→ Logic operations + probability pattern enhancement    │
-│ Wasp SE     → Aggressive filter character + multi-parameter control│
-│                                                                    │
-│ Complete Aggressive Filter Workstation (48HP total)              │
-│                                                                    │
-│ Multi-Function Aggressive Filter Evolution ○──────┼─── Complete Output│
-└────────────────────────────────────────────────────────────────────┘
-```
-
-**Complete Multi-Function Aggressive Filter Integration:**
-
-| Layer | Function | Wasp SE Role | Musical Result |
-|-------|----------|--------------|----------------|
-| **Probability (Marbles)** | Learning pattern generation | **Probability-enhanced filter evolution** | **Probability patterns create naturally evolving aggressive filter behavior** |
-| **Logic (Function Junction)** | Pattern processing | **Logic-enhanced filter control** | **Logic operations provide complex relationships between filter parameters** |
-| **Processing (Wasp SE)** | Aggressive filtering | **Complete aggressive filter brain** | **Wasp character enhanced by probability and logic for maximum filter sophistication** |
-
-**Performance Applications:**
-1. **Probabilistic filter evolution:** Marbles creates patterns → Function Junction adds logic control → Wasp SE provides aggressive filtering
-2. **Logic-enhanced aggression:** Logic operations create complex filter parameter relationships while probability drives evolution
-3. **Complete filter workstation:** Generate, evolve, and control aggressive filtering in integrated ecosystem
-4. **Advanced filter mastery:** Complete system creates probability-enhanced aggressive filtering with logic sophistication
-
-**Philosophical Achievement:**
-This represents **complete aggressive filter mastery** - where probability-based patterns and logic operations all serve aggressive filter character, creating a complete workstation that bridges modern multi-function control with classic aggressive filter design.
+The 8HP footprint and the A-124's price position it as a character addition to an existing system rather than a primary filter requiring dedicated supporting infrastructure. It covers filter, self-oscillating sine-wave oscillator, and saturation processor in 8HP. A system that already has a cleaner or more surgical filter benefits from the Wasp SE as a second voice with a distinct character, not a replacement for precision filtering but a complement to it.
 
 ---
 
-## Advanced Techniques
+## Patches
 
-### **Resonance Management:**
-- **Musical resonance (1-2 o'clock):** Adds character without overpowering
-- **Self-oscillation threshold:** Usually around 3 o'clock, varies with input level
-- **Resonance modulation:** LFO or envelope control for dynamic filter sweeps
-- **Feedback control:** Use output-to-input feedback for additional resonance character
+### Patch 1: Classic Filter Envelope Sweep
 
-### **Drive and Saturation:**
-- **Clean filtering:** Low drive for transparent filtering
-- **Character drive:** Medium drive for Wasp warmth and mild saturation
-- **Aggressive drive:** High drive for distortion and maximum aggression
-- **Dynamic drive:** CV control of drive for rhythm-synced aggression
+This patch establishes the foundational Wasp workflow: an oscillator as audio source, an envelope shaping the cutoff frequency over time.
 
-### **Self-Oscillation as Oscillator:**
-- **Pure tones:** Use high resonance with no input for sine wave generation
-- **Filter melodies:** Sequence the cutoff CV for melodic self-oscillation
-- **Harmonic generation:** Use self-oscillation as additional oscillator voice
-- **Performance control:** Real-time cutoff control for expressive filter playing
+```
+[Oscillator] ──────────▶ Audio In
+[Gate Source] ─────────▶ [Envelope] ──▶ Cutoff CV 1
+                          Audio Out ──▶ [VCA] ──▶ [MixUp or Output]
+```
 
-### **Input Level Optimization:**
-- **Hot signals:** Attenuate before Wasp input for controlled character
-- **Weak signals:** Boost or use drive to achieve proper Wasp response
-- **Dynamic range:** Use VCA before filter for level automation
-- **Clipping management:** Monitor input levels to avoid unwanted distortion
+**Setup:** Connect an oscillator with a harmonically rich waveform (sawtooth or square) to the audio input. Set Level to around noon. Connect a gate source to an envelope generator and route the envelope output to Cutoff CV 1. Patch the Wasp output through a VCA to a mixer or output module.
+
+**Controls:** Set Cutoff to around 9 o'clock (relatively closed). Set Resonance to 1 o'clock for Wasp character without self-oscillation. Set Cutoff CV 1 attenuator to around 2 o'clock. Trigger the envelope: the filter opens as the envelope rises and closes as it falls. Increase Resonance to 2 o'clock and listen to how the peak at the cutoff frequency becomes more pronounced during the filter opening phase. Vary Level between 9 o'clock and 3 o'clock to hear how CMOS saturation interacts with the envelope sweep; higher Level makes the saturation more prominent as the filter opens.
+
+**Result:** The classic filter sweep sound with Wasp character: each triggered note opens the filter, revealing harmonics with a specific CMOS texture that distinguishes it from ladder or state-variable filter sweeps on the same source.
 
 ---
 
-## Common Use Cases
+### Patch 2: Self-Oscillating Lead
 
-### **Aggressive Bass Filtering:**
-- **Saw/square waves** through Wasp for cutting bass lines
-- **Envelope modulation** for classic filter bass movement
-- **High resonance** for the signature Wasp bite
-- **Drive saturation** for additional harmonic content
+This patch uses the filter as the sole sound source by driving it into self-oscillation and controlling the pitch via a sequencer's 1V/octave output.
 
-### **Lead Synthesis:**
-- **Self-oscillating melodies** using cutoff CV sequences
-- **Aggressive resonance** for screaming lead character
-- **Filter feedback** for additional harmonic complexity
-- **Performance filtering** with real-time cutoff control
+```
+[Sequencer CV Out] ──▶ Cutoff CV 1
+                        (no audio input)
+                        Audio Out ──▶ [VCA or direct to MixUp]
+```
 
-### **Drum Processing:**
-- **Kick drum enhancement** with resonance for punch
-- **Snare aggression** using drive and high cutoff
-- **Hi-hat filtering** for rhythmic movement
-- **Trigger-based sweeps** for dynamic drum character
+**Setup:** Connect a sequencer's 1V/octave output to Cutoff CV 1. Leave the audio input unpatched. Set Resonance to fully clockwise or near fully clockwise until the filter self-oscillates (a clear tone appears from the output). Set Level to minimum since there is no audio to drive.
 
-### **Sound Design:**
-- **Aggressive textures** using high resonance and drive
-- **Filter oscillation** for pure tone generation
-- **Dynamic processing** with CV modulation
-- **Character enhancement** for any audio source
+**Controls:** Set the Cutoff CV 1 attenuator to around 2 o'clock and step through the sequencer. The self-oscillating tone tracks the pitch sequence. Adjust the base Cutoff knob to set the pitch register of the self-oscillating tone in relation to the rest of the patch. Back off Resonance slightly if the tone sounds too rough; the threshold between self-oscillation and stability is narrow, and the character of the self-oscillating tone changes across that range. If audio is present at the input, self-oscillation competes with it and becomes unreliable; keep the audio input unpatched for clean pitch tracking.
 
-### **Acid and Electronic Styles:**
-- **Classic acid basslines** with resonance automation
-- **Electronic lead textures** using self-oscillation
-- **Aggressive pad filtering** for character and movement
-- **Performance filtering** for live electronic expression
+**Result:** A single-voice melodic lead produced entirely by the filter. The self-oscillating tone has the CMOS texture of the Wasp circuit: not a pure sine, but a slightly rough, slightly harmonically complex waveform that has a character of its own distinct from oscillator-generated material.
+
+---
+
+### Patch 3: CMOS Saturation Processor
+
+This patch uses the Wasp SE primarily as a saturation and character processor rather than as a sweep filter, with cutoff held open and Level used as the primary timbral control.
+
+```
+[Mutable Plaits or Instruo Cs-L] ──▶ Audio In
+[Slow LFO] ────────────────────────▶ Cutoff CV 1
+                                      Audio Out ──▶ [MixUp]
+```
+
+**Setup:** Connect a harmonically rich source to the audio input: Plaits in a complex synthesis model or Cs-L with wavefolding active. Connect a slow LFO to Cutoff CV 1. Set the Cutoff CV 1 attenuator low (9 to 10 o'clock) so the LFO produces gentle cutoff movement rather than full sweeps.
+
+**Controls:** Set Cutoff to 3 o'clock (mostly open). Set Resonance to 11 o'clock (mild character without self-oscillation). Now focus on Level: advance it from minimum to maximum slowly and listen to how the CMOS saturation changes the sound at each position. Below noon, the filter adds subtle harmonic color. Above noon, the saturation becomes increasingly present, adding density and grit. The slow LFO on Cutoff adds gentle spectral movement on top of the saturation character. The Wasp in this configuration is not functioning as a traditional filter sweep tool; it is functioning as a CMOS character processor that adds a specific kind of harmonic distortion to whatever passes through it.
+
+**Result:** A source signal that has been transformed by CMOS saturation rather than by frequency sculpting. The Wasp's character is most apparent when the input signal is complex: the saturation interacts with the harmonic content of the source differently at different frequency components, producing a result that is richer than simple broadband distortion.
+
+---
+
+### Patch 4: Dual Modulation Sweep
+
+This patch modulates both Cutoff and Resonance simultaneously from two independent sources, using the interaction between the two parameters to produce complex filter movement.
+
+```
+[Oscillator] ──────────────────────▶ Audio In
+[Envelope or Function Generator] ──▶ Cutoff CV 1
+[Slow LFO] ────────────────────────▶ Resonance CV
+                                      Audio Out ──▶ [MixUp or Output]
+```
+
+**Setup:** Connect an audio source to the input. Route an envelope or function generator output to Cutoff CV 1. Route a slow LFO to the Resonance CV input. Connect the output to a mixer.
+
+**Controls:** Set base Cutoff to 9 o'clock. Set base Resonance to noon. Set Cutoff CV 1 attenuator to 2 o'clock. Set the LFO rate to 0.2 to 0.5 Hz for slow resonance movement. Trigger the envelope: the cutoff opens dynamically while the LFO simultaneously moves resonance between a mild and aggressive setting. At moments when the envelope peak coincides with the LFO pushing resonance toward self-oscillation, the filter becomes most aggressive. At moments when the envelope has decayed and the LFO has pulled resonance back, the filter is at its most subdued. The character at each moment depends on the phase relationship between the two modulation sources.
+
+**Result:** Filter behavior that varies across two independent axes simultaneously, producing a range of textures within a single patch. The interaction between envelope-driven cutoff movement and LFO-driven resonance movement is the core of sophisticated filter performance: each parameter modulated separately produces predictable results, but modulating both produces combinations that neither parameter alone can create.
+
+---
+
+## Common Mistakes
+
+### "I cannot dial in a clean sound; everything through the Wasp sounds dirty"
+
+The CMOS filter topology produces harmonic coloration at all settings. There is no bypass mode, and there is no neutral position where the circuit passes audio transparently. The Wasp SE is not a precision filter that can be switched between character and clarity; it is a character filter at all times. Expecting it to pass a clean signal is working against its design.
+
+**Fix:** Use the Wasp SE where its character is a contribution, not a problem. For clean filtering, use a different module. For audio where CMOS saturation and the Wasp's frequency coloring add something, use the Wasp. Treating the character as a limitation misidentifies it as a flaw; it is the instrument's entire sonic identity.
+
+---
+
+### "I cannot get stable self-oscillation while playing audio through the filter"
+
+Self-oscillation and audio input compete for dominance in the filter circuit. At high audio input levels, the input signal suppresses the self-oscillating tone. At low audio levels, self-oscillation may appear but will be masked. Consistent melodic self-oscillation requires either no audio input or a very low-level input that does not override the resonance feedback loop.
+
+**Fix:** For melodic self-oscillation, remove the audio input entirely. The filter will generate a tone from its own feedback at high resonance settings, trackable via the Cutoff CV 1V/octave response. For a blend of self-oscillation and a processed audio signal, attenuate the audio source heavily before the input; the self-oscillation will be audible but the patch will be sensitive to Level adjustments.
+
+---
+
+### "The filter stops responding when I increase the Level control too far"
+
+Excessive input level drives the CMOS inverters fully into saturation, at which point they clip the input signal rather than filter it. The filter's frequency-shaping behavior depends on the CMOS chips operating in their partially-linear region. When the input is too hot, the chips are operating in full saturation and the cutoff and resonance controls have diminishing effect on the output character; the output becomes a clipped, compressed version of the input regardless of filter settings.
+
+**Fix:** Reduce Level to the point where filter cutoff and resonance changes produce audible results in the output. For most sources, this is between 9 o'clock and 2 o'clock on the Level control. If the source signal is very hot, attenuate it before the Wasp input rather than relying on the Level control to manage it.
+
+---
+
+### "The self-oscillating pitch is not tracking my sequencer accurately"
+
+Self-oscillation pitch tracking depends on the accuracy and cleanliness of the CV source. The filter's 1V/octave response is in the Cutoff CV input; any noise, offset voltage, or scaling error in the CV source translates directly to pitch tracking error. Multiple CV signals summing at the Cutoff CV inputs (such as a manual cutoff offset plus a pitch CV) will produce pitch that is offset by the non-pitch CV contribution.
+
+**Fix:** Use only one Cutoff CV input for pitch control when using the filter as an oscillator, and set the attenuator on that input carefully. Verify the CV source with a tuner or tuned oscillator before patching it to the Wasp. Set the base Cutoff knob to set the register and leave it; do not use the Cutoff knob as a transpose while also using CV for pitch, as the knob adds an unscaled offset to the tracked pitch.
 
 ---
 
 ## Advanced Learning Path
 
-**The Wasp SE rewards progressive exploration; its aggression is a feature, not a flaw to manage around.**
+1. Work through Resonance systematically at a fixed Cutoff position before introducing CV modulation. Set Cutoff to noon and advance Resonance slowly from minimum to maximum in small increments, stopping at each position to identify the character change. Note where the filter peak becomes audible, where it begins to dominate the source signal, where self-oscillation begins, and where the self-oscillating tone stabilizes. The Wasp's Resonance range covers meaningfully different behaviors across its travel, and knowing those zones by ear is the prerequisite for using Resonance musically rather than accidentally.
 
-1. **Learn RESONANCE before DRIVE.** Resonance shapes tonal character before saturation comes into the picture. Get comfortable with how resonance changes the filter peak at different CUTOFF positions, then introduce DRIVE to push it further.
+2. Study the Level control as a timbral parameter, not a gain control. Patch a steady-state tone (a sustained oscillator with no envelope, or a drone) into the audio input. Hold Cutoff and Resonance constant and sweep Level from minimum to maximum slowly. Listen to what changes at each Level position: the onset of CMOS saturation, the increase in harmonic density, the point where the saturation begins to compress the dynamic character of the input. This is a different kind of timbral control from cutoff and resonance, and understanding its sonic territory before using it in a patch prevents the common mistake of accidentally driving it into full saturation.
 
-2. **Study self-oscillation as a sound source.** Push RESONANCE past the threshold until the filter sings on its own, then use CUTOFF CV (from a keyboard or sequencer V/OCT output) to play it melodically. This technique (filter as oscillator) is central to electronic music history and the Wasp SE does it with distinct character.
+3. Use the filter as a self-oscillating oscillator in a complete patch before relying on it as a filter. Patch the self-oscillating Wasp into a VCA with an envelope, connect a sequencer to Cutoff CV 1, and build a monophonic patch that uses only the Wasp as its sound source. The goal is to internalize the self-oscillating tone's character and how it tracks pitch, so that in future patches you can make an informed choice between using the Wasp as a filter on another source versus using it as an independent voice.
 
-3. **Patch CUTOFF CV from an envelope to get the full Wasp character.** A fast-attack envelope on CUTOFF is the foundation of the Wasp sound. Once this is working, vary the envelope shape to explore the range between percussive bite and smooth sweep.
+4. Compare envelope-to-cutoff modulation against LFO-to-cutoff modulation on the same patch. With an oscillator running through the Wasp, first use an envelope on Cutoff CV 1 and listen to the triggered, transient-style filter movement. Then replace the envelope with a slow LFO at the same modulation amount and listen to the cyclic, continuous filter movement. Then run both simultaneously through the two Cutoff CV inputs at reduced attenuator levels. The combination of triggered and cyclic filter modulation is one of the core filter performance techniques, and the Wasp's character makes the difference between the two modulation types distinctly audible.
 
-4. **Compare the Wasp SE against a cleaner filter back to back.** The Wasp's CMOS nonlinearity is easiest to hear in contrast. Run the same patch through both and listen to what the Wasp adds: the distortion, the asymmetrical clipping, the slight instability at high DRIVE settings.
+5. Listen to the Wasp on source material that is not a standard sawtooth or square oscillator. Run a granular processor output through it. Run a complex oscillator with active wavefolding through it. Run a drum sound through it. The CMOS topology interacts with harmonic content in the source rather than simply removing frequencies, and sources with complex or evolving harmonic content produce different results from the Wasp than simple waveforms do. Understanding the filter as a character processor for complex sources, not just a cutoff control for simple oscillators, expands the practical use cases considerably.
 
-5. **Use CV control to automate aggression over time.** Slowly automating DRIVE with an LFO or envelope creates a patch that breathes between clean and dirty. This is the Wasp SE's strength in longer compositions.
-
-6. **Graduate to filter comparison work with other aggressive filters.** Once the Wasp character is internalized, compare it against the Xaoc Belgrad or similar Tier 3 filter options. The goal is a working vocabulary of filter personalities: knowing which tool matches which musical context.
+6. Practice self-oscillation as a performance technique. Set the filter to just below the self-oscillation threshold and then manually advance Resonance past the threshold during a running patch. Note how quickly the self-oscillating tone appears, how stable it is, and how the pitch changes as you adjust Cutoff while self-oscillating. Then back Resonance off below the threshold again. The transition into and out of self-oscillation is a performance gesture with musical applications beyond simply using the Wasp as a fixed-resonance filter or a fixed-resonance oscillator.
 
 ---
 
 ## Pairs Well With
 
-### **Advanced Module Synergies (Modulation & CV Sources):**
-- **Mordax Data:** Real-time audio analysis provides visual feedback and content-responsive filter control with measurement precision
-- **Mutable Marbles:** Probability-based pattern generation creates naturally evolving filter behavior with learning circuit sophistication
-- **Cre8audio Function Junction:** Logic operations provide complex filter parameter relationships and decision making for multi-parameter control
-- **Make Noise Wogglebug:** Chaotic modulation creates unpredictable filter evolution with controlled chaos enhancing aggressive character
-- **Squarp Hermod+:** Multi-track sequencing provides musical framework for sophisticated filter sequence control
-- **Cross-Advanced Integration:** Combine analytical, probabilistic, and chaotic approaches for sophisticated aggressive filter ecosystems
+**Mutable Instruments Plaits** is a practical audio source for the Wasp SE because its synthesis models vary in harmonic complexity in ways that interact differently with the CMOS topology. Plaits in a wavetable or FM model produces source material that the Wasp's asymmetric saturation treats differently than a simple sawtooth; the saturation interacts with the spectral content of the wavetable or FM sidebands rather than just with harmonics of a fixed waveform. Patching Plaits' main output into the Wasp audio input and using Plaits' 1V/OCT input alongside the Wasp's self-oscillation tracking input from the same pitch source creates a configuration where both the source and the filter character respond to the same pitch sequence, keeping timbral changes harmonically related.
 
-### **Perfect Partners for Beginners:**
-- **Oscillators:** Rich harmonic sources (sawtooth, square) that benefit from aggressive filtering
-- **Envelopes:** Essential for classic filter sweeps and dynamic cutoff control
-- **LFOs:** Slow rates for filter sweeps, fast rates for tremolo effects
-- **VCAs:** Control input levels and output dynamics for optimal Wasp response
+**Cre8audio Function Junction** provides the most immediate modulation pair for the Wasp SE. Function Junction's ADSR output routes to Cutoff CV 1 for triggered filter sweeps; its function generator output, with CURVE shaping, routes to Cutoff CV 2 for a second, differently-shaped envelope modulating the same destination. The two Cutoff CV inputs with separate attenuators allow the ADSR and function generator contributions to be balanced independently, so the filter opening shape is a combination of two envelope characters rather than one. Function Junction's LFO triangle output routes to Resonance CV for slow resonance movement layered on top of the cutoff modulation. Three modulation sources, three Wasp CV targets, from a single module.
 
-### **Advanced Aggressive Integration:**
-- **Multiple oscillators:** Layer different sources through Wasp for complex filtering
-- **Envelope followers:** Create content-responsive filtering based on input dynamics
-- **Sample & Hold:** Generate stepped filter sequences for robotic effects
-- **Ring modulators:** Process ring mod output through Wasp for complex aggressive textures
+**Xaoc Zadar** is the CV source that most fully explores the Wasp SE's dual-cutoff-CV architecture. Zadar's four independent function generators each produce a configurable envelope shape with its own loop behavior and CV control. Two Zadar channels route to the two Cutoff CV inputs for compound cutoff modulation with independent shapes and rates; a third Zadar channel routes to Resonance CV for independently timed resonance movement. The fourth Zadar channel can address a downstream element or loop back to Level if that input accepts CV in the specific A-124 variant. With all four channels set to different curve shapes and loop times, the Wasp operates under four-axis modulation with no two parameters moving in parallel, producing filter textures that evolve across multiple independent time scales simultaneously.
 
-### **Essential Filter Partners:**
-- **Distortion modules:** Combine with Wasp drive for extreme aggression and saturation
-- **Delay/Reverb:** Process filtered output for spatial aggressive textures
-- **Compressors:** Control Wasp output dynamics and sustain aggressive character
-- **EQ modules:** Shape Wasp output frequency response for mix placement
-
-### **Advanced System Integration:**
-- **Performance mixers:** Real-time control over filter parameters for live aggressive performance
-- **CV mixers:** Combine multiple modulation sources for complex filter evolution
-- **Master clock systems:** Sync filter modulation to tempo for tight rhythmic aggressive filtering
-- **Multi-function modules:** MetaModule, Disting, Hermod+ serve multiple roles simultaneously for complete aggressive filter workstations
+**Intellijel MixUp** is the downstream destination where the Wasp SE's output integrates with the rest of the system. Channel 3 on MixUp accepts a stereo input, but the Wasp SE's mono output patches naturally to Channel 1 or Channel 2 as a mono source with level control and mute access. When the Wasp is being used as a self-oscillating voice alongside other oscillator sources, each voice occupies a separate MixUp channel so their relative levels can be balanced independently. When the Wasp is processing a granular or complex source, the processed output on one MixUp channel and the dry source on another allows wet/dry blend to be managed at the mixer rather than requiring a dedicated mix module in the signal chain.
 
 ---
 
-## Beginner "Gotchas" & Pro Tips
-
-### **⚠️ Common Mistakes:**
-
-**"My Wasp SE sounds too harsh/aggressive!"**
-- **Why:** The Wasp is designed to be aggressive; this is its architectural purpose, not a malfunction. Even moderate settings add intentional bite and character. The design philosophy prioritizes personality over transparency, so aggression is baked in from the circuit level.
-- **Solution:** Rather than fighting the character, either (1) lower resonance to 9-11 o'clock for less self-oscillation emphasis, (2) reduce drive from high settings, or (3) embrace the aggression as the intended sound; it's meant to cut through mixes this way.
-- **Teaching:** Wasp philosophy is "character over politeness." This isn't a limitation; it's the feature.
-
-**"I can't get the filter to self-oscillate!"**
-- **Why:** Self-oscillation threshold depends on input level, resonance setting, and the filter's sensitivity curve. A weak input signal may never reach oscillation even at high resonance. This is normal; the Wasp doesn't force oscillation artificially.
-- **Solution:** (1) Start with NO audio input and turn resonance clockwise until you hear a pure sine tone appear around 3-4 o'clock, (2) if you want self-oscillation with audio input, attenuate the input signal first, then increase resonance, or (3) use an envelope with a fast attack to trigger self-oscillation from silence.
-- **Teaching:** Self-oscillation is about reaching a threshold, not a toggle. Understanding this threshold is key to using the Wasp as both filter and oscillator.
-
-**"The filter tracking seems off when self-oscillating!"**
-- **Why:** Wasp SE tracks 1V/octave accurately when using clean CV signals and proper calibration. Tracking errors usually indicate (1) dirty/noisy CV source, (2) multiple CV sources summing at the input without proper mixing, (3) uncalibrated sequencer output, or (4) CV cables with poor connections.
-- **Solution:** Verify your CV source directly with a calibrated multimeter, use a dedicated 1V/octave sequencer for accurate tracking, ensure CV cables have solid connections, or test with a simple LFO to see if the problem is your CV source or the Wasp.
-- **Teaching:** Filter tracking accuracy is only as good as the CV signal feeding it. Dirty CV creates dirty tracking; always verify the source.
-
-**"The filter sounds different with different input levels!"**
-- **Why:** This is intentional design; the Wasp responds dynamically to input level. Higher input levels drive the filter harder, increasing saturation and aggression. This isn't a bug; it's the filter "responding" to how hard you're pushing it. The drive setting amplifies this effect further.
-- **Solution:** Use consistent input levels if you want stable character, or embrace the dynamic response as a performance feature; patch a VCA before the Wasp input to control dynamics intentionally.
-- **Teaching:** The Wasp's input-level sensitivity is a feature, not a flaw. It teaches that filters aren't passive; they respond to what you feed them.
-
-**"I keep turning up resonance and it just sounds worse, not better!"**
-- **Why:** Resonance has a musical sweet spot around 1-2 o'clock for most applications. Beyond that (3+ o'clock), the filter begins aggressive self-oscillation that can overwhelm the input signal entirely, especially if the input is weak or the resonance CV is high. You reach a point where more resonance doesn't add character; it just silences everything else.
-- **Solution:** Explore resonance in zones: (1) 9 o'clock = barely noticeable emphasis, (2) 11 o'clock = musical character, (3) 1 o'clock = classic Wasp bite without full self-oscillation, (4) 3+ o'clock = self-oscillation dominates. Find YOUR sweet spot; it's rarely "maximum."
-- **Teaching:** More isn't always better in filter design. Understanding resonance zones teaches you to listen rather than assume.
-
-**"I cranked drive and lost the filter character entirely!"**
-- **Why:** Drive controls saturation and the filter's responsiveness to input level. Too much drive can compress the filter response into a flat saturation plateau; the filter stops tracking changes and just sounds distorted. This is especially problematic if your input signal is already hot (loud).
-- **Solution:** Start drive at 2 o'clock as a baseline, use moderate drive (2-3 o'clock) for warmth and character without saturation collapse. If you need aggression, increase resonance instead of drive. If you need distortion, use a dedicated distortion module after the Wasp rather than pushing drive into oblivion.
-- **Teaching:** Drive isn't an aggression knob; it's a saturation control. Using it correctly preserves filter character while adding color.
-
-**"Why does fast LFO modulation just make it sound like chaos?"**
-- **Why:** The Wasp's aggressive character means fast modulation can create aliasing, zipper noise, and unpredictable resonance artifacts. Fast LFO on resonance (especially at high resonance settings) can make the filter "glitch" musically. Fast LFO on cutoff creates timbral chaos rather than melodic movement.
-- **Solution:** Use slow LFO rates (0.2-2 Hz) for musical filter sweeps. Reserve fast rates for deliberate sound-design effects. If you want fast modulation, use audio-rate oscillators or sequencers with precise CV timing rather than LFOs. For rhythmic movement, sync your LFO to tempo using a clock divider.
-- **Teaching:** Modulation speed matters on aggressive filters. The Wasp's character means you need to respect timing more than you would on gentle filters.
-
-**"It worked perfectly in my mental patch, but it sounds thin on the actual cables!"**
-- **Why:** Signal flow assumptions don't always survive contact with reality. Common issues: (1) weak oscillator output before the Wasp starves the filter, (2) unintended impedance mismatches, (3) patch cables creating unintended ground loops causing noise, (4) output level from the Wasp not matched to your mixer's input sensitivity, or (5) missing intermediate gain stages between modules.
-- **Solution:** Patch iteratively and listen at each stage. Verify oscillator output level before it reaches the Wasp. Use a VCA before the Wasp filter for input level control. Add a dedicated mixer for clean gain staging. Test your patch cable routing for unintended connections (are you accidentally patching something to ground?).
-- **Teaching:** Mental patches are theory. Real patches are practice. Patch discipline; understanding signal flow and gain staging; is essential for aggressive filters.
-
-**"My sequencer CV isn't moving the cutoff enough, but the LFO moves it fine!"**
-- **Why:** CV scaling differences between sources. Sequencers output full 0-10V or ±5V ranges depending on design. LFOs often attenuate their output. The Wasp expects around 1V/octave for tracking, but different CV sources have different voltage swing. Your sequencer might be outputting at a different scale than your LFO.
-- **Solution:** Verify your sequencer's output voltage range (often listed as "1V/octave" or "0-10V tracking"). Use a dedicated 1V/octave sequencer for consistent tracking. If you need to attenuate sequencer output, patch through a CV mixer or attenuator. Test with a multimeter to confirm voltage levels.
-- **Teaching:** CV is not universal. Different modules use different standards. Understanding voltage standards teaches you to think about signal characteristics, not just connections.
-
-**"Why can't I play melodic lines with self-oscillation if I patch audio into the filter?"**
-- **Why:** With audio input, the input signal fights the self-oscillation. The filter is trying to do two things: process the input audio AND self-oscillate. At high audio input levels, the input dominates and self-oscillation disappears. This is correct behavior; it's not a bug.
-- **Solution:** For melodic self-oscillation, disconnect audio input and feed only 1V/octave CV to the cutoff. The filter becomes a sine wave oscillator. For "hybrid" effects, use a very weak audio input (attenuate heavily) while driving self-oscillation with CV; this blends the two sources.
-- **Teaching:** Self-oscillation and audio input are competing phenomena. Understanding when to use each teaches you about filter architecture.
-
-**"Should I patch multiple modulation sources to the same CV input?"**
-- **Why:** Multiple CV sources at one input can sum (add) or fight depending on the module's internal design. For the Wasp, multiple sources at the cutoff CV input will sum their voltages, which might create unintended pitch modulation or chaotic cutoff movement. The philosophy is important: do you want them to ADD to each other or CHOOSE one?
-- **Solution:** If you want multiple modulation sources to coexist, use a dedicated CV mixer module that lets you control the blend and amount of each source. If you want to switch between sources, use a CV switch or manual patchbay. If you want them to add, understand the voltage ranges and use scaling/attenuation to prevent unexpected extremes.
-- **Teaching:** CV architecture matters. Summing, switching, and blending are different operations that require different approaches. This teaches you to think about modulation architecture, not just connection points.
-
-**"My resonance sweeps sound chaotic instead of musical; what's wrong?"**
-- **Why:** Resonance modulation is sensitive to modulation speed and amplitude. Fast resonance sweeps combined with high starting resonance values can create aliasing and filter artifacts. Additionally, if your resonance CV source has a wide swing (0-10V), the filter might leap between barely-present and self-oscillating chaos rather than smoothly evolving.
-- **Solution:** Start resonance sweeps at moderate base resonance (1-2 o'clock), use slow LFO modulation (0.3-1 Hz) for smooth resonance evolution, attenuate your resonance CV source to a smaller swing (maybe 3V instead of full 10V), or use an envelope with moderate time constants instead of fast LFOs for smoother resonance movement. Musical resonance sweeps are slow and gentle; aggression comes from starting values, not modulation speed.
-- **Teaching:** Resonance modulation requires finesse. The Wasp's aggressive nature means gentle modulation often sounds better than dramatic sweeps. This teaches you to listen for musicality rather than assuming "more modulation = more interest."
-
-### **🎵 Pro Tips:**
-
-**Starting Strategy:**
-- **Begin with low resonance** to understand the basic filter character
-- **Gradually increase resonance** to experience the aggressive transition
-- **Experiment with drive** to understand saturation effects
-
-**Aggressive Character Optimization:**
-- **Embrace the bite** - the Wasp is supposed to be aggressive and characterful
-- **Use envelope modulation** for classic filter sweeps and movement
-- **Try self-oscillation** as an additional oscillator voice
-
-**Modulation Techniques:**
-- **Envelope → Cutoff** for classic filter bass and lead sounds
-- **LFO → Resonance** for dynamic aggression control
-- **Sequencer → Cutoff** for melodic self-oscillation
-- **Audio rate modulation** for complex timbral effects
-
-**Performance Applications:**
-- **Real-time cutoff control** for expressive filter playing
-- **Resonance automation** for building filter intensity
-- **Drive modulation** for rhythm-synced aggression
-- **Self-oscillation melodies** using cutoff sequences
-
-**Aggressive Filter Sweet Spots:**
-- **Resonance at 1 o'clock:** Classic Wasp bite without self-oscillation
-- **Drive at 2 o'clock:** Optimal saturation without excessive distortion
-- **Cutoff sweeps:** Wide sweeps from 8 o'clock to 4 o'clock for maximum drama
-- **Self-oscillation tracking:** Use 1V/octave CV for melodic filter oscillation
-
-
----
-
-**Bottom Line:** Wasp SE isn't just a filter - it's an **aggressive character processor** that transforms polite sounds into biting, screaming, characterful audio through classic ladder filter algorithms and wild self-oscillation. Every patch teaches you something new about how aggressive filtering really works. As the **aggressive character brain of advanced ecosystems**, it transforms probabilistic patterns, analytical control, and logic processing into unified aggressive filter evolution.
-
----
-
-*Visit [Doepfer](https://doepfer.de/a100_man/a124_man.pdf) for complete documentation, technical specifications, and calibration procedures*
+*Doepfer A-124 Wasp SE documentation: [Doepfer](https://doepfer.de/a100_man/a124_man.pdf)*
