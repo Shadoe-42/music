@@ -1,6 +1,6 @@
 # Guide Triage Report 2026
 
-Generated: 2026-04-18
+Generated: 2026-04-29
 Rubric: `tooling/triage_rubric.md`
 
 ---
@@ -9,32 +9,15 @@ Rubric: `tooling/triage_rubric.md`
 
 | Tier | Count | Description |
 |------|-------|-------------|
-| Tier 3 | 24 | Full rebuild required |
+| Tier 3 | 9 | Full rebuild required |
 | Tier 2 | 0 | Structural cleanup — one session per guide |
 | Tier 1 | 0 | Surface fixes — batchable |
-| Clean  | 44 | No issues detected |
-| **Total** | **68** | |
+| Clean  | 60 | No issues detected |
+| **Total** | **69** | |
 
 ---
 
-## Tier 3 — Full Rebuild Required (24)
-
-### `4ms_rcd_v2_guide.md`
-
-**HC status:** suppressed (historical_context: false)
-
-**Tier 3 signals:**
-- Old-gen table column headers present: | Advanced Concept |, | Phase 2 Integration |
-
-**Tier 2 signals:**
-- Why Excels section contains ### sub-headings
-- Pairs Well With section has ### sub-headers
-- Phase 2 / ecosystem framing pervasive in patches section (4 phrase matches)
-
-**Tier 1 (cosmetic) signals:**
-- H1 title has ' - Guide' suffix
-- section named 'Beginner Gotchas & Pro Tips'
-- emoji present in a heading
+## Tier 3 — Full Rebuild Required (9)
 
 ### `cre8audio_chipz_cellz_niftycase_bundle_guide.md`
 
@@ -67,24 +50,6 @@ Rubric: `tooling/triage_rubric.md`
 - Phase 2 framing present in patches section (1 phrase match) — flag for review
 - title/heading contains 'Beginner's Guide'
 - Key Specs uses old bullet format instead of table
-
-### `divkid_ochd_and_expander_guide.md`
-
-**HC status:** written
-
-**Tier 3 signals:**
-- Old-gen table column headers present: | Advanced Concept |, | Phase 2 Integration |
-
-**Tier 2 signals:**
-- Why Excels section contains ### sub-headings
-- ALP has sub-sections but numbered list is present (salvageable): ### sub-headings present
-- Pairs Well With section has ### sub-headers
-- Phase 2 / ecosystem framing pervasive in patches section (11 phrase matches)
-
-**Tier 1 (cosmetic) signals:**
-- H1 title has ' - Guide' suffix
-- 'Bottom Line:' closing paragraph present
-- emoji present in a heading
 
 ### `doepfer_a124_wasp_se_guide.md`
 
@@ -157,137 +122,6 @@ Rubric: `tooling/triage_rubric.md`
 - 'Bottom Line:' closing paragraph present
 - Key Specs uses old bullet format instead of table
 
-### `instruo_csl_guide.md`
-
-**HC status:** written
-
-**Tier 3 signals:**
-- Old-gen table column headers present: | Advanced Synergy |
-
-**Tier 2 signals:**
-- Why Excels section contains ### sub-headings
-- ALP has sub-sections but numbered list is present (salvageable): ### sub-headings present
-- Pairs Well With section has ### sub-headers
-
-**Tier 1 (cosmetic) signals:**
-- Phase 2 framing present in patches section (1 phrase match) — flag for review
-- title/heading contains 'Beginner's Guide'
-- Essential Parameters heading says 'The Big 6'
-- patch section named 'Beginner Patch Ideas'
-- 'Bottom Line:' closing paragraph present
-
-### `intellijel_mixup_guide.md`
-
-**HC status:** suppressed (historical_context: false)
-
-**Tier 3 signals:**
-- Old-gen table column headers present: | Advanced Synergy |
-
-**Tier 2 signals:**
-- ALP has sub-sections but numbered list is present (salvageable): ### sub-headings present
-- Pairs Well With section has ### sub-headers
-
-**Tier 1 (cosmetic) signals:**
-- H1 title has ' - Guide' suffix
-- patch section named 'Beginner Patch Ideas'
-- 'Bottom Line:' closing paragraph present
-
-### `make_noise_pressure_points_guide.md`
-
-**HC status:** needed
-
-**Notes:**
-- Pre-confirmed Tier 3 from prior session review.
-
-### `make_noise_wogglebug_guide.md`
-
-**HC status:** written
-
-**Tier 3 signals:**
-- Old-gen table column headers present: | Phase 2 Integration |
-
-**Tier 2 signals:**
-- Why Excels section contains ### sub-headings
-- ALP has sub-sections but numbered list is present (salvageable): ### sub-headings present
-- Pairs Well With section has ### sub-headers
-- Phase 2 / ecosystem framing pervasive in patches section (7 phrase matches)
-
-**Tier 1 (cosmetic) signals:**
-- title/heading contains 'Beginner's Guide'
-- section named 'Beginner Gotchas & Pro Tips'
-- 'Bottom Line:' closing paragraph present
-- emoji present in a heading
-- Why heading uses full manufacturer name instead of 'Why This Instrument Excels'
-
-### `mutable_marbles_guide.md`
-
-**HC status:** written
-**Missing anchor sections:** alp, pairs_well
-
-**Tier 3 signals:**
-- Old-gen table column headers present: | Phase 2 Integration |
-
-**Tier 2 signals:**
-- 2 anchor section(s) missing: alp, pairs_well
-- Why Excels section contains ### sub-headings
-
-**Tier 1 (cosmetic) signals:**
-- Phase 2 framing present in patches section (1 phrase match) — flag for review
-- title/heading contains 'Beginner's Guide'
-- Essential Parameters heading says 'The Big 6'
-- section named 'Beginner Gotchas & Pro Tips'
-- 'Bottom Line:' closing paragraph present
-- Why heading uses full manufacturer name instead of 'Why This Instrument Excels'
-
-### `mutable_plaits_guide.md`
-
-**HC status:** needed
-
-**Notes:**
-- Pre-confirmed Tier 3 from prior session review.
-
-### `mutable_rings_guide.md`
-
-**HC status:** needed
-
-**Notes:**
-- Pre-confirmed Tier 3 from prior session review.
-
-### `noise_engineering_numeric_repetitor_guide.md`
-
-**HC status:** suppressed (historical_context: false)
-
-**Tier 3 signals:**
-- Old-gen table column headers present: | Advanced Synergy |
-
-**Tier 2 signals:**
-- ALP has sub-sections but numbered list is present (salvageable): ### sub-headings present
-- Pairs Well With section has ### sub-headers
-
-**Tier 1 (cosmetic) signals:**
-- title/heading contains 'Beginner's Guide'
-- patch section named 'Beginner Patch Ideas'
-- section named 'Beginner Gotchas & Pro Tips'
-- 'Bottom Line:' closing paragraph present
-
-### `noise_engineering_ruina_versio_guide.md`
-
-**HC status:** suppressed (historical_context: false)
-
-**Tier 3 signals:**
-- Old-gen table column headers present: | Advanced Synergy |
-
-**Tier 2 signals:**
-- ALP has sub-sections but numbered list is present (salvageable): ### sub-headings present
-- Pairs Well With section has ### sub-headers
-
-**Tier 1 (cosmetic) signals:**
-- Phase 2 framing present in patches section (2 phrase matches) — flag for review
-- title/heading contains 'Beginner's Guide'
-- patch section named 'Beginner Patch Ideas'
-- section named 'Beginner Gotchas & Pro Tips'
-- 'Bottom Line:' closing paragraph present
-
 ### `patching_panda_moon_phase_guide.md`
 
 **HC status:** suppressed (historical_context: false)
@@ -329,31 +163,6 @@ Rubric: `tooling/triage_rubric.md`
 - emoji present in a heading
 - Why heading uses full manufacturer name instead of 'Why This Instrument Excels'
 
-### `qubit_bloom_v1_guide.md`
-
-**HC status:** suppressed (historical_context: false)
-
-**Tier 3 signals:**
-- Old-gen table column headers present: | Mathematical Synergy |, | Phase 2 Synergy |
-
-**Tier 2 signals:**
-- ALP has sub-sections but numbered list is present (salvageable): ### sub-headings present
-- Pairs Well With section has ### sub-headers
-
-**Tier 1 (cosmetic) signals:**
-- Phase 2 framing present in patches section (3 phrase matches) — flag for review
-- title/heading contains 'Beginner's Guide'
-- patch section named 'Beginner Patch Ideas'
-- section named 'Beginner Gotchas & Pro Tips'
-- 'Bottom Line:' closing paragraph present
-
-### `rossum_electro_music_mob_of_emus_guide.md`
-
-**HC status:** needed
-
-**Notes:**
-- Pre-confirmed Tier 3 from prior session review.
-
 ### `soma_lyra8_fx_guide.md`
 
 **HC status:** written
@@ -375,46 +184,7 @@ Rubric: `tooling/triage_rubric.md`
 - emoji present in a heading
 - Why heading uses full manufacturer name instead of 'Why This Instrument Excels'
 
-### `squarp_hermod_plus_guide.md`
-
-**HC status:** suppressed (historical_context: false)
-
-**Tier 3 signals:**
-- Why Excels is organized around Phase 2 ecosystem framing (3 patterns matched)
-
-**Tier 2 signals:**
-- Why Excels section contains ### sub-headings
-- ALP has sub-sections but numbered list is present (salvageable): ### sub-headings present
-- Pairs Well With section has ### sub-headers
-- Phase 2 / ecosystem framing pervasive in patches section (33 phrase matches)
-
-**Tier 1 (cosmetic) signals:**
-- title/heading contains 'Beginner's Guide'
-- patch section named 'Beginner Patch Ideas'
-- section named 'Beginner Gotchas & Pro Tips'
-- 'Bottom Line:' closing paragraph present
-- Why heading uses full manufacturer name instead of 'Why This Instrument Excels'
-
-### `winterbloom_castor_pollux_ii_guide.md`
-
-**HC status:** written
-
-**Tier 3 signals:**
-- Old-gen table column headers present: | Phase 2 Synergy |
-
-**Tier 2 signals:**
-- Why Excels section contains ### sub-headings
-- ALP has sub-sections but numbered list is present (salvageable): ### sub-headings present
-- Pairs Well With section has ### sub-headers
-- Phase 2 / ecosystem framing pervasive in patches section (12 phrase matches)
-
-**Tier 1 (cosmetic) signals:**
-- title/heading contains 'Beginner's Guide'
-- section named 'Beginner Gotchas & Pro Tips'
-- 'Bottom Line:' closing paragraph present
-- Why heading uses full manufacturer name instead of 'Why This Instrument Excels'
-
-## Clean — No Issues Detected (44)
+## Clean — No Issues Detected (60)
 
 ### `4ms_company_listen_io_guide.md`
 
@@ -425,6 +195,12 @@ No issues detected.
 ### `4ms_company_metamodule_guide.md`
 
 **HC status:** suppressed (historical_context: false)
+
+No issues detected.
+
+### `4ms_rcd_v2_guide.md`
+
+**HC status:** written
 
 No issues detected.
 
@@ -506,6 +282,12 @@ No issues detected.
 
 No issues detected.
 
+### `divkid_ochd_and_expander_guide.md`
+
+**HC status:** written
+
+No issues detected.
+
 ### `doepfer_a_130_2_guide.md`
 
 **HC status:** written
@@ -525,6 +307,12 @@ No issues detected.
 No issues detected.
 
 ### `endorphines_blck_noir_guide.md`
+
+**HC status:** written
+
+No issues detected.
+
+### `endorphines_furthrrrr_generator_guide.md`
 
 **HC status:** written
 
@@ -602,6 +390,18 @@ No issues detected.
 
 No issues detected.
 
+### `instruo_csl_guide.md`
+
+**HC status:** written
+
+No issues detected.
+
+### `intellijel_mixup_guide.md`
+
+**HC status:** suppressed (historical_context: false)
+
+No issues detected.
+
 ### `intellijel_stomp_guide.md`
 
 **HC status:** suppressed (historical_context: false)
@@ -609,6 +409,18 @@ No issues detected.
 No issues detected.
 
 ### `make_noise_maths_guide.md`
+
+**HC status:** written
+
+No issues detected.
+
+### `make_noise_pressure_points_guide.md`
+
+**HC status:** written
+
+No issues detected.
+
+### `make_noise_wogglebug_guide.md`
 
 **HC status:** written
 
@@ -626,7 +438,55 @@ No issues detected.
 
 No issues detected.
 
+### `mutable_marbles_guide.md`
+
+**HC status:** written
+
+No issues detected.
+
+### `mutable_plaits_guide.md`
+
+**HC status:** written
+
+No issues detected.
+
+### `mutable_rings_guide.md`
+
+**HC status:** written
+
+No issues detected.
+
 ### `noise_engineering_loquelic_iteritas_guide.md`
+
+**HC status:** suppressed (historical_context: false)
+
+No issues detected.
+
+### `noise_engineering_numeric_repetitor_guide.md`
+
+**HC status:** suppressed (historical_context: false)
+
+No issues detected.
+
+### `noise_engineering_ruina_versio_guide.md`
+
+**HC status:** suppressed (historical_context: false)
+
+No issues detected.
+
+### `qubit_bloom_v1_guide.md`
+
+**HC status:** suppressed (historical_context: false)
+
+No issues detected.
+
+### `rossum_electro_music_mob_of_emus_guide.md`
+
+**HC status:** written
+
+No issues detected.
+
+### `squarp_hermod_plus_guide.md`
 
 **HC status:** suppressed (historical_context: false)
 
@@ -663,6 +523,12 @@ No issues detected.
 No issues detected.
 
 ### `vpme_qd_qex_euclidean_circles_ecosystem_guide.md`
+
+**HC status:** written
+
+No issues detected.
+
+### `winterbloom_castor_pollux_ii_guide.md`
 
 **HC status:** written
 
