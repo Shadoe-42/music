@@ -1,8 +1,8 @@
 ---
 title: Cre8audio Function Junction
 manufacturer: Cre8audio
-primary_role: ROUTER
-secondary_roles: [MODULATOR]
+primary_role: MODULATOR
+secondary_roles: [ROUTER]
 form_factor: eurorack
 functions: [envelope, function-generator, lfo, attenuverting-mixer]
 behavior_tags: [stable, linear, reactive, performance-oriented]
