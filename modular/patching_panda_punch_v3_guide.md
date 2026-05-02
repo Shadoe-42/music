@@ -1,545 +1,241 @@
 ---
-title: Patching Panda Punch v3
+title: Patching Panda Punch V3
 manufacturer: Patching Panda
 primary_role: MODULATOR
 secondary_roles: [AMPLIFIER]
 form_factor: eurorack
 functions: [vca, envelope-generator]
-behavior_tags: [percussive, gated, reactive, warm, performance-oriented]
-use_cases: [percussive voice shaping, drum hit dynamics, envelope shaping]
+behavior_tags: [percussive, gated, reactive, warm, performance-oriented, cv-friendly]
+use_cases: [voice shaping, percussive dynamics, envelope generation, sidechain effects]
 hp: 9
 historical_context: false
 ---
 
-# Patching Panda Punch V3 - Beginner's Guide
-
-**The Ultimate VCA-Decay Module for Dynamic Percussion**
+# Patching Panda Punch V3
 
 ![Patching Panda Punch V3](https://github.com/Shadoe-42/music/raw/main/modular/images/patching_panda/punch_v3/front_panel.jpg)
+*Dual-channel VCA with voltage-controlled decay envelopes and two response modes in 9HP*
 
-## Quick Start: Get Your First Sound in 5 Minutes
+## Quick Start: Get Sound in 5 Minutes
 
-**What is Punch V3?** A dual-channel VCA with built-in voltage-controlled decay envelopes. It's designed to turn any audio source into dynamic, percussive sounds with vintage drum machine character or modern CV expressiveness. Think of it as giving any sound source the "punch" and dynamics of classic drum machines.
+Punch V3 is a dual-channel VCA with a built-in decay envelope generator on each channel. You patch an audio source in, a trigger in, and it shapes that audio with a decay contour. No separate envelope module required. Each channel also outputs its envelope as a CV signal, which you can send to any other module simultaneously.
 
-### Your First Drum Hit (Vintage Mode)
-1. **Patch oscillator/noise** → **IN** (Channel 1)
-2. **Set mode switch** to **Vintage** (left position)
-3. **Turn DECAY** to around 1 o'clock
-4. **Turn AMOUNT** to 2 o'clock
-5. **Patch trigger/gate** → **TRIG|CV** input
-6. **Patch output** → your mixer
-7. **Trigger it!** - instant punchy drum sound with exponential decay
+1. Patch any audio source into CH1 IN
+2. Patch a gate or trigger into CH1 TRIG|CV
+3. Set mode switch to Vintage
+4. Set DECAY to 12 o'clock
+5. Set CURVE to 12 o'clock
+6. Set AMOUNT to 2 o'clock
+7. Trigger it and listen to the decay envelope shape the audio
+8. Turn DECAY counterclockwise for a snappier result, clockwise for a longer tail
 
-### Your First Dynamic Voice (CV Mode)
-1. **Switch to CV mode** (right position)
-2. **Patch velocity/CV** → **ACC|VEL** input
-3. **Use same audio source** and trigger
-4. **Notice** how the dynamics change with velocity!
-5. **Turn CURVE** knob - changes from smooth to aggressive response
+That is the core operation. Everything else extends from that foundation.
 
-## Essential Parameters (The Big 6)
+## Key Specs
 
-### **1. Mode Switch (Vintage vs. CV)**
-- **Vintage Mode:** Classic drum machine behavior with fixed response
-- **CV Mode:** Dynamic CV control with velocity sensitivity
-- **Key difference:** Vintage = consistent hits, CV = expressive dynamics
-- **Pro tip:** Switch between modes during performance for different feels
+| Spec | Value |
+|------|-------|
+| HP | 9 |
+| Depth | ⚠️ unverified |
+| +12V | 55mA |
+| -12V | 52mA |
+| 5V | 0mA |
+| Channels | 2 (independent) |
+| Self-oscillation | N/A |
 
-### **2. DECAY Control + CV Input**
-- **What it does:** Controls how long the envelope takes to fade out
-- **Musical result:** Short = snappy hits, Long = sustained sounds
-- **CV input:** External control over decay time
-- **Range:** From percussive snaps to long, evolving textures
+## Essential Parameters
 
-### **3. AMOUNT (Gain) Control**
-- **What it does:** Sets the level/intensity of the VCA response
-- **Musical result:** Controls the "punch" and dynamics
-- **CV capability:** Can be modulated for AM (amplitude modulation) effects
-- **Sweet spot:** 12-3 o'clock for most applications
+**Mode switch** selects between Vintage and CV behavior. In Vintage mode the module responds to triggers with a fixed, consistent envelope every time. The ACC|VEL input in this mode functions as an accent: a signal present at ACC|VEL when a trigger arrives adds extra intensity to that hit, mimicking the accent behavior of classic analog drum machines. In CV mode the entire response scales with the voltage at ACC|VEL. A higher voltage produces a louder, more open envelope; a lower voltage produces a quieter, more closed one. Vintage gives you reliable consistency. CV gives you dynamic expression tied to a sequenced or performed voltage.
 
-### **4. CURVE Control**
-- **What it does:** Changes the exponential response of the decay envelope
-- **Range:** Smooth (linear) to aggressive (sharp exponential)
-- **Musical impact:** Affects the "snap" and character of the decay
-- **Performance use:** Real-time timbre shaping
+**DECAY** sets how long the envelope takes to fall from its peak back to zero. Short DECAY times produce snappy transients. Long DECAY times let the audio breathe and sustain. DECAY has a CV input, so a sequencer or LFO can vary the decay time per step, producing rhythmic patterns with different lengths on each hit.
 
-### **5. ACC|VEL (Accent/Velocity) Input**
-- **Vintage Mode:** Accent input for drum machine-style dynamics
-- **CV Mode:** Velocity input for expressive control
-- **Musical result:** Adds dynamics and expression to your sounds
-- **Creative use:** Any CV source can control intensity
+**CURVE** changes the shape of the decay contour. Counterclockwise settings produce a more linear fall, which sounds smoother and more modern. Clockwise settings produce a more aggressive exponential curve, which sounds snappier and more like a classic analog drum machine. CURVE is a timbre control as much as a timing control: the same DECAY time sounds dramatically different at opposite CURVE settings.
 
-### **6. ENV Output + Invert Switch**
-- **ENV Output:** Sends the envelope CV to other modules
-- **Invert Switch:** Flips the envelope from positive to negative
-- **Creative applications:** Inverted envelopes for ducking/sidechain effects
-- **Modulation source:** Use envelope to control other parameters
+**AMOUNT** sets the gain of the VCA response. It controls the peak level the envelope reaches and how much of the input signal passes at the top of the envelope. At low AMOUNT settings even a fully open envelope is quiet. At high AMOUNT settings the module drives harder. Use AMOUNT to balance the output level against the rest of the patch and to control how much headroom the decay envelope uses.
 
-historical_context: false
----
+**ACC|VEL input** functions differently depending on mode. In Vintage mode it is an accent input: a gate or trigger arriving here simultaneously with a TRIG|CV event produces a more intense hit. In CV mode it is a continuous scaling input: the voltage present here at the moment of each trigger determines the intensity of the response. Any CV source works, including sequencer velocity outputs, random sources, or even audio rate signals for AM effects.
 
-## Understanding the Two Modes
+**ENV output and invert switch** send the internal decay envelope as a CV signal to any destination. The envelope is generated whether or not any audio is patched into IN. Flipping the invert switch reverses the envelope polarity, producing a falling-to-rising shape instead of falling. This makes the ENV output useful for ducking, sidechain-style effects, and any parameter that needs to move in the opposite direction from the audio envelope.
 
-### **Vintage Drum Machine Mode:**
-- **Behavior:** Fixed, consistent response like classic drum machines
-- **Trigger response:** Every trigger produces the same intensity
-- **Accent function:** ACC input adds extra "punch" when triggered
-- **Use cases:** Traditional drum programming, consistent percussion
-- **Character:** Reliable, punchy, vintage-style dynamics
+## Why This Excels
 
-### **Dynamic CV Mode:**
-- **Behavior:** Velocity/CV sensitive like modern instruments
-- **Trigger response:** Intensity varies with input CV voltage
-- **Velocity function:** ACC|VEL input scales the entire envelope
-- **Use cases:** Expressive playing, dynamic sequences, modern production
-- **Character:** Responsive, musical, contemporary feel
+Punch V3 is not a drum module with a narrow application. It is a dual-channel EG and VCA that happens to have excellent percussive character. The distinction matters. Any audio source that benefits from a decay contour belongs here: oscillator voices, granular output, noise bursts, pad layers, bass sequences. The module does not care what the source material is. It applies the same decay shaping regardless.
 
-historical_context: false
----
+The two-mode design gives the module a split personality that is genuinely useful rather than redundant. Vintage mode produces the locked, consistent behavior that percussion programming requires. Every kick hit sounds the same, every accent sounds like an accent, and the pattern stays tight. Switching to CV mode opens the same physical controls to continuous dynamic expression, where the sequence or performer determines intensity on each event. Most patches benefit from choosing one mode and committing to it, but the option to switch during a performance creates instant character changes without any other modifications to the patch.
 
-## Why Patching Panda Punch V3 Excels
+The ENV output is where Punch V3 becomes more than a VCA. One trigger event generates a decay envelope that simultaneously shapes the audio path through the VCA and sends a CV signal to any external destination. A filter cutoff, a second VCA, a pitch offset, a stereo imager input: all of these can track the envelope of the audio without any additional envelope generator in the patch. Each channel has its own independent ENV output, so both channels can modulate separate targets at different rates.
 
-### **The Philosophy:**
-Punch V3 bridges the gap between vintage drum machine simplicity and modern CV expressiveness. It recognizes that sometimes you want the reliability of classic drum machines, and sometimes you want the expressiveness of contemporary synthesis.
+At 9HP for two independent channels, the HP-per-function ratio is efficient. A comparable patched setup, using separate VCAs and envelope generators for two channels, would require substantially more space and more cables. Punch V3 compresses that functionality into a form factor that works in systems of any size.
 
-### **The Dual-Mode Innovation:**
-- **Vintage mode:** Captures the character of classic analog drum machines
-- **CV mode:** Brings modern velocity sensitivity and expression
-- **Switchable:** Choose the right mode for each application
-- **Envelope output:** Use the generated envelopes to control other modules
+## Patches
 
-### **The Practical Benefits:**
-- **Instant percussion:** Turn any sound source into drums
-- **Dynamic control:** From subtle expression to dramatic punch
-- **Dual channel:** Two independent voice processors
-- **Compact:** Complete percussion voice in minimal HP
+### Patch 1: Percussive Voice Shape
 
-### **Perfect For:**
-- **Drum machine builders:** Essential component for analog drum synthesis
-- **Percussion programmers:** Add dynamics and character to any source
-- **Live performers:** Expressive control and reliable operation
-- **Sound designers:** Creative envelope shaping and AM effects
-- **Anyone wanting punchy, dynamic sounds:** From subtle to extreme
+A foundational patch demonstrating Vintage mode with a single channel. The focus is on learning how DECAY and CURVE interact to produce different transient characters from the same source.
 
-historical_context: false
----
-
-
-historical_context: false
----
-
-## Beginner Patch Ideas
-
-### **Patch 1: Classic Kick Drum**
-- **Sine/triangle oscillator** → **IN**
-- **Mode:** Vintage
-- **DECAY at 11 o'clock** (short, punchy)
-- **CURVE at 3 o'clock** (aggressive)
-- **AMOUNT at 2 o'clock** (good level)
-- **Kick pattern** → **TRIG|CV**
-- **Result:** Classic analog kick drum with punch
-
-### **Patch 2: Expressive Hi-Hat**
-- **Noise source** → **IN**
-- **Mode:** CV (for velocity sensitivity)
-- **DECAY at 9 o'clock** (very short)
-- **Velocity sequence** → **ACC|VEL** (dynamic hi-hats)
-- **Hi-hat pattern** → **TRIG|CV**
-- **Result:** Dynamic hi-hats that respond to velocity
-
-### **Patch 3: Sidechain Compression Effect**
-- **Bass/pad sound** → **IN**
-- **Constant gate/trigger** → **TRIG|CV** (always on)
-- **Kick trigger** → **ACC|VEL**
-- **INVERT switch ON** (negative envelope)
-- **DECAY around 12 o'clock** (pumping speed)
-- **Result:** Classic sidechain pumping effect
-
-### **Patch 4: Intermediate - Phase 2 Organic Percussion Breathing**
 ```
-   ┌─────────────────────┐      ┌─────────────────────────┐
-   │   DivKid Ochd      │      │  Patching Panda        │
-   │    (Phase 2)       │      │   Punch V3              │
-   │                    │      │   (Percussion)          │
-   │                    │      │                         │
-   │ LFO 1 ○────────────┼──────┼─▶ Decay CV (Ch 1)       │
-   │       ║            │      │                         │
-   │ LFO 3 ○────────────┼──────┼─▶ ACC|VEL (Ch 1)        │
-   │       ║            │      │                         │
-   │ LFO 5 ○────────────┼──────┼─▶ Decay CV (Ch 2)       │
-   │       ║            │      │                         │
-   │ LFO 7 ○────────────┼──────┼─▶ ACC|VEL (Ch 2)        │
-   │       ║            │      │                         │
-   └───────║────────────┘      │ Ch 1 & 2 Out ○─────────┼─── Audio (Red)
-           ║                   │ (Organic Percussion)    │
-   CV (Blue)║                  └─────────────────────────┘
-           ║                           ║
-           ▼                    Audio ║
-   ┌─────────────┐               (Red)║
-   │   Audio     │                    ║
-   │   Sources   │────────────────────▼
-   │  (Drums)    │           ┌──────────────────────────────┐
-   └─────────────┘           │   Organic Percussion         │
-                             │      Breathing               │
-                             │                              │
-                             │ LFO 1: Breathing Decay Ch1   │
-                             │ LFO 3: Living Dynamics Ch1   │
-                             │ LFO 5: Breathing Decay Ch2   │
-                             │ LFO 7: Living Dynamics Ch2   │
-                             │                              │
-                             │ Living Percussion ○─────────┼─── Breathing Rhythms
-                             └──────────────────────────────┘
+[Hermod+] ── Gate out ───────────────────▶ [Punch V3 CH1 TRIG|CV]
+[Cs-L OUT] ──────────────────────────────▶ [Punch V3 CH1 IN]
+
+                                            Mode: Vintage
+                                            DECAY: 11 o'clock
+                                            CURVE: 2-3 o'clock
+                                            AMOUNT: 2 o'clock
+
+                             [Punch V3 CH1 OUT] ──▶ [MixUp CH1]
 ```
 
-| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
-|-------------------|-------------|---------|------------------|
-| **Ochd LFO 1 → Decay CV Ch1** | Organic decay modulation | **Breathing decay times** | **Natural percussion evolution** |
-| **Ochd LFO 3 → ACC|VEL Ch1** | Organic dynamics control | **Living percussion intensity** | **Organic rhythm breathing** |
-| **Ochd LFO 5 → Decay CV Ch2** | Organic decay variation | **Breathing dual-channel** | **Natural stereo percussion** |
-| **Ochd LFO 7 → ACC|VEL Ch2** | Organic dynamics Ch2 | **Living dual dynamics** | **Breathing percussion ecosystem** |
+**Setup:** Patch Cs-L audio output into Punch V3 CH1 IN. Patch Hermod+ gate output into CH1 TRIG|CV. Set mode to Vintage, DECAY to 11 o'clock, CURVE to 2-3 o'clock, AMOUNT to 2 o'clock. Connect CH1 OUT to a MixUp channel.
 
-**Module Settings:**
-- **Ochd Rate:** 12 o'clock for musical organic breathing
-- **Punch V3:** CV mode for organic responsiveness
-- **Both channels:** Organic modulation creates living percussion
-- **Result:** Percussion that breathes and evolves naturally with organic life
+**Controls:** Trigger Hermod+ and listen to the percussive decay shape. Turn CURVE counterclockwise toward 9 o'clock and listen to the envelope become smoother and longer-feeling at the same DECAY time. Turn CURVE clockwise toward 4 o'clock and listen to the decay become snappier with a sharper exponential bend. Now adjust DECAY to hear the range between short transient and extended tail. Try patching a second CV source into ACC|VEL and triggering with it simultaneously to hear the accent behavior.
 
-**Learning Objectives:**
-- **Organic + Percussion integration:** Natural breathing applied to dynamic percussion processing
-- **Living percussion:** VCA envelopes that breathe with organic life
-- **Evolving rhythms:** Simple organic modulation creates complex percussion evolution
-- **System breathing:** Entire percussion system breathes as unified organism
+**Result:** A shaped transient from the Cs-L voice, with CURVE and DECAY as independent handles on the character and length of the decay. The same patch produces entirely different results across the CURVE range without changing any other setting.
 
-**Alternative Modulation Sources:**
-- **Instead of Ochd:** Try **Batumi** for more geometric organic movement, or **Maths** for mathematical organic relationships
-- **Instead of dual-channel:** Try **single channel + mult** for simpler organic percussion processing
-- **Budget alternatives:** **2HP LFO + 2HP Rnd** provides similar organic + variation functionality
-- **Different character:** **Quadrax** gives more discrete organic steps vs Ochd's continuous breathing
+---
 
-### **Patch 5: Advanced - Chaos Percussion Mathematics**
+### Patch 2: Velocity-Responsive Sequence
+
+CV mode with Hermod+ providing both gate and velocity outputs. The sequence programs note-to-note dynamic variation into the envelope response.
+
 ```
-   ┌─────────────────────┐      ┌─────────────────────────┐
-   │   Make Noise       │      │  Patching Panda        │
-   │   Wogglebug        │      │   Punch V3              │
-   │    (Phase 2)       │      │   (Percussion)          │
-   │                    │      │                         │
-   │ Stepped CV ○───────┼──────┼─▶ Decay CV (Ch 1)       │
-   │       ║            │      │                         │
-   │ Smooth CV ○────────┼──────┼─▶ ACC|VEL (Ch 1)        │
-   │       ║            │      │                         │
-   │ Woggle CV ○────────┼──────┼─▶ Decay CV (Ch 2)       │
-   │       ║            │      │                         │
-   │ Burst CV ○─────────┼──────┼─▶ ACC|VEL (Ch 2)        │
-   │       ║            │      │                         │
-   └───────║────────────┘      │ Ch 1 & 2 Out ○─────────┼─── Audio (Red)
-           ║                   │ (Chaos Percussion)      │
-   CV (Blue)║                  └─────────────────────────┘
-           ║                           ║
-           ▼                    Audio ║
-   ┌─────────────┐               (Red)║
-   │   Audio     │                    ║
-   │   Sources   │────────────────────▼
-   │  (Drums)    │           ┌───────────────────────────────┐
-   └─────────────┘           │   Chaos Percussion            │
-                             │      Mathematics               │
-                             │                               │
-                             │ Stepped: Chaotic Decay Jumps  │
-                             │ Smooth: Analog Dynamics Chaos │
-                             │ Woggle: Unpredictable Timing  │
-                             │ Burst: Explosive Variations   │
-                             │                               │
-                             │ Controlled Chaos ○────────┼─── Mathematical Percussion
-                             └───────────────────────────────┘
+[Hermod+] ── Gate out ───────────────────▶ [Punch V3 CH1 TRIG|CV]
+          └─ Velocity CV out ────────────▶ [Punch V3 CH1 ACC|VEL]
+          └─ CV out (1V/oct) ────────────▶ [Cs-L 1V/OCT]
+
+[Cs-L OUT] ──────────────────────────────▶ [Punch V3 CH1 IN]
+
+                                            Mode: CV
+                                            DECAY: 12 o'clock
+                                            CURVE: 12 o'clock
+                                            AMOUNT: 2 o'clock
+
+                             [Punch V3 CH1 OUT] ──▶ [MixUp CH1]
 ```
 
-| Chaos + Percussion Chain | Function | Purpose | Advanced Integration |
-|---------------------------|----------|---------|---------------------|
-| **Wogglebug Stepped → Decay CV Ch1** | Quantized chaos decay | **Chaotic decay time jumps** | **Chaos learns percussion timing** |
-| **Wogglebug Smooth → ACC|VEL Ch1** | Analog chaos dynamics | **Smooth chaos intensity** | **Chaotic percussion dynamics** |
-| **Wogglebug Woggle → Decay CV Ch2** | Pure chaos decay | **Unpredictable timing** | **Chaos-driven percussion variation** |
-| **Wogglebug Burst → ACC|VEL Ch2** | Chaos burst dynamics | **Explosive intensity changes** | **Mathematical percussion explosions** |
+**Setup:** Patch Hermod+ gate to CH1 TRIG|CV, Hermod+ velocity CV output to CH1 ACC|VEL, and Hermod+ pitch CV to Cs-L 1V/OCT. Set mode to CV. Program a sequence in Hermod+ with velocity variation between steps: some steps at full velocity, others at 30 to 50 percent, and occasional low-velocity ghost notes.
 
-**Module Settings:**
-- **Wogglebug:** All outputs active, Rate for musical chaos timing
-- **Punch V3:** CV mode for chaos responsiveness
-- **Dual channels:** Create complex chaotic percussion relationships
-- **Result:** Percussion with controlled but unpredictable chaos variations
+**Controls:** The velocity value at each step scales the entire envelope response. High-velocity steps hit hard and open. Low-velocity steps produce quiet, restrained hits from the same source. Increase AMOUNT to expand the dynamic range between the loudest and quietest steps. Try pulling DECAY down to 10 o'clock for a shorter overall envelope while keeping the velocity-driven dynamics. The combination of consistent decay time and variable intensity is different from what an envelope with attack and sustain controls produces.
 
-**Learning Objectives:**
-- **Chaos + Percussion fusion:** Controlled unpredictability in dynamic percussion systems
-- **Mathematical chaos theory:** Understanding how chaos affects percussion processing
-- **Unpredictable yet musical:** Chaos keeps percussion from becoming static
-- **Controlled randomness:** Percussion processing keeps chaos musical and structured
+**Result:** A melodic or rhythmic sequence where each note carries its own dynamic level set by the sequenced velocity, without any additional VCA or envelope in the patch.
 
-### **Patch 6: Expert - Multi-Function Percussion Workstation**
+---
+
+### Patch 3: ENV Output as Filter Modulation
+
+A two-source patch where Punch V3 shapes one audio path through its VCA while its ENV output simultaneously opens the filter on a second audio path running through Moon Phase. One trigger event creates coordinated movement across both processing chains.
+
 ```
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
-│   Qubit     │ │   Disting   │ │ Cre8audio   │ │ Patching Panda  │
-│   Bloom     │ │   mk4       │ │ Function    │ │  Punch V3       │
-│(Generative) │ │(Multi-Algo) │ │ Junction    │ │ (Percussion)    │
-│             │ │             │ │             │ │                 │
-│ Gate Out ○──┼─┼─Trig In     │ │ Input A ○───┼─┼─Decay CV Ch1   │
-│       ║     │ │        ║    │ │       ║     │ │       ║         │
-│ CV 1 Out ○──┼─┼─Algorithm   │ │ Sum Out ○───┼─┼─ACC|VEL Ch1    │
-│       ║     │ │ (S&H/LFO)   │ │       ║     │ │       ║         │
-│ CV 2 Out ○──┼─┼─CV In       │ │ Input B ○───┼─┼─Decay CV Ch2   │
-│       ║     │ │        ║    │ │       ║     │ │       ║         │
-│ Touch ○─────┼─┼─CV Out ○────┼─┼─Input C     │ │ Mix Out ○───┼─ACC|VEL Ch2
-│       ║     │ │        ║    │ │       ║     │ │       ║         │
-└───────║─────┘ └────────║────┘ │ Diff Out○───┼─┼─Ch1&2 Outputs │
-        ║                ║      │ (CV Proc)   │ │ ○─────────┼─Audio
-        ║                ║      └─────────────┘ └─────────────────┘
-        ▼                ▼             ║               ║
-┌──────────────────────────────────────────────────────────────────┐
-│                Multi-Function Percussion System                    │
-│                                                                     │
-│ Generative Sequencing + Algorithmic Processing + CV Processing     │
-│                                                                     │
-│ Bloom       → Generates gates, CV sequences, and touch control     │
-│ Disting     → S&H algorithm, LFO, quantizer, envelope functions    │
-│ Function    → CV mixing, scaling, inversion, and mathematical ops  │
-│ Punch V3    → Dynamic VCA processing with dual-channel control     │
-│                                                                     │
-│ Multi-Function Integration: Each module serves multiple roles       │
-│                                                                     │
-│ Professional Percussion System ○──────────────────┼─── Multi-Functional Output
-└──────────────────────────────────────────────────────────────────┘
+[Hermod+] ── Gate A ──────────────────────▶ [Punch V3 CH1 TRIG|CV]
+          └─ Gate A ──────────────────────▶ [Arbhar STRIKE]
+          └─ CV (1V/oct) ─────────────────▶ [Cs-L 1V/OCT]
+
+[Cs-L OUT] ───────────────────────────────▶ [Punch V3 CH1 IN]
+[Arbhar OUT L] ───────────────────────────▶ [Moon Phase IN L]
+[Arbhar OUT R] ───────────────────────────▶ [Moon Phase IN R]
+
+[Punch V3 CH1 ENV OUT] ───────────────────▶ [Moon Phase ST f CV]
+
+                                             Mode: Vintage
+                                             DECAY: 1-2 o'clock
+                                             CURVE: 11 o'clock
+                                             AMOUNT: 2 o'clock
+
+                              [Punch V3 CH1 OUT] ──▶ [MixUp CH1]
+                              [Moon Phase OUT L] ──▶ [MixUp CH3 L]
+                              [Moon Phase OUT R] ──▶ [MixUp CH3 R]
 ```
 
-**Multi-Function Percussion Integration:**
+**Setup:** Hermod+ gate goes to both Punch CH1 TRIG|CV and Arbhar STRIKE, so both respond to the same trigger event. Cs-L audio feeds Punch CH1. Arbhar stereo outputs feed Moon Phase IN L and R. Punch CH1 ENV OUT connects to Moon Phase ST f CV. Set Moon Phase ST f to 9 o'clock as the base (closed) position. Set Punch DECAY to 1-2 o'clock for a longer envelope that gives Moon Phase time to open fully and decay.
 
-| Module | Primary Function | Secondary Functions | Punch V3 Role |
-|--------|------------------|--------------------|---------------|
-| **Bloom (16HP)** | Generative sequencer | **Built-in CV generators + touch control + probability** | **Gate and CV source control** |
-| **Disting mk4 (8HP)** | Algorithm processor | **S&H + LFO + Quantizer + Envelope in one module** | **Dynamic CV processing** |
-| **Function Junction (6HP)** | CV processor | **Mix + invert + scale + mathematical operations** | **CV conditioning and routing** |
-| **Punch V3 (9HP)** | Dual VCA with envelopes | **Percussion processing core** | **Complete percussion engine** |
+**Controls:** Each trigger event does two things simultaneously: it shapes the Cs-L audio through the Punch VCA, and it opens Moon Phase's filter on the Arbhar output via the ENV output. Adjust DECAY to change how long both events last. Longer DECAY means the filter on Moon Phase stays open longer, letting more Arbhar content through before closing. Shorter DECAY produces a brief simultaneous transient in both paths. Try the invert switch on the ENV output to close the filter on each hit rather than open it, ducking the Arbhar content in response to the trigger.
 
-**Multi-Function System Design:**
-- **Bloom as generative brain:** Creates gates, CV sequences, and provides touch control - eliminates need for separate sequencer + LFO + controller
-- **Disting as algorithm engine:** S&H algorithm processes Bloom's CV, built-in LFO and envelope functions provide additional modulation
-- **Function Junction as CV processor:** Mixes, scales, and processes all CV signals mathematically before sending to Punch V3
-- **Punch V3 as percussion processor:** Receives optimally conditioned CV for sophisticated percussion control
-- **Total system:** 39HP for complete professional percussion workstation with generative capabilities
+**Result:** Two simultaneous processing events from a single trigger: a shaped Cs-L voice from the VCA, and a filter-modulated Arbhar texture from the ENV output. The patch feels coordinated without requiring any additional envelope generator.
 
-**Performance Applications:**
-1. **Generative percussion programming:** Bloom creates evolving gate and CV patterns automatically
-2. **Algorithmic CV processing:** Disting S&H algorithm creates stepped variations from Bloom's smooth CV
-3. **Mathematical CV conditioning:** Function Junction processes all CV through mathematical operations
-4. **Touch performance control:** Bloom's touch interface provides real-time human expression
-5. **Multi-algorithm flexibility:** Disting can switch algorithms for different processing types per song/section
-
-**Why This Multi-Function Ecosystem Works:**
-- **Leverages actual capabilities:** Uses modules for their intended multi-function design
-- **No single-function overlap:** Each module contributes unique multi-function capabilities  
-- **Algorithm flexibility:** Disting can adapt to any processing needs via algorithm switching
-- **Scalable complexity:** Can be simple (basic patterns) or sophisticated (generative + algorithmic processing)
-- **Combinable with other guides:** No modulation source conflicts since other guides use different multi-function approaches
-
-**Expert System Performance:**
-1. **Initialization:** Bloom establishes generative patterns, Disting loads appropriate algorithm
-2. **Processing chain:** Bloom CV → Disting algorithm → Function Junction math → Punch V3 percussion
-3. **Touch expression:** Real-time human control via Bloom's touch interface
-4. **Algorithm evolution:** Switch Disting algorithms mid-performance for different processing character
-5. **Generative development:** System evolves complex percussion relationships through multi-function interaction
-
-**Philosophical Achievement:**
-This represents **multi-function percussion mastery** - where generative sequencing, algorithmic processing, and mathematical CV operations all serve the percussion engine, creating a professional workstation that leverages each module's complete capabilities rather than using them as single-function devices.
-
-historical_context: false
 ---
 
-## Advanced Techniques
+### Patch 4: Dual-Channel Independent Shaping
 
-### **AM (Amplitude Modulation) Effects:**
-- **Patch audio rate LFO** → **AMOUNT CV** (if available on your version)
-- **Creates tremolo and AM effects** beyond simple VCA operation
-- **Combine with envelope** for complex amplitude shaping
-- **Audio rate modulation** creates ring-mod-like textures
+Both channels running simultaneously with different sources, different DECAY settings, and different mode choices. Demonstrates treating each channel as an independent voice processor rather than a matched stereo pair.
 
-### **Envelope Chaining:**
-- **Patch ENV output** → other module's CV inputs
-- **Use envelope to control:** Filter cutoff, oscillator pitch, other VCAs
-- **Inverted envelopes** create opposite motion
-- **Chain multiple Punch channels** for complex envelope relationships
+```
+[Hermod+] ── Gate A (kick pattern) ──────▶ [Punch V3 CH1 TRIG|CV]
+          └─ Gate B (off-beat pattern) ───▶ [Punch V3 CH2 TRIG|CV]
+          └─ Velocity CV ───────────────── ▶ [Punch V3 CH2 ACC|VEL]
 
-### **Dynamic Sequencing:**
-- **Use CV mode** with variable velocity sequences
-- **Different decay times** per step for rhythmic interest
-- **Accent patterns** create emphasis and groove
-- **Combine with clock dividers** for polyrhythmic effects
+[Cs-L OUT] ───────────────────────────────▶ [Punch V3 CH1 IN]
+[Arbhar OUT L] ───────────────────────────▶ [Punch V3 CH2 IN]
 
-historical_context: false
+          CH1: Vintage, DECAY 10 o'clock, CURVE 3 o'clock
+          CH2: CV, DECAY 2 o'clock, CURVE 9 o'clock
+
+                              [Punch V3 CH1 OUT] ──▶ [MixUp CH1]
+                              [Punch V3 CH2 OUT] ──▶ [MixUp CH2]
+```
+
+**Setup:** Program two separate gate patterns in Hermod+: a regular on-beat or kick-style pattern for CH1, and an off-beat or irregular pattern for CH2 with velocity variation. Cs-L feeds CH1 and Arbhar feeds CH2. Set CH1 to Vintage mode with a short, aggressive CURVE and a snappy DECAY. Set CH2 to CV mode with a smooth CURVE and a longer DECAY so the Arbhar content sustains more between hits.
+
+**Controls:** CH1 produces consistent punchy hits from Cs-L with the Vintage character. CH2 produces velocity-responsive Arbhar hits with a longer, smoother decay. The two channels occupy different rhythmic spaces and have different dynamic characters. Try sending CH1 ENV OUT to Moon Phase ST f CV as in Patch 3 while CH2 runs simultaneously, adding the coordinated filter event to the rhythmic texture.
+
+**Result:** Two independent voice-shaping channels in the same module, each with its own mode, timing, source, and character. The interplay between the consistent CH1 hits and the dynamic CH2 response creates rhythmic interest without additional modules.
+
 ---
 
-## Creative Applications
+## Common Mistakes
 
-### **Percussion Synthesis:**
-- **Kick drums:** Use low-frequency oscillators with short, aggressive decay
-- **Snare drums:** Combine oscillator + noise, medium decay
-- **Hi-hats:** Pure noise source with very short decay
-- **Toms:** Sine waves with medium decay and pitch modulation
+### "I have audio patched in but I hear nothing."
 
-### **Melodic Applications:**
-- **Plucked instruments:** Any oscillator with short decay becomes plucky
-- **Percussive bass:** Bass sequences with punchy envelope shaping
-- **Stabs and hits:** Chord sounds with sharp attack/decay
-- **Mallet sounds:** Bell-like tones with appropriate decay curves
+Punch V3 requires a trigger or gate signal at TRIG|CV to open the envelope. Without a trigger signal the VCA stays closed regardless of what is patched into IN. This is not a malfunction. It is the core behavior of the module.
 
-### **Sound Design:**
-- **Texture creation:** Long decays on complex waveforms
-- **Rhythmic gating:** Use as complex VCA with envelope control
-- **Dynamic processing:** Real-time envelope shaping of any source
-- **Experimental AM:** Audio rate modulation of the amount parameter
+**Fix:** Patch a gate or trigger source into TRIG|CV and confirm it is firing. A sequencer gate output, a clock signal, or a manual gate will all work.
 
-historical_context: false
 ---
 
-## Common Use Cases
+### "I am in CV mode but the velocity input does not seem to change anything."
 
-### **Drum Machine Building:**
-- **Complete drum kit:** Multiple Punch channels for different drum sounds
-- **Vintage character:** Classic analog drum machine sound and feel
-- **Modern dynamics:** CV mode for contemporary expressiveness
-- **Accent programming:** Traditional drum machine accent patterns
+When no signal is patched into ACC|VEL in CV mode the module receives zero volts at that input, which produces a quiet or silent response. The module is waiting for a CV signal to scale the envelope.
 
-### **Live Performance:**
-- **Real-time dynamics:** Switch between vintage and CV modes
-- **Expression control:** Velocity-sensitive performance
-- **Sound shaping:** Live envelope and curve adjustment
-- **Reliable operation:** Built for performance use
+**Fix:** Confirm a voltage source is actively patched into ACC|VEL and is sending positive voltage at the time of each trigger. A sequencer velocity output, an envelope, or even a fixed voltage from an offset source will activate the CV mode response. Also confirm the mode switch is in the CV position and not Vintage.
 
-### **Studio Production:**
-- **Mix dynamics:** Add punch and character to static sounds
-- **Sidechain effects:** Classic pumping and ducking
-- **Percussion layers:** Create multiple percussion elements
-- **Creative processing:** Unique envelope shaping of any source
-
-historical_context: false
 ---
 
-## Pairs Well With
+### "I am not using the ENV output at all."
 
-### **Multi-Function Module Synergies (Professional Percussion Systems):**
-- **Qubit Bloom:** Generative sequencing + touch control + probability → Punch V3 for expressive generative percussion programming
-- **Disting mk4:** Algorithm processor (S&H/LFO/Quantizer/Envelope) → Punch V3 for algorithmic percussion control
-- **Cre8audio Function Junction:** CV mixing + scaling + mathematical operations → Punch V3 for precise percussion parameter control
-- **Hermod+ (Alternative):** Advanced sequencing + built-in quantization + CV processing → Punch V3 for professional percussion sequencing
-- **MetaModule (Alternative):** Plugin-based LFOs + envelopes (Fundamental VCO + AS ADSR) → Punch V3 for plugin-processed percussion
-- **Cross-Multi-Function Integration:** Punch V3 serves as percussion processor for complete multi-function workstation ecosystems
+The ENV output sends the internal decay envelope as a CV signal to any destination and is available whether or not audio is patched into IN. Ignoring it means leaving a free envelope generator unused in every patch.
 
-### **Essential Partners:**
-- **Oscillators:** Sine waves for kicks, complex waves for snares - core percussion synthesis sources
-- **Noise Sources:** Essential for hi-hats and snare drum components in percussion synthesis
-- **Sequencers:** Trigger patterns and velocity sequences for rhythmic percussion programming
-- **Clock Dividers:** Create polyrhythmic trigger patterns and complex percussion relationships
+**Fix:** Patch ENV OUT to any modulatable parameter on another module: a filter cutoff, a second VCA, a pitch input, or a stereo imager. The envelope that is already shaping the audio path can simultaneously animate something else in the patch at no additional cost.
 
-### **Advanced Percussion Integration:**
-- **Filters:** Shape the tone before or after Punch processing for frequency-sculpted percussion
-- **Multiple Punch modules:** Build complete analog drum machines with multiple percussion voices
-- **Mixers:** Combine multiple Punch outputs for complex percussion arrangements
-- **Effects:** Reverb and delay enhance the percussive character and spatial placement
-
-### **Essential Percussion Partners:**
-- **Other Patching Panda modules:** Moon Phase, Hatz - complete percussion synthesis ecosystem
-- **Drum synthesis modules:** Combine with dedicated kick, snare, hi-hat modules
-- **Performance controllers:** Real-time control of multiple percussion parameters for live dynamics
-- **Multi-voice processing:** Use multiple Punch channels for complex percussion voice processing
-
-### **Advanced System Integration:**
-- **Make Noise Maths:** Maths processes Punch V3 outputs for mathematical percussion relationships
-- **Logic modules:** Combine percussion triggers with Boolean operations for complex rhythmic processing
-- **Sample & Hold:** Use percussion gates to trigger variation in other parts of the system
-- **Phase 1 modules:** Punch V3 integrates perfectly with Plaits, Maths, and other core synthesis modules
-
-historical_context: false
 ---
 
-## Beginner "Gotchas" & Pro Tips
+### "Both channels are producing the same result."
 
-### **⚠️ Common Mistakes:**
+Punch V3 is a dual-channel module, but both channels have independent mode switches, DECAY, CURVE, and AMOUNT controls. If the settings are identical the results will be identical.
 
-**"My drums don't sound punchy enough!"**
-- AMOUNT might be too low, or CURVE not aggressive enough
-- **Solution:** Increase AMOUNT to 2-3 o'clock, try more aggressive CURVE settings
+**Fix:** Set each channel to a different mode, a different DECAY time, and a different CURVE position. Patch different sources into each IN and use separate trigger patterns for each TRIG|CV. The two channels become two distinct voice processors rather than duplicates.
 
-**"The velocity doesn't seem to work!"**
-- Make sure you're in CV mode, not Vintage mode
-- **Solution:** Check mode switch position and ensure CV/velocity is patched to ACC|VEL
-
-**"I can't get long, sustained sounds!"**
-- DECAY might be too short, or mode might affect sustain
-- **Solution:** Turn DECAY clockwise, experiment with CURVE settings
-
-### **🎵 Pro Tips:**
-
-**Mode Selection Strategy:**
-- **Vintage mode:** When you want consistent, reliable hits
-- **CV mode:** When you want expressive, dynamic performance
-- **Switch during performance:** Creates instant character changes
-
-**Decay Time Sweet Spots:**
-- **9-10 o'clock:** Snappy hi-hats and percussion
-- **11-1 o'clock:** Punchy kicks and snares
-- **2-4 o'clock:** Sustained hits and tonal sounds
-- **5 o'clock:** Long, evolving textures
-
-**Curve Control Usage:**
-- **CCW (smooth):** More musical, less aggressive
-- **12 o'clock:** Balanced, versatile response
-- **CW (aggressive):** Sharp, snappy, vintage drum machine feel
-
-**Accent/Velocity Programming:**
-- **Vintage mode:** Use accent sparingly for emphasis
-- **CV mode:** Vary velocity continuously for musical expression
-- **Combine:** Use both trigger timing AND accent/velocity for complex rhythms
-
-**Envelope Inversion Tricks:**
-- **Normal envelope:** Standard VCA behavior
-- **Inverted envelope:** Ducking, sidechain, reverse effects
-- **Performance technique:** Live inversion switching for dramatic effects
+---
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
-1. **Start with Punch V3 fundamentals:** Master dual-mode operation, envelope control, and percussion synthesis concepts
-2. **Add generative control:** Integrate Qubit Bloom for generative percussion sequencing with touch expression (see Bloom guide)
-3. **Include algorithmic processing:** Use Disting mk4 for S&H, LFO, and envelope algorithm-based percussion control (see Disting guide)
-4. **Add CV mathematics:** Apply Cre8audio Function Junction for mathematical CV conditioning and routing (see Function Junction guide)
-5. **Include advanced sequencing:** Use Hermod+ for professional percussion sequencing with built-in processing (see Hermod+ guide)
-6. **Complete the workstation:** Add MetaModule with plugins for comprehensive percussion parameter control (see MetaModule guide)
+1. Learn the DECAY and CURVE interaction before adding CV modulation. These two controls define the complete character of the decay contour, and understanding their relationship at fixed settings gives you a reliable mental model for what to expect when you begin modulating them. Spend time at several CURVE positions across the full DECAY range before connecting any external CV.
 
-### **Cross-Module Learning Opportunities:**
-- **Punch V3 + Bloom:** Learn generative percussion programming with touch control for expressive dynamic rhythms
-- **Punch V3 + Disting:** Master algorithmic percussion processing using multiple algorithms in one module
-- **Punch V3 + Function Junction:** Understand mathematical CV processing for precision percussion parameter control
-- **Punch V3 + Hermod+:** Explore professional percussion sequencing with built-in quantization and CV processing
-- **All Multi-Function + Punch V3:** Build complete percussion workstations where each module serves multiple roles simultaneously
+2. Explore Vintage mode accent behavior before moving to CV mode. In Vintage mode the ACC|VEL input responds to the presence of a signal rather than its exact level: a gate present when TRIG|CV fires produces a more intense hit than a gate absent on that event. Programming accent patterns with a sequencer in Vintage mode teaches you the original drum machine design intention of the module before you move to continuous velocity expression.
 
-### **Skill Development Milestones:**
-- **Beginner:** Use vintage/CV modes and envelope control for basic percussion synthesis
-- **Intermediate:** Master CV modulation and dual-channel processing for complex percussion relationships
-- **Advanced:** Create Phase 2 integration patches with organic/chaos/pattern modulation of percussion parameters
-- **Expert:** Design complete percussion ecosystems where Punch V3 serves as dynamic VCA processor for multiple modulation types
+3. Use DECAY CV to vary tail length per step. Patch a sequencer's secondary CV output into the DECAY CV input and program different voltages per step. Short DECAY on some steps and long DECAY on others produces rhythmic interest without changing pitch or dynamics. This technique works on melodic voices as well as percussive ones.
 
-### **Advanced Percussion Concepts:**
-- **Dual-Mode Mastery:** Understand when to use vintage vs CV modes for different musical contexts
-- **Envelope Shaping:** Master decay, curve, and amount interactions for percussion character control
-- **Dynamic Processing:** Explore how modulation affects percussion timing, intensity, and character
-- **System Integration:** Design patches where Punch V3 processes multiple modulation types simultaneously
+4. Make the ENV output a habit. Every time you use Punch V3, decide what the ENV output will do before treating the patch as finished. Even a small modulation depth on a filter cutoff or pitch input adds movement that the audio envelope alone does not produce. The ENV output is a free resource that costs nothing to use.
 
-### **Performance Applications:**
-- **Live Percussion Control:** Real-time mode switching and parameter control for dynamic percussion performance
-- **Generative Percussion Systems:** Foundation for self-evolving rhythm systems with organic/chaos/pattern modulation
-- **Hybrid Processing:** Bridge between traditional percussion and dynamic modulation processing
-- **Educational Tool:** Learn percussion synthesis and advanced VCA envelope concepts
+5. Try the invert switch deliberately rather than occasionally. An inverted envelope closes a parameter as the trigger fires and then lets it return to baseline as the decay falls. This behavior is useful for ducking effects (close a VCA on another channel), reverse-style filter sweeps (shut the filter on each hit), and counterpoint movement (when one element rises, another falls).
 
-historical_context: false
----
+6. Use both channels on non-percussive sources. A drone or pad running through Punch CH1 in CV mode with a slow gate pattern and a long DECAY time produces a completely different result than the same sound without shaping. Punch gives any continuously running source a rhythmic pulse tied to the gate pattern. The vintage drum machine character of the module is not mandatory; it is one application among many.
 
-**Bottom Line:** Punch V3 isn't just a VCA with envelopes - it's a **dynamic percussion processing brain** that transforms simple audio into punchy, evolving rhythms through dual-mode envelope control. Every patch teaches you something new about how percussion synthesis and dynamic processing really works. As the **percussion processor of multi-function workstations**, it transforms generative sequencing, algorithmic processing, and mathematical CV operations into unified professional percussion systems.
+7. Treat Punch V3 as an EG first and a VCA second. The ENV output is a first-class output, not a utility afterthought. In patches where you need an envelope generator but do not need to shape audio directly, patch a dummy cable or nothing into IN and use only ENV OUT. A single trigger event from Hermod+ gives you two independent decay envelopes, one per channel, each going wherever they are most useful in the patch.
 
-historical_context: false
----
+## Pairs Well With
 
-*Visit [Patching Panda](http://patchingpanda.com/) for complete documentation and more innovative percussion modules*
+**Instruo Cs-L** is a natural source for Punch V3 because Cs-L produces complex oscillator content with its own tonal character, and Punch shapes that content's dynamics without modifying the timbre directly. Cs-L's range of waveform outputs gives Punch a variety of source material to work with from a single module, and Cs-L's 1V/oct tracking means a Hermod+ sequence drives both pitch and the triggering of Punch in a single coordinated patch.
+
+**Qu-Bit Hermod+** provides the gate and velocity infrastructure that Punch V3's dual mode design is built to use. Gate outputs trigger Punch's envelopes with precise rhythmic timing. Velocity CV outputs from Hermod+ sequences scale the CV mode response step by step. Having separate gate outputs for each Punch channel means both channels can run independent rhythmic patterns from the same sequencer, which is the most efficient way to drive the dual-channel architecture.
+
+**Patching Panda Moon Phase** receives Punch V3's ENV output as a filter modulation source. Each trigger event that shapes the audio VCA simultaneously opens or closes Moon Phase's ST f filter on a separate audio path. This coupling between the VCA envelope and a downstream filter creates coordinated movement across two separate processing chains from a single trigger source, without any additional envelope generator in the patch.
+
+**Intellijel MixUp** is the natural downstream endpoint for Punch V3's dual channel outputs. CH1 OUT and CH2 OUT feed separate MixUp channels, where the mix level for each shaped voice can be adjusted independently. MixUp's mute function makes it straightforward to bring each Punch channel in and out of the mix during performance without disrupting the patch.
