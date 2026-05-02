@@ -4,537 +4,269 @@ manufacturer: Soma Laboratory
 primary_role: SHAPER
 secondary_roles: []
 form_factor: eurorack
-functions: [fx-modulation, distortion]
-behavior_tags: [dirty, warm, chaotic, nonlinear, generative, evolving]
-use_cases: [dark atmospheric layer, drone foundation, chaotic texture source, self-evolving patch element]
+functions: [delay, distortion, fx-modulation]
+behavior_tags: [dirty, warm, chaotic, nonlinear, lo-fi, self-modulating]
+use_cases: [lo-fi atmospheric processing, drone generation, textural destruction, dark delay]
 hp: 20
+depth: 40
+historical_context: true
 ---
 
-# Soma Lyra8-FX - Beginner's Guide
-
-**The Mysterious Organismic Effects Processor**
+# Soma Lyra-8 FX
 
 ![Soma Lyra-8 FX](https://github.com/Shadoe-42/music/raw/main/modular/images/soma/lyra8_fx/front_panel.jpg)
-
----
-
-## Quick Start: Get Your First Sound in 5 Minutes
-
-**What is Lyra8-FX?** The effects section from Soma's legendary Lyra-8 "Organismic Synthesizer" packed into a Eurorack module. It's a dual lo-fi delay with cross-feedback plus parallel distortion that creates murky, sludgy, mysterious textures unlike any other effects processor. Think broken speakers, rusty delays, and living, breathing effects.
-
-### Your First Organismic Processing
-1. **Turn IN volume** to around 12 o'clock
-2. **Set both Stage delays** to around 1 o'clock
-3. **Turn Delay mix** to 2 o'clock (more wet)
-4. **Set Delay feedback** to 11 o'clock (moderate)
-5. **Patch any audio source** → **Audio In**
-6. **Listen** - you should hear murky, lo-fi delay processing
-7. **Slowly turn up Distortion drive** - adds gritty parallel distortion
-
-### Discover Self-Modulation Magic
-1. **Flip Stage 1 mod source switch** to **self-modulation** position
-2. **Turn Stage 1 mod depth** to 2 o'clock
-3. **Increase feedback** to 3 o'clock
-4. **Result:** The delay modulates its own sample rate - creating unstable, degraded textures!
-
----
-
-## Essential Parameters (The Big 6)
-
-### **1. Dual Delay Stages (Stage 1 & 2)**
-- **What they do:** Two parallel delay lines with independent time controls
-- **Stage 1 & 2 delay time:** Independent timing for each delay line
-- **Cross-feedback:** Both delays feed back into each other
-- **Musical result:** Parallel delays create complex rhythmic interactions
-- **Sweet spot:** Set at different times for complex polyrhythmic echoes
-
-### **2. Self-Modulation System**
-- **Stage 1 & 2 mod source switches:** External CV or self-modulation
-- **Self-modulation:** Delay output modulates its own sample rate
-- **Mod depth controls:** How much modulation affects delay time
-- **Unique feature:** Creates unstable, degraded, "broken" delay effects
-- **Result:** Lo-fi digital artifacts and sample rate reduction
-
-### **3. Delay Feedback + CV**
-- **Feedback knob:** Controls how much delay feeds back into itself
-- **CV amount:** External control over feedback amount
-- **Cross-feedback:** Both delays feed into each other
-- **Metallic drone:** Higher feedback creates sustained metallic tones
-- **Performance control:** CV sweeps bring drone in and out
-
-### **4. Parallel Distortion**
-- **Drive control:** Amount of distortion applied
-- **Drive CV + amount:** External control over distortion intensity
-- **Mix control:** Blend between clean and distorted signal
-- **Post-delay:** Distortion processes the delayed signal
-- **Character:** Grimy, full-frequency range distortion
-
-### **5. Input & Output Management**
-- **IN volume:** Controls input level into the effect
-- **Main out:** Mixed delay + distortion output
-- **Delay only out:** Pure delay signal before distortion
-- **No input attenuation controls:** Must control levels externally
-
-### **6. Modulation Depth Controls**
-- **Stage 1 & 2 mod depth:** How much the modulation source affects delay time
-- **Independent control:** Each stage can have different modulation amounts
-- **Range:** From subtle to extreme time modulation
-- **Performance use:** Real-time control over modulation intensity
-
----
-
-## Understanding the "Organismic" Philosophy
-
-### **What Makes It "Organismic":**
-- **Living, breathing effects:** Parameters interact in complex, unpredictable ways
-- **Self-modulation:** The effect modulates itself, creating autonomous behavior
-- **Cross-feedback:** Multiple feedback paths create complex interactions
-- **Lo-fi character:** Intentionally degraded, imperfect sound quality
-- **Instability:** Embraces chaos and unpredictability as musical elements
-
-### **The Lyra-8 Heritage:**
-- **Organismic synthesis:** Soma's philosophy of creating "living" electronic instruments
-- **Mysterious character:** Designed to be unpredictable and autonomous
-- **Handmade quality:** Through-hole components, chunky knobs, heavy construction
-- **Russian engineering:** Unique approach to electronic instrument design
-- **No SMD components:** Old-school construction with character
-
-### **PT2399 Delay Chips:**
-- **Digital delay ICs:** Designed to mimic old analog BBD (bucket brigade) delays
-- **Lo-fi character:** Intentional degradation and sample rate limitations
-- **Cross-feedback:** Two PT2399 chips with complex routing
-- **Self-modulation capability:** Allows feedback to modulate sample rate
-
----
-
-## Why Soma Lyra-8 FX Excels
-
-### **The Organismic Philosophy:**
-Lyra8-FX embodies Soma's unique approach to electronic instruments - they should be alive, unpredictable, and have their own personality. It's not trying to be a perfect, transparent processor; it's designed to add character, mystery, and organic unpredictability.
-
-### **The Build Quality:**
-- **Handmade construction:** Through-hole components, no SMDs
-- **Chunky Moog-style knobs:** Substantial, performance-ready controls
-- **Heavy, robust construction:** Built to last and inspire confidence
-- **Russian engineering:** Unique approach to electronic design
-
-### **The Unique Sound:**
-- **Lo-fi digital character:** PT2399 chips with intentional limitations
-- **Self-modulation capability:** Effects that modify themselves
-- **Cross-feedback complexity:** Multiple interacting delay lines
-- **Organismic behavior:** Unpredictable, alive, breathing effects
-
-### **Perfect For:**
-- **Experimental musicians:** Seeking unpredictable, characterful processing
-- **Ambient producers:** Organic, evolving textures
-- **Sound designers:** Unique lo-fi digital character
-- **Live performers:** Real-time control and autonomous behavior
-- **Anyone tired of pristine, perfect effects:** Adds grit, character, and life
-
----
+*Dual lo-fi delay with self-modulation, cross-feedback, and parallel distortion extracted from the Lyra-8 instrument in 20HP*
 
 ## Historical Context
 
-Vlad Kreimer grew up in Donetsk, Ukraine, trained as a radio engineer and working as a musician. The first serious instrument he built was an 8-bit sampler, constructed in the years immediately after the Soviet collapse, at a moment when electronic components were becoming accessible in ways they previously had not been but the commercial infrastructure around synthesizer manufacturing was entirely absent from that part of the world. Kreimer built instruments for himself and for his own music projects, making hi-fi audio equipment and experimental synthesizers outside any established industry context. That origin is not incidental to what SOMA instruments became. It is the condition under which a different set of assumptions about what an electronic instrument should do had room to develop.
+Vlad Kreimer grew up in Donetsk, Ukraine, trained as a radio engineer and working as a musician. The first serious instrument he built was an 8-bit sampler, constructed in the years immediately after the Soviet collapse, at a moment when electronic components were becoming accessible in ways they previously had not been but the commercial infrastructure around synthesizer manufacturing was entirely absent. Kreimer built instruments for himself and his own music, making experimental synthesizers outside any established industry context. That origin is not incidental to what SOMA instruments became. It is the condition under which a different set of assumptions about what an electronic instrument should do had room to develop.
 
-The Lyra-8 was not designed to be a product. Kreimer built it for his own use and posted a demonstration online; the response was large enough that he founded SOMA Laboratory in 2016 to manufacture it. The instrument's defining characteristic is what Kreimer calls "organismic" design, a term he uses to describe synthesis architectures where internal modules relate to each other in nonhierarchical, feedback-capable ways, resembling the organ structures of living systems rather than a linear signal chain. The Lyra-8's eight voices are triggered not by keyboard or MIDI but by metal touch sensors that read the player's body capacitance directly. There is no pitch quantization, no fixed tuning reference, and no parameter that behaves identically across all playing conditions. The nonlinearity that most instrument design works to eliminate is here a design goal.
+The Lyra-8 was not designed to be a product. Kreimer built it for his own use and posted a demonstration online; the response was large enough that he founded SOMA Laboratory in 2016 to manufacture it. The instrument's defining characteristic is what Kreimer calls "organismic" design, a term he uses to describe synthesis architectures where internal modules relate to each other in nonhierarchical, feedback-capable ways, resembling the structural relationships of biological systems rather than a linear signal chain. The Lyra-8's eight voices are triggered not by keyboard or MIDI but by metal touch sensors that read the player's body capacitance directly. There is no pitch quantization, no fixed tuning reference, and no parameter that behaves identically across all playing conditions. The nonlinearity that most instrument design works to eliminate is here a design goal.
 
-The Lyra-8's effects section uses PT2399 delay chips, inexpensive integrated circuits originally manufactured for consumer karaoke echo units, operating at sample rates low enough that the lo-fi character is a structural property of the circuit rather than an added aesthetic. Kreimer configured them in a double-modulated delay with cross-feedback between the two stages, and added a self-modulation path in which the delay output signal modulates its own sample rate. The result is a feedback system rather than a discrete effects chain: the behavior of the delays depends on what is already passing through them, and the relationship changes continuously. The Lyra-8 FX extracts this specific circuit for Eurorack: the dual delay, the cross-feedback, the self-modulation, and a parallel distortion section, with CV control inputs added. The underlying circuit is the original one; what changed is that it can now accept control voltage from the surrounding patch.
+The effects section uses PT2399 delay chips, inexpensive integrated circuits originally manufactured for consumer karaoke echo units, operating at sample rates low enough that the lo-fi character is a structural property of the circuit rather than an added aesthetic. Kreimer configured them in a double-modulated delay with cross-feedback between the two stages, and added a self-modulation path in which the delay output signal modulates its own sample rate. The result is a feedback system rather than a discrete effects chain: the behavior of the delays depends on what is already passing through them, and the relationship changes continuously. The Lyra-8 FX module extracts this specific circuit for Eurorack, adding CV control inputs while leaving the underlying circuit unchanged.
 
-Kreimer describes SOMA's approach as "romantic engineering," by which he means instruments built from a philosophical position rather than a market specification. The Lyra-8 was designed without MIDI because he considered the requirement to quantize pitch and time to a grid a constraint on musical thinking, not a neutral convenience. The choice to use through-hole components and avoid surface-mount construction was about tactility and repairability. These positions came from a tradition of instrument-making that was oriented toward building what you needed rather than choosing from what was available, a tradition shaped by the specific material conditions of working as an engineer and musician in post-Soviet eastern Ukraine. The Lyra-8 FX carries that origin into the Eurorack format without adapting to its conventions.
+Kreimer describes SOMA's approach as "romantic engineering," by which he means instruments built from a philosophical position rather than a market specification. The Lyra-8 was designed without MIDI because he considered the requirement to quantize pitch and time to a grid a constraint on musical thinking rather than a neutral convenience. The choice to use through-hole components and avoid surface-mount construction was about tactility and repairability. These positions came from a tradition of instrument-making oriented toward building what you needed rather than choosing from what was available, a tradition shaped by the specific conditions of working as an engineer and musician in post-Soviet eastern Ukraine. The Lyra-8 FX carries that origin into the Eurorack format without adapting to its conventions.
+
+## Quick Start: Get Sound in 5 Minutes
+
+Lyra-8 FX is a dual lo-fi delay with self-modulation and parallel distortion. It accepts any audio source and degrades it through cross-feeding PT2399 delay stages that can modulate their own sample rate. The result is never fully predictable and never fully clean. Both are design properties.
+
+1. Patch any audio source into Audio In
+2. Set IN volume to 12 o'clock
+3. Set Stage 1 and Stage 2 delay times to different positions: Stage 1 at 10 o'clock, Stage 2 at 2 o'clock
+4. Set both mod source switches to external CV (no signal needed yet)
+5. Set Feedback to 11 o'clock
+6. Set Delay mix to 2 o'clock
+7. Listen to the cross-feeding delays producing complex repeating patterns
+8. Now flip Stage 1 mod source switch to self-modulation and turn Stage 1 mod depth to 1 o'clock
+9. Listen to the delay begin to degrade and destabilize as it modulates its own sample rate
+
+The character shift in step 9 is the central behavior. Everything else extends from there.
+
+## Key Specs
+
+| Spec | Value |
+|------|-------|
+| HP | 20 |
+| Depth | 40mm |
+| +12V | 90mA |
+| -12V | 20mA |
+| 5V | 0mA |
+| Delay chips | PT2399 ×2 |
+| Self-oscillation | Yes (via feedback) |
+
+## Essential Parameters
+
+**Stage 1 and Stage 2 delay time knobs** set the delay length for each of the two PT2399 stages independently. The two stages feed into each other via cross-feedback, so their relative timing determines the rhythmic relationship between the repeating echoes. Matched times produce reinforcement and resonance. Different times produce polyrhythmic delay interactions. Very short times produce comb filtering and chorus-adjacent textures. Very long times produce distinct rhythmic echoes.
+
+**Mod source switches (one per stage)** select whether each stage is modulated by an external CV signal at the mod CV input or by the self-modulation path. In self-modulation mode the stage's own output feeds back to modulate the PT2399 sample rate clock, causing the delay time to vary with the content of the signal currently passing through it. The character of self-modulation depends entirely on what is in the delay: a dense signal produces rapid, complex modulation; a sparse signal produces slower, more isolated warping. External CV mode disconnects this feedback path and accepts a control voltage instead.
+
+**Mod depth controls (one per stage)** set how much the selected modulation source affects the delay sample rate. Low depth produces subtle pitch wobble and instability. High depth produces dramatic sample rate reduction, glitching, and time-stretching artifacts. With self-modulation active and depth high, the stage can become fully unstable. Each stage has its own independent depth control, so one stage can run subtle and the other extreme.
+
+**Feedback** controls how much of the combined delay output recirculates into the input. Below a certain threshold the delays decay normally. As feedback increases, repeating cycles build and sustain into metallic drone tones. Above the self-oscillation threshold the module generates continuous pitched tones without any audio input. Feedback has a CV input for dynamic control of the recirculation amount during performance.
+
+**Distortion** sits in parallel with the delay path and processes the delayed signal. Drive sets the amount of gain and saturation applied. Unlike guitar-pedal distortion circuits designed around guitar frequency content, this circuit processes the full frequency range equally. The distortion mix control blends the distorted signal against the clean delay output. Drive also has a CV input. At audio rate, CV modulation of Drive creates pitched harmonic artifacts unrelated to the delay processing.
+
+**IN volume** controls the input level entering the processing chain. This is the primary level management control and affects how hard the delays are being driven. Pushing IN volume high overdrives the input stage and adds its own saturation before the delay processing begins.
+
+**Main out** carries the full mixed output of delay and distortion. **Delay Only out** carries the delay signal before the distortion stage and after the IN volume and feedback path. Patching both outputs simultaneously into separate mixer channels gives independent control over the delay character and the distorted character.
+
+## Why This Excels
+
+Self-modulation is not an effect applied to the delay. It is a feedback path within the delay circuit itself, meaning the signal currently passing through the PT2399 changes how that same chip will process the next moment of audio. The behavior cannot be fully predicted from the input signal alone because the modulation is generated by the interaction between the input and the existing state of the delay. This makes Lyra-8 FX a feedback system rather than a signal processor with predictable transfer characteristics. What comes out depends on what went in combined with what is already there.
+
+The PT2399 chip's lo-fi character is structural, not cosmetic. The chip operates at a sample rate that imposes audible quantization artifacts as part of its basic function, and Kreimer's circuit does not filter or compensate for these artifacts. Self-modulation lowers the effective sample rate further, dynamically, based on signal content. The degraded quality of the output at high modulation depths is the circuit behaving as designed: it is not simulating the sound of damaged equipment, it is the sound of this specific analog signal path under specific electrical conditions.
+
+The Delay Only output is frequently overlooked and consistently underused. The distortion circuit in parallel with the delay path is useful precisely because it processes a signal that has already been through the PT2399 degradation. Patching Main out and Delay Only out to separate mixer channels, or routing Delay Only to additional downstream processing, gives access to the clean delay character independently of the distorted version. This also means the module can serve as two distinct signal sources in the same patch: lo-fi delay at one output, lo-fi delay plus full-range saturation at the other.
+
+With no audio input and feedback above the self-oscillation threshold, Lyra-8 FX generates pitched drone tones from the recirculating delay feedback alone. The pitch of these tones is influenced by the Stage delay time settings and the feedback level. CV control of the Feedback input during no-input operation creates rising and falling drone events without any audio source. The module functions as a generator in this configuration, not only as a processor.
+
+## Patches
+
+### Patch 1: Granular Through Lo-Fi Delay
+
+Arbhar granular output fed into Lyra-8 FX with one stage in self-modulation and one stage receiving Zadar CV. The two delay stages apply different characters to the same granular source simultaneously.
+
+```
+[Arbhar OUT L] ────────────────────────────▶ [Lyra-8 FX Audio In]
+
+[Zadar CH1] ───────────────────────────────▶ [Lyra-8 FX Stage 2 Mod CV]
+(slow envelope, 8-15 second duration)
+
+                                              Stage 1: self-modulation
+                                              Stage 1 time: 11 o'clock
+                                              Stage 1 mod depth: 1-2 o'clock
+
+                                              Stage 2: external CV
+                                              Stage 2 time: 2 o'clock
+                                              Stage 2 mod depth: 12 o'clock
+
+                                              Feedback: 11 o'clock
+                                              IN volume: 12 o'clock
+                                              Delay mix: 2 o'clock
+                                              Distortion drive: 9-10 o'clock
+
+                         [Lyra-8 FX Main Out] ──▶ [MixUp CH1]
+```
+
+**Setup:** Patch Arbhar left output into Lyra-8 FX Audio In. Patch Zadar CH1 (set to a slow envelope shape, 8 to 15 seconds, no trigger needed for ambient use) into Stage 2 Mod CV. Set Stage 1 mod source switch to self-modulation. Set Stage 2 mod source switch to external CV.
+
+**Controls:** Stage 1 self-modulates based on the Arbhar granular content passing through it, producing unstable warping that changes with the grain density and pitch. Stage 2 receives slow Zadar envelope CV, shifting its sample rate periodically as the envelope moves. The two delay stages apply different modulation characters to the same source simultaneously. Adjust Stage 1 mod depth to control how extreme the self-modulation becomes. Push Feedback toward 12-1 o'clock to sustain more of the granular content and build denser textures.
+
+**Result:** Arbhar's granular output processed through two independently modulated lo-fi delay stages: one self-modulating from its own content, one shifting slowly under Zadar's control. The combination produces textures that neither module generates alone.
 
 ---
 
-## Beginner Patch Ideas
+### Patch 2: Feedback Drone with CV Sweep
 
-### **Patch 1: Murky Ambient Processing**
-- **Ambient pad/drone** → **Audio In**
-- **Both delays at different times** (Stage 1: 10 o'clock, Stage 2: 2 o'clock)
-- **Both stages set to self-modulation**
-- **Moderate mod depth** (12 o'clock both stages)
-- **High delay mix** (3 o'clock)
-- **Result:** Evolving, unstable ambient textures
+No-input feedback oscillation with Zadar controlling the Feedback CV input, creating rising and falling drone events timed by the envelope.
 
-### **Patch 2: Rhythmic Drum Destruction**
-- **Drum loop** → **Audio In**
-- **Short delay times** (both around 9 o'clock)
-- **One stage external CV, one self-mod**
-- **LFO** → **Delay time CV** (rhythmic modulation)
-- **High feedback** for metallic drone
-- **Result:** Rhythmic delays with unstable, degraded character
-
-### **Patch 3: Extreme Feedback Oscillation**
-- **No audio input** needed
-- **Both stages self-modulation**
-- **High feedback** (4+ o'clock)
-- **Moderate delay times**
-- **High mod depths**
-- **Result:** Self-generating oscillating textures from pure feedback
-
-### **Patch 4: Intermediate - Phase 2 Organic Organismic Processing**
 ```
-   ┌─────────────────────┐      ┌─────────────────────────┐
-   │   DivKid Ochd      │      │    Soma Lyra8-FX       │
-   │    (Phase 2)       │      │    (Organismic)         │
-   │                    │      │                         │
-   │                    │      │                         │
-   │ LFO 1 ○────────────┼──────┼─▶ Stage 1 Mod CV       │
-   │       ║            │      │                         │
-   │ LFO 3 ○────────────┼──────┼─▶ Feedback CV           │
-   │       ║            │      │                         │
-   │ LFO 5 ○────────────┼──────┼─▶ Distortion CV         │
-   │       ║            │      │                         │
-   │ LFO 7 ○────────────┼──────┼─▶ Stage 2 Mod CV       │
-   │       ║            │      │                         │
-   └───────║────────────┘      │ Main Out ○─────────────┼─── Audio (Red)
-           ║                   │ (Organic Organismic)    │
-   CV (Blue)║                  └─────────────────────────┘
-           ║                           ║
-           ▼                    Audio ║
-   ┌─────────────┐               (Red)║
-   │   Audio     │                    ║
-   │   Source    │────────────────────▼
-   │             │           ┌──────────────────────────────┐
-   └─────────────┘           │   Organic Organismic         │
-                             │      Effects                 │
-                             │                              │
-                             │ LFO 1: Breathing Stage 1     │
-                             │ LFO 3: Living Feedback       │
-                             │ LFO 5: Organic Distortion    │
-                             │ LFO 7: Breathing Stage 2     │
-                             │                              │
-                             │ Living Organism ○───────────┼─── Breathing Chaos
-                             └──────────────────────────────┘
+(no audio input)
+
+[Zadar CH1] ───────────────────────────────▶ [Lyra-8 FX Feedback CV]
+(medium duration envelope, looping or triggered)
+
+                                              Both stages: self-modulation
+                                              Stage 1 time: 12 o'clock
+                                              Stage 2 time: 1 o'clock
+                                              Both mod depths: 1 o'clock
+                                              Feedback: 2 o'clock (base)
+                                              IN volume: 11 o'clock
+                                              Delay mix: 3 o'clock
+
+                         [Lyra-8 FX Main Out] ──▶ [MixUp CH1]
+                         [Lyra-8 FX Delay Only] ──▶ [MixUp CH2]
 ```
 
-| Module Integration | Signal Flow | Purpose | Phase 2 Synergy |
-|-------------------|-------------|---------|------------------|
-| **Ochd LFO 1 → Stage 1 Mod CV** | Organic delay modulation | **Breathing delay time** | **Natural organismic evolution** |
-| **Ochd LFO 3 → Feedback CV** | Organic feedback control | **Living feedback loops** | **Organic resonance breathing** |
-| **Ochd LFO 5 → Distortion CV** | Organic distortion control | **Breathing distortion intensity** | **Natural grit evolution** |
-| **Ochd LFO 7 → Stage 2 Mod CV** | Organic delay modulation | **Breathing delay variation** | **Living dual-stage organism** |
+**Setup:** Patch nothing into Audio In. Set both stages to self-modulation with moderate mod depth. Set base Feedback to 2 o'clock. Patch Zadar CH1 into Feedback CV with a medium-duration envelope (4 to 8 seconds). Use MixUp CH1 for Main out and CH2 for Delay Only so both outputs are audible in the mix.
 
-**Module Settings:**
-- **Ochd Rate:** 12 o'clock for musical organic breathing
-- **Lyra8-FX:** Mix of self-modulation and organic external modulation
-- **Stage switches:** One self-mod, one external CV for hybrid organism
-- **Result:** Effects that breathe and evolve naturally with organic life
+**Controls:** As the Zadar envelope rises it pushes Feedback above the self-oscillation threshold, causing the module to begin generating drone tones from the recirculating delay. As the envelope falls Feedback drops below the threshold and the drones decay. Stage 1 and 2 time settings determine the pitch content of the oscillation: adjust them to find pitches that complement the surrounding patch. Main out and Delay Only out carry different tonal characters, which MixUp allows you to balance against each other.
 
-**Learning Objectives:**
-- **Organic + Organismic integration:** Natural breathing applied to living effects processing
-- **Breathing effects:** Delay and distortion that breathe with organic life
-- **Evolving character:** Simple organic modulation creates complex effects evolution
-- **System breathing:** Entire effects organism breathes as unified living system
-
-**Alternative Modulation Sources:**
-- **Instead of Ochd:** Try **Batumi** for more geometric organic movement, or **Maths** for mathematical organic relationships
-- **Instead of self-mod:** Try **Radio Music** for chaotic sample-based organismic behavior
-- **Budget alternatives:** **2HP LFO + 2HP Rnd** provides similar organic + chaos functionality
-- **Different character:** **Quadrax** gives more discrete organic steps vs Ochd's continuous breathing
-
-### **Patch 5: Advanced - Chaos Organismic Mathematics**
-```
-   ┌─────────────────────┐      ┌─────────────────────────┐
-   │   Make Noise       │      │    Soma Lyra8-FX       │
-   │   Wogglebug        │      │    (Organismic)         │
-   │    (Phase 2)       │      │                         │
-   │                    │      │                         │
-   │ Stepped CV ○───────┼──────┼─▶ Stage 1 Mod CV       │
-   │       ║            │      │                         │
-   │ Smooth CV ○────────┼──────┼─▶ Feedback CV           │
-   │       ║            │      │                         │
-   │ Woggle CV ○────────┼──────┼─▶ Distortion CV         │
-   │       ║            │      │                         │
-   │ Burst CV ○─────────┼──────┼─▶ Stage 2 Mod CV       │
-   │       ║            │      │                         │
-   └───────║────────────┘      │ Main Out ○─────────────┼─── Audio (Red)
-           ║                   │ (Chaos Organismic)      │
-   CV (Blue)║                  └─────────────────────────┘
-           ║                           ║
-           ▼                    Audio ║
-   ┌─────────────┐               (Red)║
-   │   Audio     │                    ║
-   │   Source    │────────────────────▼
-   │             │           ┌───────────────────────────────┐
-   └─────────────┘           │   Chaos Organismic            │
-                             │      Mathematics               │
-                             │                               │
-                             │ Stepped: Chaotic Delay Jumps  │
-                             │ Smooth: Analog Feedback Chaos │
-                             │ Woggle: Unpredictable Grit    │
-                             │ Burst: Explosive Modulation   │
-                             │                               │
-                             │ Controlled Chaos ○────────┼─── Mathematical Organism
-                             └───────────────────────────────┘
-```
-
-| Chaos + Organismic Chain | Function | Purpose | Advanced Integration |
-|---------------------------|----------|---------|---------------------|
-| **Wogglebug Stepped → Stage 1 CV** | Quantized chaos delay | **Chaotic delay time jumps** | **Chaos learns organismic timing** |
-| **Wogglebug Smooth → Feedback CV** | Analog chaos feedback | **Smooth chaos feedback** | **Chaotic organismic resonance** |
-| **Wogglebug Woggle → Distortion CV** | Pure chaos distortion | **Unpredictable grit** | **Chaos-driven organismic destruction** |
-| **Wogglebug Burst → Stage 2 CV** | Chaos burst delay | **Explosive delay changes** | **Controlled organismic explosions** |
-
-**Module Settings:**
-- **Wogglebug:** All outputs active, Rate for musical chaos timing
-- **Lyra8-FX:** External CV modulation with chaos-driven organism behavior
-- **Self-modulation:** Still active on both stages for hybrid chaos/self-mod organism
-- **Result:** Organismic effects with controlled but unpredictable chaos variations
-
-**Learning Objectives:**
-- **Chaos + Organismic fusion:** Controlled unpredictability in living effects systems
-- **Mathematical chaos theory:** Understanding how chaos affects organismic processing
-- **Unpredictable yet musical:** Chaos keeps organismic effects from becoming static
-- **Controlled randomness:** Organismic processing keeps chaos musical and structured
-
-### **Patch 6: Expert - Complete Phase 2 Organismic Ecosystem**
-```
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
-│   DivKid    │ │ Make Noise  │ │ Mutable     │ │   Soma       │
-│    Ochd     │ │ Wogglebug   │ │  Marbles    │ │ Lyra8-FX     │
-│ (Organic)   │ │ (Chaos)     │ │ (Patterns)  │ │ (Organismic) │
-│             │ │             │ │             │ │             │
-│ LFO 1 ○─────┼─┼─Stepped ○   │ │ X1 Out ○────┼─┼─Stage 1 CV │
-│       ║     │ │        ║    │ │       ║     │ │       ║     │
-│ LFO 3 ○─────┼─┼─Smooth ○    │ │ X2 Out ○────┼─┼─Feedback   │
-│       ║     │ │        ║    │ │       ║     │ │       ║     │
-│ LFO 7 ○─────┼─┼─Woggle ○    │ │ Y Out  ○────┼─┼─Distortion │
-│       ║     │ │        ║    │ │       ║     │ │       ║     │
-└───────║─────┘ └────────║────┘ │ t1 Out ○────┼─┼─Stage 2 CV │
-        ║                ║      │       ║     │ │       ║     │
-        ║                ║      │ DEJA VU     │ │ Main Out   │
-        ║                ║      │ CV ◀────────┼─┼─All Effects │
-        ║                ║      │ (Learning)  │ │ ○─────────┼─Audio
-        ║                ║      └─────────────┘ └─────────────────┘
-        ▼                ▼             ║               ║
-┌──────────────────────────────────────────────────────────────────┐
-│                  Complete Organismic Ecosystem                     │
-│                                                                     │
-│ Organic Breathing + Controlled Chaos + Pattern Learning + Organismic│
-│                                                                     │
-│ Organic LFOs → Natural organismic parameter breathing and evolution │
-│ Chaos CVs    → Controlled unpredictability in effects processing  │
-│ Pattern X/Y/t → Learning organismic patterns and adaptive control  │
-│ Organismic   → Living effects processing of all modulation types   │
-│ Feedback     → Marbles learns from organismic effects relationships│
-│                                                                     │
-│ System Evolution: Organic → Chaos → Patterns → Organismic        │
-│                                                                     │
-│ Pure Organismic Evolution ○───────────────────────┼─── Evolving Living Output
-└──────────────────────────────────────────────────────────────────┘
-```
-
-**Complete System Integration:**
-
-| Layer | Function | Lyra8-FX Role | Musical Result |
-|-------|----------|---------------|----------------|
-| **Organic (Ochd)** | Natural breathing | **Organic effects breathing** | **Living organismic processing** |
-| **Chaos (Wogglebug)** | Controlled uncertainty | **Chaos effects processing** | **Unpredictable but structured organism** |
-| **Patterns (Marbles)** | Learning circuits | **Pattern-driven effects control** | **Adaptive organismic relationships** |
-| **Organismic (Lyra8-FX)** | Living processing | **System effects brain** | **Advanced living effects** |
-
-**Expert System Design:**
-- **Four-layer processing:** Organic breathing, controlled chaos, pattern learning, organismic processing
-- **Lyra8-FX as effects processor:** All modulation types processed through living organismic algorithms
-- **Learning integration:** Marbles learns from organismic effects output through feedback
-- **Emergent behavior:** System evolves increasingly sophisticated organismic relationships
-- **Musical evolution:** Organic → Chaos → Patterns → Organismic = Pure evolved living effects
-
-**Advanced Performance:**
-1. **Initialization:** Each module establishes its character and patterns
-2. **Cross-modulation:** All modulation types begin affecting organismic processing
-3. **Learning phase:** Marbles learns from living effects relationships
-4. **System evolution:** Entire ecosystem becomes increasingly musical and sophisticated
-5. **Organismic transcendence:** Pure living effects emerge from multi-layer modulation
-
-**Philosophical Achievement:**
-This represents **advanced organismic consciousness** - where organic breathing, controlled chaos, and pattern learning all become living effects processing, computed through organismic algorithms into pure evolved musical organisms.
+**Result:** A no-input generator producing periodic drone events timed by Zadar's envelope, with the pitch determined by the PT2399 delay time settings and the two outputs giving access to different saturation characters simultaneously.
 
 ---
 
-## Advanced Techniques
+### Patch 3: Lo-Fi Delay into Stereo Filter
 
-### **Self-Modulation Exploration:**
-- **Feedback-induced modulation:** High feedback creates modulation source
-- **Sample rate degradation:** Self-mod reduces effective sample rate
-- **Instability zones:** Certain settings create chaotic, unpredictable behavior
-- **Performance technique:** Switch between external and self-modulation live
+Lyra-8 FX Main out into Moon Phase IN L, routing the processed delay output through stereo filter shaping before the mix.
 
-### **Cross-Feedback Experiments:**
-- **Feedback sweet spots:** Find resonant frequencies where delays lock together
-- **Metallic drones:** High feedback creates sustained tonal elements
-- **Rhythmic interactions:** Different delay times create polyrhythmic patterns
-- **CV control:** Sweep feedback for dramatic dynamic changes
+```
+[Cs-L OUT] ────────────────────────────────▶ [Lyra-8 FX Audio In]
+[Hermod+] ── CV (1V/oct) ──────────────────▶ [Cs-L 1V/OCT]
 
-### **Distortion Integration:**
-- **Post-delay processing:** Distortion colors the delay output
-- **CV modulation:** Audio-rate modulation of drive creates pitched artifacts
-- **Mix strategies:** Blend clean delay with distorted signal
-- **Full-range processing:** Unlike guitar pedals, processes entire frequency spectrum
+                                              Stage 1: self-modulation
+                                              Stage 2: external CV (no CV patched)
+                                              Stage 1 time: 11 o'clock
+                                              Stage 2 time: 1 o'clock
+                                              Stage 1 mod depth: 1 o'clock
+                                              Feedback: 10 o'clock
+                                              Distortion drive: 10 o'clock
 
----
+[Lyra-8 FX Main Out] ──────────────────────▶ [Moon Phase IN L]
 
-## Creative Applications
+                                              Moon Phase mode: LP+BP
+                                              Moon Phase ST f: 11 o'clock
+                                              Moon Phase SPAN: 1 o'clock
+                                              Moon Phase ST IMAGER: 1-2 o'clock
 
-### **Sound Design:**
-- **Sci-fi textures:** Self-modulation creates alien, technological sounds
-- **Industrial ambience:** Lo-fi character perfect for dark, gritty atmospheres
-- **Glitch effects:** Sample rate modulation creates digital artifacts
-- **Broken speaker simulation:** Distortion + degraded delays
+                              [Moon Phase OUT L] ──▶ [MixUp CH3 L]
+                              [Moon Phase OUT R] ──▶ [MixUp CH3 R]
+```
 
-### **Musical Processing:**
-- **Drum enhancement:** Adds character and movement to percussion
-- **Ambient processing:** Creates evolving, organic textures
-- **Vocal processing:** Unusual character for experimental vocals
-- **Synthesizer enhancement:** Adds organic unpredictability to static sounds
+**Setup:** Cs-L audio feeds Lyra-8 FX Audio In, with Hermod+ providing pitch CV to Cs-L. Lyra-8 FX Main out routes into Moon Phase IN L. Moon Phase spreads the processed signal into stereo at its outputs.
 
-### **Performance Techniques:**
-- **Feedback sweeps:** Dramatic builds using feedback CV control
-- **Mode switching:** Live switching between external and self-modulation
-- **No-input operation:** Use pure feedback as sound source
-- **Delay time sweeps:** Create pitch-shifting, time-stretching effects
+**Controls:** Lyra-8 FX handles the lo-fi delay degradation of the Cs-L voice; Moon Phase then applies stereo filter shaping to the degraded output. Adjust Moon Phase ST f to determine how much of the lo-fi delay content passes. Low ST f keeps the filtered texture dark; high ST f opens the full degraded character into the mix. Try Moon Phase LP+HP mode to route the low-frequency delay content left and high-frequency content right, creating a frequency-split version of the lo-fi processing. Adjust Lyra-8 FX Feedback and Distortion to change the character of the signal before it reaches Moon Phase.
+
+**Result:** A signal chain where Cs-L is processed through lo-fi self-modulating delay and then filtered stereo by Moon Phase. The tonal content that Moon Phase shapes has already been through the PT2399 degradation, so the filter is working on transformed source material rather than the original oscillator sound.
 
 ---
 
-## Common Use Cases
+### Patch 4: Percussive Source Destruction
 
-### **Experimental Music:**
-- **Noise textures:** Self-modulation creates complex noise-like textures
-- **Ambient soundscapes:** Organic, evolving delay environments
-- **Industrial music:** Gritty, degraded processing perfect for harsh electronics
-- **Drone music:** Feedback oscillations and metallic sustained tones
+Drum or percussive audio source patched into Lyra-8 FX with short delay times and high self-modulation depth on both stages, treating the module as a destructive processor for rhythmic material.
 
-### **Electronic Production:**
-- **Lo-fi character:** Adds vintage digital character to modern productions
-- **Rhythmic processing:** Complex delay patterns for drums and percussion
-- **Creative sends:** Parallel processing for unusual textures
-- **Mix enhancement:** Adds character and movement to static elements
+```
+[Drum or percussive source] ───────────────▶ [Lyra-8 FX Audio In]
 
-### **Live Performance:**
-- **Real-time processing:** CV control allows dynamic manipulation
-- **Improvisation tool:** Unpredictable behavior encourages experimentation
-- **Textural instrument:** Can function as sound source, not just processor
-- **Audience engagement:** Visual feedback from chunky knobs and mysterious behavior
+[Zadar CH1] ───────────────────────────────▶ [Lyra-8 FX Feedback CV]
+(triggered by drum gate, fast attack, medium decay)
 
----
+                                              Both stages: self-modulation
+                                              Stage 1 time: 9-10 o'clock (short)
+                                              Stage 2 time: 10-11 o'clock (short)
+                                              Both mod depths: 2-3 o'clock (high)
+                                              Feedback: 10 o'clock (base)
+                                              IN volume: 1-2 o'clock
+                                              Distortion drive: 12 o'clock
+                                              Distortion mix: 1-2 o'clock
 
-## Pairs Well With
+                         [Lyra-8 FX Main Out] ──▶ [MixUp CH1]
+                         [Lyra-8 FX Delay Only] ──▶ [MixUp CH2]
+```
 
-### **Phase 2 Module Synergies (Modulation & CV Sources):**
-- **DivKid Ochd & Expander:** Ochd LFOs → Lyra8-FX CV inputs for organic organismic parameter evolution
-- **Make Noise Wogglebug:** Wogglebug chaos CVs → Lyra8-FX parameters for controlled chaos organismic processing
-- **Mutable Marbles:** Marbles X/Y outputs → Lyra8-FX modulation for pattern-driven organismic control
-- **4ms RCD v2:** RCD divisions → rhythmic organismic parameter changes
-- **Cre8audio Function Junction:** Function + Lyra8-FX = complete organismic ecosystem with organic/chaos/pattern modulation
-- **Cross-Phase 2 Integration:** Lyra8-FX processes all Phase 2 modulation sources into unified organismic effects relationships
+**Setup:** Patch any drum channel, percussion source, or noise burst into Audio In. Patch Zadar CH1 (fast attack, medium decay, triggered by a drum gate) into Feedback CV. Set both stages to short delay times and high self-modulation depth.
 
-### **Essential Partners:**
-- **Envelope Followers:** Control organismic parameters based on input dynamics for responsive living effects
-- **LFOs:** External modulation sources for delay time, feedback, and distortion - enhance self-modulation behavior
-- **VCAs:** Control send levels to the effect and manage parallel processing paths
-- **Mixers:** Blend wet/dry signals and multiple sources for complex organismic processing
+**Controls:** Short delay times turn the PT2399 stages into comb filters and chorus-range processors rather than audible echoes. High self-modulation depth at these short times creates rapid glitching, sample rate reduction artifacts, and timbral degradation of the percussive transients. Zadar's triggered envelope pushes Feedback on each hit, briefly increasing the recirculation and building residual tones before decaying. Blend Main out (with distortion) and Delay Only (without) in MixUp to balance the saturated and unsaturated versions of the destroyed percussion.
 
-### **Advanced Organismic Integration:**
-- **Other delays:** Layer conventional delays with Lyra8-FX organismic character for hybrid effects
-- **Filters:** Pre or post-process to shape the lo-fi organismic character and frequency content
-- **Quantizers:** Make modulation musical when using complex CV sources with organismic processing
-- **Sequencers:** Rhythmic control over organismic parameters for composed living effects
-
-### **Essential Organismic Partners:**
-- **Other Soma modules:** Lyra-8, DVINA, Terra - complete organismic synthesis and processing ecosystem
-- **Analog delays:** Combine with conventional delays for hybrid organic/digital character
-- **Performance controllers:** Real-time control of multiple organismic parameters for live chaos
-- **Multi-effects processing:** Use multiple Lyra8-FX for complex multi-stage organismic processing
-
-### **Advanced System Integration:**
-- **Make Noise Maths:** Maths processes Lyra8-FX outputs for mathematical organismic relationships
-- **Logic modules:** Combine organismic triggers with Boolean operations for complex rhythmic effects
-- **Sample & Hold:** Use organismic gates to trigger chaos in other parts of the system
-- **Phase 1 modules:** Lyra8-FX integrates perfectly with Plaits, Maths, and other core synthesis modules
+**Result:** Percussive source material processed through short comb-range lo-fi delays with high self-modulation, creating glitched, degraded transients with feedback-driven tail events timed to each hit.
 
 ---
 
-## Beginner "Gotchas" & Pro Tips
+## Common Mistakes
 
-### **⚠️ Common Mistakes:**
+### "It sounds broken and unstable, something must be wrong."
 
-**"The effect sounds too subtle/clean!"**
-- Lyra8-FX is designed for character, not transparency
-- **Solution:** Push feedback higher, use self-modulation, increase distortion
+Instability is the intended behavior. PT2399 delay chips operating at reduced sample rates with self-modulation feeding back into the sample rate clock will produce pitch warping, glitching, and degradation under normal operating conditions. A Lyra-8 FX patch that sounds clean and transparent is not working at the settings this module is designed for.
 
-**"The delays don't sync to my tempo!"**
-- This isn't a tempo-synced delay - it's designed for organic, non-quantized timing
-- **Solution:** Embrace the non-synced character, or use external CV for rhythmic control
+**Fix:** Engage self-modulation on at least one stage, increase mod depth, and push Feedback above 11 o'clock. The character of the module becomes apparent at these settings. If you need transparent delay processing, this is not the right tool.
 
-**"It sounds broken/unstable!"**
-- This is intentional - "organismic" means unpredictable and alive
-- **Solution:** Learn to work with the instability as a musical element
+---
 
-### **🎵 Pro Tips:**
+### "The delays do not sync to my sequencer tempo."
 
-**Self-Modulation Sweet Spots:**
-- **Low feedback + high mod depth:** Controlled instability
-- **High feedback + low mod depth:** Metallic drones with subtle modulation
-- **High feedback + high mod depth:** Complete chaos and unpredictability
+PT2399-based delays do not have a clock sync input and do not quantize delay time to a tempo grid. The delay time knobs set a delay length in milliseconds, not a rhythmic subdivision. No CV input changes this; the Mod CV inputs affect sample rate modulation, not tempo synchronization.
 
-**Delay Time Strategies:**
-- **Short times (9-11 o'clock):** Comb filtering and chorus effects
-- **Medium times (12-2 o'clock):** Traditional delay effects
-- **Long times (3-5 o'clock):** Rhythmic echoes and polyrhythms
-- **Matched times:** Reinforcement and resonance
-- **Different times:** Complex polyrhythmic interactions
+**Fix:** Set delay times by ear relative to your sequence tempo, or use the Feedback CV input to create rhythmic feedback swells that complement the tempo without locking to it. For strict tempo-synced delay, use a different module.
 
-**Feedback Performance:**
-- **CV control essential:** Use envelopes or LFOs to sweep feedback
-- **Metallic drone zone:** Around 2-3 o'clock feedback creates sustained tones
-- **Extreme feedback:** 4+ o'clock for self-oscillation and chaos
-- **Performance switching:** Live control between stable and chaotic zones
+---
 
-**Distortion Integration:**
-- **Parallel processing:** Use Delay Only output for clean delay
-- **CV modulation:** Audio-rate drive modulation creates pitched artifacts
-- **Full-spectrum:** Unlike guitar pedals, processes entire frequency range
-- **Mix control:** Essential for balancing clean and processed signals
+### "No-input mode produces nothing."
+
+With no audio input and Feedback below the self-oscillation threshold, the module is silent. Self-oscillation in feedback delay circuits requires a recirculating signal above a certain gain level to sustain. Below that threshold there is nothing to recirculate.
+
+**Fix:** Turn Feedback to 2-3 o'clock or higher, and confirm IN volume is at least at 11 o'clock. If silence persists, try tapping the Audio In jack briefly to introduce a transient that the feedback can then sustain. The exact self-oscillation threshold shifts with Stage time settings and mod depth.
+
+---
+
+### "I only use the Main out and ignore the Delay Only output."
+
+Main out includes the parallel distortion stage, which adds saturation and harmonic content to the delay signal. Delay Only out carries the delay without distortion. Using only Main out means making one decision about the distortion character and committing to it for the whole patch.
+
+**Fix:** Patch both outputs to separate mixer channels. Balancing Main out and Delay Only out independently gives access to both the saturated and unsaturated delay characters simultaneously, and allows the distortion contribution to be adjusted during the patch without changing the delay settings.
+
+---
 
 ## Advanced Learning Path
 
-### **Recommended Study Progression:**
-1. **Start with Lyra8-FX fundamentals:** Master self-modulation, cross-feedback, and organismic processing concepts
-2. **Add organic breathing:** Integrate DivKid Ochd for natural organismic parameter evolution (see Ochd guide)
-3. **Include controlled chaos:** Use Make Noise Wogglebug for chaotic organismic processing (see Wogglebug guide)
-4. **Add pattern learning:** Apply Mutable Marbles for adaptive modulation of organismic parameters (see Marbles guide)
-5. **Include rhythmic control:** Use 4ms RCD v2 for complex organismic parameter triggering (see RCD guide)
-6. **Complete the ecosystem:** Add Cre8audio Function Junction for comprehensive organismic modulation processing (see Function Junction guide)
+1. Learn the module in external CV mode on both stages before engaging self-modulation. Set a slow LFO or Zadar envelope into one stage mod CV input and hear what sample rate modulation sounds like as a controlled, predictable parameter. This establishes a reference for normal modulated behavior before self-modulation makes the relationship between input and output non-deterministic.
 
-### **Cross-Module Learning Opportunities:**
-- **Lyra8-FX + Ochd:** Learn organic modulation of organismic parameters for breathing living effects
-- **Lyra8-FX + Wogglebug:** Master chaos-driven organismic processing for controlled unpredictability in effects
-- **Lyra8-FX + Marbles:** Understand pattern-driven organismic control with adaptive effects relationships
-- **Lyra8-FX + RCD:** Explore rhythmic organismic parameter changes and complex algorithmic effects
-- **All Phase 2 + Lyra8-FX:** Build complete organismic ecosystems with multiple modulation types processing living effects
+2. Understand what self-modulation actually does before relying on it as a sound design tool. The delay output signal is routed back to modulate the PT2399 sample rate clock on the same stage. Sparse input with low self-modulation depth produces slow, subtle warping. Dense input with high depth produces rapid glitching because more signal energy is feeding back into the modulation path. The self-modulation character is a function of what is in the delay, not only of the knob settings.
 
-### **Skill Development Milestones:**
-- **Beginner:** Use self-modulation and cross-feedback for basic organismic effects processing
-- **Intermediate:** Master CV modulation and parameter control for complex organismic relationships
-- **Advanced:** Create Phase 2 integration patches with organic/chaos/pattern modulation of organismic parameters
-- **Expert:** Design complete organismic ecosystems where Lyra8-FX serves as living effects processor for multiple modulation types
+3. Use the Delay Only output as a separate processing send rather than a monitoring option. Routing Delay Only into a separate effects chain and Main out into another creates two different versions of the processed signal available simultaneously. The Delay Only signal can go to Moon Phase, a reverb, or a second distortion with different character. Mixing these downstream paths gives more control over the final sound than working with Main out alone.
 
-### **Advanced Organismic Concepts:**
-- **Self-Modulation Mastery:** Understand how organismic effects can modulate themselves for autonomous behavior
-- **Cross-Feedback Processing:** Master dual-delay interactions and resonant frequency manipulation
-- **Living Effects Philosophy:** Explore how effects can breathe, evolve, and respond organically
-- **System Integration:** Design patches where Lyra8-FX processes multiple modulation types simultaneously
+4. Explore no-input feedback oscillation at different Stage time combinations. Each combination of Stage 1 and Stage 2 delay times produces a different pitch content in the self-oscillating feedback. Moving one Stage knob while in oscillation changes the pitch in ways that are not musically quantized but are repeatable: once you find a useful drone pitch, note the Stage positions. Using Feedback CV from Zadar or an envelope to move in and out of the self-oscillation threshold turns this into a performable event rather than a static setting.
 
-### **Performance Applications:**
-- **Live Organismic Control:** Real-time parameter control for dynamic living effects manipulation
-- **Generative Effects Systems:** Foundation for self-evolving organismic effects systems
-- **Hybrid Processing:** Bridge between traditional effects and living organismic processing
-- **Educational Tool:** Learn organismic processing and advanced effects concepts
+5. Use Lyra-8 FX early in the signal chain before other processing rather than as a final send. The degraded, lo-fi character it applies becomes the source material for everything downstream. Sending Lyra-8 FX output to Moon Phase means Moon Phase is filtering a signal that has already been through PT2399 degradation, self-modulation, and cross-feedback. The filter shapes a transformed source, not the original. Sending to Ghost after Lyra-8 FX adds reverb and delay on top of an already complex degraded signal. These chain orders produce fundamentally different results from using the module as a final effect.
 
----
+6. Treat Feedback CV as a dynamic range control during performance. A sequence of triggered envelopes from Zadar or Punch V3 ENV output into Feedback CV creates rhythmic feedback swells timed to events elsewhere in the patch. Each event briefly pushes Feedback higher, increasing the recirculation and building tonal content, then releasing. This introduces rhythmic structure into what would otherwise be a static effects setting without requiring tempo synchronization.
 
-**Bottom Line:** Lyra8-FX isn't just an effects processor - it's a **living organismic effects brain** that transforms simple audio into breathing, evolving organisms through self-modulation and cross-feedback. Every patch teaches you something new about how organismic effects processing really works. As the **effects brain of Phase 2 ecosystems**, it transforms organic breathing, controlled chaos, and pattern learning into unified organismic effects evolution.
+## Pairs Well With
 
----
+**Instruo Arbhar** is among the most productive sources for Lyra-8 FX. Arbhar's granular output already contains complex temporal relationships from its grain cloud processing; Lyra-8 FX then applies a second layer of time-domain transformation via the PT2399 stages. Self-modulation behavior changes with grain density, so Arbhar parameters that affect grain layer count and spray directly influence how the self-modulation responds. The combination produces textures where neither module's contribution is clearly separable from the other.
 
-*Visit [Soma Laboratory](https://somasynths.com/) for complete documentation and more organismic instruments*
+**Xaoc Zadar** provides the ideal CV source for Lyra-8 FX's modulation inputs because its envelope shapes produce non-repeating, contoured movements rather than the constant cycling of a standard LFO. Patching Zadar channels into the Feedback CV and one Stage mod CV input, with different shapes and durations on each, creates slowly shifting modulation relationships that never settle into a predictable pattern. In infinite-repeat mode Zadar becomes a slow irregular LFO; triggered mode creates modulation events timed to the patch's rhythmic structure.
+
+**Patching Panda Moon Phase** downstream of Lyra-8 FX adds stereo filter shaping to an already-degraded signal. The different Moon Phase filter modes respond very differently to lo-fi PT2399 content versus clean oscillator content. LP+BP mode filters out extreme degradation artifacts in the highs while preserving the warmed lo-mid delay character. LP+HP mode splits the degraded frequency content between channels, creating stereo contrast from a mono Lyra-8 FX output. The filter is shaping something that has already been transformed, which produces results unavailable from either module alone.
+
+**Intellijel MixUp** handles both Lyra-8 FX outputs in the same patch by accepting Main out and Delay Only out on separate channels. This allows the balance between the saturated and unsaturated delay versions to be adjusted during the performance, and allows either output to be muted independently. MixUp's architecture is well suited to patches where Lyra-8 FX is one of several processing chains feeding a common mix point.
