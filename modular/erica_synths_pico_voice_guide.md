@@ -4,577 +4,223 @@ manufacturer: Erica Synths
 primary_role: SOURCE
 secondary_roles: [SHAPER, AMPLIFIER]
 form_factor: eurorack
-functions: [oscillator, filter, envelope-generator]
-behavior_tags: [warm, stable, gated, linear, performance-oriented]
-use_cases: [complete voice in small system, lead voice, bass voice]
+functions: [oscillator, filter, envelope-generator, wavetable, karplus-strong]
+behavior_tags: [warm, stable, gated, performative]
+use_cases: [complete voice in small system, lead voice, bass voice, melodic sequencing]
 hp: 3
+memory: basic
+historical_context: true
 ---
 
-# Erica Synths Pico Voice - Beginner's Guide
+# Erica Synths Pico Voice
+**8-Algorithm Synthesis Voice | 3HP**
 
-**8 Complete Synthesizers in 3HP**
-
----
-
-## Quick Start: Get Your First Sound in 5 Minutes
-
-![Erica Synths Pico Voice](https://github.com/Shadoe-42/music/raw/main/modular/images/erica_synths/pico_voice/front_panel.jpg)  
-*Erica Synths Pico Voice - 8-algorithm synthesis module showing LED color coding and parameter controls*
-
-**What is Pico Voice?** A complete voice module packed into just 3HP with 8 different synthesis algorithms ranging from Karplus Strong string synthesis to TB-303 bassline emulation. It's like having 8 different synthesizers in the space of a single knob!
-
-**Key Specifications:**
-- **Width:** 3 HP
-- **Depth:** 35 mm
-- **Power:** 30 mA @ +12V / 20 mA @ -12V / 0 mA @ +5V
-- **Architecture:** 8-algorithm synthesis voice with CV-assignable modulation
-
-### Your First Voice (Chord Algorithm)
-1. **Power up** - LED will show the current algorithm color
-2. **Turn Tune knob** to around 12 o'clock (C4 range)
-3. **Press the button** until LED shows **YELLOW** (Chord algorithm)
-4. **Turn PAR1** (left knob) to select chord type (major, minor, 7th, etc.)
-5. **Patch 1V/Oct from your sequencer** → **1V/Oct input**
-6. **Patch output** → your mixer/VCA
-7. **Play notes** - you should hear rich chords!
-
-**Quick Algorithm Tour:**
-- **Press button repeatedly** to cycle through 8 algorithms
-- **Each color = different synthesis type** (RED=Karplus, YELLOW=Chords, etc.)
-- **PAR1 and PAR2 knobs control different things** for each algorithm
-
----
-
-## Essential Parameters (The Big 4)
-
-### **1. Button + LED (Algorithm Selection)**
-- **Short press:** Cycle through 8 algorithms
-- **Hold 1 second:** Enter configuration mode (LED blinks)
-- **LED colors:** Each algorithm has its own color coding
-- **Pro tip:** Learn the colors - it's faster than counting button presses!
-
-### **2. PAR1 Knob (Parameter 1)**
-- **What it does:** Controls primary characteristic of each algorithm
-- **Examples:** Chord type (Chords), Wave surfing (Wavetable), Resonance (Bassline)
-- **Musical result:** Major creative control over the sound character
-- **Range:** Full sweep changes the fundamental nature of each algorithm
-
-### **3. PAR2 Knob (Parameter 2)**
-- **What it does:** Usually controls Release time, but varies per algorithm
-- **Creative use:** For sustained sounds without gates, turn fully clockwise
-- **Configuration mode:** Selects waveforms/settings (when LED blinks)
-- **Performance tip:** Great for real-time expression and dynamics
-
-### **4. CV Input (Assignable Modulation)**
-- **What it does:** Can control ANY of the three parameters (Tune, PAR1, or PAR2)
-- **Assignment:** Set in configuration mode (RED=Tune, GREEN=PAR1, BLUE=PAR2)
-- **Range:** -5V to +5V for full parameter sweep
-- **Power move:** Change assignments per algorithm for complex modulation
-
----
+![Erica Synths Pico Voice](https://github.com/Shadoe-42/music/raw/main/modular/images/erica_synths/pico_voice/front_panel.jpg)
 
 ## Historical Context
 
-### **Synthesis Algorithms in Modular History**
-The 8 algorithms in Pico Voice represent landmark moments in synthesis development. Karplus-Strong emerged from physical modeling research in the 1980s, creating organic plucked string sounds from digital algorithms. TB-303 emulation references the legendary acid house synthesizer that shaped electronic music culture. Wavetable morphing descends from classic Fairlight and Emulator synthesis. These algorithms, once requiring dedicated hardware or complex programming, now coexist in a 3HP module; a testament to efficient algorithm design and modern chip capabilities.
+Erica Synths, founded in Riga, Latvia, built a reputation within Eurorack for engineering discipline: affordable modules that do specific things well without unnecessary complexity. The Pico series extended that philosophy to an extreme constraint, fitting complete synthesis functionality into 3HP per module. Designing at that width means every component earns its place; there is no room for redundancy or unused surface area.
 
-### **Algorithm Diversity in Compact Space**
-Historically, choosing a synthesis approach meant choosing a module: one for wavetable work, another for FM, another for subtractive. Pico Voice collapses this decision, offering multiple complementary synthesis methods with a single button press. This reflects both the maturity of synthesis algorithms and the philosophy that essential creative tools shouldn't require dedicated rack space.
+The Pico Voice's eight synthesis algorithms span several decades of electronic instrument development. Karplus-Strong physical modeling was formalized by Kevin Karplus and Alex Strong in 1983 and became one of the first computationally practical methods for synthesizing plucked-string timbres without recording them. The TB-303 Bassline algorithm references the Roland TB-303 of 1981, a sequencer-synth that became the foundational instrument of acid house after musicians discovered its resonant filter could produce sounds Roland never anticipated. Wavetable synthesis, associated with Wolfgang Palm's PPG Wave instruments of the late 1970s and early 1980s, introduced the idea of storing complex waveforms in memory and morphing between them, producing timbral movement that static oscillators could not achieve.
 
-### **Assignable CV: Control Without Menus**
-The ability to assign CV control to any parameter without menu diving represents decades of hardware synthesis philosophy: hands-on control, immediate feedback, no digital intermediaries. This approach keeps Pico Voice performable and expressive despite packing 8 complete algorithms into 3HP.
+Collecting these approaches in a single 3HP module is not a gimmick. Each algorithm produces a genuinely distinct timbral family, and having them accessible via a single button press means a small system can cover territory that would otherwise require multiple dedicated voice modules.
 
 ---
 
-## The 8 Algorithms Explained
+## Quick Start
 
-### **RED - Karplus Strong (Plucked Strings)**
-- **PAR1:** Distortion amount
-- **PAR2:** Noise burst (initial pluck character)
-- **Gate/Trigger:** Essential - initiates the "pluck" (note: Pico Voice doesn't have a dedicated gate input - uses note changes on 1V/Oct)
-- **Sound:** Realistic plucked strings, harps, guitar-like tones
-
-### **YELLOW - Chords (Harmonic Stacks)**
-- **PAR1:** Chord type (Major, minor, 7th, diminished, etc.)
-- **PAR2:** Release time
-- **Setting:** Waveform (Sine, Triangle, Saw, Square)
-- **Sound:** Rich harmonic chords, perfect for pads and stabs
-
-### **GREEN - Wavetable (Digital Wave Morphing)**
-- **PAR1:** Wave surfing (morphs through wavetable)
-- **PAR2:** Release time  
-- **Setting:** 1 or 2 note operation
-- **Sound:** Digital, evolving textures like classic wavetable synths
-
-### **BLUE - Bassline (TB-303 Emulation)**
-- **PAR1:** Resonance (filter resonance)
-- **PAR2:** Release time
-- **Setting:** Saw or Pulse waveform
-- **Sound:** Classic acid house basslines and squelchy leads
-
-### **🟣 PURPLE - PWM (Pulse Width Modulation)**
-- **PAR1:** PWM amount (pulse width sweep)
-- **PAR2:** Release time
-- **Setting:** 1, 2, or 3 note operation
-- **Sound:** Classic analog-style pulse waves with movement
-
-### **ORANGE - Supersaw (Detuned Sawtooth Stack)**
-- **PAR1:** Detune amount (spread between oscillators)
-- **PAR2:** Release time
-- **Setting:** Phase lock on/off
-- **Sound:** Massive, wide sawtooth stacks like classic trance leads
-
-### **CYAN - Wavefold (Harmonic Distortion)**
-- **PAR1:** Fold amount (harmonic distortion)
-- **PAR2:** Release time
-- **Setting:** Sine, 2x Sine, Triangle, 2x Triangle base waves
-- **Sound:** Complex harmonic textures from simple waveforms
-
-### **LIME - Harmonic (Additive Synthesis)**
-- **PAR1:** Add harmonics (builds harmonic content)
-- **PAR2:** Release time
-- **Setting:** Base waveform selection
-- **Sound:** Rich, organ-like tones with controllable harmonic content
-
----
-
-## Why This Instrument Excels
-
-### **The Philosophy:**
-Erica Synths challenged themselves: "Can we make ANY superior functionality synth module 3HP wide and affordable?" The answer is yes, and Pico Voice proves it.
-
-### **The Engineering:**
-- **8 complete synthesis algorithms** in 3HP
-- **Full 1V/Oct tracking** over 8 octaves
-- **User memory** remembers your settings
-- **Assignable CV control** for performance flexibility
-- **Color-coded interface** for intuitive operation
-
-### **The Practical Benefits:**
-- **Space efficient:** Complete voice in minimal HP
-- **Immediately musical:** No complex programming required
-- **Versatile:** Covers bass, leads, pads, and experimental sounds
-- **Performance ready:** Real-time control without menu diving
-- **Affordable:** Professional synthesis algorithms at Pico prices
-
-### **Perfect For:**
-- **Small cases:** Maximum synthesis in minimum space
-- **Beginners:** Easy to understand, immediately rewarding
-- **Producers:** Quick access to classic synthesis methods
-- **Performers:** Reliable, hands-on control
-- **Everyone:** Sounds way bigger than its 3HP footprint!
-
----
-
-## Creative Patch Applications
-
-### **Patch 1: Chord Progression Player**
-- **Algorithm:** Chords
-- **Your sequencer** → 1V/Oct input
-- **PAR1 at different positions** for different chord types
-- **LFO** → CV Input (assigned to PAR1 for changing chord types)
-- **Gate timing controlled by:** Note changes and PAR2 (release time) - no dedicated gate input needed
-- **Result:** Automatic chord progressions with evolving harmony
-
-**Alternative Modulation Sources:**
-- **Budget:** Any simple LFO (2HP LFO, Doepfer A-145) provides basic chord variation control
-- **Different Character:** Make Noise Maths for mathematical chord evolution, DivKid Ochd for organic chord transitions
-- **Premium:** Intellijel Quadrax for complex chord modulation with multiple simultaneous processes
-
-### **Patch 2: Acid Bassline**
-- **Algorithm:** Bassline
-- **Bass sequence** → 1V/Oct input
-- **PAR1 around 2 o'clock** (resonance sweet spot)
-- **Envelope or LFO** → CV Input (assigned to PAR1 for filter sweeps)
-- **Note:** Bassline algorithm auto-triggers on note changes - no external gate needed
-- **Result:** Classic TB-303 style acid sequences
-
-**Alternative Modulation Sources:**
-- **Budget:** Simple envelope generator (Blue Lantern ADSR, Doepfer A-140) for filter modulation
-- **Different Character:** Make Noise Maths for complex filter sweeps, DivKid Ochd for organic filter evolution
-- **Premium:** Intellijel Quadrax with envelope shaping for sophisticated acid processing
-
-### **Patch 3: Evolving Pad**
-- **Algorithm:** Wavetable
-- **Slow chord sequence** → 1V/Oct input
-- **PAR2 fully clockwise** (sustained without gates)
-- **Slow LFO** → CV Input (assigned to PAR1 for wave surfing)
-- **Result:** Constantly evolving ambient pad textures
-
-**Alternative Modulation Sources:**
-- **Budget:** Very slow LFO (Doepfer A-143-1 VC LFO, 2HP LFO set to slow) for gradual pad evolution
-- **Different Character:** DivKid Ochd for organic pad development, Batumi for geometric wavetable morphing
-- **Premium:** Make Noise Maths for complex wavetable animation with mathematical relationships
-
-### **Patch 4: Intermediate - Advanced Organic Voice Development**
 ```
-   ┌─────────────────────┐      ┌─────────────────────────┐
-   │   DivKid Ochd      │      │    Erica Synths        │
-   │   (Organic LFOs)   │      │    Pico Voice          │
-   │                    │      │   (Voice Processing)   │
-   │                    │      │                         │
-   │ LFO 1 ○────────────┼──────┼─▶ CV Input (PAR1)      │
-   │       ║            │      │                         │
-   │ LFO 3 ○────────────┼──────┼─▶ Button (Alg Switch)   │
-   │       ║            │      │                         │
-   │ LFO 5 ○────────────┼──────┼─▶ CV Input (PAR2)      │
-   │       ║            │      │                         │
-   │ LFO 7 ○────────────┼──────┼─▶ CV Input (Tune)      │
-   │       ║            │      │                         │
-   └───────║────────────┘      │ Voice Out ○───────────┼─── [A]
-           ║                   │ (Natural Voice Flow)   │
-   [C]║                  └─────────────────────────┘
-           ║                           ║
-           ▼                    Audio ║
-   ┌─────────────┐               (Red)║
-   │ Sequencer   │                    ║
-   │  (1V/Oct)   │────────────────────▼
-   │             │           ┌──────────────────────────────┐
-   └─────────────┘           │   Natural Voice              │
-                             │     Development              │
-                             │                              │
-                             │ LFO 1: Natural PAR1 Flow     │
-                             │ LFO 3: Algorithm Evolution   │
-                             │ LFO 5: Natural PAR2 Changes  │
-                             │ LFO 7: Natural Pitch Flow    │
-                             │                              │
-                             │ Natural Voice ○─────────┼─── Developing Synthesis
-                             └──────────────────────────────┘
+[Sequencer] 1V/Oct Out ──▶ [Pico Voice] 1V/Oct In
+[Sequencer] Gate Out   ──▶ [Pico Voice] Trig In
+                           [Pico Voice] Out ──▶ [Mixer]
 ```
 
-| Module Integration | Signal Flow | Purpose | Advanced Synergy |
-|-------------------|-------------|---------|------------------|
-| **Ochd LFO 1 → CV (PAR1)** | Organic parameter modulation | **Natural synthesis evolution** | **Flowing algorithm character** |
-| **Ochd LFO 3 → Algorithm Button** | Organic algorithm progression | **Smooth synthesis transitions** | **Natural voice development** |
-| **Ochd LFO 5 → CV (PAR2)** | Organic expression control | **Flowing release variations** | **Dynamic voice response** |
-| **Ochd LFO 7 → CV (Tune)** | Organic pitch variation | **Natural pitch flow** | **Organic voice movement** |
-
-**Module Settings:**
-- **Ochd Rate:** 12 o'clock for musical natural development timing
-- **Pico Voice:** CV assigned to different parameters per algorithm for maximum natural response
-- **Algorithm rotation:** Natural progression through synthesis types based on circuit design
-- **Result:** Voice synthesis that develops naturally with flowing parameter modulation
-
-**Learning Objectives:**
-- **Natural + Voice integration:** Natural circuit development applied to multi-algorithm voice synthesis
-- **Flowing synthesis:** Voice algorithms that develop with natural parameter evolution
-- **Dynamic algorithms:** Simple natural modulation creates complex synthesis development
-- **System coordination:** Entire voice system develops as unified natural sound processing
-
-**Alternative Modulation Sources:**
-- **Instead of Ochd:** Try **Batumi** for more geometric voice development, or **Maths** for mathematical voice relationships
-- **Instead of algorithm switching:** Try **parameter focus** for simpler organic voice processing
-- **Budget alternatives:** **2HP LFO + 2HP Rnd** provides similar organic + variation functionality
-- **Different character:** **Quadrax** gives more discrete voice steps vs Ochd's continuous development
-
-### **Patch 5: Advanced - Chaotic Voice Processing**
-```
-   ┌─────────────────────┐      ┌─────────────────────────┐
-   │   Make Noise       │      │    Erica Synths        │
-   │   Wogglebug        │      │    Pico Voice          │
-   │  (Chaos Source)    │      │  (Voice Processing)    │
-   │                    │      │                         │
-   │ Stepped CV ○───────┼──────┼─▶ Algorithm Button      │
-   │       ║            │      │                         │
-   │ Smooth CV ○────────┼──────┼─▶ CV Input (PAR1)      │
-   │       ║            │      │                         │
-   │ Woggle CV ○────────┼──────┼─▶ CV Input (PAR2)      │
-   │       ║            │      │                         │
-   │ Burst CV ○─────────┼──────┼─▶ Config Mode Toggle    │
-   │       ║            │      │                         │
-   └───────║────────────┘      │ Voice Out ○───────────┼─── [A]
-           ║                   │ (Chaotic Voice Output) │
-   [C]║                  └─────────────────────────┘
-           ║                           ║
-           ▼                    Audio ║
-   ┌─────────────┐               (Red)║
-   │ Sequencer   │                    ║
-   │  (1V/Oct)   │────────────────────▼
-   │             │           ┌───────────────────────────────┐
-   └─────────────┘           │   Chaotic Voice               │
-                             │     Processing                │
-                             │                               │
-                             │ Stepped: Algorithm Jumps      │
-                             │ Smooth: Analog Parameter Flow │
-                             │ Woggle: Unpredictable PAR2    │
-                             │ Burst: Configuration Changes  │
-                             │                               │
-                             │ Controlled Chaos ○────────┼─── Complex Voice
-                             └───────────────────────────────┘
-```
-
-| Chaos + Voice Chain | Function | Purpose | Advanced Integration |
-|---------------------|----------|---------|---------------------|
-| **Wogglebug Stepped → Algorithm** | Quantized chaos switching | **Chaotic algorithm jumps** | **Chaos circuit controls synthesis types** |
-| **Wogglebug Smooth → PAR1 CV** | Analog chaos parameters | **Smooth chaos character** | **Chaotic synthesis variation** |
-| **Wogglebug Woggle → PAR2 CV** | Pure chaos expression | **Unpredictable dynamics** | **Chaos-driven voice expression** |
-| **Wogglebug Burst → Config Mode** | Chaos configuration | **Explosive setting changes** | **Complex voice circuit changes** |
-
-**Module Settings:**
-- **Wogglebug:** All outputs active, Rate for musical chaos timing based on circuit design
-- **Pico Voice:** Algorithm switching responds to chaos for dramatic synthesis changes
-- **Parameter chaos:** Create unpredictable but musical voice variations through circuit interaction
-- **Result:** Voice synthesis with controlled but unpredictable chaos variations
-
-**Learning Objectives:**
-- **Chaos + Voice fusion:** Controlled unpredictability in multi-algorithm voice systems through circuit design
-- **Chaos circuit theory:** Understanding how chaos circuits affect voice synthesis processing
-- **Unpredictable yet musical:** Chaos keeps voice synthesis from becoming static through natural variation
-- **Controlled randomness:** Voice processing keeps chaos musical and structured through analog circuits
-
-### **Patch 6: Expert - Pico Voice Performance Ecosystem**
-```
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐ ┌─────────────────┐
-│  Intellijel │ │    2hp      │ │   Erica     │ │  Erica Synths   │
-│   Scales    │ │   Brst      │ │  Pico LFO   │ │  Pico Voice     │
-│(Quantizer)  │ │ (Triggers)  │ │(Modulation) │ │ (Voice Core)    │
-│             │ │             │ │             │ │                 │
-│ Root/Scale  │ │ Manual ○────┼─┼─Rate CV     │ │ Algorithm       │
-│ Selection   │ │        ║    │ │       ║     │ │ Selection       │
-│             │ │ Burst ○─────┼─┼─Trig 1 ○────┼─┼─Config Mode    │
-│ Quantized   │ │        ║    │ │       ║     │ │       ║         │
-│ CV ○────────┼─┼─Gate ○ ║    │ │ LFO 1 ○─────┼─┼─CV (PAR1)      │
-│       ║     │ │      ║ ║    │ │       ║     │ │       ║         │
-│ Clock In◀───┼─┼─Clk  ║ ║    │ │ LFO 2 ○─────┼─┼─CV (PAR2)      │
-│       ║     │ │      ║ ║    │ │       ║     │ │       ║         │
-└───────║─────┘ └──────║─║────┘ │ Trig 2○─────┼─┼─1V/Oct Input   │
-        ║              ║ ║      │       ║     │ │       ║         │
-        ║              ║ ║      └───────║─────┘ │ Voice Out      │
-        ║              ║ ║              ║       │ ○─────────┼─Audio
-        ▼              ▼ ▼              ▼       └─────────────────┘
-┌──────────────────────────────────────────────────────────────────┐
-│                  Pico Voice Performance System                    │
-│                                                                     │
-│ Quantized Melody + Burst Triggers + Dual LFO + 8-Algorithm Voice   │
-│                                                                     │
-│ Scales      → Musical pitch quantization for voice melodies       │
-│ Brst        → Manual/burst triggering for expressive performance  │
-│ Pico LFO    → Dual modulation optimized for Pico Voice parameters │
-│ Voice       → 8-algorithm synthesis with performance control       │
-│                                                                     │
-│ Complete 3HP Performance Voice System (9HP total)                  │
-│                                                                     │
-│ Expressive Voice Performance ○──────────────────────────┼─── Musical Voice Output
-└──────────────────────────────────────────────────────────────────┘
-```
-
-**Multi-Function Voice Integration:**
-
-| Module | Primary Function | Secondary Functions | Pico Voice Role |
-|--------|------------------|--------------------|-----------------|
-| **Hermod+ (26HP)** | Advanced sequencer | **Built-in quantizer + trigger gen + CV outputs** | **Melodic and rhythmic control** |
-| **MetaModule (26HP)** | Plugin host | **Fundamental VCO (LFO mode) + AS ADSR** | **Parameter animation and dynamics** |
-| **Pico Voice (3HP)** | 8-algorithm synthesis | **Voice core** | **Complete synthesis engine** |
-
-**Multi-Function System Design:**
-- **Hermod+ as sequence brain:** Multi-track sequencing with built-in quantization eliminates need for separate quantizer
-- **MetaModule as modulation engine:** Fundamental VCO plugin in LFO mode + AS ADSR for envelope shaping
-- **Pico Voice as synthesis core:** 8 algorithms controlled by multi-function ecosystem
-- **Professional scalability:** Each module serves multiple functions, reducing HP requirements
-- **Total system:** 55HP for complete professional voice workstation
-
-**Performance Applications:**
-1. **Multi-track melodic sequencing:** Hermod+ provides quantized sequences across multiple tracks
-2. **Plugin-based modulation:** MetaModule VCO plugin generates LFOs for parameter animation
-3. **Dynamic envelope control:** MetaModule ADSR plugin shapes voice dynamics and algorithm switching
-4. **Real-time performance:** Hermod+ live recording and pattern switching with plugin-processed modulation
-5. **Algorithm automation:** Sequence algorithm changes via Hermod+ CV tracks and MetaModule processing
-
-**Why This Multi-Function Ecosystem Works:**
-- **Leverages actual capabilities:** Uses modules for what they're designed to do well
-- **No single-function overlap:** Each module contributes unique multi-function capabilities  
-- **Plugin flexibility:** MetaModule can adapt to any processing needs via plugin swapping
-- **Scalable complexity:** Can be simple (basic sequences) or sophisticated (multi-track + plugins)
-- **Combinable with other guides:** No modulation source conflicts since other guides use different multi-function approaches
+1. Patch a sequencer's 1V/oct output to the 1V/Oct input and its gate output to the Trig input
+2. Route the audio output to a mixer
+3. Set Tune to noon
+4. Press the button until the LED shows yellow (Chords algorithm)
+5. Turn PAR1 to select a chord type and PAR2 to set release time
+6. Start your sequencer and listen
 
 ---
 
-## Configuration Mode Deep Dive
+## Key Specs
 
-### **Entering Configuration Mode:**
-1. **Hold button for 1 second** - LED starts blinking
-2. **Press button repeatedly** to assign CV input:
-   - **Blinking RED:** CV controls Tune
-   - **Blinking GREEN:** CV controls PAR1  
-   - **Blinking BLUE:** CV controls PAR2
-3. **Turn PAR2 knob** to change algorithm settings (waveforms, note modes, etc.)
-4. **Hold button for 1 second** to exit - LED stops blinking
-
-### **Algorithm Settings (PAR2 in Config Mode):**
-- **Chords:** Choose waveform (Sine/Triangle/Saw/Square)
-- **Wavetable:** 1 or 2 note operation
-- **Bassline:** Saw or Pulse waveform
-- **PWM:** 1, 2, or 3 note operation
-- **Supersaw:** Phase lock on/off
-- **Wavefold:** Base waveform selection
-- **And more!**
+| Parameter | Value |
+|-----------|-------|
+| Width | 3HP |
+| Depth | 35mm |
+| Power | 30mA +12V / 20mA -12V / 0mA 5V |
+| Algorithms | 8 |
+| Memory | Per-algorithm settings retained |
+| **Role** | **SOURCE (SHAPER, AMPLIFIER)** |
 
 ---
 
-## Common Use Cases
+## Essential Parameters
 
-### **Studio Production:**
-- **Lead synthesis:** Supersaw for trance leads, PWM for analog character
-- **Bass programming:** Bassline algorithm for acid house and techno
-- **Chord progressions:** Chords algorithm for instant harmonic content
-- **Texture creation:** Wavetable and Wavefold for evolving sounds
+The button cycles through eight synthesis algorithms, each indicated by a distinct LED color. Short presses advance through the sequence; a one-second hold enters configuration mode, where the LED blinks. The module retains PAR1, PAR2, and configuration settings for each algorithm independently, so switching from Bassline to Wavetable and back returns to the Bassline settings as last set.
 
-### **Live Performance:**
-- **3HP voice:** Perfect for small performance cases
-- **Real-time control:** Algorithm switching and parameter control
-- **No menu diving:** Everything accessible via knobs and button
-- **Reliable tracking:** Solid 1V/Oct over 8 octaves (C1-C8)
+The Tune knob sets the base pitch. The module tracks 1V/octave over the C1 to C8 range (1V to 8V). Below or above that range, tracking becomes unreliable. The external 1V/oct input adds to the Tune knob position, so setting Tune to C4 and sending a sequence centered around 0V produces output centered at C4.
 
-### **Experimental Music:**
-- **Karplus Strong:** Organic, physical modeling textures
-- **Harmonic synthesis:** Custom harmonic content creation
-- **CV assignment flexibility:** Different modulation per algorithm
+PAR1 controls the primary synthesis parameter for the active algorithm. PAR2 controls a secondary parameter and in most algorithms also sets the envelope release time. Turning PAR2 fully clockwise removes the gate dependency for sustained sound: the voice outputs continuously regardless of the trigger input, which is useful for pad textures and drone patches where an external gate is not available or not wanted.
 
----
+The CV input accepts bipolar voltage and modulates whichever parameter is assigned in configuration mode. Assignment is set by holding the button until the LED blinks, then pressing to cycle through three states: blinking red assigns CV to Tune, blinking green assigns CV to PAR1, blinking blue assigns CV to PAR2. Turning PAR2 in configuration mode accesses algorithm-specific settings such as waveform selection, chord voicing type, and note mode. Each algorithm has its own configuration settings stored independently.
 
-## Pairs Well With
+The Trig input requires a gate or trigger signal to generate sound. Without a trigger, most algorithms produce no output regardless of other settings. The Karplus-Strong algorithm is entirely dependent on the trigger: each trigger event fires a short noise burst that the algorithm converts into a decaying resonant tone. The gate length influences sustain behavior for other algorithms when PAR2 is not at maximum.
 
-### **Advanced Module Synergies (Modulation & CV Sources):**
-- **DivKid Ochd & Expander:** Ochd LFOs → Pico Voice CV inputs for natural voice parameter development
-- **Make Noise Wogglebug:** Wogglebug chaos CVs → Pico Voice parameters for controlled chaos voice processing
-- **Mutable Marbles:** Marbles X/Y outputs → Pico Voice modulation for pattern-driven voice control
-- **4ms RCD v2:** RCD divisions → rhythmic voice parameter changes and algorithm switching
-- **Cre8audio Function Junction:** Function + Pico Voice = complete voice ecosystem with natural/chaos/pattern modulation
-- **Cross-Advanced Integration:** Pico Voice processes all Advanced modulation sources into unified synthesis relationships
+The eight algorithms by LED color, with PAR1 and PAR2 functions:
 
-### **Essential Partners:**
-- **Envelope Generators:** For shaping Karplus Strong and other algorithm responses with dynamic control
-- **LFOs:** Modulate parameters via CV input for voice movement and synthesis evolution
-- **Quantizers:** Ensure musical intervals when using random CV for pitch and harmonic control
-- **VCAs:** Control amplitude and create dynamics for voice expression and performance
-
-### **Advanced Voice Integration:**
-- **Filters:** Further shape the Pico Voice output for frequency sculpting and character enhancement
-- **Effects:** Reverb and delay enhance the 3HP sound for spatial voice processing
-- **Sequencers:** Multi-track sequencing for chord progressions and complex voice arrangements
-- **Clock dividers:** Different timing for gate triggers and algorithm switching patterns
-
-### **Essential Voice Partners:**
-- **Other Erica Synths Pico modules:** Complete compact synthesis ecosystem in minimal space
-- **Performance mixers:** Blend multiple voice algorithms and manage complex voice arrangements
-- **Performance controllers:** Real-time control of multiple voice parameters for live synthesis
-- **Multi-voice processing:** Use multiple Pico Voice modules for polyphonic voice synthesis
-
-### **Advanced System Integration:**
-- **Make Noise Maths:** Maths processes Pico Voice outputs for mathematical voice relationships
-- **Logic modules:** Combine voice triggers with Boolean operations for complex algorithmic switching
-- **Sample & Hold:** Use voice gates to trigger variation in other parts of the system
-- **Phase 1 modules:** Pico Voice integrates perfectly with Plaits, Maths, and other core synthesis modules
+| LED | Algorithm | PAR1 | PAR2 |
+|-----|-----------|------|------|
+| Red | Karplus-Strong | Distortion | Noise burst character |
+| Yellow | Chords | Chord type | Release time |
+| Green | Wavetable | Wave position (morph) | Release time |
+| Blue | Bassline (TB-303) | Filter resonance | Release time |
+| Purple | PWM | Pulse width | Release time |
+| Orange | Supersaw | Detune spread | Release time |
+| Cyan | Wavefold | Fold amount | Release time |
+| Lime | Harmonic | Harmonic content | Release time |
 
 ---
 
-## Advanced Techniques
+## Why Pico Voice Excels
 
-### **Algorithm Switching for Texture Changes**
-Don't think of algorithms as mutually exclusive sounds. Use CV to switch between complementary algorithms for evolving patches: start with Wavetable for ambient pads, switch to Wavefold for textural density, then Harmonic for tonal warmth. Each transition creates a unique moment without repatching.
+The 3HP width is the defining constraint and the defining achievement. A complete synthesis voice in three panel units means Pico Voice fits in any system that has three free HP, including small skiffs and performance cases where larger voice modules are not practical. The footprint does not limit the output: each of the eight algorithms is a complete synthesis approach with its own timbral character, not a simplified version of something more capable. The constraint shaped the design toward essential controls rather than toward compromise.
 
-### **CV Assignment as Performance Control**
-Beyond assigning CV to parameters, change assignments mid-performance. Assign to Tune for vibrato, then reassign to PAR1 for filter modulation, then PAR2 for release time control. This transforms a single CV input into a multi-purpose expression tool.
+The algorithm range covers the primary timbral families that electronic music production draws on. The Karplus-Strong and Harmonic algorithms produce pitched resonance and additive overtone content respectively, covering the organic and tonal end of the spectrum. The Bassline and PWM algorithms cover subtractive synthesis territory familiar from analog instruments. Wavetable and Wavefold move into digital morphing and harmonic distortion territory. Chords and Supersaw provide harmonic stacking for pad and lead contexts. Moving between these with a button press allows a single module to serve as the voice core in a small system without requiring the user to repatch or swap modules.
 
-### **Configuration Mode as Sound Design Tool**
-Configuration mode isn't just setup; it's creative sound design. Different waveforms, note modes, and algorithm-specific settings create timbral variations that coexist with PAR1/PAR2 knob control. Explore all settings per algorithm before declaring the sound "done."
+The CV assignment system is a practical solution to the constraint of a single CV input. Rather than hardwiring CV to one parameter, configuration mode allows the assignment to change per algorithm. A patch that sends an envelope to CV can assign that envelope to resonance when Bassline is active and to wave position when Wavetable is active, with those assignments stored independently. This makes one CV input behave differently across algorithms without any patch changes, which is a meaningful capability gain in a small system where cable count is a real concern.
 
-### **Combining Algorithms for Hybrid Synthesis**
-Use two Pico Voice modules: one on Wavetable, another on Harmonic. Blend them through a mixer, then assign different CV sources to each for hybrid synthesis that combines digital morphing with additive harmonic building. One sequencer feeds both modules at different transpositions for complex polyphonic textures.
+The PAR2 fully clockwise behavior decouples the module from gate requirements for sustained operation. This is a practical feature for situations where a trigger source is not available, a drone context is wanted, or the module is being used with a modulation source that does not produce gates. Combined with CV assignment for PAR1, a Pico Voice running in continuous mode with a slow LFO on PAR1 operates as a self-sufficient evolving texture source from a minimal patch.
+
+---
+
+## Patches
+
+### Sequenced Lead Voice
+
+Drive Pico Voice as a full melodic instrument from Hermod+, with Function Junction shaping the timbral envelope via the CV input.
+
+```
+[Hermod+] CV Out            ──▶ [Pico Voice] 1V/Oct In
+[Hermod+] Gate Out          ──▶ [Pico Voice] Trig In
+[Function Junction] ADSR Out ──▶ [Pico Voice] CV In
+                                 [Pico Voice] Out ──▶ [MixUp] Ch1
+```
+
+**Setup:** Set the algorithm to Purple (PWM). Assign CV to PAR1 in configuration mode (blinking green). Set PAR1 to noon and PAR2 to 1 o'clock for moderate release. Program Hermod+ with a melodic sequence. Set Function Junction to ADSR mode with a short attack, moderate decay, low sustain, and medium release. Gate the Function Junction from the same Hermod+ gate output.
+
+**Controls:** The Function Junction envelope opens PAR1 (pulse width) on each gate event, so each triggered note has a pulse width sweep from narrow to wide over the decay stage. Adjust Function Junction decay to taste: short decay produces a sharp timbral snap on each note, longer decay creates a slow sweep that outlasts the note. Advance PAR2 clockwise to extend the audio release and hear the pulse width continue to evolve after the gate closes. Swap algorithms mid-sequence using the button to compare PWM character against Bassline or Supersaw with the same patch.
+
+**Result:** A melodic sequence where each note has its own timbral arc driven by the envelope, rather than a static tone at each pitch. The CV assignment to PAR1 makes the timbral movement tied to the gate timing rather than to a free-running LFO.
+
+---
+
+### Acid Bassline
+
+Run the Bassline algorithm with CV-controlled resonance sweeps against a rhythmic Hermod+ sequence.
+
+```
+[Hermod+] CV Out   ──▶ [Pico Voice] 1V/Oct In
+[Hermod+] Gate Out ──▶ [Pico Voice] Trig In
+[Zadar] Ch1 Out    ──▶ [Pico Voice] CV In
+                       [Pico Voice] Out ──▶ [MixUp] Ch2
+```
+
+**Setup:** Set the algorithm to Blue (Bassline). Assign CV to PAR1 in configuration mode (blinking green). Set PAR1 to 2 o'clock as the base resonance position. Set PAR2 to 10 o'clock for a short release that keeps notes separated. Program Hermod+ with a low-register bass sequence. Set Zadar channel 1 to a fast attack and medium decay envelope, triggered by the same gate source as Pico Voice.
+
+**Controls:** Each gate event triggers both Pico Voice and a Zadar envelope that sweeps resonance upward on the attack and decays back toward the PAR1 knob position. Set PAR1 lower (9 o'clock) and Zadar envelope depth high for dramatic sweeps; set PAR1 higher (2 o'clock) and Zadar amplitude lower for a consistently filtered but still moving character. In configuration mode, toggle between saw and pulse waveform (PAR2 in config) to change the base harmonic content going into the filter.
+
+**Result:** A rhythmic bass line with per-note resonance sweeps from the Zadar envelope. The Bassline algorithm's filter character combined with the CV-driven resonance produces the classic acid synthesis behavior: each triggered note has a distinct timbral arc tied to its gate event.
+
+---
+
+### Karplus-Strong Plucked Voice
+
+Use the Karplus-Strong algorithm with Hermod+ for pitched melodic plucked string tones triggered by a rhythmic gate pattern.
+
+```
+[Hermod+] CV Out   ──▶ [Pico Voice] 1V/Oct In
+[Hermod+] Gate Out ──▶ [Pico Voice] Trig In
+                       [Pico Voice] Out ──▶ [MixUp] Ch3
+```
+
+**Setup:** Set the algorithm to Red (Karplus-Strong). Set PAR1 to noon (moderate distortion on the resonator). Set PAR2 to 9 o'clock for a fast decay that produces a defined pluck character. Program Hermod+ with a melodic sequence and a rhythmic gate pattern that includes rests.
+
+**Controls:** Each gate trigger fires a noise burst that the algorithm sustains as a decaying pitched resonance at the frequency set by 1V/oct and Tune. Adjust PAR1 clockwise to add distortion to the resonator, which darkens and thickens the pluck character. Adjust PAR2 to control decay length: counterclockwise gives a very short pluck; clockwise gives a longer sustain before the resonance fades. Rests in the gate pattern are important; without silence between notes the pluck character accumulates and loses definition. Bring PAR2 fully clockwise only if a drone-like sustained resonance is wanted rather than a pluck texture.
+
+**Result:** A sequenced melodic line of plucked-string tones with natural decay, generated from Pico Voice alone without any additional oscillator or filter modules. The algorithm handles pitch tracking, resonance, and decay within 3HP.
+
+---
+
+### Sustained Wavetable Pad
+
+Run the Wavetable algorithm in gate-free sustained mode with slow envelope modulation on the wave position for a continuously evolving pad texture.
+
+```
+[Hermod+] CV Out  ──▶ [Pico Voice] 1V/Oct In
+[Zadar] Ch2 Out   ──▶ [Pico Voice] CV In
+                      [Pico Voice] Out ──▶ [Ghost] In
+                                          [Ghost] Out ──▶ [MixUp] Ch4
+```
+
+**Setup:** Set the algorithm to Green (Wavetable). Assign CV to PAR1 in configuration mode (blinking green). Turn PAR2 fully clockwise for sustained output without gate dependency. Set PAR1 to noon as the center wave position. Program Zadar channel 2 as a slow cycling envelope at a 20 to 40 second period. Patch no gate signal to the Trig input; the module runs continuously from the 1V/oct pitch alone.
+
+**Controls:** The Zadar envelope sweeps PAR1 slowly through the wavetable, producing gradual timbral movement over time. Adjust PAR1 manually to shift the center of the sweep. Bring PAR2 slightly counterclockwise from maximum to reintroduce gate sensitivity for slower-attack textures when a gate is eventually added. In configuration mode, toggle between 1 and 2 note operation (PAR2 in config) to add a second detuned voice layer for a thicker pad character. Ghost's FX-first routing adds reverb and light saturation downstream.
+
+**Result:** A continuous, slowly morphing pad texture that evolves over long time periods without requiring a clock or gate source. The Wavetable algorithm's wave position modulation combined with Ghost's spatial processing produces sustained ambient material from a minimal patch.
 
 ---
 
 ## Common Mistakes
 
-### **🎵 Common Mistake Patterns:**
+### "No sound is coming out"
 
-**"My Karplus Strong doesn't make sound!"**
-- Karplus Strong REQUIRES gate/trigger input to initiate the string
-- **Solution:** Patch a gate/trigger signal to the TRIGG input, or use rapid note changes on the sequencer
-
-**"The pitch tracking seems off in the low end!"**
-- Pico Voice tracks C1-C8; below 1V or above 8V the tracking becomes unreliable
-- **Solution:** Stay within the C1-C8 range (1V-8V input to 1V/Oct input)
-
-**"I can't get sustained sounds!"**
-- Some algorithms like Karplus Strong depend entirely on gate length for sound generation
-- **Solution:** Turn PAR2 fully clockwise for sustained operation without external gates. Experiment per algorithm; behavior varies significantly
-
-**"CV assignment isn't working as expected"**
-- CV assignment affects only the modulation behavior, not fundamental algorithm character. Different algorithms respond differently to the same CV range
-- **Solution:** Understand that CV ranges vary by algorithm. Test all three CV assignments (Tune/PAR1/PAR2) and attenuate as needed per algorithm
-
-**"Configuration mode changes disappeared when I switched algorithms"**
-- Each algorithm has independent configuration settings (waveforms, note modes, etc.). Switching algorithms returns those saved settings, but you must be in config mode to verify/change them
-- **Solution:** Always check configuration settings when switching algorithms; what worked on Bassline might not be optimal for Wavetable
-
-### **🎵 Pro Tips:
-
-**Algorithm Workflow:**
-- **Learn the LED colors** - much faster than counting button presses
-- **Start with Chords or PWM** - most immediately musical
-- **Experiment with configuration settings** - they dramatically change character
-
-**CV Assignment Strategy:**
-- **Assign CV to PAR1** for most dramatic changes
-- **Assign to Tune** for pitch modulation and vibrato
-- **Assign to PAR2** for expression and dynamics
-- **Change assignments per algorithm** for complex patches
-
-**Performance Techniques:**
-- **Algorithm switching** creates instant texture changes
-- **Parameter automation** via CV for evolving sounds
-- **Configuration mode** allows real-time sound design
-- **Gate pattern variations** especially important for Karplus Strong
-
-**Sound Design Tips:**
-- **Wavetable + slow LFO** = evolving pads
-- **Bassline + envelope** = classic acid
-- **Supersaw + detune** = massive leads
-- **Wavefold + modulation** = complex harmonics
+Pico Voice requires a gate or trigger signal at the Trig input to produce audio. Without a trigger, most algorithms generate no output regardless of the 1V/oct pitch or PAR settings. The exception is PAR2 fully clockwise, which enables sustained output without gate dependency. If there is no gate source available, turn PAR2 fully clockwise as a temporary measure to confirm the audio path is working before troubleshooting the trigger connection. **Fix:** Patch a gate or trigger source to the Trig input, or turn PAR2 fully clockwise for gate-free sustained operation.
 
 ---
 
+### "Pitch tracking is inconsistent in the low register"
 
-## Creative Learning Path
-
-### **Recommended Study Progression:**
-1. **Start with Pico Voice fundamentals:** Master 8-algorithm operation, CV assignment, and voice synthesis concepts
-2. **Add natural development:** Integrate DivKid Ochd for natural voice parameter evolution (see Ochd guide)
-3. **Include controlled chaos:** Use Make Noise Wogglebug for chaotic voice processing (see Wogglebug guide)
-4. **Add pattern memory:** Apply Mutable Marbles for adaptive modulation of voice parameters (see Marbles guide)
-5. **Include rhythmic control:** Use 4ms RCD v2 for complex voice triggering relationships (see RCD guide)
-6. **Complete the ecosystem:** Add Cre8audio Function Junction for comprehensive voice modulation processing (see Function Junction guide)
-
-### **Cross-Module Learning Opportunities:**
-- **Pico Voice + Ochd:** Learn natural modulation of voice parameters for flowing synthesis development
-- **Pico Voice + Wogglebug:** Master chaos-driven voice processing for controlled unpredictability in synthesis
-- **Pico Voice + Marbles:** Understand pattern-driven voice control with adaptive synthesis relationships
-- **Pico Voice + RCD:** Explore rhythmic voice parameter changes and complex algorithmic voice processing
-- **All Advanced + Pico Voice:** Build complete voice ecosystems with multiple modulation types processing synthesis
-
-### **Skill Development Milestones:**
-- **Beginner:** Use different algorithms and basic CV assignment for voice synthesis
-- **Intermediate:** Master parameter interaction and algorithm switching for complex voice relationships
-- **Advanced:** Create Advanced integration patches with organic/chaos/pattern modulation of voice parameters
-- **Expert:** Design complete voice ecosystems where Pico Voice serves as synthesis core for multiple modulation types
-
-### **Advanced Voice Concepts:**
-- **8-Algorithm Mastery:** Understand how different synthesis types create unique voice characteristics
-- **CV Assignment Theory:** Master the relationship between modulation sources and synthesis parameters
-- **Dynamic Voice Processing:** Explore how modulation affects algorithm character, expression, and timbre
-- **System Integration:** Design patches where Pico Voice processes multiple modulation types simultaneously
-
-### **Performance Applications:**
-- **Live Voice Control:** Real-time algorithm switching and parameter control for dynamic synthesis performance
-- **Generative Voice Systems:** Foundation for self-evolving synthesis systems with natural/chaos/pattern modulation
-- **Hybrid Processing:** Bridge between traditional synthesis and advanced modulation processing
-- **Educational Tool:** Learn synthesis algorithms and advanced voice concepts in compact format
+The module's 1V/octave tracking is reliable from C1 to C8, corresponding to 1V to 8V input. Sequences or CV sources that send values below 1V place the pitch below the reliable tracking range. Many sequencers default to 0V as the lowest step, which falls outside the Pico Voice tracking window. **Fix:** Transpose the sequence up so the lowest note corresponds to at least 1V (C1), or adjust the Tune knob to shift the base pitch into the reliable range.
 
 ---
 
-**Bottom Line:** Pico Voice proves that great synthesis doesn't require massive modules. 8 professional algorithms, intuitive control, and that "bigger than it looks" sound make this the ultimate 3HP voice. As an **essential creative core within Advanced ecosystems**, it enables sophisticated synthesis and signal routing while maintaining the professional performance standards essential for both studio and performance applications in the most space-efficient format possible.
+### "My CV modulation is not affecting anything"
+
+The CV input assignment is set per algorithm in configuration mode. If no assignment has been made since the algorithm was selected, or if the assignment was made for a different algorithm, the CV input may be assigned to a parameter that has no audible effect at current settings. Each algorithm stores its own CV assignment independently, so switching algorithms resets to whatever was previously saved for that algorithm. **Fix:** Enter configuration mode (hold button one second until LED blinks), press to cycle through blinking color states (red for Tune, green for PAR1, blue for PAR2), and confirm the assignment is set to the intended target for the active algorithm.
 
 ---
 
-*Visit [Erica Synths](https://www.ericasynths.lv/) for complete documentation and the full Pico series*
+### "Karplus-Strong sounds like a sustained tone rather than a pluck"
+
+PAR2 controls the decay length of the Karplus-Strong resonance. At or near fully clockwise, the resonance sustains for a long time, producing a bowed or organ-like texture rather than a pluck. Turning PAR2 counterclockwise shortens the decay. At 9 o'clock the resonance decays quickly enough to produce a defined pluck character. **Fix:** Turn PAR2 counterclockwise to shorten the decay. For clearly defined plucks, PAR2 between 9 and 11 o'clock is the usable range.
+
+---
+
+## Advanced Learning Path
+
+1. Learn one algorithm per session before working with the full set. Start with Bassline or PWM since those are the most immediately familiar to anyone with a subtractive synthesis background. Understand how PAR1 and PAR2 behave for that algorithm, then explore the configuration mode settings for waveform selection. Moving to the next algorithm after mastering one produces clearer results than sampling all eight in a single session.
+
+2. Master configuration mode early. The CV assignment and per-algorithm parameter settings (waveform, note mode, phase lock) are not surface-level options; they define the fundamental behavior of each algorithm. PAR1 on the Supersaw algorithm is detune spread, but whether phase lock is on or off determines whether the detuned voices are stable or drift independently. These settings should be explored deliberately for each algorithm.
+
+3. Learn the PAR2 fully clockwise behavior before building gate-dependent patches. The distinction between gated and sustained operation changes how the module fits into a patch. Sustained mode allows Pico Voice to function as a drone or pad source without gate infrastructure; gated mode ties the voice to the rhythmic structure of whatever gate source is used. Knowing which mode is active prevents confusion when a patch produces continuous output when silence was expected, or silence when continuous output was expected.
+
+4. Experiment with CV assignment to Tune for vibrato and pitch modulation before assigning to PAR1 or PAR2. Assigning a slow LFO to Tune produces pitch variation on whatever algorithm is active, which demonstrates how the 1V/oct input and Tune knob interact with the CV input. Once that relationship is clear, the behavior of PAR1 and PAR2 CV assignments is easier to predict.
+
+5. Use algorithm switching mid-sequence as a performance technique. Pressing the button while a sequence plays changes the synthesis approach without interrupting the pitch or gate signals. The transition between Wavetable and Wavefold, or between Chords and Supersaw, produces an immediate timbral shift that works as a compositional event. The per-algorithm memory means switching back returns to the previous settings.
+
+6. Use Pico Voice as the synthesis core in patches where all other modules handle modulation, timing, and effects. The module handles pitch tracking, voice generation, and internal envelope in 3HP; adding Function Junction for envelope-to-CV modulation, Hermod+ for sequencing and gate generation, and Ghost for output processing produces a complete performance voice with clear functional separation between components.
+
+---
+
+## Pairs Well With
+
+**Squarp Hermod+** is the most complete sequencing partner for Pico Voice. Hermod+ sends simultaneous CV and gate outputs from the same sequence, satisfying both the 1V/oct and Trig inputs from a single programming source. Additional CV outputs from Hermod+ can be routed to the Pico Voice CV input for parameter automation that stays synchronized to the sequence tempo without requiring a separate modulation source.
+
+**Cre8audio Function Junction** provides envelope and function generator outputs that pair directly with the Pico Voice CV input. An ADSR output assigned to PAR1 via configuration mode gives each triggered note a timbral arc tied to the gate event, transforming the module from a static voice into one that responds expressively to each trigger. The Function Junction LFO output on the same CV input produces slow parameter evolution when PAR2 is fully clockwise for sustained operation.
+
+**Endorphin.es Ghost** is the natural effects processor for Pico Voice output. Ghost's FX-first routing adds reverb and delay texture before light saturation, which complements the Pico Voice's relatively clean algorithm outputs. The Bassline and Karplus-Strong algorithms both benefit from Ghost's filter as an additional tonal shaping stage after the internal voice processing. The Sidechain Trigger input on Ghost can share the same gate source as Pico Voice, so the effects processing ducks rhythmically with each triggered note.
+
+**Intellijel MixUp** brings the Pico Voice output into the broader system. Using two Pico Voice modules on different algorithms and blending them through MixUp at different levels produces hybrid synthesis textures that neither algorithm achieves alone: Wavetable plus Harmonic creates complex evolving timbres with additive overtone content layered over wavetable morphing. MixUp's per-channel mute controls allow algorithm combinations to be brought in and out without level adjustments.
