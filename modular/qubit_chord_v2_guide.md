@@ -14,7 +14,7 @@ historical_context: false
 
 # Qu-Bit Chord V2
 
-![Qu-Bit Chord V2](https://github.com/Shadoe-42/music/raw/main/modular/images/qubit/chord_v2/front_panel.jpg)
+![Qu-Bit Chord V2](https://github.com/Shadoe-42/music/raw/main/modular/images/qubit/chord_v2/front_panel.jpg)  
 *Four-voice wavetable oscillator with individual interval outputs, seven chord types, seventeen voicings, and four polyphony modes in 14HP*
 
 ## Quick Start: Get Sound in 5 Minutes
