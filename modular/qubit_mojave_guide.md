@@ -146,8 +146,8 @@ Sustained chord source into Mojave with Sky Mode and Structure generating melodi
                                             Kali: ping-pong delay
                                             Kali delay time: clocked or moderate manual
 
-                         [Kali Out L] ──▶ [MixUp CH1 L]
-                         [Kali Out R] ──▶ [MixUp CH1 R]
+                         [Kali Out L] ──▶ [MixUp CH3 L]
+                         [Kali Out R] ──▶ [MixUp CH3 R]
 ```
 
 **Setup:** Chord V2 Mix output provides sustained harmonic content into Mojave's left input. Sky Mode is set to Day (minor scale) to match minor chord material from Chord V2. Zadar CH1 in infinite-repeat mode slowly modulates the Structure CV input over 15 to 25 seconds, sweeping Structure from its set base position up through the melodic range and back.
@@ -182,8 +182,8 @@ Buffer-freezing workflow with Dune self-patched to Zone CV, producing a continuo
 [Mojave Left Out] ───────────────────────▶ [Mingles Ch1 Input A]
 [Mojave Right Out] ──────────────────────▶ [Mingles Ch1 Input B]
 
-                          [Mingles Mix Out L] ──▶ [MixUp CH2 L]
-                          [Mingles Mix Out R] ──▶ [MixUp CH2 R]
+                          [Mingles Mix Out L] ──▶ [MixUp CH3 L]
+                          [Mingles Mix Out R] ──▶ [MixUp CH3 R]
 ```
 
 **Setup:** Cs-L provides a sustained tonal source to build a buffer worth capturing. Hermod+ pitch CV into Speed sets the playback pitch center of the granular output. Allow 2 to 4 bars of audio to enter before engaging Lock; the buffer captures that window of material. Then patch the Dune output to the Zone CV input. Dune's default ascending ramp behavior moves Zone continuously through the frozen buffer.
@@ -218,8 +218,8 @@ Short transient into Mojave with Gust in full feedback, building a self-sustaini
                                             Kali: basic delay, moderate time
                                             Kali feedback: 9-10 o'clock
 
-                         [Kali Out L] ──▶ [MixUp CH1 L]
-                         [Kali Out R] ──▶ [MixUp CH1 R]
+                         [Kali Out L] ──▶ [MixUp CH3 L]
+                         [Kali Out R] ──▶ [MixUp CH3 R]
 ```
 
 **Setup:** QoP sends a single gate into Mojave's Gen input with Gen Mode set to Chisel, so grains are triggered only by the gate and not the internal clock. A short transient voice output from QoP enters the left audio input as the grain source material. Gust turned fully left engages full feedback, recirculating the granular output back into the processing chain.

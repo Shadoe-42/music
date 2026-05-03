@@ -122,8 +122,8 @@ Basic loop recording and overdub workflow with Varispeed transposition and tape 
                     [Record again] → play a second phrase → [Play/Pause]
                     [Undo if the overdub is wrong]
 
-[Stardust Left Out] ─────────────────────▶ [MixUp CH1 L]
-[Stardust Right Out] ────────────────────▶ [MixUp CH1 R]
+[Stardust Left Out] ─────────────────────▶ [MixUp CH3 L]
+[Stardust Right Out] ────────────────────▶ [MixUp CH3 R]
 ```
 
 **Setup:** Cs-L provides a sustained melodic source. Hermod+ pitch CV into V/Oct allows the loop to be transposed after recording. Effect Mode is set to Tape Emulation with subtle Flutter and Hiss settings to add warmth without obscuring the source material.
@@ -151,8 +151,8 @@ Frippertronics loop mode with continuous overdubbing, producing a compositional 
                                             Hiss: 9-10 o'clock
                                             Shift+Start: 12 o'clock (moderate decay rate)
 
-[Stardust Left Out] ─────────────────────▶ [MixUp CH1 L]
-[Stardust Right Out] ────────────────────▶ [MixUp CH1 R]
+[Stardust Left Out] ─────────────────────▶ [MixUp CH3 L]
+[Stardust Right Out] ────────────────────▶ [MixUp CH3 R]
 ```
 
 **Setup:** Cs-L provides melodic material. Hermod+ pitch CV drives loop transposition via V/Oct. Hermod+ gate output automates Record start and stop, triggering new recording passes at musically timed intervals. Loop Mode is set to Frippertronics. Shift+Start controls the decay rate for older layers.
@@ -184,8 +184,8 @@ Recorded phrase divided into slices with Skip introducing transformations, Nova 
 
                                             Nova mode: Spark (end-of-slice gates)
 
-[Stardust Left Out] ─────────────────────▶ [MixUp CH2 L]
-[Stardust Right Out] ────────────────────▶ [MixUp CH2 R]
+[Stardust Left Out] ─────────────────────▶ [MixUp CH3 L]
+[Stardust Right Out] ────────────────────▶ [MixUp CH3 R]
 ```
 
 **Setup:** Chord V2 provides a harmonic source phrase. Hermod+ clock syncs Stardust's Clock Mode for quantized slice behavior. Record a single 4-bar phrase with Chord V2 as the source. After setting the loop, engage Slice and Skip.

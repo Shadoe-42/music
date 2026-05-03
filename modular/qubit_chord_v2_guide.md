@@ -127,8 +127,8 @@ Melody mode with Hermod+ providing the chord root and a second sequencer track d
                                             Moon Phase SPAN: 1 o'clock
 
                              [Punch V3 CH1 OUT] ──▶ [MixUp CH1]
-                             [Moon Phase OUT L] ──▶ [MixUp CH2 L]
-                             [Moon Phase OUT R] ──▶ [MixUp CH2 R]
+                             [Moon Phase OUT L] ──▶ [MixUp CH3 L]
+                             [Moon Phase OUT R] ──▶ [MixUp CH3 R]
 ```
 
 **Setup:** Hermod+ track 1 drives the chord root via V/Oct. Track 2 drives the Seventh independently via the Lead input. Set Mode to Melody (LED blue) and press Triad to limit Mix to three voices. Chord V2 Mix (three-voice triad) goes through Punch V3 for envelope shaping. Seventh output goes through Moon Phase for filtered stereo widening.
