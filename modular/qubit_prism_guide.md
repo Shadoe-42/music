@@ -96,8 +96,8 @@ Complex oscillator source into Prism with light comb and lowpass filtering, prod
                                             Resonance: 9 o'clock
 
 [Cs-L Sine Out] ─────────────────────────▶ [MixUp CH1]
-[Prism Out 1] ───────────────────────────▶ [MixUp CH2 L]
-[Prism Out 2] ───────────────────────────▶ [MixUp CH2 R]
+[Prism Out 1] ───────────────────────────▶ [MixUp CH3 L]
+[Prism Out 2] ───────────────────────────▶ [MixUp CH3 R]
 ```
 
 **Setup:** Cs-L fold output provides harmonically complex content into Prism. The sine output from the same oscillator goes directly to MixUp CH1 as the dry reference, allowing Prism's wet output to be blended against a clean signal. Filter Type is LPF in post position: the delay and comb act on the full-spectrum fold output, and the lowpass filter shapes the combined result at the output.
@@ -184,8 +184,8 @@ Zadar modulating Time and Decimate at independent rates, with Cs-L as source and
                                             Cutoff: 12 o'clock
                                             Resonance: 10 o'clock
 
-[Prism Out 1] ───────────────────────────▶ [MixUp CH2 L]
-[Prism Out 2] ───────────────────────────▶ [MixUp CH2 R]
+[Prism Out 1] ───────────────────────────▶ [MixUp CH3 L]
+[Prism Out 2] ───────────────────────────▶ [MixUp CH3 R]
 ```
 
 **Setup:** Cs-L fold output enters Prism with the filter in pre position (Mode blue). Bandpass filter shapes the signal before it enters the delay buffer. Zadar CH1 in infinite-repeat mode slowly modulates Time CV, shifting the delay buffer size and comb resonance pitch over 8 to 15 seconds. Zadar CH2 in infinite-repeat mode modulates Decimate CV at a different rate, cycling through fidelity levels over 12 to 20 seconds.
