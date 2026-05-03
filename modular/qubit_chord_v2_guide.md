@@ -262,7 +262,7 @@ The Mix output sums all four voices at unity. If individual outputs are being am
 
 ## Pairs Well With
 
-**Qu-Bit Hermod+** is the natural sequencing infrastructure for Chord V2. Hermod+ provides 1V/oct pitch CV for the root, gate outputs for downstream VCAs and Punch V3 triggering, and a second CV track for the Lead input in Melody mode. The ability to run multiple CV tracks simultaneously from one sequencer makes Hermod+ the cleanest way to drive Chord V2's multi-input architecture without requiring additional modules.
+**Squarp Instruments Hermod+** is the natural sequencing infrastructure for Chord V2. Hermod+ provides 1V/oct pitch CV for the root, gate outputs for downstream VCAs and Punch V3 triggering, and a second CV track for the Lead input in Melody mode. The ability to run multiple CV tracks simultaneously from one sequencer makes Hermod+ the cleanest way to drive Chord V2's multi-input architecture without requiring additional modules.
 
 **Patching Panda Punch V3** handles envelope shaping for the individual voice outputs. Each Punch V3 channel receives one voice output from Chord V2 and shapes it with an independent decay envelope. The Root output through Punch CH1 with a long Vintage decay becomes a sustaining harmonic foundation. The Seventh through Punch CH2 with a short CV-mode envelope becomes a responsive melodic edge. The two channels operate simultaneously, giving the chord's voices different dynamic characters from a single module.
 
