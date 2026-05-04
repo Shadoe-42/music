@@ -1,12 +1,18 @@
 ---
-title: "2HP Swarm"
-manufacturer: "2HP"
-module: "Swarm"
-format: "Eurorack"
-type: "Hyper Oscillator"
-tags: ["oscillator", "supersaw", "hyper-oscillator", "detuned", "unison", "pads", "stabs", "drone", "source"]
-roles: ["sound-designer", "ambient-artist", "producer"]
-hc: true
+title: 2HP Swarm
+manufacturer: 2HP
+primary_role: SOURCE
+secondary_roles: []
+form_factor: eurorack
+functions: [oscillator]
+behavior_tags: [harmonic, bright, warm, sustained, stable, linear]
+use_cases: [harmonic pad, drone foundation, sustained pad]
+hp: 2
+memory: none
+transport: none
+screen: false
+hybrid: false
+cv: full
 ---
 
 ![2HP Swarm](https://github.com/Shadoe-42/music/raw/main/modular/images/2hp/swarm/front_panel.jpg)
@@ -44,7 +50,7 @@ Hardware supersaw implementations multiplied as digital processing became cheape
 
 ---
 
-## Key Specs
+## Key Specifications
 
 | Parameter | Value |
 |---|---|
@@ -71,7 +77,7 @@ Hardware supersaw implementations multiplied as digital processing became cheape
 
 ---
 
-## Why This Excels
+## Why This Instrument Excels
 
 Swarm does one thing and exposes every dimension of it. The supersaw architecture is not a new idea — Roland made it commercially definitive in 1996 — but Swarm raises the ceiling from seven voices to 88 and gives the voice count its own CV input. This turns what Roland fixed at the hardware level into a modulatable synthesis parameter. The number of detuned voices can be swept in real time by an envelope, an LFO, or a sequencer, which allows the density of the unison to evolve within a patch rather than being set and left.
 
@@ -90,15 +96,15 @@ Detuned pulse at high voice counts is the least-discussed mode and the most dist
 Slow-attack, slow-release pad from Swarm saw into a filter and delay, shaped by a Zadar evolving envelope.
 
 ```
-[Hermod+ Pitch CV] ──────────────────────▶ [Swarm V/Oct]
-[Hermod+ Gate Out] ──────────────────────▶ [Zadar Trigger CH1]
+[Hermod+ Pitch CV] ─────────────[C]──────▶ [Swarm V/Oct]
+[Hermod+ Gate Out] ─────────────[G]──────▶ [Zadar Trigger CH1]
 
-[Zadar CH1 Env Out] ─────────────────────▶ [VCA CV In]
-[Swarm Audio Out] ───────────────────────▶ [VCA Audio In]
+[Zadar CH1 Env Out] ────────────[C]──────▶ [VCA CV In]
+[Swarm Audio Out] ──────────────[A]──────▶ [VCA Audio In]
 
-[VCA Audio Out] ─────────────────────────▶ [Moon Phase Filter In]
-[Moon Phase Filter Out] ─────────────────▶ [Nautilus Left In]
-[Nautilus Left Out] ─────────────────────▶ [MixUp CH1]
+[VCA Audio Out] ────────────────[A]──────▶ [Moon Phase Filter In]
+[Moon Phase Filter Out] ────────[A]──────▶ [Nautilus Left In]
+[Nautilus Left Out] ────────────[A]──────▶ [MixUp CH1]
 
                                             Voices: 12 o'clock (~20 voices)
                                             Detune: 9-10 o'clock (light chorus)
@@ -123,14 +129,14 @@ Slow-attack, slow-release pad from Swarm saw into a filter and delay, shaped by 
 High voice count, fast Zadar envelope, Moon Phase filter with resonance — dense supersaw stabs at sequencer rate.
 
 ```
-[Hermod+ Pitch CV] ──────────────────────▶ [Swarm V/Oct]
-[Hermod+ Gate Out] ──────────────────────▶ [Zadar Trigger CH1]
+[Hermod+ Pitch CV] ─────────────[C]──────▶ [Swarm V/Oct]
+[Hermod+ Gate Out] ─────────────[G]──────▶ [Zadar Trigger CH1]
 
-[Zadar CH1 Env Out] ─────────────────────▶ [VCA CV In]
-[Swarm Audio Out] ───────────────────────▶ [VCA Audio In]
+[Zadar CH1 Env Out] ────────────[C]──────▶ [VCA CV In]
+[Swarm Audio Out] ──────────────[A]──────▶ [VCA Audio In]
 
-[VCA Audio Out] ─────────────────────────▶ [Moon Phase Filter In]
-[Moon Phase Filter Out] ─────────────────▶ [MixUp CH1]
+[VCA Audio Out] ────────────────[A]──────▶ [Moon Phase Filter In]
+[Moon Phase Filter Out] ────────[A]──────▶ [MixUp CH1]
 
                                             Voices: 3 o'clock (high density)
                                             Detune: 10-11 o'clock (moderate)
@@ -155,15 +161,15 @@ High voice count, fast Zadar envelope, Moon Phase filter with resonance — dens
 Zadar slow ramp or triangle into Swarm's Detune CV input, sweeping the detuning character from chorus to chaos and back over a sustained note.
 
 ```
-[Hermod+ Pitch CV] ──────────────────────▶ [Swarm V/Oct]
-[Hermod+ Gate Out] ──────────────────────▶ [Zadar Trigger CH2]
+[Hermod+ Pitch CV] ─────────────[C]──────▶ [Swarm V/Oct]
+[Hermod+ Gate Out] ─────────────[G]──────▶ [Zadar Trigger CH2]
 
-[Zadar CH2 Slow Env Out] ────────────────▶ [Swarm Detune CV]
+[Zadar CH2 Slow Env Out] ───────[C]──────▶ [Swarm Detune CV]
 
-[Zadar CH1 Env Out] ─────────────────────▶ [VCA CV In]
-[Swarm Audio Out] ───────────────────────▶ [VCA Audio In]
+[Zadar CH1 Env Out] ────────────[C]──────▶ [VCA CV In]
+[Swarm Audio Out] ──────────────[A]──────▶ [VCA Audio In]
 
-[VCA Audio Out] ─────────────────────────▶ [MixUp CH1]
+[VCA Audio Out] ────────────────[A]──────▶ [MixUp CH1]
 
                                             Voices: 2-3 o'clock (high)
                                             Detune: 9 o'clock (base, CV adds to this)
@@ -188,17 +194,17 @@ Zadar slow ramp or triangle into Swarm's Detune CV input, sweeping the detuning 
 Swarm saw into Aurora at FFT 4096 for a spectrally blurred pad with reverb tail that reflects the harmonic density of the supersaw input.
 
 ```
-[Hermod+ Pitch CV] ──────────────────────▶ [Swarm V/Oct]
-[Hermod+ Gate Out] ──────────────────────▶ [Zadar Trigger CH1]
-[Hermod+ Pitch CV] ──────────────────────▶ [Aurora Warp CV]
+[Hermod+ Pitch CV] ─────────────[C]──────▶ [Swarm V/Oct]
+[Hermod+ Gate Out] ─────────────[G]──────▶ [Zadar Trigger CH1]
+[Hermod+ Pitch CV] ─────────────[C]──────▶ [Aurora Warp CV]
 
-[Zadar CH1 Env Out] ─────────────────────▶ [VCA CV In]
-[Swarm Audio Out] ───────────────────────▶ [VCA Audio In]
+[Zadar CH1 Env Out] ────────────[C]──────▶ [VCA CV In]
+[Swarm Audio Out] ──────────────[A]──────▶ [VCA Audio In]
 
-[VCA Audio Out] ─────────────────────────▶ [Aurora Left In]
+[VCA Audio Out] ────────────────[A]──────▶ [Aurora Left In]
 
-[Aurora Left Out] ───────────────────────▶ [MixUp CH3 L]
-[Aurora Right Out] ──────────────────────▶ [MixUp CH3 R]
+[Aurora Left Out] ──────────────[A]──────▶ [MixUp CH3 L]
+[Aurora Right Out] ─────────────[A]──────▶ [MixUp CH3 R]
 
                                             Voices: 12 o'clock (~20 voices)
                                             Detune: 9 o'clock (light chorus)
@@ -263,7 +269,7 @@ A fixed Detune knob position is only one dimension of what Swarm can produce. Th
 
 ---
 
-## Annotated Learning Path
+## Advanced Learning Path
 
 **Entry point:** Set Voices to center, Detune to 9 o'clock, waveform to saw. Patch a steady pitch CV source and a sustained gate through a VCA to MixUp. Listen to the baseline character of 20-voice detuned saw. Adjust Detune slowly clockwise and stop every 10 degrees to hear the transition through the chorus range and into the chaotic range. Locate the point where the character changes from musical to dissonant; that boundary is the primary usable range of the module.
 
@@ -279,7 +285,7 @@ A fixed Detune knob position is only one dimension of what Swarm can produce. Th
 
 ---
 
-## Patches Well With
+## Pairs Well With
 
 - **Xaoc Devices Zadar** — Four independent envelope generators for VCA amplitude and Detune CV modulation; Zadar's wide variety of envelope shapes produces pad behaviors that a simple ADSR cannot approach, and its slow-moving outputs make Detune CV modulation musically viable.
 - **Qu-Bit Aurora** — Aurora's spectral reverb responds to Swarm's harmonically dense supersaw input with a richer spectral field than simpler sources produce; the FFT-domain blurring of a multi-voice detuned saw extends the pad character into frequency-domain territory the VCA and filter alone cannot reach.

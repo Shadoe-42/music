@@ -1,12 +1,18 @@
 ---
-title: "Qu-Bit Electronix Aurora"
-manufacturer: "Qu-Bit Electronix"
-module: "Aurora"
-format: "Eurorack"
-type: "Spectral Reverb"
-tags: ["reverb", "spectral", "fft", "pitch-shifting", "freeze", "stereo", "intermediate", "advanced"]
-roles: ["sound-designer", "ambient-artist", "experimental", "producer"]
-hc: true
+title: Qu-Bit Electronix Aurora
+manufacturer: Qu-Bit Electronix
+primary_role: SHAPER
+secondary_roles: []
+form_factor: eurorack
+functions: [fx-time, fx-spectral, fx-pitch]
+behavior_tags: [evolving, harmonic, nonlinear, sustained, bright, performance-oriented]
+use_cases: [stereo signal processing, evolving ambient texture, harmonic pad, timbral movement and shaping]
+hp: 12
+memory: none
+transport: none
+screen: false
+hybrid: false
+cv: full
 ---
 
 ![Qu-Bit Electronix Aurora](https://github.com/Shadoe-42/music/raw/main/modular/images/qubit/aurora/front_panel.jpg)
@@ -44,7 +50,7 @@ Aurora is a different application of the same engine. Rather than using the phas
 
 ---
 
-## Key Specs
+## Key Specifications
 
 | Parameter | Value |
 |---|---|
@@ -84,7 +90,7 @@ Aurora is a different application of the same engine. Rather than using the phas
 
 ---
 
-## Why This Excels
+## Why This Instrument Excels
 
 Aurora produces reverb that no acoustic space can produce. Convolution reverbs model physical rooms by convolving the input with an impulse response. Algorithmic reverbs approximate room behavior through tuned delay networks and feedback. Aurora blurs the signal in the frequency domain, which means the reverb is derived from the mathematical structure of the input itself rather than from any acoustic model. Inputs with rich harmonic content produce harmonically rich reverbs. Inputs with sparse frequency content produce sparse reverbs. The reverb is a transformation of what is actually in the signal.
 
@@ -103,7 +109,7 @@ The Atmosphere control adds a filter dimension that most reverbs do not include.
 Spectral hall reverb on a bass voice, using Time and Reflect for long, smooth decay without frequency-domain artifacts.
 
 ```
-[Cs-L Sine Out] ─────────────────────────▶ [Aurora Left In]
+[Cs-L Sine Out] ──────────────[A]─────────▶ [Aurora Left In]
 
                                             FFT Size: 4096 (blue)
                                             Warp: 12 o'clock (no shift)
@@ -113,8 +119,8 @@ Spectral hall reverb on a bass voice, using Time and Reflect for long, smooth de
                                             Mix: 10-11 o'clock
                                             Atmosphere: 12 o'clock
 
-[Aurora Left Out] ───────────────────────▶ [MixUp CH3 L]
-[Aurora Right Out] ──────────────────────▶ [MixUp CH3 R]
+[Aurora Left Out] ────────────[A]─────────▶ [MixUp CH3 L]
+[Aurora Right Out] ───────────[A]─────────▶ [MixUp CH3 R]
 ```
 
 **Setup:** Cs-L sine output provides a clean bass voice with strong fundamental and minimal high-frequency content. Patching only the left input normals the signal to both channels, producing stereo spectral output from a mono source. FFT size 4096 provides the cleanest spectral response with the most accurate frequency representation and the longest latency, which suits sustained bass lines well.
@@ -130,8 +136,8 @@ Spectral hall reverb on a bass voice, using Time and Reflect for long, smooth de
 High melodic voice into Aurora with a sequencer driving Warp at 1V/Oct, producing pitch-shifting spectral shimmer that tracks the melody.
 
 ```
-[Chord V2 Seventh Out] ──────────────────▶ [Aurora Left In]
-[Hermod+ CV Out (Track 2)] ──────────────▶ [Aurora Warp CV]
+[Chord V2 Seventh Out] ───────[A]─────────▶ [Aurora Left In]
+[Hermod+ CV Out (Track 2)] ───[C]─────────▶ [Aurora Warp CV]
 
                                             FFT Size: 4096 (blue)
                                             Warp: 12 o'clock (CV centered)
@@ -141,8 +147,8 @@ High melodic voice into Aurora with a sequencer driving Warp at 1V/Oct, producin
                                             Mix: 12 o'clock
                                             Atmosphere: 1-2 o'clock (slightly up)
 
-[Aurora Left Out] ───────────────────────▶ [MixUp CH3 L]
-[Aurora Right Out] ──────────────────────▶ [MixUp CH3 R]
+[Aurora Left Out] ────────────[A]─────────▶ [MixUp CH3 L]
+[Aurora Right Out] ───────────[A]─────────▶ [MixUp CH3 R]
 ```
 
 **Setup:** Chord V2 Seventh output provides a single melodic voice tracking the upper register of the sequence. Hermod+ track 2 sends the same pitch CV data that drives Chord V2's root, so Aurora's Warp tracks the melody. With Warp centered and CV input active, the spectral field shifts up or down with each note change, harmonizing the reverb tail to the current pitch.
@@ -158,8 +164,8 @@ High melodic voice into Aurora with a sequencer driving Warp at 1V/Oct, producin
 vpme.de QD percussion into Aurora at FFT 1024 with Blur and Reflect for rhythmic spectral transformation, producing a textured percussive wash that retains the rhythmic structure of the input.
 
 ```
-[QD Voice Out] ──────────────────────────▶ [Aurora Left In]
-[Hermod+ Gate Out] ──────────────────────▶ [Aurora Freeze Gate]
+[QD Voice Out] ───────────────[A]─────────▶ [Aurora Left In]
+[Hermod+ Gate Out] ───────────[G]─────────▶ [Aurora Freeze Gate]
 
                                             FFT Size: 1024 (cyan)
                                             Warp: 12 o'clock
@@ -169,8 +175,8 @@ vpme.de QD percussion into Aurora at FFT 1024 with Blur and Reflect for rhythmic
                                             Mix: 12 o'clock
                                             Atmosphere: 11 o'clock (slightly down)
 
-[Aurora Left Out] ───────────────────────▶ [MixUp CH3 L]
-[Aurora Right Out] ──────────────────────▶ [MixUp CH3 R]
+[Aurora Left Out] ────────────[A]─────────▶ [MixUp CH3 L]
+[Aurora Right Out] ───────────[A]─────────▶ [MixUp CH3 R]
 ```
 
 **Setup:** QD voice output provides a percussive transient-forward signal. FFT size 1024 introduces comb-like spectral timbres that complement percussive sources; at this FFT size, the module's transient response is faster and the frequency resolution is coarser, which produces a characteristic texture on drum voices that the larger FFT sizes do not. Hermod+ gate drives Freeze, which locks spectral snapshots at sequenced intervals to create rhythmic freeze events within the texture.
@@ -186,13 +192,13 @@ vpme.de QD percussion into Aurora at FFT 1024 with Blur and Reflect for rhythmic
 Endorphin.es Furtrrrr Generator into Aurora with manual Freeze, then Warp CV transposing the frozen spectral content to build an evolving drone from a single captured moment.
 
 ```
-[Furtrrrr Generator Out] ────────────────▶ [Aurora Left In]
+[Furtrrrr Generator Out] ─────[A]─────────▶ [Aurora Left In]
 
                                             [Play source for 4-8 seconds]
                                             [Press Freeze to lock spectrum]
                                             [Disconnect source if desired]
 
-[Hermod+ CV Out] ────────────────────────▶ [Aurora Warp CV]
+[Hermod+ CV Out] ─────────────[C]─────────▶ [Aurora Warp CV]
 
                                             FFT Size: 4096 (blue)
                                             Warp: 12 o'clock (CV active)
@@ -202,8 +208,8 @@ Endorphin.es Furtrrrr Generator into Aurora with manual Freeze, then Warp CV tra
                                             Mix: 3 o'clock (fully wet)
                                             Atmosphere: 12 o'clock
 
-[Aurora Left Out] ───────────────────────▶ [MixUp CH3 L]
-[Aurora Right Out] ──────────────────────▶ [MixUp CH3 R]
+[Aurora Left Out] ────────────[A]─────────▶ [MixUp CH3 L]
+[Aurora Right Out] ───────────[A]─────────▶ [MixUp CH3 R]
 ```
 
 **Setup:** Furtrrrr Generator provides a dense, harmonically complex voice suitable for spectral capture. Allow the source to play for 4 to 8 seconds to build a stable spectral character in Aurora's processing chain before pressing Freeze. Once Freeze is engaged, the spectral snapshot is locked. The source can remain connected or be disconnected; Aurora holds the frozen content until Freeze is deactivated. Set Mix fully wet to hear only the frozen spectral content. Hermod+ CV into Warp drives pitch transposition of the frozen spectrum.
@@ -256,7 +262,7 @@ Freeze captures the current spectral characteristics of the input signal at the 
 
 ---
 
-## Annotated Learning Path
+## Advanced Learning Path
 
 **Entry point:** Patch any sustained voice (sine wave, pad, slow chord) into the left input and raise Time to 2 o'clock with Mix at 12 o'clock. Adjust Reflect while listening to how the tail changes character through its time zones. This establishes Aurora's core reverb behavior before any of the more complex controls are introduced.
 
@@ -272,7 +278,7 @@ Freeze captures the current spectral characteristics of the input signal at the 
 
 ---
 
-## Patches Well With
+## Pairs Well With
 
 - **Qu-Bit Chord V2** — Chord V2's Mix and Seventh outputs provide ideal input material for Aurora, with the Seventh voice tracking pitch sequences via Warp CV.
 - **vpme.de QD** — Drum voices at FFT 1024 and 512 produce comb-like and alien spectral textures with rhythmic input, pushing Aurora into territory that sustained melodic sources cannot reach.

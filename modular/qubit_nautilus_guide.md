@@ -1,12 +1,18 @@
 ---
-title: "Qu-Bit Electronix Nautilus"
-manufacturer: "Qu-Bit Electronix"
-module: "Nautilus"
-format: "Eurorack"
-type: "Complex Delay Network"
-tags: ["delay", "stereo", "feedback", "shimmer", "reverb", "cv-generator", "intermediate", "advanced"]
-roles: ["sound-designer", "ambient-artist", "experimental", "producer"]
-hc: true
+title: Qu-Bit Electronix Nautilus
+manufacturer: Qu-Bit Electronix
+primary_role: SHAPER
+secondary_roles: [MODULATOR]
+form_factor: eurorack
+functions: [fx-time, fx-pitch]
+behavior_tags: [evolving, harmonic, nonlinear, sustained, dark, performance-oriented]
+use_cases: [stereo signal processing, evolving ambient texture, timbral movement and shaping, harmonic pad]
+hp: 14
+memory: none
+transport: none
+screen: false
+hybrid: false
+cv: full
 ---
 
 ![Qu-Bit Electronix Nautilus](https://github.com/Shadoe-42/music/raw/main/modular/images/qubit/nautilus/front_panel.jpg)
@@ -44,7 +50,7 @@ Digital delay arrived in the 1980s and removed the degradation. Repeats became c
 
 ---
 
-## Key Specs
+## Key Specifications
 
 | Parameter | Value |
 |---|---|
@@ -90,7 +96,7 @@ Digital delay arrived in the 1980s and removed the degradation. Repeats became c
 
 ---
 
-## Why This Excels
+## Why This Instrument Excels
 
 The essential difference between Nautilus and a conventional delay module is the network architecture. A standard delay has one time, one feedback amount, and one output. Nautilus has eight delay lines that can be spaced, reversed, and filtered independently, and whose interactions change based on which Feedback mode is active. Cascade alone can produce delays longer than most modules are capable of by chaining four lines in series per channel. Adrift can produce spatial movement that no static stereo delay can replicate because the routing changes with each feedback pass.
 
@@ -109,8 +115,8 @@ Sonar is the most underused dimension of Nautilus. In Stepped Voltage mode, it p
 Winterbloom Castor and Pollux II into Nautilus in Ping Pong with external clock sync, producing a stereo melodic echo that tracks the patch tempo and expands a single voice into a wide stereo field.
 
 ```
-[Castor & Pollux II Thru Out] ───────────▶ [Nautilus Left In]
-[Hermod+ Clock Out] ─────────────────────▶ [Nautilus Clock In]
+[Castor & Pollux II Thru Out] ──[A]──────▶ [Nautilus Left In]
+[Hermod+ Clock Out] ────────────[G]──────▶ [Nautilus Clock In]
 
                                             Delay Mode: Fade
                                             Feedback Mode: Ping Pong
@@ -122,8 +128,8 @@ Winterbloom Castor and Pollux II into Nautilus in Ping Pong with external clock 
                                             Mix: 10-11 o'clock
                                             Chroma: none (Depth fully CCW)
 
-[Nautilus Left Out] ─────────────────────▶ [MixUp CH3 L]
-[Nautilus Right Out] ────────────────────▶ [MixUp CH3 R]
+[Nautilus Left Out] ────────────[A]──────▶ [MixUp CH3 L]
+[Nautilus Right Out] ───────────[A]──────▶ [MixUp CH3 R]
 ```
 
 **Setup:** Castor and Pollux II Thru output passes the dry oscillator signal into Nautilus while allowing the signal to continue to other destinations in the patch. Hermod+ clock syncs the delay time to the patch tempo. With one Sensor active and Feedback mode set to Ping Pong, the delay repeats bounce between the left and right channels relative to the input's stereo position.
@@ -139,8 +145,8 @@ Winterbloom Castor and Pollux II into Nautilus in Ping Pong with external clock 
 Instruo Cs-L sine output into Nautilus in Shimmer and Cascade mode, producing a rising harmonic shimmer that accumulates upward through octaves as the feedback path extends.
 
 ```
-[Cs-L Sine Out] ─────────────────────────▶ [Nautilus Left In]
-[Hermod+ Clock Out] ─────────────────────▶ [Nautilus Clock In]
+[Cs-L Sine Out] ────────────────[A]──────▶ [Nautilus Left In]
+[Hermod+ Clock Out] ────────────[G]──────▶ [Nautilus Clock In]
 
                                             Delay Mode: Shimmer
                                             Feedback Mode: Cascade
@@ -153,8 +159,8 @@ Instruo Cs-L sine output into Nautilus in Shimmer and Cascade mode, producing a 
                                             Chroma: Oceanic Absorption (blue)
                                             Depth: 9-10 o'clock (light lowpass)
 
-[Nautilus Left Out] ─────────────────────▶ [MixUp CH3 L]
-[Nautilus Right Out] ────────────────────▶ [MixUp CH3 R]
+[Nautilus Left Out] ────────────[A]──────▶ [MixUp CH3 L]
+[Nautilus Right Out] ───────────[A]──────▶ [MixUp CH3 R]
 ```
 
 **Setup:** Cs-L sine output provides a clean, harmonically simple voice that gives the shimmer room to build without competing harmonic content. Slow Resolution and Cascade mode combine to create long delay times: in Cascade mode, delay lines feed each other in series, multiplying the base delay length. Each pass through the cascade adds another octave of pitch shift from Shimmer mode.
@@ -170,8 +176,8 @@ Instruo Cs-L sine output into Nautilus in Shimmer and Cascade mode, producing a 
 Nautilus's Sonar output patched to the Resolution CV input and to an external destination, creating a delay network that modulates its own timing while simultaneously driving another module from its internal state.
 
 ```
-[Castor & Pollux II Thru Out] ───────────▶ [Nautilus Left In]
-[Hermod+ Clock Out] ─────────────────────▶ [Nautilus Clock In]
+[Castor & Pollux II Thru Out] ──[A]──────▶ [Nautilus Left In]
+[Hermod+ Clock Out] ────────────[G]──────▶ [Nautilus Clock In]
 
                                             Delay Mode: Fade
                                             Feedback Mode: Ping Pong
@@ -182,11 +188,11 @@ Nautilus's Sonar output patched to the Resolution CV input and to an external de
                                             Mix: 12 o'clock
                                             Sonar: Stepped Voltage mode (default)
 
-[Nautilus Sonar Out] ────────────────────▶ [Nautilus Resolution CV]
-[Nautilus Sonar Out] via mult ───────────▶ [Zadar CH1 CV In]
+[Nautilus Sonar Out] ───────────[C]──────▶ [Nautilus Resolution CV]
+[Nautilus Sonar Out] via mult ──[C]──────▶ [Zadar CH1 CV In]
 
-[Nautilus Left Out] ─────────────────────▶ [MixUp CH3 L]
-[Nautilus Right Out] ────────────────────▶ [MixUp CH3 R]
+[Nautilus Left Out] ────────────[A]──────▶ [MixUp CH3 L]
+[Nautilus Right Out] ───────────[A]──────▶ [MixUp CH3 R]
 ```
 
 **Setup:** Sonar output in Stepped Voltage mode generates a CV sequence derived from the overlapping delay analysis. Patching it back into the Resolution CV input causes the delay timing to change based on the current delay state — the network begins to self-modulate its own time structure. A mult splits Sonar to also drive Zadar CH1 CV input, so the same derived signal modulates an envelope shape elsewhere in the patch.
@@ -202,9 +208,9 @@ Nautilus's Sonar output patched to the Resolution CV input and to an external de
 Slow percussive or bass voice into Nautilus in Normal feedback mode with live Chroma and Feedback adjustment, building a dense echo texture and then purging it for rhythmic contrast.
 
 ```
-[Castor & Pollux II Saw Out] ────────────▶ [Nautilus Left In]
-[Hermod+ Clock Out] ─────────────────────▶ [Nautilus Clock In]
-[Hermod+ Gate Out] ──────────────────────▶ [Nautilus Purge Gate In]
+[Castor & Pollux II Saw Out] ───[A]──────▶ [Nautilus Left In]
+[Hermod+ Clock Out] ────────────[G]──────▶ [Nautilus Clock In]
+[Hermod+ Gate Out] ─────────────[G]──────▶ [Nautilus Purge Gate In]
 
                                             Delay Mode: Doppler
                                             Feedback Mode: Normal
@@ -217,8 +223,8 @@ Slow percussive or bass voice into Nautilus in Normal feedback mode with live Ch
                                             Chroma: Pulse Amplification (orange)
                                             Depth: 11 o'clock
 
-[Nautilus Left Out] ─────────────────────▶ [MixUp CH3 L]
-[Nautilus Right Out] ────────────────────▶ [MixUp CH3 R]
+[Nautilus Left Out] ────────────[A]──────▶ [MixUp CH3 L]
+[Nautilus Right Out] ───────────[A]──────▶ [MixUp CH3 R]
 ```
 
 **Setup:** Castor and Pollux II saw output provides a harmonically dense voice suitable for a dub-style texture. Hermod+ gate out drives Nautilus's Purge input, so a programmed gate in the sequence triggers a delay clear at a specific point in the pattern. Doppler mode introduces pitch-drift artifacts when Resolution or clock changes, which adds the slight pitch instability associated with tape delay.
@@ -271,7 +277,7 @@ Sonar is a CV generator derived from Nautilus's internal delay analysis. In Step
 
 ---
 
-## Annotated Learning Path
+## Advanced Learning Path
 
 Start with one Sensor, Fade mode, Normal feedback, and a clock from Hermod+. Set Resolution to a quarter note and Feedback to 9 o'clock. This is the simplest state of the delay network: one line per channel, smooth time transitions, moderate decay. Understand the basic delay behavior here before adding complexity.
 
@@ -289,7 +295,7 @@ Use the Tap+Resolution secondary function to add end-of-chain reverb and compare
 
 ---
 
-## Patches Well With
+## Pairs Well With
 
 - **Instruo Cs-L** — Complex oscillator providing sustained, harmonically rich tonal material; the Cs-L's wavefolder output enters Nautilus with enough spectral content for Chroma effects to work on, and the sine output provides a clean shimmer source.
 - **Winterbloom Castor and Pollux II** — Primary melodic source for Nautilus in the studio; the Thru output passes the signal to Nautilus while keeping the oscillator available elsewhere; the DCO's stable pitch makes Ping Pong and Shimmer delays track reliably.

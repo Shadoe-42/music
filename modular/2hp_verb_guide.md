@@ -1,12 +1,18 @@
 ---
-title: "2HP Verb"
-manufacturer: "2HP"
-module: "Verb"
-format: "Eurorack"
-type: "Stereo Reverb"
-tags: ["reverb", "stereo", "algorithmic", "drums", "ambient", "space", "shaper"]
-roles: ["sound-designer", "producer", "ambient-artist"]
-hc: true
+title: 2HP Verb
+manufacturer: 2HP
+primary_role: SHAPER
+secondary_roles: []
+form_factor: eurorack
+functions: [fx-time]
+behavior_tags: [clean, warm, bright, sustained, stable, linear]
+use_cases: [stereo signal processing, timbral movement and shaping, evolving ambient texture]
+hp: 2
+memory: none
+transport: none
+screen: false
+hybrid: false
+cv: basic
 ---
 
 ![2HP Verb](https://github.com/Shadoe-42/music/raw/main/modular/images/2hp/verb/front_panel.jpg)
@@ -48,7 +54,7 @@ The Damp control in Verb directly models Sabine's physical observation: high fre
 
 ---
 
-## Key Specs
+## Key Specifications
 
 | Parameter | Value |
 |---|---|
@@ -76,7 +82,7 @@ The Damp control in Verb directly models Sabine's physical observation: high fre
 
 ---
 
-## Why This Excels
+## Why This Instrument Excels
 
 Verb solves a specific problem efficiently: a stereo reverb that can live inline in a patch without requiring a separate mixer channel for dry/wet management. Most Eurorack reverbs output a fully wet signal and depend on an external mixer to blend in the dry source. Verb's Mix control means the blend happens inside the module, and the output is the finished combination. For a drum voice going directly to MixUp CH3, one less patch decision is required: the reverb amount is set at Verb, and MixUp receives a complete signal rather than two parallel paths to balance.
 
@@ -93,16 +99,16 @@ The Mix CV input enables reverb automation that knob-only designs cannot do. An 
 vpme.de QD percussion voice into Verb inline, short Time, moderate Damp — adding room character to a drum hit without obscuring the transient.
 
 ```
-[Hermod+ Gate Out] ──────────────────────▶ [QD Trigger In]
+[Hermod+ Gate Out] ─────────────[G]──────▶ [QD Trigger In]
 
-[QD Voice Out] ──────────────────────────▶ [Verb IN L]
+[QD Voice Out] ─────────────────[A]──────▶ [Verb IN L]
 
                                             Time: 9-10 o'clock (short)
                                             Damp: 10-11 o'clock (moderately dark)
                                             Mix: 9-10 o'clock (mostly dry)
 
-[Verb OUT L] ────────────────────────────▶ [MixUp CH3 L]
-[Verb OUT R] ────────────────────────────▶ [MixUp CH3 R]
+[Verb OUT L] ───────────────────[A]──────▶ [MixUp CH3 L]
+[Verb OUT R] ───────────────────[A]──────▶ [MixUp CH3 R]
 ```
 
 **Setup:** QD voice output feeds Verb IN L directly. Patching only IN L normals the mono drum signal to both outputs, producing stereo reverb from the single drum voice. Hermod+ provides gate timing to QD. Verb sits inline between the drum voice and MixUp CH3.
@@ -118,16 +124,16 @@ vpme.de QD percussion voice into Verb inline, short Time, moderate Damp — addi
 QD snare voice into Verb with Damp fully CW and medium Time — simulating the EMT 140 plate reverb character on a snare hit.
 
 ```
-[Hermod+ Gate Out] ──────────────────────▶ [QD Trigger In (Snare Voice)]
+[Hermod+ Gate Out] ─────────────[G]──────▶ [QD Trigger In (Snare Voice)]
 
-[QD Snare Out] ──────────────────────────▶ [Verb IN L]
+[QD Snare Out] ─────────────────[A]──────▶ [Verb IN L]
 
                                             Time: 11 o'clock to 12 o'clock
                                             Damp: fully CW (no dampening)
                                             Mix: 11 o'clock to 12 o'clock
 
-[Verb OUT L] ────────────────────────────▶ [MixUp CH3 L]
-[Verb OUT R] ────────────────────────────▶ [MixUp CH3 R]
+[Verb OUT L] ───────────────────[A]──────▶ [MixUp CH3 L]
+[Verb OUT R] ───────────────────[A]──────▶ [MixUp CH3 R]
 ```
 
 **Setup:** Same routing as Patch 1 but with the Damp control at fully CW, which removes all high-frequency absorption from the reverb tail. This is the plate reverb setting: the decay is bright, the tail has presence in the upper frequencies throughout its duration, and the character reads as a studio plate rather than a room.
@@ -143,11 +149,11 @@ QD snare voice into Verb with Damp fully CW and medium Time — simulating the E
 Gate-triggered Zadar envelope into Verb's Mix CV with the Mix knob at fully CCW — automating the wet/dry blend so reverb opens after the transient and closes before the next hit.
 
 ```
-[Hermod+ Gate Out] ──────────────────────▶ [QD Trigger In]
-[Hermod+ Gate Out] ──────────────────────▶ [Zadar Trigger CH1]
+[Hermod+ Gate Out] ─────────────[G]──────▶ [QD Trigger In]
+[Hermod+ Gate Out] ─────────────[G]──────▶ [Zadar Trigger CH1]
 
-[Zadar CH1 Env Out] ─────────────────────▶ [Verb Mix CV]
-[QD Voice Out] ──────────────────────────▶ [Verb IN L]
+[Zadar CH1 Env Out] ────────────[C]──────▶ [Verb Mix CV]
+[QD Voice Out] ─────────────────[A]──────▶ [Verb IN L]
 
                                             Time: 12 o'clock
                                             Damp: 11 o'clock
@@ -155,8 +161,8 @@ Gate-triggered Zadar envelope into Verb's Mix CV with the Mix knob at fully CCW 
                                             Zadar CH1: fast attack (<30ms),
                                             medium decay (200-500ms), no sustain
 
-[Verb OUT L] ────────────────────────────▶ [MixUp CH3 L]
-[Verb OUT R] ────────────────────────────▶ [MixUp CH3 R]
+[Verb OUT L] ───────────────────[A]──────▶ [MixUp CH3 L]
+[Verb OUT R] ───────────────────[A]──────▶ [MixUp CH3 R]
 ```
 
 **Setup:** Hermod+ gate simultaneously triggers QD and Zadar channel 1. Zadar CV output goes to Verb's Mix CV input. With the Mix knob at fully CCW (dry), the Mix CV controls the entire blend from 0V (fully dry) to 5V (fully wet). The Zadar envelope sets the shape of the reverb blend over time.
@@ -172,19 +178,19 @@ Gate-triggered Zadar envelope into Verb's Mix CV with the Mix knob at fully CCW 
 2HP Swarm saw pad into Verb with long Time and moderate Damp — using Verb as a spatial processor on a melodic source, pushing the mix toward fully wet for an immersive pad treatment.
 
 ```
-[Hermod+ Pitch CV] ──────────────────────▶ [Swarm V/Oct]
-[Hermod+ Gate Out] ──────────────────────▶ [Zadar Trigger CH1]
+[Hermod+ Pitch CV] ─────────────[C]──────▶ [Swarm V/Oct]
+[Hermod+ Gate Out] ─────────────[G]──────▶ [Zadar Trigger CH1]
 
-[Zadar CH1 Env Out] ─────────────────────▶ [VCA CV In]
-[Swarm Audio Out] ───────────────────────▶ [VCA Audio In]
-[VCA Audio Out] ─────────────────────────▶ [Verb IN L]
+[Zadar CH1 Env Out] ────────────[C]──────▶ [VCA CV In]
+[Swarm Audio Out] ──────────────[A]──────▶ [VCA Audio In]
+[VCA Audio Out] ────────────────[A]──────▶ [Verb IN L]
 
                                             Time: 2-3 o'clock (long)
                                             Damp: 11 o'clock (slightly dark)
                                             Mix: 2-3 o'clock (mostly wet)
 
-[Verb OUT L] ────────────────────────────▶ [MixUp CH3 L]
-[Verb OUT R] ────────────────────────────▶ [MixUp CH3 R]
+[Verb OUT L] ───────────────────[A]──────▶ [MixUp CH3 L]
+[Verb OUT R] ───────────────────[A]──────▶ [MixUp CH3 R]
 ```
 
 **Setup:** Swarm saw with light Detune feeds through a VCA shaped by Zadar, then into Verb. Long Time and a high Mix setting shift Verb from a spatial add-on into a primary character of the sound. Patching only IN L normals the mono Swarm output to both outputs, widening the detuned pad into stereo through the reverb.
@@ -237,7 +243,7 @@ Verb processes a stereo pair through one shared reverb algorithm, not two indepe
 
 ---
 
-## Annotated Learning Path
+## Advanced Learning Path
 
 **Entry point:** Patch a single audio source into IN L, route OUT L and OUT R to MixUp CH3 L and R, and sweep Time from fully CCW to fully CW slowly while the source plays. Stop at several positions and listen to how the reverb character changes: the very short end produces ambience; the middle range produces room and chamber character; the long end produces hall and wash. Locate the range where Time produces reverb that complements the current source without extending obviously beyond it.
 
@@ -253,7 +259,7 @@ Verb processes a stereo pair through one shared reverb algorithm, not two indepe
 
 ---
 
-## Patches Well With
+## Pairs Well With
 
 - **vpme.de QD** — Percussion voices are the primary use case for Verb in this system; QD's individual voice outputs allow Verb to process a specific drum voice independently rather than treating the full mix, giving each voice its own spatial placement.
 - **Xaoc Devices Zadar** — Four-channel envelope generator with 0V to 5V positive output directly compatible with Verb's Mix CV input; Zadar's wide variety of attack and decay shapes makes Mix CV automation musically varied rather than limited to standard ADSR shapes.
