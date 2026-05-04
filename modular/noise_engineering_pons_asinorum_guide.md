@@ -54,7 +54,7 @@ The Noise Engineering Pons Asinorum is a four-channel linear envelope generator 
 | Spec | Value |
 |------|-------|
 | Width | 6 HP |
-| Depth | 26 mm ⚠️ |
+| Depth | 26 mm |
 | Power | 60 mA +12V / 50 mA -12V / 0 mA +5V |
 
 The manual states a depth of .8 inch (~20 mm), which conflicts with the user-provided measurement of 26 mm. Both values are flagged pending hardware verification. Output voltage is 0V to 5V. CV inputs respond to 0V to 5V. Envelopes trigger on a rising edge of approximately 3V.
