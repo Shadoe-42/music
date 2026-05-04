@@ -9,7 +9,7 @@ roles: ["sound-designer", "ambient-artist", "experimental", "producer"]
 hc: true
 ---
 
-![Qu-Bit Electronix Aurora][(https://github.com/Shadoe-42/music/raw/main/modular/images/qubit/aurora/front_panel.jpg)]
+![Qu-Bit Electronix Aurora](https://github.com/Shadoe-42/music/raw/main/modular/images/qubit/aurora/front_panel.jpg)
 
 # Qu-Bit Electronix Aurora
 
