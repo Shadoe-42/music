@@ -216,15 +216,43 @@ Endorphin.es Furtrrrr Generator into Aurora with manual Freeze, then Warp CV tra
 
 ## Common Mistakes
 
-**Treating Time and Blur as a single reverb size control.** Time and Blur operate on different components of the spectral signal. Time blurs amplitude; the result sounds like reverb decay. Blur smears frequency; the result sounds like spectral artifacts that often do not read as reverb at all. Raising both simultaneously produces a combined effect, but the individual behaviors are distinct enough that each deserves independent attention. Dial Time first to establish the reverb character, then add Blur carefully if spectral transformation is the goal.
+### "I keep raising both Time and Blur together but the result sounds wrong — I thought they were the same kind of reverb control"
 
-**Ignoring FFT size.** The default 4096 is lush and appropriate for many sources, but staying there is leaving most of Aurora's character untouched. FFT 1024 on drum voices produces comb-like timbres that are genuinely different from anything the larger sizes produce. FFT 512 on a vocal or drum input creates alien spectral textures that have no equivalent elsewhere. Each FFT size suits different sources; the table in the manual gives starting points, but the only way to understand them is to cycle through all four on the current input.
+Time and Blur operate on different components of the spectral signal. Time blurs amplitude; the result sounds like reverb decay. Blur smears frequency; the result sounds like spectral artifacts that often do not read as reverb at all. Raising both simultaneously produces a combined effect, but the individual behaviors are distinct enough that each deserves independent attention. The two controls are not a single reverb size axis; they address separate dimensions of the frequency-domain signal.
 
-**Misreading Atmosphere as a post-processing EQ.** Atmosphere shapes the spectral field within Aurora's processing chain, not after it. A high-pass character above center affects what frequencies the spectral processing operates on, not just the output. The whale-song territory below center emerges because spectral filtering interacts with the FFT-domain blurring, producing artifacts that no post-processing EQ would create. Treat Atmosphere as a timbral dimension of the reverb rather than a tone control on the output.
+**Fix:** Dial Time first to establish the reverb character at the current FFT size. Add Blur only after Time is working as intended, and stop at the point where the sound begins shifting from reverb to spectral transformation. Understand where that transition occurs for the current source before combining both controls.
 
-**Not adjusting input level.** Aurora's spectral response depends on the amplitude of the input signal. An undergained source produces a thin spectral field. The Shift+Mix input level control adjusts from -6dB to +12dB and is the correct way to match the source level to Aurora's internal framework. Default is 1x (blue LEDs). Sources that are quiet in the patch should have their input level raised before assuming Aurora cannot produce enough reverb density.
+---
 
-**Attempting Freeze without understanding what is being locked.** Freeze captures the current spectral characteristics of the input signal at the moment of engagement. What is frozen depends entirely on what was entering Aurora in the moments before Freeze is pressed. A momentary transient produces a thin spectral capture. A sustained, harmonically rich source produces a dense one. Allow the source to play through Aurora for several seconds before freezing to build a fuller spectral state worth capturing.
+### "I have been using Aurora on the default FFT size and it sounds fine, but I feel like I am not getting everything out of it"
+
+The default 4096 is lush and appropriate for many sources, but it represents one of four meaningfully different sonic characters available from the same knob settings. FFT 1024 on drum voices produces comb-like timbres that are genuinely different from anything the larger sizes produce. FFT 512 on a vocal or drum input creates alien spectral textures with no equivalent elsewhere. Each FFT size suits different sources, and the manual provides starting points, but the only way to understand them is to cycle through all four on the current input.
+
+**Fix:** Hold Shift and press Reverse to cycle through all four FFT sizes while the source is playing. Listen to how the same knob settings produce entirely different sonic characters at each size. Do this as a routine orientation step any time a new source is patched into Aurora.
+
+---
+
+### "I used Atmosphere to adjust the tone of the reverb output but it is behaving completely differently from what a normal EQ would do"
+
+Atmosphere shapes the spectral field within Aurora's processing chain, not after it. A high-pass character above center affects what frequencies the spectral processing operates on, not just the output level at those frequencies. The whale-song territory below center emerges because spectral filtering interacts with the FFT-domain blurring, producing artifacts that no post-processing EQ would create. Atmosphere is not a tone control on the output; it is a timbral dimension of the reverb itself.
+
+**Fix:** Treat Atmosphere as a reverb character control, not an output EQ. Adjust it while monitoring the full spectral character of the reverb rather than targeting a specific frequency range. The center position is neutral; movements above and below center change the nature of what Aurora is processing, not just how the processed output sounds.
+
+---
+
+### "My source sounds fine in the patch but Aurora is producing a thin, weak reverb regardless of how I set the knobs"
+
+Aurora's spectral response depends on the amplitude of the input signal. An undergained source produces a thin spectral field regardless of Time, Blur, or Reflect settings. The Shift+Mix input level control adjusts from -6dB to +12dB and is the correct tool for matching the source level to Aurora's internal framework. Default is 1x (blue LEDs). Sources that are quiet in the patch often need input level raised before the reverb density becomes usable.
+
+**Fix:** Hold Shift and turn Mix to access the input level control. Raise it from the default 1x toward the brighter LED positions. Monitor the reverb density as input level increases; a correctly leveled input produces a noticeably fuller spectral field. Do this before assuming Aurora cannot produce enough density from the current source.
+
+---
+
+### "I pressed Freeze and the frozen sound is disappointing — thin and nothing like the pad I was trying to capture"
+
+Freeze captures the current spectral characteristics of the input signal at the moment of engagement. What is frozen depends entirely on what was entering Aurora in the moments before Freeze is pressed. A momentary transient produces a thin spectral capture. A sustained, harmonically rich source produces a dense one. Freeze does not accumulate spectral richness over time; it captures whatever spectral state exists at the moment the button is pressed.
+
+**Fix:** Allow the source to play through Aurora for several seconds before pressing Freeze. Complex harmonic material needs time to build a stable spectral state within Aurora's processing chain. Capture a dense, sustained moment — not an attack, not a transient, and not the very beginning of a note. Hold the source at a stable, rich point in the signal, then engage Freeze. The quality of the frozen content reflects the quality of what was processed in the seconds before the lock.
 
 ---
 

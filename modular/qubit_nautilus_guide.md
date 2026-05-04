@@ -231,15 +231,43 @@ Slow percussive or bass voice into Nautilus in Normal feedback mode with live Ch
 
 ## Common Mistakes
 
-**"I turned up Sensors but the delay sounds like mush."** Adding delay lines without opening Dispersal keeps all lines firing in near-simultaneous succession. They blend into a smeared cluster rather than distinct echoes. Sensors and Dispersal always operate together: after adding a Sensor, raise Dispersal until the spacing between lines is audible. The right amount depends on Resolution and tempo — at faster clocks, even a small Dispersal increment creates separation.
+### "I turned up Sensors but the delay sounds like mush — I expected distinct echoes"
 
-**"The feedback got out of control and now it is very loud."** Feedback fully CW produces infinite sustain. Without a Purge or a Mix reduction, the accumulated signal has no natural ceiling. The Purge button clears all delay lines immediately. For less drastic recovery, lower Mix first (which does not stop the accumulation but removes it from the output), then lower Feedback, then raise Mix again. Going forward: treat the Purge gate input as a safety valve and keep it accessible in any high-feedback patch.
+Adding delay lines without opening Dispersal keeps all lines firing in near-simultaneous succession. They blend into a smeared cluster rather than distinct echoes. Sensors and Dispersal always operate together: adding a Sensor increases the number of active lines, but without Dispersal opening the spacing between them the lines are indistinguishable from each other in time.
 
-**"Cascade mode sounds the same as the other feedback modes."** Cascade mode requires multiple Sensors to demonstrate its effect. With one Sensor active, all four feedback modes produce similar results because there is only one delay line per channel to route. Set Sensors to 3 or 4 and moderate Feedback before switching to Cascade. The serial chaining of lines at that point produces delay times that are multiples of the single-line duration — audibly and dramatically longer than Normal or Ping Pong at the same settings.
+**Fix:** After adding a Sensor, raise Dispersal until the spacing between lines is audible. The right amount depends on Resolution and tempo. At faster clocks, even a small Dispersal increment creates perceptible separation. At slower clocks, Dispersal needs more range to feel meaningfully spread. Sensors and Dispersal are one control system, not two independent parameters.
 
-**"Shimmer keeps getting too high and disappears."** Shimmer mode pitch-shifts the delay up one octave per pass through the feedback path. With high Feedback and fast Resolution, the shimmer rises through audible frequencies and disappears into ultrasonic territory quickly. Two adjustments: lower Feedback to reduce the number of audible passes before decay, and lower Resolution to slow the accumulation rate. A light Oceanic Absorption Chroma filter also rolls off the extreme high content before it exits the audible range.
+---
 
-**"I am not using the Sonar output."** Sonar is a CV generator derived from Nautilus's internal delay analysis. In Stepped Voltage mode, it produces a sequence that changes as the delay network changes. Patched to any CV input — Resolution, Dispersal, Feedback, or an external module — it introduces modulation that is intrinsically linked to the delay state. At minimum, patch Sonar to a destination outside Nautilus and listen to how the delay activity drives something else in the patch. The interaction between the delay output and the Sonar-driven modulation is one of Nautilus's most distinctive capabilities and one of the most overlooked.
+### "The feedback got out of control and now it is very loud — I cannot get it back under control"
+
+Feedback fully CW produces infinite sustain. Without a Purge or a Mix reduction, the accumulated signal has no natural ceiling. The Purge button clears all delay lines immediately. For less drastic recovery, lower Mix first (which removes the accumulated signal from the output without stopping the accumulation), then lower Feedback, then raise Mix again.
+
+**Fix:** Treat the Purge gate input as a safety valve and keep it accessible in any high-feedback patch. A gate from Hermod+ patched to Purge allows deliberate clearing on demand. If the accumulation exceeds a useful threshold mid-performance, a single Purge gate event resets the network to a manageable state without requiring both hands on the panel.
+
+---
+
+### "Cascade mode sounds the same as the other feedback modes — I cannot hear a difference"
+
+Cascade mode requires multiple Sensors active to demonstrate its effect. With one Sensor active, all four feedback modes produce similar results because there is only one delay line per channel to route through. Cascade's serial chaining behavior only becomes audible when at least two or three lines are engaged.
+
+**Fix:** Set Sensors to 3 or 4 and set Feedback to a moderate position before switching to Cascade. The serial chaining at that point produces effective delay times that are multiples of the single-line duration, which is audibly and dramatically longer than Normal or Ping Pong at the same settings. Cascade mode is not meaningful with one Sensor active.
+
+---
+
+### "Shimmer keeps rising out of the audible range and disappearing"
+
+Shimmer mode pitch-shifts the delay up one octave per pass through the feedback path. With high Feedback and fast Resolution, the shimmer rises through audible frequencies and into ultrasonic territory quickly. The number of audible passes before the signal leaves the hearing range depends on how fast the delay lines are cycling and how much feedback each pass retains.
+
+**Fix:** Lower Feedback to reduce the number of audible passes before natural decay brings the shimmer back into range. Lower Resolution to slow the accumulation rate. A light Oceanic Absorption Chroma treatment set to roll off extreme high-frequency content also prevents the shimmer from exiting the audible range before it has time to develop musically.
+
+---
+
+### "I never use the Sonar output — I do not know what to do with it"
+
+Sonar is a CV generator derived from Nautilus's internal delay analysis. In Stepped Voltage mode, it produces a voltage sequence that changes as the delay network changes. Patched to any CV input, it introduces modulation that is intrinsically linked to the current delay state. A delay that is frozen and repetitive produces a static Sonar output; an evolving delay network produces a moving one.
+
+**Fix:** Patch Sonar to a CV destination and listen to what it does to the patch. Resolution CV input produces timing self-modulation. Dispersal CV changes the delay spacing based on network activity. An external module's pitch or filter CV input creates a relationship between what Nautilus is doing and what something else is doing. The goal is not to use Sonar for its own sake but to discover what relationship it creates. Start with one destination and adjust Sensors and Feedback while monitoring the modulation output.
 
 ---
 

@@ -223,15 +223,43 @@ Swarm saw into Aurora at FFT 4096 for a spectrally blurred pad with reverb tail 
 
 ## Common Mistakes
 
-**Treating the second half of Detune as unusable.** The first half of the Detune range is tasteful chorus territory and the second half is deliberately chaotic. Stopping at the midpoint misses half the module. The second half's beating and dissonance is intentional design territory, not a warning zone. The usable range of the second half depends on voice count and context: at lower voice counts the individual intervals are more audible and the chaos is more dissonant; at high voice counts the same detune spread merges into spectral mass. Explore the full range before deciding the upper half is not useful.
+### "I never go past halfway on Detune — the upper range sounds chaotic and unusable"
 
-**Expecting pulse waveform to behave like saw.** The pulse switch produces a fundamentally different character — not a slightly different version of the saw sound. Pulse at high voice counts with heavy detune is harder, more aggressive, and occupies the frequency spectrum differently than saw under the same conditions. Switching from saw to pulse mid-patch and adjusting to match the previous character will not work; the two waveforms need different Detune and Voices settings to produce a similar density impression. Treat the toggle as choosing between two distinct instruments.
+The first half of the Detune range is precision chorus territory and the second half is deliberately chaotic. Stopping at the midpoint misses half the module. The second half's beating and dissonance is intentional design territory, not a warning zone. The usable range of the second half depends on voice count and context: at lower voice counts the individual intervals are more audible and the chaos is more dissonant; at high voice counts the same detune spread merges into spectral mass rather than obvious dissonance.
 
-**Not accounting for the VCA.** Swarm produces continuous audio output. Patching Swarm directly to a mixer channel without a VCA in the signal path means the audio is always on at full amplitude, with no dynamics. Every Swarm voice needs an amplitude control to be musically useful in a patch. An envelope to the VCA is what allows notes to start, stop, and shape dynamically. A Swarm patch without a VCA is not a finished patch; it is a drone with no envelope.
+**Fix:** Explore the full Detune range at different Voices settings before deciding the upper half is not useful. At high voice counts, the upper half of Detune produces spectral density rather than obvious pitched dissonance. The chaos is real; the question is whether it is the right sound for the current context. Explore this territory systematically, with voice count as the primary control over whether chaos reads as spectral texture or as dissonant interference.
 
-**Using high Voices and high Detune simultaneously without intention.** Maximum voices at maximum detune produces spectral noise — dense, chaotic, and difficult to use pitched. This is not a malfunction; it is a specific sound. It becomes a problem when it is the result of setting both controls high without considering the outcome. The productive approach: set voice count first based on desired density, then set Detune based on how much spread is appropriate for that density. The two controls interact. High voice count allows more detune before the result stops being pitched; low voice count requires narrower detune for the same result.
+---
 
-**Not modulating Detune CV.** The Detune CV input is one of Swarm's most musically productive features and is frequently overlooked because the static Detune knob produces usable sounds on its own. An LFO or slow envelope into Detune CV turns a fixed chorus texture into an evolving, breathing one. The Zadar can generate a wide variety of slow modulation shapes that cycle through the tasteful and chaotic ranges of the Detune parameter over seconds. A Swarm patch where Detune is modulated rather than fixed behaves like a different instrument.
+### "I switched from saw to pulse and now everything sounds wrong — I had to dial in from scratch"
+
+The pulse switch produces a fundamentally different character, not a slightly different version of the saw sound. Pulse at high voice counts with heavy detune is harder, more aggressive, and occupies the frequency spectrum differently than saw under the same conditions. The two waveforms need different Detune and Voices settings to produce comparable density impressions. The toggle is a choice between two distinct instruments sharing the same panel, not a tonal variation on a single instrument.
+
+**Fix:** When switching to pulse, treat it as a fresh start rather than a copy of the saw settings. Pulse generally benefits from less Detune than saw to achieve a similar chorus density impression, because the narrower harmonic profile interacts with detuning differently than saw's richer spectrum. Start from center Voices and 9 o'clock Detune as a neutral point and build from there.
+
+---
+
+### "I patched Swarm into my mixer but I cannot control when notes start or stop — the volume does not respond to gates at all"
+
+Swarm produces continuous audio output. There is no built-in VCA, envelope, or amplitude control. Patching Swarm directly to a mixer channel means the audio is always present at full amplitude with no dynamics. Every Swarm patch needs an external VCA in the signal path with an envelope generator driving the VCA CV. The gate from the sequencer triggers the envelope; the envelope shapes the VCA; the VCA controls when the Swarm audio is heard.
+
+**Fix:** Insert a VCA between Swarm's audio output and the mixer. Drive the VCA's CV input from an envelope generator triggered by the same gate source driving the pitch sequence. This is the minimum required infrastructure for any Swarm patch that needs musical dynamics. A Swarm patch without a VCA is a drone, not a voice.
+
+---
+
+### "I set Voices and Detune both to maximum and now it just sounds like noise — I cannot find a useful setting from here"
+
+Maximum voices at maximum detune produces spectral noise: dense, chaotic, and difficult to place in a pitched musical context. This is not a malfunction; it is a specific sound that results from 88 voices spreading across the widest possible pitch intervals. The two controls interact strongly — high voice count at narrow detune produces wall-of-sound density; high voice count at wide detune produces spectral mass. Most musical applications live in the interaction between them, not at the extremes of both simultaneously.
+
+**Fix:** Set voice count first based on the desired density impression, then adjust Detune to the appropriate spread for that density. As voice count increases, less Detune is required to achieve a given richness. A useful reference point: at center Voices (approximately 20 voices), the boundary between chorus and chaos is around 11 o'clock on Detune. At high Voices (3 o'clock), that boundary moves earlier. Work from voice count toward detune, not from both extremes simultaneously.
+
+---
+
+### "Swarm sounds static once I dial in a setting — it just sits there and does not change"
+
+A fixed Detune knob position is only one dimension of what Swarm can produce. The Detune CV input accepts -5V to +5V and shifts the detuning character dynamically from whatever the knob sets. A slow LFO or envelope into Detune CV moves the sound through the chorus range and into chaos over time, turning a fixed texture into an evolving one. The Voices CV input does the same for voice count. Swarm with both parameters modulated behaves like a different instrument from Swarm with both fixed.
+
+**Fix:** Patch a slow-moving modulation source (Zadar envelope, LFO, or slow function generator) into the Detune CV input and set a long cycle time — 8 to 16 seconds for a gradual sweep. Listen to how the character evolves as the CV moves through the Detune range. Modulating Detune CV is the primary tool for making Swarm sounds feel alive rather than static.
 
 ---
 
