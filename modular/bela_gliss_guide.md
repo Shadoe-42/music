@@ -54,7 +54,7 @@ Bela Gliss is a capacitive touch controller with a large vertical Touch Strip an
 | Spec | Value |
 |------|-------|
 | Width | 4 HP |
-| Depth | 27 mm ⚠️ |
+| Depth | 27 mm |
 | Power | 150 mA +12V / 30 mA -12V / 0 mA +5V |
 
 The voltage range for all inputs and outputs is -5V to +10V. The default range is 0V to +10V and is configurable per mode through the voltage range menu.
