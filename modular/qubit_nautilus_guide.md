@@ -9,7 +9,7 @@ roles: ["sound-designer", "ambient-artist", "experimental", "producer"]
 hc: true
 ---
 
-![Qu-Bit Electronix Nautilus](../images/qubit_nautilus.jpg)
+![Qu-Bit Electronix Nautilus](https://github.com/Shadoe-42/music/raw/main/modular/images/qubit/nautilus/front_panel.jpg)
 
 # Qu-Bit Electronix Nautilus
 
