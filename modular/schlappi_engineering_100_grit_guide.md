@@ -36,7 +36,7 @@ Eric Schlappi's design logic for the 100 Grit is visible in one feature that dis
 
 ## Quick Start
 
-The Schlappi Engineering 100 Grit is a transistor ladder filter with an OTA VCA and two distortion amplifier stages, with eight brass touch points connected directly to circuit nodes and a full feedback normalization system on every input. It requires GAIN to produce any output — with GAIN at zero, no signal passes regardless of any other setting.
+The Schlappi Engineering 100 Grit is a transistor ladder filter with a voltage controlled amplifier and two distortion amplifier stages, with eight brass touch points connected directly to circuit nodes and a full feedback normalization system on every input. It requires GAIN to produce any output — with GAIN at zero, no signal passes regardless of any other setting.
 
 1. Patch audio into IN 1.
 2. Patch the DIST output into a mixer channel.
@@ -56,7 +56,7 @@ The Schlappi Engineering 100 Grit is a transistor ladder filter with an OTA VCA 
 | Depth | 25 mm |
 | Power | 55 mA +12V / 70 mA -12V / 0 mA +5V |
 
-The -12V draw exceeds the +12V draw, which is unusual and worth accounting for in rack power planning. The OTA VCA circuit draws more from the negative rail than the positive. Confirm available headroom on the -12V bus before installing.
+The -12V draw exceeds the +12V draw, which is unusual and worth accounting for in rack power planning. Confirm available headroom on the -12V bus before installing.
 
 ---
 
@@ -74,7 +74,7 @@ The 100 Grit's inputs behave differently from any other module in this rack: whe
 
 **FM 2.** Exponential voltage control over filter cutoff frequency, roughly scaled to volts per octave. FM 2 will not track accurately in tune — the manual is explicit that it is "roughly scaled" and will not follow a V/oct sequence precisely. It is useful for approximate pitch tracking that keeps the filter generally following the harmonic register of a sequenced source without precision tuning. FM 2 has no normalization: when unpatched it is silent and does not affect the circuit. Patching a V/oct source here keeps the filter's resonant peak near the pitch of the incoming sequence across register changes.
 
-**GAIN.** Controls the gain of the OTA VCA and therefore how hard the signal is driven into the distortion amplifier. The GAIN knob must have some clockwise position for any audio to pass; without GAIN, both OUT and DIST are silent regardless of all other settings. Above approximately 75%, GAIN itself begins to add distortion independent of the x100 switch. The GAIN CV input accepts 5V for unity gain; above 5V it provides additional gain. When no cable is patched into GAIN CV and the CV attenuator knob below GAIN is turned up, POLE 2 (the 12dB output node of the filter) is used to modulate the VCA — a relatively subtle harmonic content shift that the manual describes as "a relatively subtle form of distortion." Patching any CV source into GAIN CV breaks this normalization and allows envelope, LFO, or gate control of the VCA amplitude directly. This is the standard configuration for VCA use.
+**GAIN.** Controls the gain of the voltage controlled amplifier and therefore how hard the signal is driven into the distortion amplifier. The VCA uses an OTA (operational transconductance amplifier) topology, a current-mode design that produces a clean, fast gain response across a wide range — the same architecture found in many synthesizer VCAs. At moderate GAIN settings the OTA operates linearly; above approximately 75%, the circuit is driven beyond its linear range and the VCA itself contributes to the distortion character before the signal reaches the dedicated distortion amplifier stage. The GAIN knob must have some clockwise position for any audio to pass; without GAIN, both OUT and DIST are silent regardless of all other settings. Above approximately 75%, GAIN itself begins to add distortion independent of the x100 switch. The GAIN CV input accepts 5V for unity gain; above 5V it provides additional gain. When no cable is patched into GAIN CV and the CV attenuator knob below GAIN is turned up, POLE 2 (the 12dB output node of the filter) is used to modulate the VCA — a relatively subtle harmonic content shift that the manual describes as "a relatively subtle form of distortion." Patching any CV source into GAIN CV breaks this normalization and allows envelope, LFO, or gate control of the VCA amplitude directly. This is the standard configuration for VCA use.
 
 **RES.** Controls the resonance of the transistor ladder filter. The RES knob sets the baseline resonance level. An internal resonance amplitude trim (RV3) on the PCB sets the point at which maximum RES reaches self-oscillation; from the factory, this is calibrated so the filter self-oscillates at or near the maximum RES position. When no cable is patched into RES CV and the CV attenuator knob under RES is turned up, the DIST output is routed as audio-rate modulation into the resonance control — the manual notes this creates "laser sounds and screeches riding on top of the RES." This normalization works in opposition to the IN 2 normalization; both are distorted resonance paths but from different points in the circuit. With RES CV patched by an external source, external CV controls resonance and the normalization is removed.
 
