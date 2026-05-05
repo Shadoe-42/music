@@ -2,7 +2,7 @@
 title: Manis Iteritas Alia
 manufacturer: Noise Engineering
 primary_role: EVENT_VOICE
-secondary_roles: [SOURCE]
+secondary_roles: []
 historical_context: true
 form_factor: eurorack
 functions: [drum-voice, fm-oscillator, distortion]
