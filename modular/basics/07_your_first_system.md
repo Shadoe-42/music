@@ -148,4 +148,4 @@ From here, the system grows by adding voices, modulation sources, utilities, and
 
 ---
 
-*This guide is part of a progressive series building foundational modular understanding. Previous guide: 05_signal_types_and_mults.md*
+*This guide is part of a progressive series building foundational modular understanding. Previous guide: 06_signal_chain.md*
