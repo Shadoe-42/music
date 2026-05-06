@@ -37,6 +37,8 @@ cv: full
 
 # Endorphin.es New Godspeed
 
+![Endorphin.es New Godspeed front panel](images/endorphines/new_godspeed/front_panel.jpg)
+
 **A hybrid triangle-core VCO with instant chromatic autotune, thru-zero FM, a wavefolder, a harmonic waveshaper, and a sub oscillator. Two outputs with distinct tonal characters. Six HP.**
 
 ---
