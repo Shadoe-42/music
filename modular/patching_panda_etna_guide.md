@@ -195,6 +195,14 @@ The snapshot sequencer advances on each clock, morphing all three filter states 
 
 ---
 
+## Why Etna Excels
+
+The Etna functions as a parallel filter bank and a secondary mixing stage simultaneously, which is a combination that few modules in the corpus provide. Three filters running in parallel with independent frequency CV per filter means that three separate audio sources can each receive independent timbral treatment and then exit through a single unified output, reducing the routing overhead of a multi-voice patch considerably. For patches where multiple oscillators or drum voices need individual character before they hit the main mix, the Etna handles frequency shaping and signal convergence in a single module rather than requiring a separate filter and a separate mixer for each voice.
+
+The snapshot sequencer elevates the Etna from a static filter bank to a time-varying timbral processor. Eight snapshots of the full slider state, stepped by clock, CV, or the POS input, means the filter character can evolve on a musical timeline without continuous manual intervention. The GLIDE control applies slew to every transition, which prevents the abrupt jumps that make stepped parameter changes read as edits rather than as movement. PENDULUM mode produces continuous oscillation between the first and last snapshot, converting a set of discrete states into a bidirectional sweep. The result is a filter bank that participates in the composition rather than setting a fixed color for the patch.
+
+The CV FREQ3 output is a consequence of the filter architecture that extends Etna's usefulness into the broader patch. As the snapshot sequence advances, F3 tracks its assigned position and outputs that position as a voltage. Anything downstream that accepts CV can follow the Etna's filter movement at a scaled and offset depth: a second oscillator, another filter, an LFO rate input. The Etna is then not only processing audio through its three filter channels but generating a structured modulation signal derived from the same musical sequence, at no additional cost in patch complexity.
+
 ## Advanced Learning Path
 
 **EDIT ALL as a live performance tool.** While the sequencer is running, holding EDIT ALL and moving a slider writes that slider's new position to every snapshot simultaneously. This allows mid-performance global adjustment: raising Q across all snapshots, pulling back a filter's overall frequency range, or lowering one voice's amplitude in the mix without disrupting the relative differences between snapshots. It is a way to reshape the entire sequence's character without stopping playback.

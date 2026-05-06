@@ -7,7 +7,7 @@ historical_context: true
 form_factor: eurorack
 functions: [fx-modulation, lfo]
 behavior_tags: [warm, evolving, harmonic, dark]
-use_cases: [phasing, spatial processing, sweeping modulation, self-oscillation, dual-output stereo processing]
+use_cases: [analog phase sweeping, spatial processing, self-oscillation as pitched voice, dual-output stereo processing]
 hp: 8
 depth: 35mm
 memory: none
@@ -166,6 +166,14 @@ Mod Depth: low-to-medium (sweeps oscillation pitch at LFO rate)
 ```
 
 ---
+
+## Why The Toad Excels
+
+The Toad's dual-output architecture is its primary practical advantage. Most phase shifters provide a single processed output; the Toad taps the phase shift network at stage 7 and stage 12 simultaneously, producing two outputs at different points in the phase rotation. These two outputs are not identical: stage 7 carries less accumulated phase shift than stage 12, so the two signals have different spectral relationships to the dry blend at any given Manual Shift or LFO position. Routing the two outputs to separate mixer channels or to separate downstream processors produces a natural stereo image from a mono source without additional modules, and patching them to different CV destinations or effects chains produces two distinct timbral perspectives on the same input simultaneously.
+
+The feedback path determines how much of the Toad's character shows at any given setting. With the Feedback attenuverter at center, the phasing is clean and subtle: the classic swept comb filtering effect at a moderate depth. Advancing the attenuverter clockwise increases resonance at the notch frequencies until the filters self-oscillate and the module produces a pitched sine tone independent of any input signal. The same knob motion traverses the full range from transparent effect to self-contained pitched source, which means the Toad can shift roles within a patch without rewiring. Manual Shift sets the pitch of self-oscillation, making it possible to tune the self-oscillating Toad to a specific interval within the patch.
+
+The twelve-stage design produces a denser, more complex phase relationship than four- or eight-stage alternatives. More stages means more notches in the frequency spectrum and a deeper, richer sweep at equivalent Mod Depth settings. The result is a phasing character that reads as more substantial and spatially immersive on sustained material, particularly when the LFO rate is slow enough for individual filter positions to be heard rather than blurred together.
 
 ## Advanced Learning Path
 

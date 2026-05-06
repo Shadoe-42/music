@@ -2,11 +2,11 @@
   "generated": "2026-05-06",
   "summary": {
     "total_guides": 93,
-    "guides_with_issues": 10,
-    "guides_clean": 83,
-    "total_issues": 18,
-    "error_count": 4,
-    "warning_count": 14,
+    "guides_with_issues": 4,
+    "guides_clean": 89,
+    "total_issues": 4,
+    "error_count": 0,
+    "warning_count": 4,
     "deferred_count": 0
   },
   "guides": {
@@ -179,19 +179,12 @@
       "issues": []
     },
     "cre8audio_function_junction_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "yaml_use_cases_count",
-          "category": "YAML Frontmatter",
-          "severity": "warning",
-          "detail": "`use_cases` has 5 items; maximum is 4"
-        }
-      ]
+      "issues": []
     },
     "divkid_ochd_and_expander_guide.md": {
       "clean": true,
@@ -394,19 +387,12 @@
       "issues": []
     },
     "instruo_arbhar_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "yaml_use_cases_count",
-          "category": "YAML Frontmatter",
-          "severity": "warning",
-          "detail": "`use_cases` has 5 items; maximum is 4"
-        }
-      ]
+      "issues": []
     },
     "instruo_csl_guide.md": {
       "clean": true,
@@ -545,19 +531,12 @@
       "issues": []
     },
     "patching_panda_etna_guide.md": {
-      "clean": false,
-      "issue_count": 1,
-      "error_count": 1,
+      "clean": true,
+      "issue_count": 0,
+      "error_count": 0,
       "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_why_excels",
-          "category": "Missing or Misplaced Sections",
-          "severity": "error",
-          "detail": "Missing `## Why [Module] Excels` section (no 'Why' heading found)"
-        }
-      ]
+      "issues": []
     },
     "patching_panda_moon_phase_guide.md": {
       "clean": true,
@@ -576,58 +555,20 @@
       "issues": []
     },
     "pittsburgh_modular_local_parks_guide.md": {
-      "clean": false,
-      "issue_count": 2,
-      "error_count": 1,
-      "warning_count": 1,
+      "clean": true,
+      "issue_count": 0,
+      "error_count": 0,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_why_excels",
-          "category": "Missing or Misplaced Sections",
-          "severity": "error",
-          "detail": "Missing `## Why [Module] Excels` section (no 'Why' heading found)"
-        },
-        {
-          "check_id": "yaml_use_cases_count",
-          "category": "YAML Frontmatter",
-          "severity": "warning",
-          "detail": "`use_cases` has 5 items; maximum is 4"
-        }
-      ]
+      "issues": []
     },
     "pittsburgh_modular_the_toad_guide.md": {
-      "clean": false,
-      "issue_count": 4,
-      "error_count": 1,
-      "warning_count": 3,
+      "clean": true,
+      "issue_count": 0,
+      "error_count": 0,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_why_excels",
-          "category": "Missing or Misplaced Sections",
-          "severity": "error",
-          "detail": "Missing `## Why [Module] Excels` section (no 'Why' heading found)"
-        },
-        {
-          "check_id": "yaml_use_cases_count",
-          "category": "YAML Frontmatter",
-          "severity": "warning",
-          "detail": "`use_cases` has 5 items; maximum is 4"
-        },
-        {
-          "check_id": "yaml_use_cases_too_short",
-          "category": "YAML Frontmatter",
-          "severity": "warning",
-          "detail": "`use_cases` item too short (1 word): \"phasing\""
-        },
-        {
-          "check_id": "yaml_use_cases_too_short",
-          "category": "YAML Frontmatter",
-          "severity": "warning",
-          "detail": "`use_cases` item too short (1 word): \"self-oscillation\""
-        }
-      ]
+      "issues": []
     },
     "qubit_aurora_guide.md": {
       "clean": false,
@@ -663,17 +604,11 @@
     },
     "qubit_mojave_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
-      "warning_count": 2,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
-        {
-          "check_id": "yaml_use_cases_count",
-          "category": "YAML Frontmatter",
-          "severity": "warning",
-          "detail": "`use_cases` has 5 items; maximum is 4"
-        },
         {
           "check_id": "color_labels",
           "category": "Format Issues",
@@ -693,17 +628,11 @@
     },
     "qubit_prism_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
-      "warning_count": 2,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
-        {
-          "check_id": "yaml_use_cases_count",
-          "category": "YAML Frontmatter",
-          "severity": "warning",
-          "detail": "`use_cases` has 6 items; maximum is 4"
-        },
         {
           "check_id": "color_labels",
           "category": "Format Issues",
@@ -715,17 +644,11 @@
     },
     "qubit_stardust_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 0,
-      "warning_count": 2,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
-        {
-          "check_id": "yaml_use_cases_count",
-          "category": "YAML Frontmatter",
-          "severity": "warning",
-          "detail": "`use_cases` has 5 items; maximum is 4"
-        },
         {
           "check_id": "color_labels",
           "category": "Format Issues",
@@ -776,25 +699,12 @@
       "issues": []
     },
     "tesseract_modular_radioactive_guide.md": {
-      "clean": false,
-      "issue_count": 2,
-      "error_count": 1,
-      "warning_count": 1,
+      "clean": true,
+      "issue_count": 0,
+      "error_count": 0,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_why_excels",
-          "category": "Missing or Misplaced Sections",
-          "severity": "error",
-          "detail": "Missing `## Why [Module] Excels` section (no 'Why' heading found)"
-        },
-        {
-          "check_id": "yaml_use_cases_count",
-          "category": "YAML Frontmatter",
-          "severity": "warning",
-          "detail": "`use_cases` has 5 items; maximum is 4"
-        }
-      ]
+      "issues": []
     },
     "tesseract_modular_selam_guide.md": {
       "clean": true,
@@ -878,110 +788,6 @@
     }
   },
   "by_check": {
-    "yaml_use_cases_count": [
-      {
-        "file": "cre8audio_function_junction_guide.md",
-        "check_id": "yaml_use_cases_count",
-        "category": "YAML Frontmatter",
-        "severity": "warning",
-        "detail": "`use_cases` has 5 items; maximum is 4"
-      },
-      {
-        "file": "instruo_arbhar_guide.md",
-        "check_id": "yaml_use_cases_count",
-        "category": "YAML Frontmatter",
-        "severity": "warning",
-        "detail": "`use_cases` has 5 items; maximum is 4"
-      },
-      {
-        "file": "pittsburgh_modular_local_parks_guide.md",
-        "check_id": "yaml_use_cases_count",
-        "category": "YAML Frontmatter",
-        "severity": "warning",
-        "detail": "`use_cases` has 5 items; maximum is 4"
-      },
-      {
-        "file": "pittsburgh_modular_the_toad_guide.md",
-        "check_id": "yaml_use_cases_count",
-        "category": "YAML Frontmatter",
-        "severity": "warning",
-        "detail": "`use_cases` has 5 items; maximum is 4"
-      },
-      {
-        "file": "qubit_mojave_guide.md",
-        "check_id": "yaml_use_cases_count",
-        "category": "YAML Frontmatter",
-        "severity": "warning",
-        "detail": "`use_cases` has 5 items; maximum is 4"
-      },
-      {
-        "file": "qubit_prism_guide.md",
-        "check_id": "yaml_use_cases_count",
-        "category": "YAML Frontmatter",
-        "severity": "warning",
-        "detail": "`use_cases` has 6 items; maximum is 4"
-      },
-      {
-        "file": "qubit_stardust_guide.md",
-        "check_id": "yaml_use_cases_count",
-        "category": "YAML Frontmatter",
-        "severity": "warning",
-        "detail": "`use_cases` has 5 items; maximum is 4"
-      },
-      {
-        "file": "tesseract_modular_radioactive_guide.md",
-        "check_id": "yaml_use_cases_count",
-        "category": "YAML Frontmatter",
-        "severity": "warning",
-        "detail": "`use_cases` has 5 items; maximum is 4"
-      }
-    ],
-    "section_why_excels": [
-      {
-        "file": "patching_panda_etna_guide.md",
-        "check_id": "section_why_excels",
-        "category": "Missing or Misplaced Sections",
-        "severity": "error",
-        "detail": "Missing `## Why [Module] Excels` section (no 'Why' heading found)"
-      },
-      {
-        "file": "pittsburgh_modular_local_parks_guide.md",
-        "check_id": "section_why_excels",
-        "category": "Missing or Misplaced Sections",
-        "severity": "error",
-        "detail": "Missing `## Why [Module] Excels` section (no 'Why' heading found)"
-      },
-      {
-        "file": "pittsburgh_modular_the_toad_guide.md",
-        "check_id": "section_why_excels",
-        "category": "Missing or Misplaced Sections",
-        "severity": "error",
-        "detail": "Missing `## Why [Module] Excels` section (no 'Why' heading found)"
-      },
-      {
-        "file": "tesseract_modular_radioactive_guide.md",
-        "check_id": "section_why_excels",
-        "category": "Missing or Misplaced Sections",
-        "severity": "error",
-        "detail": "Missing `## Why [Module] Excels` section (no 'Why' heading found)"
-      }
-    ],
-    "yaml_use_cases_too_short": [
-      {
-        "file": "pittsburgh_modular_the_toad_guide.md",
-        "check_id": "yaml_use_cases_too_short",
-        "category": "YAML Frontmatter",
-        "severity": "warning",
-        "detail": "`use_cases` item too short (1 word): \"phasing\""
-      },
-      {
-        "file": "pittsburgh_modular_the_toad_guide.md",
-        "check_id": "yaml_use_cases_too_short",
-        "category": "YAML Frontmatter",
-        "severity": "warning",
-        "detail": "`use_cases` item too short (1 word): \"self-oscillation\""
-      }
-    ],
     "color_labels": [
       {
         "file": "qubit_aurora_guide.md",

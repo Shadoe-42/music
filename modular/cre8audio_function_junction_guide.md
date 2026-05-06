@@ -6,7 +6,7 @@ secondary_roles: [ROUTER]
 form_factor: eurorack
 functions: [function-generator, mixer]
 behavior_tags: [stable, linear, reactive, performance-oriented]
-use_cases: [envelope generation, filter modulation, LFO source, CV mixing, modulation processing]
+use_cases: [envelope generation, filter modulation, LFO source, CV mixing]
 hp: 16
 historical_context: false
 ---

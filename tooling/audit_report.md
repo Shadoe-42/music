@@ -9,40 +9,16 @@ Generated: 2026-05-06
 | Metric | Count |
 |--------|-------|
 | Guides scanned | 93 |
-| Guides with issues | 10 |
-| Guides clean | 83 |
-| Total issues | 18 |
-| ❌ Errors (fix now) | 4 |
-| ⚠️  Warnings (fix when touching) | 14 |
+| Guides with issues | 4 |
+| Guides clean | 89 |
+| Total issues | 4 |
+| ❌ Errors (fix now) | 0 |
+| ⚠️  Warnings (fix when touching) | 4 |
 | 📌 Deferred (tracked, low priority) | 0 |
 
 ---
 
 ## Issues by Category
-
-### YAML Frontmatter
-
-| File | Line | Severity | Issue |
-|------|------|----------|-------|
-| `cre8audio_function_junction_guide.md` | — | ⚠️  warning | `use_cases` has 5 items; maximum is 4 |
-| `instruo_arbhar_guide.md` | — | ⚠️  warning | `use_cases` has 5 items; maximum is 4 |
-| `pittsburgh_modular_local_parks_guide.md` | — | ⚠️  warning | `use_cases` has 5 items; maximum is 4 |
-| `pittsburgh_modular_the_toad_guide.md` | — | ⚠️  warning | `use_cases` has 5 items; maximum is 4 |
-| `pittsburgh_modular_the_toad_guide.md` | — | ⚠️  warning | `use_cases` item too short (1 word): "phasing" |
-| `pittsburgh_modular_the_toad_guide.md` | — | ⚠️  warning | `use_cases` item too short (1 word): "self-oscillation" |
-| `qubit_mojave_guide.md` | — | ⚠️  warning | `use_cases` has 5 items; maximum is 4 |
-| `qubit_prism_guide.md` | — | ⚠️  warning | `use_cases` has 6 items; maximum is 4 |
-| `qubit_stardust_guide.md` | — | ⚠️  warning | `use_cases` has 5 items; maximum is 4 |
-| `tesseract_modular_radioactive_guide.md` | — | ⚠️  warning | `use_cases` has 5 items; maximum is 4 |
-
-### Missing or Misplaced Sections
-
-| File | Line | Severity | Issue |
-|------|------|----------|-------|
-| `patching_panda_etna_guide.md` | — | ❌ error | Missing `## Why [Module] Excels` section (no 'Why' heading found) |
-| `pittsburgh_modular_local_parks_guide.md` | — | ❌ error | Missing `## Why [Module] Excels` section (no 'Why' heading found) |
-| `pittsburgh_modular_the_toad_guide.md` | — | ❌ error | Missing `## Why [Module] Excels` section (no 'Why' heading found) |
-| `tesseract_modular_radioactive_guide.md` | — | ❌ error | Missing `## Why [Module] Excels` section (no 'Why' heading found) |
 
 ### Format Issues
 
@@ -57,47 +33,21 @@ Generated: 2026-05-06
 
 ## Per-Guide Detail
 
-**`cre8audio_function_junction_guide.md`** — 1 warning
-  - ⚠️ `yaml_use_cases_count` — `use_cases` has 5 items; maximum is 4
-
-**`instruo_arbhar_guide.md`** — 1 warning
-  - ⚠️ `yaml_use_cases_count` — `use_cases` has 5 items; maximum is 4
-
-**`patching_panda_etna_guide.md`** — 1 error
-  - ❌ `section_why_excels` — Missing `## Why [Module] Excels` section (no 'Why' heading found)
-
-**`pittsburgh_modular_local_parks_guide.md`** — 1 error, 1 warning
-  - ❌ `section_why_excels` — Missing `## Why [Module] Excels` section (no 'Why' heading found)
-  - ⚠️ `yaml_use_cases_count` — `use_cases` has 5 items; maximum is 4
-
-**`pittsburgh_modular_the_toad_guide.md`** — 1 error, 3 warnings
-  - ❌ `section_why_excels` — Missing `## Why [Module] Excels` section (no 'Why' heading found)
-  - ⚠️ `yaml_use_cases_count` — `use_cases` has 5 items; maximum is 4
-  - ⚠️ `yaml_use_cases_too_short` — `use_cases` item too short (1 word): "phasing"
-  - ⚠️ `yaml_use_cases_too_short` — `use_cases` item too short (1 word): "self-oscillation"
-
 **`qubit_aurora_guide.md`** — 1 warning
   - ⚠️ `color_labels` — Old color label: "7. FFT size defaults to 4096 (blue Reverse LED). To change it, hold Shift and press Revers" *(line 46)*
 
-**`qubit_mojave_guide.md`** — 2 warnings
-  - ⚠️ `yaml_use_cases_count` — `use_cases` has 5 items; maximum is 4
+**`qubit_mojave_guide.md`** — 1 warning
   - ⚠️ `color_labels` — Old color label: "**Gen button and Gen Gate input** trigger a single grain independent of the clock rate. Th" *(line 56)*
 
-**`qubit_prism_guide.md`** — 2 warnings
-  - ⚠️ `yaml_use_cases_count` — `use_cases` has 6 items; maximum is 4
+**`qubit_prism_guide.md`** — 1 warning
   - ⚠️ `color_labels` — Old color label: "**Fix:** Press the Filter Type button to cycle to LPF (blue), HPF (green), or BPF (red). T" *(line 213)*
 
-**`qubit_stardust_guide.md`** — 2 warnings
-  - ⚠️ `yaml_use_cases_count` — `use_cases` has 5 items; maximum is 4
+**`qubit_stardust_guide.md`** — 1 warning
   - ⚠️ `color_labels` — Old color label: "**Effect Mode button** cycles through four effect modes, each assigning a different pair o" *(line 84)*
-
-**`tesseract_modular_radioactive_guide.md`** — 1 error, 1 warning
-  - ❌ `section_why_excels` — Missing `## Why [Module] Excels` section (no 'Why' heading found)
-  - ⚠️ `yaml_use_cases_count` — `use_cases` has 5 items; maximum is 4
 
 ---
 
-## Clean Guides (83)
+## Clean Guides (89)
 
 No issues detected:
 
@@ -122,6 +72,7 @@ No issues detected:
 - `cre8audio_cellz_guide.md`
 - `cre8audio_chipz_cellz_niftycase_bundle_guide.md`
 - `cre8audio_chipz_guide.md`
+- `cre8audio_function_junction_guide.md`
 - `divkid_ochd_and_expander_guide.md`
 - `doepfer_a124_wasp_se_guide.md`
 - `doepfer_a_130_2_guide.md`
@@ -147,6 +98,7 @@ No issues detected:
 - `expert_sleepers_disting_mk4_guide.md`
 - `frap_tools_411_guide.md`
 - `gamechanger_audio_plasma_voice_guide.md`
+- `instruo_arbhar_guide.md`
 - `instruo_csl_guide.md`
 - `intellijel_mixup_guide.md`
 - `intellijel_stomp_guide.md`
@@ -164,8 +116,11 @@ No issues detected:
 - `noise_engineering_numeric_repetitor_guide.md`
 - `noise_engineering_pons_asinorum_guide.md`
 - `noise_engineering_ruina_versio_guide.md`
+- `patching_panda_etna_guide.md`
 - `patching_panda_moon_phase_guide.md`
 - `patching_panda_punch_v3_guide.md`
+- `pittsburgh_modular_local_parks_guide.md`
+- `pittsburgh_modular_the_toad_guide.md`
 - `qubit_bloom_v1_guide.md`
 - `qubit_chord_v2_guide.md`
 - `qubit_nautilus_guide.md`
@@ -174,6 +129,7 @@ No issues detected:
 - `soma_lyra8_fx_guide.md`
 - `squarp_hermod_plus_guide.md`
 - `ssf_ssg_stereo_field_guide.md`
+- `tesseract_modular_radioactive_guide.md`
 - `tesseract_modular_selam_guide.md`
 - `tiptop_audio_forbidden_planet_guide.md`
 - `tiptop_audio_miso_guide.md`

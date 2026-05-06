@@ -6,7 +6,7 @@ secondary_roles: []
 form_factor: eurorack
 functions: [fx-spectral, fx-time, granular]
 behavior_tags: [evolving, lo-fi, clean, metallic]
-use_cases: [delay textures, comb filtering, bit crushing, spectral processing, freeze effects, beat repeat]
+use_cases: [comb filtering, bit crushing, freeze effects, beat repeat]
 hp: 12
 depth: 22
 historical_context: false

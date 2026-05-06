@@ -113,14 +113,20 @@ def extract_modules(modular_dir):
             continue
         role = fm.get("primary_role", "").strip().upper()
         title = fm.get("title", "").strip()
+        manufacturer = fm.get("manufacturer", "").strip()
         if not role or not title:
             continue
+        # Build display title: prepend manufacturer if title doesn't already include it
+        if manufacturer and not title.startswith(manufacturer):
+            display_title = f"{manufacturer} {title}"
+        else:
+            display_title = title
         modules.append({
-            "title":        title,
-            "manufacturer": fm.get("manufacturer", "").strip(),
-            "primary_role": role,
-            "functions":    fm.get("functions", []),
-            "filename":     fname,
+            "title":         display_title,
+            "manufacturer":  manufacturer,
+            "primary_role":  role,
+            "functions":     fm.get("functions", []),
+            "filename":      fname,
         })
     return modules
 

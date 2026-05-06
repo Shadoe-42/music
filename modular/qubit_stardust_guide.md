@@ -6,7 +6,7 @@ secondary_roles: [GENERATOR]
 form_factor: eurorack
 functions: [looper, fx-time, sample-player]
 behavior_tags: [free-running, warm, performance-oriented]
-use_cases: [live looping, overdub layering, tape-style loop manipulation, sample import, loop rearrangement]
+use_cases: [live looping, overdub layering, tape-style loop manipulation, sample import]
 hp: 18
 depth: 22
 historical_context: true

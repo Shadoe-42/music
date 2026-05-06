@@ -6,7 +6,7 @@ secondary_roles: [GENERATOR]
 form_factor: eurorack
 functions: [granular, fx-time]
 behavior_tags: [granular, evolving, performance-oriented]
-use_cases: [live granular processing, textural pads, melodic grain generation, feedback drones, granular looping]
+use_cases: [live granular processing, textural pads, melodic grain generation, feedback drones]
 hp: 14
 depth: 22
 historical_context: false

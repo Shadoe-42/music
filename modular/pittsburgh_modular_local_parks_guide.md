@@ -7,7 +7,7 @@ historical_context: true
 form_factor: eurorack
 functions: [oscillator, wavefolder]
 behavior_tags: [nonlinear, evolving, harmonic, percussive]
-use_cases: [complex voice, textural oscillator, dual-waveform layering, experimental lead, blade morphing]
+use_cases: [textural oscillator, dual-waveform layering, experimental lead, blade morphing]
 hp: 14
 depth: 25mm
 memory: none
@@ -184,6 +184,14 @@ With Blade CV and PW CV patched from external sources, those two inputs are remo
 | P.Width CV Att | Pulse width CV depth | LFO normaled |
 
 ---
+
+## Why Local Parks Excels
+
+The Local Parks provides seven simultaneous outputs from a single oscillator core, which makes it one of the densest signal sources in the corpus relative to its panel space. A single pitch CV into the Pitch input produces blade, sine, triangle, sawtooth, pulse, sub, and binary logic signals simultaneously. In a patch with limited voices, this output density makes Local Parks function as a multi-timbral source: different outputs can feed different downstream processors, with each receiving a different waveform character from the same fundamental pitch. The result is harmonic layering without additional oscillators.
+
+The blade wave is the module's most distinctive tonal contribution. Rather than a simple sawtooth or triangle, the blade wave morphs between an octave-up variation and the core frequency as the Blade knob advances, producing a continuous shift in both pitch register and harmonic character that is not achievable through standard waveshaping. The P.Shift control adds a second dimension to the pulse output by introducing a step discontinuity within the waveform cycle, generating harmonic content that differs from simple pulse width variation. These two controls give Local Parks a tonal identity distinct from a conventional analog oscillator.
+
+The internal modulation LFO removes the dependency on an external modulation source for basic animation. When FM, Blade CV, and Pulse Width CV inputs are unpatched, the LFO automatically routes to all three simultaneously. A newly powered, minimally patched Local Parks is already in motion: FM depth, blade position, and pulse width all vary continuously at whatever rate the Mod Rate knob sets. For a patch in early assembly where a dedicated LFO has not yet been added, Local Parks provides a naturally animated output from the first cable placed.
 
 ## Advanced Learning Path
 

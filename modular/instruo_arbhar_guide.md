@@ -6,7 +6,7 @@ secondary_roles: [SOURCE]
 form_factor: eurorack
 functions: [granular]
 behavior_tags: [evolving, nonlinear, stochastic, generative, performance-oriented]
-use_cases: [granular texture bed, evolving ambient texture, dark atmospheric layer, rhythmic grain bursts, pitched granular voice]
+use_cases: [evolving ambient texture, dark atmospheric layer, rhythmic grain bursts, pitched granular voice]
 hp: 18
 ---
 

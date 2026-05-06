@@ -7,7 +7,7 @@ historical_context: true
 form_factor: eurorack
 functions: [oscillator, envelope-generator, wavefolder]
 behavior_tags: [lo-fi, dirty, chiptune, chaotic, noisy]
-use_cases: [lo-fi voice, chiptune lead, self-contained synth voice, poly voice, experimental lead]
+use_cases: [lo-fi voice, chiptune lead, self-contained synth voice, poly voice]
 hp: 6
 depth: 25mm
 memory: basic
@@ -211,6 +211,14 @@ Release: fully clockwise (gate held high permanently)
 ```
 
 ---
+
+## Why Radioactive Excels
+
+The Radioactive delivers a complete synthesis voice in 6HP: oscillator, amplitude envelope, glide, and a five-mode waveform shaper, all internally connected and ready without external modules. No VCA is required for basic pitched and gated sound production. In a system where HP is a constraint, this density makes the Radioactive a natural choice for secondary voice slots, percussion roles, or any context where a complete voice is needed without allocating the panel space a separate oscillator, envelope, and VCA would require. The efficiency is the argument.
+
+The shaper is the module's primary tonal tool and the source of most of its character range. Five shaper modes operate on the selected waveform in distinct ways: micro-detune thickening, wavefold-style harmonic addition, asymmetric clipping, ring modulation, and combinations that depend on the active waveform. The interaction between the six available waveforms, the five shaper modes, and the shaper amount knob produces a tonal matrix large enough that adjacent Radioactive units running different waveform and shaper combinations read as distinct instruments rather than variations on the same sound. The range from clean sine to aggressively processed complex waveform is available from a single pot sweep without patching.
+
+Poly mode expands the module from a single-voice instrument to a three-voice chord generator without external utilities. Three voices of the active waveform stack and trigger simultaneously on each incoming gate, with Release time determining how long the chord sustains. Combined with the shaper, Poly mode on a complex waveform produces dense, harmonically rich cluster chords that occupy frequency space a single voice cannot fill. The Mode B (classic VCO) configuration removes the internal envelope entirely, making the Radioactive function as a standard 1V/octave oscillator when a continuous tone rather than a gated event is what the patch requires.
 
 ## Advanced Learning Path
 
