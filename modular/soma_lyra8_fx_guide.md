@@ -4,7 +4,7 @@ manufacturer: Soma Laboratory
 primary_role: SHAPER
 secondary_roles: []
 form_factor: eurorack
-functions: [delay, distortion, fx-modulation]
+functions: [fx-time, distortion, fx-modulation]
 behavior_tags: [dirty, warm, chaotic, nonlinear, lo-fi, self-modulating]
 use_cases: [lo-fi atmospheric processing, drone generation, textural destruction, dark delay]
 hp: 20

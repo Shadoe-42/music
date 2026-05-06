@@ -1,11 +1,11 @@
 ---
 title: Qu-Bit Mojave
 manufacturer: Qu-Bit Electronix
-primary_role: PROCESSOR
+primary_role: SHAPER
 secondary_roles: [GENERATOR]
 form_factor: eurorack
-functions: [granular, live-processing, reverb, feedback, cv-source]
-behavior_tags: [granular, textural, atmospheric, cv-friendly, stereo, performance-oriented, rhythmic]
+functions: [granular, fx-time]
+behavior_tags: [granular, evolving, performance-oriented]
 use_cases: [live granular processing, textural pads, melodic grain generation, feedback drones, granular looping]
 hp: 14
 depth: 22

@@ -4,8 +4,8 @@ manufacturer: Patching Panda
 primary_role: SHAPER
 secondary_roles: []
 form_factor: eurorack
-functions: [filter, stereo_imaging]
-behavior_tags: [stereo, nonlinear, performance-oriented, cv-friendly, dark]
+functions: [filter]
+behavior_tags: [nonlinear, performance-oriented, dark]
 use_cases: [stereo signal processing, mono to stereo conversion, timbral movement, texture creation]
 hp: 14
 historical_context: false

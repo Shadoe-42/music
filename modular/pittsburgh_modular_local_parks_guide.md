@@ -5,8 +5,8 @@ primary_role: SOURCE
 secondary_roles: []
 historical_context: true
 form_factor: eurorack
-functions: [oscillator, waveshaping]
-behavior_tags: [complex, evolving, experimental, harmonic, animated, pulsing]
+functions: [oscillator, wavefolder]
+behavior_tags: [nonlinear, evolving, harmonic, percussive]
 use_cases: [complex voice, textural oscillator, dual-waveform layering, experimental lead, blade morphing]
 hp: 14
 depth: 25mm

@@ -5,13 +5,9 @@ primary_role: UTILITY
 secondary_roles: []
 historical_context: true
 form_factor: eurorack
-functions: [matrix-mixer, signal-combiner, effects-loop, attenuverter]
-behavior_tags: [cv-math, generative, feedback-capable, dc-coupled, performance]
-use_cases:
-  - "4x4 matrix routing of audio or CV to four independent destinations"
-  - "Submixing multiple sources to a single output with individual level control"
-  - "Feedback patching: routing outputs back to inputs for self-modifying systems"
-  - "Effects integration via auxiliary send and soft-mute return channel"
+functions: [mixer, cv-processor, switch-router]
+behavior_tags: [generative, self-modulating, performance-oriented]
+use_cases: [audio and CV matrix routing, submixing multiple sources to one output, feedback loop signal path, effects send and return integration]
 hp: 12
 depth: 26mm
 memory: none
@@ -21,7 +17,7 @@ hybrid: false
 cv: none
 ---
 
-![Altered States Machines Eris front panel](images/altered_states_machines/eris/front_panel.jpg)
+![Altered States Machines Eris front panel](https://github.com/Shadoe-42/music/raw/main/modular/images/altered_states_machines/eris/front_panel.jpg)
 
 ## Historical Context
 

@@ -5,13 +5,9 @@ primary_role: UTILITY
 secondary_roles: []
 historical_context: true
 form_factor: eurorack
-functions: [attenuverter, matrix-mixer, signal-combiner]
-behavior_tags: [bipolar, polarity-inversion, cv-math, stereo-capable, monitoring]
-use_cases:
-  - "Bipolar CV mixing with cancellation for complex modulation shapes"
-  - "Distributing four modulation sources to two independent targets with different polarities"
-  - "Stereo field work using A and B buses as left and right with independent polarity control"
-  - "Signal monitoring via buffered bipolar LEDs before committing patch cables"
+functions: [attenuator, mixer, cv-processor]
+behavior_tags: [clean, linear, performance-oriented]
+use_cases: [bipolar CV mixing and cancellation, distributing modulation with polarity control, stereo bus signal distribution, pre-patch signal monitoring]
 hp: 8
 depth: 20mm
 memory: none
@@ -21,7 +17,7 @@ hybrid: false
 cv: none
 ---
 
-![DSP Coffee YYS front panel](images/dsp_coffee/yys/front_panel.jpg)
+![DSP Coffee YYS front panel](https://github.com/Shadoe-42/music/raw/main/modular/images/dsp_coffee/yys/front_panel.jpg)
 
 ## Historical Context
 

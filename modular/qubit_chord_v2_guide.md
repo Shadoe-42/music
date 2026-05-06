@@ -1,11 +1,11 @@
 ---
 title: Qu-Bit Chord V2
 manufacturer: Qu-Bit Electronix
-primary_role: GENERATOR
+primary_role: SOURCE
 secondary_roles: [MODULATOR]
 form_factor: eurorack
-functions: [oscillator, wavetable, polyphonic]
-behavior_tags: [harmonic, polyphonic, cv-friendly, clean, stable, performance-oriented]
+functions: [complex-oscillator]
+behavior_tags: [harmonic, clean, stable, performance-oriented]
 use_cases: [chord generation, polyphonic voice, harmonic source, melodic lead over chords]
 hp: 14
 depth: 23

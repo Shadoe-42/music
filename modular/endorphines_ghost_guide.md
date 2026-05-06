@@ -4,8 +4,8 @@ manufacturer: Endorphin.es
 primary_role: SHAPER
 secondary_roles: [ROUTER]
 form_factor: eurorack
-functions: [reverb, delay, filter, distortion, compressor]
-behavior_tags: [evolving, nonlinear, performative, dark]
+functions: [fx-time, filter, dynamics]
+behavior_tags: [evolving, nonlinear, performance-oriented, dark]
 use_cases: [stereo signal processing, atmospheric texture, rhythmic processing, Karplus-Strong synthesis]
 hp: 16
 historical_context: true

@@ -1,17 +1,17 @@
 ---
 title: Etna
 manufacturer: Patching Panda
-primary_role: FILTER
+primary_role: SHAPER
 secondary_roles: [MODULATOR]
 historical_context: true
 form_factor: eurorack
-functions: [filter, snapshot-sequencer, morphing]
-behavior_tags: [clean, morphing, evolving, musical, harmonic, spatial]
-use_cases: [morphing filter voice, evolving texture, rhythmic filtering, parallel voice filtering, formant-style processing]
+functions: [filter, sequencer]
+behavior_tags: [clean, evolving, harmonic]
+use_cases: [morphing filter voice, evolving texture, rhythmic filtering, parallel voice filtering]
 hp: 20
 depth: 30mm
-memory: snapshot
-transport: clock
+memory: basic
+transport: receive
 screen: false
 hybrid: true
 cv: full

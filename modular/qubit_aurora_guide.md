@@ -222,7 +222,7 @@ Endorphin.es Furtrrrr Generator into Aurora with manual Freeze, then Warp CV tra
 
 ## Common Mistakes
 
-### "I keep raising both Time and Blur together but the result sounds wrong — I thought they were the same kind of reverb control"
+### "I keep raising both Time and Blur together but the result sounds wrong: I thought they were the same kind of reverb control"
 
 Time and Blur operate on different components of the spectral signal. Time blurs amplitude; the result sounds like reverb decay. Blur smears frequency; the result sounds like spectral artifacts that often do not read as reverb at all. Raising both simultaneously produces a combined effect, but the individual behaviors are distinct enough that each deserves independent attention. The two controls are not a single reverb size axis; they address separate dimensions of the frequency-domain signal.
 
@@ -254,11 +254,11 @@ Aurora's spectral response depends on the amplitude of the input signal. An unde
 
 ---
 
-### "I pressed Freeze and the frozen sound is disappointing — thin and nothing like the pad I was trying to capture"
+### "I pressed Freeze and the frozen sound is disappointing: thin and nothing like the pad I was trying to capture"
 
 Freeze captures the current spectral characteristics of the input signal at the moment of engagement. What is frozen depends entirely on what was entering Aurora in the moments before Freeze is pressed. A momentary transient produces a thin spectral capture. A sustained, harmonically rich source produces a dense one. Freeze does not accumulate spectral richness over time; it captures whatever spectral state exists at the moment the button is pressed.
 
-**Fix:** Allow the source to play through Aurora for several seconds before pressing Freeze. Complex harmonic material needs time to build a stable spectral state within Aurora's processing chain. Capture a dense, sustained moment — not an attack, not a transient, and not the very beginning of a note. Hold the source at a stable, rich point in the signal, then engage Freeze. The quality of the frozen content reflects the quality of what was processed in the seconds before the lock.
+**Fix:** Allow the source to play through Aurora for several seconds before pressing Freeze. Complex harmonic material needs time to build a stable spectral state within Aurora's processing chain. Capture a dense, sustained moment: not an attack, not a transient, and not the very beginning of a note. Hold the source at a stable, rich point in the signal, then engage Freeze. The quality of the frozen content reflects the quality of what was processed in the seconds before the lock.
 
 ---
 
@@ -280,7 +280,7 @@ Freeze captures the current spectral characteristics of the input signal at the 
 
 ## Pairs Well With
 
-- **Qu-Bit Chord V2** — Chord V2's Mix and Seventh outputs provide ideal input material for Aurora, with the Seventh voice tracking pitch sequences via Warp CV.
-- **vpme.de QD** — Drum voices at FFT 1024 and 512 produce comb-like and alien spectral textures with rhythmic input, pushing Aurora into territory that sustained melodic sources cannot reach.
-- **Gamechanger Audio Plasma Voice** — Plasma's metallic, harmonically dense character feeds Aurora's spectral engine with complex frequency content, producing reverb tails that preserve the industrial texture of the source.
-- **Endorphin.es Furtrrrr Generator** — Dense, harmonically complex voice suitable for spectral capture and Freeze drones; Furtrrrr Generator's long sustain builds a stable spectral state worth locking.
+- **Qu-Bit Chord V2**: Chord V2's Mix and Seventh outputs provide ideal input material for Aurora, with the Seventh voice tracking pitch sequences via Warp CV.
+- **vpme.de QD**: Drum voices at FFT 1024 and 512 produce comb-like and alien spectral textures with rhythmic input, pushing Aurora into territory that sustained melodic sources cannot reach.
+- **Gamechanger Audio Plasma Voice**: Plasma's metallic, harmonically dense character feeds Aurora's spectral engine with complex frequency content, producing reverb tails that preserve the industrial texture of the source.
+- **Endorphin.es Furtrrrr Generator**: Dense, harmonically complex voice suitable for spectral capture and Freeze drones; Furtrrrr Generator's long sustain builds a stable spectral state worth locking.

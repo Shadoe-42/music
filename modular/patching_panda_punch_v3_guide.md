@@ -5,7 +5,7 @@ primary_role: MODULATOR
 secondary_roles: [AMPLIFIER]
 form_factor: eurorack
 functions: [vca, envelope-generator]
-behavior_tags: [percussive, gated, reactive, warm, performance-oriented, cv-friendly]
+behavior_tags: [percussive, gated, reactive, warm, performance-oriented]
 use_cases: [voice shaping, percussive dynamics, envelope generation, sidechain effects]
 hp: 9
 historical_context: false

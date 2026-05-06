@@ -5,13 +5,9 @@ primary_role: MODULATOR
 secondary_roles: [UTILITY]
 historical_context: true
 form_factor: eurorack
-functions: [function-generator, lfo, envelope, slew, attenuverter, mixer]
-behavior_tags: [bipolar, generative, complex-cv, temporal-shaping, polarity-inversion, six-voice]
-use_cases:
-  - "Six-channel bipolar LFO bank with group mix outputs for complex modulation"
-  - "AR envelope bank from a single gate source with per-channel timing variation"
-  - "Slew limiting on stepped CV sequences for smooth non-pitch movement"
-  - "Mixed-polarity CV composition using attenuverter inversion and summed channels"
+functions: [function-generator, attenuator, slew-limiter]
+behavior_tags: [generative, evolving, nonlinear]
+use_cases: [six-channel LFO bank for complex modulation, envelope bank from single gate source, slew limiting on stepped CV sequences, mixed-polarity CV composition]
 hp: 18
 depth: 35mm
 memory: none
@@ -21,7 +17,7 @@ hybrid: false
 cv: basic
 ---
 
-![Tesseract Modular Selam front panel](images/tesseract_modular/selam/front_panel.jpg)
+![Tesseract Modular Selam front panel](https://github.com/Shadoe-42/music/raw/main/modular/images/tesseract_modular/selam/front_panel.jpg)
 
 ## Historical Context
 

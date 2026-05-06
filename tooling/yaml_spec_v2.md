@@ -138,6 +138,8 @@ Assign 1-3 items per guide. Use only terms from this list.
 | `fm-oscillator` | Oscillator where FM or phase modulation is the primary synthesis architecture |
 | `noise-source` | Noise and random signal generation |
 | `drum-voice` | Single percussive synthesis engine |
+| `voice-engine` | Complete triggered sound engine producing shaped note events across multiple sound categories; EVENT_VOICE equivalent at the functions level |
+| `looper` | Real-time audio recording, playback, and overdub layering |
 | `sample-player` | Plays back recorded audio samples |
 | `granular` | Granular synthesis or granular processing |
 | `physical-model` | Physical modeling synthesis (Karplus-Strong, modal, etc.) |
@@ -251,6 +253,9 @@ do not apply every tag that could technically fit.
 | `noisy` | Noise content is an intentional feature |
 | `harmonic` | Overtone-rich, musically consonant partials |
 | `inharmonic` | Overtones outside the harmonic series |
+| `granular` | Texture produced by granular or particle-based processing: dense, smeared, cloud-like character |
+| `lo-fi` | Deliberately degraded character: noise floor, aliasing, bit reduction, or tape wear as aesthetic feature |
+| `chiptune` | Limited-resolution digital waveforms with characteristic aliasing; SID, Game Boy, and early digital synthesis lineage |
 
 ### Control Character
 
@@ -373,4 +378,10 @@ behavior_tags, use_cases, or capability flags. They have no signal function.
 
 ---
 
-*Last updated: 2026-04-15*
+*Last updated: 2026-05-06*
+
+### Vocabulary additions — 2026-05-06
+
+**functions (Sources):** Added `voice-engine` (complete triggered sound engine, EVENT_VOICE equivalent at functions level) and `looper` (real-time audio recording, playback, overdub). Both are needed for the modular corpus and will apply broadly to guitar pedals and grooveboxes.
+
+**behavior_tags (Sonic Character):** Added `granular`, `lo-fi`, and `chiptune`. These describe distinct sonic characters that do not map cleanly to existing terms. Deferred: `textural`, `spatial`, `rhythmic` — acknowledged gaps, added when the corpus demands them.

@@ -81,7 +81,7 @@ Output voltage is 0V to 5V. CV inputs respond to 0V to 5V. Envelopes trigger on 
 
 ## Why This Instrument Excels
 
-The single encoder architecture is the Pons Asinorum's most underrated feature because its value only becomes apparent during live performance. A standard four-channel envelope module requires four separate controls, one per channel, which means adjusting the overall modulation rate of a patch requires four separate knob movements. The Pons Asinorum's channel select system means that all four channels can be selected simultaneously with one button press each, and a single encoder turn then shifts all four cycle lengths together, maintaining their relative spacing while changing the overall tempo. Then any channel can be deselected to isolate it for individual adjustment. This workflow — select all, adjust together, deselect and refine — is faster in performance than any collection of individual knobs for the same task, and it is the reason the module's apparently minimal panel surface area is not actually a limitation.
+The single encoder architecture is the Pons Asinorum's most underrated feature because its value only becomes apparent during live performance. A standard four-channel envelope module requires four separate controls, one per channel, which means adjusting the overall modulation rate of a patch requires four separate knob movements. The Pons Asinorum's channel select system means that all four channels can be selected simultaneously with one button press each, and a single encoder turn then shifts all four cycle lengths together, maintaining their relative spacing while changing the overall tempo. Then any channel can be deselected to isolate it for individual adjustment. This workflow: select all, adjust together, deselect and refine: is faster in performance than any collection of individual knobs for the same task, and it is the reason the module's apparently minimal panel surface area is not actually a limitation.
 
 The linear envelope shape is not a compromise or a simplification; it is a distinct tonal choice with specific sonic consequences. An exponential envelope sounds natural for amplitude control because exponential decay matches how the ear perceives loudness reduction. A linear envelope applied to amplitude sounds mechanical in comparison: the level drops at a constant rate rather than in the perceptually smooth curve the ear expects. This mechanical quality becomes an asset when the envelope is used as a modulation source rather than an amplitude envelope. A linear ramp driving a filter cutoff sweeps frequency at a constant rate, producing a smooth, mathematically predictable sweep. A linear ramp driving pitch produces an even glide. In generative and ambient contexts where multiple linear slopes modulate multiple parameters simultaneously, the predictability of the linear shape means the modulation relationships between channels remain readable and controllable in ways that exponential shapes, which curve at different rates depending on their length settings, do not guarantee.
 
@@ -112,7 +112,7 @@ Noise Engineering Pons Asinorum with a single channel in envelope mode driving a
 
 **Setup:** Patch Hermod+'s gate into Trigger In 1 and Out 1 into a VCA's CV input. Patch the Instruo Cs-L into the VCA's audio input and the VCA's output into a mixer. Press channel select button 1 to select it; the LED lights. Set the Mode switch to the center up/down position for a symmetric AR shape. Because only Channel 1's trigger input has a cable, the normalling chain does not reach Channels 2, 3, or 4; only Channel 1 fires.
 
-**Controls:** Turn the encoder clockwise and the cycle length increases; counterclockwise decreases it. The envelope lengthens and shortens audibly at the VCA output. Switch the Mode switch to ramp up: the envelope now attacks slowly and releases immediately when the gate closes, producing a slow swell with a sharp cutoff. Switch to ramp down: the attack is immediate and the decay is gradual, producing a pluck and bloom. Switch back to up/down for the symmetric AR. Press the encoder while Channel 1 is selected to reset it to minimum length; the envelope becomes a snap. Press again to undo and restore the previous length. Tap Hit to fire Channel 1 manually without a trigger cable — useful for testing and performance.
+**Controls:** Turn the encoder clockwise and the cycle length increases; counterclockwise decreases it. The envelope lengthens and shortens audibly at the VCA output. Switch the Mode switch to ramp up: the envelope now attacks slowly and releases immediately when the gate closes, producing a slow swell with a sharp cutoff. Switch to ramp down: the attack is immediate and the decay is gradual, producing a pluck and bloom. Switch back to up/down for the symmetric AR. Press the encoder while Channel 1 is selected to reset it to minimum length; the envelope becomes a snap. Press again to undo and restore the previous length. Tap Hit to fire Channel 1 manually without a trigger cable: useful for testing and performance.
 
 **Result:** A single triggered envelope voice demonstrating the three mode shapes and the encoder's range. The press-to-reset and undo behavior of the encoder becomes immediately useful once the minimum-length snap is heard in contrast to longer settings.
 
@@ -220,7 +220,7 @@ All four channels in envelope mode forming a ring patch: each channel's output t
 
 ## Common Mistakes
 
-### "The module is not responding to my trigger — all four channels fire when I only want one"
+### "The module is not responding to my trigger: all four channels fire when I only want one"
 
 The trigger inputs are circularly normalled. A trigger patched into Trigger In 1 with no cables in Trigger Ins 2, 3, or 4 reaches all four channels through the normalling chain. This is correct behavior; it is the default so that a single trigger source drives all four channels without a mult.
 
@@ -230,13 +230,13 @@ The trigger inputs are circularly normalled. A trigger patched into Trigger In 1
 
 ### "I cannot figure out how to set different cycle lengths for different channels"
 
-The encoder controls whichever channels are currently selected. If multiple channels are selected simultaneously, they all move together, which is the feature — but it makes independent setting non-obvious.
+The encoder controls whichever channels are currently selected. If multiple channels are selected simultaneously, they all move together, which is the feature: but it makes independent setting non-obvious.
 
 **Fix:** Deselect all channels first by pressing each lit select button until all LEDs are off or blue. Then press only the channel you want to set, adjust the encoder to the desired length, and deselect that channel. Press the next channel, adjust, and deselect. Repeating this for each channel sets them all independently. To set two channels to identical lengths, select both simultaneously, adjust, then deselect both. The blue LED on a deselected channel confirms it has been set to a non-minimum length and will remember its setting.
 
 ---
 
-### "The encoder controls are not working — the cycle length is not changing even though I am turning it"
+### "The encoder controls are not working: the cycle length is not changing even though I am turning it"
 
 No channels are selected. The encoder only adjusts the cycle length of selected channels; if all channels are deselected, turning the encoder has no effect.
 

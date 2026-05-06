@@ -1,28 +1,23 @@
 ---
 title: "Endorphin.es Grand Terminal"
 manufacturer: "Endorphin.es"
-primary_role: FILTER
-secondary_roles: [MODULATOR, SHAPER]
+primary_role: SHAPER
+secondary_roles: [MODULATOR]
 historical_context: true
 form_factor: eurorack
-functions: [filter, envelope, effects-processor, mixer]
-behavior_tags: [dual-filter, digital, cv-controlled, stereo, multi-mode, self-contained-voice, effects, looping-envelope]
-use_cases:
-  - "Complete synthesizer voice processing: dual envelopes controlling dual filters with integrated stereo effects"
-  - "Multi-mode filter exploration across eight modeled filter architectures in a single module"
-  - "External audio processing at modular or line level with reverb, delay, and modulation effects"
-  - "Drone and ambient texture work using Airplane loop mode as LFO driving filter modulation and effects"
-  - "Parallel, stereo, or serial dual-filter routing for complex timbral shaping"
+functions: [filter, envelope-generator, fx-time]
+behavior_tags: [dark, evolving, nonlinear, performance-oriented]
+use_cases: [complete voice with dual filter and effects, multi-architecture filter exploration, external audio processing with effects, drone and ambient texture generation]
 hp: 26
 depth: 25mm
-memory: true
+memory: basic
 transport: none
 screen: false
 hybrid: true
 cv: full
 ---
 
-![Endorphin.es Grand Terminal front panel](images/endorphines/grand_terminal/front_panel.jpg)
+![Endorphin.es Grand Terminal front panel](https://github.com/Shadoe-42/music/raw/main/modular/images/endorphines/grand_terminal/front_panel.jpg)
 
 ## Historical Context
 
@@ -335,3 +330,13 @@ On each trigger: Airplane A fires, the filter opens and closes through the vactr
 **Losing filter type and effect settings after a firmware update.** The manual explicitly warns that firmware updates erase stored filter and effect configurations. Before updating firmware, note the current filter type and effect selection for both channels if you want to restore them afterward.
 
 **Using the mono modular output and expecting stereo panning to be audible.** The mono output is the sum of both stereo channels. Any panning set in secondary filter mode affects only the stereo output. The mono output always carries the equal sum of left and right regardless of panning position. If panning decisions matter for the patch, route to the stereo output.
+
+## Pairs Well With
+
+**Endorphin.es New Godspeed** is the natural oscillator companion to Grand Terminal within the same design family. The New Godspeed's SINE/FOLD output feeds a clean-to-progressively-folded sine wave directly into Grand Terminal's audio input, where each of the eight filter types produces a distinct timbral character from the same source material. The EVEN/ODD output, with its odd harmonic content and sub normalling, pairs especially well with the ladder filter type, which rounds off the upper partials while preserving the sub reinforcement. The two modules together form a complete synthesizer voice without additional modules: pitch from New Godspeed, amplitude envelope and timbral shaping from Grand Terminal's Airplane envelope into the filter cutoff.
+
+**Endorphin.es Furthrrrr Generator** provides the most harmonically complex source material in the corpus for Grand Terminal to process. The Furthrrrr Generator's cross-modulation and wavefolder outputs carry dense harmonic content that responds differently to each of Grand Terminal's eight filter types and to each of its Cabin Pressure effect categories, making it the preferred source for exploring the filter and effect range in one session. The Furthrrrr Generator's secondary oscillator also serves as a sub-register voice that Grand Terminal can filter independently through its dual-gate architecture.
+
+**Make Noise Wogglebug** addresses Grand Terminal's unipolar filter CV requirement directly. The Wogglebug's Smooth and Stepped random outputs are naturally unipolar when drawn from its primary outputs, which means they connect to Grand Terminal's X and Y filter CV inputs without offset or attenuation. The Smooth output provides gentle, wandering cutoff movement, while the Stepped output creates abrupt, unpredictable filter jumps. Patching the Wogglebug's clock input to the same master clock that drives the system ties the random modulation rate to the overall tempo, making the filter variation feel compositional rather than arbitrary.
+
+**Squarp Hermod+** handles pitch sequencing, gate generation, and system clock simultaneously for a Grand Terminal-centered voice. The Hermod+ provides paired CV and gate outputs from the same sequence, which means the Airplane envelopes can be triggered precisely on note events from the pitch sequence rather than from a separate gate source. The Hermod+'s clock output, routed to Grand Terminal's delay sync input, locks the delay time to the sequence tempo. A single Hermod+ module provides the complete control structure for a pitch-sequenced, rhythmically synchronized Grand Terminal voice.

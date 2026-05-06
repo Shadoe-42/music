@@ -1,11 +1,11 @@
 ---
 title: Qu-Bit Stardust
 manufacturer: Qu-Bit Electronix
-primary_role: PROCESSOR
+primary_role: SHAPER
 secondary_roles: [GENERATOR]
 form_factor: eurorack
-functions: [looper, tape-emulation, sampler, effects]
-behavior_tags: [looping, layering, tape-character, cv-friendly, stereo, performance-oriented]
+functions: [looper, fx-time, sample-player]
+behavior_tags: [free-running, warm, performance-oriented]
 use_cases: [live looping, overdub layering, tape-style loop manipulation, sample import, loop rearrangement]
 hp: 18
 depth: 22

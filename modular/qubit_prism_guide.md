@@ -1,11 +1,11 @@
 ---
 title: Qu-Bit Prism
 manufacturer: Qu-Bit Electronix
-primary_role: PROCESSOR
+primary_role: SHAPER
 secondary_roles: []
 form_factor: eurorack
-functions: [filter, delay, comb-filter, decimator, freeze]
-behavior_tags: [textural, lo-fi, cv-friendly, stereo, subtle, metallic]
+functions: [fx-spectral, fx-time, granular]
+behavior_tags: [evolving, lo-fi, clean, metallic]
 use_cases: [delay textures, comb filtering, bit crushing, spectral processing, freeze effects, beat repeat]
 hp: 12
 depth: 22

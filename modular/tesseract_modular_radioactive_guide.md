@@ -5,12 +5,12 @@ primary_role: SOURCE
 secondary_roles: [EVENT_VOICE]
 historical_context: true
 form_factor: eurorack
-functions: [oscillator, envelope, waveshaping, glide]
-behavior_tags: [lo-fi, raw, gritty, chiptune, experimental, wild, noisy]
+functions: [oscillator, envelope-generator, wavefolder]
+behavior_tags: [lo-fi, dirty, chiptune, chaotic, noisy]
 use_cases: [lo-fi voice, chiptune lead, self-contained synth voice, poly voice, experimental lead]
 hp: 6
 depth: 25mm
-memory: eeprom
+memory: basic
 transport: none
 screen: false
 hybrid: true

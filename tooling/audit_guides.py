@@ -49,7 +49,7 @@ VALID_FORM_FACTORS = {
 VALID_FUNCTIONS = {
     # Sources
     "oscillator", "complex-oscillator", "fm-oscillator", "noise-source",
-    "drum-voice", "sample-player", "granular", "physical-model", "string-instrument",
+    "drum-voice", "voice-engine", "looper", "sample-player", "granular", "physical-model", "string-instrument",
     # Shaping
     "filter", "wavefolder", "distortion", "resonator", "eq", "dynamics",
     "fx-time", "fx-modulation", "fx-pitch", "fx-spectral",
@@ -75,6 +75,7 @@ VALID_BEHAVIOR_TAGS = {
     # Sonic character
     "clean", "dirty", "warm", "harsh", "dark", "bright",
     "metallic", "noisy", "harmonic", "inharmonic",
+    "granular", "lo-fi", "chiptune",
     # Control character
     "linear", "nonlinear", "sensitive", "reactive", "performance-oriented",
     # Behavioral flags

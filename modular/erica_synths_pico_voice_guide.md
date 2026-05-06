@@ -4,8 +4,8 @@ manufacturer: Erica Synths
 primary_role: SOURCE
 secondary_roles: [SHAPER, AMPLIFIER]
 form_factor: eurorack
-functions: [oscillator, filter, envelope-generator, wavetable, karplus-strong]
-behavior_tags: [warm, stable, gated, performative]
+functions: [complex-oscillator, filter, envelope-generator]
+behavior_tags: [warm, stable, gated, performance-oriented]
 use_cases: [complete voice in small system, lead voice, bass voice, melodic sequencing]
 hp: 3
 memory: basic

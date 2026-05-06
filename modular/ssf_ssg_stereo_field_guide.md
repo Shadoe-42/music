@@ -24,7 +24,7 @@ cv: full
 
 ## Historical Context
 
-Don Buchla designed the first low-pass gate as part of the Buchla Series 200 modular system in the early 1970s. The 292 Quad Dynamics Manager used vactrols — optocouplers pairing an LED with a cadmium sulfide light-dependent resistor — to control a low-pass filter's cutoff frequency and a signal's amplitude through the same physical component simultaneously. The LDR's inherent response characteristics, particularly the slow release of its resistive element after the LED extinguishes, produced a decay profile that tracked the natural physics of acoustic instruments more closely than any standard voltage-controlled amplifier circuit could. When a marimba bar or guitar string loses energy, its brightness and loudness diminish together in a coupled, material curve; the vactrol made an electronic equivalent of this coupling available to synthesis for the first time. Buchla's Music Easel of 1973, a portable performance system built around the 208 Stored Program Sound Source, brought this LPG architecture to its most concentrated form and demonstrated that the pluck and bloom character of coupled filter-amplitude gating was musically irreplaceable for percussion, analog string simulation, and organic melodic lines.
+Don Buchla designed the first low-pass gate as part of the Buchla Series 200 modular system in the early 1970s. The 292 Quad Dynamics Manager used vactrols: optocouplers pairing an LED with a cadmium sulfide light-dependent resistor: to control a low-pass filter's cutoff frequency and a signal's amplitude through the same physical component simultaneously. The LDR's inherent response characteristics, particularly the slow release of its resistive element after the LED extinguishes, produced a decay profile that tracked the natural physics of acoustic instruments more closely than any standard voltage-controlled amplifier circuit could. When a marimba bar or guitar string loses energy, its brightness and loudness diminish together in a coupled, material curve; the vactrol made an electronic equivalent of this coupling available to synthesis for the first time. Buchla's Music Easel of 1973, a portable performance system built around the 208 Stored Program Sound Source, brought this LPG architecture to its most concentrated form and demonstrated that the pluck and bloom character of coupled filter-amplitude gating was musically irreplaceable for percussion, analog string simulation, and organic melodic lines.
 
 The sonic character of an LPG is inseparable from the physics of the coupling. In standard subtractive synthesis, an envelope generator opens and closes the filter and the VCA through two independent control voltage connections; the designer decides the contour of each separately. The LPG collapses this into a single gate input that opens both filter and amplitude together through one circuit element. The result is a characteristic pluck when a short trigger is applied: brightness and loudness peak simultaneously at the moment of contact and decay together at a rate partly determined by the LDR's material release time, which is a physical property rather than a purely electrical one. A short trigger lowers the intensity of this pluck rather than changing its shape, which produces a natural dynamic response to trigger level without requiring a separate velocity processing stage. This behavior is the origin of the term low-pass gate: the module is simultaneously a low-pass filter and an amplitude gate, and the distinction between those two functions disappears when they share the same control element.
 
@@ -36,7 +36,7 @@ Steady State Fate extended the LPG concept in two directions not present in the 
 
 ## Quick Start
 
-The Steady State Fate SSG Stereo Field is a stereo low-pass gate that couples dynamic filtering and amplitude control through a single gate or CV input, with three switchable timbre modes — wavefolder, saturator, and QAOS chaos injection — plus a voltage-controlled stereo field processor. It accepts mono or stereo sources and produces an envelope output for downstream CV use. Without any gate signal present, it operates as a static VCF with amplitude fully open.
+The Steady State Fate SSG Stereo Field is a stereo low-pass gate that couples dynamic filtering and amplitude control through a single gate or CV input, with three switchable timbre modes: wavefolder, saturator, and QAOS chaos injection: plus a voltage-controlled stereo field processor. It accepts mono or stereo sources and produces an envelope output for downstream CV use. Without any gate signal present, it operates as a static VCF with amplitude fully open.
 
 1. Patch a mono audio source into IN-L. Patch OUT-L into a mixer or audio destination.
 2. Patch a gate or trigger signal from a clock or sequencer into EXCITE.
@@ -207,7 +207,7 @@ SSG Stereo Field receiving two mono sources into left and right inputs, using FI
 
 ## Common Mistakes
 
-### "The module is not gating — audio passes through constantly even with nothing at the gate inputs"
+### "The module is not gating: audio passes through constantly even with nothing at the gate inputs"
 
 The SSG Stereo Field operates as a static VCF with amplitude fully open when nothing is patched to EXCITE or CV/GATE. This is correct behavior, not a malfunction. Without a gate signal present, the module is designed to pass signal continuously so it can be used as a filter without gating.
 
@@ -223,7 +223,7 @@ The FREQ slider must be set to at least 75% of its travel to allow the filter to
 
 ---
 
-### "Long gates produce the same attack shape as short triggers — I cannot get a slow fade-in"
+### "Long gates produce the same attack shape as short triggers: I cannot get a slow fade-in"
 
 EXCITE internally conditions any incoming gate or trigger into a short pluck regardless of the incoming signal's duration. It does not pass the gate's length; it extracts an attack transient from it. Long gates and short triggers produce the same attack shape through EXCITE, which is the intended behavior for that input.
 
@@ -239,7 +239,7 @@ Sufficiently negative CV applied to the TIMBRE input ducks the output level in F
 
 ---
 
-### "FIELD does not do anything audible when I turn it — the stereo image sounds the same"
+### "FIELD does not do anything audible when I turn it: the stereo image sounds the same"
 
 FIELD's behavior depends on whether IN-L and IN-R are both patched, which input carries which signal, and which NEAR/FAR mode is selected. With only one input patched and only one output used for mono operation, FIELD functions as a tone control rather than a stereo field processor, and its effect may be subtle at center positions.
 

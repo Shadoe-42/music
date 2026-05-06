@@ -3,33 +3,14 @@ title: "Endorphin.es New Godspeed"
 manufacturer: "Endorphin.es"
 primary_role: SOURCE
 secondary_roles: [SHAPER]
-historical_context: "Triangle core VCO lineage; thermal drift and the tempco problem; thru-zero FM from the Buchla tradition; wavefolder synthesis and west-coast timbre generation; Roland SH-101 single-oscillator plus sub architecture"
 form_factor: eurorack
-functions:
-  - triangle-core-vco
-  - thru-zero-linear-fm
-  - wavefolder
-  - harmonic-waveshaping
-  - sub-oscillator
-  - trs-midi
-behavior_tags:
-  - pitched
-  - harmonic-shaping
-  - fm-capable
-  - self-contained-fm
-  - chromatic-autotune
-  - dual-output-character
-use_cases:
-  - melodic-voice
-  - two-operator-fm
-  - west-coast-waveshaping
-  - dual-timbre-voice
-  - sub-bass
-  - noise-plus-tone-textures
+functions: [oscillator, wavefolder]
+behavior_tags: [stable, harmonic, self-modulating, bright]
+use_cases: [melodic voice with autotune stability, two-operator FM synthesis, west-coast waveshaping and folding, sub-reinforced mono bass voice]
 hp: 6
 depth: 30
-memory: true
-transport: midi
+memory: basic
+transport: receive
 screen: false
 hybrid: true
 cv: full
@@ -37,7 +18,7 @@ cv: full
 
 # Endorphin.es New Godspeed
 
-![Endorphin.es New Godspeed front panel](images/endorphines/new_godspeed/front_panel.jpg)
+![Endorphin.es New Godspeed front panel](https://github.com/Shadoe-42/music/raw/main/modular/images/endorphines/new_godspeed/front_panel.jpg)
 
 **A hybrid triangle-core VCO with instant chromatic autotune, thru-zero FM, a wavefolder, a harmonic waveshaper, and a sub oscillator. Two outputs with distinct tonal characters. Six HP.**
 
@@ -319,3 +300,13 @@ The EVEN/ODD output with sub normalled in, set two octaves below and OCTAVE swit
 **Forgetting to LOCK before using PITCH knob secondary functions.** Setting the sub octave (TUNE + FM INDEX) and setting the MIDI channel (TUNE + PITCH) both require holding TUNE while turning a knob. The PITCH knob secondary function shifts the MIDI channel but does not shift the pitch directly. However, if the PITCH knob is not LOCKED and the player inadvertently turns it while navigating secondary functions, the pitch offset will change. Engaging LOCK before accessing secondary functions prevents accidental pitch shifts.
 
 **Assuming autotune replaces 1V/OCT tracking calibration.** Autotune snaps the oscillator's current pitch to a reference note. It does not calibrate the 1V/OCT tracking response across the full range. If the 1V/OCT input tracks correctly at the bottom of its range but drifts out of tune at higher octaves (or vice versa), the module may need 1V/OCT tracking calibration, which is a separate procedure described in the Endorphin.es documentation. Autotune and tracking calibration solve different problems.
+
+## Pairs Well With
+
+**Endorphin.es Grand Terminal** is the most direct downstream companion to New Godspeed within the Endorphin.es design family. Grand Terminal's filter section accepts the SINE/FOLD or EVEN/ODD output and processes it through eight filter types, while the Airplane envelope generators provide amplitude and filter cutoff modulation in a single module. The two modules together form a complete voiced signal path: pitch and timbre from New Godspeed, shaping and dynamics from Grand Terminal. The Grand Terminal's Cabin Pressure effects section then adds reverb or delay to the filtered output without additional modules.
+
+**Tiptop Audio Forbidden Planet** provides a different filter character when Grand Terminal is not in the patch or when a second filter voice is needed. The Forbidden Planet is a voltage-controlled Steiner-Parker filter with a distinctive resonance behavior and a character that reads differently from Grand Terminal's vactrol and ladder options. Routing New Godspeed's EVEN/ODD output into the Forbidden Planet, with the FM INDEX CV modulating timbre while the Forbidden Planet's cutoff is separately modulated, gives a second distinct voice from the same oscillator without duplicating the Grand Terminal signal path.
+
+**Squarp Hermod+** provides the pitch sequencing and gate generation that New Godspeed's 1V/OCT input and autotune workflow require for melodic use. The Hermod+ outputs a paired CV and gate signal from the same sequence step, meaning note events and amplitude events are always in sync. After autotune has been engaged to set the oscillator's reference pitch, the Hermod+'s CV output tracks the sequence across the pitch range with the oscillator's 1V/OCT input. The Hermod+'s ability to send MIDI via its TRS output also allows the New Godspeed to receive pitch and trigger data over MIDI as an alternative to CV when TRS routing is more convenient.
+
+**Make Noise Wogglebug** supplies modulation for both of New Godspeed's primary CV inputs. The Wogglebug's Smooth random output connected to the INDEX CV input creates gradual, wandering FM depth variation; the Stepped random output at the TIMBRE CV input produces abrupt jumps between wavefolder positions, changing the harmonic character of the SINE/FOLD output with each step. The TIMBRE and INDEX knobs then act as attenuators to scale how much of each random signal reaches the oscillator, allowing the modulation depth to be dialed back from subtle movement to full-range variation depending on the patch context.

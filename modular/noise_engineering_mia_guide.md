@@ -129,7 +129,7 @@ Noise Engineering Manis Iteritas Alia in Skin mode, Bass range, configured as a 
 
 ### Patch 2: Bash Envelope as Timbral Gate
 
-MIA in Skin mode, Bass range, with Bash set negative so each trigger briefly cleans the sound before letting it return to a heavily Smashed resting state — inverting the typical transient-bright, tail-dark dynamic.
+MIA in Skin mode, Bass range, with Bash set negative so each trigger briefly cleans the sound before letting it return to a heavily Smashed resting state: inverting the typical transient-bright, tail-dark dynamic.
 
 ```
 [Hermod+ Gate Out] ──────────[G]──────▶ [MIA Trig In]
@@ -235,7 +235,7 @@ MIA in Liquid mode, Bass range, receiving V/oct pitch from Hermod+ for a sequenc
 
 ## Common Mistakes
 
-### "Smash sounds broken — it clicks and stutters at random"
+### "Smash sounds broken: it clicks and stutters at random"
 
 The modulus function that Smash applies resets the waveform to zero when it exceeds the Smash threshold; this produces discontinuities in the waveform at the reset points, which are audible as clicks, crackle, and aliasing artifacts. This is not a malfunction. The discontinuity is the intended mechanism: the MIA is designed for this territory. Smash is not a wavefolder. Wavefolders mirror the signal at the threshold, which is a continuous operation; Smash applies modulus, which truncates it, which produces discontinuities by design.
 
@@ -243,7 +243,7 @@ The modulus function that Smash applies resets the waveform to zero when it exce
 
 ---
 
-### "The 'Deep' jack is not doing anything — I expected Profundity CV"
+### "The 'Deep' jack is not doing anything: I expected Profundity CV"
 
 The Profundity CV input is labeled "Deep" on the front panel. The word "Profundity" does not appear on the panel itself; it appears only in the manual and in the parameter name. Patching into a jack labeled anything else while expecting Profundity CV modulation will have no effect.
 
@@ -259,7 +259,7 @@ Bash routes the internal AD envelope to Smash, Profundity, and LPF. If the Env k
 
 ---
 
-### "Free-running mode is confusing — the module just drones without stopping"
+### "Free-running mode is confusing: the module just drones without stopping"
 
 In free-running mode (Env fully clockwise), the oscillators do not decay and there is no internal amplitude control. The MIA produces audio at a constant amplitude determined by the synthesis parameters. Patching a trigger or gate into Trig resets the oscillator phase but does not reduce amplitude; the output continues at the same level before and after the trigger. This is not a malfunction. Free-running mode is intentionally a drone architecture.
 

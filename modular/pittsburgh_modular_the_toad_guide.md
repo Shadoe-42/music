@@ -5,8 +5,8 @@ primary_role: SHAPER
 secondary_roles: []
 historical_context: true
 form_factor: eurorack
-functions: [phaser, lfo-internal]
-behavior_tags: [spacious, swirling, lush, evolving, resonant, gummy, deep]
+functions: [fx-modulation, lfo]
+behavior_tags: [warm, evolving, harmonic, dark]
 use_cases: [phasing, spatial processing, sweeping modulation, self-oscillation, dual-output stereo processing]
 hp: 8
 depth: 35mm

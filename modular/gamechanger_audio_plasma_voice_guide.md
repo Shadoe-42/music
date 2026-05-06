@@ -5,18 +5,13 @@ primary_role: EVENT_VOICE
 secondary_roles: [SOURCE]
 historical_context: true
 form_factor: eurorack
-functions: [plasma-oscillator, sound-engine, digital-bank, cv-processor, filter, drive, midi]
-behavior_tags: [triggered, loopable, oscillator-capable, preset-based, cv-controlled, midi-capable, hybrid, high-voltage]
-use_cases:
-  - "Percussive and tonal sound design using 49 factory preset plasma sounds across 7 banks"
-  - "Melodic sequencing with 1V/octave pitch tracking across the xenon tube's usable range"
-  - "Continuous drone and texture work using OSCILLATE or LOOP trigger modes"
-  - "Live performance with CLUTCH buffering parameter changes until the moment of release"
-  - "Accent and dynamics control using ACCENT modes with separate trigger and accent inputs"
+functions: [voice-engine, oscillator, distortion]
+behavior_tags: [gated, evolving, harmonic, performance-oriented]
+use_cases: [percussive and tonal sound design, melodic sequencing with pitch CV, drone and texture via loop modes, live performance with CLUTCH buffering]
 hp: 16
 depth: 35mm
 memory: none
-transport: midi
+transport: receive
 screen: false
 hybrid: true
 cv: full
@@ -301,3 +296,13 @@ Reset the ramp and the sound returns to its normal character on the next cycle.
 **"The FLUX sounds like a malfunction."** At higher FLUX settings, the plasma discharge intentionally enters a less controlled regime. Pitch instability, irregular amplitude variation, and discharge artifacts are the designed output of high FLUX values, not symptoms of a damaged tube or faulty module. If the behavior is unwanted, reduce FLUX to minimum, which returns the discharge to its most controlled state. Reserve high FLUX for sounds and contexts where physical unpredictability is the goal.
 
 **"The xenon tube dimmed or stopped glowing."** Tube life is rated at approximately 10,000 hours. If the tube is near end of life, discharge intensity drops and the sound changes character. This is a consumable component, not a warranty-covered defect. Contact Gamechanger Audio for tube replacement options. Do not attempt to source a replacement tube without verifying the exact voltage and geometry specifications with the manufacturer.
+
+## Pairs Well With
+
+**ALM Busy Circuits Pamela's Pro Workout** is the preferred clock and trigger source for Plasma Voice in a rhythmic patch. Pamela's Pro Workout generates multiple synchronized gate outputs from a single clock, which means TRIG and ACCENT can come from different subdivisions or probability outputs on the same master tempo without a separate logic module. A high-probability gate to TRIG provides the main pulse; a lower-probability output to ACCENT adds irregular accent hits from the same rhythmic grid. The additional outputs from Pamela's Pro Workout can simultaneously drive other percussion modules in the system, keeping the entire rhythmic layer synchronized.
+
+**Endorphin.es Ghost** provides the stereo effects processing that Plasma Voice's raw discharge character benefits from most. Ghost's three-block architecture, with reverb, delay, and saturation available in configurable routing orders, accepts the Plasma Voice's mono output and returns a spatialized, treated stereo signal. Routing Ghost's saturation block early in the chain adds tube-like compression and harmonic weight to the plasma discharge before the spatial effects; routing it last preserves the reverb tail and adds saturation only to the direct signal. The result is a percussion or melodic voice that occupies a defined stereo space rather than sitting as a dry transient in the center of the mix.
+
+**Mutable Instruments Marbles** extends the stochastic dimension of Plasma Voice's accent and trigger behavior. Marbles' T outputs generate probabilistic gates at set rates, making it possible to drive TRIG from one T output and ACCENT from a second T output set to lower probability. The result is accent events that are musically timed but not fully predictable, which suits the Plasma Voice's physical character well: the discharge itself is variable, and accent behavior that is equally variable reinforces rather than contradicts that quality. Marbles' X outputs provide slow random CV suitable for driving the MULTICV input assigned to any of the six slider parameters.
+
+**Endorphin.es Grand Terminal** downstream of Plasma Voice applies filtering and envelope-gated effects to the plasma discharge in a way that transforms the broadband character of the xenon tube output into a more tonally focused sound. Routing the Plasma Voice output into Grand Terminal's audio input and applying one of the darker filter types, with an Airplane envelope triggered from the same gate source as the Plasma Voice, creates a filtered percussion voice where the filter opening tracks the note attack. The Grand Terminal's Cabin Pressure reverb or delay then adds spatial depth. The combination uses three modules, one trigger source, and produces a fully developed percussion voice with integrated spatial processing.
