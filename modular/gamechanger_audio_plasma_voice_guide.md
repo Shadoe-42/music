@@ -22,7 +22,7 @@ hybrid: true
 cv: full
 ---
 
-![Gamechanger Audio Plasma Voice front panel](../images/gamechanger_audio/plasma_voice/front_panel.jpg)
+![Gamechanger Audio Plasma Voice front panel](https://github.com/Shadoe-42/music/raw/main/modular/images/gamechanger_audio/plasma_voice/front_panel.jpg)
 
 ## Historical Context
 
