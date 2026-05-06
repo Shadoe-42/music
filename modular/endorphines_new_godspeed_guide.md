@@ -301,6 +301,21 @@ The EVEN/ODD output with sub normalled in, set two octaves below and OCTAVE swit
 
 **Assuming autotune replaces 1V/OCT tracking calibration.** Autotune snaps the oscillator's current pitch to a reference note. It does not calibrate the 1V/OCT tracking response across the full range. If the 1V/OCT input tracks correctly at the bottom of its range but drifts out of tune at higher octaves (or vice versa), the module may need 1V/OCT tracking calibration, which is a separate procedure described in the Endorphin.es documentation. Autotune and tracking calibration solve different problems.
 
+
+## Advanced Learning Path
+
+1. Begin with autotune as the only pitch reference before introducing the 1V/OCT input. Power up, engage TUNE, and let the oscillator lock to its reference pitch. Then use the PITCH knob to step through semitone offsets manually. The goal is to understand that the autotune reference is a calibration anchor, not a live pitch control. Once the distinction between autotune, PITCH semitone offset, and 1V/OCT tracking is clear as three separate layers of pitch control, use them in combination becomes intentional.
+
+2. Explore the SINE/FOLD and EVEN/ODD outputs as two simultaneous perspectives on the same oscillator state. Patch both into a mixer and listen to them separately before combining. SINE/FOLD is the direct waveshaping path: the folded version of the core waveform. EVEN/ODD is a processed derivative that emphasizes different harmonic content depending on the TIMBRE position. With TIMBRE at minimum, compare how the two outputs sound at identical TIMBRE levels. This is the foundational listening exercise for understanding why the module produces two distinct signals rather than one.
+
+3. Study FM INDEX in two-operator FM before using it for sound design. Start with a simple patch: New Godspeed as carrier, a second oscillator in the same octave as modulator into FM IN. Set INDEX to minimum and slowly increase while listening. Note the point at which the timbre changes from smooth to complex to broken. Then repeat with the modulator at different intervals relative to the carrier: unison, a fifth, an octave, a minor second. The harmonic relationship between carrier and modulator is the primary variable in FM sound design, not the index value alone.
+
+4. Learn the sub oscillator's normalling behavior before routing it externally. Leave the SUB jack unpatched and listen to the EVEN/ODD output with sub included. Then patch a cable into SUB, route it to a mixer, and compare how the EVEN/ODD output changes when the sub is extracted. The sub is not duplicated; it moves. This is a one-patch learning moment that makes all future sub-routing decisions conscious rather than accidental.
+
+5. Practice locking LOCK before any secondary function access during a live patch. Secondary functions that use the PITCH and FM INDEX knobs are pitch-neutral in intent, but the knobs are live pitch and FM controls. Any accidental movement while holding TUNE shifts the pitch or FM depth of a running patch. Build the habit of engaging LOCK before any navigation of secondary parameters. The cost of forgetting it is audible immediately.
+
+6. Build a patch using only the New Godspeed and a VCA: oscillator to VCA to output, with a gate source controlling the VCA and the EVEN/ODD output as the audio signal. Work through every combination of TIMBRE position, OCTAVE switch, and PITCH semitone setting. The constraint of a single oscillator with a single output and a gate forces a complete understanding of what the New Godspeed contributes tonally before external processing is introduced.
+
 ## Pairs Well With
 
 **Endorphin.es Grand Terminal** is the most direct downstream companion to New Godspeed within the Endorphin.es design family. Grand Terminal's filter section accepts the SINE/FOLD or EVEN/ODD output and processes it through eight filter types, while the Airplane envelope generators provide amplitude and filter cutoff modulation in a single module. The two modules together form a complete voiced signal path: pitch and timbre from New Godspeed, shaping and dynamics from Grand Terminal. The Grand Terminal's Cabin Pressure effects section then adds reverb or delay to the filtered output without additional modules.

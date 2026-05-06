@@ -2,11 +2,11 @@
   "generated": "2026-05-06",
   "summary": {
     "total_guides": 93,
-    "guides_with_issues": 13,
-    "guides_clean": 80,
-    "total_issues": 25,
+    "guides_with_issues": 10,
+    "guides_clean": 83,
+    "total_issues": 18,
     "error_count": 4,
-    "warning_count": 21,
+    "warning_count": 14,
     "deferred_count": 0
   },
   "guides": {
@@ -266,19 +266,12 @@
       "issues": []
     },
     "endorphines_grand_terminal_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_alp",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Advanced Learning Path` section"
-        }
-      ]
+      "issues": []
     },
     "endorphines_ground_control_guide.md": {
       "clean": true,
@@ -289,19 +282,12 @@
       "issues": []
     },
     "endorphines_new_godspeed_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_alp",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Advanced Learning Path` section"
-        }
-      ]
+      "issues": []
     },
     "endorphines_queen_of_pentacles_guide.md": {
       "clean": true,
@@ -400,19 +386,12 @@
       "issues": []
     },
     "gamechanger_audio_plasma_voice_guide.md": {
-      "clean": false,
-      "issue_count": 1,
+      "clean": true,
+      "issue_count": 0,
       "error_count": 0,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
-      "issues": [
-        {
-          "check_id": "section_alp",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Advanced Learning Path` section"
-        }
-      ]
+      "issues": []
     },
     "instruo_arbhar_guide.md": {
       "clean": false,
@@ -567,9 +546,9 @@
     },
     "patching_panda_etna_guide.md": {
       "clean": false,
-      "issue_count": 2,
+      "issue_count": 1,
       "error_count": 1,
-      "warning_count": 1,
+      "warning_count": 0,
       "deferred_count": 0,
       "issues": [
         {
@@ -577,12 +556,6 @@
           "category": "Missing or Misplaced Sections",
           "severity": "error",
           "detail": "Missing `## Why [Module] Excels` section (no 'Why' heading found)"
-        },
-        {
-          "check_id": "section_alp",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Advanced Learning Path` section"
         }
       ]
     },
@@ -604,9 +577,9 @@
     },
     "pittsburgh_modular_local_parks_guide.md": {
       "clean": false,
-      "issue_count": 3,
+      "issue_count": 2,
       "error_count": 1,
-      "warning_count": 2,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
         {
@@ -620,20 +593,14 @@
           "category": "YAML Frontmatter",
           "severity": "warning",
           "detail": "`use_cases` has 5 items; maximum is 4"
-        },
-        {
-          "check_id": "section_alp",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Advanced Learning Path` section"
         }
       ]
     },
     "pittsburgh_modular_the_toad_guide.md": {
       "clean": false,
-      "issue_count": 5,
+      "issue_count": 4,
       "error_count": 1,
-      "warning_count": 4,
+      "warning_count": 3,
       "deferred_count": 0,
       "issues": [
         {
@@ -659,12 +626,6 @@
           "category": "YAML Frontmatter",
           "severity": "warning",
           "detail": "`use_cases` item too short (1 word): \"self-oscillation\""
-        },
-        {
-          "check_id": "section_alp",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Advanced Learning Path` section"
         }
       ]
     },
@@ -816,9 +777,9 @@
     },
     "tesseract_modular_radioactive_guide.md": {
       "clean": false,
-      "issue_count": 3,
+      "issue_count": 2,
       "error_count": 1,
-      "warning_count": 2,
+      "warning_count": 1,
       "deferred_count": 0,
       "issues": [
         {
@@ -832,12 +793,6 @@
           "category": "YAML Frontmatter",
           "severity": "warning",
           "detail": "`use_cases` has 5 items; maximum is 4"
-        },
-        {
-          "check_id": "section_alp",
-          "category": "Missing or Misplaced Sections",
-          "severity": "warning",
-          "detail": "Missing `## Advanced Learning Path` section"
         }
       ]
     },
@@ -979,57 +934,6 @@
         "category": "YAML Frontmatter",
         "severity": "warning",
         "detail": "`use_cases` has 5 items; maximum is 4"
-      }
-    ],
-    "section_alp": [
-      {
-        "file": "endorphines_grand_terminal_guide.md",
-        "check_id": "section_alp",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Advanced Learning Path` section"
-      },
-      {
-        "file": "endorphines_new_godspeed_guide.md",
-        "check_id": "section_alp",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Advanced Learning Path` section"
-      },
-      {
-        "file": "gamechanger_audio_plasma_voice_guide.md",
-        "check_id": "section_alp",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Advanced Learning Path` section"
-      },
-      {
-        "file": "patching_panda_etna_guide.md",
-        "check_id": "section_alp",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Advanced Learning Path` section"
-      },
-      {
-        "file": "pittsburgh_modular_local_parks_guide.md",
-        "check_id": "section_alp",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Advanced Learning Path` section"
-      },
-      {
-        "file": "pittsburgh_modular_the_toad_guide.md",
-        "check_id": "section_alp",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Advanced Learning Path` section"
-      },
-      {
-        "file": "tesseract_modular_radioactive_guide.md",
-        "check_id": "section_alp",
-        "category": "Missing or Misplaced Sections",
-        "severity": "warning",
-        "detail": "Missing `## Advanced Learning Path` section"
       }
     ],
     "section_why_excels": [

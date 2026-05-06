@@ -195,7 +195,7 @@ The snapshot sequencer advances on each clock, morphing all three filter states 
 
 ---
 
-## Advanced Listening and Performance
+## Advanced Learning Path
 
 **EDIT ALL as a live performance tool.** While the sequencer is running, holding EDIT ALL and moving a slider writes that slider's new position to every snapshot simultaneously. This allows mid-performance global adjustment: raising Q across all snapshots, pulling back a filter's overall frequency range, or lowering one voice's amplitude in the mix without disrupting the relative differences between snapshots. It is a way to reshape the entire sequence's character without stopping playback.
 

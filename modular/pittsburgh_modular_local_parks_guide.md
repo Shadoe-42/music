@@ -185,7 +185,7 @@ With Blade CV and PW CV patched from external sources, those two inputs are remo
 
 ---
 
-## Advanced Listening and Performance
+## Advanced Learning Path
 
 **Blade as a transposing voice in a chord patch.** With a chord source or multiple oscillators providing the root pitch, the Blade output adds a voice that sits one octave above when the Blade knob is at minimum and returns to the root register as the knob advances. In a chord context, this produces an octave doubling at one extreme and a unison voice with different timbre at the other. A slow LFO or envelope into Blade CV sweeps the blade voice between those two states during a sustained chord, creating movement within a held harmonic structure.
 

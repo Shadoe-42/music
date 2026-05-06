@@ -9,11 +9,11 @@ Generated: 2026-05-06
 | Metric | Count |
 |--------|-------|
 | Guides scanned | 93 |
-| Guides with issues | 13 |
-| Guides clean | 80 |
-| Total issues | 25 |
+| Guides with issues | 10 |
+| Guides clean | 83 |
+| Total issues | 18 |
 | ❌ Errors (fix now) | 4 |
-| ⚠️  Warnings (fix when touching) | 21 |
+| ⚠️  Warnings (fix when touching) | 14 |
 | 📌 Deferred (tracked, low priority) | 0 |
 
 ---
@@ -43,13 +43,6 @@ Generated: 2026-05-06
 | `pittsburgh_modular_local_parks_guide.md` | — | ❌ error | Missing `## Why [Module] Excels` section (no 'Why' heading found) |
 | `pittsburgh_modular_the_toad_guide.md` | — | ❌ error | Missing `## Why [Module] Excels` section (no 'Why' heading found) |
 | `tesseract_modular_radioactive_guide.md` | — | ❌ error | Missing `## Why [Module] Excels` section (no 'Why' heading found) |
-| `endorphines_grand_terminal_guide.md` | — | ⚠️  warning | Missing `## Advanced Learning Path` section |
-| `endorphines_new_godspeed_guide.md` | — | ⚠️  warning | Missing `## Advanced Learning Path` section |
-| `gamechanger_audio_plasma_voice_guide.md` | — | ⚠️  warning | Missing `## Advanced Learning Path` section |
-| `patching_panda_etna_guide.md` | — | ⚠️  warning | Missing `## Advanced Learning Path` section |
-| `pittsburgh_modular_local_parks_guide.md` | — | ⚠️  warning | Missing `## Advanced Learning Path` section |
-| `pittsburgh_modular_the_toad_guide.md` | — | ⚠️  warning | Missing `## Advanced Learning Path` section |
-| `tesseract_modular_radioactive_guide.md` | — | ⚠️  warning | Missing `## Advanced Learning Path` section |
 
 ### Format Issues
 
@@ -67,33 +60,21 @@ Generated: 2026-05-06
 **`cre8audio_function_junction_guide.md`** — 1 warning
   - ⚠️ `yaml_use_cases_count` — `use_cases` has 5 items; maximum is 4
 
-**`endorphines_grand_terminal_guide.md`** — 1 warning
-  - ⚠️ `section_alp` — Missing `## Advanced Learning Path` section
-
-**`endorphines_new_godspeed_guide.md`** — 1 warning
-  - ⚠️ `section_alp` — Missing `## Advanced Learning Path` section
-
-**`gamechanger_audio_plasma_voice_guide.md`** — 1 warning
-  - ⚠️ `section_alp` — Missing `## Advanced Learning Path` section
-
 **`instruo_arbhar_guide.md`** — 1 warning
   - ⚠️ `yaml_use_cases_count` — `use_cases` has 5 items; maximum is 4
 
-**`patching_panda_etna_guide.md`** — 1 error, 1 warning
+**`patching_panda_etna_guide.md`** — 1 error
   - ❌ `section_why_excels` — Missing `## Why [Module] Excels` section (no 'Why' heading found)
-  - ⚠️ `section_alp` — Missing `## Advanced Learning Path` section
 
-**`pittsburgh_modular_local_parks_guide.md`** — 1 error, 2 warnings
+**`pittsburgh_modular_local_parks_guide.md`** — 1 error, 1 warning
   - ❌ `section_why_excels` — Missing `## Why [Module] Excels` section (no 'Why' heading found)
   - ⚠️ `yaml_use_cases_count` — `use_cases` has 5 items; maximum is 4
-  - ⚠️ `section_alp` — Missing `## Advanced Learning Path` section
 
-**`pittsburgh_modular_the_toad_guide.md`** — 1 error, 4 warnings
+**`pittsburgh_modular_the_toad_guide.md`** — 1 error, 3 warnings
   - ❌ `section_why_excels` — Missing `## Why [Module] Excels` section (no 'Why' heading found)
   - ⚠️ `yaml_use_cases_count` — `use_cases` has 5 items; maximum is 4
   - ⚠️ `yaml_use_cases_too_short` — `use_cases` item too short (1 word): "phasing"
   - ⚠️ `yaml_use_cases_too_short` — `use_cases` item too short (1 word): "self-oscillation"
-  - ⚠️ `section_alp` — Missing `## Advanced Learning Path` section
 
 **`qubit_aurora_guide.md`** — 1 warning
   - ⚠️ `color_labels` — Old color label: "7. FFT size defaults to 4096 (blue Reverse LED). To change it, hold Shift and press Revers" *(line 46)*
@@ -110,14 +91,13 @@ Generated: 2026-05-06
   - ⚠️ `yaml_use_cases_count` — `use_cases` has 5 items; maximum is 4
   - ⚠️ `color_labels` — Old color label: "**Effect Mode button** cycles through four effect modes, each assigning a different pair o" *(line 84)*
 
-**`tesseract_modular_radioactive_guide.md`** — 1 error, 2 warnings
+**`tesseract_modular_radioactive_guide.md`** — 1 error, 1 warning
   - ❌ `section_why_excels` — Missing `## Why [Module] Excels` section (no 'Why' heading found)
   - ⚠️ `yaml_use_cases_count` — `use_cases` has 5 items; maximum is 4
-  - ⚠️ `section_alp` — Missing `## Advanced Learning Path` section
 
 ---
 
-## Clean Guides (80)
+## Clean Guides (83)
 
 No issues detected:
 
@@ -151,7 +131,9 @@ No issues detected:
 - `endorphines_blck_noir_guide.md`
 - `endorphines_furthrrrr_generator_guide.md`
 - `endorphines_ghost_guide.md`
+- `endorphines_grand_terminal_guide.md`
 - `endorphines_ground_control_guide.md`
+- `endorphines_new_godspeed_guide.md`
 - `endorphines_queen_of_pentacles_guide.md`
 - `endorphines_squawk_dirty_to_me_guide.md`
 - `erica_synths_black_envelope_generator_2_guide.md`
@@ -164,6 +146,7 @@ No issues detected:
 - `erica_synths_pico_voice_guide.md`
 - `expert_sleepers_disting_mk4_guide.md`
 - `frap_tools_411_guide.md`
+- `gamechanger_audio_plasma_voice_guide.md`
 - `instruo_csl_guide.md`
 - `intellijel_mixup_guide.md`
 - `intellijel_stomp_guide.md`

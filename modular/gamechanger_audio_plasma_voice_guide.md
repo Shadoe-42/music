@@ -297,6 +297,21 @@ Reset the ramp and the sound returns to its normal character on the next cycle.
 
 **"The xenon tube dimmed or stopped glowing."** Tube life is rated at approximately 10,000 hours. If the tube is near end of life, discharge intensity drops and the sound changes character. This is a consumable component, not a warranty-covered defect. Contact Gamechanger Audio for tube replacement options. Do not attempt to source a replacement tube without verifying the exact voltage and geometry specifications with the manufacturer.
 
+
+## Advanced Learning Path
+
+1. Work through the six banks systematically before attempting sound design across banks. Begin with Bank A (METAL) and advance through all four sounds using manual triggers. Listen for where each sound sits spectrally and dynamically before touching any slider. The same slider position produces different results in different sounds because the underlying plasma discharge character varies per preset. Knowing each sound's baseline character is a prerequisite for intentional slider adjustment.
+
+2. Learn CLUTCH before performing with the Plasma Voice. In a practice context, load a sound, make deliberate slider adjustments while holding CLUTCH, then release it at a chosen moment. Do this ten times, with different sounds and different slider combinations, before attempting it in a live set. CLUTCH is a performance control that requires muscle memory, not a feature to discover under pressure.
+
+3. Study the MULTICV input's assignment menu as a dedicated session before using it in a patch. Power up, enter the MULTICV settings menu, and systematically assign each of the available parameters to MULTICV while running a sustained sound. Listen to what voltage control of each parameter sounds like at low, medium, and high CV levels. MULTICV assignment is the primary way external modulation enters the Plasma Voice's parameter set; understanding the full range of options makes patching decisions deliberate.
+
+4. Explore STARVE deliberately as a timbral resource rather than treating it as an error state. Apply a slowly rising voltage to the ACCENT input in a patch where STARVE mode is active. Listen through the full degradation arc: from clean discharge to inconsistent firing to voltage-starved crackle. Note the point at which the sound becomes musically useful versus unstable. This arc is the module's most distinctive sonic territory and only becomes controllable through repeated direct experience.
+
+5. Compare TRIGGER and GATE modes on the same sound before building rhythmic patches. Trigger mode fires a single event per clock; Gate mode sustains the discharge for the duration of the gate signal. With a long gate, the discharge sustains and evolves over the hold period. With a short gate, the two modes are nearly identical. The distinction matters most with slow sequences or sustained performance gestures. Knowing the audible difference between the two modes prevents incorrect trigger mode selection in a patch.
+
+6. Build a patch using only the Plasma Voice, a single gate source, and a downstream reverb. No CV modulation, no accent, no complex routing. Let the plasma discharge speak in isolation with spatial depth added by the reverb. Listen for the discharge's natural variation, the physical irregularity of the xenon tube, and the character of each bank before introducing any dynamic control. This constraint makes the module's intrinsic sonic identity clear before external modulation begins layering over it.
+
 ## Pairs Well With
 
 **ALM Busy Circuits Pamela's Pro Workout** is the preferred clock and trigger source for Plasma Voice in a rhythmic patch. Pamela's Pro Workout generates multiple synchronized gate outputs from a single clock, which means TRIG and ACCENT can come from different subdivisions or probability outputs on the same master tempo without a separate logic module. A high-probability gate to TRIG provides the main pulse; a lower-probability output to ACCENT adds irregular accent hits from the same rhythmic grid. The additional outputs from Pamela's Pro Workout can simultaneously drive other percussion modules in the system, keeping the entire rhythmic layer synchronized.

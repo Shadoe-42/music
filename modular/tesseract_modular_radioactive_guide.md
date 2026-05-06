@@ -212,7 +212,7 @@ Release: fully clockwise (gate held high permanently)
 
 ---
 
-## Advanced Listening and Performance
+## Advanced Learning Path
 
 **Shaper CV for timbral envelope shaping.** Patching an envelope into jack 8 (Shaper amount CV) makes the shaper respond to each triggered event with its own contour. With Mode 5 active and a fast-attack, slow-release envelope driving jack 8, each note begins at maximum shaper distortion and decays back to the clean waveform over the release time. This is a timbral envelope operating in parallel with the amplitude envelope: the note starts harsh and becomes cleaner, or the reverse if the envelope is inverted through an attenuverter before reaching jack 8.
 

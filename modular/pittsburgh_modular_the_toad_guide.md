@@ -167,7 +167,7 @@ Mod Depth: low-to-medium (sweeps oscillation pitch at LFO rate)
 
 ---
 
-## Advanced Listening and Performance
+## Advanced Learning Path
 
 **Envelope as sweep source.** With Mod Depth at zero (LFO off) and an envelope generator patched into Shift CV, the Toad's notch comb sweeps through the frequency spectrum once per triggered event rather than continuously. The envelope shape determines the sweep contour: a fast attack pushes the notches upward quickly; a slow decay pulls them back down. Each note trigger creates a phased sweep event rather than a continuous cycle. This is a fundamentally different use of the phaser from LFO modulation and produces a more rhythmically intentional effect.
 
