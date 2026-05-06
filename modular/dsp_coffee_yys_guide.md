@@ -21,7 +21,7 @@ hybrid: false
 cv: none
 ---
 
-![DSP Coffee YYS front panel](../images/dsp_coffee/yys/front_panel.jpg)
+![DSP Coffee YYS front panel](images/dsp_coffee/yys/front_panel.jpg)
 
 ## Historical Context
 

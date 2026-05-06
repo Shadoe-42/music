@@ -22,7 +22,7 @@ hybrid: true
 cv: full
 ---
 
-![Endorphin.es Grand Terminal front panel](../images/endorphines/grand_terminal/front_panel.jpg)
+![Endorphin.es Grand Terminal front panel](images/endorphines/grand_terminal/front_panel.jpg)
 
 ## Historical Context
 

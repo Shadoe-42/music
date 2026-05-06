@@ -21,7 +21,7 @@ hybrid: false
 cv: basic
 ---
 
-![Tesseract Modular Selam front panel](../images/tesseract_modular/selam/front_panel.jpg)
+![Tesseract Modular Selam front panel](images/tesseract_modular/selam/front_panel.jpg)
 
 ## Historical Context
 

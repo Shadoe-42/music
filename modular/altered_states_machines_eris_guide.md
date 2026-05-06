@@ -21,7 +21,7 @@ hybrid: false
 cv: none
 ---
 
-![Altered States Machines Eris front panel](../images/altered_states_machines/eris/front_panel.jpg)
+![Altered States Machines Eris front panel](images/altered_states_machines/eris/front_panel.jpg)
 
 ## Historical Context
 
