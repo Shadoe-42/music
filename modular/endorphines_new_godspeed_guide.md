@@ -14,6 +14,7 @@ transport: receive
 screen: false
 hybrid: true
 cv: full
+patch_format: v1
 ---
 
 # Endorphin.es New Godspeed
@@ -209,82 +210,207 @@ The discrete semitone pitch knob turns the pitch offset function into a musical 
 
 ### 1. Self-FM Bell Voice
 
+The internal sine normalled to the FM input turns New Godspeed into a self-contained two-operator FM voice; FM INDEX depth alone determines how far the timbre moves from clean sine to metallic complexity.
+
+**First Voice**
+
+Before exploring FM depth, establish a working voice:
+
 ```
-[New Godspeed]
-
-No patch to FM IN (internal sine normalled as modulator)
-FM INDEX: 9 o'clock to noon (moderate depth)
-TIMBRE: 10 o'clock on SINE/FOLD
-
-SINE/FOLD [A] → [VCA signal input]
-[Envelope GATE output] [G] → [VCA CV input]
-
-[Sequencer pitch] [C] → [New Godspeed 1V/OCT]
-[Sequencer gate] [G] → [Envelope gate input]
+  Sequencer CV out ──[C]──▶ New Godspeed 1V/OCT
+  Sequencer gate out ──[G]──▶ EG gate in
+  EG out ──[C]──▶ VCA CV in
+  New Godspeed SINE/FOLD out ──[A]──▶ VCA audio in ──▶ Mixer
 ```
 
-No external FM modulator needed. The internal sine self-modulates the triangle core. The SINE/FOLD output with moderate TIMBRE adds bell-like wavefolder character on top of the FM texture. The result is a percussive pitched voice with metallic overtones: piano-adjacent at low INDEX, more clanging and complex at higher settings. Adjust FM INDEX to taste. Longer envelope release times reveal the full decay of the FM spectrum.
+Verify pitch tracks correctly across the sequence before proceeding.
+
+**Set FM depth**
+
+Nothing needs to be patched into FM IN. The module normalls its own internal sine wave to the FM input when the jack is empty. Turn FM INDEX to the 9 o'clock position to begin.
+
+```
+                    ┌───────────────────────────────┐
+Sequencer ──[C]──▶  │ 1V/OCT        SINE/FOLD OUT   │──[A]──▶ VCA ──▶ Mixer
+Sequencer ──[G]──▶  │               (FM IN:         │
+EG ──[C]──▶         │                normalled      │
+                    │                internal sine) │
+                    └───────────────────────────────┘
+                               New Godspeed
+```
+
+- `Sequencer ──[C]──▶ 1V/OCT`: pitch sequence drives the carrier frequency; the internal sine modulator tracks it automatically because both belong to the same oscillator, keeping the FM ratio stable across notes.
+- `Sequencer ──[G]──▶ EG ──[C]──▶ VCA`: gate triggers the envelope, which shapes amplitude; the FM texture is present for the full duration of the note, not just the attack.
+- `SINE/FOLD OUT ──[A]──▶ VCA`: TIMBRE at 10 o'clock adds bell-like wavefolder character on top of the FM texture without over-folding into noise.
+
+**Move the cable**
+
+Mult the EG output and patch one copy into INDEX CV alongside the existing VCA CV connection. Use a mult such as Erica Synths Pico MScale (or any passive mult).
+
+```
+                    ┌───────────────────────────────┐
+Sequencer ──[C]──▶  │ 1V/OCT        SINE/FOLD OUT   │──[A]──▶ VCA ──▶ Mixer
+Sequencer ──[G]──▶  │               (FM IN:         │
+EG ──[C]──▶ VCA CV  │                normalled      │
+EG ──[C]──▶         │ INDEX CV       internal sine) │
+                    └───────────────────────────────┘
+                               New Godspeed
+```
+
+What changed: FM depth now follows the amplitude envelope. The timbre is brightest at the attack transient and simplifies toward the tail as the envelope falls. The same EG shapes both the volume arc and the timbral arc of each note.
+
+**What to listen for**
+
+At 9 o'clock FM INDEX, the output should have a bell-like metallic quality with a defined attack and decay. Turning INDEX higher will increase harmonic complexity and eventually produce inharmonic clanging. If the pitch sounds unstable or has an uneven wobble, engage TUNE and verify the oscillator is locked to its reference pitch before adjusting INDEX further.
 
 ---
 
 ### 2. Dual Timbre Chord Voice
 
+The two outputs respond to the same TIMBRE knob but emphasize different harmonic content; routing them to separate processing chains produces two distinct timbres from a single pitch source and a single sequencer cable.
+
+**First Voice**
+
+Before splitting the outputs, establish a working voice using EVEN/ODD:
+
 ```
-[New Godspeed]
-
-TIMBRE: 7 o'clock (minimum, SINE/FOLD = pure sine)
-EVEN/ODD TIMBRE: inherits same TIMBRE knob
-
-SINE/FOLD [A] → [Filter 1 input]
-EVEN/ODD [A] → [Filter 2 input]
-
-[Sequencer pitch] [C] → [New Godspeed 1V/OCT]
+  Sequencer CV out ──[C]──▶ New Godspeed 1V/OCT
+  Sequencer gate out ──[G]──▶ EG gate in
+  EG out ──[C]──▶ VCA CV in
+  New Godspeed EVEN/ODD out ──[A]──▶ VCA audio in ──▶ Mixer
 ```
 
-Both outputs carry the same pitch. SINE/FOLD with TIMBRE at minimum is a clean sine: good for a sub-heavy root voice, for a high harmonic partial in a stack, or for feeding into a pitch-shifted effect. EVEN/ODD with the sub normalled in is warm and full: good for a mid-range mono voice. Running them through separate filters or effects processes creates two distinct timbres from one oscillator and one patch cable from the sequencer.
+EVEN/ODD with the sub normalled in produces a full, warm tone. Verify it before adding the second output.
+
+**Add the second output**
+
+```
+                    ┌───────────────────────────────────────┐
+Sequencer ──[C]──▶  │ 1V/OCT        SINE/FOLD OUT           │──[A]──▶ Filter 1 ──▶ Mixer ch.1
+                    │               EVEN/ODD OUT            │──[A]──▶ Filter 2 ──▶ Mixer ch.2
+                    └───────────────────────────────────────┘
+                                   New Godspeed
+```
+
+Use a filter such as Endorphin.es Grand Terminal (or Tiptop Audio Forbidden Planet) for each path.
+
+- `SINE/FOLD OUT ──[A]──▶ Filter 1`: SINE/FOLD at low TIMBRE is a clean sine, the smoothest signal the module produces; it accepts filter resonance and envelope modulation without added harmonic clutter from the source.
+- `EVEN/ODD OUT ──[A]──▶ Filter 2`: EVEN/ODD with sub normalled in is warm, full, and harmonically denser; the same filter settings on this output will produce a noticeably different tonal result from the identical TIMBRE position.
+
+**What to listen for**
+
+With TIMBRE at minimum, SINE/FOLD should be clean and round while EVEN/ODD is warmer and fuller from the sub mix. Move TIMBRE slowly clockwise: SINE/FOLD will begin to fold and brighten while EVEN/ODD shifts from even harmonics toward hollow odd harmonics. Both timbres change simultaneously from the same knob but produce different results. If the two outputs sound nearly identical, verify the SUB jack is unpatched so the sub remains normalled into EVEN/ODD.
 
 ---
 
 ### 3. External FM Carrier
 
+Routing an external oscillator into the FM input creates a two-operator FM voice where the frequency relationship between carrier and modulator determines the harmonic series, not just the index depth.
+
+**First Voice**
+
+Before introducing the modulator, establish a working voice:
+
 ```
-[LFO or second VCO audio output] [A] → [New Godspeed FM IN]
-FM INDEX: to taste (with CV patched, FM INDEX is now an attenuator)
-INDEX CV: unpatched (module ignores INDEX CV when FM IN is patched externally)
-
-SINE/FOLD [A] → [VCA signal input]
-
-[Sequencer pitch] [C] → [New Godspeed 1V/OCT]
+  Sequencer CV out ──[C]──▶ New Godspeed 1V/OCT
+  Sequencer gate out ──[G]──▶ EG gate in
+  EG out ──[C]──▶ VCA CV in
+  New Godspeed SINE/FOLD out ──[A]──▶ VCA audio in ──▶ Mixer
 ```
 
-Patching an external audio-rate signal into FM IN breaks the internal sine normal. The external source becomes the modulator. A second VCO tuned to a harmonic ratio relative to the New Godspeed produces classic two-operator FM textures. A non-harmonic ratio produces inharmonic, bell or metallic tones. The FM INDEX knob attenuates the incoming INDEX CV if one is patched, or serves as the direct depth control if only FM IN is patched.
+Verify pitch tracks correctly. The carrier should be producing a clean pitched tone before the modulator is introduced.
 
-Note: the INDEX CV jack remains independent of the FM IN jack. Patching FM IN does not affect how INDEX CV behaves.
+**Add the FM modulator**
+
+```
+                         ┌──────────────────────────────────────┐
+Sequencer ──[C]──▶       │ 1V/OCT              SINE/FOLD OUT    │──[A]──▶ VCA ──▶ Mixer
+FM source ──[A]──▶       │ FM IN                                │
+LFO ──[C, medium]──▶     │ INDEX CV                             │
+                         └──────────────────────────────────────┘
+                                       New Godspeed
+```
+
+Use a VCO such as Endorphin.es Local Parks (or Pittsburgh Modular Furthrrrr Generator) as the FM source. Set the FM source to a harmonic interval relative to New Godspeed: an octave above, a fifth above, or in unison as a starting point.
+
+- `FM source ──[A]──▶ FM IN`: patching into FM IN breaks the internal sine normal; the external oscillator becomes the modulator, and its frequency relationship to New Godspeed determines the harmonic content of the output.
+- `LFO ──[C, medium]──▶ INDEX CV`: a medium-rate LFO on depth sweeps FM complexity over time; the FM INDEX knob now attenuates this CV rather than acting as a direct depth control.
+
+**Move the cable**
+
+Unplug the sequencer CV from New Godspeed 1V/OCT and plug it into the FM source's 1V/OCT instead. Leave New Godspeed at a fixed pitch set by the PITCH knob.
+
+```
+                         ┌──────────────────────────────────────┐
+PITCH knob (fixed) ──    │ 1V/OCT              SINE/FOLD OUT    │──[A]──▶ VCA ──▶ Mixer
+FM source ──[A]──▶       │ FM IN                                │
+LFO ──[C, medium]──▶     │ INDEX CV                             │
+                         └──────────────────────────────────────┘
+                                       New Godspeed
+                  Sequencer ──[C]──▶ FM source 1V/OCT
+```
+
+What changed: the carrier pitch is now fixed while the modulator frequency follows the sequence. Each step in the sequence changes the carrier-to-modulator ratio, producing a different FM harmonic series per note rather than a different fundamental pitch. The sequence becomes a timbre sequence, not a pitch sequence.
+
+**What to listen for**
+
+With the FM source at a harmonic ratio and moderate INDEX, the output should have a metallic quality that shifts with LFO movement. Non-harmonic ratios between carrier and modulator produce inharmonic, clangorous tones. If the pitch is unstable or drifting, FM depth is too high; reduce INDEX attenuation before adjusting the source interval.
 
 ---
 
-### 4. Sub-Forward Bass Voice with Noise
+### 4. Sub-Forward Bass Voice
+
+The EVEN/ODD output with sub normalled in is a complete bass voice in one module; the sub octave and noise level are configuration choices set through secondary functions, not additional patch cables.
+
+**First Voice**
+
+Establish a working voice using EVEN/ODD before configuring the bass character:
 
 ```
-[New Godspeed]
-
-Sub octave: 2 octaves below (set via TUNE + FM INDEX secondary)
-White noise in EVEN/ODD: low level (set via TUNE + TIMBRE secondary)
-TIMBRE: 10 o'clock (slight odd harmonic shift)
-OCTAVE switch: -1 (down one octave)
-
-EVEN/ODD [A] → [VCA signal input]
-SUB [A] → left unpatched (sub remains normalled into EVEN/ODD mix)
-
-[Sequencer pitch] [C] → [New Godspeed 1V/OCT]
-[Sequencer gate] [G] → [Envelope gate input]
-[Envelope output] [C] → [VCA CV input]
+  Sequencer CV out ──[C]──▶ New Godspeed 1V/OCT
+  Sequencer gate out ──[G]──▶ EG gate in
+  EG out ──[C]──▶ VCA CV in
+  New Godspeed EVEN/ODD out ──[A]──▶ VCA audio in ──▶ Mixer
 ```
 
-The EVEN/ODD output with sub normalled in, set two octaves below and OCTAVE switch down one, produces a very low fundamental with square-wave sub reinforcement. A touch of odd harmonic shift from TIMBRE gives the tone some nasal character to cut through a mix without relying purely on volume. A small amount of white noise mixed in adds a slight breath or texture to the attack, useful for distinguishing articulations in a bass line. The VCA shapes the amplitude. A single oscillator, one patch destination, producing a full mono bass voice.
+Set the OCTAVE switch to center. Listen to the raw EVEN/ODD tone with TIMBRE at minimum. This is the baseline before configuration.
 
----
+**Configure the bass voice**
 
+Set OCTAVE switch to -1. Set the sub octave to 2 octaves below via secondary function: hold TUNE and turn FM INDEX to the second position. Add a small noise contribution via secondary function: hold TUNE and turn TIMBRE to just above minimum.
+
+```
+                    ┌──────────────────────────────────────┐
+Sequencer ──[C]──▶  │ 1V/OCT           EVEN/ODD OUT        │──[A]──▶ VCA ──▶ Mixer
+                    │                  (sub: normalled in)  │
+                    │                  (noise: low level)   │
+                    └──────────────────────────────────────┘
+                                   New Godspeed
+                    OCTAVE switch: -1
+                    TIMBRE: 10 o'clock
+                    SUB jack: unpatched
+```
+
+- `EVEN/ODD OUT ──[A]──▶ VCA`: EVEN/ODD with sub normalled in and OCTAVE down one produces a dense, low fundamental with a square-wave sub two octaves below reinforcing it; the sub is not a separate cable, it is already in the signal path.
+- `SUB jack: unpatched`: leaving the SUB jack empty is the active routing choice that keeps the sub normalled into the EVEN/ODD mix; it is not the absence of a decision.
+
+**Move the cable**
+
+Patch a cable into the SUB jack and route it to a second mixer channel.
+
+```
+                    ┌──────────────────────────────────────┐
+Sequencer ──[C]──▶  │ 1V/OCT           EVEN/ODD OUT        │──[A]──▶ VCA ──▶ Mixer ch.1
+                    │                  SUB OUT             │──[A]──▶ Mixer ch.2
+                    └──────────────────────────────────────┘
+                                   New Godspeed
+```
+
+What changed: plugging into the SUB jack breaks the internal normal. The sub signal exits the EVEN/ODD mix and routes only through the SUB jack. EVEN/ODD is now the shaped harmonic voice alone. The sub can now be leveled, filtered, or sent to a different bus independently. The sub moved; it was not duplicated.
+
+**What to listen for**
+
+With sub normalled into EVEN/ODD and OCTAVE down one, the output should have a very low, full fundamental with square-wave reinforcement below it. The low-level noise adds a textural breath to the attack without reading as obvious white noise. If the tone sounds thin or the sub is inaudible, verify the SUB jack is unpatched and the sub octave secondary function is set to the second position (two octaves below), not the first.
 ## Common Mistakes
 
 **Expecting the PITCH knob to provide continuous fine tuning.** The PITCH knob steps through discrete semitone intervals. There is no position between adjacent semitones. Fine tuning within a semitone is not possible through this knob. If the oscillator needs precise intonation adjustment beyond what autotune provides, use a small CV offset at the 1V/OCT input. The autotune system handles the gross calibration; precise intonation relative to other instruments in a context is a 1V/OCT task.

@@ -150,6 +150,7 @@ See `workflow_checklist.md` "Updated Estimation Standards" for specifics.
 | **Deep philosophy** - WHY this matters | `project_philosophy.md` |
 | **Framework understanding** - HOW to think systematically | `framework_overview.md` |
 | **Enhancement process** - HOW to enhance guides specifically | `guide_creation_framework.md` |
+| **Patch format** - HOW to write patch examples correctly | `patch_format_spec.md` |
 | **Creator context** - WHO they are, working patterns | `session_continuity_guide.md` |
 | **Technical specs** - WHAT instruments need | Specific guide files |
 
