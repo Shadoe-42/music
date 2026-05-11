@@ -15,6 +15,7 @@ transport: receive
 screen: false
 hybrid: true
 cv: full
+patch_format: v1
 ---
 
 ![Gamechanger Audio Plasma Voice front panel](https://github.com/Shadoe-42/music/raw/main/modular/images/gamechanger_audio/plasma_voice/front_panel.jpg)
@@ -208,81 +209,196 @@ The ACCENT mode system provides a depth of expressivity that goes beyond simple 
 
 ## Patch Examples
 
-### Patch 1: Plasma Percussion with Clock and Accent
+### 1. Plasma Percussion with Clock and Accent
 
-**What this demonstrates:** Basic triggered sound using the drum bank, with accent for velocity-like dynamics.
+The ACCENT input in ACCENT mode adds velocity-like dynamics to a rhythmic pattern without a dedicated VCA; a secondary gate source shapes both amplitude and timbre on chosen beats.
 
-Set BANK 4 (4DRUM), SOUND 1. Set Accent mode to ACCENT (Settings 2:1). Set FILTER mode to LP/HP (fully open at center).
+**First Voice**
 
-```
-Clock or gate source → TRIGGER [G]
-Accent gate (fires on beat 1 and 3) → ACCENT [G]
-TRIGGER output → VCA or direct to mixer [A]
-```
-
-TIME slider at center. HARM at 9 o'clock. FLUX at minimum. DRIVE at 9 o'clock.
-
-The clock triggers the sound on every beat. The accent gate arriving at ACCENT on beats 1 and 3 fires the same sound at higher amplitude and slightly brighter timbre. This creates a two-layer dynamics structure from a single module without a VCA dedicated to velocity.
-
-Vary SOUND selection within BANK 4 while the pattern runs. Use CLUTCH to prepare the SOUND change while the clock continues, then release CLUTCH at the start of the next measure.
-
-### Patch 2: Pitched Plasma Melody in OSCILLATE Mode
-
-**What this demonstrates:** Using the Plasma Voice as a free-running melodic oscillator with sequenced pitch.
-
-Set Trigger mode to OSCILLATE (Settings 1:4). Set MULTICV to 1V/OCT (Settings 3:1). Set BANK 2 (2LEAD), SOUND 3.
+Plasma Voice is a self-contained EVENT_VOICE: the internal envelope handles amplitude shaping, so no external EG or VCA is needed to establish a working voice.
 
 ```
-Sequencer 1V/oct output → MULTICV [C]
-Sequencer gate output → TRIGGER [G] (gates output in OSCILLATE mode)
-Plasma Voice output → Filter module input [A]
+  Clock or gate source ──[G]──▶ Plasma Voice TRIGGER
+  Plasma Voice output ──[A]──▶ Mixer
 ```
 
-PITCH slider at center. TIME slider has no effect in OSCILLATE mode (the discharge runs continuously). MOD slider at 8 o'clock for a small amount of pitch modulation. HARM at 10 o'clock. DRIVE at 9 o'clock.
+Set BANK 4 (4DRUM), SOUND 1. Verify the sound triggers cleanly on each clock pulse before adding accent.
 
-The plasma tube runs continuously. The TRIGGER gates the output: when the gate is high, the sound is audible; when the gate is low, it is not. The pitch follows the sequencer via MULTICV. Because the discharge is continuous, the attack is determined by the gate transition rather than by a triggered envelope, producing a different envelope character than TRIGGER mode.
-
-Patching the plasma output through an external filter after the module's own filter adds independent timbral control. The Plasma Voice's FILTER slider then acts as a pre-filter to the external module, giving two filter stages in series.
-
-### Patch 3: CLUTCH-Based Sound Switching in a Live Set
-
-**What this demonstrates:** Using CLUTCH to queue sound changes without audible glitching during a continuous performance.
-
-Set BANK 4 (4DRUM), SOUND 1. Set Trigger mode to LOOP (Settings 1:3). TIME slider controls loop rate.
+**Add the accent gate**
 
 ```
-Plasma Voice output → Mixer channel [A]
+                    ┌──────────────────────────────────┐
+Clock ──[G]──▶      │ TRIGGER          OUTPUT          │──[A]──▶ Mixer
+Accent gate ──[G]──▶│ ACCENT                           │
+                    └──────────────────────────────────┘
+                         Gamechanger Audio Plasma Voice
+                    Settings: Accent mode ACCENT (2:1)
 ```
 
-No external trigger required in LOOP mode. The module fires continuously at the loop rate set by TIME.
+Use a sequencer such as Hermod+ (or Pamela's Pro Workout) configured to output a gate on beats 1 and 3 of a four-beat pattern.
 
-With the sound looping: hold the CLUTCH button. While holding, turn the encoder to select BANK 7 (7SPARK), SOUND 4. Adjust HARM and FLUX sliders to new positions. Release CLUTCH on the downbeat of the next four-bar phrase.
+- `Clock ──[G]──▶ TRIGGER`: every clock pulse fires the plasma sound at its base amplitude and timbre, establishing the rhythmic grid.
+- `Accent gate ──[G]──▶ ACCENT`: in ACCENT mode, a gate at ACCENT fires the same sound at higher amplitude with a slightly brighter character; beats 1 and 3 hit harder than 2 and 4 without a dedicated VCA handling the dynamics.
 
-All queued changes apply simultaneously at the moment of release. The transition is committed at the performer's chosen moment rather than when the knobs were moved. Repeat this workflow throughout the performance to move between sounds without the intermediate states being audible.
+**Move the cable**
 
-Vary the TIME slider (not buffered by CLUTCH in all configurations; test before the performance) to adjust the loop rate between holds.
-
-### Patch 4: STARVE Mode Voltage Degradation
-
-**What this demonstrates:** Using STARVE accent mode to produce physical discharge degradation as a musical effect.
-
-Set BANK 5 (5METAL), SOUND 2. Set Accent mode to STARVE (Settings 2:3). Set FILTER to LP mode.
+Unplug the accent gate from ACCENT and plug it into FILTER CV instead. Leave ACCENT unpatched.
 
 ```
-Gate source (regular rhythm) → TRIGGER [G]
-Slow rising ramp or envelope (4-8 second rise) → ACCENT [C]
-LFO (slow, triangle) → FILTER CV input [C]
-Plasma Voice output → Mixer [A]
+                    ┌──────────────────────────────────┐
+Clock ──[G]──▶      │ TRIGGER          OUTPUT          │──[A]──▶ Mixer
+Accent gate ──[G]──▶│ FILTER CV                        │
+                    └──────────────────────────────────┘
+                         Gamechanger Audio Plasma Voice
 ```
 
-FLUX at minimum initially. HARM at 12 o'clock. DRIVE at 10 o'clock.
+What changed: the accent gate now sweeps the filter cutoff on beats 1 and 3 instead of increasing amplitude. The dynamic punch is gone; in its place is a timbral open on the accented beats. The same gate source, routed to a different input, shifts from dynamics to timbre.
 
-The gate triggers the plasma sound normally at first. As the slow ramp arriving at ACCENT rises over 4-8 seconds, the high-voltage supply is progressively starved. The sound begins to degrade: pitch drops slightly, the discharge becomes inconsistent, and the characteristic crackle and sputter of a voltage-starved discharge appears. The LFO on the FILTER CV adds filter motion during this degradation.
+**What to listen for**
 
-As the ramp reaches maximum, the discharge may fail partially, producing clicks and dropouts alongside the intended metal texture. This is not a malfunction; it is the physical behavior of a xenon tube discharge under reduced drive voltage used deliberately as a timbral evolution tool.
+Non-accented beats should trigger at a consistent level and character. Accented beats should be noticeably louder and slightly brighter. If all beats sound identical, verify Settings 2:1 is set to ACCENT and not GATE or STARVE. In the Move, if the filter does not respond to the gate, verify the FILTER CV input is receiving signal and the internal FILTER slider is not already at its maximum position.
 
-Reset the ramp and the sound returns to its normal character on the next cycle.
+---
 
+### 2. OSCILLATE Mode Melodic Voice
+
+OSCILLATE mode keeps the plasma discharge running continuously between gates, so the attack becomes a gate-controlled open rather than a physical ignition event; this produces a legato envelope character that TRIGGER mode cannot replicate.
+
+**First Voice**
+
+```
+  Sequencer CV out ──[C]──▶ Plasma Voice V/OCT
+  Sequencer gate out ──[G]──▶ Plasma Voice TRIGGER
+  Plasma Voice output ──[A]──▶ Mixer
+```
+
+Set BANK 2 (2LEAD), SOUND 3. Set Trigger mode to OSCILLATE (Settings 1:4). Verify pitch tracks correctly across the sequence. In OSCILLATE mode, the discharge runs continuously; the gate controls audibility, not ignition.
+
+**Add external filter processing**
+
+```
+                         ┌──────────────────────────────────┐
+Sequencer ──[C]──▶       │ V/OCT            OUTPUT          │──[A]──▶ Filter ──▶ Mixer
+Sequencer ──[G]──▶       │ TRIGGER                          │
+EG ──[C, medium]──▶      │ FILTER CV                        │
+                         └──────────────────────────────────┘
+                                Gamechanger Audio Plasma Voice
+                         Settings: Trigger mode OSCILLATE (1:4)
+```
+
+Use a filter such as Endorphin.es Grand Terminal (or Tiptop Audio Forbidden Planet). Use a separate EG such as Make Noise Maths (or Instruo Ochd) set to a medium attack and release for the filter CV.
+
+- `Sequencer ──[C]──▶ V/OCT`: pitch CV tracks the sequence; because the discharge is already running, pitch changes are immediate without retriggering the plasma, producing smooth melodic movement between notes.
+- `Sequencer ──[G]──▶ TRIGGER`: the gate controls when the output is audible rather than when the plasma fires; short gate gaps between notes produce legato phrasing; longer gaps produce separated notes with no plasma restart.
+- `EG ──[C, medium]──▶ FILTER CV`: an envelope on the internal filter CV adds a brightness arc to each note; the filter opens with the gate and closes during the tail, giving the plasma texture a shaped timbral envelope on top of the amplitude gate.
+
+**Move the cable**
+
+Unplug Plasma Voice output from the external filter input and connect it directly to the Mixer, bypassing the filter.
+
+```
+                         ┌──────────────────────────────────┐
+Sequencer ──[C]──▶       │ V/OCT            OUTPUT          │──[A]──▶ Mixer
+Sequencer ──[G]──▶       │ TRIGGER                          │
+EG ──[C, medium]──▶      │ FILTER CV                        │
+                         └──────────────────────────────────┘
+                                Gamechanger Audio Plasma Voice
+```
+
+What changed: the EG on FILTER CV now drives the Plasma Voice internal filter only, with no external stage. The brightness arc is more subtle without the external filter compounding the effect. Comparing the two routings isolates the contribution of the external filter to the overall tonal shape.
+
+**What to listen for**
+
+In OSCILLATE mode, the attack should be immediate with no plasma ignition transient at the note start. Notes connected by short gate gaps should feel legato. If the output runs continuously with no amplitude shaping, verify the gate is reaching TRIGGER. If pitch does not track smoothly across octaves, verify Settings 3:1 is set to 1V/OCT and that V/OCT is connected rather than MULTICV.
+
+---
+
+### 3. CLUTCH-Based Sound Switching
+
+CLUTCH buffers all control changes made while held and commits them together on release, so bank, sound, and slider transitions land at a musically chosen moment rather than as the controls are touched.
+
+**First Voice**
+
+In LOOP mode, Plasma Voice fires continuously without an external trigger. The only required connection is audio output.
+
+```
+  Plasma Voice output ──[A]──▶ Mixer
+```
+
+Set BANK 4 (4DRUM), SOUND 1. Set Trigger mode to LOOP (Settings 1:3). The TIME slider sets the loop rate. Verify the sound is looping at the intended rate before practicing the CLUTCH transition.
+
+**Practice the CLUTCH transition**
+
+```
+                    ┌──────────────────────────────────┐
+                    │              OUTPUT              │──[A]──▶ Mixer
+                    └──────────────────────────────────┘
+                         Gamechanger Audio Plasma Voice
+                    Settings: Trigger mode LOOP (1:3)
+                    TIME slider: sets loop rate
+```
+
+- `Plasma Voice output ──[A]──▶ Mixer`: the loop runs without external trigger; all sound character is determined by the module's internal settings and slider positions.
+
+Hold CLUTCH. While held, move to BANK 7 (7SPARK), SOUND 4, and reposition HARM and FLUX to new values. These changes are queued and not yet applied. Release CLUTCH on the downbeat of the next phrase.
+
+What changed is not a cable but timing: all queued changes commit simultaneously at the moment of release. The scrubbing through BANK and SOUND selections and the slider movements mid-transition are never audible during the hold.
+
+**What to listen for**
+
+The looping sound should run at a consistent rate with no audible changes while CLUTCH is held. On release, all queued changes should apply together with no intermediate states audible. If the sound changes during the hold, verify CLUTCH engaged by checking the LED behavior. TIME slider response may or may not be buffered by CLUTCH depending on firmware version; test this specifically before using it in a performance rather than assuming the buffer covers all controls.
+
+---
+
+### 4. STARVE Mode Voltage Degradation
+
+Routing a slow envelope into ACCENT in STARVE mode turns the physical behavior of voltage-starved xenon discharge into a deliberate timbral arc: the sound degrades, sputters, and destabilizes over four to eight seconds before resetting.
+
+**First Voice**
+
+```
+  Gate or trigger ──[G]──▶ Plasma Voice TRIGGER
+  Plasma Voice output ──[A]──▶ Mixer
+```
+
+Set BANK 5 (5METAL), SOUND 2. Set Accent mode to STARVE (Settings 2:3). Set FILTER mode to LP. Verify the sound triggers cleanly and consistently before adding the starvation envelope.
+
+**Add the starvation envelope and filter motion**
+
+```
+                    ┌──────────────────────────────────┐
+Gate ──[G]──▶       │ TRIGGER          OUTPUT          │──[A]──▶ Mixer
+Slow ramp ──[C]──▶  │ ACCENT                           │
+LFO ──[C, slow]──▶  │ FILTER CV                        │
+                    └──────────────────────────────────┘
+                         Gamechanger Audio Plasma Voice
+                    Settings: Accent mode STARVE (2:3), FILTER mode LP
+```
+
+Use an envelope such as Make Noise Maths (or Instruo Ochd) set to a 4–8 second rise with no decay for the slow ramp.
+
+- `Gate ──[G]──▶ TRIGGER`: continuous triggering keeps the plasma firing while the starvation envelope evolves; without regular triggers, the degradation is not audible.
+- `Slow ramp ──[C]──▶ ACCENT`: a rising CV over 4–8 seconds progressively reduces drive voltage to the plasma tube in STARVE mode; as voltage falls, the discharge weakens, pitch drops slightly, and the sound becomes increasingly inconsistent and crackled.
+- `LFO ──[C, slow]──▶ FILTER CV`: a slow filter sweep adds motion to the mid-range as the starvation takes effect, so the timbral degradation arrives alongside filter movement rather than as an isolated process.
+
+**Move the cable**
+
+Unplug the slow ramp from ACCENT and plug it into V/OCT instead. Leave ACCENT unpatched.
+
+```
+                    ┌──────────────────────────────────┐
+Gate ──[G]──▶       │ TRIGGER          OUTPUT          │──[A]──▶ Mixer
+Slow ramp ──[C]──▶  │ V/OCT                            │
+LFO ──[C, slow]──▶  │ FILTER CV                        │
+                    └──────────────────────────────────┘
+                         Gamechanger Audio Plasma Voice
+```
+
+What changed: the same slow ramp now bends pitch downward over 4–8 seconds instead of starving the discharge. The sound remains physically clean and consistent; only pitch drifts downward. The envelope shape is identical but the destination produces a completely different musical result.
+
+**What to listen for**
+
+At the start of the ramp, the 5METAL sound should be full and consistent. As the ramp rises, discharge character should shift: slight pitch drop, increasing inconsistency, and audible crackle or sputter appearing in the texture. These are not malfunctions; they are the physical behavior of a xenon tube under reduced voltage used deliberately. If no degradation occurs, verify Settings 2:3 is set to STARVE and that the ramp voltage reaches above 1V at ACCENT. If the output silences completely, the ramp maximum is too high; reduce the envelope peak before the performance.
 ## Common Mistakes
 
 **"Nothing happens when I patch the gate."** Check that the power draw has not pushed the rack's +12V rail into overload. At 220 mA, this module draws heavily. A rail at or near its limit produces intermittent operation in all modules on that rail. Verify with a power audit before diagnosing the Plasma Voice itself. If power is adequate, confirm the gate signal is reaching the module by checking the trigger LED if present, or by substituting a manual button or keyboard gate.
