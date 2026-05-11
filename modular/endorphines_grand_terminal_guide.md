@@ -51,13 +51,6 @@ The Grand Terminal integrates the dual envelope, dual filter, and stereo effects
 | +12V Current | 230 mA |
 | -12V Current | 65 mA |
 | +5V Current | 0 mA |
-| DSP | ARM Cortex-M4, 16-bit / 48 kHz |
-| Filter Types | 8 per channel (A and B independent) |
-| Envelope Modes | 3 (Cruise/ASR, Transient/AD, Loop/LFO) |
-| Effect Slots | 8 (from two firmware banks) |
-| Stereo Output | Line level, headphone-capable (~0 dBu nominal, up to +4 dBu) |
-| Mono Output | Modular level (~±5V), L+R summed |
-| Firmware Update | USB (or audio injection into Gate A input) |
 | Price | $679 |
 
 **Power note:** At 230 mA on the +12V rail, the Grand Terminal draws more current than any other module in this guide series. Plan rack power carefully. If this module and the Plasma Voice (220 mA) are in the same case, those two modules alone account for 450 mA before any other module is considered. A case with a 1A +12V rail is not sufficient for a populated rack that includes both modules. Verify total rail capacity against total draw before powering up a new configuration.
