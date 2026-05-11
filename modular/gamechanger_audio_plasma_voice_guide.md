@@ -54,15 +54,6 @@ Gamechanger Audio is based in Riga and has produced a small, distinctive catalog
 | +12V Current | 220 mA |
 | -12V Current | 35 mA |
 | +5V Current | 0 mA |
-| Sound Banks | 7 (1BASS, 2LEAD, 3PLUCK, 4DRUM, 5METAL, 6STATIC, 7SPARK) |
-| Sounds per Bank | 7 |
-| Total Preset Sounds | 49 |
-| Sliders | 6 (TIME, MOD, HARM, FLUX, FILTER, PITCH) |
-| CV Inputs | 6 (one per slider) plus MULTICV, TRIGGER, ACCENT, V/OCT |
-| Trigger Modes | 5 |
-| Accent Modes | 7 |
-| Output Level | ±8V maximum |
-| Xenon Tube Rated Life | ~10,000 hours |
 | Price | $499 |
 
 **Power note:** At 220 mA on the +12V rail, the Plasma Voice draws more current than any other module documented in this guide series. The high-voltage conversion circuit that drives the xenon tube accounts for this draw. Plan rack power accordingly. Many standard 6U Eurorack cases supply 1A or less on the +12V rail; a fully populated rack with this module installed should be audited for total current before power is applied. Exceeding the rail limit causes instability in all modules on the affected rail, not just the overloaded one.
