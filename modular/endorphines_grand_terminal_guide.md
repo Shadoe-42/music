@@ -15,6 +15,7 @@ transport: none
 screen: false
 hybrid: true
 cv: full
+patch_format: v1
 ---
 
 ![Endorphin.es Grand Terminal front panel](https://github.com/Shadoe-42/music/raw/main/modular/images/endorphines/grand_terminal/front_panel.jpg)
@@ -211,110 +212,216 @@ The stereo line output changes the module's role in the studio chain. The Grand 
 
 ## Patch Examples
 
-### Patch 1: Complete Synthesizer Voice with Furthrrrr Generator
+Grand Terminal is a SHAPER module: the external oscillator is the sound source, and Grand Terminal filters, shapes, and effects it. No external EG or VCA is required in most patches because the Airplane envelope generators are internal, and Gate A acting through cutoff modulation serves the amplitude shaping role.
 
-**What this demonstrates:** The intended pairing: oscillator into dual filters with envelope control, effects on output.
+### 1. Parallel Filter Voice
 
-Set Gate A filter type to Type 1 (Transistor Ladder). Set Gate B filter type to Type 5 (State Variable LP). Set Filter Routing to Parallel mode. Set both Airplanes to Transient (AD) mode. Select Plate Reverb from Cabin Pressure.
+Parallel routing sends one oscillator through two independent filter characters simultaneously; the blended output is richer than either filter alone because the two characters complement rather than duplicate each other.
+
+**First Voice**
+
+Grand Terminal processes an external source. Before adding parallel routing, establish a single-filter working voice:
 
 ```
-[Furthrrrr Generator oscillator output] [A]
-         │
-         ├──────────────────────────────────────────────────────┐
-         ▼                                                      ▼
-[Gate A input: Transistor Ladder]                 [Gate B input: State Variable LP]
-[Gate A X CV: Airplane A unipolar out] [C]        [Gate B X CV: Airplane B unipolar out] [C]
-         │                                                      │
-         └──────────────────┬───────────────────────────────────┘
-                            │
-                            ▼
-                [Cabin Pressure: Plate Reverb, 30% wet]
-                            │
-                            ▼
-                 [Stereo Output: to interface] [A]
+  Sequencer CV out ──[C]──▶ VCO 1V/OCT
+  Sequencer gate out ──[G]──▶ Grand Terminal Airplane A Check-In
+  Grand Terminal Airplane A unipolar out ──[C]──▶ Grand Terminal Gate A X CV
+  VCO audio out ──[A]──▶ Grand Terminal Gate A in
+  Grand Terminal output ──[A]──▶ Mixer
 ```
 
-Airplane A trigger arrives at each note. Gate A opens with the transistor ladder's warm, musical response. Airplane B fires simultaneously with a slightly longer decay, opening the state variable filter with a cooler, cleaner curve. The two filtered signals sum in parallel with the reverb tail behind them. Adjusting each filter type to different values gives two independent timbral perspectives on the same oscillator simultaneously.
+Set Gate A to Type 1 (Transistor Ladder). Gate A cutoff should open with each Airplane A trigger and close on decay. Verify a gated, filtered tone is reaching the mixer before proceeding.
+
+**Add Gate B in parallel**
+
+```
+                         ┌────────────────────────────────────────────────┐
+Sequencer ──[C]──▶ VCO   │                    STEREO OUT                  │──[A]──▶ Mixer
+VCO ──[A]──▶ mult ──▶    │ GATE A in    (routing: Parallel)               │
+VCO ──[A]──▶ mult ──▶    │ GATE B in                                      │
+Sequencer ──[G]──▶ mult ─│ AIRPLANE A Check-In                            │
+Sequencer ──[G]──▶ mult ─│ AIRPLANE B Check-In                            │
+Airplane A ──[C]──▶      │ GATE A X CV                                    │
+Airplane B ──[C]──▶      │ GATE B X CV                                    │
+                         └────────────────────────────────────────────────┘
+                                   Endorphin.es Grand Terminal
+                         Gate A: Type 1 (Transistor Ladder)
+                         Gate B: Type 5 (State Variable LP)
+```
+
+Use a mult such as Erica Synths Pico MScale (or any passive mult) to split both the VCO audio and the sequencer gate.
+
+- `VCO ──[A]──▶ Gate A in` and `VCO ──[A]──▶ Gate B in`: both filters receive the same audio source in parallel mode; the split happens before the filters so each processes the raw signal independently.
+- `Sequencer ──[G]──▶ Airplane A Check-In` and `Airplane B Check-In`: both Airplanes fire on the same gate event and stay phase-locked to the pitch sequence; set Airplane B decay slightly longer than Airplane A so the two filter envelopes do not move identically.
+- `Airplane A ──[C]──▶ Gate A X CV`: the Transistor Ladder opens with Airplane A's curve; warm and slightly saturated on the attack, rounding off on decay.
+- `Airplane B ──[C]──▶ Gate B X CV`: the State Variable LP opens with Airplane B's slightly longer curve; cooler and cleaner, still closing after Gate A has already begun to settle.
+
+**Move the cable**
+
+Unplug the sequencer gate from Airplane B Check-In and plug it into Airplane A's end-of-Landing trigger output instead.
+
+```
+                         ┌────────────────────────────────────────────────┐
+VCO ──[A]──▶ mult ──▶    │ GATE A in    (routing: Parallel)               │──[A]──▶ Mixer
+VCO ──[A]──▶ mult ──▶    │ GATE B in                                      │
+Sequencer ──[G]──▶       │ AIRPLANE A Check-In                            │
+Airplane A end ──[T]──▶  │ AIRPLANE B Check-In                            │
+Airplane A ──[C]──▶      │ GATE A X CV                                    │
+Airplane B ──[C]──▶      │ GATE B X CV                                    │
+                         └────────────────────────────────────────────────┘
+                                   Endorphin.es Grand Terminal
+```
+
+What changed: Gate A and Gate B now open sequentially rather than simultaneously. Gate A opens on the gate event. When Gate A's envelope reaches the end of its decay, that trigger fires Airplane B and Gate B opens. One trigger produces two distinct filter events in series from a single gate source.
+
+**What to listen for**
+
+With both Airplanes firing simultaneously, the output should have a layered warmth: Gate A transistor saturation blended with Gate B cleaner response. Adjusting Airplane B decay while the patch runs reveals how the temporal offset between the two filters shapes the overall timbral arc. In the Move, the two filter openings should be clearly sequential: Gate A closes, then Gate B opens, rather than blended. If Gate B never opens, verify the Airplane A end-of-Landing output is producing a trigger signal.
 
 ---
 
-### Patch 2: External Synthesizer Processing
+### 2. External Synthesizer Processing
 
-**What this demonstrates:** Using the Grand Terminal as an effects and filter unit for an external line-level instrument.
+The Gate A input trim knob extends the module to line level, making Grand Terminal a complete effects and filter unit for external instruments whose output voltage falls outside the standard Eurorack range.
 
-Set Gate A input trim to CW (line level input). Select Vactrol LPG (Type 3). Set Filter Routing to Serial mode. Select Shimmer Reverb from Cabin Pressure.
+**First Voice**
+
+For external processing, the source handles its own amplitude. First Voice is the minimum connection to verify signal flow:
 
 ```
-[External synthesizer line output]
-         │
-         ▼
-[Gate A input: Vactrol LPG, trim knob CW for line level] [A]
-[Gate A Y knob: 10 o'clock, vactrol decay time control]
-[Gate A X knob: set cutoff position]
-         │  serial: Gate A feeds Gate B
-         ▼
-[Gate B: Comb Filter]
-[Gate B X: cutoff (comb center), Y: resonance (comb bandwidth)]
-         │
-         ▼
-[Cabin Pressure: Shimmer Reverb, 40% wet]
-[Cabin Fever: decay time, moderate]
-         │
-         ▼
-[Stereo Output: to interface] [A]
+  External synth out ──[A]──▶ Grand Terminal Gate A in (trim: fully CW)
+  Grand Terminal output ──[A]──▶ Mixer
 ```
 
-The external synthesizer passes through the vactrol LPG first, which softens transients and shapes the amplitude envelope with its natural exponential decay. That shaped signal feeds into the comb filter in serial, adding resonant coloration. Shimmer reverb gives the output a diffuse, pitch-shifted ambience. The external instrument is processed as thoroughly as any internally generated voice.
+Set Gate A to Type 3 (Vactrol LPG). Set the trim knob fully clockwise to accept line-level input. Verify the external signal is audible and not clipping before adding serial processing.
+
+**Add serial routing and reverb**
+
+```
+                    ┌──────────────────────────────────────────────────────┐
+Ext synth ──[A]──▶  │ GATE A in          STEREO OUT                       │──[A]──▶ Mixer
+                    │ (trim: fully CW)   (routing: Serial)                 │
+                    │                   Gate A feeds Gate B internally     │
+                    └──────────────────────────────────────────────────────┘
+                              Endorphin.es Grand Terminal
+                    Gate A: Type 3 (Vactrol LPG), Gate A Y: vactrol decay
+                    Gate B: Type 8 (Comb Filter), Gate B X: comb center
+                    Cabin Pressure: Shimmer Reverb
+```
+
+- `Ext synth ──[A]──▶ Gate A in (trim CW)`: the trim knob at fully CW scales the input sensitivity to line level; without this, a line-level source drives Gate A at too high a signal, producing distortion before any tonal processing.
+- Serial routing (no cable required): Gate A's shaped output feeds Gate B internally; the Vactrol LPG softens the transient character of the external source before the Comb Filter imposes its resonant coloration.
+- Cabin Pressure Shimmer Reverb on the output adds diffuse ambience behind the double-filtered signal; the shimmer pitch-shifts the reverb tail upward, giving the processed external source a spacious, pitch-lifted quality.
+
+**What to listen for**
+
+The Vactrol LPG's natural exponential decay should round the attack of the external instrument. The Comb Filter behind it adds a hollow, resonant coloration; adjust Gate B X (comb center frequency) to find the resonant peak most complementary to the source material. The Shimmer Reverb should sit behind the direct sound rather than overwhelming it; start with the wet level below 30%. If the output is distorted, the trim knob is set too high for the source level; reduce it until the signal is clean.
 
 ---
 
-### Patch 3: Dual-Rate Airplane LFO Filter Modulation
+### 3. Dual-Rate Airplane LFO Filter Modulation
 
-**What this demonstrates:** Both Airplanes in Loop mode as LFOs driving independent filter channels with no external modulation needed.
+Switching both Airplanes to Loop mode creates two internal LFOs at independently set rates; routing them to separate filter channels produces continuous filter motion across both channels with no external modulation source.
 
-Set Airplane A to Loop mode, slow Take Off and Landing (both knobs at 8-9 o'clock), linear slope. Set Airplane B to Loop mode, faster rate (Take Off and Landing at 10-11 o'clock). Set Gate A to Type 2 (Diode Ladder), Gate B to Type 8 (Comb Filter). Set Filter Routing to Parallel. Select Chorus from Cabin Pressure.
+**First Voice**
+
+Establish a gated filter voice before switching Airplane modes:
 
 ```
-[Airplane A Loop mode: slow triangle] [C] → [Gate A X CV: Diode Ladder cutoff]
-[Airplane B Loop mode: faster rate]   [C] → [Gate B X CV: Comb Filter center]
-[Oscillator or any audio source]       [A] → [Gate A and Gate B inputs]
-         │
-         ▼
-[Cabin Pressure: Chorus, 50% wet]
-         │
-         ▼
-[Stereo Output] [A]
+  Sequencer CV out ──[C]──▶ VCO 1V/OCT
+  Sequencer gate out ──[G]──▶ Grand Terminal Airplane A Check-In
+  Grand Terminal Airplane A unipolar out ──[C]──▶ Grand Terminal Gate A X CV
+  VCO audio out ──[A]──▶ Grand Terminal Gate A in
+  Grand Terminal output ──[A]──▶ Mixer
 ```
 
-Gate A sweeps slowly through the diode ladder's resonant range: the acid filter character rises and falls at its own rate. Gate B sweeps the comb filter's center frequency faster, producing a phasing sweep that moves against Gate A's slower motion. The chorus adds stereo width and slight pitch movement to the output. No external LFO or modulation source is required; the module generates its own modulation internally.
+Verify the gated filter voice is working. Then switch Airplane A to Loop mode and disconnect the gate from Airplane A Check-In; in Loop mode the Airplane runs freely without a trigger.
+
+**Set dual-rate Loop modulation**
+
+```
+                         ┌────────────────────────────────────────────────┐
+VCO ──[A]──▶ mult ──▶    │ GATE A in       STEREO OUT                     │──[A]──▶ Mixer
+VCO ──[A]──▶ mult ──▶    │ GATE B in       (routing: Parallel)            │
+Airplane A ──[C, slow]──▶│ GATE A X CV                                    │
+Airplane B ──[C, medium]─│ GATE B X CV                                    │
+                         └────────────────────────────────────────────────┘
+                                   Endorphin.es Grand Terminal
+                         Airplane A: Loop mode, slow (Take Off + Landing at 8-9 o'clock)
+                         Airplane B: Loop mode, medium (Take Off + Landing at 10-11 o'clock)
+                         Gate A: Type 2 (Diode Ladder)
+                         Gate B: Type 8 (Comb Filter)
+                         Cabin Pressure: Chorus
+```
+
+No gate source is required. Both Airplanes cycle freely at their set rates. Use a mult such as Erica Synths Pico MScale (or any passive mult) to split the VCO audio.
+
+- `Airplane A ──[C, slow]──▶ Gate A X CV`: the slow Airplane A cycle sweeps the Diode Ladder cutoff through its resonant range at a rate measured in several seconds per cycle; the acid filter character rises and falls independently of any sequence.
+- `Airplane B ──[C, medium]──▶ Gate B X CV`: Airplane B's faster cycle sweeps the Comb Filter center frequency at a different rate, producing phasing motion that moves against Gate A's slower sweep; the two rates produce a continuously shifting composite filter texture without repeating.
+- Cabin Pressure Chorus adds stereo width and slight pitch movement to the output, extending the sense of motion already produced by the dual filter sweeps.
+
+**Move the cable**
+
+Unplug Airplane B from Gate B X CV and plug it into Gate A Y CV instead.
+
+```
+                         ┌────────────────────────────────────────────────┐
+VCO ──[A]──▶ mult ──▶    │ GATE A in       STEREO OUT                     │──[A]──▶ Mixer
+VCO ──[A]──▶ mult ──▶    │ GATE B in       (routing: Parallel)            │
+Airplane A ──[C, slow]──▶│ GATE A X CV                                    │
+Airplane B ──[C, medium]─│ GATE A Y CV                                    │
+                         └────────────────────────────────────────────────┘
+                                   Endorphin.es Grand Terminal
+```
+
+What changed: both Airplanes now modulate Gate A at two different rates simultaneously, one controlling cutoff, one controlling resonance or a secondary parameter. Gate B becomes a static filter stage with no modulation. The rhythmic interaction between the two rates is now entirely concentrated in Gate A character rather than distributed across the two channels.
+
+**What to listen for**
+
+The two filter sweeps should be clearly audible as separate rates of motion: Gate A slower and Gate B faster, with the combined output shifting in a pattern that takes several cycles of each before it repeats. The Chorus behind it should add spatial width. In the Move, Gate A should feel harmonically denser with two Airplanes acting on it simultaneously; Gate B goes static and the rhythmic complexity collapses to one channel.
 
 ---
 
-### Patch 4: Granular Freeze with Envelope Gate
+### 4. Granular Freeze with Airplane End-Trigger
 
-**What this demonstrates:** Using the Freezer/Looper effect with an Airplane end-of-stage trigger to create gated granular holds.
+*Requires Darkwaves Bank firmware, standard on current Endorphin.es modules.*
 
-Load the Darkwaves Bank firmware. Select Freezer/Looper effect. Set Airplane A to Transient (AD) mode with a moderate decay (Landing knob at noon). Route the end-of-Landing trigger from Airplane A to the Cabin Fever CV input.
+Routing Airplane A's end-of-stage trigger to the Cabin Fever CV input synchronizes the Freezer/Looper gate to the envelope cycle; each note automatically captures and holds the audio at the moment its envelope closes, with no manual freeze operation.
+
+**First Voice**
 
 ```
-[Gate or trigger source] [G] → [Airplane A Check-In]
-[Airplane A unipolar output]  → [Gate A X CV: filter cutoff] [C]
-[Airplane A end-of-Landing trigger] → [Cabin Fever CV input: Freezer gate] [G]
-[Oscillator or audio source] [A] → [Gate A input]
-         │
-         ▼
-[Cabin Pressure: Freezer/Looper]
-[Cabin Pressure knob: freeze playback speed]
-[Cabin Fever knob: grain length]
-         │
-         ▼
-[Stereo Output] [A]
+  Sequencer gate out ──[G]──▶ Grand Terminal Airplane A Check-In
+  Grand Terminal Airplane A unipolar out ──[C]──▶ Grand Terminal Gate A X CV
+  VCO audio out ──[A]──▶ Grand Terminal Gate A in
+  Grand Terminal output ──[A]──▶ Mixer
 ```
 
-On each trigger: Airplane A fires, the filter opens and closes through the vactrol or ladder curve. At the moment of the envelope's end-of-Landing trigger, the Freezer/Looper activates and holds whatever audio was present at that instant. The frozen audio plays at the speed and grain length set by the Cabin Pressure and Cabin Fever knobs until the next trigger arrives and the cycle repeats. The result is a performance texture where each note triggers both a live filtered sound and a granular hold of the previous moment.
+Load Darkwaves Bank and select Freezer/Looper from Cabin Pressure. Verify the filtered signal flows through Cabin Pressure to the output before adding the end-trigger routing.
 
----
+**Add the end-of-stage freeze trigger**
 
+```
+                         ┌────────────────────────────────────────────────┐
+Sequencer ──[G]──▶       │ AIRPLANE A Check-In    STEREO OUT              │──[A]──▶ Mixer
+Airplane A ──[C]──▶      │ GATE A X CV                                    │
+Airplane A end ──[T]──▶  │ CABIN FEVER CV                                 │
+VCO ──[A]──▶             │ GATE A in                                      │
+                         └────────────────────────────────────────────────┘
+                                   Endorphin.es Grand Terminal
+                         Cabin Pressure: Freezer/Looper (Darkwaves Bank)
+                         Cabin Pressure knob: freeze playback speed
+                         Cabin Fever knob: grain length
+```
+
+- `Sequencer ──[G]──▶ Airplane A Check-In`: the gate event starts Airplane A and opens Gate A's cutoff; the same note event that shapes the live sound also sets up the eventual freeze trigger at the envelope's end.
+- `Airplane A unipolar ──[C]──▶ Gate A X CV`: the envelope opens and closes the filter cutoff, shaping the live filtered sound during its duration before the freeze captures it.
+- `Airplane A end-of-Landing ──[T]──▶ Cabin Fever CV`: the trigger output that fires when Airplane A's decay stage ends activates the Freezer gate at that moment, capturing whatever audio was present and holding it until the next trigger; the freeze is synchronized to the envelope without any additional timing source.
+- `VCO ──[A]──▶ Gate A in`: the pitched oscillator provides the content that gets shaped by the filter and then frozen; pitch changes in the sequence mean each freeze captures a different timbral state.
+
+**What to listen for**
+
+Each gate event should produce a filtered note followed immediately by a granular hold at the end of the envelope's decay. The held texture should sustain until the next gate triggers a new note and a new freeze. Set Cabin Fever (grain length) at noon for a smooth freeze character; shorter grain lengths produce a more stuttered texture. If the freeze does not activate, verify the Airplane A end-of-Landing output is producing a trigger and that Cabin Fever CV is responding; some Freezer settings require a minimum trigger voltage to engage.
 ## Common Mistakes
 
 **Patching bipolar CV to the filter X and Y inputs.** The X and Y CV inputs for the filters accept only unipolar voltage from 0V to +5V. An LFO that swings from -5V to +5V will only produce audible filter movement during its positive phase; the negative phase is clamped and has no effect. Either use a source that is naturally unipolar (the Airplane unipolar outputs are ideal) or offset and attenuate a bipolar source to a 0-5V range before connecting it to these inputs.
