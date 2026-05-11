@@ -15,6 +15,7 @@ transport: receive
 screen: false
 hybrid: true
 cv: full
+patch_format: v1
 ---
 
 # Etna
@@ -127,45 +128,176 @@ With a clock patched into the CLOCK input, the sequencer advances one step per c
 
 ---
 
-## Signal Flow and Patch Diagrams
+## Patch Examples
 
-### Basic: One source, three filters in parallel (unified voice)
+Etna is a SHAPER module: it sits in the signal chain between oscillator and output, filtering rather than generating sound. All patches require an external VCA and EG to shape amplitude. Etna does nothing in isolation.
 
-```
-[Source] ──[A]──▶ [IN1]
-                    │
-                    ├── [F1 LP 24dB] ──[A]──▶ [OUT1] ──▶ [Mixer Ch1]
-                    │
-                    ├── [F2 BP] ──[A]──▶ [OUT2] ──▶ [Mixer Ch2]
-                    │
-                    └── [F3 HP 12dB] ──[A]──▶ [OUT3] ──▶ [Mixer Ch3]
-                         (IN2, IN3 unpatched: daisy-chain normalization)
-```
+### 1. Parallel Filter Bank
 
-Three simultaneous filtered versions of one source, each mode independent. Blend at the mixer to combine their characters.
+Routing one oscillator into Etna's IN1 with IN2 and IN3 unpatched produces three simultaneous filtered versions of the same source; blending the three outputs at the mixer creates a composite timbral character that no single filter type can produce on its own.
 
-### Intermediate: Three sources, three independent voices
+**First Voice**
+
+Before opening the parallel outputs, establish a single-filter working voice:
 
 ```
-[Voice 1 VCO] ──[A]──▶ [IN1] → [F1] ──[A]──▶ [OUT1] ──▶ [VCA 1] ──▶ [Mixer Ch1]
-[Voice 2 VCO] ──[A]──▶ [IN2] → [F2] ──[A]──▶ [OUT2] ──▶ [VCA 2] ──▶ [Mixer Ch2]
-[Voice 3 VCO] ──[A]──▶ [IN3] → [F3] ──[A]──▶ [OUT3] ──▶ [VCA 3] ──▶ [Mixer Ch3]
+  Sequencer CV out ──[C]──▶ VCO 1V/OCT
+  Sequencer gate out ──[G]──▶ EG gate in
+  EG out ──[C]──▶ VCA CV in
+  VCO audio out ──[A]──▶ Etna IN1
+  Etna OUT1 (LP 24dB) ──[A]──▶ VCA audio in ──▶ Mixer
 ```
 
-Each filter processing its own voice independently. Individual FRQ1/2/3 CVs allow per-voice brightness control. Q affects all three simultaneously.
+Verify pitch tracks and the LP output is audible through the VCA before adding the parallel outputs.
 
-### Advanced: Snapshot-driven morphing with CV FREQ3 as modulation output
+**Open the parallel outputs**
 
 ```
-[Clock] ──[G]──▶ [CLOCK IN]
-[Envelope] ──[C]──▶ [FREQ ALL CV]
-                                        [CV FREQ3] ──[C]──▶ [VCO FM In]
-[Source] ──[A]──▶ [IN1] → [F1/F2/F3] ──[A]──▶ [MIX] ──▶ [Mixer]
+                    ┌───────────────────────────────────────────────┐
+VCO ──[A]──▶        │ IN1         OUT1 (LP 24dB)                    │──[A]──▶ VCA ──▶ Mixer ch.1
+                    │             OUT2 (BP)                         │──[A]──▶ Mixer ch.2
+                    │             OUT3 (HP 12dB)                    │──[A]──▶ Mixer ch.3
+                    └───────────────────────────────────────────────┘
+                                  Patching Panda Etna
+                    IN2, IN3: unpatched; daisy-chain normalization active
 ```
 
-The snapshot sequencer advances on each clock, morphing all three filter states according to stored snapshots. The envelope sweeps all three filters together via FREQ ALL. CV FREQ3 exports F3's current position to the VCO, coupling the filter's morphing sequence to the oscillator's timbre.
+- `VCO ──[A]──▶ IN1`: with IN2 and IN3 unpatched, the daisy-chain normalization passes IN1's signal to all three filter inputs; one cable routes to three simultaneous filter paths.
+- `OUT1 ──[A]──▶ VCA ──▶ Mixer ch.1`: the LP 24dB output is the primary voiced channel; the VCA and EG shape its amplitude, and the filter's cutoff position determines how much low-frequency content reaches the mix.
+- `OUT2 ──[A]──▶ Mixer ch.2`: the BP output to a second mixer channel; it passes a band of frequencies centered on the cutoff, adding mid-range presence without the low-end weight of the LP.
+- `OUT3 ──[A]──▶ Mixer ch.3`: the HP 12dB output provides high-frequency content that the LP and BP suppress; at low Q settings it functions as an air shelf rather than a narrow cut.
+
+**Move the cable**
+
+Unplug the EG output from the VCA CV input and plug it into the Etna FREQ ALL CV input instead. Leave the VCA CV input unpatched (VCA now fully open).
+
+```
+                    ┌───────────────────────────────────────────────┐
+VCO ──[A]──▶        │ IN1         OUT1 (LP 24dB)                    │──[A]──▶ VCA (open) ──▶ Mixer ch.1
+EG ──[C]──▶         │ FREQ ALL CV OUT2 (BP)                         │──[A]──▶ Mixer ch.2
+                    │             OUT3 (HP 12dB)                    │──[A]──▶ Mixer ch.3
+                    └───────────────────────────────────────────────┘
+                                  Patching Panda Etna
+```
+
+What changed: the EG now sweeps all three filter cutoffs simultaneously rather than controlling the VCA. The perceived amplitude envelope comes from the filter opening and closing rather than from VCA gain. The timbral change per note is more dramatic: all three filter characters shift with the envelope, but the VCA no longer closes at the note end, so the sound continues at whatever filter position the envelope rests at.
+
+**What to listen for**
+
+With all three outputs reaching the mixer, the combined sound should be fuller and more complex than any single output alone. Setting each mixer channel at a different level reveals how much each filter contributes to the composite character. In the Move, the filter sweep should be audible as a brightening and darkening per note. If the sound does not change with the envelope, verify the FREQ ALL CV input is receiving signal and the cutoff knob is not already at maximum.
 
 ---
+
+### 2. Three Independent Voices
+
+Patching IN2 and IN3 breaks the daisy-chain normalization and assigns each filter channel its own independent source; three oscillators through three filters produce three distinct timbral voices from one module.
+
+**First Voice**
+
+Establish one voice through F1 before adding the other two:
+
+```
+  Sequencer CV out ──[C]──▶ VCO 1 1V/OCT
+  Sequencer gate out ──[G]──▶ EG gate in
+  EG out ──[C]──▶ VCA CV in
+  VCO 1 audio out ──[A]──▶ Etna IN1
+  Etna OUT1 ──[A]──▶ VCA audio in ──▶ Mixer ch.1
+```
+
+Verify a single-filter working voice before adding the additional sources.
+
+**Add the independent voices**
+
+```
+                    ┌───────────────────────────────────────────────┐
+VCO 1 ──[A]──▶      │ IN1         OUT1 (F1: LP 24dB)               │──[A]──▶ VCA ──▶ Mixer ch.1
+VCO 2 ──[A]──▶      │ IN2         OUT2 (F2: BP)                    │──[A]──▶ Mixer ch.2
+VCO 3 ──[A]──▶      │ IN3         OUT3 (F3: HP 12dB)               │──[A]──▶ Mixer ch.3
+                    └───────────────────────────────────────────────┘
+                                  Patching Panda Etna
+```
+
+Use VCOs such as Endorphin.es Local Parks (or Pittsburgh Modular Furthrrrr Generator) for VCO 2 and VCO 3. Set each to a different interval relative to VCO 1 (a fifth above, an octave above, or a detuned unison) to give each filter channel a distinct source character.
+
+- `VCO 1 ──[A]──▶ IN1`: VCO 1 is assigned exclusively to F1 (LP 24dB); patching IN2 breaks the normalization from IN1 to IN2, so F2 no longer receives VCO 1's signal.
+- `VCO 2 ──[A]──▶ IN2`: VCO 2 feeds F2 (BP) exclusively; patching IN3 breaks the normalization from IN2 to IN3, so F3 receives neither VCO 1 nor VCO 2.
+- `VCO 3 ──[A]──▶ IN3`: VCO 3 feeds F3 (HP 12dB) exclusively; all three filter channels now process entirely independent pitched sources.
+
+**Move the cable**
+
+Unplug VCO 2 from IN2 and leave IN2 unpatched.
+
+```
+                    ┌───────────────────────────────────────────────┐
+VCO 1 ──[A]──▶      │ IN1         OUT1 (F1: LP 24dB)               │──[A]──▶ VCA ──▶ Mixer ch.1
+                    │             OUT2 (F2: BP)                    │──[A]──▶ Mixer ch.2
+VCO 3 ──[A]──▶      │ IN3         OUT3 (F3: HP 12dB)               │──[A]──▶ Mixer ch.3
+                    └───────────────────────────────────────────────┘
+                                  Patching Panda Etna
+                    IN2: unpatched; normalization from IN1 restored for F2
+```
+
+What changed: with IN2 unpatched, the daisy-chain normalization from IN1 to IN2 is restored. F1 and F2 now process VCO 1's signal together, while F3 still receives VCO 3 exclusively. The BP output carries VCO 1's character filtered through F2's band-pass, adding a mid-range layer from the same source as the LP. The three-source configuration becomes a two-source configuration by removing one cable.
+
+**What to listen for**
+
+With all three VCOs at different intervals, the three mixer channels should have distinct pitches and timbral characters, not just volume differences. The LP channel is warmer and fuller; the BP channel is more nasal and mid-focused; the HP channel contributes presence and air. In the Move, OUT2 should sound noticeably different from the three-source version: it now carries VCO 1's interval rather than VCO 2's. If all three outputs sound identical, verify that IN2 and IN3 are actually patched and that each VCO is set to a different pitch.
+
+---
+
+### 3. Snapshot Morphing with CV FREQ3 as Modulation Output
+
+The snapshot sequencer advances through stored filter states on each clock pulse, and CV FREQ3 exports F3's evolving cutoff position as a CV; routing that output to an external module couples Etna's internal filter sequence to a second voice without any additional programming.
+
+**First Voice**
+
+```
+  Sequencer CV out ──[C]──▶ VCO 1V/OCT
+  Sequencer gate out ──[G]──▶ EG gate in
+  EG out ──[C]──▶ VCA CV in
+  VCO audio out ──[A]──▶ Etna IN1
+  Etna MIX out ──[A]──▶ VCA audio in ──▶ Mixer
+```
+
+The MIX output combines all three filter outputs in a fixed blend. Verify it is audible and the EG is shaping amplitude before adding snapshot and clock connections.
+
+**Add clock, envelope sweep, and CV FREQ3 export**
+
+```
+                    ┌──────────────────────────────────────────────────────┐
+VCO ──[A]──▶        │ IN1         MIX OUT                                  │──[A]──▶ VCA ──▶ Mixer
+Clock ──[G]──▶      │ CLOCK IN    CV FREQ3 OUT                             │──[C]──▶ VCO FM in
+EG ──[C]──▶         │ FREQ ALL CV                                          │
+                    └──────────────────────────────────────────────────────┘
+                                  Patching Panda Etna
+                    Snapshots: store distinct filter positions for each clock step
+```
+
+Use a clock such as Pamela's Pro Workout (or Hermod+) for the CLOCK IN. Store a sequence of snapshot states before running the patch: at each step, set the three filter cutoffs and resonance to different positions, then save that state as a snapshot.
+
+- `Clock ──[G]──▶ CLOCK IN`: each clock pulse advances the snapshot sequencer by one step, morphing all three filter cutoffs and the resonance simultaneously to the next stored state.
+- `EG ──[C]──▶ FREQ ALL CV`: an envelope adds a per-note brightness sweep on top of the snapshot morphing; the EG offsets all three cutoffs together at each gate event, so every note has a timbral arc within the snapshot state.
+- `CV FREQ3 OUT ──[C]──▶ VCO FM in`: as the snapshot sequencer changes F3's cutoff, that changing voltage is simultaneously exported through CV FREQ3 and modulates the VCO's pitch; the filter sequence drives FM depth without any separate modulation programming.
+
+**Move the cable**
+
+Unplug CV FREQ3 from the VCO FM input and plug it into Etna's own FREQ1 CV input instead.
+
+```
+                    ┌──────────────────────────────────────────────────────┐
+VCO ──[A]──▶        │ IN1         MIX OUT                                  │──[A]──▶ VCA ──▶ Mixer
+Clock ──[G]──▶      │ CLOCK IN                                             │
+EG ──[C]──▶         │ FREQ ALL CV                                          │
+CV FREQ3 ──[C]──▶   │ FREQ1 CV                                             │
+                    └──────────────────────────────────────────────────────┘
+                                  Patching Panda Etna
+```
+
+What changed: F3's current position now modulates F1's cutoff directly rather than the VCO's pitch. The two filter channels develop a relationship: as the snapshot sequence moves F3, F1 tracks it with its own base position as offset. The three-filter composite timbral behavior becomes more complex with each snapshot step because F1 and F3 are now coupled. The VCO returns to its unmodulated pitch.
+
+**What to listen for**
+
+As the clock advances through snapshots, the MIX output should change character noticeably with each step, not just in brightness but in the balance between LP, BP, and HP contributions. The EG sweep adds timbral movement within each snapshot state. With CV FREQ3 feeding the VCO FM input, the pitch should vary subtly with each snapshot step. In the Move, the filter character should become more complex per step as F1 and F3 interact. If the snapshot sequencer does not advance, verify the clock is sending a gate signal at the correct voltage level and that snapshots have been stored before running the clock.
 
 ## Essential Parameters
 
