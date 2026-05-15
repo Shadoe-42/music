@@ -22,6 +22,7 @@ patch_format: v1
 **Audio-to-CV converter: generates gates and velocity-sensitive envelopes from any audio source**
 
 ![4ms Percussion Interface + PI Expander](https://github.com/Shadoe-42/music/raw/main/modular/images/4ms/percussion_interface/front_panel.jpg)
+(https://github.com/Shadoe-42/music/raw/main/modular/images/4ms/percussion_interface/expander.jpg)
 
 ## Historical Context
 
