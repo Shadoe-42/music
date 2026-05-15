@@ -1,8 +1,8 @@
 ---
 title: Endorphin.es Queen of Pentacles
 manufacturer: Endorphin.es
-primary_role: SOURCE
-secondary_roles: [SHAPER]
+primary_role: EVENT_VOICE
+secondary_roles: [SOURCE, SHAPER]
 form_factor: eurorack
 functions: [drum-voice, sample-player]
 behavior_tags: [percussive, gated, dirty, warm, performance-oriented]

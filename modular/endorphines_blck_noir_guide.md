@@ -1,8 +1,8 @@
 ---
 title: Endorphin.es BLCK_NOIR
 manufacturer: Endorphin.es
-primary_role: SOURCE
-secondary_roles: [SHAPER]
+primary_role: EVENT_VOICE
+secondary_roles: [SOURCE, SHAPER]
 form_factor: eurorack
 functions: [drum-voice]
 behavior_tags: [percussive, gated, dirty, warm, harmonic, performance-oriented]

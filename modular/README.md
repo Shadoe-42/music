@@ -46,10 +46,8 @@ Most modules serve more than one role depending on how they're patched. The role
 | 2HP Swarm | Oscillator | [Guide](2hp_swarm_guide.md) |
 | ALM Busy Circuits MCO ALM021 | Oscillator | [Guide](alm_busy_circuits_mco_alm021_guide.md) |
 | Cre8audio Chipz | Oscillator | [Guide](cre8audio_chipz_guide.md) |
-| Endorphin.es BLCK_NOIR | Drum Voice | [Guide](endorphines_blck_noir_guide.md) |
 | Endorphin.es Furthrrrr Generator | Complex Oscillator, Wavefolder | [Guide](endorphines_furthrrrr_generator_guide.md) |
 | Endorphin.es New Godspeed | Oscillator, Wavefolder | [Guide](endorphines_new_godspeed_guide.md) |
-| Endorphin.es Queen of Pentacles | Drum Voice, Sample Player | [Guide](endorphines_queen_of_pentacles_guide.md) |
 | Erica Synths Pico Drum2 | Sample Player | [Guide](erica_synths_pico_drum2_guide.md) |
 | Erica Synths Pico Voice | Complex Oscillator, Filter, Envelope Generator | [Guide](erica_synths_pico_voice_guide.md) |
 | Instruo Cs-L | Complex Oscillator | [Guide](instruo_csl_guide.md) |
@@ -183,6 +181,8 @@ Most modules serve more than one role depending on how they're patched. The role
 | Module | Function | Guide |
 |--------|----------|-------|
 | Blue Lantern Astroid | Drum Voice | [Guide](blue_lantern_astroid_guide.md) |
+| Endorphin.es BLCK_NOIR | Drum Voice | [Guide](endorphines_blck_noir_guide.md) |
+| Endorphin.es Queen of Pentacles | Drum Voice, Sample Player | [Guide](endorphines_queen_of_pentacles_guide.md) |
 | Gamechanger Audio Plasma Voice | Voice Engine, Oscillator, Distortion | [Guide](gamechanger_audio_plasma_voice_guide.md) |
 | Noise Engineering Basimilus Iteritas Alter | Drum Voice, FM Oscillator, Wavefolder | [Guide](noise_engineering_bia_guide.md) |
 | Noise Engineering Manis Iteritas Alia | Drum Voice, FM Oscillator, Distortion | [Guide](noise_engineering_mia_guide.md) |
