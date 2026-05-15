@@ -83,6 +83,30 @@ First Voice cabling:
 
 The CV-before-gate-before-audio ordering holds. The module occupies the center of the audio chain rather than the source position.
 
+**CONTROLLER modules (e.g., Percussion Interface)**
+
+CONTROLLER modules define timing, sequencing, and performance structure. They do not occupy a fixed position in the audio chain; they generate or convert signals that drive other modules. The First Voice for a CONTROLLER patch establishes the working context the controller will act on, then introduces the controller's outputs.
+
+Two CONTROLLER subtypes require different First Voice approaches:
+
+*Audio-to-gate controllers (e.g., Percussion Interface):* These modules convert an audio source into gates and envelopes. First Voice is not a synthesizer voice — it is the audio source and the module itself, configured to fire cleanly. Establish the signal path and verify gate output before connecting to any downstream destination.
+
+```
+  Audio source out ──[A]──▶ [Module] IN
+  [Verify Gate LED fires cleanly on each hit before proceeding]
+```
+
+State gain setting, mode switch position, and any misfire adjustments required. Do not connect the Gate Out or Env Out to a destination until the gate is confirmed clean.
+
+*Clock and sequencer controllers (e.g., Pamela's Pro Workout, Hermod+):* These modules generate timing signals for downstream modules. First Voice describes the voice the controller will drive — the VCO, EG, VCA chain — running in a basic state before the controller's outputs are connected. This establishes what the downstream patch does before the controller imposes rhythm and structure on it.
+
+```
+  VCO audio out ──[A]──▶ VCA audio in ──▶ Mixer
+  [Module] running: basic clock or sequence confirmed active
+```
+
+In both subtypes, the "voice" the reader verifies before the patch's main teaching is the working baseline for whatever the CONTROLLER will act on, not a synthesizer voice in the traditional sense.
+
 ---
 
 ### 3. Core Patch Section
@@ -261,4 +285,4 @@ When rewriting patches in an existing guide:
 2. Do not add patches while rewriting. Patch count stays the same unless there is a specific gap.
 3. Flag guides that have been rewritten in their YAML frontmatter with `patch_format: v1` so audit tooling can track coverage.
 
-Guides converted to v1 format (as of May 2026): New Godspeed, Plasma Voice, Grand Terminal, Etna. No rewrites currently pending.
+Guides converted to v1 format (as of May 2026): New Godspeed, Plasma Voice, Grand Terminal, Etna, 2hp LFO v2, 4ms Percussion Interface + PI Expander. No rewrites currently pending.
