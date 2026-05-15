@@ -185,6 +185,7 @@ Most modules serve more than one role depending on how they're patched. The role
 | Module | Function | Guide |
 |--------|----------|-------|
 | Blue Lantern Astroid | Drum Voice | [Guide](blue_lantern_astroid_guide.md) |
+| dsp.coffee 22 Deaf Chinchillas | VCO, VCA, VCF, Voice | [Guide](dsp_coffee_22_deaf_chinchillas_guide.md) |
 | Endorphin.es BLCK_NOIR | Drum Voice | [Guide](endorphines_blck_noir_guide.md) |
 | Endorphin.es Queen of Pentacles | Drum Voice, Sample Player | [Guide](endorphines_queen_of_pentacles_guide.md) |
 | Gamechanger Audio Plasma Voice | Voice Engine, Oscillator, Distortion | [Guide](gamechanger_audio_plasma_voice_guide.md) |
