@@ -203,6 +203,7 @@ Most modules serve more than one role depending on how they're patched. The role
 | Altered States Machines Eris | Mixer, CV Processor, Switch Router | [Guide](altered_states_machines_eris_guide.md) |
 | Cre8audio Chipz + Cellz + Niftycase Bundle | Oscillator, Sequencer | [Guide](cre8audio_chipz_cellz_niftycase_bundle_guide.md) |
 | DSP Coffee YYS | Attenuator, Mixer, CV Processor | [Guide](dsp_coffee_yys_guide.md) |
+| Erica Synths Pico QUANT | Quantizer, CV Processor | [Guide](erica_synths_pico_quant_guide.md) |
 | Expert Sleepers Disting MK4 | Oscillator, FX Time, Envelope Generator | [Guide](expert_sleepers_disting_mk4_guide.md) |
 
 ---
