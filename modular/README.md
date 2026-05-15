@@ -147,6 +147,7 @@ Most modules serve more than one role depending on how they're patched. The role
 | Bela Gliss | Sequencer, Function Generator, CV Processor | [Guide](bela_gliss_guide.md) |
 | Cre8audio Cellz | Sequencer | [Guide](cre8audio_cellz_guide.md) |
 | Endorphin.es Ground Control | Sequencer, Clock Source | [Guide](endorphines_ground_control_guide.md) |
+| Erica Synths Black Joystick2 | Joystick, Motion Recorder, LFO, Noise Oscillator | [Guide](erica_synths_black_joystick2_guide.md) |
 | Make Noise Pressure Points | Sequencer | [Guide](make_noise_pressure_points_guide.md) |
 | Music Thing Modular Turing Machine Ecosystem | Sequencer, Random Source | [Guide](turing_machine_ecosystem_guide.md) |
 | Noise Engineering Numeric Repetitor | Sequencer, Euclidean Generator | [Guide](noise_engineering_numeric_repetitor_guide.md) |
