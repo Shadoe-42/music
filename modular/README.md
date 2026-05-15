@@ -205,6 +205,7 @@ Most modules serve more than one role depending on how they're patched. The role
 
 <!-- GENERATED:role_tables:end -->
 
+**Classification note:** The 4ms Company MetaModule appears under UTILITY because its functional role is defined entirely by the VCV Rack patch loaded into it, not by the module itself. A given patch may make it a SOURCE, SHAPER, MODULATOR, CONTROLLER, or ROUTER. No single role or function label accurately describes it across all uses. UTILITY is the honest placement for a module that resists classification by design.
 
 ## Conceptual and Integration Guides
 
