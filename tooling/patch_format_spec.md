@@ -53,6 +53,36 @@ before proceeding. If it does not, check the 1V/OCT calibration first.
 
 Signal ordering within First Voice: CV first, gate second, audio third. This matches the logical dependency chain: pitch must be established before envelope, envelope before amplitude, amplitude before the signal reaches the mix.
 
+#### First Voice Role Adaptations
+
+The standard First Voice assumes a VCO role: the guide's module generates audio, an external EG shapes amplitude via an external VCA. Two module roles require a different First Voice structure. Add a brief note at the top of the Patch Examples section identifying which adaptation applies; do not bury this in the individual patches.
+
+**EVENT_VOICE modules (e.g., Plasma Voice)**
+
+EVENT_VOICE modules contain internal amplitude control: an onboard envelope, accent circuit, or internal VCA. External EG and VCA are not needed and should not appear in First Voice.
+
+First Voice cabling adapts per patch type within the same guide:
+
+- Percussion patches (trigger-driven): trigger to module, module audio to Mixer.
+- Melodic patches (CV and trigger-driven): sequencer CV and trigger to module, module audio to Mixer.
+- LOOP mode patches (continuous audio, no external trigger): audio to module, module audio to Mixer.
+
+**SHAPER modules (e.g., Grand Terminal, Etna)**
+
+SHAPER modules sit between oscillator and output; they process audio rather than generate it. External EG and VCA are required because the module provides no amplitude control of its own. The signal chain runs: external oscillator → module → external VCA → Mixer.
+
+First Voice cabling:
+
+```
+  Sequencer CV out ──[C]──▶ VCO 1V/OCT
+  Sequencer gate out ──[G]──▶ EG gate in
+  EG out ──[C]──▶ VCA CV in
+  VCO audio out ──[A]──▶ [Module] audio in
+  [Module] audio out ──[A]──▶ VCA audio in ──▶ Mixer
+```
+
+The CV-before-gate-before-audio ordering holds. The module occupies the center of the audio chain rather than the source position.
+
 ---
 
 ### 3. Core Patch Section
@@ -153,56 +183,56 @@ The following is Patch 3 from the New Godspeed guide, written to this spec.
 
 **External FM Carrier**
 
-This patch teaches how routing an external audio source into the FM input turns New Godspeed into a carrier-modulator pair, where harmonic complexity is controlled by a single depth knob.
+Routing an external oscillator into the FM input creates a two-operator FM voice where the frequency relationship between carrier and modulator determines the harmonic series, not just the index depth.
 
 **First Voice**
 
-Before adding the FM carrier, establish a working voice:
+Before introducing the modulator, establish a working voice:
 
 ```
   Sequencer CV out ──[C]──▶ New Godspeed 1V/OCT
   Sequencer gate out ──[G]──▶ EG gate in
   EG out ──[C]──▶ VCA CV in
-  New Godspeed audio out ──[A]──▶ VCA audio in ──▶ Mixer
+  New Godspeed SINE/FOLD out ──[A]──▶ VCA audio in ──▶ Mixer
 ```
 
-Verify pitch tracks correctly. New Godspeed should be producing a clean pitched tone before adding the carrier.
+Verify pitch tracks correctly. The carrier should be producing a clean pitched tone before the modulator is introduced.
 
-**Add the FM carrier**
+**Add the FM modulator**
 
 ```
-                         ┌─────────────────────────────────────┐
-Sequencer ──[C]──▶       │ 1V/OCT              SINE/FOLD OUT   │──[A]──▶ VCA ──▶ Mixer
-FM source ──[A]──▶       │ FM IN                               │
-FM depth CV ──[C]──▶     │ FM DEPTH CV                         │
-                         └─────────────────────────────────────┘
-                                      New Godspeed
+                         ┌──────────────────────────────────────┐
+Sequencer ──[C]──▶       │ 1V/OCT              SINE/FOLD OUT    │──[A]──▶ VCA ──▶ Mixer
+FM source ──[A]──▶       │ FM IN                                │
+LFO ──[C, medium]──▶     │ INDEX CV                             │
+                         └──────────────────────────────────────┘
+                                       New Godspeed
 ```
 
-Use a VCO such as Local Parks (or Furthrrrr Generator) as the FM source.
+Use a VCO such as Endorphin.es Local Parks (or Pittsburgh Modular Furthrrrr Generator) as the FM source. Set the FM source to a harmonic interval relative to New Godspeed: an octave above, a fifth above, or in unison as a starting point.
 
-- `Sequencer ──[C]──▶ 1V/OCT`: pitch control established in First Voice, unchanged here.
-- `FM source ──[A]──▶ FM IN`: the external VCO becomes the modulator; its frequency determines the harmonic series imposed on New Godspeed's carrier.
-- `FM depth CV ──[C]──▶ FM DEPTH CV`: an LFO (medium, 0.5–2s) on depth CV sweeps continuously between clean and complex timbres without manual intervention.
+- `FM source ──[A]──▶ FM IN`: patching into FM IN breaks the internal sine normal; the external oscillator becomes the modulator, and its frequency relationship to New Godspeed determines the harmonic content of the output.
+- `LFO ──[C, medium]──▶ INDEX CV`: a medium-rate LFO on depth sweeps FM complexity over time; the FM INDEX knob now attenuates this CV rather than acting as a direct depth control.
 
 **Move the cable**
 
-Unplug `FM depth CV` from `FM DEPTH CV` and plug it into `New Godspeed 1V/OCT` instead, keeping the sequencer CV connected as well. Both will sum at the 1V/OCT input.
+Unplug the sequencer CV from New Godspeed 1V/OCT and plug it into the FM source's 1V/OCT instead. Leave New Godspeed at a fixed pitch set by the PITCH knob.
 
 ```
-                         ┌─────────────────────────────────────┐
-Sequencer ──[C]──▶       │ 1V/OCT              SINE/FOLD OUT   │──[A]──▶ VCA ──▶ Mixer
-LFO ──[C, medium]──▶     │ 1V/OCT (summed)                     │
-FM source ──[A]──▶       │ FM IN                               │
-                         └─────────────────────────────────────┘
-                                      New Godspeed
+                         ┌──────────────────────────────────────┐
+PITCH knob (fixed) ──    │ 1V/OCT              SINE/FOLD OUT    │──[A]──▶ VCA ──▶ Mixer
+FM source ──[A]──▶       │ FM IN                                │
+LFO ──[C, medium]──▶     │ INDEX CV                             │
+                         └──────────────────────────────────────┘
+                                       New Godspeed
+                  Sequencer ──[C]──▶ FM source 1V/OCT
 ```
 
-What changed: the LFO now produces vibrato rather than timbral sweep. The same modulation source, routed to pitch instead of FM depth, demonstrates that destination determines musical function.
+What changed: the carrier pitch is now fixed while the modulator frequency follows the sequence. Each step changes the carrier-to-modulator ratio, producing a different FM harmonic series per note rather than a different fundamental pitch. The sequence becomes a timbre sequence, not a pitch sequence.
 
 **What to listen for**
 
-With FM depth at moderate levels, the harmonic content should shift and shimmer as the LFO moves. Full FM depth will produce inharmonic clangour, useful, but not the lesson here. If the pitch is unstable or drifting, the FM source level is too hot; reduce its output before the FM IN jack.
+With the FM source at a harmonic ratio and moderate INDEX, the output should have a metallic quality that shifts with LFO movement. Non-harmonic ratios between carrier and modulator produce inharmonic, clangorous tones. If the pitch is unstable or drifting, FM depth is too high; reduce INDEX attenuation before adjusting the source interval.
 
 ---
 
@@ -231,4 +261,4 @@ When rewriting patches in an existing guide:
 2. Do not add patches while rewriting. Patch count stays the same unless there is a specific gap.
 3. Flag guides that have been rewritten in their YAML frontmatter with `patch_format: v1` so audit tooling can track coverage.
 
-Guides with known patch rewrites pending (as of May 2026): New Godspeed (all 4 patches).
+Guides converted to v1 format (as of May 2026): New Godspeed, Plasma Voice, Grand Terminal, Etna. No rewrites currently pending.
