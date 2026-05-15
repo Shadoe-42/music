@@ -201,6 +201,7 @@ Most modules serve more than one role depending on how they're patched. The role
 | 4ms Company Listen IO | Audio Interface | [Guide](4ms_company_listen_io_guide.md) |
 | 4ms Company MetaModule | Audio Interface | [Guide](4ms_company_metamodule_guide.md) |
 | Altered States Machines Eris | Mixer, CV Processor, Switch Router | [Guide](altered_states_machines_eris_guide.md) |
+| Blue Lantern Subharmonic Generator | Subharmonic Generator, Frequency Divider | [Guide](blue_lantern_subharmonic_generator_guide.md) |
 | Cre8audio Chipz + Cellz + Niftycase Bundle | Oscillator, Sequencer | [Guide](cre8audio_chipz_cellz_niftycase_bundle_guide.md) |
 | DSP Coffee YYS | Attenuator, Mixer, CV Processor | [Guide](dsp_coffee_yys_guide.md) |
 | Erica Synths Pico QUANT | Quantizer, CV Processor | [Guide](erica_synths_pico_quant_guide.md) |
