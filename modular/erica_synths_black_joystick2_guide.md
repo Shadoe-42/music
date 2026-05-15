@@ -18,6 +18,8 @@ patch_format: v1
 
 # Erica Synths Black Joystick2
 
+![Erica Synths Black Joystick2](https://github.com/Shadoe-42/music/raw/main/modular/images/erica_synths/black_joystick_2/front_panel.jpg)
+
 ## Historical Context
 
 The joystick as a musical controller has a longer history than most modular users realize. Don Buchla incorporated joystick interfaces into his systems in the 1960s, treating two-dimensional physical gesture as a legitimate compositional input rather than a performance gimmick. The X/Y controller represents something the standard knob cannot: the ability to move two parameters simultaneously, along a continuous path, in proportions determined by hand rather than preset. A knob encodes a single value at a time. A joystick encodes a relationship between values in real time.
