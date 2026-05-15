@@ -140,6 +140,7 @@ Most modules serve more than one role depending on how they're patched. The role
 |--------|----------|-------|
 | 4ms Company 4ms Rotating Clock Divider v2 | Clock Divider | [Guide](4ms_rcd_v2_guide.md) |
 | 4ms Company 4ms SCM Plus | Clock Multiplier, Clock Divider | [Guide](4ms_scm_plus_guide.md) |
+| 4ms Percussion Interface + PI Expander | Envelope Follower, Gate Generator | [Guide](4ms_percussion_interface_guide.md) |
 | ALM Busy Circuits Pamela's PRO Workout | Clock Source, Euclidean Generator, LFO | [Guide](alm_busy_circuits_pamelas_pro_workout_guide.md) |
 | AtoVproject lx-euclid | Euclidean Generator, Sequencer | [Guide](atovproject_lx-euclid_guide.md) |
 | Bela Gliss | Sequencer, Function Generator, CV Processor | [Guide](bela_gliss_guide.md) |
