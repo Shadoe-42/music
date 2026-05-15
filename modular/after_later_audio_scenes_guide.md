@@ -29,7 +29,7 @@ patch_format: v1
 
 ## Historical Context
 
-The ADSR envelope — Attack, Decay, Sustain, Release — was not an inevitable design. It was a practical compromise. Robert Moog's decision in the 1960s to describe amplitude evolution as four phases with four dedicated knobs produced something teachable, standardized, and functional across a wide range of musical applications. The ADSR became the default envelope shape for synthesizers precisely because its simplicity matched what most players needed most of the time.
+The ADSR envelope (Attack, Decay, Sustain, Release) was not an inevitable design. It was a practical compromise. Robert Moog's decision in the 1960s to describe amplitude evolution as four phases with four dedicated knobs produced something teachable, standardized, and functional across a wide range of musical applications. The ADSR became the default envelope shape for synthesizers precisely because its simplicity matched what most players needed most of the time.
 
 But the ADSR makes assumptions. It assumes the envelope has a single peak. It assumes that peak happens once per gate event. It assumes the sustain is a fixed voltage rather than itself an evolving shape. Electronic music composition, particularly in the tradition extending from Edgard Varèse through Karlheinz Stockhausen and the composers working at Buchla's San Francisco Tape Music Center, often needed more than four phases. A note that swells, plateaus, dips, swells again, and releases with a secondary echo requires something the ADSR cannot express cleanly.
 
@@ -47,7 +47,7 @@ Before quick start, before parameters, before patches: Scenes requires a concept
 
 **The segment** is the atom. Scenes has six of them, numbered 1 through 6 left to right. Each segment has its own knob (Shape/Time), button, slider (Time/Level), CV input, gate input, and output jack. A segment does exactly one thing: it generates a voltage that changes in one of three ways depending on its type.
 
-**The group** is formed by patching a gate input. When you insert a cable into a gate input, that segment becomes the start of a group. Every unpatched segment to the right of it (within the same module) joins that group automatically. The first output of a group generates the envelope signal: the voltage that traces through all the segments in sequence. The remaining outputs of the group generate segment activity signals — ramps from 8V down to 0V that indicate when each subsequent segment is active.
+**The group** is formed by patching a gate input. When you insert a cable into a gate input, that segment becomes the start of a group. Every unpatched segment to the right of it (within the same module) joins that group automatically. The first output of a group generates the envelope signal: the voltage that traces through all the segments in sequence. The remaining outputs of the group generate segment activity signals: ramps from 8V down to 0V that indicate when each subsequent segment is active.
 
 That is the whole rule. Every behavior of Scenes follows from it.
 
@@ -121,7 +121,7 @@ An isolated STEP segment without a gate patched continuously tracks the slider a
 
 A HOLD segment stays at a fixed voltage for a set duration before passing control to the next segment. The slider and CV input set the voltage level (0V to 8V). The knob sets the duration of the hold.
 
-A HOLD segment in the middle of an envelope group sets the sustain level and holds it for the duration controlled by the knob, then proceeds to the next segment regardless of gate state. This makes it useful as the S in an ADSR when combined with a loop — see the looping section below.
+A HOLD segment in the middle of an envelope group sets the sustain level and holds it for the duration controlled by the knob, then proceeds to the next segment regardless of gate state. This makes it useful as the S in an ADSR when combined with a loop (see the looping section below).
 
 An isolated HOLD segment with a gate patched functions as a pulse generator: the slider sets the pulse voltage and the knob sets the pulse duration. With looping enabled, the pulse lasts for as long as the gate is high.
 
@@ -163,7 +163,7 @@ The segment activity signals on outputs 2 through 6 (within a group) are ramps f
 
 ## Patch Examples
 
-Scenes requires a note before patch examples. Because the module reconfigures based on which gate inputs are patched, each patch begins by specifying the segment layout — which segments are grouped, which are isolated — before describing connections.
+Scenes requires a note before patch examples. Because the module reconfigures based on which gate inputs are patched, each patch begins by specifying the segment layout (which segments are grouped, which are isolated) before describing connections.
 
 ### 1. Single LFO from One Segment
 
@@ -212,7 +212,7 @@ Leave the LFO running. Unplug the cable from filter cutoff CV and plug it into t
                     └──────────────────────────────────────────┘
 ```
 
-What changed: the LFO now modulates pitch rather than timbre. Turn the knob counterclockwise for a triangle/saw waveform for a more abrupt pitch oscillation. The same segment, same rate, same configuration — destination determines musical function.
+What changed: the LFO now modulates pitch rather than timbre. Turn the knob counterclockwise for a triangle/saw waveform for a more abrupt pitch oscillation. The same segment, same rate, same configuration: destination determines musical function.
 
 **What to listen for**
 
@@ -273,7 +273,7 @@ What changed: the note now sustains at full level for a fixed time set by slider
 
 **What to listen for**
 
-The LFO on the filter should be audible between notes as continuous timbral movement. On each note trigger, the amplitude envelope should cause the note to appear with a clear attack and decay. If the filter LFO and the amplitude envelope are at similar rates, they will interact: the filter may be closing as the amplitude peaks, producing a darker note. Misalign the rates intentionally — slow filter LFO, fast amplitude decay — to produce notes that each catch a different moment in the filter sweep. In the Move, each note should have a precise, timer-controlled sustain duration independent of sequencer timing.
+The LFO on the filter should be audible between notes as continuous timbral movement. On each note trigger, the amplitude envelope should cause the note to appear with a clear attack and decay. If the filter LFO and the amplitude envelope are at similar rates, they will interact: the filter may be closing as the amplitude peaks, producing a darker note. Misalign the rates intentionally (slow filter LFO, fast amplitude decay) to produce notes that each catch a different moment in the filter sweep. In the Move, each note should have a precise, timer-controlled sustain duration independent of sequencer timing.
 
 ---
 
@@ -338,11 +338,11 @@ The ADSR envelope on the VCA should produce clearly distinguishable attack, deca
 
 **Segment type button.** Short press cycles through RAMP (teal), STEP (orange), HOLD (red). Long press (1 second) toggles loop on the selected segment; LED blinks to indicate looping. Simultaneous press of two buttons within the same group creates a loop spanning those segments.
 
-**Knob [A] — Shape/Time.** Function depends on segment type. RAMP: curve shape (logarithmic to exponential), or waveform when looping (saw/triangle, sine, trapezoid). STEP: glide amount. HOLD: duration of hold (when independent); waveform is not applicable.
+**Knob [A]: Shape/Time.** Function depends on segment type. RAMP: curve shape (logarithmic to exponential), or waveform when looping (saw/triangle, sine, trapezoid). STEP: glide amount. HOLD: duration of hold (when independent); waveform is not applicable.
 
-**Slider [C] — Time/Level.** Function depends on segment type and context. RAMP: time/frequency (duration of the ramp, or LFO speed when looping). STEP: target voltage (0V-8V). HOLD: held voltage level (0V-8V); also duration when used as pulse generator. CV input [1] adds to the slider position.
+**Slider [C]: Time/Level.** Function depends on segment type and context. RAMP: time/frequency (duration of the ramp, or LFO speed when looping). STEP: target voltage (0V-8V). HOLD: held voltage level (0V-8V); also duration when used as pulse generator. CV input [1] adds to the slider position.
 
-**Gate input.** Patching a gate marks the start of a group. Within a group: rising gate edge triggers the envelope; falling gate edge exits any loop and begins the remaining segments. For looping isolated segments: RAMP — syncs LFO to gate tempo. HOLD — pulse generator (output high for knob-set duration per gate). STEP — sample-and-hold (captures CV on each rising edge).
+**Gate input.** Patching a gate marks the start of a group. Within a group: rising gate edge triggers the envelope; falling gate edge exits any loop and begins the remaining segments. For looping isolated segments: RAMP: syncs LFO to gate tempo. HOLD: pulse generator (output high for knob-set duration per gate). STEP: sample-and-hold (captures CV on each rising edge).
 
 **Output jacks.** First output of a group: full envelope signal. Subsequent outputs: segment activity signals (8V to 0V while that segment is active). Isolated segments: the function generator output of that segment.
 
@@ -358,7 +358,7 @@ Scenes does not do one thing. It does not do one thing very well and a few adjac
 
 The specific achievement is that this flexibility does not require a menu or screen. The state of the module is visible on the panel: teal LEDs for RAMP segments, orange for STEP, red for HOLD, blinking for looping. Which gate inputs are patched indicates the group structure. The slider positions indicate levels and times. Reading the panel tells you what the module is configured to do without any hidden state. This matters at the rack, under performance conditions, where reconfiguring a patch needs to happen by feel and observation rather than by navigating menus.
 
-The group mechanism in particular deserves attention. The rule is simple — a patched gate starts a group, unpatched segments to its right join the group — but its consequences are not. Moving one cable changes the module from a six-LFO bank to a two-voice envelope system. Patching gate 1 while segments 2-6 are running freely absorbs those segments into a six-stage envelope group. Removing that cable releases them back to independence. The module's identity reconfigures in real time without touching any button or knob.
+The group mechanism in particular deserves attention. The rule is simple (a patched gate starts a group; unpatched segments to its right join the group) but its consequences are not. Moving one cable changes the module from a six-LFO bank to a two-voice envelope system. Patching gate 1 while segments 2-6 are running freely absorbs those segments into a six-stage envelope group. Removing that cable releases them back to independence. The module's identity reconfigures in real time without touching any button or knob.
 
 The segment activity outputs (outputs 2-6 within a multi-segment group) are frequently overlooked but worth developing a practice around. While the first output carries the main envelope, each subsequent output carries a 8V-to-0V ramp timed to its segment's activity. The decay segment's activity output is active only during the decay phase. The sustain segment's activity output is high during sustain. Routing these to secondary destinations produces phase-synchronized modulation: the filter opens only during the attack, the reverb wet level increases only during the release. One gate event produces a coordinated multi-parameter response across the entire signal chain.
 
@@ -398,7 +398,7 @@ The segment activity outputs (outputs 2-6 within a multi-segment group) are freq
 
 **Expecting a fixed behavior before patching.** With no gate inputs patched, Scenes outputs whatever each isolated segment's type and loop setting produces. Patching a gate changes the configuration immediately. The module does not have a default mode; it has a current configuration determined by the patch state.
 
-**Forgetting that unpatched segments join the nearest group to their left.** Patching gate 1 absorbs segments 2-6 into a single six-segment group. If you want segments 3-6 to remain independent while segment 1-2 form a group, there is no way to do this with one gate — you would need to patch gate 3 as well, which starts a second group. Understand the group formation rule before assuming segment independence.
+**Forgetting that unpatched segments join the nearest group to their left.** Patching gate 1 absorbs segments 2-6 into a single six-segment group. If you want segments 3-6 to remain independent while segment 1-2 form a group, there is no way to do this with one gate; you would need to patch gate 3 as well, which starts a second group. Understand the group formation rule before assuming segment independence.
 
 **Trying to set sustain level with the knob in HOLD mode.** In a HOLD segment acting as sustain, the slider sets the sustain voltage, not the knob. The knob sets the hold duration in non-looping HOLD mode. For a gate-controlled sustain (sustain lasts as long as gate is high), set the HOLD to loop; the duration knob then controls how long the HOLD cycles before the gate releases it. ⚠️ Verify the interaction between HOLD knob and gate behavior in looping vs. non-looping modes.
 
