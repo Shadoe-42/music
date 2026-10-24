@@ -2,7 +2,7 @@
 
 **Status:** Active  
 **Applies to:** All module guides in `/modular/`  
-**Version:** 1.0, May 2026
+**Version:** 1.1, October 2026 (added sustained stereo SOURCE First Voice adaptation)
 
 ---
 
@@ -106,6 +106,31 @@ State gain setting, mode switch position, and any misfire adjustments required. 
 ```
 
 In both subtypes, the "voice" the reader verifies before the patch's main teaching is the working baseline for whatever the CONTROLLER will act on, not a synthesizer voice in the traditional sense.
+
+**Sustained stereo SOURCE modules (e.g., Oneiroi)**
+
+Some SOURCE modules produce continuous audio with no gate, and they carry their own stereo path, effects, and level control. They behave like drone voices rather than note voices. An external EG and VCA are optional: add them only when the lesson is about articulation, because the module already sustains on its own. The signal chain is short: pitch CV in, stereo audio out to a stereo mixer pair.
+
+First Voice cabling for a pitched drone voice:
+
+```
+  Sequencer CV out ──[C]──▶ [Module] V/OCT
+  [Module] L out ──[A]──▶ Mixer L
+  [Module] R out ──[A]──▶ Mixer R
+```
+
+Hold a single sequencer note and confirm that the pitch is stable before introducing the lesson. The CV-before-audio ordering holds. There is no gate cable because no gate is needed to make sound. If the module has a mono-normalled output (for example, L normalling to R), say so in the patch, so the reader knows whether the second mixer cable is required.
+
+When the lesson is about processing external audio, replace the V/OCT cable with the source feeding the stereo input:
+
+```
+  Source L ──[A]──▶ [Module] IN L
+  Source R ──[A]──▶ [Module] IN R
+  [Module] L out ──[A]──▶ Mixer L
+  [Module] R out ──[A]──▶ Mixer R
+```
+
+A mono source is patched to the left input only when the module normals left to right. State the module's input gain setting in the patch whenever the module has one, since the correct setting depends on the source level.
 
 ---
 
