@@ -45,6 +45,7 @@ Most modules serve more than one role depending on how they're patched. The role
 |--------|----------|-------|
 | 2HP Swarm | Oscillator | [Guide](2hp_swarm_guide.md) |
 | ALM Busy Circuits MCO ALM021 | Oscillator | [Guide](alm_busy_circuits_mco_alm021_guide.md) |
+| Befaco Oneiroi | Oscillator, Looper, FX Time | [Guide](befaco_oneiroi_guide.md) |
 | Cre8audio Chipz | Oscillator | [Guide](cre8audio_chipz_guide.md) |
 | Endorphin.es Furthrrrr Generator | Complex Oscillator, Wavefolder | [Guide](endorphines_furthrrrr_generator_guide.md) |
 | Endorphin.es New Godspeed | Oscillator, Wavefolder | [Guide](endorphines_new_godspeed_guide.md) |
