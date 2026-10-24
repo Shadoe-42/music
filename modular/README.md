@@ -79,6 +79,7 @@ Most modules serve more than one role depending on how they're patched. The role
 | Erica Synths Black Polyvoks VCF | Filter | [Guide](erica_synths_black_polyvoks_vcf_guide.md) |
 | Erica Synths Pico DSP | FX Time, FX Modulation | [Guide](erica_synths_pico_dsp_guide.md) |
 | Instruo Arbhar | Granular | [Guide](instruo_arbhar_guide.md) |
+| Joranalogue Fold 6 | Wavefolder, Distortion | [Guide](joranalogue_fold_6_guide.md) |
 | Noise Engineering Ruina Versio | Distortion | [Guide](noise_engineering_ruina_versio_guide.md) |
 | Patching Panda Etna | Filter, Sequencer | [Guide](patching_panda_etna_guide.md) |
 | Patching Panda Moon Phase | Filter | [Guide](patching_panda_moon_phase_guide.md) |
