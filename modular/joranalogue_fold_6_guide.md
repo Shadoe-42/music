@@ -7,7 +7,7 @@ historical_context: true
 form_factor: eurorack
 functions: [wavefolder, distortion]
 behavior_tags: [harmonic, bright, nonlinear, sensitive, reactive, self-modulating]
-use_cases: [west coast timbre shaping, harmonic enrichment of a sine wave, feedback wavefolding texture, waveshaping and distortion]
+use_cases: [west coast timbre shaping, harmonic enrichment of a sine wave, complex modulation from simple shapes, feedback wavefolding texture]
 hp: 4
 memory: none
 transport: none
@@ -24,7 +24,7 @@ patch_format: v1
 ![Joranalogue Fold 6](https://github.com/Shadoe-42/music/raw/main/modular/images/joranalogue/fold_6/front_panel.jpg)
 *Joranalogue Fold 6: FOLD, SHAPE, and SYMMETRY knobs; two signal inputs; FOLD and SHAPE CV inputs; MAIN and ALT outputs*
 
-> **Draft status (2026-10-24):** Written from the official Joranalogue manual (revision D, version 2023-06-26) before the module was in hand. Every specification and control description comes from that manual. All four patches are untested on hardware and are marked ⚠️. Open items to clear on hardware: (1) Depth is 40 mm per ModularGrid (manufacturer approved), while the manual lists 35 mm including the power cable and 52 mm outer depth; (2) all patch settings and every "What to listen for" result; (3) whether the FOLD and SHAPE knobs sum with incoming CV or scale it, which the manual does not state. Remove this block when the items are cleared.
+> **Draft status (2026-10-24):** Written from the official Joranalogue manual (revision D, version 2023-06-26) before the module was in hand. Every specification and control description comes from that manual. All four patches are untested on hardware and are marked ⚠️. Open items to clear on hardware: (1) Depth is 40 mm per ModularGrid (manufacturer approved), while the manual lists 35 mm including the power cable and 52 mm outer depth; (2) all patch settings and every "What to listen for" result; (3) whether the FOLD and SHAPE knobs sum with incoming CV or scale it, which the manual does not state; (4) where a unipolar Zadar shape lands relative to the fold thresholds (Patch 3) and how the Marbles X2 voltage span compares with the FOLD CV range (Patch 4). Remove this block when the items are cleared.
 
 ---
 
@@ -102,7 +102,7 @@ The entire path is DC-coupled. Control voltages fold the same way audio does, an
 
 The central distinction is that Fold 6 does not ask the player to choose a topology. Series and parallel diode folders have separate sonic personalities, and most wavefolder modules commit to one. Here both are present in the same six stages and both are available at the same time through MAIN and ALT, which means a single patch can use one output as the lead timbre and the other as a layered voice, or pick whichever suits the source on a given day without reaching for a different module. In 4 HP that is an unusual amount of choice.
 
-The second distinction is the separation of two timbral axes. FOLD decides how many harmonics exist by deciding how many stages engage; SHAPE decides how aggressively the folded result is clipped toward a pulse. Because the clipper is symmetrical and limits the output to about 10 Vpp, high fold ratios stay usable instead of overloading the next module, and the character can be moved from smooth bell-like complexity to buzzy pulse-like edge with a single control. Both axes carry their own CV input, so they can be modulated independently or by the same source for correlated movement.
+The second distinction is the separation of two timbral axes. FOLD sets how many harmonics exist by setting how many stages engage; SHAPE sets how aggressively the folded result is clipped toward a pulse. Because the clipper is symmetrical and limits the output to about 10 Vpp, high fold ratios stay usable instead of overloading the next module, and the character can be moved from smooth bell-like complexity to buzzy pulse-like edge with a single control. Both axes carry their own CV input, so they can be modulated independently or by the same source for correlated movement.
 
 The third distinction is the DC-coupled, two-input design. The module mixes its inputs, accepts CV as readily as audio, and offers a symmetry offset that works in both directions, either creating asymmetric folds or correcting an unwanted offset in the source. The manual points toward feedback patching, CV folding, and frequency multiplication as natural uses; each depends on the path being fully DC-coupled and unfiltered, which is a design decision rather than a default.
 
@@ -199,41 +199,57 @@ With SHAPE rising on MAIN, the tone should move from folded and bell-like toward
 
 ---
 
-### Patch 3: Feedback Through the Second Input ⚠️
+### Patch 3: Folding a Zadar Shape ⚠️
 
-This patch demonstrates that Fold 6 can feed itself: the second IN jack turns MAIN into a source for its own input, and a modulated FOLD keeps the loop moving.
+This patch demonstrates that Fold 6 folds control voltages as readily as audio: a single-peaked envelope becomes a multi-peaked contour, and SYMMETRY decides where the shape sits relative to the folds.
 
 **First Voice**
 
-Use the same voice as Patch 1, but leave Fold 6 MAIN free for the feedback cable and take the VCA feed from ALT instead.
-
-**Add the feedback loop**
+Fold 6 processes a control voltage in this patch, not the audio, so it does not sit in the audio chain. The voice is an oscillator through a filter and VCA, and Fold 6 reshapes the filter's cutoff modulation:
 
 ```
-                           ┌──────────────────────────────────┐
-New Godspeed ──[A]──▶      │ IN 1                         ALT │──[A]──▶ VCA ──▶ Mixer
-Fold 6 MAIN ──[A]──▶       │ IN 2                        MAIN │──[A]──▶ (patched back to IN 2)
-Ochd LFO 1 ──[C, medium]──▶│ FOLD CV                          │
-                           └──────────────────────────────────┘
-                                    Joranalogue Fold 6
+  Squarp Hermod+ CV out ──[C]──▶ New Godspeed 1V/OCT
+  Squarp Hermod+ gate out ──[G]──▶ EG gate in
+  Squarp Hermod+ gate out ──[G]──▶ Zadar TRIG A
+  EG out ──[C]──▶ VCA CV in
+  New Godspeed EVEN/ODD out ──[A]──▶ Black Polyvoks VCF Audio In
+  Black Polyvoks VCF Filter Out ──[A]──▶ VCA audio in ──▶ Mixer
 ```
 
-- `New Godspeed SINE/FOLD ──[A]──▶ IN 1`: the oscillator provides the pitched seed that the loop will reshape.
-- `MAIN ──[A]──▶ IN 2`: the second input is mixed with the first, so MAIN returns to the folder and the signal folds against itself.
-- `ALT ──[A]──▶ VCA`: listening to the parallel output while MAIN drives the loop separates what feeds the loop from what reaches the mixer.
-- `DivKid Ochd LFO 1 ──[C, medium]──▶ FOLD CV`: a medium-speed LFO keeps the fold depth moving so the loop does not settle into one state. Check the polarity of the LFO output first; FOLD is a linear input that expects a positive voltage to open it further.
+Use a sequencer such as Squarp Hermod+ (or Mutable Instruments Marbles, with X1 for pitch and t2 for gate), an oscillator such as Endorphin.es New Godspeed (or Endorphin.es Furthrrrr Generator), a filter such as Erica Synths Black Polyvoks VCF (or Patching Panda Etna), an envelope generator such as Blue Lantern BLM Looping Simple ADSR (or Make Noise Maths), and a VCA such as Vostok Instruments Ceres (or Erica Synths Pico VCA2). Before adding Fold 6, patch Xaoc Devices Zadar OUT A straight into the filter's CV1 input and confirm that a simple rise-fall shape from Bank A opens and closes the filter once per note.
 
-Use an LFO such as DivKid Ochd (or 2hp LFO v2). Start with the mixer channel low. The module limits its output to about 10 Vpp, but a feedback loop can still be loud and abrupt.
+**Add the folder**
+
+```
+                          ┌──────────────────────────────────┐
+Zadar OUT A ──[C]──▶      │ IN                          MAIN │──[C]──▶ Black Polyvoks VCF CV1
+                          │ FOLD  SHAPE  SYMMETRY            │
+                          └──────────────────────────────────┘
+                                   Joranalogue Fold 6
+```
+
+- `Zadar OUT A ──[C]──▶ IN`: Zadar outputs 0 to 10 V and never goes negative, so the shape arrives entirely on one side of zero; Fold 6 is DC-coupled, so the shape passes through the folder unfiltered like any other signal.
+- `MAIN ──[C]──▶ Black Polyvoks VCF CV1`: the folded contour modulates cutoff, where several peaks per note are immediately audible as several filter movements, and CV1 has an attenuverter for scaling the result.
+
+Move the Zadar cable from CV1 to Fold 6 IN and the Fold 6 output to CV1 as shown. Set Zadar to a single-shot Bank A shape with a duration of about a second or two, so each fold in the contour is long enough to hear as its own filter movement. Set SHAPE fully counterclockwise and SYMMETRY at center. Raise FOLD from minimum until the contour gains extra peaks, then move SYMMETRY away from center. This patch uses nine cables, below the ten-cable ceiling. Use a filter as the destination: MAIN swings roughly -5 V to +5 V, and a negative voltage closes a VCA, as Ceres does.
 
 **Move the cable**
 
-Unplug the feedback cable from MAIN and plug it into ALT, then take the VCA feed from MAIN.
+Unplug the cable from MAIN and plug it into ALT, leaving every knob where it is.
 
-What changed: the parallel output now drives the loop and the series output is what you hear. The loop gain and character differ because ALT carries different fold levels between stages.
+```
+                          ┌──────────────────────────────────┐
+Zadar OUT A ──[C]──▶      │ IN                           ALT │──[C]──▶ Black Polyvoks VCF CV1
+                          │ FOLD  SHAPE  SYMMETRY            │
+                          └──────────────────────────────────┘
+                                   Joranalogue Fold 6
+```
+
+What changed: the parallel output carries different fold levels and directions between stages, so the contour reaching the filter should have a different shape, which the manual describes as more mellow for most input signals.
 
 **What to listen for**
 
-Expect a range from a tone that thickens and shimmers to one that becomes unstable, noisy, or locks to a fixed level, because the path is DC-coupled and a loop can latch. ⚠️ Which of these occurs at which setting is unverified. If the loop sticks, lower FOLD or move SYMMETRY to re-center the offset; if it is simply too loud, back off FOLD before changing anything else.
+With FOLD low, the cutoff should open and close once per note, following the Zadar shape. As FOLD rises, the same duration should hold more peaks and dips, and moving SYMMETRY away from center should change which part of the shape folds. If nothing changes, check that Zadar OUT A reaches IN and that FOLD is above minimum, because at minimum the input is fully attenuated and the control voltage disappears along with the audio. If the filter dives shut and stays there, a negative portion of the contour is pulling the cutoff down; lower FOLD or back off the CV1 attenuverter. ⚠️ Where the shape lands relative to the fold thresholds at each FOLD and SYMMETRY setting is unverified.
 
 ---
 
@@ -249,7 +265,7 @@ The voice is built in full inside this patch; the sequencer role is filled by Mu
 
 ```
                           ┌──────────────────────────────────┐
-New Godspeed ──[A]──▶     │ IN                          MAIN │──[A]──▶ Black Polyvoks VCF IN
+New Godspeed ──[A]──▶     │ IN                          MAIN │──[A]──▶ Black Polyvoks VCF Audio In
 Marbles X2 ──[C]──▶       │ FOLD CV                      ALT │──[A]──▶ MixUp CH2 IN
                           └──────────────────────────────────┘
                                    Joranalogue Fold 6
@@ -257,7 +273,7 @@ Marbles X2 ──[C]──▶       │ FOLD CV                      ALT │─�
   Marbles X1 ──[C]──▶ New Godspeed 1V/OCT
   Marbles t2 ──[G]──▶ EG gate in
   EG out ──[C]──▶ VCA CV in
-  Black Polyvoks VCF OUT ──[A]──▶ VCA audio in ──▶ MixUp CH1 IN
+  Black Polyvoks VCF Filter Out ──[A]──▶ VCA audio in ──▶ MixUp CH1 IN
 ```
 
 - `Marbles X1 ──[C]──▶ New Godspeed 1V/OCT`: the quantized random pitch from the X section sets the melody.
@@ -265,8 +281,8 @@ Marbles X2 ──[C]──▶       │ FOLD CV                      ALT │─�
 - `EG out ──[C]──▶ VCA CV in`: the envelope shapes each note's loudness after the filter.
 - `New Godspeed ──[A]──▶ Fold 6 IN`: the oscillator is the sine source the folder will enrich.
 - `Marbles X2 ──[C]──▶ Fold 6 FOLD CV`: a second output from the same probability system sets the fold depth, so every note gets its own harmonic density, correlated with the melody but not identical to it.
-- `Fold 6 MAIN ──[A]──▶ Black Polyvoks VCF IN`: the filter removes or shapes the upper harmonics that the folder created, joining a Buchla-lineage fold to a subtractive stage.
-- `Black Polyvoks VCF OUT ──[A]──▶ VCA audio in`: the filtered signal reaches the VCA and the mix as the main voice.
+- `Fold 6 MAIN ──[A]──▶ Black Polyvoks VCF Audio In`: the filter removes or shapes the upper harmonics that the folder created, joining a Buchla-lineage fold to a subtractive stage.
+- `Black Polyvoks VCF Filter Out ──[A]──▶ VCA audio in`: the filtered signal reaches the VCA and the mix as the main voice.
 - `VCA out ──[A]──▶ MixUp CH1 IN`: the filtered, enveloped voice reaches the mix on its own channel so its level can be balanced against the layer below.
 - `Fold 6 ALT ──[A]──▶ MixUp CH2 IN`: the unfiltered parallel output sits beside the filtered main voice as a second layer, so one folded source gives two timbres.
 
@@ -312,11 +328,13 @@ The two IN jacks are summed, not multiplied. Two audio signals patched in are mi
 
 4. **Use SYMMETRY and DC deliberately.** Move SYMMETRY away from center and compare even and odd harmonic balance. Then patch a static or slowly moving CV into the second IN jack so that an offset modulates symmetry continuously. Because both inputs are DC-coupled, any CV you mix into the audio becomes a symmetry offset.
 
-5. **Fold a control voltage.** Patch a slow LFO into IN instead of audio and send MAIN to a modulation destination. The folder turns a simple LFO into a complex multi-peaked control voltage, which is a form of CV folding and frequency multiplication of the control signal. Use SYMMETRY to move where the folds occur.
+5. **Extend the Zadar patch.** Set Zadar REPEAT to infinity so the shape loops as a complex LFO with no trigger, then step through shapes and banks while watching the folded contour on Mordax Data. Patch a slow source into Zadar's shape assignment so the shape itself drifts through a bank while Fold 6 refolds it. Because Zadar is unipolar and Fold 6 folds symmetrically, revisit SYMMETRY with each new shape; an offset that works for one shape will not suit another.
 
 6. **Drive FOLD at audio rate.** Patch a second oscillator into FOLD CV and listen as the input VCA is modulated at audio rate. The result is an amplitude interaction before the fold, with the character depending on the frequency relationship between the two oscillators. Compare it with patching the same second oscillator into IN.
 
-7. **Build a stereo fold.** Send MAIN to the left channel and ALT to the right channel of a stereo mixer input, such as Intellijel MixUp channel 3, with a slowly modulated FOLD. The two voicings of the same fold become a stereo image, and any CV on FOLD or SHAPE moves both channels together while their different topologies keep them distinct.
+7. **Close the feedback loop.** Patch the oscillator into one IN jack, patch MAIN back into the other, and take the audio from ALT. Start with the mixer low, because a loop can be loud and abrupt. The path is DC-coupled, so a loop can latch at a fixed level or turn noisy; use FOLD and SYMMETRY to recover, and add a slow modulation source at FOLD CV so the loop keeps moving. ⚠️ Which behavior occurs at which setting is unverified until the module is patched.
+
+8. **Build a stereo fold.** Send MAIN to the left channel and ALT to the right channel of a stereo mixer input, such as Intellijel MixUp channel 3, with a slowly modulated FOLD. The two voicings of the same fold become a stereo image, and any CV on FOLD or SHAPE moves both channels together while their different topologies keep them distinct.
 
 ---
 
@@ -332,7 +350,7 @@ The two IN jacks are summed, not multiplied. Two audio signals patched in are mi
 
 **Mordax Data:** Mordax Data connects oscilloscope and spectrum views to Fold 6's two outputs at once, showing how MAIN and ALT differ in waveform and in harmonic content. Each input gets its own color on screen, so a side-by-side comparison of series and parallel behavior is immediate. It makes the difference between FOLD and SHAPE visible, which is the quickest route to controlling both on purpose.
 
-**DivKid Ochd:** DivKid Ochd supplies eight free-running LFOs at related but drifting rates, ideal for moving FOLD CV and, with attention to polarity, SHAPE CV. Because the rates drift against each other, the fold depth and the drive evolve out of step, producing timbral changes that do not repeat on a short cycle. SHAPE CV treats negative voltage as attenuation, so check the LFO polarity before patching.
+**Xaoc Devices Zadar:** Xaoc Devices Zadar stores 270 vector shapes in 27 banks and outputs them as 0 to 10 V unipolar voltages, and setting REPEAT to infinity turns any shape into a looping complex LFO. Patched into IN, a shape is folded into a multi-peaked contour, which is the subject of Patch 3; patched into FOLD CV or SHAPE CV, it moves the fold depth or the drive along a stored trajectory. Zadar's LEVEL setting scales its output from 10 V down to 10 mV, which keeps shapes within Fold 6's useful input range, and the NIN expander's manual trigger buttons let a shape be auditioned through the folder with no clock or sequencer patched.
 
 ---
 
