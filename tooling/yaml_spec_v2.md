@@ -159,6 +159,7 @@ Assign 1-3 items per guide. Use only terms from this list.
 | `fx-modulation` | Chorus, flanger, phaser, tremolo (as effect) |
 | `fx-pitch` | Pitch shifter, harmonizer, vocoder |
 | `fx-spectral` | Bitcrusher, sample rate reduction, spectral processing |
+| `subharmonic-generator` | Generates frequencies below the input by division (octave-down and lower subharmonics) and blends them with the signal |
 
 ### Modulation
 
@@ -392,6 +393,8 @@ behavior_tags, use_cases, or capability flags. They have no signal function.
 ### Vocabulary additions — 2026-10-24
 
 **functions (Modulation):** Added `envelope-follower` (audio amplitude to control voltage) and `manual-controller` (hand-operated control surface producing CV or gate). `manual-controller` covers the growing set of touch and pressure modules in the corpus, for example Pressure Points, LX-Euclid, Cells and Kharper, which had no functions term.
+
+**functions (Shaping):** Added `subharmonic-generator` (audio-rate frequency division producing octave-down and lower subharmonics). Used in place of forcing the Blue Lantern Subharmonic Generator into `fx-pitch`.
 
 **functions (Sequencing and Timing):** Added `gate-generator` (gates or triggers derived from another signal or event).
 

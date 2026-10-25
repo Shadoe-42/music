@@ -52,7 +52,7 @@ VALID_FUNCTIONS = {
     "drum-voice", "voice-engine", "looper", "sample-player", "granular", "physical-model", "string-instrument",
     # Shaping
     "filter", "wavefolder", "distortion", "resonator", "eq", "dynamics",
-    "fx-time", "fx-modulation", "fx-pitch", "fx-spectral",
+    "fx-time", "fx-modulation", "fx-pitch", "fx-spectral", "subharmonic-generator",
     # Modulation
     "envelope-generator", "lfo", "function-generator", "sample-hold",
     "random-source", "slew-limiter", "quantizer", "envelope-follower", "manual-controller",
