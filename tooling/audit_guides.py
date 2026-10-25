@@ -90,6 +90,7 @@ NON_GUIDE_FILES = {
     "README.md",
     "pkhia_corrections.md",
     "semi_modular_integration_guide.md",
+    "kharper_questions.md",  # temporary hardware checklist; delete when the guide is written
 }
 
 # Severity
