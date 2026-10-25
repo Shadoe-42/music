@@ -91,7 +91,7 @@ Working checklist for the Kharper guide. Delete this file or fold its results in
 | D4 | CV ranges for Tone, Decay, and the per-string inputs | Sweep an LFO or slider; find where the response starts and stops | |
 | D5 | How per-string tone knobs interact with global Tone | Move one, then the other | |
 | D6 | Which engines include a reverb, and what do the "more different functions" the demo mentions control | Play each of the nine; listen for a tail beyond the string decay; check whether Tone or Decay changes it | |
-| D7 | Which engine is the classic Karplus-Strong string, and how does it compare with Rings | Play all nine; compare the spectrum of each with a plain Karplus-Strong decay | |
+| D7 | Which engine is the classic Karplus-Strong string, and how does it compare with Mutable Instruments Rings (the only comparison available; Elements is not in the rack) | Play all nine; compare the spectrum of each with Rings in its string mode and with a plain Karplus-Strong decay | |
 | D8 | Does Herring with Ocean give the low sub sound described | Select it; read the spectrum | |
 | D9 | Does the last KoiKarp variation sound like a piano; what is the first variation's "tublap" character | Select each; record waveform and spectrum | |
 | D10 | Does the shipping unit match the pre-release demo, in firmware and in sound | Compare firmware version (F2) and the demo recording | |
@@ -132,7 +132,8 @@ Working checklist for the Kharper guide. Delete this file or fold its results in
 
 - Collaboration of Error Instruments and TINRS, both Dutch, who had already built modules together; Stijn and Priscilla are named at TINRS (Synth Anatomy), and Paul Tas presents it for Error Instruments.
 - Announced at Superbooth 2025 and sold from July 2025 in limited quantity.
-- The maker compares one engine to the Karplus-Strong sound of Mutable Instruments Rings and Elements. The Rings guide in this corpus mentions Karplus-Strong; there is no Elements guide, and no Grids guide, so any cross-reference stays within what those guides contain.
+- The maker compares one engine to the Karplus-Strong sound of Mutable Instruments Rings and Elements. In the guide this stays the maker's claim, attributed to the demo: Elements is not in the rack, so that half cannot be verified, and only the Rings comparison (D7) can be tested. The Rings guide in this corpus mentions Karplus-Strong; there is no Elements guide and no Grids guide, so any cross-reference stays within what the Rings guide contains.
+- The demo triggered the strings with Mutable Instruments Grids, which is not in the rack. For our tests use a sequencer, Marbles t outputs, or Pamela's PRO Workout; the pluck inputs only need gates.
 - Karplus-Strong string synthesis itself needs a sourced paragraph (Wikipedia and an original source) before the guide is written; do not write it from memory.
 
 ---
