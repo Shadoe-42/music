@@ -283,7 +283,7 @@ Use the same voice as Patch 1, with a master clock in place of the sequencer and
 
 ```
                           ┌──────────────────────────────────┐
-RCD Out 8 ──[T]──▶        │ SYNC IN                    OUT L │──[A]──▶ Mixer L
+Bar-rate out ──[T]──▶     │ SYNC IN                    OUT L │──[A]──▶ Mixer L
 Marbles X1 ──[C]──▶       │ V/OCT                      OUT R │──[A]──▶ Mixer R
 Marbles t2 ──[T]──▶       │ RANDOM IN                        │
                           └──────────────────────────────────┘
@@ -292,12 +292,33 @@ Marbles t2 ──[T]──▶       │ RANDOM IN                        │
 
 - `Master clock ──[T]──▶ 4ms RCD v2 Clock In`: the divider needs the beat it will divide.
 - `Master clock ──[T]──▶ Marbles t clock input`: the same beat keeps Marbles in time with the divider.
-- `RCD Out ──[T]──▶ SYNC IN`: choose an output that gives about one trigger per bar or less; the manual advises a slow clock because one clock serves the looper, the modulation, the echo, and the auto-pan.
+- `RCD bar-rate out ──[T]──▶ SYNC IN`: choose an output that gives one trigger per bar or slower (see the next section for how to set that); the manual advises a slow clock because one clock serves the looper, the modulation, the echo, and the auto-pan.
 - `Marbles X1 ──[C]──▶ V/OCT`: a random pitch source sets the notes the drone moves between.
 - `Marbles t2 ──[T]──▶ RANDOM IN`: each trigger above 1 V runs the randomizer.
 - `OUT L` and `OUT R ──[A]──▶ Mixer`: the stereo output.
 
-Use a clock divider such as 4ms RCD v2 (or ALM Busy Circuits Pamela's PRO Workout). Set TARGET to effects and AMOUNT to the middle position. Allow a couple of seconds for SYNC IN to lock to the clock.
+Use a clock divider such as 4ms RCD v2 (or ALM Busy Circuits Pamela's PRO Workout), fed from the master clock. Set TARGET to effects and AMOUNT to the middle position. Allow a couple of seconds for SYNC IN to lock to the clock.
+
+**Getting a bar-rate clock**
+
+SYNC IN wants about one trigger per bar, or slower. Most master clocks send far more pulses than that, so the job is to divide the clock until one pulse is left per bar. The size of the division depends on how many pulses the sender puts out per quarter note (PPQN). In 4/4 a bar is four quarter notes:
+
+| Clock from the sender | Pulses per bar | Division for one trigger per bar |
+|---|---|---|
+| 1 PPQN (quarter notes) | 4 | /4 |
+| 2 PPQN (8th notes) | 8 | /8 |
+| 4 PPQN (16th notes) | 16 | /16 |
+| 24 PPQN (DIN sync, MIDI clock) | 96 | /96 |
+| 96 PPQN | 384 | /384 |
+
+The standard rates are 24 PPQN for MIDI clock and DIN sync and 96 PPQN for some sequencers, depending on what sends the clock; modular clock jacks often send one pulse per step instead. Check the sending module's clock output setting and write down its rate before choosing a division. For slower than one per bar, multiply the division: /8 on a 16th-note clock is every half bar, and /32 is every two bars.
+
+- **Pamela's PRO Workout:** The module counts in beats, not raw pulses, so set its PPQN to match the incoming clock (24 unless the source says otherwise) and set one output to a square or trigger wave at /4. That fires once every four beats, which is one bar. Use /8 or /16 for every two or four bars.
+- **4ms RCD v2:** The divider counts pulses and its default range is /1 to /8, so feed it a clock that is already close to the beat. A quarter-note clock gives one per bar at /4 and one per two bars at /8. A 16th-note clock needs /16, which means setting Max Div to 16 or higher with the jumper or the Breakout; the division then spreads across the eight outputs, so confirm on the hardware which output lands on /16. A 24 or 96 PPQN clock is beyond even /64, so divide it first with a module such as Pamela's PRO Workout. Do not modulate Rotate CV while it feeds SYNC IN, because rotation changes the division on that output.
+- **Ground Control:** The clock output has its own dividers, from 1/32 up to 4 bars, so set the clock out to one bar or longer and patch it straight to SYNC IN with no divider module. Because it is the transport, the trigger stays aligned with the sequence.
+- **Squarp Hermod+:** My guide does not document a divider on its clock output, so check the system menu. A method that works on any step sequencer is to program a spare track with a trigger on step 1 only, at 16 steps and 16th-note resolution. Its gate output then fires once per bar and stays locked to the transport.
+
+Start the clock before judging the sound, since SYNC IN needs a couple of seconds to lock, and the same time to fall back to its internal 0.2 Hz clock if the cable is removed. Once locked, the clock period becomes the base for the echo time, and DENSITY becomes a divider of it. Align the downbeat by starting the divider and the sequencer together or by sending the transport reset to the divider. ⚠️ Division ranges and menu items come from the module guides and have not been checked against the hardware.
 
 **What to listen for**
 
@@ -367,9 +388,9 @@ By default the internal modulation goes to the filter cutoff and nowhere else. T
 
 ## Pairs Well With
 
-**4ms RCD v2:** The divider turns one clock into several related triggers, and SYNC IN needs exactly one slow beat that the rest of the module derives its timing from. A single output of 4ms RCD v2 set to one trigger per bar locks the echo, the auto-pan, and the modulation together, and the Rotate input moves which division feeds the module over time. ⚠️
+**4ms RCD v2:** The divider turns one clock into several related triggers, and SYNC IN needs exactly one slow beat that the rest of the module derives its timing from. A single output of 4ms RCD v2 set to one trigger per bar locks the echo, the auto-pan, and the modulation together. Feed it a clock already near the beat, since its default range stops at /8, and keep Rotate CV static on the output that feeds SYNC IN, because rotation changes its division. The division table in Patch 4 shows the setting for each clock rate. ⚠️
 
-**ALM Busy Circuits Pamela's PRO Workout:** Pamela's PRO Workout offers the same slow, stable beat through its division and swing outputs, with a range of timing variations that can change where the trigger falls in the bar. It can feed SYNC IN with a slow clock and RANDOM IN with a pattern of triggers from other outputs, which makes the randomizer follow a rhythm rather than a random source.
+**ALM Busy Circuits Pamela's PRO Workout:** Pamela's PRO Workout offers the same slow, stable beat through its division and swing outputs, with a range of timing variations that can change where the trigger falls in the bar. With its PPQN matched to the sender, one output at /4 gives one trigger per bar for SYNC IN, and /8 or /16 gives every two or four bars. Another output can feed RANDOM IN with a rhythmic pattern, which makes the randomizer follow a rhythm rather than a random source.
 
 **Mutable Instruments Marbles:** X1 supplies the pitch for the V/OCT input and t2 supplies the triggers for RANDOM IN, so one module plays the drone and moves its character. DEJA VU locked makes the sequence repeat while the effects continue to evolve, and unlocked, the whole piece drifts. ⚠️ Confirm the X1 voltage span against the 0 V to 10 V range of V/OCT.
 
