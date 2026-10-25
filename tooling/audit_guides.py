@@ -55,10 +55,10 @@ VALID_FUNCTIONS = {
     "fx-time", "fx-modulation", "fx-pitch", "fx-spectral",
     # Modulation
     "envelope-generator", "lfo", "function-generator", "sample-hold",
-    "random-source", "slew-limiter", "quantizer",
+    "random-source", "slew-limiter", "quantizer", "envelope-follower", "manual-controller",
     # Sequencing & Timing
     "sequencer", "clock-source", "clock-divider", "clock-multiplier",
-    "euclidean-generator",
+    "euclidean-generator", "gate-generator",
     # Routing & Utility
     "vca", "mixer", "attenuator", "mult", "switch-router", "signal-router",
     "logic-processor", "cv-processor",

@@ -171,6 +171,8 @@ Assign 1-3 items per guide. Use only terms from this list.
 | `random-source` | Random or stochastic CV generation |
 | `slew-limiter` | Portamento, lag processor, glide |
 | `quantizer` | Pitch or CV quantization to scales or intervals |
+| `envelope-follower` | Converts audio amplitude to a control voltage |
+| `manual-controller` | Hand-operated control surface producing CV or gate: touch strips and plates, pressure pads, joysticks, keyboards, ribbons |
 
 ### Sequencing and Timing
 
@@ -181,6 +183,7 @@ Assign 1-3 items per guide. Use only terms from this list.
 | `clock-divider` | Clock division |
 | `clock-multiplier` | Clock multiplication |
 | `euclidean-generator` | Euclidean or Bjorklund rhythm pattern generation |
+| `gate-generator` | Derives gates or triggers from another signal or event (drum hits, thresholds, edges) |
 
 ### Routing and Utility
 
@@ -378,10 +381,18 @@ behavior_tags, use_cases, or capability flags. They have no signal function.
 
 ---
 
-*Last updated: 2026-05-06*
+*Last updated: 2026-10-24*
 
 ### Vocabulary additions — 2026-05-06
 
 **functions (Sources):** Added `voice-engine` (complete triggered sound engine, EVENT_VOICE equivalent at functions level) and `looper` (real-time audio recording, playback, overdub). Both are needed for the modular corpus and will apply broadly to guitar pedals and grooveboxes.
 
 **behavior_tags (Sonic Character):** Added `granular`, `lo-fi`, and `chiptune`. These describe distinct sonic characters that do not map cleanly to existing terms. Deferred: `textural`, `spatial`, `rhythmic` — acknowledged gaps, added when the corpus demands them.
+
+### Vocabulary additions — 2026-10-24
+
+**functions (Modulation):** Added `envelope-follower` (audio amplitude to control voltage) and `manual-controller` (hand-operated control surface producing CV or gate). `manual-controller` covers the growing set of touch and pressure modules in the corpus, for example Pressure Points, LX-Euclid, Cells and Kharper, which had no functions term.
+
+**functions (Sequencing and Timing):** Added `gate-generator` (gates or triggers derived from another signal or event).
+
+`tooling/audit_guides.py` carries the same list in `VALID_FUNCTIONS`; both were updated together. Existing guides using other unknown terms (`vco`, `vcf`, `voice`, `step-sequencer`, `joystick`, `motion-recorder`, `noise-oscillator`, `subharmonic-generator`, `frequency-divider`) are remapped to listed terms, not added.
