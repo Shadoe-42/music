@@ -128,6 +128,42 @@ With a clock patched into the CLOCK input, the sequencer advances one step per c
 
 ---
 
+## Essential Parameters
+
+**FRQ1, FRQ2, FRQ3 (knobs).** Hardware frequency controls for each filter section, active at all times and summed with the corresponding FRQ sliders. These are always live; they are not stored in snapshots. Use the knobs to set a baseline frequency position and the sliders to program the range of positions the snapshot sequence will traverse above or below that baseline.
+
+**FRQ1, FRQ2, FRQ3 (sliders).** The digital sliders that are stored in each snapshot. These represent the snapshot-programmable component of each filter's cutoff frequency. When the snapshot sequencer morphs between states, it is these values that transition; the hardware knobs remain fixed at their current positions throughout.
+
+**AM1, AM2, AM3 (sliders).** Per-filter amplitude controls that set each filter's contribution to the MIX output. These are stored in snapshots, which means the mix balance between the three filters can change with each step of the sequence. A sequence that alternates between high AM1/low AM3 and low AM1/high AM3 will shift the character of the MIX output between filter voices even if the frequencies do not change.
+
+**Q (slider).** Global resonance control for all three filters. Stored in snapshots. At minimum, the filters have no resonance peak. At maximum, all three self-oscillate at their respective frequencies. Because Q affects all three simultaneously, varying Q across snapshots changes the resonance character of the entire filter bank together; there is no per-filter resonance control.
+
+**FQ ALL (slider).** A global frequency offset stored in snapshots that adds to all three individual filter frequencies simultaneously. This is the slider equivalent of the FREQ ALL hardware knob and CV input. FQ ALL in snapshots allows the sequencer to program global frequency shifts across the entire filter bank as part of the morphing sequence, separate from per-filter programming.
+
+**GLIDE (slider).** Sets the transition time from the previous snapshot to the current one, 0 to 500ms. Stored per snapshot. A snapshot with GLIDE at minimum produces an instant transition to its stored values; a snapshot with GLIDE at maximum takes 500ms to fully arrive. Varying GLIDE across snapshots creates rhythmic contrast between morphing and stepping behavior within a single sequence.
+
+**CV FRQ1, CV FRQ2, CV FRQ3 (inputs with attenuverters).** Individual frequency CV inputs per filter. The attenuverter knob for each controls the depth and polarity of the incoming CV. These are live analog inputs; their contribution to filter frequency is not stored in snapshots and is always summed with the knob and slider positions.
+
+**FREQ ALL CV (input).** A CV input that offsets all three filter frequencies simultaneously, summed with the individual CVs and the FQ ALL slider. Patching an envelope here sweeps all three filters together, tightening or opening the filter bank as a unified gesture.
+
+**FM (input with attenuator).** An audio-rate or control-rate signal that modulates all three filter frequencies simultaneously. The FM attenuator scales the depth of this modulation from zero to maximum. At low attenuator settings and a slow source (LFO), FM adds slow drift to all three cutoffs together. At high attenuator settings and an audio-rate source (oscillator), FM produces complex harmonic multiplication across all three filter outputs simultaneously.
+
+**POS CV (input).** A 0 to 10V input that directly sets the sequencer's playback position. 0V points to snapshot 1; 10V points to the snapshot at the current LENGTH boundary. POS CV overrides clock-driven stepping when a voltage is present.
+
+**LEN CV (input).** A 0 to 10V input that sets the sequence length. 0V equals length 1; 10V equals length 8. LEN CV allows dynamic sequence length changes under voltage control.
+
+**CV FREQ3 (output).** An output that carries the current F3 frequency position as a CV signal from 0 to 9V. This is a read of F3's actual analog state, summing all contributions: knob, slider, snapshot, and incoming CV. Using this output allows the Etna's snapshot sequencer to drive other modules' parameters in sync with its own filter morphing.
+
+---
+
+## Why Etna Excels
+
+The Etna functions as a parallel filter bank and a secondary mixing stage simultaneously, which is a combination that few modules in the corpus provide. Three filters running in parallel with independent frequency CV per filter means that three separate audio sources can each receive independent timbral treatment and then exit through a single unified output, reducing the routing overhead of a multi-voice patch considerably. For patches where multiple oscillators or drum voices need individual character before they hit the main mix, the Etna handles frequency shaping and signal convergence in a single module rather than requiring a separate filter and a separate mixer for each voice.
+
+The snapshot sequencer elevates the Etna from a static filter bank to a time-varying timbral processor. Eight snapshots of the full slider state, stepped by clock, CV, or the POS input, means the filter character can evolve on a musical timeline without continuous manual intervention. The GLIDE control applies slew to every transition, which prevents the abrupt jumps that make stepped parameter changes read as edits rather than as movement. PENDULUM mode produces continuous oscillation between the first and last snapshot, converting a set of discrete states into a bidirectional sweep. The result is a filter bank that participates in the composition rather than setting a fixed color for the patch.
+
+The CV FREQ3 output is a consequence of the filter architecture that extends Etna's usefulness into the broader patch. As the snapshot sequence advances, F3 tracks its assigned position and outputs that position as a voltage. Anything downstream that accepts CV can follow the Etna's filter movement at a scaled and offset depth: a second oscillator, another filter, an LFO rate input. The Etna is then not only processing audio through its three filter channels but generating a structured modulation signal derived from the same musical sequence, at no additional cost in patch complexity.
+
 ## Patch Examples
 
 Etna is a SHAPER module: it sits in the signal chain between oscillator and output, filtering rather than generating sound. All patches require an external VCA and EG to shape amplitude. Etna does nothing in isolation.
@@ -298,42 +334,6 @@ What changed: F3's current position now modulates F1's cutoff directly rather th
 **What to listen for**
 
 As the clock advances through snapshots, the MIX output should change character noticeably with each step, not just in brightness but in the balance between LP, BP, and HP contributions. The EG sweep adds timbral movement within each snapshot state. With CV FREQ3 feeding the VCO FM input, the pitch should vary subtly with each snapshot step. In the Move, the filter character should become more complex per step as F1 and F3 interact. If the snapshot sequencer does not advance, verify the clock is sending a gate signal at the correct voltage level and that snapshots have been stored before running the clock.
-
-## Essential Parameters
-
-**FRQ1, FRQ2, FRQ3 (knobs).** Hardware frequency controls for each filter section, active at all times and summed with the corresponding FRQ sliders. These are always live; they are not stored in snapshots. Use the knobs to set a baseline frequency position and the sliders to program the range of positions the snapshot sequence will traverse above or below that baseline.
-
-**FRQ1, FRQ2, FRQ3 (sliders).** The digital sliders that are stored in each snapshot. These represent the snapshot-programmable component of each filter's cutoff frequency. When the snapshot sequencer morphs between states, it is these values that transition; the hardware knobs remain fixed at their current positions throughout.
-
-**AM1, AM2, AM3 (sliders).** Per-filter amplitude controls that set each filter's contribution to the MIX output. These are stored in snapshots, which means the mix balance between the three filters can change with each step of the sequence. A sequence that alternates between high AM1/low AM3 and low AM1/high AM3 will shift the character of the MIX output between filter voices even if the frequencies do not change.
-
-**Q (slider).** Global resonance control for all three filters. Stored in snapshots. At minimum, the filters have no resonance peak. At maximum, all three self-oscillate at their respective frequencies. Because Q affects all three simultaneously, varying Q across snapshots changes the resonance character of the entire filter bank together; there is no per-filter resonance control.
-
-**FQ ALL (slider).** A global frequency offset stored in snapshots that adds to all three individual filter frequencies simultaneously. This is the slider equivalent of the FREQ ALL hardware knob and CV input. FQ ALL in snapshots allows the sequencer to program global frequency shifts across the entire filter bank as part of the morphing sequence, separate from per-filter programming.
-
-**GLIDE (slider).** Sets the transition time from the previous snapshot to the current one, 0 to 500ms. Stored per snapshot. A snapshot with GLIDE at minimum produces an instant transition to its stored values; a snapshot with GLIDE at maximum takes 500ms to fully arrive. Varying GLIDE across snapshots creates rhythmic contrast between morphing and stepping behavior within a single sequence.
-
-**CV FRQ1, CV FRQ2, CV FRQ3 (inputs with attenuverters).** Individual frequency CV inputs per filter. The attenuverter knob for each controls the depth and polarity of the incoming CV. These are live analog inputs; their contribution to filter frequency is not stored in snapshots and is always summed with the knob and slider positions.
-
-**FREQ ALL CV (input).** A CV input that offsets all three filter frequencies simultaneously, summed with the individual CVs and the FQ ALL slider. Patching an envelope here sweeps all three filters together, tightening or opening the filter bank as a unified gesture.
-
-**FM (input with attenuator).** An audio-rate or control-rate signal that modulates all three filter frequencies simultaneously. The FM attenuator scales the depth of this modulation from zero to maximum. At low attenuator settings and a slow source (LFO), FM adds slow drift to all three cutoffs together. At high attenuator settings and an audio-rate source (oscillator), FM produces complex harmonic multiplication across all three filter outputs simultaneously.
-
-**POS CV (input).** A 0 to 10V input that directly sets the sequencer's playback position. 0V points to snapshot 1; 10V points to the snapshot at the current LENGTH boundary. POS CV overrides clock-driven stepping when a voltage is present.
-
-**LEN CV (input).** A 0 to 10V input that sets the sequence length. 0V equals length 1; 10V equals length 8. LEN CV allows dynamic sequence length changes under voltage control.
-
-**CV FREQ3 (output).** An output that carries the current F3 frequency position as a CV signal from 0 to 9V. This is a read of F3's actual analog state, summing all contributions: knob, slider, snapshot, and incoming CV. Using this output allows the Etna's snapshot sequencer to drive other modules' parameters in sync with its own filter morphing.
-
----
-
-## Why Etna Excels
-
-The Etna functions as a parallel filter bank and a secondary mixing stage simultaneously, which is a combination that few modules in the corpus provide. Three filters running in parallel with independent frequency CV per filter means that three separate audio sources can each receive independent timbral treatment and then exit through a single unified output, reducing the routing overhead of a multi-voice patch considerably. For patches where multiple oscillators or drum voices need individual character before they hit the main mix, the Etna handles frequency shaping and signal convergence in a single module rather than requiring a separate filter and a separate mixer for each voice.
-
-The snapshot sequencer elevates the Etna from a static filter bank to a time-varying timbral processor. Eight snapshots of the full slider state, stepped by clock, CV, or the POS input, means the filter character can evolve on a musical timeline without continuous manual intervention. The GLIDE control applies slew to every transition, which prevents the abrupt jumps that make stepped parameter changes read as edits rather than as movement. PENDULUM mode produces continuous oscillation between the first and last snapshot, converting a set of discrete states into a bidirectional sweep. The result is a filter bank that participates in the composition rather than setting a fixed color for the patch.
-
-The CV FREQ3 output is a consequence of the filter architecture that extends Etna's usefulness into the broader patch. As the snapshot sequence advances, F3 tracks its assigned position and outputs that position as a voltage. Anything downstream that accepts CV can follow the Etna's filter movement at a scaled and offset depth: a second oscillator, another filter, an LFO rate input. The Etna is then not only processing audio through its three filter channels but generating a structured modulation signal derived from the same musical sequence, at no additional cost in patch complexity.
 
 ## Advanced Learning Path
 
