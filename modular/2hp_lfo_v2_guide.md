@@ -108,6 +108,34 @@ With RESET connected to a clock source and the LFO rate set slower than the cloc
 
 ---
 
+## Essential Parameters
+
+**RANGE toggle.** Left: 27 second cycle to 20Hz. Right: 3.3 second cycle to 152Hz. Sets the operating range for the RATE knob. The fast range reaches into the lower audio spectrum; at those speeds the output functions as an audio-rate oscillator rather than a modulation source.
+
+**RESET input.** Trigger input. Returns both outputs to the beginning of their waveform cycle simultaneously. Used to synchronize LFO phase with an external clock. Does not affect rate or waveform; only resets position in the cycle.
+
+**RATE knob and Rate CV.** The knob sets the cycle speed within the active RANGE. Rate CV (unipolar 0-5V) adds to the knob position; it can increase rate above the knob setting but cannot decrease it below.
+
+**WAVE knob and Wave CV.** Selects and morphs between four waveform positions. Interpolation is continuous: any position between the four labeled points produces a blend of the adjacent waveforms. Wave CV (unipolar 0-5V) adds to the knob position; set the knob at minimum to voltage-control the full waveform range.
+
+**Primary output (jack 5).** 0-5V unipolar. Waveforms: Cosine, Triangle, Saw, Square at positions 1-4. LED brightness corresponds to output voltage.
+
+**Secondary output (jack 6).** 0-5V unipolar. Waveforms: FM Sines, Inverted Triangle, Ramp, Stepped Triangle at positions 1-4. LED brightness corresponds to output voltage. Not a copy of the primary output; produces a different waveform family at each WAVE position.
+
+---
+
+## Why 2hp LFO v2 Excels
+
+The 2hp LFO's unipolar output is a considered design decision rather than a constraint. A unipolar source (0-5V) defines a floor at the destination: set the destination's knob and the LFO pushes the parameter above it, never below. For filter sweeps, amplitude pulses, and pitch ornaments where the modulation is always additive relative to the resting position, unipolar behavior is direct and predictable. There is no need to offset a bipolar signal into range; the knob position at the destination handles that. In a small system or a dense patch, fewer utility modules between the LFO and its destination is a real advantage.
+
+The wave morphing distinguishes the LFO from simpler alternatives. The WAVE knob does not switch between waveforms with a click or detent; it blends between them continuously. Between triangle and saw, the modulation shape has a faster rise than fall or a faster fall than rise, depending on position. Applied through Wave CV from an envelope, the waveform shape changes per note, so the character of a filter sweep or an amplitude pulse evolves over the course of a gate event without any manual intervention. That is a more complex modulation result than rate alone can produce.
+
+The dual-output architecture with paired but different waveforms means two complementary modulation signals from one 2HP module at one rate. The primary triangle and secondary inverted triangle at position 2 create push-pull behavior across two destinations simultaneously. The primary square and secondary stepped triangle at position 4 create binary gating on one destination and a rhythmic staircase on another. One module occupying the smallest practical panel width produces a two-channel modulation result that would otherwise require two separate modules and an attenuverter to manage their phase relationship.
+
+At 2HP, it fits. In a small system where every horizontal pitch is contested, a full-featured LFO with dual outputs, wave morphing, rate CV, wave CV, and clock sync fits in the space most modules give to a single label.
+
+---
+
 ## Patch Examples
 
 ### 1. Unipolar Filter Sweep
@@ -243,34 +271,6 @@ What changed: the square wave produces a binary state rather than a sweep. The f
 **What to listen for**
 
 With the saw waveform and RESET active, each clock pulse should produce a sweep that starts from the filter's minimum position and rises toward its maximum before the next reset. If the sweep reaches maximum before the reset, shorten the LFO cycle (increase rate) until the reset cuts it off before completion. In the Move, the filter should snap between open and closed states in clear rhythm with the clock. If the filter seems to close randomly rather than on clock pulses, verify the clock is sending a trigger signal within the RESET input's accepted voltage range.
-
----
-
-## Essential Parameters
-
-**RANGE toggle.** Left: 27 second cycle to 20Hz. Right: 3.3 second cycle to 152Hz. Sets the operating range for the RATE knob. The fast range reaches into the lower audio spectrum; at those speeds the output functions as an audio-rate oscillator rather than a modulation source.
-
-**RESET input.** Trigger input. Returns both outputs to the beginning of their waveform cycle simultaneously. Used to synchronize LFO phase with an external clock. Does not affect rate or waveform; only resets position in the cycle.
-
-**RATE knob and Rate CV.** The knob sets the cycle speed within the active RANGE. Rate CV (unipolar 0-5V) adds to the knob position; it can increase rate above the knob setting but cannot decrease it below.
-
-**WAVE knob and Wave CV.** Selects and morphs between four waveform positions. Interpolation is continuous: any position between the four labeled points produces a blend of the adjacent waveforms. Wave CV (unipolar 0-5V) adds to the knob position; set the knob at minimum to voltage-control the full waveform range.
-
-**Primary output (jack 5).** 0-5V unipolar. Waveforms: Cosine, Triangle, Saw, Square at positions 1-4. LED brightness corresponds to output voltage.
-
-**Secondary output (jack 6).** 0-5V unipolar. Waveforms: FM Sines, Inverted Triangle, Ramp, Stepped Triangle at positions 1-4. LED brightness corresponds to output voltage. Not a copy of the primary output; produces a different waveform family at each WAVE position.
-
----
-
-## Why 2hp LFO v2 Excels
-
-The 2hp LFO's unipolar output is a considered design decision rather than a constraint. A unipolar source (0-5V) defines a floor at the destination: set the destination's knob and the LFO pushes the parameter above it, never below. For filter sweeps, amplitude pulses, and pitch ornaments where the modulation is always additive relative to the resting position, unipolar behavior is direct and predictable. There is no need to offset a bipolar signal into range; the knob position at the destination handles that. In a small system or a dense patch, fewer utility modules between the LFO and its destination is a real advantage.
-
-The wave morphing distinguishes the LFO from simpler alternatives. The WAVE knob does not switch between waveforms with a click or detent; it blends between them continuously. Between triangle and saw, the modulation shape has a faster rise than fall or a faster fall than rise, depending on position. Applied through Wave CV from an envelope, the waveform shape changes per note, so the character of a filter sweep or an amplitude pulse evolves over the course of a gate event without any manual intervention. That is a more complex modulation result than rate alone can produce.
-
-The dual-output architecture with paired but different waveforms means two complementary modulation signals from one 2HP module at one rate. The primary triangle and secondary inverted triangle at position 2 create push-pull behavior across two destinations simultaneously. The primary square and secondary stepped triangle at position 4 create binary gating on one destination and a rhythmic staircase on another. One module occupying the smallest practical panel width produces a two-channel modulation result that would otherwise require two separate modules and an attenuverter to manage their phase relationship.
-
-At 2HP, it fits. In a small system where every horizontal pitch is contested, a full-featured LFO with dual outputs, wave morphing, rate CV, wave CV, and clock sync fits in the space most modules give to a single label.
 
 ---
 
