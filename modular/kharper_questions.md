@@ -4,6 +4,8 @@ Working checklist for the Kharper guide. Delete this file or fold its results in
 
 **Status (2026-10-24):** Module not in hand (expected in 3-5 days). No manual, no TINRS or GitHub material found. The only sources are retailer pages and news coverage.
 
+**Sources:** retailer pages (Signal Sounds, ModularGrid, Noisebug), Synth Anatomy, the user's recollection of a video, and the transcript of Paul Tas's pre-release demo video for Error Instruments (auto-captioned; captions read as Kharper, Grids, Stijn, Karplus-Strong, KoiKarp).
+
 **Tools:** Mordax Data (scope, spectrum), tape measure, multimeter, tuner, a sequencer with a 1V/octave output, a MIDI keyboard or source, a stereo mixer.
 
 **Marking:** Items under "Known so far" are not yet verified on the hardware. Verified items get a date and a result when tested.
@@ -30,6 +32,13 @@ Working checklist for the Kharper guide. Delete this file or fold its results in
 | Outputs: Control Gate, Control CV, audio L and R | Retailer pages | |
 | Global Tone and Decay, each with knob and CV input | Retailer pages | |
 | USB port allows firmware and engine uploads | Noisebug | |
+| Demo is pre-release ("going to be released soon"); the control voltage, MIDI and audio parts were described as done | Paul Tas demo transcript | |
+| Demo was played with Mutable Instruments Grids triggers; the speaker notes the touch interface is the main way to play | Paul Tas demo transcript | |
+| Worked on with Stijn (TINRS) | Paul Tas demo transcript; Synth Anatomy | |
+| Nine algorithms; some include a reverb and "more different functions" | Paul Tas demo transcript | |
+| KoiKarp family is the more percussive one; its first variation is described as a "tublap" and its last as able to sound like a piano | Paul Tas demo transcript; Noisebug | |
+| One engine is the classic Karplus-Strong sound "from Rings and Elements" (the speaker's words; engine not identified) | Paul Tas demo transcript | |
+| Herring with Ocean gives a low sub sound | Paul Tas demo transcript | |
 
 **Known tension:** the product page states that the standard firmware does not track 1V/octave, while the per-string jacks are described as tone CV by retailers and as V/OCT by the video. Question B1 settles this first.
 
@@ -81,6 +90,11 @@ Working checklist for the Kharper guide. Delete this file or fold its results in
 | D3 | Global Tone and Decay: range and effect on each family | Sweep each on three engines | |
 | D4 | CV ranges for Tone, Decay, and the per-string inputs | Sweep an LFO or slider; find where the response starts and stops | |
 | D5 | How per-string tone knobs interact with global Tone | Move one, then the other | |
+| D6 | Which engines include a reverb, and what do the "more different functions" the demo mentions control | Play each of the nine; listen for a tail beyond the string decay; check whether Tone or Decay changes it | |
+| D7 | Which engine is the classic Karplus-Strong string, and how does it compare with Rings | Play all nine; compare the spectrum of each with a plain Karplus-Strong decay | |
+| D8 | Does Herring with Ocean give the low sub sound described | Select it; read the spectrum | |
+| D9 | Does the last KoiKarp variation sound like a piano; what is the first variation's "tublap" character | Select each; record waveform and spectrum | |
+| D10 | Does the shipping unit match the pre-release demo, in firmware and in sound | Compare firmware version (F2) and the demo recording | |
 
 ## E. Outputs
 
@@ -114,12 +128,21 @@ Working checklist for the Kharper guide. Delete this file or fold its results in
 
 ---
 
+## Notes for Historical Context
+
+- Collaboration of Error Instruments and TINRS, both Dutch, who had already built modules together; Stijn and Priscilla are named at TINRS (Synth Anatomy), and Paul Tas presents it for Error Instruments.
+- Announced at Superbooth 2025 and sold from July 2025 in limited quantity.
+- The maker compares one engine to the Karplus-Strong sound of Mutable Instruments Rings and Elements. The Rings guide in this corpus mentions Karplus-Strong; there is no Elements guide, and no Grids guide, so any cross-reference stays within what those guides contain.
+- Karplus-Strong string synthesis itself needs a sourced paragraph (Wikipedia and an original source) before the guide is written; do not write it from memory.
+
+---
+
 ## Order of testing
 
 1. A1 to A5 (nothing else depends on them).
 2. B1, B2, B3, B4, B7 (pitch decides everything else).
 3. E1 to E3 (the control outputs).
-4. C and D (playing and engines).
+4. C and D (playing and engines, including D6 to D10).
 5. F and G (state, firmware, and guide framing).
 
 ## What to bring back to the guide
