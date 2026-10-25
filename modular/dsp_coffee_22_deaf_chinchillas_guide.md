@@ -3,7 +3,7 @@ title: 22 Deaf Chinchillas
 manufacturer: dsp.coffee
 primary_role: EVENT_VOICE
 secondary_roles: [SOURCE]
-functions: [vco, vca, vcf, voice]
+functions: [oscillator, filter, vca]
 hp: 12
 depth: 30mm
 current_draw:

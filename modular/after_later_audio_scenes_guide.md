@@ -4,9 +4,9 @@ manufacturer: After Later Audio
 primary_role: MODULATOR
 secondary_roles: [CONTROLLER]
 form_factor: eurorack
-functions: [envelope-generator, lfo, step-sequencer, function-generator]
-behavior_tags: [evolving, adaptive, performative]
-use_cases: [multi-stage envelope, simultaneous-lfo-and-envelope, step-sequencer, per-note-envelope-shaping]
+functions: [envelope-generator, lfo, sequencer]
+behavior_tags: [evolving, free-running, gated, performance-oriented]
+use_cases: [multi-stage envelope, simultaneous LFO and envelope, stepped modulation sequences, per-note envelope shaping]
 hp: 14
 depth: 25mm
 memory: none

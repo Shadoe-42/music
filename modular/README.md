@@ -119,7 +119,7 @@ Most modules serve more than one role depending on how they're patched. The role
 | Module | Function | Guide |
 |--------|----------|-------|
 | 2hp LFO v2 | LFO | [Guide](2hp_lfo_v2_guide.md) |
-| After Later Audio Scenes | Envelope Generator, LFO, Step Sequencer, Function Generator | [Guide](after_later_audio_scenes_guide.md) |
+| After Later Audio Scenes | Envelope Generator, LFO, Sequencer | [Guide](after_later_audio_scenes_guide.md) |
 | Behringer Dual Envelope Generator 1003 | Envelope Generator | [Guide](behringer_dual_envelope_generator_1003_utility_guide.md) |
 | Blue Lantern BLM Looping Simple ADSR v21 | Envelope Generator | [Guide](blue_lantern_modules_blm_looping_simple_adsr_v21_guide.md) |
 | Cre8audio Function Junction | Function Generator, Mixer | [Guide](cre8audio_function_junction_guide.md) |
@@ -149,7 +149,7 @@ Most modules serve more than one role depending on how they're patched. The role
 | Bela Gliss | Sequencer, Function Generator, CV Processor | [Guide](bela_gliss_guide.md) |
 | Cre8audio Cellz | Sequencer | [Guide](cre8audio_cellz_guide.md) |
 | Endorphin.es Ground Control | Sequencer, Clock Source | [Guide](endorphines_ground_control_guide.md) |
-| Erica Synths Black Joystick2 | Joystick, Motion Recorder, LFO, Noise Oscillator | [Guide](erica_synths_black_joystick2_guide.md) |
+| Erica Synths Black Joystick2 | Manual Controller, LFO, Noise Source | [Guide](erica_synths_black_joystick2_guide.md) |
 | Make Noise Pressure Points | Sequencer | [Guide](make_noise_pressure_points_guide.md) |
 | Music Thing Modular Turing Machine Ecosystem | Sequencer, Random Source | [Guide](turing_machine_ecosystem_guide.md) |
 | Noise Engineering Numeric Repetitor | Sequencer, Euclidean Generator | [Guide](noise_engineering_numeric_repetitor_guide.md) |
@@ -187,7 +187,7 @@ Most modules serve more than one role depending on how they're patched. The role
 | Module | Function | Guide |
 |--------|----------|-------|
 | Blue Lantern Astroid | Drum Voice | [Guide](blue_lantern_astroid_guide.md) |
-| dsp.coffee 22 Deaf Chinchillas | VCO, VCA, VCF, Voice | [Guide](dsp_coffee_22_deaf_chinchillas_guide.md) |
+| dsp.coffee 22 Deaf Chinchillas | Oscillator, Filter, VCA | [Guide](dsp_coffee_22_deaf_chinchillas_guide.md) |
 | Endorphin.es BLCK_NOIR | Drum Voice | [Guide](endorphines_blck_noir_guide.md) |
 | Endorphin.es Queen of Pentacles | Drum Voice, Sample Player | [Guide](endorphines_queen_of_pentacles_guide.md) |
 | Gamechanger Audio Plasma Voice | Voice Engine, Oscillator, Distortion | [Guide](gamechanger_audio_plasma_voice_guide.md) |
@@ -204,7 +204,7 @@ Most modules serve more than one role depending on how they're patched. The role
 | 4ms Company Listen IO | Audio Interface | [Guide](4ms_company_listen_io_guide.md) |
 | 4ms Company MetaModule | Audio Interface | [Guide](4ms_company_metamodule_guide.md) |
 | Altered States Machines Eris | Mixer, CV Processor, Switch Router | [Guide](altered_states_machines_eris_guide.md) |
-| Blue Lantern Subharmonic Generator | Subharmonic Generator, Frequency Divider | [Guide](blue_lantern_subharmonic_generator_guide.md) |
+| Blue Lantern Subharmonic Generator | FX Pitch | [Guide](blue_lantern_subharmonic_generator_guide.md) |
 | Cre8audio Chipz + Cellz + Niftycase Bundle | Oscillator, Sequencer | [Guide](cre8audio_chipz_cellz_niftycase_bundle_guide.md) |
 | DSP Coffee YYS | Attenuator, Mixer, CV Processor | [Guide](dsp_coffee_yys_guide.md) |
 | Erica Synths Pico QUANT | Quantizer, CV Processor | [Guide](erica_synths_pico_quant_guide.md) |

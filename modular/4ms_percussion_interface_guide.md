@@ -5,8 +5,8 @@ primary_role: CONTROLLER
 secondary_roles: [MODULATOR]
 form_factor: eurorack
 functions: [envelope-follower, gate-generator]
-behavior_tags: [dynamic, performative, adaptive]
-use_cases: [drum-to-gate conversion, velocity-sensitive envelope, sidechaining, acoustic-to-modular bridge]
+behavior_tags: [reactive, percussive, performance-oriented]
+use_cases: [drum-to-gate conversion, velocity-sensitive envelope, sidechain ducking from a kick drum, acoustic-to-modular bridge]
 hp: 8
 depth: 29mm
 memory: none

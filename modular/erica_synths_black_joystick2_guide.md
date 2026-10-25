@@ -4,7 +4,7 @@ manufacturer: Erica Synths
 series: Black Series
 primary_role: CONTROLLER
 secondary_roles: [MODULATOR]
-functions: [joystick, motion-recorder, lfo, noise-oscillator]
+functions: [manual-controller, lfo, noise-source]
 hp: 12
 depth: 30mm
 current_draw:
