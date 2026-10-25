@@ -3,7 +3,7 @@ title: Subharmonic Generator
 manufacturer: Blue Lantern
 primary_role: UTILITY
 secondary_roles: []
-functions: [fx-pitch]
+functions: [subharmonic-generator]
 hp: 4
 depth: 32mm
 current_draw:
