@@ -161,6 +161,36 @@ The segment activity signals on outputs 2 through 6 (within a group) are ramps f
 
 ---
 
+## Essential Parameters
+
+**Segment type button.** Short press cycles through RAMP (teal), STEP (orange), HOLD (red). Long press (1 second) toggles loop on the selected segment; LED blinks to indicate looping. Simultaneous press of two buttons within the same group creates a loop spanning those segments.
+
+**Knob [A]: Shape/Time.** Function depends on segment type. RAMP: curve shape (logarithmic to exponential), or waveform when looping (saw/triangle, sine, trapezoid). STEP: glide amount. HOLD: duration of hold (when independent); waveform is not applicable.
+
+**Slider [C]: Time/Level.** Function depends on segment type and context. RAMP: time/frequency (duration of the ramp, or LFO speed when looping). STEP: target voltage (0V-8V). HOLD: held voltage level (0V-8V); also duration when used as pulse generator. CV input [1] adds to the slider position.
+
+**Gate input.** Patching a gate marks the start of a group. Within a group: rising gate edge triggers the envelope; falling gate edge exits any loop and begins the remaining segments. For looping isolated segments: RAMP: syncs LFO to gate tempo. HOLD: pulse generator (output high for knob-set duration per gate). STEP: sample-and-hold (captures CV on each rising edge).
+
+**Output jacks.** First output of a group: full envelope signal. Subsequent outputs: segment activity signals (8V to 0V while that segment is active). Isolated segments: the function generator output of that segment.
+
+**CV inputs [1].** One per segment. Additive to the slider position. Accepts external CV to voltage-control the slider parameter: rate for RAMP/LFO, level for STEP/HOLD.
+
+**Chaining.** Connect two Scenes modules with the included 3-pin cable (TX to RX, RX to TX). Power off before connecting. Chained modules behave as one larger Scenes with 12 segments. Up to six units can be chained for 36 segments.
+
+---
+
+## Why Scenes Excels
+
+Scenes does not do one thing. It does not do one thing very well and a few adjacent things adequately. It does whatever the combination of patched gate inputs and segment configurations produces, and the range of possible results spans from a single decay envelope to a complex evolving step sequence to six simultaneous LFOs with independent waveforms and rates. The entire range is available from the same 14HP of panel space.
+
+The specific achievement is that this flexibility does not require a menu or screen. The state of the module is visible on the panel: teal LEDs for RAMP segments, orange for STEP, red for HOLD, blinking for looping. Which gate inputs are patched indicates the group structure. The slider positions indicate levels and times. Reading the panel tells you what the module is configured to do without any hidden state. This matters at the rack, under performance conditions, where reconfiguring a patch needs to happen by feel and observation rather than by navigating menus.
+
+The group mechanism in particular deserves attention. The rule is simple (a patched gate starts a group; unpatched segments to its right join the group) but its consequences are not. Moving one cable changes the module from a six-LFO bank to a two-voice envelope system. Patching gate 1 while segments 2-6 are running freely absorbs those segments into a six-stage envelope group. Removing that cable releases them back to independence. The module's identity reconfigures in real time without touching any button or knob.
+
+The segment activity outputs (outputs 2-6 within a multi-segment group) are frequently overlooked but worth developing a practice around. While the first output carries the main envelope, each subsequent output carries a 8V-to-0V ramp timed to its segment's activity. The decay segment's activity output is active only during the decay phase. The sustain segment's activity output is high during sustain. Routing these to secondary destinations produces phase-synchronized modulation: the filter opens only during the attack, the reverb wet level increases only during the release. One gate event produces a coordinated multi-parameter response across the entire signal chain.
+
+---
+
 ## Patch Examples
 
 Scenes requires a note before patch examples. Because the module reconfigures based on which gate inputs are patched, each patch begins by specifying the segment layout (which segments are grouped, which are isolated) before describing connections.
@@ -331,36 +361,6 @@ What changed: the complex ADSR now shapes timbre rather than amplitude. The filt
 **What to listen for**
 
 The ADSR envelope on the VCA should produce clearly distinguishable attack, decay, sustain, and release phases. Adjust slider 3 (sustain voltage) to set how much the signal level drops after the attack peak; at maximum, the sustain matches the attack peak and the decay has no audible effect. Set slider 4 (release) to a longer time than the note length to hear the release tail. In the Move, the filter sweep should show the ADSR profile as timbral evolution: bright attack, slightly darker decay, held sustain brightness, then gradual filter closure on release. The filter and amplitude behaviors should be independently adjustable.
-
----
-
-## Essential Parameters
-
-**Segment type button.** Short press cycles through RAMP (teal), STEP (orange), HOLD (red). Long press (1 second) toggles loop on the selected segment; LED blinks to indicate looping. Simultaneous press of two buttons within the same group creates a loop spanning those segments.
-
-**Knob [A]: Shape/Time.** Function depends on segment type. RAMP: curve shape (logarithmic to exponential), or waveform when looping (saw/triangle, sine, trapezoid). STEP: glide amount. HOLD: duration of hold (when independent); waveform is not applicable.
-
-**Slider [C]: Time/Level.** Function depends on segment type and context. RAMP: time/frequency (duration of the ramp, or LFO speed when looping). STEP: target voltage (0V-8V). HOLD: held voltage level (0V-8V); also duration when used as pulse generator. CV input [1] adds to the slider position.
-
-**Gate input.** Patching a gate marks the start of a group. Within a group: rising gate edge triggers the envelope; falling gate edge exits any loop and begins the remaining segments. For looping isolated segments: RAMP: syncs LFO to gate tempo. HOLD: pulse generator (output high for knob-set duration per gate). STEP: sample-and-hold (captures CV on each rising edge).
-
-**Output jacks.** First output of a group: full envelope signal. Subsequent outputs: segment activity signals (8V to 0V while that segment is active). Isolated segments: the function generator output of that segment.
-
-**CV inputs [1].** One per segment. Additive to the slider position. Accepts external CV to voltage-control the slider parameter: rate for RAMP/LFO, level for STEP/HOLD.
-
-**Chaining.** Connect two Scenes modules with the included 3-pin cable (TX to RX, RX to TX). Power off before connecting. Chained modules behave as one larger Scenes with 12 segments. Up to six units can be chained for 36 segments.
-
----
-
-## Why Scenes Excels
-
-Scenes does not do one thing. It does not do one thing very well and a few adjacent things adequately. It does whatever the combination of patched gate inputs and segment configurations produces, and the range of possible results spans from a single decay envelope to a complex evolving step sequence to six simultaneous LFOs with independent waveforms and rates. The entire range is available from the same 14HP of panel space.
-
-The specific achievement is that this flexibility does not require a menu or screen. The state of the module is visible on the panel: teal LEDs for RAMP segments, orange for STEP, red for HOLD, blinking for looping. Which gate inputs are patched indicates the group structure. The slider positions indicate levels and times. Reading the panel tells you what the module is configured to do without any hidden state. This matters at the rack, under performance conditions, where reconfiguring a patch needs to happen by feel and observation rather than by navigating menus.
-
-The group mechanism in particular deserves attention. The rule is simple (a patched gate starts a group; unpatched segments to its right join the group) but its consequences are not. Moving one cable changes the module from a six-LFO bank to a two-voice envelope system. Patching gate 1 while segments 2-6 are running freely absorbs those segments into a six-stage envelope group. Removing that cable releases them back to independence. The module's identity reconfigures in real time without touching any button or knob.
-
-The segment activity outputs (outputs 2-6 within a multi-segment group) are frequently overlooked but worth developing a practice around. While the first output carries the main envelope, each subsequent output carries a 8V-to-0V ramp timed to its segment's activity. The decay segment's activity output is active only during the decay phase. The sustain segment's activity output is high during sustain. Routing these to secondary destinations produces phase-synchronized modulation: the filter opens only during the attack, the reverb wet level increases only during the release. One gate event produces a coordinated multi-parameter response across the entire signal chain.
 
 ---
 
