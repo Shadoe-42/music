@@ -124,6 +124,44 @@ The CAL LOCK-OUT trim pot on the back of the PI sets an absolute re-trigger mini
 
 ---
 
+## Essential Parameters
+
+**Sensitivity knob.** Controls how much the input signal is amplified before threshold detection. Higher sensitivity means softer signals trigger gates. The LED shows blue when signal is present below clipping and transitions toward red as the signal clips. Clipping causes misfires; back off Sensitivity or switch L|M|H to a lower gain range.
+
+**L|M|H switch (PI Expander).** Sets the gain range: L (0-2x) for modular and professional line level, M (0-20x) for instrument and standard line level, H (0-500x) for high-impedance mics and piezo contact mics. Sets the upper gain limit within which the Sensitivity knob operates. Without the Expander, this is set via a jumper on the back of the PI.
+
+**Sustain knob.** Sets gate pulse width (6ms-0.5s) in both modes. In Gen mode, simultaneously sets the envelope sustain duration. While the gate is high, no additional gates fire; Sustain is the primary misfire prevention tool for sources with long decays. Longer Sustain = less susceptibility to misfires but slower maximum re-trigger rate.
+
+**Env. Decay knob.** Sets the exponential decay time of the envelope (70ms to 6s). In Gen mode, determines how quickly the envelope falls from sustain to 0V after the gate closes. In Follow mode, determines how quickly the envelope falls when the input signal falls. Does not affect gate pulse width.
+
+**Follow/Gen switch.** Gen: consistent envelope shape on every trigger, synchronized with gate. Follow: envelope amplitude tracks input velocity; louder hits produce higher envelopes; gate and envelope may fire at different times.
+
+**Gate Out jack.** 8V gate/trigger output. Fires on every detected hit. Use to clock sequencers, trigger envelope generators, or advance any clock-dependent module. White LED indicates gate state.
+
+**+ Env Out jack (PI main module).** 0-9V positive envelope. Blue LED tracks envelope voltage. Use for filter cutoff CV, VCA gain CV, or any destination where a positive push is the desired modulation.
+
+**- Env Out jack (PI main module).** Inverted envelope. Rests at 9V; falls to 0V on trigger; returns to 9V as decay completes. Green LED dims when envelope is active. Use for sidechaining without additional inversion circuitry.
+
+**Env. Out and Inv. Out jacks (PI Expander).** Attenuated versions of the + and - outputs from the main PI, controlled by Env. Level and Inv. Level knobs respectively. Preferred for sidechain depth control; use these knobs to set the modulation amount rather than adjusting Sensitivity, which changes the trigger threshold as well as the envelope level.
+
+**Audio Out jack (PI Expander).** Buffered, amplified version of the input signal at modular level. Functions as a microphone preamp: a low-level mic signal can be routed through the PI for CV/gate extraction and simultaneously sent to a mixer or effects chain at usable amplitude.
+
+**CAL LOCK-OUT trim pot (back of PI).** Sets the absolute minimum re-trigger period. Default: 100ms (10Hz). Turning counterclockwise allows faster re-triggers; turning clockwise increases the lockout period. Useful in Gen mode to set misfire rejection independently from envelope shaping.
+
+---
+
+## Why Percussion Interface + PI Expander Excels
+
+The PI solves a specific problem that few modules address: getting the acoustic world into the modular vocabulary. Drum machines produce audio, not gates. Acoustic drums produce air pressure, not control voltage. The PI accepts both and generates something the modular system can use from either. That bridging function is genuinely rare. Most CONTROLLER modules assume the control signals already exist and need routing or processing. The PI creates them from scratch out of audio.
+
+The two-mode architecture covers the two primary use cases without requiring separate modules for each. Gen mode handles deterministic applications: clock the sequencer on every kick hit, trigger the envelope generator on every snare, fire the sample on every hi-hat. The envelope is consistent, predictable, and independent of how hard each drum is struck. Follow mode handles expressive applications: let the velocity of each hit shape the filter sweep, control the oscillator pitch bend, or modulate reverb depth. One module, one switch position, two fundamentally different musical behaviors.
+
+The inverted envelope as a purpose-built sidechain signal reflects a design decision worth appreciating. The module could have output only the positive envelope and left sidechain applications to an external inverter or attenuverter. Instead, the - Env Out rests at 9V and collapses to 0V on each trigger, precisely the behavior a VCA CV input expects when the goal is ducking. The Inv. Level knob on the Expander sets duck depth without touching Sensitivity or gate threshold. The sidechain is built in and requires no additional utility modules to implement.
+
+At 8HP for the pair, the PI and Expander together occupy a modest panel footprint for the range of functions they cover: mic preamp, gate generator, envelope follower, velocity sensor, sidechain source, and audio output all from a single input.
+
+---
+
 ## Patch Examples
 
 ### 1. Drum Machine Gate to Sequencer Clock (Gen Mode)
@@ -263,44 +301,6 @@ What changed: the Inv. Out now rests at approximately 4.5V rather than 9V, and f
 **What to listen for**
 
 The synth voice should be clearly audible between kicks and clearly dimmer on each kick hit. The Env. Decay knob sets how quickly the voice recovers to full level; short decay produces a tight pump that opens immediately after the kick; long decay produces a slow swell back up. If the ducking depth is insufficient, verify the VCA is responding to the full 9V-to-0V swing; some VCAs have an attenuator on their CV input that limits the range. In the Move, the synth voice should never reach full level between kicks, sitting at a steady reduced volume that deepens on each kick hit.
-
----
-
-## Essential Parameters
-
-**Sensitivity knob.** Controls how much the input signal is amplified before threshold detection. Higher sensitivity means softer signals trigger gates. The LED shows blue when signal is present below clipping and transitions toward red as the signal clips. Clipping causes misfires; back off Sensitivity or switch L|M|H to a lower gain range.
-
-**L|M|H switch (PI Expander).** Sets the gain range: L (0-2x) for modular and professional line level, M (0-20x) for instrument and standard line level, H (0-500x) for high-impedance mics and piezo contact mics. Sets the upper gain limit within which the Sensitivity knob operates. Without the Expander, this is set via a jumper on the back of the PI.
-
-**Sustain knob.** Sets gate pulse width (6ms-0.5s) in both modes. In Gen mode, simultaneously sets the envelope sustain duration. While the gate is high, no additional gates fire; Sustain is the primary misfire prevention tool for sources with long decays. Longer Sustain = less susceptibility to misfires but slower maximum re-trigger rate.
-
-**Env. Decay knob.** Sets the exponential decay time of the envelope (70ms to 6s). In Gen mode, determines how quickly the envelope falls from sustain to 0V after the gate closes. In Follow mode, determines how quickly the envelope falls when the input signal falls. Does not affect gate pulse width.
-
-**Follow/Gen switch.** Gen: consistent envelope shape on every trigger, synchronized with gate. Follow: envelope amplitude tracks input velocity; louder hits produce higher envelopes; gate and envelope may fire at different times.
-
-**Gate Out jack.** 8V gate/trigger output. Fires on every detected hit. Use to clock sequencers, trigger envelope generators, or advance any clock-dependent module. White LED indicates gate state.
-
-**+ Env Out jack (PI main module).** 0-9V positive envelope. Blue LED tracks envelope voltage. Use for filter cutoff CV, VCA gain CV, or any destination where a positive push is the desired modulation.
-
-**- Env Out jack (PI main module).** Inverted envelope. Rests at 9V; falls to 0V on trigger; returns to 9V as decay completes. Green LED dims when envelope is active. Use for sidechaining without additional inversion circuitry.
-
-**Env. Out and Inv. Out jacks (PI Expander).** Attenuated versions of the + and - outputs from the main PI, controlled by Env. Level and Inv. Level knobs respectively. Preferred for sidechain depth control; use these knobs to set the modulation amount rather than adjusting Sensitivity, which changes the trigger threshold as well as the envelope level.
-
-**Audio Out jack (PI Expander).** Buffered, amplified version of the input signal at modular level. Functions as a microphone preamp: a low-level mic signal can be routed through the PI for CV/gate extraction and simultaneously sent to a mixer or effects chain at usable amplitude.
-
-**CAL LOCK-OUT trim pot (back of PI).** Sets the absolute minimum re-trigger period. Default: 100ms (10Hz). Turning counterclockwise allows faster re-triggers; turning clockwise increases the lockout period. Useful in Gen mode to set misfire rejection independently from envelope shaping.
-
----
-
-## Why Percussion Interface + PI Expander Excels
-
-The PI solves a specific problem that few modules address: getting the acoustic world into the modular vocabulary. Drum machines produce audio, not gates. Acoustic drums produce air pressure, not control voltage. The PI accepts both and generates something the modular system can use from either. That bridging function is genuinely rare. Most CONTROLLER modules assume the control signals already exist and need routing or processing. The PI creates them from scratch out of audio.
-
-The two-mode architecture covers the two primary use cases without requiring separate modules for each. Gen mode handles deterministic applications: clock the sequencer on every kick hit, trigger the envelope generator on every snare, fire the sample on every hi-hat. The envelope is consistent, predictable, and independent of how hard each drum is struck. Follow mode handles expressive applications: let the velocity of each hit shape the filter sweep, control the oscillator pitch bend, or modulate reverb depth. One module, one switch position, two fundamentally different musical behaviors.
-
-The inverted envelope as a purpose-built sidechain signal reflects a design decision worth appreciating. The module could have output only the positive envelope and left sidechain applications to an external inverter or attenuverter. Instead, the - Env Out rests at 9V and collapses to 0V on each trigger, precisely the behavior a VCA CV input expects when the goal is ducking. The Inv. Level knob on the Expander sets duck depth without touching Sensitivity or gate threshold. The sidechain is built in and requires no additional utility modules to implement.
-
-At 8HP for the pair, the PI and Expander together occupy a modest panel footprint for the range of functions they cover: mic preamp, gate generator, envelope follower, velocity sensor, sidechain source, and audio output all from a single input.
 
 ---
 
