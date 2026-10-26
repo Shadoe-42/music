@@ -289,6 +289,16 @@ This is an open project, but quality and consistency matter for generational tra
 
 ---
 
+## Independence, Images, and Corrections
+
+These guides are independent, unofficial teaching documents. They are not affiliated with, endorsed by, or sponsored by any manufacturer or retailer named in them. Product and company names are trademarks of their respective owners and appear only to identify the instruments being discussed.
+
+Many panel images in `modular/images/` come from ModularGrid and manufacturer websites. They belong to their respective rights holders and are not covered by this repository's license. `modular/images/SOURCES.md` records where each image probably came from and is being confirmed file by file.
+
+If you represent a manufacturer, see an error in a guide, or want an image credited differently or removed, open an issue on this repository and it will be handled promptly.
+
+---
+
 ## Contact Philosophy
 
 These guides exist because knowledge should flow forward. When you learn from someone, you inherit an obligation to teach others correctly.
