@@ -2,7 +2,7 @@
 
 Working checklist for the Kharper guide. Delete this file or fold its results into the guide once the guide is written. Not a guide: it carries no YAML and is not part of the README.
 
-**Status (2026-10-24):** Module not in hand (expected in 3-5 days). No manual, no TINRS or GitHub material found. The only sources are retailer pages and news coverage.
+**Status (2026-11-02):** Module in hand. Physical measurements and the power checks are recorded below (section A and the Known table); everything else is still untested. No manual, no TINRS or GitHub material found. The only other sources are retailer pages and news coverage.
 
 **Sources:** retailer pages (Signal Sounds, ModularGrid, Noisebug), Synth Anatomy, the user's recollection of a video, and the transcript of Paul Tas's pre-release demo video for Error Instruments (auto-captioned; captions read as Kharper, Grids, Stijn, Karplus-Strong, KoiKarp).
 
@@ -20,12 +20,12 @@ Working checklist for the Kharper guide. Delete this file or fold its results in
 | Announced at Superbooth 2025; available July 2025 in limited quantity at 350 € incl. VAT | Synth Anatomy | |
 | 18 HP | ModularGrid, Signal Sounds | |
 | Duo is the module in a case; Error Instruments sells a case, or a file is available to print one | User, from a video | |
-| Power from ribbon cable or USB; both work | User, from a video | |
+| Power from ribbon cable or USB; both work | User, from a video | 2026-11-02: USB alone powers the module without the ribbon; the ribbon (power connector) also works. USB is not recommended in a traditional Eurorack case |
 | Four strings, each one voice; two touch strips with an LED bar between them | Retailer pages | |
 | Karplus-Strong physical model | Retailer pages | |
 | Nine engines: two three-position switches, family (Herring, KoiKarp, Dolphin) and variation (Pond, River, Ocean) | User, from a video; Noisebug | |
 | Touch position along the string sets pitch, higher as you move up | User, from a video | |
-| Jacks under each string are V/OCT and gate/trigger | User, from a video | |
+| Jacks under each string are V/OCT and gate/trigger | User, from a video | 2026-11-02: panel labeling confirmed as V/OCT and gate inputs. Tracking accuracy still open (B1) |
 | Tone knob changes both pitch and timbre | User, from a video (uncertain) | |
 | MIDI in plays strings at standard note pitch and holds while the key is held | User, from a video (uncertain) | |
 | STRUM gate input plucks all four strings | Retailer pages | |
@@ -40,7 +40,7 @@ Working checklist for the Kharper guide. Delete this file or fold its results in
 | One engine is the classic Karplus-Strong sound "from Rings and Elements" (the speaker's words; engine not identified) | Paul Tas demo transcript | |
 | Herring with Ocean gives a low sub sound | Paul Tas demo transcript | |
 
-**Known tension:** the product page states that the standard firmware does not track 1V/octave, while the per-string jacks are described as tone CV by retailers and as V/OCT by the video. Question B1 settles this first.
+**Known tension:** the product page states that the standard firmware does not track 1V/octave, while the per-string jacks are described as tone CV by retailers and as V/OCT by the video. The panel labeling is now confirmed as V/OCT (2026-11-02); whether the jack actually tracks 1V/octave is still settled by B1.
 
 ---
 
@@ -48,10 +48,10 @@ Working checklist for the Kharper guide. Delete this file or fold its results in
 
 | # | Question | How to find out | Result |
 |---|---|---|---|
-| A1 | Depth, panel back to furthest point, with the ribbon cable fitted | Tape measure | |
-| A2 | Current draw on +12V, -12V, +5V | Multimeter in the supply line, or ask the makers | |
-| A3 | Power connector type and polarity marking | Visual | |
-| A4 | Does USB power work with the module in a case, and does it conflict with the ribbon cable | Try USB alone, ribbon alone, then both | |
+| A1 | Depth, panel back to furthest point, with the ribbon cable fitted | Tape measure | 2026-11-02: 32 mm, measured with the power connector fitted |
+| A2 | Current draw on +12V, -12V, +5V | Multimeter in the supply line, or ask the makers | 2026-11-02: +12V 140 mA, measured via the power connector. +5V: none, the module has no 5V rail. -12V: not yet measured |
+| A3 | Power connector type and polarity marking | Visual | 2026-11-02: ribbon power connector, red stripe down with the module held in its normal orientation. Board marking not yet photographed |
+| A4 | Does USB power work with the module in a case, and does it conflict with the ribbon cable | Try USB alone, ribbon alone, then both | 2026-11-02: USB alone powers it; the ribbon works. Not tested together. USB power is not recommended in a traditional Eurorack case |
 | A5 | Panel and control layout, including jack labels exactly as printed | Photograph; compare with the annotated panel image in the repo | |
 
 ## B. Pitch (settles the YAML role and Patch 1)
@@ -59,7 +59,7 @@ Working checklist for the Kharper guide. Delete this file or fold its results in
 | # | Question | How to find out | Result |
 |---|---|---|---|
 | B1 | Does the per-string jack track 1V/octave? | Send a sequencer through 0, 1, 2, 3 V; read the spectrum peak in Data against the tuner; note error in cents per octave | |
-| B2 | Is the jack labeled V/OCT or CV on the panel? | Read the panel | |
+| B2 | Is the jack labeled V/OCT or CV on the panel? | Read the panel | 2026-11-02: V/OCT and gate inputs, as expected |
 | B3 | Is touch pitch continuous or stepped? | Slide a finger up a strip with the spectrum running; watch for steps | |
 | B4 | Pitch range per string, lowest to highest | Touch the bottom and top of each strip; read the spectrum | |
 | B5 | Are all four strings tuned the same, or offset? | Touch the same position on each string; compare peaks | |
