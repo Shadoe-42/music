@@ -8,11 +8,12 @@ Discovery plan for the future Kharper guide. Format: `tooling/test_plan_template
 | Guide | none yet |
 | Plan type | Discovery |
 | Firmware | Not yet read (F2) |
+| Unit | Revision and batch or serial: not yet read. Printed marks, board silkscreen and packaging to be photographed. Purchased from: not recorded. Date received: not recorded |
 | Tested on | 2026-11-02 (section A only so far) |
 | Sources | Retailer pages, Synth Anatomy, Paul Tas demo transcript, the user's recollection of a video |
 | Status | In progress |
 
-**Measurement block:** section A is this plan's measurement block. M1 is A1, M2 is A2, M3 is A3, M4 is A5, and M5 is F2.
+**Measurement block:** section A is this plan's measurement block. M1 is A1, M2 is A2, M3 is A3, M4 is A5, and M5 is F2. Unit identity (the Unit row in the header table) is recorded alongside the measurement block, because with so few units in circulation a later difference between two units has to be traceable to a revision or batch and not read as a mistake.
 
 **Status (2026-11-02):** Module in hand. Physical measurements and the power checks are recorded below (section A and the Known table); everything else is still untested. No manual, no TINRS or GitHub material found. The only other sources are retailer pages and news coverage.
 
