@@ -1,6 +1,18 @@
-# Error Instruments Kharper: Hardware Questions and Test Protocol
+# Error Instruments Kharper: Test Plan
 
-Working checklist for the Kharper guide. Delete this file or fold its results into the guide once the guide is written. Not a guide: it carries no YAML and is not part of the README.
+Discovery plan for the future Kharper guide. Format: `tooling/test_plan_template.md`. There is no manual, so each row is a question and the result becomes the source for the guide. When the guide is drafted, the answers become predictions and this file converts to a verification plan; unanswered rows stay as discovery rows. Not a guide: no YAML, not in the README, not audited.
+
+| Field | Value |
+|---|---|
+| Module | Error Instruments Kharper |
+| Guide | none yet |
+| Plan type | Discovery |
+| Firmware | Not yet read (F2) |
+| Tested on | 2026-11-02 (section A only so far) |
+| Sources | Retailer pages, Synth Anatomy, Paul Tas demo transcript, the user's recollection of a video |
+| Status | In progress |
+
+**Measurement block:** section A is this plan's measurement block. M1 is A1, M2 is A2, M3 is A3, M4 is A5, and M5 is F2.
 
 **Status (2026-11-02):** Module in hand. Physical measurements and the power checks are recorded below (section A and the Known table); everything else is still untested. No manual, no TINRS or GitHub material found. The only other sources are retailer pages and news coverage.
 
@@ -56,55 +68,55 @@ Working checklist for the Kharper guide. Delete this file or fold its results in
 
 ## B. Pitch (settles the YAML role and Patch 1)
 
-| # | Question | How to find out | Result |
-|---|---|---|---|
-| B1 | Does the per-string jack track 1V/octave? | Send a sequencer through 0, 1, 2, 3 V; read the spectrum peak in Data against the tuner; note error in cents per octave | |
-| B2 | Is the jack labeled V/OCT or CV on the panel? | Read the panel | 2026-11-02: V/OCT and gate inputs, as expected |
-| B3 | Is touch pitch continuous or stepped? | Slide a finger up a strip with the spectrum running; watch for steps | |
-| B4 | Pitch range per string, lowest to highest | Touch the bottom and top of each strip; read the spectrum | |
-| B5 | Are all four strings tuned the same, or offset? | Touch the same position on each string; compare peaks | |
-| B6 | How do touch position and V/OCT combine: added, or does one override the other? | Hold a touch position and change the V/OCT; then the reverse | |
-| B7 | What does the tone knob change: pitch, brightness, or both, and how much? | Hold a note; sweep Tone; watch the spectrum peak and harmonic content | |
-| B8 | Do MIDI notes set pitch with the same accuracy as the video suggests? | Send notes across several octaves; compare with a tuner | |
-| B9 | MIDI behavior: channel, note-off, velocity response, pitch bend | Test each with a keyboard | |
-| B10 | Any scale or quantize option? | Check the firmware and panel | |
+| # | Question | How to find out | Prediction (source) | Result |
+|---|---|---|---|---|
+| B1 | Does the per-string jack track 1V/octave? | Send a sequencer through 0, 1, 2, 3 V; read the spectrum peak in Data against the tuner; note error in cents per octave | Panel says V/OCT; product page says the standard firmware does not track 1V/octave (sources conflict) | |
+| B2 | Is the jack labeled V/OCT or CV on the panel? | Read the panel |  | 2026-11-02: V/OCT and gate inputs, as expected |
+| B3 | Is touch pitch continuous or stepped? | Slide a finger up a strip with the spectrum running; watch for steps | Pitch rises as the finger moves up the strip (user, video) | |
+| B4 | Pitch range per string, lowest to highest | Touch the bottom and top of each strip; read the spectrum |  | |
+| B5 | Are all four strings tuned the same, or offset? | Touch the same position on each string; compare peaks |  | |
+| B6 | How do touch position and V/OCT combine: added, or does one override the other? | Hold a touch position and change the V/OCT; then the reverse |  | |
+| B7 | What does the tone knob change: pitch, brightness, or both, and how much? | Hold a note; sweep Tone; watch the spectrum peak and harmonic content | Tone changes both pitch and timbre (user, video, uncertain) | |
+| B8 | Do MIDI notes set pitch with the same accuracy as the video suggests? | Send notes across several octaves; compare with a tuner | MIDI plays strings at standard note pitch and holds while the key is held (user, video, uncertain) | |
+| B9 | MIDI behavior: channel, note-off, velocity response, pitch bend | Test each with a keyboard |  | |
+| B10 | Any scale or quantize option? | Check the firmware and panel |  | |
 
 ## C. Playing the strings
 
-| # | Question | How to find out | Result |
-|---|---|---|---|
-| C1 | What does each of the two touch strips do? | Touch one strip, then the other, then both | |
-| C2 | What does the LED bar show? | Play and watch; note states | |
-| C3 | Touch response: position only, or also pressure, speed, area | Vary each with a steady finger; watch the scope | |
-| C4 | Gate input: trigger or gate, does length matter, any velocity | Send short and long gates; compare the decay | |
-| C5 | STRUM: order, timing offset, pitches played | Send a gate to STRUM; read the scope for onset times of the four strings | |
-| C6 | Behavior with all four strings ringing; re-pluck of a ringing string | Play while decaying; watch for cutoff or clipping | |
-| C7 | Does touch interact with gate-triggered plucks | Pluck by gate, then touch the same string | |
+| # | Question | How to find out | Prediction (source) | Result |
+|---|---|---|---|---|
+| C1 | What does each of the two touch strips do? | Touch one strip, then the other, then both |  | |
+| C2 | What does the LED bar show? | Play and watch; note states |  | |
+| C3 | Touch response: position only, or also pressure, speed, area | Vary each with a steady finger; watch the scope |  | |
+| C4 | Gate input: trigger or gate, does length matter, any velocity | Send short and long gates; compare the decay |  | |
+| C5 | STRUM: order, timing offset, pitches played | Send a gate to STRUM; read the scope for onset times of the four strings | STRUM gate plucks all four strings (retailer pages) | |
+| C6 | Behavior with all four strings ringing; re-pluck of a ringing string | Play while decaying; watch for cutoff or clipping |  | |
+| C7 | Does touch interact with gate-triggered plucks | Pluck by gate, then touch the same string |  | |
 
 ## D. Engines and global controls
 
-| # | Question | How to find out | Result |
-|---|---|---|---|
-| D1 | Character of each of the nine engines | Same string, same position, all nine; record waveform and spectrum | |
-| D2 | Do the two switches change engine at once, or at the next pluck | Change a switch while a string rings | |
-| D3 | Global Tone and Decay: range and effect on each family | Sweep each on three engines | |
-| D4 | CV ranges for Tone, Decay, and the per-string inputs | Sweep an LFO or slider; find where the response starts and stops | |
-| D5 | How per-string tone knobs interact with global Tone | Move one, then the other | |
-| D6 | Which engines include a reverb, and what do the "more different functions" the demo mentions control | Play each of the nine; listen for a tail beyond the string decay; check whether Tone or Decay changes it | |
-| D7 | Which engine is the classic Karplus-Strong string, and how does it compare with Mutable Instruments Rings (the only comparison available; Elements is not in the rack) | Play all nine; compare the spectrum of each with Rings in its string mode and with a plain Karplus-Strong decay | |
-| D8 | Does Herring with Ocean give the low sub sound described | Select it; read the spectrum | |
-| D9 | Does the last KoiKarp variation sound like a piano; what is the first variation's "tublap" character | Select each; record waveform and spectrum | |
-| D10 | Does the shipping unit match the pre-release demo, in firmware and in sound | Compare firmware version (F2) and the demo recording | |
+| # | Question | How to find out | Prediction (source) | Result |
+|---|---|---|---|---|
+| D1 | Character of each of the nine engines | Same string, same position, all nine; record waveform and spectrum | Nine engines: three families by three variations (user, video, Noisebug) | |
+| D2 | Do the two switches change engine at once, or at the next pluck | Change a switch while a string rings |  | |
+| D3 | Global Tone and Decay: range and effect on each family | Sweep each on three engines | Global Tone and Decay each have a knob and a CV input (retailer pages) | |
+| D4 | CV ranges for Tone, Decay, and the per-string inputs | Sweep an LFO or slider; find where the response starts and stops |  | |
+| D5 | How per-string tone knobs interact with global Tone | Move one, then the other |  | |
+| D6 | Which engines include a reverb, and what do the "more different functions" the demo mentions control | Play each of the nine; listen for a tail beyond the string decay; check whether Tone or Decay changes it | Some engines include a reverb (Paul Tas demo) | |
+| D7 | Which engine is the classic Karplus-Strong string, and how does it compare with Mutable Instruments Rings (the only comparison available; Elements is not in the rack) | Play all nine; compare the spectrum of each with Rings in its string mode and with a plain Karplus-Strong decay | One engine is the classic Karplus-Strong sound (Paul Tas demo) | |
+| D8 | Does Herring with Ocean give the low sub sound described | Select it; read the spectrum | Herring with Ocean gives a low sub sound (Paul Tas demo) | |
+| D9 | Does the last KoiKarp variation sound like a piano; what is the first variation's "tublap" character | Select each; record waveform and spectrum | KoiKarp is the percussive family; its last variation can sound like a piano and its first is a "tublap" (demo, Noisebug) | |
+| D10 | Does the shipping unit match the pre-release demo, in firmware and in sound | Compare firmware version (F2) and the demo recording | Control voltage, MIDI and audio parts were described as done in the demo | |
 
 ## E. Outputs
 
-| # | Question | How to find out | Result |
-|---|---|---|---|
-| E1 | What the Control Gate sends when a strip is touched | Scope on the output | |
-| E2 | What the Control CV sends: position, pressure, a fixed value | Scope on the output; slide a finger | |
-| E3 | Voltage range of both control outputs | Scope; check the lowest and highest touch | |
-| E4 | Audio output level and stereo image of the four strings | Scope both outputs; touch one string at a time | |
-| E5 | Is the left output normalled to the right | Patch left only; check right | |
+| # | Question | How to find out | Prediction (source) | Result |
+|---|---|---|---|---|
+| E1 | What the Control Gate sends when a strip is touched | Scope on the output |  | |
+| E2 | What the Control CV sends: position, pressure, a fixed value | Scope on the output; slide a finger |  | |
+| E3 | Voltage range of both control outputs | Scope; check the lowest and highest touch |  | |
+| E4 | Audio output level and stereo image of the four strings | Scope both outputs; touch one string at a time |  | |
+| E5 | Is the left output normalled to the right | Patch left only; check right |  | |
 
 ## F. State, firmware, USB
 
@@ -140,6 +152,8 @@ Working checklist for the Kharper guide. Delete this file or fold its results in
 
 ## Order of testing
 
+Section A is the measurement block and runs first.
+
 1. A1 to A5 (nothing else depends on them).
 2. B1, B2, B3, B4, B7 (pitch decides everything else).
 3. E1 to E3 (the control outputs).
@@ -154,3 +168,13 @@ Working checklist for the Kharper guide. Delete this file or fold its results in
 - Essential Parameters: B7, D3, D4.
 - Common Mistakes: G1 to G3.
 - Historical Context: the TINRS and Error Instruments facts under "Known so far", plus anything from the makers.
+
+## Failure handling
+
+Follow the template. The "Known so far" table holds claims that are not yet verified; a result that contradicts a claim there replaces it, with the date, and the source row is marked as contradicted. In particular B1 settles the standing conflict between the product page and the panel labeling.
+
+## Closing steps
+
+- [ ] Draft the guide from the results above, as a draft with its own status block, listing every row still open.
+- [ ] Convert answered rows into predictions in a verification plan; keep unanswered rows as discovery rows.
+- [ ] Mark this plan "Complete" with the date once every row has a result, or note the rows deliberately left open.
