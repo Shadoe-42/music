@@ -2,7 +2,7 @@
 
 **Status:** Active
 **Applies to:** every file in `modular/test_plans/`
-**Version:** 1.0, November 2026
+**Version:** 1.1, November 2026
 
 ---
 
@@ -34,6 +34,7 @@ Both kinds share the same header, measurement block, and closing steps. Only the
 | Guide | Path of the guide, or "none yet" |
 | Plan type | Verification or discovery |
 | Firmware | Version, read from the module or its boot indication |
+| Unit | Hardware revision, batch or serial if printed, where and when it was bought or received. Write "none printed" if nothing is marked |
 | Tested on | Date or dates |
 | Sources | Manual revision, retailer pages, transcripts, with dates |
 
@@ -50,6 +51,8 @@ List what each test needs, once: scope and spectrum (Mordax Data), multimeter, t
 | M3 | Power connector polarity marking | Visual and photograph | |
 | M4 | Front-panel photograph | Square on, even light, no hands, no cables | |
 | M5 | Firmware version | Boot indication, menu, or USB | |
+
+The Unit row in the header is read at the same time as the measurement block. Record it for every plan: a module with revisions needs it to explain why two units differ, and a module with very few units needs it so a later difference is traceable and not mistaken for an error.
 
 M4 is the image-capture step. A photograph taken here is an `own` image and is recorded in `modular/images/SOURCES.md` if it is added to the repository. A phone shot with a hand or a blanket in frame does not count.
 
