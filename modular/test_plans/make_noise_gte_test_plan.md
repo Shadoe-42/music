@@ -20,7 +20,7 @@ Mordax Data (scope and voltmeter-style readout), multimeter, tape measure, a pre
 
 | ID | Item | How | Result |
 |---|---|---|---|
-| M1 | Depth with the power cable fitted (guide: 29 mm, from Sound On Sound) | Tape measure | |
+| M1 | Depth with the power cable fitted (guide: 29 mm, from Sound On Sound and the published specification) | Tape measure | |
 | M2 | Current on +12V and -12V (guide: 25 mA and 2 mA, from the manual) | Multimeter in the supply line, with all eight channels cycling | |
 | M3 | Power connector polarity marking | Photograph the header; the manual says red stripe to -12 V | |
 | M4 | Front-panel photograph | Square on, even light, no hands, no cables. Save as `modular/images/make_noise/gte/front_panel.jpg` and record the source in `images/SOURCES.md`. Read and record the exact printed label of the pulse stream output | |

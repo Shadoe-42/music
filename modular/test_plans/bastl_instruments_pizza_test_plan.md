@@ -20,8 +20,8 @@ Mordax Data (scope and spectrum), multimeter, tape measure, tuner, sequencer wit
 
 | ID | Item | How | Result |
 |---|---|---|---|
-| M1 | Depth with the power cable fitted (guide: not published) | Tape measure | |
-| M2 | Current on +12V and -12V (guide: not published; +5V expected none) | Multimeter in the supply line, at idle and with FOLD, RING and FM INDEX engaged | |
+| M1 | Depth with the power cable fitted (guide: 24 mm, published specification) | Tape measure | |
+| M2 | Current on +12V and -12V (guide: 90 mA and 20 mA, published specification; +5V expected none) | Multimeter in the supply line, at idle and with FOLD, RING and FM INDEX engaged | |
 | M3 | Power connector polarity marking | Photograph the header; the manual says red stripe to -12 V | |
 | M4 | Front-panel photograph | Square on, even light, no hands, no cables. Save as `modular/images/bastl_instruments/pizza/front_panel.jpg` and record the source in `images/SOURCES.md` | |
 | M5 | Firmware version (the manual says it is shown as a static light of the LEDs at startup) and board revision (V0.6 on the manual cover, V1.0 in the back-of-board diagram) | Power on and watch the LEDs; read the back of the board | |
