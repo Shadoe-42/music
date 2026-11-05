@@ -62,7 +62,7 @@ Discovery plan for the future Kharper guide. Format: `tooling/test_plan_template
 | # | Question | How to find out | Result |
 |---|---|---|---|
 | A1 | Depth, panel back to furthest point, with the ribbon cable fitted | Tape measure | 2026-11-02: 32 mm, measured with the power connector fitted |
-| A2 | Current draw on +12V, -12V, +5V | Multimeter in the supply line, or ask the makers | 2026-11-02: +12V 140 mA, measured via the power connector. +5V: none, the module has no 5V rail. -12V: not yet measured |
+| A2 | Current draw on +12V, -12V, +5V | Multimeter in the supply line, or ask the makers | 2026-11-02: +12V 140 mA, measured via the power connector. +5V: none, the module has no 5V rail. -12V: measurement attempted 2026-11-05 and failed; retry |
 | A3 | Power connector type and polarity marking | Visual | 2026-11-02: ribbon power connector, red stripe down with the module held in its normal orientation. Board marking not yet photographed |
 | A4 | Does USB power work with the module in a case, and does it conflict with the ribbon cable | Try USB alone, ribbon alone, then both | 2026-11-02: USB alone powers it; the ribbon works. Not tested together. USB power is not recommended in a traditional Eurorack case |
 | A5 | Panel and control layout, including jack labels exactly as printed | Photograph; compare with the annotated panel image in the repo | |
