@@ -31,7 +31,7 @@ patch_format: v1
 ![Bastl Instruments Pizza](https://github.com/Shadoe-42/music/raw/main/modular/images/bastl_instruments/pizza/front_panel.jpg)
 *Bastl Instruments Pizza: PITCH knob and button, FM INDEX fader, INDEX MOD knob, OCT OSC and RATIO OSC buttons, SHAPE fader and button, CTRL knob, and the jacks for V/OCT, SYNC, EXT, FM INDEX CV, SHAPE CV, CTRL CV, PULSE, MAIN, and OCT OSC*
 
-> **Draft status (2026-11-02):** Written from the official Bastl Pizza manual (22 pages, firmware 1.1) and press coverage from the May 2022 announcement, before the module was in hand. Every control, range, and button combination comes from that manual. All four patches are untested on hardware and are marked ⚠️. Open items to clear on hardware: (1) every patch setting and every "What to listen for" result; (2) depth (24 mm) and current draw (90 mA on +12 V, 20 mA on -12 V), which come from published specifications supplied on 2026-11-05 and are not in the manual, and which are checked on the module, including whether the depth counts the power cable; (3) whether CV at FM INDEX CV, SHAPE CV, and CTRL CV adds to the fader or knob position or replaces it, which the manual does not state; (4) the contradiction between the manual's two firmware update entries (hold PITCH while plugging in USB on page 19, hold TUNE at power-up on page 20); (5) which settings make the PULSE output audibly noisy; (6) the trigger threshold of SYNC and how the envelope VCA mode behaves when SYNC is also resetting the oscillator phases; (7) the board revision on the shipped unit (the manual shows V0.6 on the cover and V1.0 in the back-of-board diagram); (8) the front panel image link below points to the location for the photograph taken in the test plan, and shows nothing until that photograph is added. Remove this block when the items are cleared.
+> **Draft status (2026-11-02):** Written from the official Bastl Pizza manual (22 pages, firmware 1.1) and press coverage from the May 2022 announcement, before the module was in hand. Every control, range, and button combination comes from that manual. All four patches are untested on hardware and are marked ⚠️. Open items to clear on hardware: (1) every patch setting and every "What to listen for" result; (2) the +5 V draw, which neither the manual nor the maker lists and which stays at 0 mA with a flag until it is read on the module (depth and the +12 V and -12 V currents were measured on 2026-11-05 and match the maker's specification); (3) whether CV at FM INDEX CV, SHAPE CV, and CTRL CV adds to the fader or knob position or replaces it, which the manual does not state; (4) the contradiction between the manual's two firmware update entries (hold PITCH while plugging in USB on page 19, hold TUNE at power-up on page 20); (5) which settings make the PULSE output audibly noisy; (6) the trigger threshold of SYNC and how the envelope VCA mode behaves when SYNC is also resetting the oscillator phases; (7) the board revision on the shipped unit (the manual shows V0.6 on the cover and V1.0 in the back-of-board diagram); (8) the front panel image link below points to the location for the photograph taken in the test plan, and shows nothing until that photograph is added. Remove this block when the items are cleared.
 
 ---
 
@@ -67,8 +67,8 @@ The Pizza is a carrier oscillator with two modulators and a shaping section. Wit
 | Spec | Value |
 |------|-------|
 | Width | 8 HP |
-| Depth | 24 mm ⚠️ |
-| Power | 90 mA +12V ⚠️ / 20 mA -12V ⚠️ / 0 mA +5V ⚠️ |
+| Depth | 24 mm (includes the power port) |
+| Power | 90 mA +12V / 20 mA -12V / 0 mA +5V ⚠️ |
 | Oscillators | Three: MAIN (carrier), OCT OSC and RATIO OSC (modulators) |
 | Synthesis | Digital FM, applied as phase modulation |
 | Shaping | WAVE, FOLD, RING on one fader; second shaper through CTRL |
@@ -78,7 +78,7 @@ The Pizza is a carrier oscillator with two modulators and a shaping section. Wit
 | Price | 297 euros at announcement (270 US dollars) |
 | Firmware | Updated over micro-USB from a computer; the manual covers version 1.1 |
 
-The manual gives no width, depth, current draw, or price. Width and price come from the announcement coverage. Depth (24 mm), current draw (90 mA on +12 V, 20 mA on -12 V), and the description of the power connector as 10 pin and protected by a PTC fuse and a diode come from published specifications supplied on 2026-11-05; they are not in the manual, and the sources do not say whether the depth includes the power cable. They stay marked until the module is measured. The manual's warning about a reversed ribbon still applies, whatever the protection. The manual lists +12 V and -12 V and no +5 V rail. A micro-USB socket on the back of the board is for firmware only.
+The manual gives no width, depth, current draw, or price. Width and price come from the announcement coverage. Depth (24 mm, including the power port), current draw (90 mA on +12 V, 20 mA on -12 V), and the description of the power connector as 10 pin and protected by a PTC fuse and a diode come from the maker's published specifications, not from the manual. The depth and both currents were measured on 2026-11-05 on the user's unit and match those specifications. The +5 V figure is the manual's omission of that rail and has not been read separately, so it stays marked. The manual's warning about a reversed ribbon still applies, whatever the protection. The manual lists +12 V and -12 V and no +5 V rail. A micro-USB socket on the back of the board is for firmware only.
 
 ---
 

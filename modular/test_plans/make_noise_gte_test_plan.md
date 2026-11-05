@@ -8,9 +8,10 @@ Verification plan for `modular/make_noise_gte_guide.md`. Format: `tooling/test_p
 | Guide | `modular/make_noise_gte_guide.md` (draft, 2026-11-02) |
 | Plan type | Verification |
 | Firmware | Not applicable (analog) |
-| Tested on | Not yet tested; the module ships the week of 2026-11-02 |
+| Unit | Revision and batch or serial: not yet read. Bought or received: in the studio by 2026-11-05 |
+| Tested on | 2026-11-05 (M1 and M2 only so far) |
 | Sources | Make Noise GTE manual, 8 pages; Sound On Sound and Synthtopia announcement coverage |
-| Status | Not started |
+| Status | In progress |
 
 ## Tools
 
@@ -20,8 +21,8 @@ Mordax Data (scope and voltmeter-style readout), multimeter, tape measure, a pre
 
 | ID | Item | How | Result |
 |---|---|---|---|
-| M1 | Depth with the power cable fitted (guide: 29 mm, from Sound On Sound and the published specification) | Tape measure | |
-| M2 | Current on +12V and -12V (guide: 25 mA and 2 mA, from the manual) | Multimeter in the supply line, with all eight channels cycling | |
+| M1 | Depth with the power cable fitted (guide: 29 mm, from Sound On Sound and the maker's specification) | Tape measure | 2026-11-05 (user): matches 29 mm with the cable fitted |
+| M2 | Current on +12V and -12V (guide: 25 mA and 2 mA, from the manual) | Multimeter in the supply line, with all eight channels cycling | 2026-11-05 (user): matches 25 mA and 2 mA |
 | M3 | Power connector polarity marking | Photograph the header; the manual says red stripe to -12 V | |
 | M4 | Front-panel photograph | Square on, even light, no hands, no cables. Save as `modular/images/make_noise/gte/front_panel.jpg` and record the source in `images/SOURCES.md`. Read and record the exact printed label of the pulse stream output | |
 | M5 | Not applicable | | |

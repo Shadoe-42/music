@@ -8,9 +8,10 @@ Verification plan for `modular/bastl_instruments_pizza_guide.md`. Format: `tooli
 | Guide | `modular/bastl_instruments_pizza_guide.md` (draft, 2026-11-02) |
 | Plan type | Verification |
 | Firmware | Not yet read (M5); the manual covers 1.1 |
-| Tested on | Not yet tested; the module ships the week of 2026-11-02 |
+| Unit | Revision and batch or serial: not yet read (the board revision is also M5). Bought or received: in the studio by 2026-11-05 |
+| Tested on | 2026-11-05 (M1 and M2 only so far) |
 | Sources | Bastl Pizza manual, firmware 1.1, 22 pages; Synth Anatomy announcement article, 2022-05-31 |
-| Status | Not started |
+| Status | In progress |
 
 ## Tools
 
@@ -20,8 +21,8 @@ Mordax Data (scope and spectrum), multimeter, tape measure, tuner, sequencer wit
 
 | ID | Item | How | Result |
 |---|---|---|---|
-| M1 | Depth with the power cable fitted (guide: 24 mm, published specification) | Tape measure | |
-| M2 | Current on +12V and -12V (guide: 90 mA and 20 mA, published specification; +5V expected none) | Multimeter in the supply line, at idle and with FOLD, RING and FM INDEX engaged | |
+| M1 | Depth with the power cable fitted (guide: 24 mm, maker's specification) | Tape measure | 2026-11-05 (user): matches 24 mm; includes the power port |
+| M2 | Current on +12V and -12V (guide: 90 mA and 20 mA, published specification; +5V expected none) | Multimeter in the supply line, at idle and with FOLD, RING and FM INDEX engaged | 2026-11-05 (user): matches 90 mA and 20 mA; +5 V not read separately |
 | M3 | Power connector polarity marking | Photograph the header; the manual says red stripe to -12 V | |
 | M4 | Front-panel photograph | Square on, even light, no hands, no cables. Save as `modular/images/bastl_instruments/pizza/front_panel.jpg` and record the source in `images/SOURCES.md` | |
 | M5 | Firmware version (the manual says it is shown as a static light of the LEDs at startup) and board revision (V0.6 on the manual cover, V1.0 in the back-of-board diagram) | Power on and watch the LEDs; read the back of the board | |
