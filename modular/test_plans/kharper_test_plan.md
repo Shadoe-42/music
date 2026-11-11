@@ -33,7 +33,7 @@ Discovery plan for the future Kharper guide. Format: `tooling/test_plan_template
 | Announced at Superbooth 2025; available July 2025 in limited quantity at 350 € incl. VAT | Synth Anatomy | |
 | 18 HP | ModularGrid, Signal Sounds | |
 | Duo is the module in a case; Error Instruments sells a case, or a file is available to print one | User, from a video | |
-| Power from ribbon cable or USB; both work | User, from a video | 2026-11-02: USB alone powers the module without the ribbon; the ribbon (power connector) also works. USB is not recommended in a traditional Eurorack case |
+| Power from ribbon cable or USB; both work | User, from a video | 2026-11-02: USB alone powers the module without the ribbon; the ribbon (power connector) also works. USB is not recommended in a traditional Eurorack case. Reconfirmed 2026-11-11 (user). The user knows of no other bare Eurorack module that takes both a ribbon and USB for power; this is a recollection and not a checked claim |
 | Four strings, each one voice; two touch strips with an LED bar between them | Retailer pages | |
 | Karplus-Strong physical model | Retailer pages | |
 | Nine engines: two three-position switches, family (Herring, KoiKarp, Dolphin) and variation (Pond, River, Ocean) | User, from a video; Noisebug | |
@@ -61,9 +61,9 @@ Discovery plan for the future Kharper guide. Format: `tooling/test_plan_template
 
 | # | Question | How to find out | Result |
 |---|---|---|---|
-| A1 | Depth, panel back to furthest point, with the ribbon cable fitted | Tape measure | 2026-11-02: 32 mm, measured with the power connector fitted |
+| A1 | Depth, panel back to furthest point, with the ribbon cable fitted | Tape measure | 2026-11-02: 32 mm, measured with the power connector fitted. Confirmed accurate 2026-11-11 (user) |
 | A2 | Current draw on +12V, -12V, +5V | Multimeter in the supply line, or ask the makers | 2026-11-02: +12V 140 mA, measured via the power connector. +5V: none, the module has no 5V rail. -12V: measurement attempted 2026-11-05 and failed; retry |
-| A3 | Power connector type and polarity marking | Visual | 2026-11-02: ribbon power connector, red stripe down with the module held in its normal orientation. Board marking not yet photographed |
+| A3 | Power connector type and polarity marking | Visual | 2026-11-02: ribbon power connector, red stripe down with the module held in its normal orientation. Board marking not yet photographed. Confirmed accurate 2026-11-11 (user) |
 | A4 | Does USB power work with the module in a case, and does it conflict with the ribbon cable | Try USB alone, ribbon alone, then both | 2026-11-02: USB alone powers it; the ribbon works. Not tested together. USB power is not recommended in a traditional Eurorack case |
 | A5 | Panel and control layout, including jack labels exactly as printed | Photograph; compare with the annotated panel image in the repo | |
 
@@ -73,7 +73,7 @@ Discovery plan for the future Kharper guide. Format: `tooling/test_plan_template
 |---|---|---|---|---|
 | B1 | Does the per-string jack track 1V/octave? | Send a sequencer through 0, 1, 2, 3 V; read the spectrum peak in Data against the tuner; note error in cents per octave | Panel says cv/in (B2), the video says V/OCT; product page says the standard firmware does not track 1V/octave (sources conflict) | 2026-11-11 (user, by ear and display, source: Ground Control keyboard): does not track 1V/octave. Inputs an octave apart come out about 6 semitones apart. Not yet quantified with the tuner; the source voltage and a second source are not yet checked |
 | B2 | Is the jack labeled V/OCT or CV on the panel? | Read the panel |  | 2026-11-11: top port cv/in, bottom port trig/in. Corrects the 2026-11-02 entry ("V/OCT and gate inputs"), which was taken from notes for a different module. Check the exact printing against the A5 photograph |
-| B3 | Is touch pitch continuous or stepped? | Slide a finger up a strip with the spectrum running; watch for steps | Pitch rises as the finger moves up the strip (user, video) | |
+| B3 | Is touch pitch continuous or stepped? | Slide a finger up a strip with the spectrum running; watch for steps | Pitch rises as the finger moves up the strip (user, video) | 2026-11-11 (user, by ear and LEDs): the sound is continuous. The LED bar is stepped, an approximation of position and not the pitch itself |
 | B4 | Pitch range per string, lowest to highest | Touch the bottom and top of each strip; read the spectrum |  | |
 | B5 | Are all four strings tuned the same, or offset? | Touch the same position on each string; compare peaks |  | |
 | B6 | How do touch position and the CV input combine: added, or does one override the other? | Hold a touch position and change the CV; then the reverse |  | |
