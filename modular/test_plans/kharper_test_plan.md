@@ -38,7 +38,7 @@ Discovery plan for the future Kharper guide. Format: `tooling/test_plan_template
 | Karplus-Strong physical model | Retailer pages | |
 | Nine engines: two three-position switches, family (Herring, KoiKarp, Dolphin) and variation (Pond, River, Ocean) | User, from a video; Noisebug | |
 | Touch position along the string sets pitch, higher as you move up | User, from a video | |
-| Jacks under each string are V/OCT and gate/trigger | User, from a video | 2026-11-02: panel labeling confirmed as V/OCT and gate inputs. Tracking accuracy still open (B1) |
+| Jacks under each string are V/OCT and gate/trigger | User, from a video | 2026-11-02: panel labeling confirmed as V/OCT and gate inputs. Tracking accuracy: see B1; 2026-11-11 first result says it does not track 1V/octave |
 | Tone knob changes both pitch and timbre | User, from a video (uncertain) | |
 | MIDI in plays strings at standard note pitch and holds while the key is held | User, from a video (uncertain) | |
 | STRUM gate input plucks all four strings | Retailer pages | |
@@ -53,7 +53,7 @@ Discovery plan for the future Kharper guide. Format: `tooling/test_plan_template
 | One engine is the classic Karplus-Strong sound "from Rings and Elements" (the speaker's words; engine not identified) | Paul Tas demo transcript | |
 | Herring with Ocean gives a low sub sound | Paul Tas demo transcript | |
 
-**Known tension:** the product page states that the standard firmware does not track 1V/octave, while the per-string jacks are described as tone CV by retailers and as V/OCT by the video. The panel labeling is now confirmed as V/OCT (2026-11-02); whether the jack actually tracks 1V/octave is still settled by B1.
+**Known tension:** the product page states that the standard firmware does not track 1V/octave, while the per-string jacks are described as tone CV by retailers and as V/OCT by the video. The panel labeling is now confirmed as V/OCT (2026-11-02); whether the jack actually tracks 1V/octave is still settled by B1. 2026-11-11: the first B1 result agrees with the product page (about 6 semitones per octave of input), so the video's V/OCT description is contradicted for this firmware; the numbers are still to be measured.
 
 ---
 
@@ -71,7 +71,7 @@ Discovery plan for the future Kharper guide. Format: `tooling/test_plan_template
 
 | # | Question | How to find out | Prediction (source) | Result |
 |---|---|---|---|---|
-| B1 | Does the per-string jack track 1V/octave? | Send a sequencer through 0, 1, 2, 3 V; read the spectrum peak in Data against the tuner; note error in cents per octave | Panel says V/OCT; product page says the standard firmware does not track 1V/octave (sources conflict) | |
+| B1 | Does the per-string jack track 1V/octave? | Send a sequencer through 0, 1, 2, 3 V; read the spectrum peak in Data against the tuner; note error in cents per octave | Panel says V/OCT; product page says the standard firmware does not track 1V/octave (sources conflict) | 2026-11-11 (user, by ear and display, source: Ground Control keyboard): does not track 1V/octave. Inputs an octave apart come out about 6 semitones apart. Not yet quantified with the tuner; the source voltage and a second source are not yet checked |
 | B2 | Is the jack labeled V/OCT or CV on the panel? | Read the panel |  | 2026-11-02: V/OCT and gate inputs, as expected |
 | B3 | Is touch pitch continuous or stepped? | Slide a finger up a strip with the spectrum running; watch for steps | Pitch rises as the finger moves up the strip (user, video) | |
 | B4 | Pitch range per string, lowest to highest | Touch the bottom and top of each strip; read the spectrum |  | |
