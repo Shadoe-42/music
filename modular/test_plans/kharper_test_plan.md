@@ -38,7 +38,7 @@ Discovery plan for the future Kharper guide. Format: `tooling/test_plan_template
 | Karplus-Strong physical model | Retailer pages | |
 | Nine engines: two three-position switches, family (Herring, KoiKarp, Dolphin) and variation (Pond, River, Ocean) | User, from a video; Noisebug | |
 | Touch position along the string sets pitch, higher as you move up | User, from a video | |
-| Jacks under each string are V/OCT and gate/trigger | User, from a video | 2026-11-02: panel labeling confirmed as V/OCT and gate inputs. Tracking accuracy: see B1; 2026-11-11 first result says it does not track 1V/octave |
+| Jacks under each string are V/OCT and gate/trigger | User, from a video | 2026-11-11 correction: the 2026-11-02 entry ("V/OCT and gate inputs") came from notes for a different module and is withdrawn. Printed labels are cv/in on the top port and trig/in on the bottom port, so the video's V/OCT label is contradicted. Tracking: see B1; the first result says it does not track 1V/octave |
 | Tone knob changes both pitch and timbre | User, from a video (uncertain) | |
 | MIDI in plays strings at standard note pitch and holds while the key is held | User, from a video (uncertain) | |
 | STRUM gate input plucks all four strings | Retailer pages | |
@@ -53,7 +53,7 @@ Discovery plan for the future Kharper guide. Format: `tooling/test_plan_template
 | One engine is the classic Karplus-Strong sound "from Rings and Elements" (the speaker's words; engine not identified) | Paul Tas demo transcript | |
 | Herring with Ocean gives a low sub sound | Paul Tas demo transcript | |
 
-**Known tension:** the product page states that the standard firmware does not track 1V/octave, while the per-string jacks are described as tone CV by retailers and as V/OCT by the video. The panel labeling is now confirmed as V/OCT (2026-11-02); whether the jack actually tracks 1V/octave is still settled by B1. 2026-11-11: the first B1 result agrees with the product page (about 6 semitones per octave of input), so the video's V/OCT description is contradicted for this firmware; the numbers are still to be measured.
+**Known tension:** the product page states that the standard firmware does not track 1V/octave, while the per-string jacks are described as tone CV by retailers and as V/OCT by the video. The panel labeling recorded as V/OCT on 2026-11-02 came from notes for a different module and is withdrawn; the printed labels are cv/in (top) and trig/in (bottom), per the 2026-11-11 reading; whether the jack actually tracks 1V/octave is still settled by B1. 2026-11-11: the first B1 result agrees with the product page (about 6 semitones per octave of input), so the video's V/OCT description is contradicted for this firmware; the numbers are still to be measured.
 
 ---
 
@@ -71,12 +71,12 @@ Discovery plan for the future Kharper guide. Format: `tooling/test_plan_template
 
 | # | Question | How to find out | Prediction (source) | Result |
 |---|---|---|---|---|
-| B1 | Does the per-string jack track 1V/octave? | Send a sequencer through 0, 1, 2, 3 V; read the spectrum peak in Data against the tuner; note error in cents per octave | Panel says V/OCT; product page says the standard firmware does not track 1V/octave (sources conflict) | 2026-11-11 (user, by ear and display, source: Ground Control keyboard): does not track 1V/octave. Inputs an octave apart come out about 6 semitones apart. Not yet quantified with the tuner; the source voltage and a second source are not yet checked |
-| B2 | Is the jack labeled V/OCT or CV on the panel? | Read the panel |  | 2026-11-02: V/OCT and gate inputs, as expected |
+| B1 | Does the per-string jack track 1V/octave? | Send a sequencer through 0, 1, 2, 3 V; read the spectrum peak in Data against the tuner; note error in cents per octave | Panel says cv/in (B2), the video says V/OCT; product page says the standard firmware does not track 1V/octave (sources conflict) | 2026-11-11 (user, by ear and display, source: Ground Control keyboard): does not track 1V/octave. Inputs an octave apart come out about 6 semitones apart. Not yet quantified with the tuner; the source voltage and a second source are not yet checked |
+| B2 | Is the jack labeled V/OCT or CV on the panel? | Read the panel |  | 2026-11-11: top port cv/in, bottom port trig/in. Corrects the 2026-11-02 entry ("V/OCT and gate inputs"), which was taken from notes for a different module. Check the exact printing against the A5 photograph |
 | B3 | Is touch pitch continuous or stepped? | Slide a finger up a strip with the spectrum running; watch for steps | Pitch rises as the finger moves up the strip (user, video) | |
 | B4 | Pitch range per string, lowest to highest | Touch the bottom and top of each strip; read the spectrum |  | |
 | B5 | Are all four strings tuned the same, or offset? | Touch the same position on each string; compare peaks |  | |
-| B6 | How do touch position and V/OCT combine: added, or does one override the other? | Hold a touch position and change the V/OCT; then the reverse |  | |
+| B6 | How do touch position and the CV input combine: added, or does one override the other? | Hold a touch position and change the CV; then the reverse |  | |
 | B7 | What does the tone knob change: pitch, brightness, or both, and how much? | Hold a note; sweep Tone; watch the spectrum peak and harmonic content | Tone changes both pitch and timbre (user, video, uncertain) | |
 | B8 | Do MIDI notes set pitch with the same accuracy as the video suggests? | Send notes across several octaves; compare with a tuner | MIDI plays strings at standard note pitch and holds while the key is held (user, video, uncertain) | |
 | B9 | MIDI behavior: channel, note-off, velocity response, pitch bend | Test each with a keyboard |  | |
@@ -172,7 +172,7 @@ Section A is the measurement block and runs first.
 
 ## Failure handling
 
-Follow the template. The "Known so far" table holds claims that are not yet verified; a result that contradicts a claim there replaces it, with the date, and the source row is marked as contradicted. In particular B1 settles the standing conflict between the product page and the panel labeling.
+Follow the template. The "Known so far" table holds claims that are not yet verified; a result that contradicts a claim there replaces it, with the date, and the source row is marked as contradicted. In particular B1 settles the standing conflict between the product page and the video.
 
 ## Closing steps
 
