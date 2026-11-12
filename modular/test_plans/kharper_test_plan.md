@@ -89,7 +89,7 @@ Discovery plan for the future Kharper guide. Format: `tooling/test_plan_template
 | C1 | What does each of the two touch strips do? | Touch one strip, then the other, then both |  | |
 | C2 | What does the LED bar show? | Play and watch; note states |  | |
 | C3 | Touch response: position only, or also pressure, speed, area | Vary each with a steady finger; watch the scope |  | |
-| C4 | Gate input: trigger or gate, does length matter, any velocity | Send short and long gates; compare the decay |  | 2026-11-12 (partial, user): the sound of a gate-triggered pluck depends largely on the decay knob, from short and plucky to drawn out. Effect of gate length, velocity, and the pitch of a pluck with nothing touching it are not yet tested |
+| C4 | Gate input: trigger or gate, does length matter, any velocity | Send short and long gates; compare the decay |  | 2026-11-12 (partial, user): the sound of a gate-triggered pluck depends largely on the decay knob, from short and plucky to drawn out. 2026-11-12 (user): velocity from the Hermod+ has no real effect on the gate-triggered pluck; MIDI velocity not yet tested. Effect of gate length and the pitch of a pluck with nothing touching it are not yet tested |
 | C5 | STRUM: order, timing offset, pitches played | Send a gate to STRUM; read the scope for onset times of the four strings | STRUM gate plucks all four strings (retailer pages) | |
 | C6 | Behavior with all four strings ringing; re-pluck of a ringing string | Play while decaying; watch for cutoff or clipping |  | |
 | C7 | Does touch interact with gate-triggered plucks | Pluck by gate, then touch the same string |  | |
