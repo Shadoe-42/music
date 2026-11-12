@@ -134,6 +134,8 @@ Always show all three power rails even if one is 0 mA. Width in HP, depth in mm,
 
 The goal is to teach what each control actually does in musical terms, not to restate the front-panel label. "RATE controls the speed of the LFOs" is not useful. "RATE sets the cycle time of all eight outputs simultaneously, spanning several minutes of slow drift to audio-rate modulation; a CV input at RATE shifts the entire bank up or down together" is useful.
 
+**Describe inputs from the listener's side.** A jack has no meaning of its own; the module that receives a signal decides what it does with it. For every input, say what the module does with the signal, and give measured behavior where it exists, not only the name of the signal type. "Pitch CV" names the signal. "Adds to the pitch of the touched position, at about half the usual scale" says what the module does with it. When an input departs from the common conventions (1V/octave pitch, a gate that goes high for "on", a clock pulse), say so near the start of the guide, in Quick Start or the first Essential Parameters paragraph, before any patch relies on the convention. Results that come from testing belong in the guide as measurements, with the firmware noted where it matters.
+
 ---
 
 ### Why This Instrument Excels

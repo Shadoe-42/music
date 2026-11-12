@@ -165,7 +165,7 @@ See `workflow_checklist.md` "Updated Estimation Standards" for specifics.
 
 ### What Usually Happens
 1. Creator identifies next instrument ("one jumped out")
-2. Read existing guide, identify gaps
+2. Read existing guide, identify gaps (including any input described only by its signal type; see "Describe inputs from the listener's side" under Essential Parameters in the framework)
 3. Discuss approach (ask questions, don't assume)
 4. Execute enhancements following workflow checklist
 5. Verify technical claims or flag ⚠️
