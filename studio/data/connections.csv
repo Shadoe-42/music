@@ -3,10 +3,10 @@ A-001,cockpit2.out-l,mackie.ch-03,,,,,jaspers-rack,wired,,stated,panned hard lef
 A-002,cockpit2.out-r,mackie.ch-04,,,,,jaspers-rack,wired,,stated,panned hard right at the Mackie; signal and connector to confirm
 A-003,listen-io.out,mackie.ch-28,,,,,jaspers-rack,wired,,stated,stereo channel; signal and connector to confirm
 A-004,mixup.out,mackie.ch-29,,,,,jaspers-rack,wired,,stated,stereo channel; signal and connector to confirm
-A-005,mackie.main-out-l,adam-t10s.in-l,audio-line-balanced,xlr-3,xlr-3,jaspers-rack,,wired,,stated,"sub is first in the monitor chain; balanced assumed from XLR, to confirm"
+A-005,mackie.main-out-l,adam-t10s.in-l,audio-line-balanced,xlr-3,xlr-3,jaspers-rack,,wired,,stated,sub is first in the monitor chain; T10S has balanced XLR inputs (Adam Audio product page)
 A-006,mackie.main-out-r,adam-t10s.in-r,audio-line-balanced,xlr-3,xlr-3,jaspers-rack,,wired,,stated,as A-005
-A-007,adam-t10s.out-l,adam-t8v-l.in,audio-line-balanced,xlr-3,xlr-3,,,wired,,stated,sub to left monitor; port names to confirm
-A-008,adam-t10s.out-r,adam-t8v-r.in,audio-line-balanced,xlr-3,xlr-3,,,wired,,stated,sub to right monitor; port names to confirm
+A-007,adam-t10s.out-l,adam-t8v-l.in,audio-line-balanced,xlr-3,xlr-3,,,wired,,stated,"T10S XLR outputs are high-passed to feed the monitors (Sound On Sound, June 2020); port names to confirm"
+A-008,adam-t10s.out-r,adam-t8v-r.in,audio-line-balanced,xlr-3,xlr-3,,,wired,,stated,as A-007
 A-009,yamaha-submix.main-out-l,mackie.ch-,,,,on-stage,jaspers-rack,planned,,stated,"low-20s channel, panned left; channel not yet chosen; first draft routes via the patch bay"
 A-010,yamaha-submix.main-out-r,mackie.ch-,,,,on-stage,jaspers-rack,planned,,stated,"low-20s channel, panned right; as A-009"
 P-001,conditioner-jaspers,,power-ac,,,jaspers-rack,,wired,,stated,feeds the Jaspers rack; outlet-level map not yet documented
