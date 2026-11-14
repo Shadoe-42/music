@@ -40,6 +40,7 @@ Identity never encodes location, because gear moves.
 - **Connections** have an ID made of a type prefix and a three-digit number: `A-014`, `M-007`, `V-022`, `P-003`, `D-005`. Prefixes are defined in `vocab.md`.
 - **IDs are never renumbered and never reused.** A connection that goes away is marked `retired`, and its row stays.
 - Zone is a column on the record, not part of the ID.
+- A `planned` row that turns out to be wrong may be corrected in place, because nothing physical depends on it yet. Once a row is `wired` or `tested`, changing an endpoint means retiring the row and adding a new ID.
 
 ## 4. The connection record
 
