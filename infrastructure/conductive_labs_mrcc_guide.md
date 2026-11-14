@@ -3,7 +3,7 @@
 **The Essential MIDI Routing Hub for Professional Studios**
 
 ![Conductive Labs MRCC](https://github.com/Shadoe-42/music/raw/main/infrastructure/images/conductive_labs/mrcc/front_panel.jpg)
-*Conductive Labs MRCC - 11x17 MIDI routing matrix with USB host ports, 5-pin DIN connections, and comprehensive routing control via front panel interface*
+*Conductive Labs MRCC - 11x17 MIDI routing matrix with USB host ports, 5-pin DIN and 3.5 mm TRS connections, and comprehensive routing control via front panel interface*
 
 ---
 
@@ -50,11 +50,11 @@
 
 ## Quick Start: Get Your First MIDI Routing in 5 Minutes
 
-**What is MRCC?** A front-panel configurable MIDI router that connects 12 inputs to 17 outputs with no computer required. Features USB host ports for modern devices, traditional 5-pin DIN for vintage gear, and comprehensive filtering and processing options.
+**What is MRCC?** A front-panel configurable MIDI router that connects 11 routable inputs to 17 outputs with no computer required. Features USB host ports for modern devices, traditional 5-pin DIN and 3.5 mm TRS (Type A and B) jacks for vintage and compact gear, and comprehensive filtering and processing options.
 
 ### Your First Basic Routing
-1. **Connect MIDI controller** → Any input port (USB host ports A-D or 5-pin inputs 1-6)
-2. **Connect sound module** → Any output port (5-pin outputs 1-12 or USB PC port)
+1. **Connect MIDI controller** → Any input port (USB host ports A-D, DIN inputs 1-5, or TRS inputs 1 and 6)
+2. **Connect sound module** → Any output port (DIN outputs 1-10, TRS outputs 11-12, USB host ports A-D, or the USB PC port)
 3. **Press input button** → Input LED lights green
 4. **Press output button** → Output LED lights blue (route is made)
 5. **Play your controller** → Sound module should respond
@@ -67,26 +67,37 @@
 
 ### **Input Ports - The MIDI Sources**
 
-#### **5-Pin DIN Inputs (1-6)**
+#### **5-Pin DIN Inputs (1-5)**
 - **What they accept:** Traditional MIDI cables from keyboards, drum machines, sequencers
 - **Compatibility:** Any device with standard MIDI OUT or THRU
 - **Visual feedback:** Green LED when receiving MIDI data
 - **Applications:** Vintage synths, hardware sequencers, traditional MIDI controllers
 
+#### **3.5 mm TRS Inputs (1 and 6)**
+- **What they accept:** Compact gear with 3.5 mm MIDI jacks, with both Type A and Type B jacks provided
+- **Sharing:** Input 1 shares its routing with its DIN jack; input 6 is TRS only, with no DIN jack
+- **Type A vs Type B:** Type A has the tip on DIN pin 5 and the ring on pin 4; Type B swaps them. A tip-and-ring swapping adapter converts between them
+- **Applications:** Sequencers and drum machines that use 3.5 mm MIDI, and any DIN device through a DIN-to-TRS adapter
+
 #### **USB Host Ports (A-D) - Input Side**
 - **What they accept:** USB MIDI class-compliant devices (keyboards, controllers, interfaces)
-- **Virtual cables:** Each port supports 4 virtual MIDI cables for complex routing
-- **Power delivery:** Bus-powered devices work directly (keyboards, small controllers)
+- **Virtual cables:** Each port carries 4 inbound virtual MIDI cables and 1 outbound, for complex routing
+- **Power delivery:** Bus-powered devices work directly (keyboards, small controllers), up to 0.5 A per port
 - **Visual feedback:** Port LED shows connection status, routing LEDs show activity
 - **Applications:** Modern MIDI controllers, USB keyboards, computer interfaces
 
 ### **Output Ports - The MIDI Destinations**
 
-#### **5-Pin DIN Outputs (1-12)**
+#### **5-Pin DIN Outputs (1-10)**
 - **What they drive:** Sound modules, synthesizers, effects processors, drum machines
 - **MIDI spec compliance:** Standard 5V MIDI output drives long cable runs
 - **Multiple destinations:** One input can route to multiple outputs simultaneously
 - **Visual feedback:** Blue LED when selected, dimmer blue when routed
+
+#### **3.5 mm TRS Outputs (11-12)**
+- **What they drive:** Compact gear with 3.5 mm MIDI inputs
+- **Both types at once:** Each of outputs 11 and 12 has a Type A jack and a separate Type B jack, so two devices can share one output with no adapter and no setting to change
+- **Applications:** Samplers, drum machines and small synths that use 3.5 mm MIDI
 
 #### **USB PC Port - Output Side**
 - **What it connects to:** Computer DAW systems for recording and virtual instruments
@@ -95,8 +106,15 @@
 
 #### **Remote Routing (Y Button)**
 - **What it enables:** Extended routing to MRCC Remote-7 or second MRCC unit
-- **Connection:** CAT5 cable (NOT Ethernet) up to 50 feet
+- **Connection:** Straight-through shielded Cat5 (or better) cable with metal-shielded connectors, tested to about 50 feet. The jack is not Ethernet, and it is for Conductive Labs accessories or a second MRCC only
 - **Visual feedback:** Yellow LEDs indicate remote routing destinations
+
+### **Also Built In**
+- **Internal clock:** An MRCC clock adjustable from 10 to 240 BPM, with start, stop and continue
+- **Analog clock out:** A 1/8 inch mono TS jack (use a mono cable) at 1, 2, 4 or 24 pulses per quarter note, set to 5 V or 12 V. It can clock Eurorack and other non-MIDI gear
+- **Presets:** One read-only factory preset and 127 user presets on the microSD card. A preset stores routings, modifiers, extras and label assignments, and not global settings
+- **Power:** An external 5 V, 3 A USB-C supply, included. The MRCC may not run correctly below about 4.5 V at the host ports
+- **Mounting:** Desktop or 2U rack; rack hardware is not described in the manual
 
 ---
 
@@ -389,5 +407,7 @@ MRCC **thinks in MIDI networks** rather than point-to-point connections. It tran
 **Bottom Line:** MRCC isn't just a MIDI router - it's **MIDI infrastructure** that transforms any collection of MIDI devices into a unified creative instrument. Every studio with more than one MIDI device benefits from the routing flexibility and professional reliability that MRCC provides.
 
 ---
+
+*Port counts, clock, preset, power and remote details checked against the Conductive Labs MRCC User Manual v1.1.071 on 2026-11-14. The manual itself is inconsistent about port counts in places; the port layout here follows the front panel.*
 
 *Visit [Conductive Labs](https://conductivelabs.com) for complete documentation, firmware updates, and community support*
