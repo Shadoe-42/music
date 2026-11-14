@@ -1,12 +1,12 @@
 slug,name,maker,role,zone,basis,note
 mackie,Mackie 30-channel console,Mackie,main mixer,jaspers-rack,stated,model to confirm
 mpcx,MPC X,Akai,"sampler, sequencer, MIDI hub",jaspers-rack,stated,
-hermod,Hermod+,Squarp Instruments,Eurorack sequencer and master clock,,stated,first draft places the Eurorack case in jaspers-rack; not yet confirmed
-ground-control,Ground Control,Endorphin.es,Eurorack sequencer and master clock,,stated,zone as for hermod
-pams,Pam's Pro Workout,ALM,Eurorack clock source,,stated,full maker name to confirm; zone as for hermod
-cockpit2,Cockpit2,,Eurorack mixer,,stated,maker to confirm
-listen-io,Listen I/O,,Eurorack mixer and audio interface,,stated,maker to confirm; role to confirm
-mixup,Mixup,,Eurorack mixer,,stated,maker to confirm
+hermod,Hermod+,Squarp Instruments,Eurorack sequencer and master clock,,stated,"installed in case-go-0, section A (power_distro_sections_1026.md); zone of the case not yet confirmed"
+ground-control,Ground Control,Endorphin.es,Eurorack sequencer and master clock,,stated,"installed in case-go-0, section C (power_distro_sections_1026.md); zone of the case not yet confirmed"
+pams,Pamela's PRO Workout,ALM Busy Circuits,Eurorack clock source,,stated,"installed in case-go-0, section A (power_distro_sections_1026.md); zone of the case not yet confirmed"
+cockpit2,Cockpit 2,Endorphin.es,Eurorack mixer,,stated,"installed in case-go-2, section C (power_distro_sections_1026.md)"
+listen-io,Listen IO,4ms Company,Eurorack external audio I/O module,,stated,"installed in case-go-3, section C (power_distro_sections_1026.md)"
+mixup,Mixup,Intellijel,Eurorack mixer,,stated,"installed in case-go-1, section C (power_distro_sections_1026.md)"
 case-mantis,Mantis,,Eurorack case,,stated,from the rack and case plan; zone not yet assigned
 case-go-0,Go_0,,Eurorack case,,stated,from the rack and case plan; barrel DC power per owner
 case-go-1,Go_1,,Eurorack case,,stated,as case-go-0

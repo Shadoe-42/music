@@ -32,7 +32,7 @@ The numbers force one choice: six MIDI sources and only five DIN inputs. Input 6
 | `in-1` | Hydrasynth | M-001 | 5-pin DIN |
 | `in-2` | Take 5 | M-003 | 5-pin DIN |
 | `in-3` | Ground Control | M-005 | TRS Type A to DIN |
-| `in-4` | Pam's Pro Workout (clock only) | M-007 | TRS Type A to DIN |
+| `in-4` | Pamela's PRO Workout (clock only) | M-007 | TRS Type A to DIN |
 | `in-5` | MPC X | M-008 | 5-pin DIN |
 | `in-6-trs-a` | Hermod+ | M-010 | straight TRS Type A |
 
@@ -72,7 +72,7 @@ Open question: the Eurorack voices are driven from Hermod+ and Ground Control ov
 
 One clock source is active at a time. Candidates:
 
-- Hermod+, Ground Control, Pam's Pro Workout or the MPC X, each through the MRCC.
+- Hermod+, Ground Control, Pamela's PRO Workout or the MPC X, each through the MRCC.
 - The MRCC's own clock, adjustable from 10 to 240 BPM.
 
 The MRCC filters clock per routing, per input port or per output port, so each preset can pass clock from one source and block it from the rest. Its manual warns that merging several inputs onto one output can delay or lose traffic, clock above all. This is why the single-source rule exists.
@@ -87,7 +87,7 @@ The MRCC stores one factory preset (number 0, read-only) and 127 user presets on
 |---|---|
 | HOME | Hermod+ is the clock for every clock-capable synth; Hydrasynth plays channels 1 to 7 |
 | GNDCTL CLK | As HOME, with Ground Control as the clock |
-| PAMS CLK | As HOME, with Pam's as the clock, for free-jamming standalone sequencers |
+| PAMS CLK | As HOME, with Pamela's as the clock, for free-jamming standalone sequencers |
 | MPCX MASTER | MPC X is the clock and sequencer across channels 1 to 16 |
 | HYDRA to T5 | Hydrasynth plays the Take 5 only, without changing the keyboard's transmit channel |
 

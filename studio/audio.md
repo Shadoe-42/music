@@ -12,8 +12,8 @@ How audio moves from the sources to the monitors. The cables are recorded in `da
 ## 1. The path at a glance
 
 ```text
-Cockpit2   ──► Mackie ch 3 (hard left) and ch 4 (hard right)
-Listen I/O ──► Mackie ch 28 (stereo)
+Cockpit 2  ──► Mackie ch 3 (hard left) and ch 4 (hard right)
+Listen IO  ──► Mackie ch 28 (stereo)
 Mixup      ──► Mackie ch 29 (stereo)
 Yamaha     ──► Mackie, two channels in the low 20s, hard left and right   [planned]
 
@@ -26,9 +26,9 @@ Everything in the first four lines and the monitor chain is as built. The Yamaha
 
 | Channel | Source | Link | Mode | Status |
 |---|---|---|---|---|
-| 3 | Cockpit2, left | A-001 | mono, panned hard left | wired |
-| 4 | Cockpit2, right | A-002 | mono, panned hard right | wired |
-| 28 | Listen I/O | A-003 | stereo channel | wired |
+| 3 | Cockpit 2, left | A-001 | mono, panned hard left | wired |
+| 4 | Cockpit 2, right | A-002 | mono, panned hard right | wired |
+| 28 | Listen IO | A-003 | stereo channel | wired |
 | 29 | Mixup | A-004 | stereo channel | wired |
 | low 20s, left | Yamaha main out L | A-009 | mono, panned hard left | planned |
 | low 20s, right | Yamaha main out R | A-010 | mono, panned hard right | planned |
@@ -41,16 +41,16 @@ The Mackie main outputs feed the T10S subwoofer over XLR, and the T10S feeds the
 
 Settings to record once someone is at the back panel:
 
-- Crossover: 80 Hz, 120 Hz or bypass ⚠
-- Phase: 0 or 180 degrees ⚠
-- Input sensitivity: +4 dBu or -10 dBV ⚠
-- Whether the footswitch bypass input is used. Bypass removes the sub and its high-pass filter, so the monitors play full range ⚠
+- Crossover: 80 Hz (stated by the owner, 2026-11-14)
+- Phase, 0 or 180 degrees: not recorded ⚠
+- Input sensitivity: the switch is in the vertical position; which level that is, +4 dBu or -10 dBV, is not recorded ⚠
+- Footswitch bypass: not installed and never used. Bypass would remove the sub and its high-pass filter, so the monitors would play full range
 
 Power note for the power doc: the T10S has a two-pin IEC inlet and no power switch of its own (Sound On Sound), so its power is switched at the conditioner or the outlet.
 
 ## 4. Eurorack mixers
 
-The Cockpit2, Listen I/O and Mixup are the points where the modular's audio leaves the cases. Their makers, output connectors, balanced or unbalanced outputs and level are not yet recorded, so the signal and connector fields on A-001 to A-004 are blank. Fill them in when each run is traced.
+The Cockpit 2 (Endorphin.es, in case Go_2), Listen IO (4ms, in Go_3) and Mixup (Intellijel, in Go_1) are the points where the modular's audio leaves the cases, so the three runs to the Mackie start in three different cases. Their output connectors, balanced or unbalanced outputs and level are not yet recorded, so the signal and connector fields on A-001 to A-004 are blank. Fill them in when each run is traced.
 
 ## 5. Yamaha submixer, planned
 
@@ -76,9 +76,9 @@ See the ground path note in `midi_and_clock.md`, section 6. The long run across 
 
 ## 9. Open items
 
-- Makers, outputs and levels of the Cockpit2, Listen I/O and Mixup.
+- Output connectors, balance and level of the Cockpit 2, Listen IO and Mixup.
 - Mackie model and which channels carry what beyond the five recorded.
 - How audio gets from the Mackie to the computer and the DAW. Nothing is recorded yet.
-- T10S settings, as in section 3.
+- T10S phase and sensitivity, as in section 3.
 - Yamaha model, its channels on the Mackie, and the patch bay point list.
 - Where the headphone connections go. Some 3.5 mm TRS runs exist and are not recorded.
