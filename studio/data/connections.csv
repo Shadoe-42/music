@@ -1,0 +1,33 @@
+id,from,to,signal,connector_from,connector_to,zone_from,zone_to,status,verified,basis,note
+A-001,cockpit2.out-l,mackie.ch-03,,,,,jaspers-rack,wired,,stated,panned hard left at the Mackie; signal and connector to confirm
+A-002,cockpit2.out-r,mackie.ch-04,,,,,jaspers-rack,wired,,stated,panned hard right at the Mackie; signal and connector to confirm
+A-003,listen-io.out,mackie.ch-28,,,,,jaspers-rack,wired,,stated,stereo channel; signal and connector to confirm
+A-004,mixup.out,mackie.ch-29,,,,,jaspers-rack,wired,,stated,stereo channel; signal and connector to confirm
+A-005,mackie.main-out-l,adam-t10s.in-l,audio-line-balanced,xlr-3,xlr-3,jaspers-rack,,wired,,stated,"sub is first in the monitor chain; balanced assumed from XLR, to confirm"
+A-006,mackie.main-out-r,adam-t10s.in-r,audio-line-balanced,xlr-3,xlr-3,jaspers-rack,,wired,,stated,as A-005
+A-007,adam-t10s.out-l,adam-t8v-l.in,audio-line-balanced,xlr-3,xlr-3,,,wired,,stated,sub to left monitor; port names to confirm
+A-008,adam-t10s.out-r,adam-t8v-r.in,audio-line-balanced,xlr-3,xlr-3,,,wired,,stated,sub to right monitor; port names to confirm
+A-009,yamaha-submix.main-out-l,mackie.ch-,,,,on-stage,jaspers-rack,planned,,stated,"low-20s channel, panned left; channel not yet chosen; first draft routes via the patch bay"
+A-010,yamaha-submix.main-out-r,mackie.ch-,,,,on-stage,jaspers-rack,planned,,stated,"low-20s channel, panned right; as A-009"
+P-001,conditioner-jaspers,,power-ac,,,jaspers-rack,,wired,,stated,feeds the Jaspers rack; outlet-level map not yet documented
+P-002,conditioner-onstage,,power-ac,,,on-stage,,wired,,stated,feeds the on-stage rack; outlet-level map not yet documented
+P-003,,case-go-0.dc-in,power-dc,,barrel-dc,,,wired,,stated,supply and source port not yet documented
+P-004,,case-go-1.dc-in,power-dc,,barrel-dc,,,wired,,stated,supply and source port not yet documented
+P-005,,case-go-2.dc-in,power-dc,,barrel-dc,,,wired,,stated,supply and source port not yet documented
+P-006,,case-go-3.dc-in,power-dc,,barrel-dc,,,wired,,stated,supply and source port not yet documented
+P-007,,take5.dc-in,power-dc,,barrel-dc,,on-stage,wired,,stated,supply and source port not yet documented
+M-001,hydrasynth.midi-out,mrcc.din-in-1,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,from first draft
+M-002,mrcc.din-out-1,hydrasynth.midi-in,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,from first draft
+M-003,take5.midi-out,mrcc.din-in-2,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,from first draft
+M-004,mrcc.din-out-2,take5.midi-in,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,from first draft
+M-005,hermod.midi-out,mrcc.din-in-3,midi-trs-a,trs-3.5mm,din-5,,on-stage,planned,,stated,"from first draft; crosses the bridge; ⚠ TRS polarity per first draft, unverified"
+M-006,mrcc.din-out-3,hermod.midi-in,midi-din,din-5,,on-stage,,planned,,stated,"optional return, crosses the bridge; connector at hermod to confirm"
+M-007,ground-control.midi-out,mrcc.din-in-4,midi-trs-a,trs-3.5mm,din-5,,on-stage,planned,,stated,"from first draft; crosses the bridge; ⚠ TRS polarity per first draft, unverified"
+M-008,mrcc.din-out-4,ground-control.midi-in,midi-din,din-5,,on-stage,,planned,,stated,"optional return, crosses the bridge; connector at ground-control to confirm"
+M-009,pams.midi-out,mrcc.din-in-5,midi-trs-a,trs-3.5mm,din-5,,on-stage,planned,,stated,"clock only, via the MIDI expander per first draft; crosses the bridge; ⚠ TRS polarity per first draft, unverified"
+M-010,mrcc.din-out-5,pulsar23.midi-in,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,from first draft
+M-011,mpcx.midi-out-a,mrcc.din-in-6,midi-din,din-5,din-5,jaspers-rack,on-stage,planned,,stated,from first draft; crosses the bridge
+M-012,mrcc.din-out-6,mpcx.midi-in,midi-din,din-5,din-5,on-stage,jaspers-rack,planned,,stated,"optional return, crosses the bridge"
+M-013,microfreak.usb,mrcc.usb-host-1,midi-usb,usb-b,,on-stage,on-stage,planned,,stated,from first draft; MRCC host jack type to confirm ⚠
+M-014,ep1320.usb,mrcc.usb-host-2,midi-usb,usb-c,,on-stage,on-stage,planned,,stated,from first draft; MRCC host jack type to confirm ⚠
+M-015,mrcc.trs-out-a,sp404.midi-in,midi-trs-a,trs-3.5mm,trs-3.5mm,on-stage,on-stage,planned,,stated,"from first draft; ⚠ TRS polarity per first draft, unverified"

@@ -46,7 +46,8 @@ MIDI TRS polarity, as carried from the draft ⚠: Type A has the tip on DIN pin 
 |---|---|
 | `ts-quarter` | 1/4 inch two-conductor jack, unbalanced |
 | `trs-quarter` | 1/4 inch three-conductor jack, balanced or stereo |
-| `trs-3.5mm` | 3.5 mm three-conductor jack, used here for MIDI |
+| `ts-3.5mm` | 3.5 mm two-conductor jack, the Eurorack patch cable |
+| `trs-3.5mm` | 3.5 mm three-conductor jack, used for MIDI and for headphones |
 | `din-5` | Five-pin DIN, the original MIDI connector |
 | `xlr-3` | Three-pin XLR, balanced |
 | `usb-b` | USB type B |
