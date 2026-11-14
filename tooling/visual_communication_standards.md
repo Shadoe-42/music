@@ -28,7 +28,7 @@ These standards serve `project_philosophy.md`'s generational teaching obligation
 # Examples by category:
 ![Module Name](https://github.com/Shadoe-42/music/raw/main/modular/images/[manufacturer]/[module_name]/front_panel.jpg)
 ![Synthesizer Name](https://github.com/Shadoe-42/music/raw/main/synthesizers/images/[manufacturer]/[synth_name]/front_panel.jpg)
-![Studio Device](https://github.com/Shadoe-42/music/raw/main/studio/images/[manufacturer]/[device_name]/front_panel.jpg)
+![Studio Device](https://github.com/Shadoe-42/music/raw/main/infrastructure/images/[manufacturer]/[device_name]/front_panel.jpg)
 ```
 
 ### **2. Signal Type Labels (Every Guide)**
@@ -199,7 +199,7 @@ Signal types: [A]=Audio  [C]=CV  [G]=Gate
 │           └── moog/
 │               └── subsequent_37/
 │                   └── front_panel.jpg
-├── studio/
+├── infrastructure/
 │   └── images/
 │       └── [manufacturer]/
 │           └── [device_name]/
@@ -223,7 +223,7 @@ Signal types: [A]=Audio  [C]=CV  [G]=Gate
 - **Category-specific paths:**
   - **Modular:** `modular/images/[manufacturer]/[module_name]/front_panel.jpg`
   - **Synthesizers:** `synthesizers/images/[manufacturer]/[instrument_name]/front_panel.jpg` 
-  - **Studio gear:** `studio/images/[manufacturer]/[device_name]/front_panel.jpg`
+  - **Studio gear:** `infrastructure/images/[manufacturer]/[device_name]/front_panel.jpg`
 - **Complete examples:**
   - `https://github.com/Shadoe-42/music/raw/main/modular/images/erica_synths/black_polyvoks_vcf/front_panel.jpg`
   - `https://github.com/Shadoe-42/music/raw/main/synthesizers/images/sequential/take_5/front_panel.jpg`
@@ -253,7 +253,7 @@ Signal types: [A]=Audio  [C]=CV  [G]=Gate
 
 **Studio Equipment:**
 ```markdown
-![Focusrite Scarlett 2i2](https://github.com/Shadoe-42/music/raw/main/studio/images/focusrite/scarlett_2i2/front_panel.jpg)
+![Focusrite Scarlett 2i2](https://github.com/Shadoe-42/music/raw/main/infrastructure/images/focusrite/scarlett_2i2/front_panel.jpg)
 *Focusrite Scarlett 2i2 - USB audio interface with two inputs*
 ```
 
