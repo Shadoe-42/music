@@ -9,7 +9,7 @@ updated: 2026-11-14
 
 Controlled terms for every table and data file in `studio/`. A term is added here before it is used anywhere else. This list is capped at terms that exist in the studio today; it grows only when a real record needs a new term. Gear names and makers are not kept here: they live in `data/devices.csv`, where each maker is verified.
 
-Entries marked ⚠ are carried over from the first-draft wiring document and have not been checked against a primary source.
+Entries marked ⚠ have not been checked against a primary source.
 
 ## Zones
 
@@ -28,8 +28,8 @@ Which zone each Eurorack case belongs to is not yet recorded.
 | `audio-line-balanced` | Line-level audio on a three-conductor cable that cancels picked-up noise |
 | `audio-line-unbalanced` | Line-level audio on a two-conductor cable, more prone to hum over distance |
 | `midi-din` | MIDI note and clock messages over a five-pin DIN cable |
-| `midi-trs-a` | MIDI over a 3.5 mm stereo cable, wired as Type A ⚠ |
-| `midi-trs-b` | MIDI over a 3.5 mm stereo cable, wired as Type B ⚠ |
+| `midi-trs-a` | MIDI over a 3.5 mm stereo cable, wired as Type A, the MIDI Association standard |
+| `midi-trs-b` | MIDI over a 3.5 mm stereo cable, wired as Type B, an older maker-specific variant |
 | `midi-usb` | MIDI messages over USB |
 | `clock-analog` | A pulse signal that carries tempo to gear without MIDI |
 | `cv` | Control voltage: a changing voltage that controls pitch or a parameter |
@@ -38,7 +38,7 @@ Which zone each Eurorack case belongs to is not yet recorded.
 | `power-dc` | Low-voltage direct-current power to a device |
 | `usb-data` | USB used for data other than MIDI |
 
-MIDI TRS polarity, as carried from the draft ⚠: Type A has the tip on DIN pin 5 (current sink) and the ring on pin 4 (current source). Type B swaps them. Verify against the MIDI Association specification before relying on it.
+MIDI TRS polarity: Type A has the tip on DIN pin 5, the ring on pin 4 and the sleeve on pin 2. Type B swaps tip and ring. Source: Conductive Labs MRCC 880 user manual, which describes the Type A standard and the swap. An adapter that swaps tip and ring converts between the two.
 
 ## Connectors
 
@@ -50,8 +50,10 @@ MIDI TRS polarity, as carried from the draft ⚠: Type A has the tip on DIN pin 
 | `trs-3.5mm` | 3.5 mm three-conductor jack, used for MIDI and for headphones |
 | `din-5` | Five-pin DIN, the original MIDI connector |
 | `xlr-3` | Three-pin XLR, balanced |
+| `usb-a` | USB type A, the host-side jack on a computer or router |
 | `usb-b` | USB type B |
 | `usb-c` | USB type C |
+| `usb-mini` | Mini-USB, used for power on some devices such as the JU-08A; other devices to confirm |
 | `iec` | Standard mains inlet or cord |
 | `barrel-dc` | Barrel-type low-voltage DC connector, as on wall supplies |
 

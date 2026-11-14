@@ -16,18 +16,19 @@ P-004,,case-go-1.dc-in,power-dc,,barrel-dc,,,wired,,stated,supply and source por
 P-005,,case-go-2.dc-in,power-dc,,barrel-dc,,,wired,,stated,supply and source port not yet documented
 P-006,,case-go-3.dc-in,power-dc,,barrel-dc,,,wired,,stated,supply and source port not yet documented
 P-007,,take5.dc-in,power-dc,,barrel-dc,,on-stage,wired,,stated,supply and source port not yet documented
-M-001,hydrasynth.midi-out,mrcc.din-in-1,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,from first draft
-M-002,mrcc.din-out-1,hydrasynth.midi-in,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,from first draft
-M-003,take5.midi-out,mrcc.din-in-2,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,from first draft
-M-004,mrcc.din-out-2,take5.midi-in,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,from first draft
-M-005,hermod.midi-out,mrcc.din-in-3,midi-trs-a,trs-3.5mm,din-5,,on-stage,planned,,stated,"from first draft; crosses the bridge; ⚠ TRS polarity per first draft, unverified"
-M-006,mrcc.din-out-3,hermod.midi-in,midi-din,din-5,,on-stage,,planned,,stated,"optional return, crosses the bridge; connector at hermod to confirm"
-M-007,ground-control.midi-out,mrcc.din-in-4,midi-trs-a,trs-3.5mm,din-5,,on-stage,planned,,stated,"from first draft; crosses the bridge; ⚠ TRS polarity per first draft, unverified"
-M-008,mrcc.din-out-4,ground-control.midi-in,midi-din,din-5,,on-stage,,planned,,stated,"optional return, crosses the bridge; connector at ground-control to confirm"
-M-009,pams.midi-out,mrcc.din-in-5,midi-trs-a,trs-3.5mm,din-5,,on-stage,planned,,stated,"clock only, via the MIDI expander per first draft; crosses the bridge; ⚠ TRS polarity per first draft, unverified"
-M-010,mrcc.din-out-5,pulsar23.midi-in,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,from first draft
-M-011,mpcx.midi-out-a,mrcc.din-in-6,midi-din,din-5,din-5,jaspers-rack,on-stage,planned,,stated,from first draft; crosses the bridge
-M-012,mrcc.din-out-6,mpcx.midi-in,midi-din,din-5,din-5,on-stage,jaspers-rack,planned,,stated,"optional return, crosses the bridge"
-M-013,microfreak.usb,mrcc.usb-host-1,midi-usb,usb-b,,on-stage,on-stage,planned,,stated,from first draft; MRCC host jack type to confirm ⚠
-M-014,ep1320.usb,mrcc.usb-host-2,midi-usb,usb-c,,on-stage,on-stage,planned,,stated,from first draft; MRCC host jack type to confirm ⚠
-M-015,mrcc.trs-out-a,sp404.midi-in,midi-trs-a,trs-3.5mm,trs-3.5mm,on-stage,on-stage,planned,,stated,"from first draft; ⚠ TRS polarity per first draft, unverified"
+P-008,,mrcc.power-in,power-dc,,usb-c,,on-stage,planned,,manual,included 5 V 3 A USB-PD supply per manual; actual supply and source outlet to confirm
+M-001,hydrasynth.midi-out,mrcc.in-1,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,"port plan, 2026-11-14"
+M-002,mrcc.out-1,hydrasynth.midi-in,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,"port plan, 2026-11-14"
+M-003,take5.midi-out,mrcc.in-2,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,"port plan, 2026-11-14"
+M-004,mrcc.out-2,take5.midi-in,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,"port plan, 2026-11-14"
+M-005,ground-control.midi-out,mrcc.in-3,midi-trs-a,trs-3.5mm,din-5,,on-stage,planned,,stated,TRS Type A to DIN cable; may cross the bridge; Eurorack case zone unconfirmed
+M-006,mrcc.out-3,ground-control.midi-in,midi-din,din-5,trs-3.5mm,on-stage,,planned,,stated,optional return; DIN to TRS Type A adapter at the far end; may cross the bridge; Eurorack case zone unconfirmed
+M-007,pams.midi-out,mrcc.in-4,midi-trs-a,trs-3.5mm,din-5,,on-stage,planned,,stated,"clock only, via the MIDI expander per first draft; TRS Type A to DIN cable; may cross the bridge; Eurorack case zone unconfirmed"
+M-008,mpcx.midi-out-a,mrcc.in-5,midi-din,din-5,din-5,jaspers-rack,on-stage,planned,,stated,"crosses the bridge; moved from the draft input 6, which is TRS only"
+M-009,mrcc.out-4,mpcx.midi-in,midi-din,din-5,din-5,on-stage,jaspers-rack,planned,,stated,optional return; crosses the bridge
+M-010,hermod.midi-out,mrcc.in-6-trs-a,midi-trs-a,trs-3.5mm,trs-3.5mm,,on-stage,planned,,stated,"straight TRS Type A cable, no converter; may cross the bridge; Eurorack case zone unconfirmed"
+M-011,mrcc.out-12-trs-a,hermod.midi-in,midi-trs-a,trs-3.5mm,trs-3.5mm,on-stage,,planned,,stated,optional return; straight TRS Type A cable; may cross the bridge; Eurorack case zone unconfirmed
+M-012,mrcc.out-5,pulsar23.midi-in,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,"port plan, 2026-11-14"
+M-013,microfreak.usb,mrcc.host-a,midi-usb,usb-b,usb-a,on-stage,on-stage,planned,,manual,MRCC host ports are USB type A (manual v1.1.071)
+M-014,ep1320.usb,mrcc.host-b,midi-usb,usb-c,usb-a,on-stage,on-stage,planned,,manual,MRCC host ports are USB type A (manual v1.1.071)
+M-015,mrcc.out-11-trs-a,sp404.midi-in,midi-trs-a,trs-3.5mm,trs-3.5mm,on-stage,on-stage,planned,,stated,"TRS Type A jack of output 11; the MRCC has separate Type A and Type B jacks, no setting"
