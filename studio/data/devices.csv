@@ -1,31 +1,37 @@
-slug,name,maker,role,zone,basis,note
-mackie,Mackie 30-channel console,Mackie,main mixer,jaspers-rack,stated,model to confirm
-mpcx,MPC X,Akai,"sampler, sequencer, MIDI hub",jaspers-rack,stated,
-hermod,Hermod+,Squarp Instruments,Eurorack sequencer and master clock,,stated,"installed in case-go-0, section A (power_distro_sections_1026.md); zone of the case not yet confirmed"
-ground-control,Ground Control,Endorphin.es,Eurorack sequencer and master clock,,stated,"installed in case-go-0, section C (power_distro_sections_1026.md); zone of the case not yet confirmed"
-pams,Pamela's PRO Workout,ALM Busy Circuits,Eurorack clock source,,stated,"installed in case-go-0, section A (power_distro_sections_1026.md); zone of the case not yet confirmed"
-cockpit2,Cockpit 2,Endorphin.es,Eurorack mixer,,stated,"installed in case-go-2, section C (power_distro_sections_1026.md)"
-listen-io,Listen IO,4ms Company,Eurorack external audio I/O module,,stated,"installed in case-go-3, section C (power_distro_sections_1026.md)"
-mixup,Mixup,Intellijel,Eurorack mixer,,stated,"installed in case-go-1, section C (power_distro_sections_1026.md)"
-case-mantis,Mantis,,Eurorack case,,stated,from the rack and case plan; zone not yet assigned
-case-go-0,Go_0,,Eurorack case,,stated,from the rack and case plan; barrel DC power per owner
-case-go-1,Go_1,,Eurorack case,,stated,as case-go-0
-case-go-2,Go_2,,Eurorack case,,stated,as case-go-0
-case-go-3,Go_3,,Eurorack case,,stated,as case-go-0
-case-niftycase,NiftyCase,,Eurorack case,,stated,from the rack and case plan
-mrcc,MRCC,Conductive Labs,MIDI router,on-stage,stated,see infrastructure/conductive_labs_mrcc_guide.md
-patchbay,1/4 inch patch bay,,"audio patch bay, half-normalled per first draft",on-stage,stated,model to confirm
-yamaha-submix,Yamaha submixer,Yamaha,stereo submixer and monitor bus,on-stage,stated,model to confirm; not yet connected to the Mackie
-hydrasynth,Hydrasynth,ASM,synthesizer and keybed,on-stage,stated,
-take5,Take 5,Sequential,synthesizer,on-stage,stated,powered by barrel DC per owner
-microfreak,MicroFreak,Arturia,synthesizer,on-stage,stated,
-pulsar23,Pulsar-23,SOMA,drum synthesizer,on-stage,stated,
-lyra8,Lyra-8,SOMA,drone synthesizer,on-stage,stated,
-ep1320,EP-1320 Medieval,Teenage Engineering,synthesizer,on-stage,stated,
-solar50,Solar 50,Elta Music,synthesizer,on-stage,stated,
-sp404,SP-404 MKII,Roland,sampler,on-stage,stated,
-adam-t10s,T10S,Adam Audio,"subwoofer, first in the monitor chain",,stated,
-adam-t8v-l,T8V (left),Adam Audio,studio monitor,,stated,
-adam-t8v-r,T8V (right),Adam Audio,studio monitor,,stated,
-conditioner-jaspers,Power conditioner,Black Lion Audio,power conditioner for the Jaspers rack,jaspers-rack,stated,model and count to confirm; port map not yet documented
-conditioner-onstage,Power conditioner,Black Lion Audio,power conditioner for the on-stage rack,on-stage,stated,model and count to confirm; port map not yet documented
+slug,name,aka,maker,role,zone,basis,note
+mackie,Mackie 30-channel console,large mixer,Mackie,main mixer,jaspers-rack,stated,model to confirm
+mpcx,MPC X,,Akai,"sampler, sequencer, MIDI hub",jaspers-rack,stated,
+hermod,Hermod+,,Squarp Instruments,Eurorack sequencer and master clock,,stated,"installed in case-go-0, section A (power_distro_sections_1026.md); zone of the case not yet confirmed"
+ground-control,Ground Control,,Endorphin.es,Eurorack sequencer and master clock,,stated,"installed in case-go-0, section C (power_distro_sections_1026.md); zone of the case not yet confirmed"
+pams,Pamela's PRO Workout,,ALM Busy Circuits,Eurorack clock source,,stated,"installed in case-go-0, section A (power_distro_sections_1026.md); zone of the case not yet confirmed"
+cockpit2,Cockpit 2,,Endorphin.es,Eurorack mixer,,stated,"installed in case-go-2, section C (power_distro_sections_1026.md)"
+listen-io,Listen IO,,4ms Company,Eurorack external audio I/O module,,stated,"installed in case-go-3, section C (power_distro_sections_1026.md)"
+mixup,Mixup,,Intellijel,Eurorack mixer,,stated,"installed in case-go-1, section C (power_distro_sections_1026.md)"
+case-mantis,Mantis,,,Eurorack case,,stated,from the rack and case plan; zone not yet assigned
+case-go-0,Go_0,,,Eurorack case,,stated,from the rack and case plan; barrel DC power per owner
+case-go-1,Go_1,,,Eurorack case,,stated,as case-go-0
+case-go-2,Go_2,,,Eurorack case,,stated,as case-go-0
+case-go-3,Go_3,,,Eurorack case,,stated,as case-go-0
+case-niftycase,NiftyCase,,,Eurorack case,,stated,from the rack and case plan
+mrcc,MRCC,,Conductive Labs,MIDI router,on-stage,stated,see infrastructure/conductive_labs_mrcc_guide.md; not powered as of 2026-11-15
+patchbay,96-port 1U patch bay,,,"audio patch bay, half-normalled per first draft ⚠",jaspers-rack,stated,"96 ports in 1U, at the top of the Jaspers rack stack, has rack ears (owner). ⚠ 96 points in 1U usually means bantam (TT) jacks, not 1/4 inch; jack type, model and normalling to confirm"
+yamaha-mg10xu,MG10XU,the Yamaha; small mixer,Yamaha,"small mixer, stereo submixer and monitor bus per first draft",on-stage,observed,"model read off the unit 2026-11-15; has a USB audio interface ⚠ not checked against the manual; Hydrasynth on ch 9 and 10 (A-011, A-012); not yet connected to the Mackie"
+hydrasynth,Hydrasynth,hydra,ASM,synthesizer and keybed,on-stage,stated,
+take5,Take 5,,Sequential,synthesizer,on-stage,stated,powered by barrel DC per owner
+microfreak,MicroFreak,,Arturia,synthesizer,on-stage,stated,
+pulsar23,Pulsar-23,Pulsar,SOMA,drum synthesizer,on-stage,stated,
+lyra8,Lyra-8,Lyra,SOMA,drone synthesizer,on-stage,stated,
+ep1320,EP-1320 Medieval,,Teenage Engineering,synthesizer,on-stage,stated,
+solar50,Solar 50,,Elta Music,synthesizer,on-stage,stated,
+sp404,SP-404 MKII,the 404,Roland,sampler,on-stage,stated,
+adam-t10s,T10S,,Adam Audio,"subwoofer, first in the monitor chain",,stated,
+adam-t8v-l,T8V (left),,Adam Audio,studio monitor,,stated,
+adam-t8v-r,T8V (right),,Adam Audio,studio monitor,,stated,
+conditioner-jaspers,Power conditioner,,Black Lion Audio,retired slug,jaspers-rack,stated,retired 2026-11-15: the slug encoded location and the unit count was wrong; replaced by radial-power-1-1 and black-lion-pg-x-1. Kept because retired rows P-001 and P-002 reference it
+conditioner-onstage,Power conditioner,,Black Lion Audio,retired slug,on-stage,stated,retired 2026-11-15: the slug encoded location and the unit count was wrong; replaced by radial-power-1-2. Kept because retired rows P-001 and P-002 reference it
+radial-power-1-1,Power-1,,Radial Engineering,"power conditioner, 11 outlets: 8 rear switched, 3 front unswitched",jaspers-rack,stated,"Jaspers rack, below the patch bay and above the PG-X; all 3 front outlets empty; outlet layout from retailer listings and reviews ⚠ not the maker page; conditioning per owner and listings"
+radial-power-1-2,Power-1,,Radial Engineering,"power conditioner, 11 outlets: 8 rear switched, 3 front unswitched",on-stage,stated,"the only unit in the on-stage server rack (owner, 2026-11-15); front outlet 1 used, other front outlets to confirm; outlet layout as radial-power-1-1"
+black-lion-pg-x-1,PG-X,,Black Lion Audio,"power conditioner, 9 outlets: 8 rear, 1 front",jaspers-rack,stated,"Jaspers rack, below the Radial; outlet count from retailer listings ⚠ not the maker page"
+yamaha-pa-10b,PA-10B AC power adaptor,,Yamaha,AC power adaptor for the MG10XU,on-stage,observed,"label read 2026-11-15: input 120 V, 60 Hz, 300 mA; output 18.5 V AC x2, 0.62 A; three contacts marked AC, GND, AC. Alternating current, not DC"
+magnatone-m80,"Baby M-80 head, Chrome Grape",M80,Magnatone,"guitar amplifier head, standalone",jaspers-rack,stated,Billy Gibbons Collection; 12 W tube head per the maker; sits just right of the Jaspers rack beside its cab; not integrated with the Mackie or the modular; powered from the Jaspers Radial
+marshall-studio-jtm-2x12,Studio JTM 2x12 angled cabinet,,Marshall,"guitar speaker cabinet, two Celestion G12M-65 Creamback",jaspers-rack,stated,connected to the M80; cabinet impedance and the cable type to the head not recorded ⚠

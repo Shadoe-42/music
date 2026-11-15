@@ -2,7 +2,7 @@
 title: Studio Vocabulary
 type: vocab
 publish: public
-updated: 2026-11-14
+updated: 2026-11-15
 ---
 
 # Studio Vocabulary
@@ -36,6 +36,7 @@ Which zone each Eurorack case belongs to is not yet recorded.
 | `gate` | A voltage that is high while a note is held and low otherwise |
 | `power-ac` | Mains power |
 | `power-dc` | Low-voltage direct-current power to a device |
+| `power-ac-lv` | Low-voltage alternating-current power, as from the Yamaha PA-10B adaptor; never interchangeable with `power-dc` |
 | `usb-data` | USB used for data other than MIDI |
 
 MIDI TRS polarity: Type A has the tip on DIN pin 5, the ring on pin 4 and the sleeve on pin 2. Type B swaps tip and ring. Source: Conductive Labs MRCC 880 user manual, which describes the Type A standard and the swap. An adapter that swaps tip and ring converts between the two.
@@ -56,6 +57,7 @@ MIDI TRS polarity: Type A has the tip on DIN pin 5, the ring on pin 4 and the sl
 | `usb-mini` | Mini-USB, used for power on some devices such as the JU-08A; other devices to confirm |
 | `iec` | Standard mains inlet or cord |
 | `barrel-dc` | Barrel-type low-voltage DC connector, as on wall supplies |
+| `ac-3pin-locking` | Three-contact locking low-voltage AC plug, as on the Yamaha PA-10B; not a DC connector |
 
 ## Connection ID prefixes
 
@@ -84,6 +86,20 @@ MIDI TRS polarity: Type A has the tip on DIN pin 5, the ring on pin 4 and the sl
 | `manual` | Stated in manufacturer documentation, named in the note |
 | `stated` | Said by the owner |
 | `inferred` | Derived, not checked |
+
+## Device roles
+
+Roles in `data/devices.csv` are free text, with these conventions.
+
+| Term | Meaning |
+|---|---|
+| `power conditioner` | A unit that distributes mains power to several outlets and also filters and surge-protects it. Most units in this studio do both, so this is the single role used for them |
+
+## Device fields
+
+| Field | Meaning |
+|---|---|
+| `aka` | The owner's shorthand names for a device, separated by semicolons. A nickname often names a role ("small mixer") and not a model, so an `aka` is a trail to the real unit and never an identifier |
 
 ## Document fields
 

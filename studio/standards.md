@@ -2,7 +2,7 @@
 title: Studio Documentation Standards
 type: standards
 publish: public
-updated: 2026-11-14
+updated: 2026-11-15
 ---
 
 # Studio Documentation Standards
@@ -36,6 +36,7 @@ Every markdown document carries frontmatter with at least `title`, `type`, `publ
 Identity never encodes location, because gear moves.
 
 - **Devices** have a short, stable, lowercase slug, such as `mrcc` or `mackie`. A slug is never reused for a different device.
+- A device may carry an `aka`, the owner's shorthand for it. An `aka` is never used as an identifier, because a nickname often names a role and not a model.
 - **Ports** are written `device.port`, for example `mrcc.din-out-3`.
 - **Connections** have an ID made of a type prefix and a three-digit number: `A-014`, `M-007`, `V-022`, `P-003`, `D-005`. Prefixes are defined in `vocab.md`.
 - **IDs are never renumbered and never reused.** A connection that goes away is marked `retired`, and its row stays.
@@ -65,6 +66,7 @@ Status and basis answer different questions, so they are kept apart.
 - **Status** describes the connection. `wired` means physically connected with the signal not yet checked. `tested` means the signal was confirmed, on the date in `verified`, with the method in `note`. Moving or replacing a cable resets its status to `wired`.
 - **Basis** describes how the fact is known. `observed` means someone checked it at the equipment or by measurement. `manual` means the manufacturer's documentation states it, and `note` names the document. `stated` means the owner said it. `inferred` means it was derived and has not been checked.
 - A technical specification (a voltage, a level, a polarity, a firmware behavior) whose basis is `stated` or `inferred` is marked with ⚠ wherever it appears.
+- **Observed beats remembered.** A model name, a count, a port assignment or a connector is recorded from the hardware, with basis `observed`. A value taken from memory stays `stated` and is treated as provisional until someone checks it. Counts and port assignments are never written down from memory alone. A nickname such as "the Yamaha" is not a model until the badge has been read.
 
 ## 6. Data and views
 
@@ -85,6 +87,10 @@ Every document declares `publish: private` or `publish: public`.
 - Verify a manufacturer name before writing it.
 - Flag uncertain specifications with ⚠ per section 5.
 
-## 9. Changing these standards
+## 9. Physical conventions
+
+- **Stereo cable color:** red is right and black is left, always (owner's rule). A pair that breaks the rule is a labeling fault to fix, not a variation to record.
+
+## 10. Changing these standards
 
 When practice shows a rule needs refining, update this document in the same session, as its own change with its own commit.
