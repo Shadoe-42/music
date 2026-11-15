@@ -19,8 +19,6 @@ Entries marked ⚠ have not been checked against a primary source.
 | `on-stage` | The on-stage stand and 19-inch server rack: the synth and drum fleet |
 | `bridge` | The floor run between the two zones |
 
-Which zone each Eurorack case belongs to is not yet recorded.
-
 ## Signal types
 
 | Term | Plain meaning |
@@ -54,7 +52,7 @@ MIDI TRS polarity: Type A has the tip on DIN pin 5, the ring on pin 4 and the sl
 | `usb-a` | USB type A, the host-side jack on a computer or router |
 | `usb-b` | USB type B |
 | `usb-c` | USB type C |
-| `usb-mini` | Mini-USB, used for power on some devices such as the JU-08A; other devices to confirm |
+| `usb-mini` | Mini-USB, used for power on some devices; which ones to confirm |
 | `iec` | Standard mains inlet or cord |
 | `barrel-dc` | Barrel-type low-voltage DC connector, as on wall supplies |
 | `ac-3pin-locking` | Three-contact locking low-voltage AC plug, as on the Yamaha PA-10B; not a DC connector |

@@ -13,11 +13,11 @@ Snapshot date: 2026-11-15. The studio is being wired now, so statuses change oft
 
 ## 1. The studio in brief
 
-Two physical zones are joined by a floor run (the bridge):
+Two physical zones are meant to be joined by a floor run (the bridge, not built yet; the cord cover is on order):
 
 - **Jaspers rack** (`jaspers-rack`): master control and the main mix. It holds the Mackie console and the MPC X, with a rack stack of a 96-port 1U patch bay, a Radial Power-1 and a Black Lion PG-X. A Magnatone Baby M-80 head and a Marshall cabinet stand beside it, standalone.
 - **On-stage** (`on-stage`): a 3-tier instrument stand holding the synth and drum fleet, the MRCC MIDI router and the Yamaha MG10XU, and a 19 inch server rack holding only a Radial Power-1 power conditioner.
-- **Eurorack**: six cases (Mantis, Go_0 to Go_3, NiftyCase), all filled, powered and mounted. Which zone each case belongs to is not yet recorded.
+- **Eurorack**: six cases, all filled, powered and mounted. The Mantis and Go_0 to Go_3 are on the Jaspers rack arms. The NiftyCase is on a separate table used by the family and is not wired into the racks.
 
 ## 2. Signal flow at a glance
 
@@ -36,7 +36,7 @@ MIDI AND CLOCK   (all planned)
 POWER
   Wall ──► Radial Power-1 and Black Lion PG-X (Jaspers rack) ──► Mackie, MPC X, sub, T8Vs, Mantis, Go cases, M80
   Wall ──► Radial Power-1 (on-stage) ──► the synth and drum fleet, the Yamaha adaptor
-  Plus separate supplies: Go cases and Take 5 (barrel DC), MG10XU (PA-10B, AC), MRCC (USB-C, not powered yet), JU-08A (mini-USB)
+  Plus separate supplies: Go cases and Take 5 (barrel DC), MG10XU (PA-10B, AC), MRCC (USB-C, not powered yet), JU-06A and SH-4d (power not recorded)
 ```
 
 ## 3. Gear by zone
@@ -47,6 +47,8 @@ POWER
 |---|---|---|
 | Mackie 30-channel console | Mackie | main mixer |
 | MPC X | Akai | sampler, sequencer, MIDI hub |
+| JU-06A | Roland | Boutique synthesizer module |
+| SH-4d | Roland | desktop synthesizer |
 | 96-port 1U patch bay | to confirm | audio patch bay |
 | Power-1 | Radial Engineering | power conditioner |
 | PG-X | Black Lion Audio | power conditioner |
@@ -70,7 +72,7 @@ POWER
 | SP-404 MKII | Roland | sampler |
 | Power-1 | Radial Engineering | power conditioner |
 
-**Monitors** (zone not yet recorded)
+**Monitors** (the T10S is in the Jaspers zone, the T8V zones are not yet recorded)
 
 | Device | Maker | Role |
 |---|---|---|
@@ -78,7 +80,7 @@ POWER
 | T8V (left) | Adam Audio | studio monitor |
 | T8V (right) | Adam Audio | studio monitor |
 
-**Eurorack cases** (zone not yet recorded)
+**Eurorack cases** (the NiftyCase is off the racks; the rest are in the Jaspers zone)
 
 | Device | Maker | Role |
 |---|---|---|
@@ -130,7 +132,7 @@ Nothing is `tested` yet. The CSV is the live record; this table goes stale.
 
 ## 6. Open issues
 
-1. **Eurorack case zones.** Unrecorded, and they decide which cables cross the bridge. See `physical.md`.
+1. **The bridge is not built.** The floor cord cover is on order, so every cross-zone cable is planned. The Hermod+, Ground Control and Pamela's links to the MRCC will cross it. See `physical.md`.
 2. **MIDI channels 9 to 16.** What they carry through the MRCC is unclear. See `midi_and_clock.md`.
 3. **Mackie to computer.** How audio reaches the DAW is not recorded. See `audio.md`.
 4. **Patch bay point list and gain staging.** Neither exists yet, and the patch bay's jack type needs checking, since 96 points in 1U usually means bantam jacks ⚠. See `audio.md`.
@@ -140,4 +142,5 @@ Nothing is `tested` yet. The CSV is the live record; this table goes stale.
 8. **Cable labels.** The IDs in the data are meant to match physical labels, and no label scheme has been chosen.
 9. **The first-draft wiring document** should be retired once nothing depends on it.
 10. **Magnatone and cabinet.** Standalone and connected to each other, with the speaker cable and the cabinet impedance unrecorded. See `audio.md`.
-11. **Spare power units.** The owner thinks there are more Black Lion and Furman units than the three in the racks. They are not recorded.
+11. **Unpowered synths.** The JU-06A and SH-4d are on no outlet and their power is not recorded. See `power.md`.
+12. **Spare power units.** The owner thinks there are more Black Lion and Furman units than the three in the racks. They are not recorded.

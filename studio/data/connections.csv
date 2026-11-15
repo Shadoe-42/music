@@ -1,12 +1,12 @@
 id,from,to,signal,connector_from,connector_to,zone_from,zone_to,status,verified,basis,note
-A-001,cockpit2.out-l,mackie.ch-03,,,,,jaspers-rack,wired,,stated,panned hard left at the Mackie; signal and connector to confirm
-A-002,cockpit2.out-r,mackie.ch-04,,,,,jaspers-rack,wired,,stated,panned hard right at the Mackie; signal and connector to confirm
-A-003,listen-io.out,mackie.ch-28,,,,,jaspers-rack,wired,,stated,stereo channel; signal and connector to confirm
-A-004,mixup.out,mackie.ch-29,,,,,jaspers-rack,wired,,stated,stereo channel; signal and connector to confirm
-A-005,mackie.main-out-l,adam-t10s.in-l,audio-line-balanced,xlr-3,xlr-3,jaspers-rack,,wired,,stated,sub is first in the monitor chain; T10S has balanced XLR inputs (Adam Audio product page)
-A-006,mackie.main-out-r,adam-t10s.in-r,audio-line-balanced,xlr-3,xlr-3,jaspers-rack,,wired,,stated,as A-005
-A-007,adam-t10s.out-l,adam-t8v-l.in,audio-line-balanced,xlr-3,xlr-3,,,wired,,stated,"T10S XLR outputs are high-passed to feed the monitors (Sound On Sound, June 2020); port names to confirm"
-A-008,adam-t10s.out-r,adam-t8v-r.in,audio-line-balanced,xlr-3,xlr-3,,,wired,,stated,as A-007
+A-001,cockpit2.out-l,mackie.ch-03,,,,jaspers-rack,jaspers-rack,wired,,stated,panned hard left at the Mackie; signal and connector to confirm
+A-002,cockpit2.out-r,mackie.ch-04,,,,jaspers-rack,jaspers-rack,wired,,stated,panned hard right at the Mackie; signal and connector to confirm
+A-003,listen-io.out,mackie.ch-28,,,,jaspers-rack,jaspers-rack,wired,,stated,stereo channel; signal and connector to confirm
+A-004,mixup.out,mackie.ch-29,,,,jaspers-rack,jaspers-rack,wired,,stated,stereo channel; signal and connector to confirm
+A-005,mackie.main-out-l,adam-t10s.in-l,audio-line-balanced,xlr-3,xlr-3,jaspers-rack,jaspers-rack,wired,,stated,sub is first in the monitor chain; T10S has balanced XLR inputs (Adam Audio product page)
+A-006,mackie.main-out-r,adam-t10s.in-r,audio-line-balanced,xlr-3,xlr-3,jaspers-rack,jaspers-rack,wired,,stated,as A-005
+A-007,adam-t10s.out-l,adam-t8v-l.in,audio-line-balanced,xlr-3,xlr-3,jaspers-rack,,wired,,stated,"T10S XLR outputs are high-passed to feed the monitors (Sound On Sound, June 2020); port names to confirm"
+A-008,adam-t10s.out-r,adam-t8v-r.in,audio-line-balanced,xlr-3,xlr-3,jaspers-rack,,wired,,stated,as A-007
 A-009,yamaha-mg10xu.main-out-l,mackie.ch-,,,,on-stage,jaspers-rack,planned,,stated,"low-20s channel, panned left; channel not yet chosen; first draft routes via the patch bay; Yamaha model observed 2026-11-15"
 A-010,yamaha-mg10xu.main-out-r,mackie.ch-,,,,on-stage,jaspers-rack,planned,,stated,"low-20s channel, panned right; as A-009; Yamaha model observed 2026-11-15"
 A-011,hydrasynth.main-out-l,yamaha-mg10xu.ch-09,,trs-quarter,trs-quarter,on-stage,on-stage,wired,,observed,"red cable is right, black is left; TRS cables observed; whether the Hydrasynth outputs are balanced not recorded ⚠"
@@ -22,16 +22,16 @@ P-008,,mrcc.power-in,power-dc,,usb-c,,on-stage,planned,,manual,included 5 V 3 A 
 P-009,,radial-power-1-1.ac-in,power-ac,,,,jaspers-rack,wired,,stated,replaces P-001 for this unit; fixed AC cable per maker listings; wall source not recorded
 P-010,,black-lion-pg-x-1.ac-in,power-ac,,,,jaspers-rack,wired,,stated,replaces P-001 for this unit; fixed AC cable per maker listings; wall source not recorded
 P-011,,radial-power-1-2.ac-in,power-ac,,,,on-stage,wired,,stated,replaces P-002; wall source not recorded
-P-012,radial-power-1-1.rear-1,adam-t10s.ac-in,power-ac,,iec,jaspers-rack,,wired,,observed,"T10S has no power switch, so the Radial rear switch controls it"
+P-012,radial-power-1-1.rear-1,adam-t10s.ac-in,power-ac,,iec,jaspers-rack,jaspers-rack,wired,,observed,"T10S has no power switch, so the Radial rear switch controls it"
 P-013,radial-power-1-1.rear-2,magnatone-m80.ac-in,power-ac,,,jaspers-rack,jaspers-rack,wired,,observed,
 P-014,radial-power-1-1.rear-3,mackie.ac-in,power-ac,,,jaspers-rack,jaspers-rack,wired,,observed,
 P-015,radial-power-1-1.rear-5,mpcx.ac-in,power-ac,,,jaspers-rack,jaspers-rack,wired,,observed,
-P-016,radial-power-1-1.rear-6,case-mantis.power-in,power-ac,,,jaspers-rack,,wired,,observed,Mantis power type not recorded
-P-017,radial-power-1-1.rear-7,case-go-2.dc-in,power-dc,,barrel-dc,jaspers-rack,,wired,,observed,"via external supply, not yet modeled; replaces P-005"
+P-016,radial-power-1-1.rear-6,case-mantis.power-in,power-ac,,,jaspers-rack,jaspers-rack,wired,,observed,Mantis power type not recorded
+P-017,radial-power-1-1.rear-7,case-go-2.dc-in,power-dc,,barrel-dc,jaspers-rack,jaspers-rack,wired,,observed,"via external supply, not yet modeled; replaces P-005"
 P-018,black-lion-pg-x-1.rear-1,adam-t8v-r.ac-in,power-ac,,,jaspers-rack,,wired,,observed,
-P-019,black-lion-pg-x-1.rear-2,case-go-1.dc-in,power-dc,,barrel-dc,jaspers-rack,,wired,,observed,"via external supply, not yet modeled; replaces P-004"
-P-020,black-lion-pg-x-1.rear-3,case-go-3.dc-in,power-dc,,barrel-dc,jaspers-rack,,wired,,observed,"via external supply, not yet modeled; replaces P-006"
-P-021,black-lion-pg-x-1.rear-7,case-go-0.dc-in,power-dc,,barrel-dc,jaspers-rack,,wired,,observed,"via external supply, not yet modeled; replaces P-003"
+P-019,black-lion-pg-x-1.rear-2,case-go-1.dc-in,power-dc,,barrel-dc,jaspers-rack,jaspers-rack,wired,,observed,"via external supply, not yet modeled; replaces P-004"
+P-020,black-lion-pg-x-1.rear-3,case-go-3.dc-in,power-dc,,barrel-dc,jaspers-rack,jaspers-rack,wired,,observed,"via external supply, not yet modeled; replaces P-006"
+P-021,black-lion-pg-x-1.rear-7,case-go-0.dc-in,power-dc,,barrel-dc,jaspers-rack,jaspers-rack,wired,,observed,"via external supply, not yet modeled; replaces P-003"
 P-022,black-lion-pg-x-1.rear-8,adam-t8v-l.ac-in,power-ac,,,jaspers-rack,,wired,,observed,
 P-023,radial-power-1-2.front-1,yamaha-pa-10b.ac-in,power-ac,,,on-stage,on-stage,wired,,observed,"front outlets are unswitched per listings, so the adaptor stays energized when the rack is off"
 P-024,radial-power-1-2.rear-1,take5.dc-in,power-dc,,barrel-dc,on-stage,on-stage,wired,,observed,"via external supply, not yet modeled; replaces P-007"
@@ -46,13 +46,13 @@ M-001,hydrasynth.midi-out,mrcc.in-1,midi-din,din-5,din-5,on-stage,on-stage,plann
 M-002,mrcc.out-1,hydrasynth.midi-in,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,"port plan, 2026-11-14"
 M-003,take5.midi-out,mrcc.in-2,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,"port plan, 2026-11-14"
 M-004,mrcc.out-2,take5.midi-in,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,"port plan, 2026-11-14"
-M-005,ground-control.midi-out,mrcc.in-3,midi-trs-a,trs-3.5mm,din-5,,on-stage,planned,,stated,TRS Type A to DIN cable; may cross the bridge; Eurorack case zone unconfirmed
-M-006,mrcc.out-3,ground-control.midi-in,midi-din,din-5,trs-3.5mm,on-stage,,planned,,stated,optional return; DIN to TRS Type A adapter at the far end; may cross the bridge; Eurorack case zone unconfirmed
-M-007,pams.midi-out,mrcc.in-4,midi-trs-a,trs-3.5mm,din-5,,on-stage,planned,,stated,"clock only, via the MIDI expander per first draft; TRS Type A to DIN cable; may cross the bridge; Eurorack case zone unconfirmed"
+M-005,ground-control.midi-out,mrcc.in-3,midi-trs-a,trs-3.5mm,din-5,jaspers-rack,on-stage,planned,,stated,"TRS Type A to DIN cable; crosses the bridge, which is not built yet (Go_0 is in the Jaspers rack, owner, 2026-11-15)"
+M-006,mrcc.out-3,ground-control.midi-in,midi-din,din-5,trs-3.5mm,on-stage,jaspers-rack,planned,,stated,"optional return; DIN to TRS Type A adapter at the far end; crosses the bridge, which is not built yet (Go_0 is in the Jaspers rack, owner, 2026-11-15)"
+M-007,pams.midi-out,mrcc.in-4,midi-trs-a,trs-3.5mm,din-5,jaspers-rack,on-stage,planned,,stated,"clock only, via the MIDI expander per first draft; TRS Type A to DIN cable; crosses the bridge, which is not built yet (Go_0 is in the Jaspers rack, owner, 2026-11-15)"
 M-008,mpcx.midi-out-a,mrcc.in-5,midi-din,din-5,din-5,jaspers-rack,on-stage,planned,,stated,"crosses the bridge; moved from the draft input 6, which is TRS only"
 M-009,mrcc.out-4,mpcx.midi-in,midi-din,din-5,din-5,on-stage,jaspers-rack,planned,,stated,optional return; crosses the bridge
-M-010,hermod.midi-out,mrcc.in-6-trs-a,midi-trs-a,trs-3.5mm,trs-3.5mm,,on-stage,planned,,stated,"straight TRS Type A cable, no converter; may cross the bridge; Eurorack case zone unconfirmed"
-M-011,mrcc.out-12-trs-a,hermod.midi-in,midi-trs-a,trs-3.5mm,trs-3.5mm,on-stage,,planned,,stated,optional return; straight TRS Type A cable; may cross the bridge; Eurorack case zone unconfirmed
+M-010,hermod.midi-out,mrcc.in-6-trs-a,midi-trs-a,trs-3.5mm,trs-3.5mm,jaspers-rack,on-stage,planned,,stated,"straight TRS Type A cable, no converter; crosses the bridge, which is not built yet (Go_0 is in the Jaspers rack, owner, 2026-11-15)"
+M-011,mrcc.out-12-trs-a,hermod.midi-in,midi-trs-a,trs-3.5mm,trs-3.5mm,on-stage,jaspers-rack,planned,,stated,"optional return; straight TRS Type A cable; crosses the bridge, which is not built yet (Go_0 is in the Jaspers rack, owner, 2026-11-15)"
 M-012,mrcc.out-5,pulsar23.midi-in,midi-din,din-5,din-5,on-stage,on-stage,planned,,stated,"port plan, 2026-11-14"
 M-013,microfreak.usb,mrcc.host-a,midi-usb,usb-b,usb-a,on-stage,on-stage,planned,,manual,MRCC host ports are USB type A (manual v1.1.071)
 M-014,ep1320.usb,mrcc.host-b,midi-usb,usb-c,usb-a,on-stage,on-stage,planned,,manual,MRCC host ports are USB type A (manual v1.1.071)

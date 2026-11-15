@@ -19,7 +19,7 @@ Wall ──► Black Lion PG-X (Jaspers rack)  ──► 5 loads   (P-010, P-018
 Wall ──► Radial Power-1 (on-stage rack)  ──► 8 loads   (P-011, P-023 to P-030)
 ```
 
-Three power conditioners serve the studio. The first two are stacked in the Jaspers rack, with the patch bay above them, and the on-stage server rack holds only the third. Which wall outlet or circuit feeds each unit is not recorded.
+Three power conditioners serve the studio. The first two are in a 19 inch server rack on the floor under the Jaspers rack's bottom row, with the patch bay above them, and the on-stage server rack holds only the third. Which wall outlet or circuit feeds each unit is not recorded.
 
 Each unit distributes and conditions, so the role is `power conditioner` (see `vocab.md`). Both Radials have 8 rear outlets that sit behind the unit's power switch and 3 front outlets that stay live when it is off. The PG-X has 8 rear outlets and 1 front outlet.
 
@@ -74,7 +74,8 @@ Each unit distributes and conditions, so the role is `power conditioner` (see `v
 | Take 5 | external supply, model not recorded | barrel DC | P-024 |
 | MG10XU | Yamaha PA-10B, 18.5 V AC x2, 0.62 A | three-contact locking, AC | P-031 |
 | MRCC | included 5 V, 3 A USB-PD supply | USB-C | P-008, not powered yet |
-| JU-08A | to confirm | mini-USB | not yet in the data |
+| JU-06A | not recorded; listings say 4 AA batteries or USB bus power, with a micro-B port ⚠ | micro-B | not yet in the data |
+| SH-4d | not recorded; listings say a USB-C phone charger or AA batteries ⚠ | USB-C | not yet in the data |
 | T10S subwoofer | mains | two-pin IEC, no power switch | P-012 |
 
 The PA-10B label (read 2026-11-15) gives an input of 120 V, 60 Hz, 300 mA and an output marked AC, GND, AC. **That output is alternating current, not DC.** It must never be swapped with a DC supply, and no DC supply must ever go into the MG10XU.
@@ -113,6 +114,7 @@ For most of the on-stage synths the device-side supply type is not recorded, so 
 - The wall outlet or circuit behind each of the three units, and the total load on it. Each unit is listed at 15 A ⚠ retailer listings.
 - Every wall supply, its model, and its outlet, starting with the barrel supplies for the Go cases and the Take 5.
 - How each on-stage synth takes its power, IEC or supply, and the same for the Mackie, the MPC X, the Mantis and the T8Vs.
-- Which devices take mini-USB power, beyond the JU-08A.
+- Power for the JU-06A and the SH-4d, which are on no outlet. The earlier note about a JU-08A with mini-USB power is probably this JU-06A, whose listed port is micro-B. Confirm.
+- The NiftyCase is on a separate table, off the racks, and is not part of this record.
 - Where the MRCC will be powered from, since it is not powered yet.
 - The other Black Lion and Furman units the owner thinks exist. They are not in either rack and are not recorded.

@@ -107,4 +107,4 @@ The MRCC stores one factory preset (number 0, read-only) and 127 user presets on
 - **Return paths** M-006, M-009 and M-011: are they needed, or is the Hydrasynth the only controller?
 - **MacBook.** The first draft routes a laptop into the MRCC PC port. No row yet.
 - **Lyra-8 and Solar 50 clocking.** The first draft's claim is unsupported and is not recorded.
-- **Eurorack case zones**, which decide which MIDI cables cross the bridge.
+- **The bridge**, which is not built yet (cord cover on order). Go_0 is in the Jaspers rack, so the Hermod+, Ground Control and Pamela's links cross it.

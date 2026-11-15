@@ -40,6 +40,8 @@ No other Mackie channel is recorded yet. The Yamaha channels are not chosen, and
 
 The Mackie main outputs feed the T10S subwoofer over XLR, and the T10S feeds the two T8V monitors over XLR (A-005 to A-008). The sub sits first in the chain on purpose. It has balanced XLR and unbalanced RCA inputs and outputs, and its outputs are high-pass filtered so the monitors receive only the part of the signal above the crossover, with the crossover set to 80 Hz, 120 Hz or bypass (Adam Audio product page; Sound On Sound review, June 2020). Adam also designs the T10S to match the T5V, T7V and T8V monitors.
 
+Placement: the T10S sits on the floor to the right of the 19 inch server rack, under the bottom row, and the T8Vs are on stands at about standing head height (owner, 2026-11-15).
+
 Settings to record once someone is at the back panel:
 
 - Crossover: 80 Hz (stated by the owner, 2026-11-14)
@@ -51,7 +53,7 @@ Power note for the power doc: the T10S has a two-pin IEC inlet and no power swit
 
 ## 4. Eurorack mixers
 
-The Cockpit 2 (Endorphin.es, in case Go_2), Listen IO (4ms, in Go_3) and Mixup (Intellijel, in Go_1) are the points where the modular's audio leaves the cases, so the three runs to the Mackie start in three different cases. Their output connectors, balanced or unbalanced outputs and level are not yet recorded, so the signal and connector fields on A-001 to A-004 are blank. Fill them in when each run is traced.
+The Cockpit 2 (Endorphin.es, in case Go_2), Listen IO (4ms, in Go_3) and Mixup (Intellijel, in Go_1) are the points where the modular's audio leaves the cases, so the three runs to the Mackie start in three different cases. All three cases are on the Jaspers rack arms, so the runs are short and local. Their output connectors, balanced or unbalanced outputs and level are not yet recorded, so the signal and connector fields on A-001 to A-004 are blank. Fill them in when each run is traced.
 
 ## 5. Yamaha MG10XU
 
