@@ -20,11 +20,13 @@ Row 3       Go_0     │ Go_1
 Bottom row  MPC X    │ Mackie 30-channel mixer      (about 28 inches off the floor)
 ```
 
-A 19 inch server rack stands on the floor under the bottom row, in the middle of the floor space. Top to bottom it holds the 96-port 1U patch bay, the Radial Power-1 and the Black Lion PG-X. The T10S subwoofer sits on the floor to the right of that server rack, under the bottom row, and the two T8V monitors are on stands at about standing head height.
+A 19 inch server rack stands on the floor under the bottom row, in the middle of the floor space. Top to bottom it holds the 96-port 1U patch bay, the Radial Power-1 and the Black Lion PG-X. The T10S subwoofer sits on the floor to the right of that server rack, under the bottom row, and the two T8V monitors are on stands at about standing head height, just outside the left and right vertical supports of the synth rack.
 
 The Magnatone Baby M-80 head and its Marshall Studio JTM 2x12 cabinet stand just to the right of the Jaspers rack, nearly touching it. The head is powered from the Radial and is wired only to its cabinet.
 
 The NiftyCase is on a separate table, used by the family, and is not part of these racks.
+
+A photo of the Jaspers rack from the front, 2026-11-15, is kept outside the repository at `~/claude/studio_photos/jaspers_rack_2026-11-15.jpg`. It is not published.
 
 ## 2. On-stage
 
@@ -74,6 +76,5 @@ Rough, from the owner's memory: about 300 3.5 mm TS patch cables for the modular
 - Whether AC crosses the bridge.
 - The label scheme. The IDs in the data are meant to match physical labels on both ends of each cable.
 - The final MRCC position, and its front cable exit.
-- The T8V positions relative to the racks, so they can be given a zone.
 - The power and USB arrangements for the JU-06A and the SH-4d, which are on no outlet.
 - The jack type and normalling of the 96-port patch bay.

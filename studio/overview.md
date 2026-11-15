@@ -72,7 +72,7 @@ POWER
 | SP-404 MKII | Roland | sampler |
 | Power-1 | Radial Engineering | power conditioner |
 
-**Monitors** (the T10S is in the Jaspers zone, the T8V zones are not yet recorded)
+**Monitors** (all in the Jaspers zone)
 
 | Device | Maker | Role |
 |---|---|---|
@@ -136,7 +136,7 @@ Nothing is `tested` yet. The CSV is the live record; this table goes stale.
 2. **MIDI channels 9 to 16.** What they carry through the MRCC is unclear. See `midi_and_clock.md`.
 3. **Mackie to computer.** How audio reaches the DAW is not recorded. See `audio.md`.
 4. **Patch bay point list and gain staging.** Neither exists yet, and the patch bay's jack type needs checking, since 96 points in 1U usually means bantam jacks ⚠. See `audio.md`.
-5. **Power sources.** The outlet maps are recorded. The wall feeds and circuits, the wall supplies for the Go cases and the Take 5, and how each synth takes its power are not. See `power.md`.
+5. **Power sources.** The outlet maps and wall feeds are recorded, one independent wall outlet per unit. The circuits behind them, the wall supplies for the Go cases and the Take 5, and how each synth takes its power are not. See `power.md`.
 6. **Possible USB hum.** Two USB-connected synths feed audio into the Yamaha. Listen for it when they are wired. See `midi_and_clock.md`.
 7. **T10S phase and sensitivity.** Not recorded. See `audio.md`.
 8. **Cable labels.** The IDs in the data are meant to match physical labels, and no label scheme has been chosen.

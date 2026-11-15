@@ -19,7 +19,7 @@ Wall ──► Black Lion PG-X (Jaspers rack)  ──► 5 loads   (P-010, P-018
 Wall ──► Radial Power-1 (on-stage rack)  ──► 8 loads   (P-011, P-023 to P-030)
 ```
 
-Three power conditioners serve the studio. The first two are in a 19 inch server rack on the floor under the Jaspers rack's bottom row, with the patch bay above them, and the on-stage server rack holds only the third. Which wall outlet or circuit feeds each unit is not recorded.
+Three power conditioners serve the studio. The first two are in a 19 inch server rack on the floor under the Jaspers rack's bottom row, with the patch bay above them, and the on-stage server rack holds only the third. Each unit has its own independent wall outlet (owner, 2026-11-15). Whether any of the three outlets share a circuit or breaker is not recorded.
 
 Each unit distributes and conditions, so the role is `power conditioner` (see `vocab.md`). Both Radials have 8 rear outlets that sit behind the unit's power switch and 3 front outlets that stay live when it is off. The PG-X has 8 rear outlets and 1 front outlet.
 
@@ -95,7 +95,7 @@ For most of the on-stage synths the device-side supply type is not recorded, so 
 - **One strip carries the on-stage instruments.** Every synth, drum machine and sampler there hangs off a single Radial. If it trips or is switched off, the whole bench goes dark at once, apart from the Yamaha adaptor on the unswitched front outlet.
 - **The Eurorack cases are split across two units.** Go_2 and the Mantis are on the Jaspers Radial, and Go_0, Go_1 and Go_3 are on the PG-X. A dropped unit takes out a pattern of cases, which matters for clocking, since Hermod+, Ground Control and Pamela's are all in Go_0.
 - **The monitors are split too.** The sub is on the Radial, the right T8V is on the PG-X at rear 1, and the left T8V is on the PG-X at rear 8.
-- **The two Jaspers units share a rack,** but the wall feeds are not recorded.
+- **The two Jaspers units share a rack but not an outlet,** so one tripped strip leaves the other running. A shared breaker behind the outlets would still take them together, and that is not recorded.
 
 ## 6. Grounding
 
@@ -111,7 +111,7 @@ For most of the on-stage synths the device-side supply type is not recorded, so 
 
 ## 8. What to record next
 
-- The wall outlet or circuit behind each of the three units, and the total load on it. Each unit is listed at 15 A ⚠ retailer listings.
+- The circuit or breaker behind each of the three wall outlets, and the total load on each. Each unit is listed at 15 A ⚠ retailer listings.
 - Every wall supply, its model, and its outlet, starting with the barrel supplies for the Go cases and the Take 5.
 - How each on-stage synth takes its power, IEC or supply, and the same for the Mackie, the MPC X, the Mantis and the T8Vs.
 - Power for the JU-06A and the SH-4d, which are on no outlet. The earlier note about a JU-08A with mini-USB power is probably this JU-06A, whose listed port is micro-B. Confirm.

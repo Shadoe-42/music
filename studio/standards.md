@@ -78,6 +78,7 @@ Every document declares `publish: private` or `publish: public`.
 
 - **Private by default:** anything specific to this studio, such as the as-built record, the connection data, layout, inventory and power topology.
 - **Public:** standards, vocabulary, device guides, and lessons extracted from the as-built record with the studio specifics removed.
+- Photos of the studio stay outside the repository and are never published. The owner keeps them in `~/claude/studio_photos/`, and a document may cite one by name.
 - Only `public` documents sync to GitHub. A public document never contains physical location details, serial numbers or a complete inventory.
 
 ## 8. Writing
